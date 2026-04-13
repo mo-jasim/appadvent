@@ -1,0 +1,48 @@
+name: Appadvent
+
+on:
+    push:
+        branches: [main]
+
+jobs:
+    code:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v2
+
+    build:
+        runs-on: ubuntu-latest
+        needs: code
+
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v2
+
+            - name: Build Docker image
+              uses: docker/build-push-action@v3
+              with:
+                  context: .
+                  push: false
+                  tags: appadvent:latest
+
+    deploy:
+        runs-on: ubuntu-latest
+        needs: build
+
+        steps:
+            - name: SSH Login To The Server And Deploy Container
+              uses: appleboy/ssh-action@v1
+              with:
+                  host: ${{ secrets.SSH_HOST }}
+                  username: ${{ secrets.SSH_USER }}
+                  key: ${{ secrets.SSH_PRIVATE_KEY }}
+                  envs: DOCKER_USER
+                  script: |
+                      docker rm -f appadvent || true
+                      docker run -d \ 
+                          --name appadvent \ 
+                          --restart always \
+                          -p 3005:3000 \ 
+                          appadvent:latest
