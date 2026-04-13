@@ -91,7 +91,7 @@ const ServiceGridCard: React.FC = () => {
                     <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-bold mb-4 leading-tight">
                         Full-Scale Web Development by <span className="text-[#32B9E9]">Appadvent</span>
                     </h2>
-                    <p className="text-gray-500 text-sm md:text-[16px] font-THICCCBOI">
+                    <p className="max-w-6xl text-[16px] sm:text-base lg:text-[20px] mx-auto text-center w-full text-black leading-tight px-4">
                         Web development services help create all types of web-based software and ensure great experience for web users. Different types of web solutions may seem similar from the outside, but we approach them differently and know what factors are winning in each case                    </p>
                 </div>
 
@@ -118,7 +118,7 @@ const ServiceGridCard: React.FC = () => {
                             </div>
 
                             <h3 className="font-bold text-[20px] md:text-[24px] mb-2">{item.title}</h3>
-                            <p className="text-gray-500 text-sm md:text-[16px] font-THICCCBOI">
+                            <p className="text-black text-sm md:text-[16px] font-THICCCBOI">
                                 Our base, robust, and extensible arch allows our team to perform custom requirements implementing custom features for custom needs.
                             </p>
                         </div>

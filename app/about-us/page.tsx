@@ -35,9 +35,9 @@ function page() {
             <div className="flex items-center justify-center mt-6">
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="
-        text-[#32B9E9]
-        px-5 py-2 sm:px-6 sm:py-2.5 cursor-pointer">
+                className="text-[#32B9E9] text-semibold text-[20px]
+        px-5 py-2 sm:px-6 sm:py-2.5 cursor-pointer underline font-THICCCBOI"
+              >
                 Have a project in mind?
               </button>
             </div>

@@ -74,7 +74,7 @@ const HowWeEnsure: React.FC = () => {
     ];
 
     return (
-        <div className="w-full bg-[#001F26] py-10 md:py-20 font-THICCCBOI">
+        <div className="w-full bg-[#001F26] mt-[80px] mb-[80px] pt-[80px] pb-[80px] font-THICCCBOI">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="text-center mb-12 md:mb-16">
                     <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-bold mb-4 md:mb-6 text-white leading-tight">
@@ -90,10 +90,10 @@ const HowWeEnsure: React.FC = () => {
                     {services.map((item, index) => (
                         <div
                             key={index}
-                            className="bg-white p-6 rounded-[20px] flex flex-col items-center text-center gap-4 hover:shadow-2xl transition-all h-full justify-center min-h-[180px]"
+                            className="group bg-white p-6 rounded-[20px] flex flex-col items-center text-center gap-4 border-2 border-transparent hover:border-[#32B9E9]/40 hover:shadow-[0_20px_40px_rgba(50,185,233,0.15)] hover:-translate-y-2 cursor-pointer transition-all duration-300 ease-in-out h-full justify-center min-h-[180px]"
                         >
                             {/* Icon Container */}
-                            <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center">
+                            <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center transform group-hover:scale-110 group-hover:-translate-y-1 transition-transform duration-300 ease-in-out">
                                 <Image
                                     src={item.titleIcon}
                                     alt={item.title}
@@ -104,7 +104,7 @@ const HowWeEnsure: React.FC = () => {
                             </div>
 
                             {/* Content Container */}
-                            <h3 className="font-bold text-[16px] text-gray-900 leading-tight">
+                            <h3 className="font-bold text-[16px] text-gray-900 leading-tight group-hover:text-[#32B9E9] transition-colors duration-300 ease-in-out">
                                 {item.title}
                             </h3>
                         </div>

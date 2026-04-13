@@ -51,7 +51,8 @@ export default function PortfolioPage() {
 
                             <p
                                 onClick={() => setIsModalOpen(true)}
-                                className="text-[#32B9E9] font-medium underline cursor-pointer hover:text-[#2aa8d6] transition-colors"
+                                className="text-[#32B9E9] text-semibold text-[20px]
+        px-5 py-2 sm:px-6 sm:py-2.5 cursor-pointer underline"
                             >
                                 Have a project in mind?
                             </p>

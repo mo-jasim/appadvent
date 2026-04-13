@@ -64,7 +64,7 @@ const AppDevelopment: React.FC = () => {
     };
 
     return (
-        <section className="text-black py-10 md:py-20 px-4 font-THICCCBOI max-w-7xl mx-auto">
+        <section className="text-black mt-[160px] mb-[160px] px-4 font-THICCCBOI max-w-7xl mx-auto">
             <div className="max-w-7xl mx-auto">
 
                 <div className="text-center mb-12 md:mb-16 max-w-7xl mx-auto">
@@ -97,6 +97,9 @@ const AppDevelopment: React.FC = () => {
                             </div>
 
                             <h3 className="font-bold text-[20px] md:text-[24px] mt-2">{item.title}</h3>
+                            <p className="text-black text-sm md:text-[16px] font-THICCCBOI mt-2">
+                                {item.desc}
+                            </p>
                         </div>
                     ))}
                 </div>

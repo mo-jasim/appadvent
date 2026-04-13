@@ -13,22 +13,22 @@ const cards: AverageCost[] = [
     {
         title: 'From $20,000',
         Icon: "/SVG6/icons_price 1.svg",
-        desc: 'For a custom branded corporate website.'
+        desc: 'we works with web portals for different audiences: customers, business partners, ecommerce users, patients, vendors, interest-based communities. '
     },
     {
         title: 'From $70,000',
         Icon: "/SVG6/icons_price 2.svg",
-        desc: 'For a self-service customer web portal.'
+        desc: 'we works with web portals for different audiences: customers, business partners, ecommerce users, patients, vendors, interest-based communities. '
     },
     {
         title: 'From $200,000',
         Icon: "/SVG6/icons_price 3.svg",
-        desc: 'For an ecommerce solution with custom visual interface and business logic, integrated into a corporate IT infrastructure.'
+        desc: 'we works with web portals for different audiences: customers, business partners, ecommerce users, patients, vendors, interest-based communities. '
     },
     {
         title: 'From $400,000',
         Icon: "/SVG6/icons_price 4.svg",
-        desc: 'For complex enterprise web software, e.g., a custom EHR system.'
+        desc: 'we works with web portals for different audiences: customers, business partners, ecommerce users, patients, vendors, interest-based communities. '
     },
 
 
@@ -60,24 +60,24 @@ const AverageCost: React.FC = () => {
     };
 
     return (
-        <section className="text-black py-10 md:py-20 px-4 font-THICCCBOI max-w-6xl mx-auto">
+        <section className="text-black mt-[100px] mb-[100px] font-THICCCBOI max-w-6xl mx-auto">
             <div className="max-w-7xl mx-auto">
 
-                <div className="text-center mb-12 md:mb-16 max-w-6xl mx-auto">
+                <div className="flex flex-col gap-4 text-center items-center justify-center sm:gap-5 relative z-10 max-w-7xl mx-auto mt-[80px]">
                     <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-bold mb-4 leading-tight">
-                        App Types We Develop: Industry & Use Cases                    </h2>
-                    <p className="text-gray-500 text-[16px] sm:text-[18px] md:text-[20px] font-THICCCBOI">
-                        Web development services help create all types of web-based software and ensure great experience for web users. Different types of web solutions may seem similar from the outside, but we approach them differently and know what factors are winning in each case                    </p>
+                        Average Cost of Different Web Solutions                    </h2>
+                    <p className="text-black text-[16px] sm:text-[18px] md:text-[20px] text-regular font-THICCCBOI leading-tight">
+                        Web solutions are very different in functionality and scale, from simple corporate websites to complex enterprise systems. Logically, the range of costs is wide too. Take a look at several examples from our practices and don't hesitate to request a free quote that will be tailored to your specific solution.                  </p>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-8">
                     {cards.map((item, index) => (
                         <div
                             key={index}
-                            className="bg-white p-8 rounded-[20px] flex flex-col shadow-sm  hover:shadow-2xl transition-all duration-500"
+                            className="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
                         >
                             <div
-                                className="mb-4 rounded-full cursor-pointer"
+                                className="mb-6 cursor-pointer"
                                 onMouseEnter={() => handleHover(index)}
                             >
                                 <Image
@@ -87,12 +87,14 @@ const AverageCost: React.FC = () => {
                                             : item.Icon
                                     }
                                     alt={item.title}
-                                    width={100}
-                                    height={100}
+                                    width={65}
+                                    height={65}
+                                    className="object-contain"
                                 />
                             </div>
 
-                            <h3 className="font-bold text-[20px] md:text-[24px]">{item.title}</h3>
+                            <h3 className="font-bold text-[18px] md:text-[20px] text-[#050A15] mb-3">{item.title}</h3>
+                            <p className="text-[#6b7280] text-[13px] sm:text-[14px] leading-[1.6] font-normal">{item.desc}</p>
 
                         </div>
                     ))}

@@ -65,7 +65,7 @@ export default function Designing() {
       setTotalTicks(0);
       return;
     }
-    
+
     // Incrementing cycleId remounts the DOM cleanly for CSS animations to replay effortlessly from 0
     setCycleId(c => c + 1);
 
@@ -106,7 +106,7 @@ export default function Designing() {
 
       <div className="max-w-[1240px] mx-auto relative z-10 px-2 sm:px-4 lg:px-6">
 
-        <h2 className="text-[32px] md:text-[42px] font-bold text-center text-gray-900 mb-16 md:mb-24 mt-[80px] tracking-tight">
+        <h2 className="text-[32px] md:text-[42px] font-bold text-center text-gray-900 tracking-tight">
           Our Development Process
         </h2>
 

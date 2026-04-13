@@ -59,13 +59,16 @@ const WebSolutionSection: React.FC = () => {
     };
 
     return (
-        <section className="text-black py-5 px-4 font-THICCCBOI max-w-7xl mx-auto ">
+        <section className="text-black mb-[80px] px-4 font-THICCCBOI max-w-7xl mx-auto ">
             <div className="max-w-7xl mx-auto">
 
                 <div className="text-center mb-12 md:mb-16">
                     <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-bold mb-2 leading-tight">
-                        What <span className="text-[#32B9E9]">Web Solutions</span> Do You Need
+                        What <span className="text-[#32B9E9]">Web Solutions</span> Do You Need?
                     </h2>
+                    <p className='max-w-6xl text-[16px] sm:text-base lg:text-[20px] mx-auto text-center w-full text-black leading-tight px-2'>
+                        Web development services help create all types of web-based software and ensure great experience for web users. Different types of web solutions may seem similar from the outside, but we approach them differently and know what factors are winning in each case
+                    </p>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -91,7 +94,7 @@ const WebSolutionSection: React.FC = () => {
                             </div>
 
                             <h3 className="font-bold text-[20px] md:text-[24px] mb-2">{item.title}</h3>
-                            <p className="text-gray-500 text-sm md:text-[16px] font-THICCCBOI">
+                            <p className="text-black text-sm md:text-[16px] font-THICCCBOI">
                                 {item.description}
                             </p>
                         </div>

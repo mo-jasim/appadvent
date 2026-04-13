@@ -90,7 +90,7 @@ const OurProjectsSection = () => {
     }
 
     return (
-        <section className="py-2 text-black font-THICCCBOI mt-20 mb-[80px]">
+        <section className="text-black font-THICCCBOI mt-[80px]">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-12">
                     <div className="max-w-7xl mx-auto">

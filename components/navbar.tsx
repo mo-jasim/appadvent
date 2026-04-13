@@ -126,6 +126,14 @@ const Navbar = () => {
                   </Link>
 
                   <Link
+                    href="/services/mobile-app-development"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    onClick={() => setOpen(false)}
+                  >
+                    Mobile App Development
+                  </Link>
+
+                  <Link
                     href="/services/digital-marketing"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     onClick={() => setOpen(false)}
@@ -133,13 +141,6 @@ const Navbar = () => {
                     Digital Marketing
                   </Link>
 
-                  <Link
-                    href="/services/mobile-app-development"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    onClick={() => setOpen(false)}
-                  >
-                    Mobile App Development
-                  </Link>
 
                   <Link
                     href="/services/staff-augmentation"

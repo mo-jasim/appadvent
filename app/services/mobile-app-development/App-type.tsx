@@ -115,10 +115,10 @@ const AppType: React.FC = () => {
     };
 
     return (
-        <section className="text-black py-10 md:py-20 px-4 font-THICCCBOI max-w-7xl mx-auto">
+        <section className="text-black mt-[80px] mb-[80px] px-4 font-THICCCBOI max-w-7xl mx-auto">
             <div className="max-w-7xl mx-auto">
 
-                <div className="text-center mb-12 md:mb-16 max-w-6xl mx-auto">
+                <div className="flex flex-col gap-4 sm:gap-5 relative z-10 max-w-7xl mx-auto text-center justify-center mb-[50px]">
                     <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-bold mb-4 leading-tight">
                         App Types We Develop: Industry & Use Cases                    </h2>
                     <p className="text-gray-500 text-[16px] sm:text-[18px] md:text-[20px] font-THICCCBOI">
@@ -148,7 +148,7 @@ const AppType: React.FC = () => {
                             </div>
 
                             <h3 className="font-bold text-[20px] md:text-[24px] mb-2">{item.title}</h3>
-                            <p className="text-gray-500 text-sm md:text-[16px] font-THICCCBOI">
+                            <p className="text-black text-sm md:text-[16px] font-THICCCBOI">
                                 Our base, robust, and extensible arch allows our team to perform custom requirements implementing custom features for custom needs.
                             </p>
                         </div>

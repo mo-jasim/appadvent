@@ -84,25 +84,25 @@ const MobileApplication: React.FC = () => {
 
     return (
         <>
-            <section className="text-black py-10 md:py-20 px-4 font-THICCCBOI max-w-7xl mx-auto">
+            <section className="text-black mt-[80px] mb-[160px] px-4 font-THICCCBOI max-w-7xl mx-auto">
                 <div className="max-w-7xl mx-auto">
 
                     <div className="text-center mb-12 md:mb-16 max-w-6xl mx-auto">
                         <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-bold mb-4 leading-tight">
                             Our Mobile Application Development Services                    </h2>
-                        <p className="text-gray-500 text-[16px] sm:text-[18px] md:text-[20px] font-THICCCBOI">
+                        <p className="text-black text-[16px] sm:text-[18px] md:text-[20px] font-THICCCBOI">
                             We assists in specific development stages as well as provides full-cycle mobile app implementation. Our mobile app development services include:
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-8">
                         {cards.map((item, index) => (
                             <div
                                 key={index}
-                                className="bg-white p-8 rounded-[20px] flex flex-col items-center text-center shadow-sm hover:shadow-2xl transition-all"
+                                className="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full"
                             >
                                 <div
-                                    className="p-3 rounded-full cursor-pointer"
+                                    className="mb-6 cursor-pointer flex items-center h-[65px]"
                                     onMouseEnter={() => handleHover(index)}
                                 >
                                     <Image
@@ -112,14 +112,15 @@ const MobileApplication: React.FC = () => {
                                                 : item.Icon
                                         }
                                         alt={item.title}
-                                        width={64}
-                                        height={64}
+                                        width={65}
+                                        height={65}
+                                        className="object-contain max-h-[65px]"
                                     />
                                 </div>
 
-                                <h3 className="font-bold text-[20px] md:text-[24px] mb-2">{item.title}</h3>
-                                <p className="text-gray-500 text-sm md:text-[16px] font-THICCCBOI">
-                                    Our base, robust, and extensible arch allows our team to perform custom requirements implementing custom features for custom needs.
+                                <h3 className="font-bold text-[18px] md:text-[20px] text-[#050A15] mb-3">{item.title}</h3>
+                                <p className="text-black text-sm md:text-[16px] font-THICCCBOI">
+                                    {item.desc}
                                 </p>
                             </div>
                         ))}

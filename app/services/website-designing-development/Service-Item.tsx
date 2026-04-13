@@ -71,10 +71,10 @@ const ServiceCards: React.FC = () => {
 
                     {/* Content Container - Right Side */}
                     <div className="flex flex-col gap-2">
-                        <h3 className="font-bold text-[18px] text-gray-900 leading-tight">
+                        <h3 className="font-bold text-[18px] text-black leading-tight">
                             {item.title}
                         </h3>
-                        <p className="text-gray-500 text-[16px] leading-relaxed font-normal">
+                        <p className="text-black text-[16px] leading-relaxed font-normal">
                             {item.description}
                         </p>
                     </div>
