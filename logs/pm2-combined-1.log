@@ -1,0 +1,21 @@
+2025-12-19T21:48:37: 
+2025-12-19T21:48:37: > iwish@0.1.0 dev
+2025-12-19T21:48:37: > next dev -p 3000
+2025-12-19T21:48:37: 
+2025-12-19T21:48:38:    ▲ Next.js 16.0.10 (Turbopack)
+2025-12-19T21:48:38:    - Local:         http://localhost:3000
+2025-12-19T21:48:38:    - Network:       http://192.0.0.2:3000
+2025-12-19T21:48:38:    - Environments: .env
+2025-12-19T21:48:38: 
+2025-12-19T21:48:38:  ✓ Starting...
+2025-12-19T21:48:39: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+2025-12-19T21:48:39: This information is used to shape Next.js' roadmap and prioritize features.
+2025-12-19T21:48:39: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+2025-12-19T21:48:39: https://nextjs.org/telemetry
+2025-12-19T21:48:39: 
+2025-12-19T21:48:39:  ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+2025-12-19T21:48:39:  ✓ Ready in 1249ms
+2025-12-19T21:48:42:  ○ Compiling / ...
+2025-12-19T21:48:49:  GET / 200 in 9.9s (compile: 9.7s, proxy.ts: 35ms, render: 136ms)
+2025-12-19T21:49:16: [?25h
+2025-12-19T21:49:16: 

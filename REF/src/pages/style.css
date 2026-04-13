@@ -1,0 +1,235 @@
+/* .hero-container {
+  width: auto; 
+  height: 1950px;
+
+  background-image: linear-gradient(to bottom, #EAF8FD 0%, #FFFFFF 100%),
+    url("/Polygon 3 (2).png");
+  background-repeat: no-repeat;
+  background-size: 1600px 1200px;   
+  background-position: top center;  
+  background-blend-mode: overlay;
+} */
+
+.hero-container {
+  position: relative;
+  width: auto;
+  height: 1950px;
+  background: linear-gradient(to bottom, #EAF8FD 0%, #FFFFFF 100%);
+  overflow: hidden;
+}
+
+/* 🌀 Tilted background image only */
+.hero-container::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 52px;
+  width: 1328px;
+  height: 1357px;
+  background: url("/Polygon 3 (2).png") no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  /* transform: rotate(-14.7deg); */
+  z-index: 0;
+}
+
+/* 🧱 Content above background */
+.hero-container > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* 🔹 Small screen (hide image) */
+@media (max-width: 640px) {
+  .hero-container::before {
+    display: none;
+  }
+
+  .hero-container {
+    height: 3900px;
+  }
+}
+
+/* 🔹 Medium screen (adjust image) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .hero-container {
+    height: 3550px;
+  }
+
+  .hero-container::before {
+    width: 1700px;
+    height: 1600px;
+    background-position: top center;
+    /* transform: rotate(-14.7deg); */
+  }
+}
+
+/* 🔹 Large screen (perfect view) */
+@media (min-width: 1025px) {
+  .hero-container {
+    height: 1960px;
+  }
+
+  .hero-container::before {
+    width: 1400px;
+    height: 1100px;
+    background-position: top center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-containerss {
+  width: auto; 
+  height: 1250px;
+  background-image: linear-gradient(to bottom, #EAF8FD 0%, #FFFFFF 100%),
+    url("/Polygon 3 (2).png");
+  background-repeat: no-repeat;
+  background-size: 600px 1400px;   
+  background-position: top center;  
+  background-blend-mode: overlay;
+}
+
+
+/* @media (min-width: 640px) {
+  .hero-containerss {
+    height: 600px;
+    background-size: 1000px 1000px;
+  }
+} */
+
+
+@media (min-width: 768px) {
+  .hero-containerss {
+    height: 1250px;
+    background-size: 1400px 1600px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .hero-containerss {
+    height: 1213px;
+    background-size: 1600px 1300px;
+  }
+}
+
+
+
+
+
+/* .bg-grd {
+  background-image: 
+    url('../assets/image/ai.png'), 
+    linear-gradient(to bottom right, rgba(234, 248, 253, 1), rgb(30, 141, 95));
+
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: contain, cover;
+  background-blend-mode: normal;
+
+  width: 100%;
+  height:auto; 
+} */
+
+
+.hero-containerind {
+  width: auto; 
+  height: 668px;
+ background-image: linear-gradient(), url("/Polygon 3 (2).png");
+background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: 1600px 600px;   
+  background-position: top center;  
+  background-blend-mode: overlay;
+}
+
+
+.hero-containercont {
+  width: auto; 
+  height: 650px;
+  background-image: linear-gradient(to bottom, #EAF8FD 0%, #FFFFFF 100%),
+    url("/Polygon 3 (2).png");
+  background-repeat: no-repeat;
+  background-size: 700px 800px;   
+  background-position: top center;  
+  background-blend-mode: overlay;
+}
+
+
+
+.bg-grd1 {
+  background-image: url('../assets/image/Polygon 1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+  background-position: right;
+              
+}
+.image {
+  background-image: url('../assets/image/Polygon 2.png'), url('../assets/image/Polygon 3.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: left, right;
+  background-size: contain, contain;
+}
+.card{
+   background-image: url('../assets/image/Polygon\ 4.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-color: blue; */
+}
+.hide {
+  min-height: auto;
+  width: 100%;
+  /* background-color: antiquewhite; */
+  overflow-inline: hidden; /* y = vertical */
+}
+
+
+/* .overlay {
+            background-image: 
+
+                linear-gradient(
+                    to bottom right, 
+                    rgba(234, 248, 253, 1), 
+                    rgb(30, 141, 95)
+                ), 
+               url('../assets/image/Polygon 1.png');
+            background-blend-mode: overlay; 
+  background-size: cover;
+
+            width: 100%;
+            height: 680px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+  } */
+  /* .overlay {
+  background-image: 
+    linear-gradient(
+      to bottom right, 
+      rgba(234, 248, 253, 1), 
+      rgba(255, 255, 255, 1)
+    );
+      background-blend-mode: overlay; 
+  background-size: cover;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */

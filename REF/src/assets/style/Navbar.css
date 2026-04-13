@@ -1,0 +1,62 @@
+.navbar1{
+  overflow-x: hidden;
+}
+.animated-gradient-button {
+  background: linear-gradient(-45deg, #00F260, #0575E6, #9D50BB, #F9D423);
+  background-size: 400% 400%;
+  animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+/* .button{ */
+    .animated-gradient-button {
+  background: linear-gradient(135deg, #FFBB00, #23FE15, #0592DD, #D80BDF);
+  background-size: 500% 200% ;
+  animation: gradientLoop 2s ease infinite;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.animated-gradient-button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes gradientLoop {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+     background-position:0% 100%;
+
+}
+}
+/* } */
+
+
+
+
+
+
+

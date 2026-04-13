@@ -1,0 +1,53 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icons/1">
+<path id="Vector_3_2" d="M40 13.5C54.0833 13.5 65.5 24.9167 65.5 39C65.5 53.0833 54.0833 64.5 40 64.5C25.9167 64.5 14.5 53.0833 14.5 39C14.5 24.9167 25.9167 13.5 40 13.5Z" fill="url(#paint0_linear_4055_5655)" stroke="#08526D" class="id_anim_stroke-property0" data-duration="2.7777777777777777" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 160.244px; animation: 2.77778s linear 0s 1 normal forwards running id_anim_stroke-property0;"></path>
+<path id="Ellipse 16" d="M40 14.5C54.0833 14.5 65.5 25.9167 65.5 40C65.5 54.0833 54.0833 65.5 40 65.5C25.9167 65.5 14.5 54.0833 14.5 40C14.5 25.9167 25.9167 14.5 40 14.5Z" stroke="#08526D" class="id_anim_stroke-property1" data-duration="2.7777777777777777" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 160.244px; animation: 2.77778s linear 0s 1 normal forwards running id_anim_stroke-property1;"></path>
+<path id="1" d="M33.9897 32.696L38.2377 30.2H41.3817V44.024H45.9417V47H33.3657V44.024H38.2377V33.56L35.6217 35.144L33.9897 32.696Z" fill="#08526D"></path>
+</g>
+<defs>
+<linearGradient id="paint0_linear_4055_5655" x1="40.0587" y1="62.8567" x2="40.0587" y2="35.5737" gradientUnits="userSpaceOnUse">
+<stop stop-color="#ADE3F6"></stop>
+<stop offset="0.01" stop-color="#ADE3F6" stop-opacity="0.98"></stop>
+<stop offset="0.635" stop-color="#ADE3F6" stop-opacity="0.28"></stop>
+<stop offset="0.9925" stop-color="#ADE3F6" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+<style>
+        @keyframes id_anim_stroke-property0{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 160.243896484375px;
+            }
+        
+            50%{
+                stroke-dashoffset: -80.1219482421875px; 
+        stroke-dasharray: 80.1219482421875px, 80.1219482421875px;
+            }
+        
+            100%{
+                stroke-dashoffset: -160.243896484375px; 
+        stroke-dasharray: 160.243896484375px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property1{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 160.24391174316406px;
+            }
+        
+            50%{
+                stroke-dashoffset: -80.12195587158203px; 
+        stroke-dasharray: 80.12195587158203px, 80.12195587158203px;
+            }
+        
+            100%{
+                stroke-dashoffset: -160.24391174316406px; 
+        stroke-dasharray: 160.24391174316406px, 0px;
+            }
+        
+        }
+        </style></svg>

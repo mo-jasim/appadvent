@@ -1,0 +1,36 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon/prototype 1">
+<g id="Group">
+<g id="Group_2">
+<path id="Vector" d="M49 15H6C3.79086 15 2 16.7909 2 19V48C2 50.2091 3.79086 52 6 52H49C51.2091 52 53 50.2091 53 48V19C53 16.7909 51.2091 15 49 15Z" fill="url(#paint0_linear_3606_5767)"></path>
+<path id="Rectangle 119" d="M23 36C23 34.3431 24.3431 33 26 33H62V39H26C24.3431 39 23 37.6569 23 36Z" fill="white"></path>
+<path id="Vector 23" d="M52.0001 32.5H26.8153C26.6102 32.5 26.41 32.5631 26.2419 32.6808L22.6704 35.1808C22.1017 35.5789 22.1017 36.4211 22.6704 36.8192L26.2419 39.3192C26.41 39.4369 26.6102 39.5 26.8153 39.5H52.0001M52.0001 32.5H61.0001C61.5524 32.5 62.0001 32.9477 62.0001 33.5V38.5C62.0001 39.0523 61.5524 39.5 61.0001 39.5H52.0001M52.0001 32.5V16.0123C52.0001 15.4552 51.5449 15.0056 50.9879 15.0123L11.0001 15.5M11.0001 15.5V12.0571C11.0001 11.483 10.5184 11.0247 9.95108 11.1129C6.79085 11.6041 2.00011 13.6386 2.00011 19C2.00011 25 2.00011 37.8333 2.00011 43.5M11.0001 15.5V38.628C11.0001 39.1096 10.6097 39.5 10.1281 39.5C10.0432 39.5 9.95757 39.4868 9.8758 39.4641C5.93801 38.3698 2.98973 41.6857 2.00011 43.5M2.00011 43.5C1.33345 46.6667 2.00011 52.9 10.0001 52.5C17.7551 52.1123 39.9185 52.3196 50.9852 52.4845C51.5435 52.4928 52.0001 52.0426 52.0001 51.4843V39.5" stroke="#08526D" stroke-width="1.5" class="id_anim_stroke-property2" data-duration="3.125" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 291.494px; animation: 3.125s linear 0s 1 normal forwards running id_anim_stroke-property2;"></path>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_3606_5767" x1="33.0644" y1="74.7481" x2="30.0087" y2="26.4526" gradientUnits="userSpaceOnUse">
+<stop stop-color="#32B9E9"></stop>
+<stop offset="0.961538" stop-color="#32B9E9" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+<style>
+        @keyframes id_anim_stroke-property2{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 291.49395751953125px;
+            }
+        
+            50%{
+                stroke-dashoffset: -145.74697875976562px; 
+        stroke-dasharray: 145.74697875976562px, 145.74697875976562px;
+            }
+        
+            100%{
+                stroke-dashoffset: -291.49395751953125px; 
+        stroke-dasharray: 291.49395751953125px, 0px;
+            }
+        
+        }
+        </style></svg>

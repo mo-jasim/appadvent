@@ -1,0 +1,38 @@
+.hero-container22 {
+  width: 100%; 
+  min-height: 1950px;
+  background-image: 
+    linear-gradient(to bottom, #EAF8FD 0%, #FFFFFF 100%),
+    url("/Polygon 3 (2).png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, 1600px 1200px;   
+  /* background-position: top center, top center; */
+  background-blend-mode: overlay;
+}
+
+
+@media (max-width: 640px) {
+  .hero-container22 {
+    height: 5000px;               
+    background-size: 1600px 1800px;  
+    background-position: top center;
+  }
+}
+
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .hero-container22 {
+    height: 3700px;               
+    background-size: 1300px 1600px;  
+    /* background-position: top center; */
+  }
+}
+
+
+@media (min-width: 1025px) {
+  .hero-container22 {
+    height: 3550px;
+    background-size: 1600px 1450px; 
+    background-position: top center;
+  }
+}

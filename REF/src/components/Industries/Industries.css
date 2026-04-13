@@ -1,0 +1,24 @@
+.hero-container1 {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #f5f7f8, #FFFFFF),
+    url("/Polygon 3 (2).png");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: top center; 
+  background-blend-mode: overlay; 
+}
+
+
+@media (max-width: 640px) {
+  .hero-container1 {
+    background-size: contain;
+  }
+}
+
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .hero-container1 {
+    background-size: 100% auto;
+  }
+}
