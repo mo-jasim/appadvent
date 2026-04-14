@@ -61,13 +61,13 @@ const MarketingCompany: React.FC = () => {
 
     return (
         <>
-            <section className="text-black py-10 md:py-20 px-4 font-THICCCBOI max-w-7xl mx-auto">
+            <section className="w-full bg-[#001F26] py-10 md:py-20 font-THICCCBOI">
                 <div className="max-w-7xl mx-auto">
 
                     <div className="text-center mb-12 md:mb-16 max-w-6xl mx-auto">
-                        <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-bold mb-4">
+                        <h2 className="text-white text-[32px] sm:text-[40px] md:text-[48px] font-bold mb-4">
                             Why You Choose our Digital Marketing company ?                   </h2>
-                        <p className="text-gray-500 text-[16px] sm:text-[18px] md:text-[20px] font-THICCCBOI">
+                        <p className="text-white text-[16px] sm:text-[18px] md:text-[20px] font-THICCCBOI">
                             We assists in specific development stages as well as provides full-cycle mobile app implementation. Our mobile app development services include:
                         </p>
                     </div>
@@ -94,8 +94,8 @@ const MarketingCompany: React.FC = () => {
                                     />
                                 </div>
 
-                                <h3 className="font-bold text-[24px]">{item.title}</h3>
-                                <p className="text-gray-500 text-[16px] font-THICCCBOI">
+                                <h3 className="font-bold text-start text-[24px]">{item.title}</h3>
+                                <p className="text-black text-start text-[16px] font-THICCCBOI">
                                     Our base, robust, and extensible arch allows our team to perform custom requirements implementing custom features for custom needs.
                                 </p>
                             </div>

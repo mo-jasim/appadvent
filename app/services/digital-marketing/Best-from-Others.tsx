@@ -74,7 +74,7 @@ const BestFromOthers: React.FC = () => {
                 <div className="text-center mb-12 md:mb-16 max-w-7xl mx-auto">
                     <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-bold mb-4">
                         How our Digital Marketing are Best from Others                   </h2>
-                    <p className="text-gray-600 text-sm md:text-[16px] leading-relaxed">
+                    <p className="text-black text-sm md:text-[16px] leading-relaxed">
                         Web development services help create all types of web-based software and ensure great experience for web users. Different types of web solutions may seem similar from the outside, but we approach them differently and know what factors are winning in each case                    </p>
                 </div>
 
@@ -101,7 +101,7 @@ const BestFromOthers: React.FC = () => {
                             </div>
 
                             <h3 className="font-bold text-[20px] md:text-[24px] mb-2">{item.title}</h3>
-                            <p className="text-gray-500 text-sm md:text-[16px] font-THICCCBOI">
+                            <p className="text-black text-sm md:text-[16px] font-THICCCBOI">
                                 Our base, robust, and extensible arch allows our team to perform custom requirements implementing custom features for custom needs.
                             </p>
                         </div>

@@ -1,7 +1,7 @@
 const DevelopmentSkills = () => {
     return (
         <>
-            <section className="py-10 md:py-20 px-4 font-THICCCBOI">
+            <section className="mt-[80px] mb-[80px] px-4 font-THICCCBOI">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-8 md:mb-12">
                         <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-bold mb-2 leading-tight">

@@ -99,7 +99,7 @@ const ScienceSoft: React.FC = () => {
                             </div>
 
                             <h3 className="font-bold text-[20px] md:text-[24px] mb-2">{item.title}</h3>
-                            <p className="text-gray-500 text-[14px] md:text-[16px] font-THICCCBOI">
+                            <p className="text-black text-[14px] md:text-[16px] font-THICCCBOI">
                                 {item.desc}
                             </p>
                         </div>

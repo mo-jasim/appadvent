@@ -34,13 +34,13 @@ const AverageCost = () => {
 
     return (
         <>
-            <section className="py-10 md:py-20 font-THICCCBOI bg-[#001F26] text-white">
+            <section className="mt-[80px] mb-[80px] pt-[80px] pb-[80px] font-THICCCBOI bg-[#001F26] text-white">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-12 md:mb-16">
                         <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-bold mb-4 md:mb-6 leading-tight">
                             Average Cost of Different Web Solutions
                         </h2>
-                        <p className="text-white/80 text-[16px] md:text-[18px] max-w-4xl mx-auto leading-relaxed">
+                        <p className="text-white/80 text-[16px] md:text-[18px] max-w-7xl mx-auto leading-relaxed">
                             Web solutions are very different in functionality and scale, from simple corporate websites to complex enterprise systems.
                             Logically, the range of costs is wide too. Take a look at several examples from our practices and don't hesitate to request a free
                             quote that will be tailored to your specific solution.
@@ -60,8 +60,8 @@ const AverageCost = () => {
                                 <div className="flex flex-col gap-4 w-full">
                                     {plan.features.map((feature, idx) => (
                                         <div key={idx} className="flex items-start gap-3">
-                                            <FaRegStar className="text-[#FF6B6B] w-5 h-5 flex-shrink-0 mt-1" />
-                                            <p className="text-gray-600 text-[15px] leading-relaxed">
+                                            <FaRegStar className="text-[#FF6B6B] w-[20px] h-[20px] flex-shrink-0 mt-1" />
+                                            <p className="text-black text-[16px] text-regular leading-relaxed">
                                                 {feature}
                                             </p>
                                         </div>

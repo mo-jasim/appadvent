@@ -42,10 +42,10 @@ const DevelopmentCycle = () => {
     ];
 
     return (
-        <section className="py-10 md:py-20 font-THICCCBOI relative overflow-hidden">
+        <section className="mt-[80px] mb-[80px] font-THICCCBOI relative overflow-hidden">
             {/* Background decorative elements */}
-            <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-200 rounded-full blur-[100px] opacity-20 -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
-            <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-200 rounded-full blur-[100px] opacity-20 translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
+            <div className="absolute top-0 left-0 w-[500px] h-[500px] pointer-events-none"></div>
+            <div className="absolute bottom-0 right-0 w-[500px] h-[500px] pointer-events-none"></div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-4">
                 <div className="text-center mb-12 md:mb-16">
@@ -64,7 +64,7 @@ const DevelopmentCycle = () => {
                             <h3 className="text-[20px] font-bold text-black mb-3">
                                 {item.title}
                             </h3>
-                            <p className="text-gray-500 text-[16px] leading-relaxed">
+                            <p className="text-black text-[16px] leading-relaxed">
                                 {item.description}
                             </p>
                         </div>

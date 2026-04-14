@@ -93,14 +93,14 @@ const SoftwareMaintenance: React.FC = () => {
     };
 
     return (
-        <section className="text-black py-10 md:py-20 px-4 font-THICCCBOI max-w-6xl mx-auto">
+        <section className="text-black mt-[80px] mb-[80px] px-4 font-THICCCBOI max-w-6xl mx-auto">
             <div className="max-w-6xl mx-auto">
 
                 <div className="text-center mb-12 md:mb-16 px-2">
                     <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-bold mb-2 leading-tight">
                         Our Software Maintenance Teams
                     </h2>
-                    <p className="text-gray-500 text-[16px] sm:text-[18px] font-THICCCBOI">
+                    <p className="text-black text-[16px] sm:text-[18px] font-THICCCBOI">
                         Web development services help create all types of web-based software and ensure great experience for web users. Different types of web solutions may seem similar from the outside, but we approach them differently and know what factors are winning in each case</p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -129,8 +129,8 @@ const SoftwareMaintenance: React.FC = () => {
                             <div className="flex flex-col gap-4 w-full text-left">
                                 {item.points.map((point, idx) => (
                                     <div key={idx} className="flex items-start gap-3">
-                                        <FaRegStar className="text-[#FF6B6B] w-5 h-5 flex-shrink-0 mt-1" />
-                                        <p className="text-gray-500 text-[14px] md:text-[15px] leading-relaxed">
+                                        <FaRegStar className="text-[#FF6B6B] w-[20px] h-[20px] flex-shrink-0 mt-1" />
+                                        <p className="text-black text-[16px] text-regular leading-relaxed">
                                             {point}
                                         </p>
                                     </div>

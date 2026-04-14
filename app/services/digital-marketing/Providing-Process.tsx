@@ -178,7 +178,7 @@ const providingProcess: React.FC = () => {
                                 </div>
 
                                 <h3 className="font-bold text-[20px] md:text-[24px] mb-3">{item.title}</h3>
-                                <p className="text-gray-500 text-[14px] leading-relaxed font-THICCCBOI">
+                                <p className="text-black text-[14px] leading-relaxed font-THICCCBOI">
                                     {item.desc}
                                 </p>
                             </div>

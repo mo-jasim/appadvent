@@ -8,8 +8,8 @@ const footer = () => {
   return (
 
     <>
-      <HaveAProject />
       <QAndA />
+      <HaveAProject />
       <footer className="bg-[#F7F7F7] pt-12 md:pt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-8 lg:gap-10">

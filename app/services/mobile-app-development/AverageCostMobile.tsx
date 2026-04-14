@@ -51,7 +51,7 @@ const AverageCostMobile = () => {
                     <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-bold mb-4 md:mb-6 text-black leading-tight">
                         Average Cost of Mobile App Development
                     </h2>
-                    <p className="text-gray-500 max-w-5xl mx-auto text-[16px] sm:text-[18px] md:text-[20px] leading-relaxed">
+                    <p className="text-gray-500 max-w-8xl mx-auto text-[16px] sm:text-[18px] md:text-[20px] leading-relaxed">
                         The development cost of a mobile app of average complexity varies between $80,000 and $200,000. Please note that we are
                         talking about average figures. Surely, there are apps that cost less or more — it all depends on your requirements. In terms of
                         costs, we can roughly group mobile apps by the complexity of functionality and design and the development efforts required.

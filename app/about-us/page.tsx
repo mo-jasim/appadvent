@@ -7,6 +7,7 @@ import Aboutfoot from './aboutfoot';
 import OurProjectsSection from '../services/website-designing-development/Our-Projects-Section';
 import { useState, useEffect } from 'react';
 import ConsultationModal from '@/components/ConsultationModal';
+import CompaniesLove from '../services/website-designing-development/Companies-Love';
 
 function page() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -27,8 +28,8 @@ function page() {
       <div className="font-THICCCBOI">
         <div className="flex flex-col items-center">
           <div className="bg-[url('/images/bgimg.png')] bg-cover bg-center w-full min-h-96 sm:min-h-[500px] lg:min-h-[600px] py-8 sm:py-12 lg:py-16 text-center flex flex-col justify-center items-center px-4">
-            <h1 className='text-[50px] sm:text-[55px] lg:text-[60px] font-bold mb-6 gradient-text font-THICCCBOI leading-tight'>{title}</h1>
-            <h1 className='text-white text-[35px] sm:text-[40px] lg:text-[48px] font-bold mb-6 px-2 font-THICCCBOI'>{heading}</h1>
+            <h1 className='text-[50px] sm:text-[55px] lg:text-[60px] font-bold mb-[20px] gradient-text font-THICCCBOI leading-tight'>{title}</h1>
+            <h1 className='text-white text-[35px] sm:text-[40px] lg:text-[48px] font-bold font-THICCCBOI'>{heading}</h1>
             <h5 className='max-w-6xl mb-8 text-center text-white text-[20px] sm:text-base lg:text-lg font-medium px-2 sm:px-4 font-THICCCBOI leading-relaxed'>
               {description}
             </h5>
@@ -80,7 +81,7 @@ function page() {
 
         <OurProjectsSection />
 
-        <ClientTestimonial />
+        <CompaniesLove />
       </div>
 
       {isModalOpen && (

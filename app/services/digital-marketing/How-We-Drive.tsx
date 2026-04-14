@@ -3,21 +3,21 @@ import Image from 'next/image';
 
 const HowWeDrive = () => {
     return (
-        <section className="font-THICCCBOI py-20 bg-gradient-to-br from-white via-indigo-50/30 to-blue-100/40 relative overflow-hidden">
+        <section className="font-THICCCBOI py-20 relative overflow-hidden">
             {/* Background decorative elements */}
-            <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-purple-100/50 to-transparent -z-10 blur-3xl"></div>
-            <div className="absolute bottom-0 right-0 w-1/2 h-full bg-gradient-to-l from-cyan-100/50 to-transparent -z-10 blur-3xl"></div>
+            <div className="absolute top-0 left-0 w-1/2 h-full"></div>
+            <div className="absolute bottom-0 right-0 w-1/2 h-full"></div>
 
             <div className="max-w-7xl mx-auto px-4 md:px-8">
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
 
                     {/* Left Content Area */}
                     <div className="w-full lg:w-1/2 flex flex-col gap-6">
-                        <h2 className="text-[32px] sm:text-[36px] md:text-[48px] font-bold text-[#111827] leading-tight max-w-lg">
+                        <h2 className="text-[48px] sm:text-[36px] md:text-[48px] font-bold text-[#111827] leading-tight max-w-lg">
                             How We Drive <span className="text-[#32B9E9]">Growth</span> for Your Business?
                         </h2>
 
-                        <div className="flex flex-col gap-6 text-[15px] md:text-[16px] text-gray-700 leading-relaxed">
+                        <div className="flex flex-col gap-6 text-[16px] md:text-[16px] text-medium text-black leading-relaxed">
                             <p>
                                 At Appadvent, growth happens when real customer challenges are
                                 understood and solved with the right digital strategy. Our approach
