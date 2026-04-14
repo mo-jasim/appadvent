@@ -70,9 +70,9 @@ const ClientTestimonial = () => {
 
     return (
 
-        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 mb-[80px] font-THICCCBOI overflow-hidden">
+        <div className="max-w-9xl mb-[80px] font-THICCCBOI overflow-hidden">
 
-            <h2 className="font-bold mb-10 pl-0 sm:pl-10 text-[32px] sm:text-[40px] md:text-[48px] lg:text-[48px]">
+            <h2 className="font-bold mb-10 pl-0 sm:pl-10 px-4 text-[32px] sm:text-[40px] md:text-[48px] lg:text-[48px]">
                 Why <span className="text-[#32B9E9]">Companies Love</span> Working with Our Web <br className="hidden sm:block" /> Development Team
             </h2>
             <div

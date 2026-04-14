@@ -90,7 +90,7 @@ const OurProjectsSection = () => {
     }
 
     return (
-        <section className="text-black font-THICCCBOI mt-[80px]">
+        <section className="text-black font-THICCCBOI mt-[80px] mb-[80px]">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-12">
                     <div className="max-w-7xl mx-auto">

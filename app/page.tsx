@@ -9,12 +9,7 @@ import ConsultationModal from '@/components/ConsultationModal';
 import { ArrowRight } from 'lucide-react';
 import Designing from './services/case-study/Goalkick/Designing';
 
-const stats = [
-  { value: '4+', label: 'Years of experience' },
-  { value: '20+', label: 'Team member' },
-  { value: '25+', label: 'Product Delivered' },
-  { value: '4+', label: 'Rating on Clutch' }
-];
+
 
 
 const servicesData = [
@@ -58,7 +53,7 @@ const HomePage = () => {
         <div className="relative z-10">
 
           <p className="max-w-5xl mx-auto text-black font-bold text-[32px] sm:text-[40px] md:text-[56px] text-center leading-tight  font-extrabold">
-            Custom111 Application & Website Development Services
+            Custom Application & Website Development Services
           </p>
 
           {/* Get a free consultation button */}
@@ -151,10 +146,11 @@ const HomePage = () => {
         {/* Full-bleed 50/50 background */}
         <div className="flex flex-col lg:flex-row w-full h-auto lg:h-[764px]">
           <div className="lg:w-1/3 w-full h-[300px] lg:h-full relative">
-            <img
+            <Image
               src="/images/img7.png"
               alt="Industry"
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
             />
           </div>
           {/* Industries We Cater To */}

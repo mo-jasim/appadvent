@@ -153,7 +153,7 @@ export default function Designing() {
                   let pos = (i - tick + 1) % 6;
                   if (pos < 0) pos += 6;
 
-                  let isMid = pos === 1;
+                  const isMid = pos === 1;
 
                   let opacity = 1;
                   if (pos === 5 || pos === 4 || pos === 3) opacity = 0;
