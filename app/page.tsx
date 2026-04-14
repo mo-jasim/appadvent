@@ -52,7 +52,7 @@ const HomePage = () => {
 
         <div className="relative z-10">
 
-          <p className="max-w-5xl mx-auto text-black font-bold text-[32px] sm:text-[40px] md:text-[56px] text-center leading-tight  font-extrabold">
+          <p className="max-w-5xl mx-auto px-4 text-black font-bold text-[32px] sm:text-[40px] md:text-[56px] text-center leading-tight  font-extrabold">
             Custom111 Application & Website Development Services
           </p>
 
@@ -78,7 +78,7 @@ const HomePage = () => {
           {/* Stats */}
           <div className="
       grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4
-      gap-4 sm:gap-6
+      gap-4 sm:gap-6 px-4
       max-w-7xl mx-auto mt-12 md:mt-16
     ">
             {[
@@ -154,11 +154,11 @@ const HomePage = () => {
             />
           </div>
           {/* Industries We Cater To */}
-          <div className="lg:w-2/3 w-full bg-[#002434] text-white flex flex-col px-6 py-36 lg:px-36">
-            <h2 className="text-[36px] md:text-[48px] font-bold mb-6">
+          <div className="lg:w-2/3 w-full bg-[#002434] text-white flex flex-col px-6 py-16 lg:py-36 lg:px-36">
+            <h2 className="text-[32px] md:text-[48px] font-bold mb-4 md:mb-6">
               Industries We Cater To
             </h2>
-            <p className="text-[#a1b8c1] text-[20px] md:text-[22px] leading-relaxed max-w-[700px]">
+            <p className="text-[#a1b8c1] text-[18px] md:text-[22px] leading-relaxed max-w-[700px]">
               At Appadvent, we blend innovation with technical expertise to provide
               exceptional web and app development solutions.
             </p>
@@ -166,7 +166,7 @@ const HomePage = () => {
         </div>
 
         {/* Floating Cards Array */}
-        <div className="relative z-10 mt-2 lg:-mt-[350px] w-full px-4 lg:px-12">
+        <div className="relative z-10 mt-8 lg:-mt-[350px] w-full px-4 lg:px-12 pb-12 lg:pb-0">
           <div className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
             {/* Fintech & Crypto */}
@@ -178,7 +178,7 @@ const HomePage = () => {
                     alt="Fintech"
                     width={56}
                     height={56}
-                    className="mb-8 mr-50"
+                    className="mb-8"
                   />
                   <p className="font-bold text-[20px] text-[#0A1A2E]">Fintech & Crypto</p>
                 </div>
@@ -197,7 +197,7 @@ const HomePage = () => {
                     alt="Retail"
                     width={56}
                     height={56}
-                    className="mb-8 mr-50"
+                    className="mb-8"
                   />
                   <p className="font-bold text-[20px] text-[#0A1A2E]">Retail & E-commerce</p>
                 </div>
@@ -216,7 +216,7 @@ const HomePage = () => {
                     alt="Healthcare"
                     width={56}
                     height={56}
-                    className="mb-8 mr-50"
+                    className="mb-8"
                   />
                   <p className="font-bold text-[20px] text-[#0A1A2E]">Healthcare</p>
                 </div>
@@ -235,7 +235,7 @@ const HomePage = () => {
                     alt="Finance"
                     width={56}
                     height={56}
-                    className="mb-8 mr-50"
+                    className="mb-8"
                   />
                   <p className="font-bold text-[20px] text-[#0A1A2E]">Finance & Banking</p>
                 </div>
