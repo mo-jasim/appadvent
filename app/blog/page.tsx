@@ -214,11 +214,10 @@ export default function BlogPage() {
             <button
               key={page}
               onClick={() => handlePageChange(page)}
-              className={`w-8 h-8 rounded text-sm font-semibold transition-all duration-200 ${
-                currentPage === page
-                  ? "bg-[#0A1A2E] text-white"
-                  : "bg-gray-100 text-[#0A1A2E] hover:bg-gray-200"
-              }`}
+              className={` cursor-pointer w-8 h-8 rounded text-sm font-semibold transition-all duration-200 ${currentPage === page
+                ? "bg-[#0A1A2E] text-white"
+                : "bg-gray-100 text-[#0A1A2E] hover:bg-gray-200"
+                }`}
             >
               {page}
             </button>

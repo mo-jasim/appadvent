@@ -100,7 +100,7 @@ const ContactDrawer: React.FC<ContactDrawerProps> = ({ isOpen, onClose }) => {
         `}
         style={{
           background:
-            "linear-gradient(160deg, #1ab5e8 0%, #0693c7 50%, #0478a8 100%)",
+            "white/80",
         }}
       >
         {/* Close Button */}
@@ -131,10 +131,10 @@ const ContactDrawer: React.FC<ContactDrawerProps> = ({ isOpen, onClose }) => {
                   />
                 </svg>
               </div>
-              <h2 className="text-white text-2xl font-bold mb-3">
+              <h2 className="text-black text-2xl font-bold mb-3">
                 Details Submitted!
               </h2>
-              <p className="text-white/80 text-sm leading-relaxed mb-8">
+              <p className="text-black text-sm leading-relaxed mb-8">
                 Thank you! Our team will thoroughly review your project details
                 and get back to you promptly.
               </p>
@@ -150,7 +150,7 @@ const ContactDrawer: React.FC<ContactDrawerProps> = ({ isOpen, onClose }) => {
                     message: "",
                   });
                 }}
-                className="text-white/70 text-sm underline underline-offset-2 hover:text-white transition-colors"
+                className="text-black text-sm underline underline-offset-2 hover:text-white transition-colors"
               >
                 Submit another request
               </button>
@@ -159,10 +159,10 @@ const ContactDrawer: React.FC<ContactDrawerProps> = ({ isOpen, onClose }) => {
             /* ——— Form State ——— */
             <>
               {/* Header */}
-              <h2 className="text-white text-[26px] font-extrabold leading-snug mb-2 pr-8">
+              <h2 className="text-black text-[26px] font-extrabold leading-snug mb-2 pr-8">
                 Got a project in mind?
               </h2>
-              <p className="text-white text-[14px] leading-relaxed mb-6">
+              <p className="text-black text-[14px] leading-relaxed mb-6">
                 Share the details of your project – like scope, timeframes, or
                 business challenges. Our team will thoroughly review the
                 materials and respond to you promptly.
@@ -179,7 +179,7 @@ const ContactDrawer: React.FC<ContactDrawerProps> = ({ isOpen, onClose }) => {
                     value={formData.fullName}
                     onChange={handleChange}
                     required
-                    className="w-full px-3 py-3 rounded-lg bg-white/95 text-gray-800 placeholder-gray-400 text-[15px] focus:outline-none focus:ring-2 focus:ring-white/60 transition-all"
+                    className="border border-gray-500 w-full px-3 py-3 rounded-lg bg-white/95 text-gray-800 placeholder-gray-400 text-[15px] focus:outline-none focus:ring-2 focus:ring-white/60 transition-all"
                   />
                   <input
                     type="email"
@@ -188,7 +188,7 @@ const ContactDrawer: React.FC<ContactDrawerProps> = ({ isOpen, onClose }) => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-3 py-3 rounded-lg bg-white/95 text-gray-800 placeholder-gray-400 text-[15px] focus:outline-none focus:ring-2 focus:ring-white/60 transition-all"
+                    className="border border-gray-500 w-full px-3 py-3 rounded-lg bg-white/95 text-gray-800 placeholder-gray-400 text-[15px] focus:outline-none focus:ring-2 focus:ring-white/60 transition-all"
                   />
                 </div>
 
@@ -200,7 +200,7 @@ const ContactDrawer: React.FC<ContactDrawerProps> = ({ isOpen, onClose }) => {
                     placeholder="Phone number"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-3 py-3 rounded-lg bg-white/95 text-gray-800 placeholder-gray-400 text-[15px] focus:outline-none focus:ring-2 focus:ring-white/60 transition-all"
+                    className="border border-gray-500 w-full px-3 py-3 rounded-lg bg-white/95 text-gray-800 placeholder-gray-400 text-[15px] focus:outline-none focus:ring-2 focus:ring-white/60 transition-all"
                   />
                   <input
                     type="text"
@@ -208,7 +208,7 @@ const ContactDrawer: React.FC<ContactDrawerProps> = ({ isOpen, onClose }) => {
                     placeholder="Company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-3 py-3 rounded-lg bg-white/95 text-gray-800 placeholder-gray-400 text-[15px] focus:outline-none focus:ring-2 focus:ring-white/60 transition-all"
+                    className="border border-gray-500 w-full px-3 py-3 rounded-lg bg-white/95 text-gray-800 placeholder-gray-400 text-[15px] focus:outline-none focus:ring-2 focus:ring-white/60 transition-all"
                   />
                 </div>
 
@@ -220,7 +220,7 @@ const ContactDrawer: React.FC<ContactDrawerProps> = ({ isOpen, onClose }) => {
                     onChange={handleChange}
                     required
                     style={{ color: formData.service ? "#1f2937" : "#9ca3af" }}
-                    className="w-full px-3 py-3 pr-8 rounded-lg bg-white/95 text-[15px] appearance-none focus:outline-none focus:ring-2 focus:ring-white/60 transition-all"
+                    className="border border-gray-500 w-full px-3 py-3 pr-8 rounded-lg bg-white/95 text-[15px] appearance-none focus:outline-none focus:ring-2 focus:ring-white/60 transition-all"
                   >
                     <option value="" disabled>
                       Select your appropriate services
@@ -244,7 +244,7 @@ const ContactDrawer: React.FC<ContactDrawerProps> = ({ isOpen, onClose }) => {
                   onChange={handleChange}
                   rows={4}
                   required
-                  className="w-full px-3 py-3 rounded-lg bg-white/95 text-gray-800 placeholder-gray-400 text-[15px] focus:outline-none focus:ring-2 focus:ring-white/60 transition-all resize-none"
+                  className="border border-gray-500 w-full px-3 py-3 rounded-lg bg-white/95 text-gray-800 placeholder-gray-400 text-[15px] focus:outline-none focus:ring-2 focus:ring-white/60 transition-all resize-none"
                 />
 
                 {/* Submit */}
