@@ -8,7 +8,7 @@ import { ArrowRight } from 'lucide-react'
 const industries = [
     {
         img: "/images/I6.png",
-        icon: "/images/cpu.svg",
+        icon: "/images/Cpu.svg",
         title: "Fintech & Crypto",
         href: "/services/case-study/Fintech-Crypto",
         desc: "We work primarily within the fintech niche and aim to deliver high-quality software solutions with an emphasis on speed, flexibility, and effectiveness.",
@@ -29,7 +29,7 @@ const industries = [
     },
     {
         img: "/images/I3.png",
-        icon: "/images/bank.svg",
+        icon: "/images/Bank.svg",
         title: "Finance & Banking",
         href: "#",
         desc: "We work primarily within the fintech niche and aim to deliver high-quality software solutions with an emphasis on speed, flexibility, and effectiveness.",

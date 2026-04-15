@@ -35,7 +35,7 @@ export default function Letramway() {
                      playsInline
                      className="absolute inset-0 w-full h-full object-cover"
                   >
-                     <source src="/Letimg/From KlickPin CF Commercial Food Photography & Videography for Coffee Shops Restaurants Bars _ PHOODEcom [Video] _ Workout food Food photography Photographing food.mp4" type="video/mp4" />
+                     <source src="/Letimg/bgvideo" type="video/mp4" />
                   </video>
                   <div className="absolute inset-0 bg-black/60 z-10"></div> {/* Dark Overlay */}
                </div>
@@ -211,7 +211,7 @@ export default function Letramway() {
 
                      {/* Used scale to massively increase the image size visually without pushing the layout to create gaps */}
                      <div className="relative w-full z-10 flex justify-center items-center scale-100 sm:scale-[1.15] md:scale-[1.25] lg:scale-[1.35] origin-center pointer-events-none -mt-4 md:-mt-8 mb-4 md:mb-8">
-                        <Image src="/Letimg/Pcimg.svg" alt="Opportunities Mockup" width={1000} height={500} className="w-full h-auto drop-shadow-2xl" priority />
+                        <Image src="/Letimg/PCimg.svg" alt="Opportunities Mockup" width={1000} height={500} className="w-full h-auto drop-shadow-2xl" priority />
                      </div>
                   </div>
 
