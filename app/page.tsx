@@ -231,7 +231,7 @@ const HomePage = () => {
               <div className="bg-[#F2FCF9] rounded-[20px] p-8 sm:p-10 shadow-sm h-auto flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300 min-h-[260px]">
                 <div className="flex flex-col items-start">
                   <Image
-                    src="/images/Finance & Banking.svg"
+                    src="/images/Finance.svg"
                     alt="Finance"
                     width={56}
                     height={56}
