@@ -86,12 +86,12 @@ export default function CRMcasePage() {
                         </div>
                     </section>
                     {/* Hero Devices Mockup Image Placeholder */}
-                    <div className="flex items-center justify-center px-4 max-w-5xl mx-auto">
+                    <div className="flex items-center justify-center px-4 max-w-5xl mx-auto mt-[80px] mb-[80px]">
                         <img src="/images/img1.svg" alt="img" className="w-full h-auto mt-10" />
                     </div>
 
                     {/* ABOUT SECTION inside Hero container */}
-                    <div className="max-w-6xl mx-auto px-4 pb-12">
+                    <div className="max-w-6xl mx-auto  mt-[50px] mb-[80px] pb-12">
                         <h2 className="text-[32px] md:text-[48px] font-bold text-center text-slate-900 mt-10">About Claim 360 WebApp</h2>
                         <p className="text-[16px] md:text-[18px] text-slate-600 mb-10 text-center leading-relaxed">
                             Claim360 is a web application designed to simplify and automate home insurance claims during natural disasters. With features like email parsing, smart routing, manual claim entry, and an integrated CRM, it ensures faster processing and better transparency. The platform bridges the gap between insurers and homeowners, turning a stressful process into a smooth digital experience.
@@ -157,7 +157,7 @@ export default function CRMcasePage() {
 
 
                     {/* --- OPPORTUNITIES AWAIT SECTION --- */}
-                    <section className="pb-10 pt-10 px-4 max-w-7xl mx-auto">
+                    <section className=" mt-[80px] mb-[80px] max-w-7xl mx-auto">
                         <h2 className="text-[32px] md:text-[48px] font-bold text-slate-900 mb-12 text-center lg:text-left">Opportunities await</h2>
 
                         <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
@@ -246,7 +246,7 @@ export default function CRMcasePage() {
                     <Claim360WebApp />
                     <Designing />
                     {/* 8. GLIMPSES OF APP UI SCREENS */}
-                    <section className="w-full py-16 md:py-24 px-4 text-center">
+                    <section className="w-full  mt-[80px] mb-[80px] px-4 text-center">
                         <h2 className="text-2xl sm:text-3xl md:text-[40px] font-bold text-[#0f172a] mb-10 md:mb-16">
                             Glimpses of App UI Screens
                         </h2>

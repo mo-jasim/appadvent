@@ -76,10 +76,10 @@ const MarketingCompany: React.FC = () => {
                         {cards.map((item, index) => (
                             <div
                                 key={index}
-                                className="bg-white p-8 rounded-[20px] flex flex-col text-center shadow-sm hover:shadow-2xl transition-all"
+                                className="group bg-white p-6 rounded-[20px] flex flex-col items-start text-start gap-4 border-2 border-transparent hover:border-[#32B9E9]/40 hover:shadow-[0_20px_40px_rgba(50,185,233,0.15)] hover:-translate-y-2 cursor-pointer transition-all duration-300 ease-in-out h-full justify-center min-h-[180px]"
                             >
                                 <div
-                                    className="p-3 rounded-full cursor-pointer"
+                                    className="flex-shrink-0 w-16 h-16 flex items-start justify-start transform group-hover:scale-110 group-hover:-translate-y-1 transition-transform duration-300 ease-in-out"
                                     onMouseEnter={() => handleHover(index)}
                                 >
                                     <Image
@@ -94,7 +94,7 @@ const MarketingCompany: React.FC = () => {
                                     />
                                 </div>
 
-                                <h3 className="font-bold text-start text-[24px]">{item.title}</h3>
+                                <h3 className="font-bold text-start text-[24px] font-bold text-[16px] text-gray-900 leading-tight group-hover:text-[#32B9E9] transition-colors duration-300 ease-in-out">{item.title}</h3>
                                 <p className="text-black text-start text-[16px] font-THICCCBOI">
                                     Our base, robust, and extensible arch allows our team to perform custom requirements implementing custom features for custom needs.
                                 </p>

@@ -10,7 +10,7 @@ const footer = () => {
     <>
       <QAndA />
       <HaveAProject />
-      <footer className="bg-[#F7F7F7] pt-12 md:pt-16">
+      <footer className="pt-12 md:pt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-8 lg:gap-10">
             <div className="sm:col-span-2 md:col-span-4 lg:col-span-3">
@@ -70,23 +70,23 @@ const footer = () => {
             <div className="md:col-span-4 lg:col-span-2">
               <h3 className="font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2 text-sm text-gray-600">
-                <li><Link href="/about-us" className="mb-4 block hover:text-[#32B9E9]">About Us</Link></li>
-                <li><Link href="/portfolio" className="mb-4 block hover:text-[#32B9E9]">Portfolio</Link></li>
-                <li><Link href="/blogs" className="mb-4 block hover:text-[#32B9E9]">Blogs</Link></li>
-                <li><Link href="/contact" className="mb-4 block hover:text-[#32B9E9]">Contact Us</Link></li>
+                <li className="mb-4 block hover:text-[#32B9E9]"><Link href="/about-us">About Us</Link></li>
+                <li className="mb-4 block hover:text-[#32B9E9]"><Link href="/portfolio">Portfolio</Link></li>
+                <li className="mb-4 block hover:text-[#32B9E9]"><Link href="/blog">Blogs</Link></li>
+                <li className="mb-4 block hover:text-[#32B9E9]"><Link href="/ContactDrawer">Contact Us</Link></li>
               </ul>
             </div>
 
-
+            {/* Our Services */}
             <div className="md:col-span-4 lg:col-span-3">
               <h3 className="font-semibold mb-4">Our Services</h3>
               <ul className="space-y-2 text-sm text-gray-600">
-                <li><Link href="/services/website-designing-development" className="mb-4 block hover:text-[#32B9E9]">Website Designing & Development</Link></li>
-                <li><Link href="/services/mobile-app-development" className="mb-4 block hover:text-[#32B9E9]">Mobile App Development</Link></li>
-                <li><Link href="/services/digital-marketing" className="mb-4 block hover:text-[#32B9E9]">Digital Marketing Services</Link></li>
-                <li><Link href="/services/staff-augmentation" className="mb-4 block hover:text-[#32B9E9]">Staff Augmentation</Link></li>
-                <li><Link href="/services/support-maintenance" className="mb-4 block hover:text-[#32B9E9]">Support & Maintenance</Link></li>
-                <li><Link href="/services/custom-based-services" className="mb-4 block hover:text-[#32B9E9]">Custom Based Services</Link></li>
+                <li className="mb-4 hover:text-[#32B9E9] cursor-pointer"><Link href="/services/website-designing-development" className="block text-inherit hover:text-[#32B9E9] transition-colors duration-200">Website Designing &amp; Development</Link></li>
+                <li className="mb-4 hover:text-[#32B9E9] cursor-pointer"><Link href="/services/mobile-app-development" className="block text-inherit hover:text-[#32B9E9] transition-colors duration-200">Mobile App Development</Link></li>
+                <li className="mb-4 hover:text-[#32B9E9] cursor-pointer"><Link href="/services/digital-marketing" className="block text-inherit hover:text-[#32B9E9] transition-colors duration-200">Digital Marketing Services</Link></li>
+                <li className="mb-4 hover:text-[#32B9E9] cursor-pointer"><Link href="/services/staff-augmentation" className="block text-inherit hover:text-[#32B9E9] transition-colors duration-200">Staff Augmentation</Link></li>
+                <li className="mb-4 hover:text-[#32B9E9] cursor-pointer"><Link href="/services/support-maintenance" className="block text-inherit hover:text-[#32B9E9] transition-colors duration-200">Support &amp; Maintenance</Link></li>
+                <li className="mb-4 hover:text-[#32B9E9] cursor-pointer"><Link href="/services/custom-based-services" className="block text-inherit hover:text-[#32B9E9] transition-colors duration-200">Custom Based Services</Link></li>
               </ul>
             </div>
 

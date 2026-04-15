@@ -82,7 +82,7 @@ export default function Designing() {
   const botStage = STAGES[(tick + 1) % 6];
 
   return (
-    <section ref={sectionRef} className="relative w-full overflow-hidden font-THICCCBOI" style={{ marginTop: "80px", marginBottom: "80px" }}>
+    <section ref={sectionRef} className="relative w-full font-THICCCBOI" style={{ marginTop: "80px", marginBottom: "80px" }}>
 
       {/* keyframes injected once */}
       <style>{`

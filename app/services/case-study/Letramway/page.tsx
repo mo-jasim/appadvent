@@ -25,7 +25,7 @@ export default function Letramway() {
       <div className="w-full font-THICCCBOI overflow-x-hidden">
          <div className='w-full' style={{ backgroundImage: "url('/images/polygon.png')", }} >
             {/* 1. HERO SECTION */}
-            <section className="relative w-full h-[500px] md:h-[600px] flex items-center justify-center pt-16 md:pt-0">
+            <section className="relative w-full h-[500px] md:h-[600px] flex items-center justify-center pt-16 md:pt-0 mb-[80px]">
                {/* Background Video */}
                <div className="absolute inset-0 w-full h-full overflow-hidden">
                   <video
@@ -35,7 +35,7 @@ export default function Letramway() {
                      playsInline
                      className="absolute inset-0 w-full h-full object-cover"
                   >
-                     <source src="/Letimg/bgvideo" type="video/mp4" />
+                     <source src="/Letimg/bg.video.mp4" type="video/mp4" />
                   </video>
                   <div className="absolute inset-0 bg-black/60 z-10"></div> {/* Dark Overlay */}
                </div>
@@ -63,7 +63,7 @@ export default function Letramway() {
                </div>
             </section>
             {/* About */}
-            <section className="relative w-full overflow-hidden bg-gradient-to-b from-[#eaf4ff] via-[#f0f4ff]/80 to-white pt-10 md:pt-24 pb-4 md:pb-12">
+            <section className="relative w-full  mt-[80px] mb-[80px]">
                {/* Background light glow */}
                <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[#b8deff]/30 blur-[150px] rounded-full z-0 pointer-events-none"></div>
 
@@ -143,7 +143,7 @@ export default function Letramway() {
             </section>
 
             {/* --- THE RESULTS SECTION --- */}
-            <section className="w-full bg-gradient-to-r from-[#1E293B] via-[#471536] to-[#7F1D1D] text-white py-10 px-4">
+            <section className="w-full bg-gradient-to-r from-[#1E293B] via-[#471536] to-[#7F1D1D] text-white  mt-[80px] mb-[80px] pb-[30px]">
                <div className="max-w-6xl mx-auto px-4 md:px-0">
                   <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold mb-8 md:mb-10 text-center md:text-left md:ml-8">The Results</h2>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
@@ -193,7 +193,7 @@ export default function Letramway() {
             </section>
 
             {/* 4. OPPORTUNITIES AWAIT */}
-            <section className="relative w-full py-16 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+            <section className="relative w-full  mt-[80px] mb-[80px] overflow-hidden">
                {/* Huge Faint Watermark Text */}
                <div className="absolute top-[8%] lg:top-[5%] left-1/2 -translate-x-1/2 text-[45px] sm:text-[70px] md:text-[110px] lg:text-[140px] font-black text-[#f1f5f9] whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none max-w-none">
                   OPPORTUNITIES AWAIT
@@ -269,7 +269,7 @@ export default function Letramway() {
             </section>
 
             {/* 5. OUR BEST SOLUTIONS */}
-            <section className="w-full py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#1E2541] via-[#35254A] to-[#601A33] overflow-hidden text-white relative">
+            <section className="w-full mt-[80px] mb-[80px] bg-gradient-to-r from-[#1E2541] via-[#35254A] to-[#601A33] overflow-hidden text-white relative">
                {/* Subtle background glow */}
                <div className="absolute inset-0 bg-blue-500/10 blur-[100px] mix-blend-screen pointer-events-none"></div>
 
@@ -333,7 +333,7 @@ export default function Letramway() {
             <Designing />
 
             {/* 8. GLIMPSES OF APP UI SCREENS */}
-            <section className="w-full py-16 md:py-24 px-4 text-center">
+            <section className="w-full mt-[80px] mb-[80px] text-center">
                <h2 className="text-2xl sm:text-3xl md:text-[40px] font-bold text-[#0f172a] mb-10 md:mb-16">
                   Glimpses of App UI Screens
                </h2>

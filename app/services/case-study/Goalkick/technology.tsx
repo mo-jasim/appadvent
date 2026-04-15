@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Technology() {
     return (
-        <section className="relative w-full py-24 px-4 sm:px-6 lg:px-8 overflow-hidden font-THICCCBOI border-t border-gray-100">
+        <section className="relative w-full mt-[80px] mb-[80px] font-THICCCBOI">
             {/* Mesh Gradient Background matching layout */}
             <div className="absolute top-[10%] left-[20%] w-[60%] h-[80%] bg-pink-100/50 blur-[120px] rounded-full z-[0]"></div>
             <div className="absolute top-[30%] left-[50%] w-[40%] h-[60%] bg-blue-100/40 blur-[120px] rounded-full z-[0]"></div>

@@ -87,7 +87,7 @@ export default function GoalkickCaseStudy() {
                </section>
 
                {/* 2. ABOUT APP SECTION */}
-               <section className="relative w-full py-5 px-4 sm:px-6 lg:px-8 overflow-hidden">
+               <section className="relative w-full mt-[80px] mb-[80px] overflow-hidden">
                   {/* Glow Background */}
                   <div className="absolute left-[-10%] top-[20%] w-[40%] h-[60%] bg-blue-100/60 blur-[120px] rounded-full z-0 pointer-events-none"></div>
 
@@ -145,7 +145,7 @@ export default function GoalkickCaseStudy() {
                </section>
 
                {/* 3. THE RESULTS BANNER */}
-               <section className="w-full bg-[#2a3e47] py-5 md:py-5 px-4">
+               <section className="w-full bg-[#2a3e47] pb-[30px] pt-[20px] mt-[80px] mb-[80px]">
                   <div className="max-w-[1200px] mx-auto">
                      <h2 className="text-2xl font-bold text-white mb-8 md:mb-10 border-l-4 border-blue-400 pl-4">The Results</h2>
                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
@@ -190,7 +190,7 @@ export default function GoalkickCaseStudy() {
                </section>
 
                {/* 4. OPPORTUNITIES AWAIT */}
-               <section className="w-full pt-12 md:pt-16 pb-16 md:pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+               <section className="w-full mt-[80px] mb-[80px] overflow-hidden">
                   <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center gap-8 md:gap-12 lg:gap-16">
 
                      {/* Left List Content */}
@@ -238,7 +238,7 @@ export default function GoalkickCaseStudy() {
                </section>
 
                {/* 5. OUR BEST SOLUTIONS */}
-               <section className="w-full pt-12 md:pt-16 pb-16 md:pb-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#0d1627] via-[#21163a] to-[#451631] overflow-hidden text-white relative">
+               <section className="w-full mt-[80px] mb-[80px] pt-[80px] pb-[80px] bg-gradient-to-r from-[#0d1627] via-[#21163a] to-[#451631] overflow-hidden text-white relative">
                   {/* Subtle background glow */}
                   <div className="absolute inset-0 bg-blue-900/10 blur-[100px] mix-blend-screen pointer-events-none"></div>
 
@@ -300,7 +300,7 @@ export default function GoalkickCaseStudy() {
                <Designing />
 
                {/* 8. GLIMPSES OF APP UI SCREENS */}
-               <section className="relative w-full py-16 md:py-24 px-4 bg-[#fcfdfe] text-center overflow-hidden font-THICCCBOI">
+               <section className="relative w-full mt-[80px] mb-[80px] text-center overflow-hidden font-THICCCBOI">
                   {/* Left Edge Neon Glow Blob (Matching image design) */}
                   <div className="absolute top-[30%] left-[-10%] w-[80%] md:w-[45%] h-[50%] bg-[#baddfc] blur-[120px] rounded-full z-0 pointer-events-none"></div>
 

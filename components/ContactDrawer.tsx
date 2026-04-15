@@ -84,7 +84,7 @@ const ContactDrawer: React.FC<ContactDrawerProps> = ({ isOpen, onClose }) => {
       {/* Backdrop */}
       <div
         onClick={onClose}
-        className={`
+        className={`font-THICCCBOI
           fixed inset-0 z-[98] bg-black/40 backdrop-blur-[2px]
           transition-opacity duration-300
           ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}
@@ -93,21 +93,21 @@ const ContactDrawer: React.FC<ContactDrawerProps> = ({ isOpen, onClose }) => {
 
       {/* Drawer Panel */}
       <div
-        className={`
+        className={`font-THICCCBOI
           fixed top-0 right-0 z-[99] h-full w-full max-w-[460px]
           transition-transform duration-[380ms] ease-[cubic-bezier(0.32,0.72,0,1)]
           ${isOpen ? "translate-x-0" : "translate-x-full"}
         `}
         style={{
           background:
-            "white/80",
+            "white",
         }}
       >
         {/* Close Button */}
         <button
           onClick={onClose}
           aria-label="Close contact panel"
-          className="absolute top-4 right-4 z-10 w-7 h-7 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/40 transition-colors"
+          className="font-THICCCBOI absolute top-4 right-4 z-10 w-7 h-7 flex items-center justify-center rounded-full bg-black/20 hover:bg-black/40 transition-colors"
         >
           <X size={15} className="text-white" />
         </button>
@@ -115,8 +115,8 @@ const ContactDrawer: React.FC<ContactDrawerProps> = ({ isOpen, onClose }) => {
         <div className="h-full overflow-y-auto px-7 pt-8 pb-8 font-THICCCBOI">
           {submitted ? (
             /* ——— Success State ——— */
-            <div className="flex flex-col items-center justify-center h-full text-center">
-              <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mb-5">
+            <div className="font-THICCCBOI flex flex-col items-center justify-center h-full text-center">
+              <div className="w-16 h-16 rounded-full bg-white/40 flex items-center justify-center mb-5">
                 <svg
                   className="w-8 h-8 text-white"
                   fill="none"
@@ -131,10 +131,10 @@ const ContactDrawer: React.FC<ContactDrawerProps> = ({ isOpen, onClose }) => {
                   />
                 </svg>
               </div>
-              <h2 className="text-black text-2xl font-bold mb-3">
+              <h2 className="font-THICCCBOI text-black text-2xl font-bold mb-3">
                 Details Submitted!
               </h2>
-              <p className="text-black text-sm leading-relaxed mb-8">
+              <p className="font-THICCCBOI text-black text-[16px] leading-relaxed mb-8">
                 Thank you! Our team will thoroughly review your project details
                 and get back to you promptly.
               </p>
@@ -159,10 +159,10 @@ const ContactDrawer: React.FC<ContactDrawerProps> = ({ isOpen, onClose }) => {
             /* ——— Form State ——— */
             <>
               {/* Header */}
-              <h2 className="text-black text-[26px] font-extrabold leading-snug mb-2 pr-8">
+              <h2 className="font-THICCCBOI text-black text-[26px] font-extrabold leading-snug mb-2 pr-8">
                 Got a project in mind?
               </h2>
-              <p className="text-black text-[14px] leading-relaxed mb-6">
+              <p className="font-THICCCBOI text-black text-[16px] leading-relaxed mb-6">
                 Share the details of your project – like scope, timeframes, or
                 business challenges. Our team will thoroughly review the
                 materials and respond to you promptly.
@@ -246,13 +246,12 @@ const ContactDrawer: React.FC<ContactDrawerProps> = ({ isOpen, onClose }) => {
                   required
                   className="border border-gray-500 w-full px-3 py-3 rounded-lg bg-white/95 text-gray-800 placeholder-gray-400 text-[15px] focus:outline-none focus:ring-2 focus:ring-white/60 transition-all resize-none"
                 />
-
                 {/* Submit */}
                 <button
                   type="submit"
                   className="
                     w-full mt-1 py-3 rounded-lg
-                    bg-[#0571a0] hover:bg-[#045d87]
+                    bg-[#32B9E9] hover:bg-[#045d87]
                     text-white font-bold text-[15px] tracking-wide
                     flex items-center justify-center gap-2
                     transition-all duration-300

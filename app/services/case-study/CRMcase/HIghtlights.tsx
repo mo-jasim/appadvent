@@ -66,9 +66,9 @@ export default function Highlights() {
     }, [activeIndex, pages.length]);
 
     return (
-        <section className="relative w-full overflow-hidden py-24 font-THICCCBOI border-b border-gray-100">
-            <div className='w-full' style={{ backgroundImage: "url('/images/polygon.png')", }} >
-                <div className="w-full max-w-[1400px] mx-auto relative px-4 sm:px-6 lg:px-8">
+        <section className="relative w-full font-THICCCBOI mt-[80px] mb-[80px]">
+            <div>
+                <div className="w-full max-w-[1400px] mx-auto relative mt-[80px] mb-[80px]">
                     {/* Huge Faint Watermark Text */}
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[70px] sm:text-[110px] md:text-[150px] font-black text-[#f1f5f9] whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
                         Highlights
@@ -79,7 +79,7 @@ export default function Highlights() {
                     </h2>
 
                     {/* Global wrapper for absolute positioning (desktop) */}
-                    <div className="hidden lg:block relative w-full h-[700px] overflow-hidden">
+                    <div className="hidden lg:block relative w-full h-[700px]">
                         <div
                             className="flex w-full h-full transition-transform duration-700 ease-in-out"
                             style={{ transform: `translateX(-${activeIndex * 100}%)` }}
