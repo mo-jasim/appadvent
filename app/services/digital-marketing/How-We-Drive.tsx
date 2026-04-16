@@ -3,28 +3,24 @@ import Image from 'next/image';
 
 const HowWeDrive = () => {
     return (
-        <section className="font-THICCCBOI py-20 relative overflow-hidden">
-            {/* Background decorative elements */}
-            <div className="absolute top-0 left-0 w-1/2 h-full"></div>
-            <div className="absolute bottom-0 right-0 w-1/2 h-full"></div>
+        <section className="font-THICCCBOI py-16 sm:py-20 md:py-24 relative overflow-hidden px-4 sm:px-6">
+            <div className="max-w-7xl mx-auto">
+                <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
 
-            <div className="max-w-7xl mx-auto px-4 md:px-8">
-                <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-
-                    {/* Left Content Area */}
-                    <div className="w-full lg:w-1/2 flex flex-col gap-6">
-                        <h2 className="text-[48px] sm:text-[36px] md:text-[48px] font-bold text-[#111827] leading-tight max-w-lg">
+                    {/* Left Content */}
+                    <div className="w-full lg:w-1/2 flex flex-col gap-5">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-bold text-[#111827] leading-tight">
                             How We Drive <span className="text-[#32B9E9]">Growth</span> for Your Business?
                         </h2>
 
-                        <div className="flex flex-col gap-6 text-[16px] md:text-[16px] text-medium text-black leading-relaxed">
+                        <div className="flex flex-col gap-4 sm:gap-5 text-sm sm:text-base md:text-[16px] text-black leading-relaxed">
                             <p>
                                 At Appadvent, growth happens when real customer challenges are
                                 understood and solved with the right digital strategy. Our approach
-                                blends <span className="text-[#ef4444] font-medium">AI insights, Performance tracking,</span>, and <span className="text-[#ef4444] font-medium">Proven digital frameworks</span> to help businesses overcome visibility issues, low
+                                blends <span className="text-[#ef4444] font-medium">AI insights, Performance tracking,</span> and{' '}
+                                <span className="text-[#ef4444] font-medium">Proven digital frameworks</span> to help businesses overcome visibility issues, low
                                 conversions, and rising competition.
                             </p>
-
                             <p>
                                 Many brands struggle to turn website traffic into qualified leads.
                                 Companies that use data-driven strategies are 40% more likely to
@@ -32,17 +28,14 @@ const HowWeDrive = () => {
                                 ecosystem and fix them with targeted solutions delivering measurable
                                 results.
                             </p>
-
                             <p>
                                 As a leading performance marketing agency, we know how difficult it
                                 is for businesses to achieve <span className="text-[#ef4444] font-medium">real growth</span> in today's fast evolving digital
                                 environment. Many brands struggle with no clear digital strategy,
                                 inefficient ad spend that results in poor ROAS, limited visibility across
                                 search engines and LLM powered platforms, and a steady flow of
-                                unqualified or low intent leads. These problems waste time and
-                                money.
+                                unqualified or low intent leads.
                             </p>
-
                             <p>
                                 Our <span className="text-[#ef4444] font-medium">Digital marketing solutions</span> create a clear, results-focused
                                 strategy that aligns all channels to grow your business with
@@ -51,10 +44,9 @@ const HowWeDrive = () => {
                         </div>
                     </div>
 
-                    {/* Right Illustration Area */}
-                    <div className="w-full lg:w-1/2 relative flex justify-center lg:justify-end">
-                        {/* We will use a placeholder or image if available. Since it's a complex illustration, putting the best fitting image from public/images if there is one, or a placeholder if none strictly matches illustration style. From the list, "Illustration.png" seems most likely. */}
-                        <div className="relative w-full max-wlg aspect-square md:aspect-[4/3] lg:aspect-square flex items-center justify-center">
+                    {/* Right Illustration */}
+                    <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+                        <div className="w-full max-w-[320px] sm:max-w-[420px] md:max-w-[520px] lg:max-w-full aspect-square flex items-center justify-center">
                             <Image
                                 src="/images/OBJECTS.svg"
                                 alt="Marketing Growth Illustration"

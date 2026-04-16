@@ -105,8 +105,7 @@ export default function Designing() {
       `}</style>
 
       <div className="max-w-[1240px] mx-auto relative z-10 px-2 sm:px-4 lg:px-6">
-
-        <h2 className="text-[32px] md:text-[42px] font-bold text-center text-gray-900 tracking-tight">
+        <h2 className="relative text-[32px] md:text-[42px] font-bold text-center text-gray-900 tracking-tight">
           Our Development Process
         </h2>
 

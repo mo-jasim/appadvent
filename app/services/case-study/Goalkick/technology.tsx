@@ -3,12 +3,15 @@ import Image from "next/image";
 
 export default function Technology() {
     return (
-        <section className="relative w-full mt-[80px] mb-[80px] font-THICCCBOI">
+        <section className="relative w-full mt-[200px] mb-[200px] font-THICCCBOI">
             {/* Mesh Gradient Background matching layout */}
             <div className="absolute top-[10%] left-[20%] w-[60%] h-[80%] bg-pink-100/50 blur-[120px] rounded-full z-[0]"></div>
             <div className="absolute top-[30%] left-[50%] w-[40%] h-[60%] bg-blue-100/40 blur-[120px] rounded-full z-[0]"></div>
-
             <div className="max-w-[1200px] mx-auto z-10 relative">
+                {/* Watermark */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[30px] sm:text-[50px] md:text-[90px] lg:text-[110px] font-black text-[#939192]/20 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-[50px]">
+                    TECHNOLOGY STACK
+                </div>
                 <h2 className="text-[28px] sm:text-[32px] md:text-[40px] font-extrabold text-[#0f172a] text-center mb-10 md:mb-16 tracking-tight px-2">
                     Our Technology Stack In Goalkick application
                 </h2>

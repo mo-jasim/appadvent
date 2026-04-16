@@ -9,9 +9,6 @@ import ConsultationModal from '@/components/ConsultationModal';
 import { ArrowRight } from 'lucide-react';
 import Designing from './services/case-study/Goalkick/Designing';
 
-
-
-
 const servicesData = [
   { href: "services/website-designing-development", title: "Website Designing & Development", desc: "We specialize in creating visually appealing and highly functional websites that meet your business goals...", icon: "/images/Ico1.svg" },
   { href: "services/mobile-app-development", title: "Mobile App Development", desc: "We develop mobile apps for iOS and Android using Swift, Kotlin, and React Native. Our secure apps ensure a great user experience...", icon: "/images/Ico2.svg" },

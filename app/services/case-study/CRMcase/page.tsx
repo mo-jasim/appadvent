@@ -1,7 +1,10 @@
+"use client";
+import { useState, useEffect } from 'react';
 import React from "react";
 import Image from "next/image";
 import {
     CheckCircle2,
+    Building2,
     MapPin,
     Settings,
     Activity,
@@ -18,14 +21,20 @@ import {
     MonitorSmartphone,
     Apple,
     PlayCircle,
+    Clock,
+    Briefcase,
 } from "lucide-react";
 import Highlights from "./HIghtlights";
 import Claim360WebApp from "./360webapp";
 import OurProjectsSection from "../../website-designing-development/Our-Projects-Section";
 import CompaniesLove from "../../website-designing-development/Companies-Love";
 import Designing from "../Goalkick/Designing";
+import ConsultationModal from "@/components/ConsultationModal";
+
+
 
 export default function CRMcasePage() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
     return (
         <>
             <div className="font-THICCCBOI text-slate-800 min-h-screen w-full overflow-x-hidden">
@@ -40,21 +49,21 @@ export default function CRMcasePage() {
                                 playsInline
                                 className="absolute inset-0 w-full h-full object-cover"
                             >
-                                <source src="/caseimg/1110327_Players_Soccer_3840x2160.mp4" type="video/mp4" />
+                                <source src="/caseimg/vecteezy.mp4" type="video/mp4" />
                             </video>
                             <div className="absolute inset-0 bg-black/60 z-10"></div> {/* Dark Overlay */}
                         </div>
 
                         <div className="relative z-20 text-center px-4 max-w-6xl mx-auto flex flex-col items-center">
                             {/* Logo Badge */}
-                            <div className="mb-6 w-16 h-16 rounded-lg  flex items-center justify-center overflow-hidden">
+                            <div className="mb-6 w-[103px] h-[100px] rounded-lg  flex items-center justify-center overflow-hidden">
                                 <Image src="/Letimg/claimlogo.svg" alt="Goalkick Logo" width={100} height={100} className="object-contain" />
                             </div>
 
-                            <h1 className=" max-w-7xl mx-auto px-4 text-3xl sm:text-[40px] md:text-[50px] lg:text-[60px] font-bold text-white leading-tight mb-4">
+                            <h1 className=" max-w-7xl mx-auto px-4 text-3xl sm:text-[40px] md:text-[50px] lg:text-[60px] font-bold text-[#FFFFFF] leading-tight mb-4">
                                 Claim 360 – Your All-in-One CRM Web Application for Seamless Client Management
                             </h1>
-                            <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-4 max-w-6xl text-center">
+                            <p className="text-base sm:text-lg md:text-xl text-[#FFFFFF] mb-4 max-w-6xl text-center">
                                 Claim360 is a comprehensive web app designed to simplify home insurance claims after natural disasters. It streamlines every step — from reporting damage to final settlement — ensuring speed, transparency, and peace of mind. When disaster strikes, Claim360 helps homeowners recover faster.                        </p>
 
                             <div className="flex flex-col sm:flex-row items-center gap-4">
@@ -76,12 +85,14 @@ export default function CRMcasePage() {
                                     </div>
                                 </button>
                             </div>
-                            <div>
-                                <p
-                                    className="text-[#32B9E9] font-medium underline text-center text-sm sm:text-base lg:text-lg cursor-pointer hover:text-[#2aa8d6] transition-colors"
+                            <div className="flex items-center justify-center mt-6">
+                                <button
+                                    onClick={() => setIsModalOpen(true)}
+                                    className="text-[#32B9E9] text-semibold text-[20px]
+        px-5 py-2 sm:px-6 sm:py-2.5 cursor-pointer underline font-THICCCBOI"
                                 >
                                     Have a project in mind?
-                                </p>
+                                </button>
                             </div>
                         </div>
                     </section>
@@ -91,66 +102,60 @@ export default function CRMcasePage() {
                     </div>
 
                     {/* ABOUT SECTION inside Hero container */}
-                    <div className="max-w-6xl mx-auto  mt-[50px] mb-[80px] pb-12">
-                        <h2 className="text-[32px] md:text-[48px] font-bold text-center text-slate-900 mt-10">About Claim 360 WebApp</h2>
+                    <div className="max-w-6xl mx-auto  mt-[50px] mb-[80px] pb-12 relative">
+                        {/* OVERVIEW Watermark */}
+                        <div className="relative items-center justify-center text-center text-[30px] sm:text-[50px] md:text-[90px] lg:text-[110px] font-black text-[#ececec]/60 whitespace-nowrap z-0 pointer-events-none select-none leading-none tracking-tight">
+                            OVERVIEW
+                        </div>
+                        <h2 className="relative text-[32px] md:text-[48px] font-bold text-center text-slate-900 -mt-[70px]">About Claim 360 WebApp</h2>
                         <p className="text-[16px] md:text-[18px] text-slate-600 mb-10 text-center leading-relaxed">
                             Claim360 is a web application designed to simplify and automate home insurance claims during natural disasters. With features like email parsing, smart routing, manual claim entry, and an integrated CRM, it ensures faster processing and better transparency. The platform bridges the gap between insurers and homeowners, turning a stressful process into a smooth digital experience.
                         </p>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
                             <div className="flex flex-row gap-2 p-4 rounded-lg hover:bg-slate-50 transition-colors">
-                                <img src="/images/Technology.svg" alt="img" className="w-10 h-10 text-blue-600" />
+                                <Building2 className="w-10 h-10 text-black" />
                                 <h3 className="text-[16px] font-semibold text-slate-900">Industry <br />Social App</h3>
                             </div>
                             <div className="flex flex-row gap-2 p-4 rounded-lg hover:bg-slate-50 transition-colors">
-                                <img src="/images/Technology1.svg" alt="img" className="w-10 h-10 text-green-600" />
+                                <MapPin className="w-10 h-10 text-black" />
                                 <h3 className="text-[16px] font-semibold text-slate-900">Development Time 4months</h3>
                             </div>
                             <div className="flex flex-row gap-2 p-4 rounded-lg hover:bg-slate-50 transition-colors">
-                                <img src="/images/Technology2.svg" alt="img" className="w-10 h-10 text-amber-500" />
+                                <Clock className="w-10 h-10 text-black" />
                                 <h3 className="text-[16px] font-semibold text-slate-900">OS Platform<br />Andriod & IOS</h3>
                             </div>
                             <div className="flex flex-row gap-2 p-4 rounded-lg hover:bg-slate-50 transition-colors">
-                                <img src="/images/Technology3.svg" alt="img" className="w-10 h-10 text-purple-600" />
+                                <Briefcase className="w-10 h-10 text-black" />
                                 <h3 className="text-[16px] font-semibold text-slate-900">Services<br />Design & Development</h3>
                             </div>
                         </div>
                     </div>
 
 
-                    {/* --- THE RESULTS SECTION --- */}
-                    <section className="w-full bg-gradient-to-r from-[#1E293B] via-[#471536] to-[#7F1D1D] text-white py-10 px-4">
-                        <div className="max-w-6xl mx-auto">
-                            <h2 className="text-[32px] md:text-[48px] font-bold mb-10 text-center md:text-left md:ml-8">The Results</h2>
-                            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                                <div className="flex flex-col items-center md:items-start md:pl-8 text-center md:text-left border-b md:border-b-0 md:border-r border-white/10 pb-6 md:pb-0">
-                                    <div className="flex items-center gap-2 mb-2 justify-center md:justify-start">
-                                        <img src="/images/downloadicon.svg" alt="img" />
-                                        <span className="text-3xl md:text-5xl font-bold tracking-tighter">600+</span>
+                    {/* ─────────────────────────────────────────────
+                   3. THE RESULTS BANNER
+               ───────────────────────────────────────────── */}
+                    <section className="w-full bg-[#0D57C7] pt-[60px] pb-[60px] px-4 sm:px-6 lg:px-8">
+                        <div className="max-w-[1200px] mx-auto">
+                            <h2 className="text-[48px] sm:text-[32px] font-bold text-white mb-6 sm:mb-8 md:mb-10">The Results</h2>
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+                                {[
+                                    { icon: "/images/downloadicon.svg", stat: "600+", label: "Downloads" },
+                                    { icon: "/Letimg/Frame387.svg", stat: "500+", label: "Users" },
+                                    { icon: "/Letimg/Reviews.svg", stat: "300+", label: "Premium Members" },
+                                    { icon: "/Letimg/Starimg.svg", stat: "4.2", label: "Average rating" },
+                                ].map(({ icon, stat, label }) => (
+                                    <div key={label} className="flex items-center gap-3 sm:gap-4">
+                                        <div className="w-[70px] h-[70px] sm:w-14 sm:h-14 bg-white/10 rounded-full flex items-center justify-center border border-white/20 flex-shrink-0">
+                                            <img src={icon} alt={label} className="w-[70px] h-[70px] sm:w-12 sm:h-12" />
+                                        </div>
+                                        <div>
+                                            <h3 className="text-[48px] sm:text-[32px] font-bold text-white">{stat}</h3>
+                                            <p className="text-white/70 text-[20px] sm:text-[16px]">{label}</p>
+                                        </div>
                                     </div>
-                                    <p className="text-[14px] md:text-[16px] text-white/70">Downloads</p>
-                                </div>
-                                <div className="flex flex-col items-center md:items-start md:pl-8 text-center md:text-left border-b md:border-b-0 md:border-r border-white/10 pb-6 md:pb-0">
-                                    <div className="flex items-center gap-2 mb-2 justify-center md:justify-start">
-                                        <img src="/images/downloadicon.svg" alt="img" />
-                                        <span className="text-3xl md:text-5xl font-bold tracking-tighter">500+</span>
-                                    </div>
-                                    <p className="text-[14px] md:text-[16px] text-white/70">Users</p>
-                                </div>
-                                <div className="flex flex-col items-center md:items-start md:pl-8 text-center md:text-left border-r-0 md:border-r border-white/10">
-                                    <div className="flex items-center gap-2 mb-2 justify-center md:justify-start">
-                                        <img src="/images/downloadicon.svg" alt="img" />
-                                        <span className="text-3xl md:text-5xl font-bold tracking-tighter">300+</span>
-                                    </div>
-                                    <p className="text-[14px] md:text-[16px] text-white/70">Positive Reviews</p>
-                                </div>
-                                <div className="flex flex-col items-center md:items-start md:pl-8 text-center md:text-left">
-                                    <div className="flex items-center gap-2 mb-2 justify-center md:justify-start">
-                                        <img src="/images/downloadicon.svg" alt="img" />
-                                        <span className="text-3xl md:text-5xl font-bold tracking-tighter">4.2</span>
-                                    </div>
-                                    <p className="text-[14px] md:text-[16px] text-white/70">Rating</p>
-                                </div>
+                                ))}
                             </div>
                         </div>
                     </section>
@@ -163,7 +168,7 @@ export default function CRMcasePage() {
                         <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
                             {/* Left Content */}
                             <div className="lg:w-1/2 space-y-8 lg:space-y-20 max-w-[600px]">
-                                <div className="flex gap-4 ">
+                                <div className="flex gap-4">
                                     <img src="/Letimg/family_group.svg" alt="img" className="w-6 h-6 flex-shrink-0 mt-1" />
                                     <div>
                                         <h3 className="text-[16px] font-bold text-slate-900 mb-2">Digital Transformation in Insurance:-</h3>
@@ -268,6 +273,12 @@ export default function CRMcasePage() {
                     <CompaniesLove />
                 </div >
             </div>
+            {isModalOpen && (
+                <ConsultationModal
+                    isOpen={isModalOpen}
+                    onClose={() => setIsModalOpen(false)}
+                />
+            )}
         </>
     );
 }

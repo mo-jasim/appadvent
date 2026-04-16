@@ -70,11 +70,11 @@ export default function Highlights() {
             <div>
                 <div className="w-full max-w-[1400px] mx-auto relative mt-[80px] mb-[80px]">
                     {/* Huge Faint Watermark Text */}
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[70px] sm:text-[110px] md:text-[150px] font-black text-[#f1f5f9] whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
-                        Highlights
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[30px] sm:text-[50px] md:text-[110px] lg:text-[110px] font-black text-[#939192]/20 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-[50px]">
+                        ESSENTIAL HIGHLIGHTS
                     </div>
                     {/* Title */}
-                    <h2 className="text-[40px] font-bold text-[#111827] mb-12 relative z-20 xl:ml-10">
+                    <h2 className="text-[40px] font-bold text-[#111827] mb-12 relative z-20 xl:ml-10 -pt-[100px]">
                         Essential Highlights
                     </h2>
 
@@ -92,13 +92,13 @@ export default function Highlights() {
                                         <>
                                             <div className="absolute top-[32%] left-[2%] w-[25%] z-10">
                                                 <div className="relative">
-                                                    <span className="absolute -top-[80px] -left-[10px] text-[160px] font-bold text-gray-100/70 z-[-1] leading-none select-none tracking-tighter">
+                                                    <span className="absolute -top-[80px] -left-[10px] text-[160px] font-bold text-[#939192]/20 z-[-1] leading-none select-none tracking-tighter">
                                                         {page.left.id}
                                                     </span>
                                                     <h3 className="text-[22px] font-bold text-gray-900 mb-4 xl:whitespace-nowrap">
                                                         {page.left.title}
                                                     </h3>
-                                                    <p className="text-[15px] text-gray-500 leading-relaxed pr-6">
+                                                    <p className="text-[15px] text-black leading-relaxed pr-6">
                                                         {page.left.desc}
                                                     </p>
                                                 </div>
@@ -138,13 +138,13 @@ export default function Highlights() {
 
                                             <div className="absolute top-[52%] left-[74%] w-[25%] z-10">
                                                 <div className="relative">
-                                                    <span className="absolute -top-[80px] -left-[10px] text-[160px] font-bold text-gray-100/70 z-[-1] leading-none select-none tracking-tighter">
+                                                    <span className="absolute -top-[80px] -left-[10px] text-[160px] font-bold text-[#939192]/20 z-[-1] leading-none select-none tracking-tighter">
                                                         {page.right.id}
                                                     </span>
                                                     <h3 className="text-[22px] font-bold text-gray-900 mb-4 xl:whitespace-nowrap">
                                                         {page.right.title}
                                                     </h3>
-                                                    <p className="text-[15px] text-gray-500 leading-relaxed pr-6">
+                                                    <p className="text-[15px] text-black leading-relaxed pr-6">
                                                         {page.right.desc}
                                                     </p>
                                                 </div>
@@ -173,7 +173,7 @@ export default function Highlights() {
                                                     {page.left.id}
                                                 </span>
                                                 <h3 className="text-[24px] font-bold text-gray-900 mb-3">{page.left.title}</h3>
-                                                <p className="text-[15px] text-gray-500 max-w-sm">{page.left.desc}</p>
+                                                <p className="text-[15px] text-black max-w-sm">{page.left.desc}</p>
                                             </div>
                                             <Image src={page.left.phone} alt={page.left.title} width={300} height={600} className="w-[85%] max-w-[320px] drop-shadow-2xl" />
                                         </div>
@@ -186,7 +186,7 @@ export default function Highlights() {
                                                     {page.right.id}
                                                 </span>
                                                 <h3 className="text-[24px] font-bold text-gray-900 mb-3">{page.right.title}</h3>
-                                                <p className="text-[15px] text-gray-500 max-w-sm">{page.right.desc}</p>
+                                                <p className="text-[15px] text-black max-w-sm">{page.right.desc}</p>
                                             </div>
                                             <Image src={page.right.phone} alt={page.right.title} width={300} height={600} className="w-[85%] max-w-[320px] drop-shadow-2xl" />
                                         </div>
