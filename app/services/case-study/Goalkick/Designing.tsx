@@ -104,8 +104,12 @@ export default function Designing() {
         }
       `}</style>
 
-      <div className="max-w-[1240px] mx-auto relative z-10 px-2 sm:px-4 lg:px-6">
-        <h2 className="relative text-[32px] md:text-[42px] font-bold text-center text-gray-900 tracking-tight">
+      <div className="max-w-[1600px] min-w-[525px] mx-auto relative z-10 px-2 sm:px-4 lg:px-6">
+        {/* OVERVIEW Watermark */}
+        <div className="w-full text-center text-[30px] sm:text-[50px] md:text-[70px] lg:text-[90px] font-black text-[#939192]/20 whitespace-nowrap pointer-events-none select-none leading-none tracking-tight overflow-hidden">
+          DEVELOPMENT PROCESS
+        </div>
+        <h2 className="relative text-[32px] md:text-[42px] font-bold text-center text-gray-900 tracking-tight -mt-[60px]">
           Our Development Process
         </h2>
 

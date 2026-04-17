@@ -8,6 +8,7 @@ import Link from 'next/link';
 import ConsultationModal from '@/components/ConsultationModal';
 import { ArrowRight } from 'lucide-react';
 import Designing from './services/case-study/Goalkick/Designing';
+import Designing1 from '@/components/Designing1';
 
 const servicesData = [
   { href: "services/website-designing-development", title: "Website Designing & Development", desc: "We specialize in creating visually appealing and highly functional websites that meet your business goals...", icon: "/images/Ico1.svg" },
@@ -137,7 +138,7 @@ const HomePage = () => {
           ))}
         </div>
       </section>
-      <Designing />
+      <Designing1 />
       {/* Industries We Cater To */}
       <section className="w-full relative lg:pb-[80px]">
         {/* Full-bleed 50/50 background */}

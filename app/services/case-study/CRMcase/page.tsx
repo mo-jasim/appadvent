@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import React from "react";
 import Image from "next/image";
+import Technology from '../Goalkick/technology';
 import {
     CheckCircle2,
     Building2,
@@ -25,7 +26,6 @@ import {
     Briefcase,
 } from "lucide-react";
 import Highlights from "./HIghtlights";
-import Claim360WebApp from "./360webapp";
 import OurProjectsSection from "../../website-designing-development/Our-Projects-Section";
 import CompaniesLove from "../../website-designing-development/Companies-Love";
 import Designing from "../Goalkick/Designing";
@@ -97,7 +97,7 @@ export default function CRMcasePage() {
                         </div>
                     </section>
                     {/* Hero Devices Mockup Image Placeholder */}
-                    <div className="flex items-center justify-center px-4 max-w-5xl mx-auto mt-[80px] mb-[80px]">
+                    <div className="flex items-center justify-center px-4 max-w-5xl mx-auto mt-[80px] mb-[80px] hover:scale-105 transition-transform duration-500">
                         <img src="/images/img1.svg" alt="img" className="w-full h-auto mt-10" />
                     </div>
 
@@ -108,26 +108,38 @@ export default function CRMcasePage() {
                             OVERVIEW
                         </div>
                         <h2 className="relative text-[32px] md:text-[48px] font-bold text-center text-slate-900 -mt-[70px]">About Claim 360 WebApp</h2>
-                        <p className="text-[16px] md:text-[18px] text-slate-600 mb-10 text-center leading-relaxed">
+                        <p className="text-[16px] md:text-[18px] text-[#000000] mb-10 text-center leading-relaxed">
                             Claim360 is a web application designed to simplify and automate home insurance claims during natural disasters. With features like email parsing, smart routing, manual claim entry, and an integrated CRM, it ensures faster processing and better transparency. The platform bridges the gap between insurers and homeowners, turning a stressful process into a smooth digital experience.
                         </p>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
-                            <div className="flex flex-row gap-2 p-4 rounded-lg hover:bg-slate-50 transition-colors">
-                                <Building2 className="w-10 h-10 text-black" />
-                                <h3 className="text-[16px] font-semibold text-slate-900">Industry <br />Social App</h3>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-6 sm:gap-x-8 sm:gap-y-8">
+                            <div className="flex gap-3 items-start">
+                                <Building2 className="w-6 h-6 sm:w-7 sm:h-7 text-black mt-1 flex-shrink-0" />
+                                <div>
+                                    <h4 className="font-bold text-black text-[15px] sm:text-[17px]">Industry</h4>
+                                    <p className="text-[#010F14] text-[14px] sm:text-[16px] lg:text-[18px]">Sports &amp; Social</p>
+                                </div>
                             </div>
-                            <div className="flex flex-row gap-2 p-4 rounded-lg hover:bg-slate-50 transition-colors">
-                                <MapPin className="w-10 h-10 text-black" />
-                                <h3 className="text-[16px] font-semibold text-slate-900">Development Time 4months</h3>
+                            <div className="flex gap-3 items-start">
+                                <MapPin className="w-6 h-6 sm:w-7 sm:h-7 text-black mt-1 flex-shrink-0" />
+                                <div>
+                                    <h4 className="font-bold text-black text-[15px] sm:text-[17px]">DB Platform</h4>
+                                    <p className="text-[#010F14] text-[14px] sm:text-[16px] lg:text-[18px]">PostgreSQL (AWS)</p>
+                                </div>
                             </div>
-                            <div className="flex flex-row gap-2 p-4 rounded-lg hover:bg-slate-50 transition-colors">
-                                <Clock className="w-10 h-10 text-black" />
-                                <h3 className="text-[16px] font-semibold text-slate-900">OS Platform<br />Andriod & IOS</h3>
+                            <div className="flex gap-3 items-start">
+                                <Clock className="w-6 h-6 sm:w-7 sm:h-7 text-black mt-1 flex-shrink-0" />
+                                <div>
+                                    <h4 className="font-bold text-black text-[15px] sm:text-[17px]">Developed Time</h4>
+                                    <p className="text-[#010F14] text-[14px] sm:text-[16px] lg:text-[18px]">4 Months</p>
+                                </div>
                             </div>
-                            <div className="flex flex-row gap-2 p-4 rounded-lg hover:bg-slate-50 transition-colors">
-                                <Briefcase className="w-10 h-10 text-black" />
-                                <h3 className="text-[16px] font-semibold text-slate-900">Services<br />Design & Development</h3>
+                            <div className="flex gap-3 items-start">
+                                <Briefcase className="w-6 h-6 sm:w-7 sm:h-7 text-black mt-1 flex-shrink-0" />
+                                <div>
+                                    <h4 className="font-bold text-black text-[15px] sm:text-[17px]">Service</h4>
+                                    <p className="text-[#010F14] text-[14px] sm:text-[16px] lg:text-[18px] break-words">Design &amp; Development</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -163,16 +175,20 @@ export default function CRMcasePage() {
 
                     {/* --- OPPORTUNITIES AWAIT SECTION --- */}
                     <section className=" mt-[80px] mb-[80px] max-w-7xl mx-auto">
-                        <h2 className="text-[32px] md:text-[48px] font-bold text-slate-900 mb-12 text-center lg:text-left">Opportunities await</h2>
+                        {/* Watermark */}
+                        <div className="absolute left-1/2 -translate-x-1/2 text-[30px] sm:text-[50px] md:text-[90px] lg:text-[110px] font-black text-[#939192]/20 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-[40px]">
+                            OPPORTUNITIES AWAIT
+                        </div>
+                        <h2 className="relative z-10 text-[32px] md:text-[48px] font-bold text-black text-center lg:text-left">Opportunities await</h2>
 
-                        <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
+                        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
                             {/* Left Content */}
-                            <div className="lg:w-1/2 space-y-8 lg:space-y-20 max-w-[600px]">
+                            <div className="lg:w-1/2 space-y-4 lg:space-y-10 max-w-[600px]">
                                 <div className="flex gap-4">
                                     <img src="/Letimg/family_group.svg" alt="img" className="w-6 h-6 flex-shrink-0 mt-1" />
                                     <div>
-                                        <h3 className="text-[16px] font-bold text-slate-900 mb-2">Digital Transformation in Insurance:-</h3>
-                                        <p className="text-[16px] text-slate-600 leading-relaxed">
+                                        <h3 className="text-[16px] font-bold text-black mb-2">Digital Transformation in Insurance:-</h3>
+                                        <p className="text-[16px] text-black leading-relaxed">
                                             The insurance sector is still transitioning from paper-based systems to digital workflows. Claim360 can become a flagship platform for digital claim management, reducing manual work and improving efficiency for insurers.</p>
                                     </div>
                                 </div>
@@ -182,8 +198,8 @@ export default function CRMcasePage() {
                                         <img src="/Letimg/family_group.svg" alt="img" className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h3 className="text-[16px] font-bold text-slate-900 mb-2">Enhanced Customer Experience:-</h3>
-                                        <p className="text-[16px] text-slate-600 leading-relaxed">By offering transparency, instant updates, and guided claim filing. Claim360 positions itself as a customer-centric solution — a major differentiator in an industry known for slow, confusing processes.</p>
+                                        <h3 className="text-[16px] font-bold text-black mb-2">Enhanced Customer Experience:-</h3>
+                                        <p className="text-[16px] text-black leading-relaxed">By offering transparency, instant updates, and guided claim filing. Claim360 positions itself as a customer-centric solution — a major differentiator in an industry known for slow, confusing processes.</p>
                                     </div>
                                 </div>
 
@@ -192,8 +208,8 @@ export default function CRMcasePage() {
                                         <img src="/Letimg/family_group.svg" alt="img" className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h3 className="text-[16px] font-bold text-slate-900 mb-2">Integration with Smart Technologies:-</h3>
-                                        <p className="text-[16px] text-slate-600 leading-relaxed">There's an opportunity to integrate AI and IoT features — such as automated damage detection using photos or drone footage, or predictive analytics to assess claim risks. These innovations can significantly improve claim accuracy and speed.</p>
+                                        <h3 className="text-[16px] font-bold text-black mb-2">Integration with Smart Technologies:-</h3>
+                                        <p className="text-[16px] text-black leading-relaxed">There's an opportunity to integrate AI and IoT features — such as automated damage detection using photos or drone footage, or predictive analytics to assess claim risks. These innovations can significantly improve claim accuracy and speed.</p>
                                     </div>
                                 </div>
                             </div>
@@ -208,11 +224,14 @@ export default function CRMcasePage() {
                     </section>
 
                     {/* --- OUR BEST SOLUTIONS SECTION --- */}
-                    <section className="w-full bg-gradient-to-br from-[#1E3A8A] via-[#1E1B4B] to-[#7F1D1D] text-white pb-10 pt-10 overflow-hidden relative">
+                    <section className="w-full bg-gradient-to-br from-[#1E3A8A] via-[#1E1B4B] to-[#7F1D1D] text-white mb-[80px] mt-[80px] pb-20 pt-10 overflow-hidden relative">
 
                         <div className="max-w-6xl px-4 mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
                             {/* Left Side UI Mockups */}
-                            <div className="lg:w-1/2 w-full flex justify-center items-center relative min-h-[300px] md:min-h-[500px] px-4 md:px-0">
+                            <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[30px] sm:text-[50px] md:text-[90px] lg:text-[110px] font-black text-[#939192]/20 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none mt-[5px]">
+                                OUR BEST SOLUTIONS
+                            </div>
+                            <div className="lg:w-1/2 w-full flex justify-center items-center relative min-h-[300px] md:min-h-[500px] px-4 md:px-0 hover:scale-105 transition-transform duration-300">
                                 {/* Gmail Integration Mockup */}
                                 <img src="/images/gmail-icon.svg" alt="img" className="w-full max-w-[400px] md:max-w-[600px] md:w-[120%] h-auto object-contain transform origin-center lg:-translate-x-12" />
                             </div>
@@ -248,11 +267,17 @@ export default function CRMcasePage() {
 
                     </section>
                     <Highlights />
-                    <Claim360WebApp />
+                    <Technology />
                     <Designing />
                     {/* 8. GLIMPSES OF APP UI SCREENS */}
                     <section className="w-full  mt-[80px] mb-[80px] px-4 text-center">
-                        <h2 className="text-2xl sm:text-3xl md:text-[40px] font-bold text-[#0f172a] mb-10 md:mb-16">
+                        {/* Watermark */}
+                        <div className="relative mt-[80px]">
+                            <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[50px] sm:text-[80px] md:text-[110px] lg:text-[150px] font-black text-[#f1f5f9] whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-[85px]">
+                                UI Screens
+                            </div>
+                        </div>
+                        <h2 className="relative text-2xl sm:text-3xl md:text-[40px] font-bold text-[#0f172a] mb-10 md:mb-16">
                             Glimpses of App UI Screens
                         </h2>
                         <div className="max-w-[1200px] mx-auto flex justify-center">

@@ -44,40 +44,39 @@ export default function GoalkickCaseStudy() {
 
                   <div className="relative z-20 text-center w-full max-w-5xl mx-auto flex flex-col items-center gap-3 px-4">
                      {/* Logo */}
-                     <div className="flex justify-center w-full mb-2">
-                        <img src="/Letimg/goallogo.svg" alt="Goalkick Logo" className="h-12 sm:h-14 md:h-16 w-auto" />
+                     <div className="flex justify-center w-full mb-2 w-[118px] h-[100px]">
+                        <img src="/Letimg/goallogo.svg" alt="Goalkick Logo" />
                      </div>
 
-                     <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-[56px] font-bold text-white leading-tight">
+                     <h1 className="text-[60px] sm:text-[40px] md:text-[50px] lg:text-[60px] font-bold text-[#FFFFFF] leading-tight">
                         Goalkick - Social App for Football Fans
                      </h1>
-                     <p className="text-sm sm:text-base md:text-lg text-gray-200 max-w-3xl text-center">
+                     <p className="text-[20px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-[#FFFFFF] max-w-7xl text-center">
                         The ultimate social network platform designed to connect, engage, and elevate the experience for football fans. It allows users to create groups, log matches, and chat seamlessly within a community-driven environment tailored to real fans.
                      </p>
-
-                     {/* Store Buttons */}
-                     <p className="text-white/80 text-xs sm:text-sm mt-2">Available on Android and iOS</p>
-                     <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto mt-1">
-                        <button className="flex items-center justify-center gap-2 bg-black hover:bg-gray-900 border border-white/20 text-white px-5 py-2.5 rounded-lg transition-transform hover:scale-105 shadow-xl w-full sm:w-auto">
-                           <Apple className="w-5 h-5 flex-shrink-0" />
+                     <div className="flex flex-col sm:flex-row items-center gap-4">
+                        <p className="text-white/80 mr-2">Available on Android and iOS</p>
+                     </div>
+                     <div className="flex flex-col sm:flex-row gap-3 mt-4 mb-4">
+                        <button className="flex justify-center items-center gap-2 bg-black hover:bg-gray-900 border border-white/20 text-white px-5 py-2.5 rounded-lg transition-transform hover:scale-105 shadow-xl w-full sm:w-auto">
+                           <Apple className="w-6 h-6" />
                            <div className="flex flex-col items-start leading-none">
                               <span className="text-[10px] text-gray-300">Download on the</span>
-                              <span className="text-[14px] font-semibold">App Store</span>
+                              <span className="text-[15px] font-semibold">App Store</span>
                            </div>
                         </button>
-                        <button className="flex items-center justify-center gap-2 bg-black hover:bg-gray-900 border border-white/20 text-white px-5 py-2.5 rounded-lg transition-transform hover:scale-105 shadow-xl w-full sm:w-auto">
-                           <PlayCircle className="w-5 h-5 flex-shrink-0" />
+                        <button className="flex justify-center items-center gap-2 bg-black hover:bg-gray-900 border border-white/20 text-white px-5 py-2.5 rounded-lg transition-transform hover:scale-105 shadow-xl w-full sm:w-auto">
+                           <PlayCircle className="w-6 h-6" />
                            <div className="flex flex-col items-start leading-none">
                               <span className="text-[10px] text-gray-300">GET IT ON</span>
-                              <span className="text-[14px] font-semibold">Google Play</span>
+                              <span className="text-[15px] font-semibold">Google Play</span>
                            </div>
                         </button>
                      </div>
-
                      {/* Have a project in mind? */}
                      <button
                         onClick={() => setIsModalOpen(true)}
-                        className="text-[#32B9E9] font-semibold text-base sm:text-lg underline cursor-pointer mt-1 hover:text-[#2aa8d6] transition-colors"
+                        className="text-[#32B9E9] font-semibold text-base sm:text-lg underline cursor-pointer hover:text-[#2aa8d6] transition-colors"
                      >
                         Have a project in mind?
                      </button>
@@ -105,42 +104,44 @@ export default function GoalkickCaseStudy() {
                         <div className="absolute -top-12 left-[620px] text-[30px] sm:text-[50px] md:text-[90px] lg:text-[110px] font-black text-[#ececec]/60 whitespace-nowrap z-0 pointer-events-none select-none leading-none tracking-tight overflow-hidden">
                            OVERVIEW
                         </div>
-                        <h2 className="relative text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-4 sm:mb-6 tracking-tight">About Goalkick App</h2>
-                        <p className="text-[#010F14] text-base sm:text-lg md:text-[20px] leading-relaxed mb-4">
-                           It's an online stadium where fans from around the world can unite, chat, and immerse themselves in the excitement of football. Dive into discussions about upcoming league matches, share your insights on the latest football news, and predict game outcomes with fellow fans.
-                        </p>
-                        <p className="text-[#010F14] text-base sm:text-lg md:text-[20px] leading-relaxed mb-8 sm:mb-10">
-                           Connect with others who share your passion, and build lasting friendships with people who love football just as much as you do. Explore various features designed to enhance your football experience. Join clubs, create your own groups, and participate in lively discussions.
-                        </p>
+                        <div className="mb-[40px]">
+                           <h2 className="relative text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-4 sm:mb-6 tracking-tight">About Goalkick App</h2>
+                           <p className="text-[#010F14] text-base sm:text-lg md:text-[20px] leading-relaxed mb-4">
+                              It's an online stadium where fans from around the world can unite, chat, and immerse themselves in the excitement of football. Dive into discussions about upcoming league matches, share your insights on the latest football news, and predict game outcomes with fellow fans.
+                           </p>
+                           <p className="text-[#010F14] text-base sm:text-lg md:text-[20px] leading-relaxed mb-8 sm:mb-10">
+                              Connect with others who share your passion, and build lasting friendships with people who love football just as much as you do. Explore various features designed to enhance your football experience. Join clubs, create your own groups, and participate in lively discussions.
+                           </p>
+                        </div>
 
                         {/* Stat Grid */}
-                        <div className="grid grid-cols-2 gap-x-4 gap-y-6 sm:gap-x-8 sm:gap-y-8">
+                        <div className="grid grid-cols-2 gap-x-4 gap-y-[40px] sm:gap-x-8 sm:gap-y-[40px]">
                            <div className="flex gap-3 items-start">
                               <Building2 className="w-7 h-7 sm:w-8 sm:h-8 text-black mt-1 flex-shrink-0" />
                               <div>
-                                 <h4 className="font-bold text-gray-900 text-[14px] sm:text-[15px]">Industry</h4>
-                                 <p className="text-gray-500 text-[13px] sm:text-[14px]">Sports & Social</p>
+                                 <h4 className="font-bold text-black text-[18px] sm:text-[18px]">Industry</h4>
+                                 <p className="text-[#010F14] text-[20px] sm:text-[20px]">Sports & Social</p>
                               </div>
                            </div>
                            <div className="flex gap-3 items-start">
                               <MapPin className="w-7 h-7 sm:w-8 sm:h-8 text-black mt-1 flex-shrink-0" />
                               <div>
-                                 <h4 className="font-bold text-gray-900 text-[14px] sm:text-[15px]">DB Platform</h4>
-                                 <p className="text-gray-500 text-[13px] sm:text-[14px]">PostgreSQL (AWS)</p>
+                                 <h4 className="font-bold text-black text-[18px] sm:text-[18px]">DB Platform</h4>
+                                 <p className="text-[#010F14] text-[20px] sm:text-[20px]">PostgreSQL (AWS)</p>
                               </div>
                            </div>
                            <div className="flex gap-3 items-start">
                               <Clock className="w-7 h-7 sm:w-8 sm:h-8 text-black mt-1 flex-shrink-0" />
                               <div>
-                                 <h4 className="font-bold text-gray-900 text-[14px] sm:text-[15px]">Developed Time</h4>
-                                 <p className="text-gray-500 text-[13px] sm:text-[14px]">4 Months</p>
+                                 <h4 className="font-bold text-black text-[18px] sm:text-[18px]">Developed Time</h4>
+                                 <p className="text-[#010F14] text-[20px] sm:text-[20px]">4 Months</p>
                               </div>
                            </div>
                            <div className="flex gap-3 items-start">
                               <Briefcase className="w-7 h-7 sm:w-8 sm:h-8 text-black mt-1 flex-shrink-0" />
                               <div>
-                                 <h4 className="font-bold text-gray-900 text-[14px] sm:text-[15px]">Service</h4>
-                                 <p className="text-gray-500 text-[13px] sm:text-[14px]">Design & Development</p>
+                                 <h4 className="font-bold text-black text-[18px] sm:text-[18px]">Service</h4>
+                                 <p className="text-[#010F14] text-[20px] sm:text-[20px] word-wrap">Design & Development</p>
                               </div>
                            </div>
                         </div>
@@ -273,48 +274,120 @@ export default function GoalkickCaseStudy() {
                {/* ─────────────────────────────────────────────
                    8. GLIMPSES OF APP UI SCREENS
                ───────────────────────────────────────────── */}
-               <section className="relative w-full py-16 sm:py-20 md:py-24 text-center overflow-hidden font-THICCCBOI">
+               <section className="relative w-full text-center overflow-hidden font-THICCCBOI">
                   {/* Glow Blob */}
                   <div className="absolute top-[30%] left-[-10%] w-[80%] md:w-[45%] h-[50%] bg-[#baddfc] blur-[120px] rounded-full z-0 pointer-events-none" />
 
-                  {/* Watermark */}
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[50px] sm:text-[80px] md:text-[110px] lg:text-[150px] font-black text-[#f1f5f9] whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
-                     UI Screens
-                  </div>
+                  {/* Inline keyframes for infinite scroll */}
+                  <style>{`
+                     @keyframes scrollUp {
+                        0%   { transform: translateY(0); }
+                        100% { transform: translateY(-50%); }
+                     }
+                     @keyframes scrollDown {
+                        0%   { transform: translateY(-50%); }
+                        100% { transform: translateY(0); }
+                     }
+                     .col-scroll-up {
+                        animation: scrollUp 18s linear infinite;
+                        will-change: transform;
+                     }
+                     .col-scroll-down {
+                        animation: scrollDown 18s linear infinite;
+                        will-change: transform;
+                     }
+                  `}</style>
 
-                  <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 relative z-10 pb-10">
-                     <h2 className="text-2xl sm:text-3xl md:text-[40px] lg:text-[46px] font-bold text-[#0f172a] mb-8 sm:mb-12 md:mb-16 lg:mb-24 tracking-tighter">
-                        Glimpses of App UI Screens
-                     </h2>
-
-                     {/* Responsive Grid — 2 cols on mobile, 3 on sm, 5 on lg */}
-                     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-5 md:gap-7 justify-center items-start w-full">
-                        {/* Column 1 */}
-                        <div className="flex flex-col gap-3 sm:gap-6 md:gap-10 lg:mt-24">
-                           <Image src="/gip/iPhone 11 Pro1.svg" alt="App UI Screen 1" width={300} height={600} priority className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] hover:-translate-y-2 transition-transform duration-300 rounded-[16px] sm:rounded-[30px]" />
-                           <Image src="/gip/iPhone 11 Pro4.svg" alt="App UI Screen 2" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] hover:-translate-y-2 transition-transform duration-300 rounded-[16px] sm:rounded-[30px]" />
+                  <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 relative z-10 mb-10">
+                     {/* Watermark */}
+                     <div className="relative mt-[80px]">
+                        <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[50px] sm:text-[80px] md:text-[110px] lg:text-[150px] font-black text-[#f1f5f9] whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-[85px]">
+                           UI Screens
                         </div>
-                        {/* Column 2 */}
-                        <div className="flex flex-col gap-3 sm:gap-6 md:gap-10 mt-6 sm:mt-12 lg:mt-0">
-                           <Image src="/gip/iPhone 11 Pro2.svg" alt="App UI Screen 3" width={300} height={600} priority className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] hover:-translate-y-2 transition-transform duration-300 rounded-[16px] sm:rounded-[30px]" />
-                           <Image src="/gip/iPhone 11 Pro7.svg" alt="App UI Screen 4" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] hover:-translate-y-2 transition-transform duration-300 rounded-[16px] sm:rounded-[30px]" />
-                        </div>
-                        {/* Column 3 */}
-                        <div className="flex flex-col gap-3 sm:gap-6 md:gap-10 mt-3 sm:mt-0 lg:mt-32">
-                           <Image src="/gip/iPhone 11 Pro3.svg" alt="App UI Screen 5" width={300} height={600} priority className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] hover:-translate-y-2 transition-transform duration-300 rounded-[16px] sm:rounded-[30px]" />
-                           <Image src="/gip/iPhone 11 Pro5.svg" alt="App UI Screen 6" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] hover:-translate-y-2 transition-transform duration-300 rounded-[16px] sm:rounded-[30px]" />
-                        </div>
-                        {/* Column 4 — hidden on mobile, show on sm+ */}
-                        <div className="hidden sm:flex flex-col gap-3 sm:gap-6 md:gap-10 sm:mt-16 lg:mt-4">
-                           <Image src="/gip/iPhone 11 Pro4.svg" alt="App UI Screen 7" width={300} height={600} priority className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] hover:-translate-y-2 transition-transform duration-300 rounded-[16px] sm:rounded-[30px]" />
-                           <Image src="/gip/iPhone 11 Pro9.svg" alt="App UI Screen 8" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] hover:-translate-y-2 transition-transform duration-300 rounded-[16px] sm:rounded-[30px]" />
-                        </div>
-                        {/* Column 5 — visible only on lg */}
-                        <div className="hidden lg:flex flex-col gap-10 lg:mt-20">
-                           <Image src="/gip/iPhone 11 Pro5.svg" alt="App UI Screen 9" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] hover:-translate-y-2 transition-transform duration-300 rounded-[30px]" />
-                           <Image src="/gip/iPhone 11 Pro10.svg" alt="App UI Screen 10" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] hover:-translate-y-2 transition-transform duration-300 rounded-[30px]" />
-                        </div>
+                        <h2 className="relative text-2xl sm:text-3xl md:text-[40px] lg:text-[46px] font-bold text-[#0f172a] mb-8 sm:mb-12 md:mb-16 lg:mb-24 tracking-tighter">
+                           Glimpses of App UI Screens
+                        </h2>
                      </div>
+
+                     {/* Infinite-scroll grid — wrapped in fade-masked container */}
+                     <div className="relative" style={{ height: "700px" }}>
+                        {/* Top white fade */}
+                        <div className="absolute -top-1 left-0 right-0 h-22 z-20 pointer-events-none" style={{ background: "linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)" }} />
+
+                        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-5 md:gap-7 justify-center items-start w-full h-full">
+
+                           {/* Column 1 — scroll UP */}
+                           <div className="overflow-hidden h-full">
+                              <div className="col-scroll-up flex flex-col gap-3 sm:gap-6 md:gap-8">
+                                 {/* Original set */}
+                                 <Image src="/gip/iPhone 11 Pro1.svg" alt="App UI Screen 1" width={300} height={600} priority className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                                 <Image src="/gip/iPhone 11 Pro4.svg" alt="App UI Screen 2" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                                 <Image src="/gip/iPhone 11 Pro7.svg" alt="App UI Screen 3" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                                 {/* Duplicate set for seamless loop */}
+                                 <Image src="/gip/iPhone 11 Pro1.svg" aria-hidden alt="" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                                 <Image src="/gip/iPhone 11 Pro4.svg" aria-hidden alt="" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                                 <Image src="/gip/iPhone 11 Pro7.svg" aria-hidden alt="" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                              </div>
+                           </div>
+
+                           {/* Column 2 — scroll DOWN */}
+                           <div className="overflow-hidden h-full">
+                              <div className="col-scroll-down flex flex-col gap-3 sm:gap-6 md:gap-8">
+                                 {/* Original set */}
+                                 <Image src="/gip/iPhone 11 Pro2.svg" alt="App UI Screen 4" width={300} height={600} priority className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                                 <Image src="/gip/iPhone 11 Pro7.svg" alt="App UI Screen 5" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                                 <Image src="/gip/iPhone 11 Pro9.svg" alt="App UI Screen 6" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                                 {/* Duplicate set */}
+                                 <Image src="/gip/iPhone 11 Pro2.svg" aria-hidden alt="" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                                 <Image src="/gip/iPhone 11 Pro7.svg" aria-hidden alt="" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                                 <Image src="/gip/iPhone 11 Pro9.svg" aria-hidden alt="" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                              </div>
+                           </div>
+
+                           {/* Column 3 — scroll UP */}
+                           <div className="overflow-hidden h-full">
+                              <div className="col-scroll-up flex flex-col gap-3 sm:gap-6 md:gap-8">
+                                 {/* Original set */}
+                                 <Image src="/gip/iPhone 11 Pro3.svg" alt="App UI Screen 7" width={300} height={600} priority className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                                 <Image src="/gip/iPhone 11 Pro5.svg" alt="App UI Screen 8" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                                 <Image src="/gip/iPhone 11 Pro10.svg" alt="App UI Screen 9" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                                 {/* Duplicate set */}
+                                 <Image src="/gip/iPhone 11 Pro3.svg" aria-hidden alt="" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                                 <Image src="/gip/iPhone 11 Pro5.svg" aria-hidden alt="" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                                 <Image src="/gip/iPhone 11 Pro10.svg" aria-hidden alt="" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                              </div>
+                           </div>
+
+                           {/* Column 4 — hidden on mobile, scroll DOWN */}
+                           <div className="hidden sm:block overflow-hidden h-full">
+                              <div className="col-scroll-down flex flex-col gap-3 sm:gap-6 md:gap-8">
+                                 {/* Original set */}
+                                 <Image src="/gip/iPhone 11 Pro4.svg" alt="App UI Screen 10" width={300} height={600} priority className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                                 <Image src="/gip/iPhone 11 Pro9.svg" alt="App UI Screen 11" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                                 <Image src="/gip/iPhone 11 Pro1.svg" alt="App UI Screen 12" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                                 {/* Duplicate set */}
+                                 <Image src="/gip/iPhone 11 Pro4.svg" aria-hidden alt="" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                                 <Image src="/gip/iPhone 11 Pro9.svg" aria-hidden alt="" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                                 <Image src="/gip/iPhone 11 Pro1.svg" aria-hidden alt="" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[16px] sm:rounded-[30px]" />
+                              </div>
+                           </div>
+
+                           {/* Column 5 — visible only on lg, scroll UP */}
+                           <div className="hidden lg:block overflow-hidden h-full">
+                              <div className="col-scroll-up flex flex-col gap-8">
+                                 {/* Original set */}
+                                 <Image src="/gip/iPhone 11 Pro5.svg" alt="App UI Screen 13" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[30px]" />
+                                 <Image src="/gip/iPhone 11 Pro10.svg" alt="App UI Screen 14" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[30px]" />
+                                 <Image src="/gip/iPhone 11 Pro3.svg" alt="App UI Screen 15" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[30px]" />
+                                 {/* Duplicate set */}
+                                 <Image src="/gip/iPhone 11 Pro5.svg" aria-hidden alt="" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[30px]" />
+                                 <Image src="/gip/iPhone 11 Pro10.svg" aria-hidden alt="" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[30px]" />
+                                 <Image src="/gip/iPhone 11 Pro3.svg" aria-hidden alt="" width={300} height={600} className="w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.15)] rounded-[30px]" />
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>{/* end fade wrapper */}
                   </div>
                </section>
 

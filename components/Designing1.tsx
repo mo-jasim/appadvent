@@ -105,10 +105,6 @@ export default function Designing1() {
       `}</style>
 
             <div className="max-w-[1240px] mx-auto relative z-10 px-2 sm:px-4 lg:px-6">
-                {/* Watermark */}
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[30px] sm:text-[50px] md:text-[90px] lg:text-[110px] font-black text-[#f1f5f9] whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-[50px] ml-[50px]">
-                    DEVELOPMENT PROCESS
-                </div>
                 <h2 className="relative text-[32px] md:text-[42px] font-bold text-center text-gray-900 tracking-tight">
                     Our Development Process
                 </h2>
