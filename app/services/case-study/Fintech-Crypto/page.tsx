@@ -114,71 +114,60 @@ export default function FintechCryptoPage() {
         {/* ═══════════════════════════════════════════════════════════
           SECTION 1 — Hero
       ══════════════════════════════════════════════════════════════ */}
-        <section className="relative w-full min-h-[570px] flex items-center overflow-hidden">
-
-          {/* ── Left content ── */}
-          <div className="relative z-10 w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-16 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
-            <div>
-
-              <h1 className="text-4xl sm:text-[45px] lg:text-[55px] font-bold text-gray-900 leading-[1.15] tracking-tight mb-6">
-                Fintech &amp; Crypto <br />
-                App Development
-                {" "}
-                Solutions
+        <section className="relative w-full min-h-[500px] md:min-h-[600px] flex items-center pt-24 md:pt-0">
+          <div className="relative z-10 w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-16 py-12 md:py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.15] tracking-tight mb-6">
+                Fintech &amp; Crypto <br className="hidden md:block" />
+                App Development Solutions
               </h1>
 
-              <p className="text-[20px] sm:text-[20px] text-gray-500 leading-relaxed mb-8">
-                We work primarily within the fintech niche and aim to deliver high-quality software solutions with an emphasis on speed, flexibility, and effectiveness. We acknowledge the basic requirements of your business and are committed to making your dream come true on a given schedule and budget.
+              <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
+                We work primarily within the fintech niche and aim to deliver high-quality software solutions with an emphasis on speed, flexibility, and effectiveness. We acknowledge the requirements of your business and turn your vision into reality.
               </p>
-              {/* Have a project in mind? */}
-              <div className="flex flex-wrap gap-4">
-                <p
+
+              <div className="flex justify-center lg:justify-start">
+                <button
                   onClick={() => setIsModalOpen(true)}
-                  className="text-[#32B9E9] text-semibold text-[20px]
-        px-5 py-2 sm:px-6 sm:py-2.5 cursor-pointer underline"
+                  className="text-[#32B9E9] font-bold text-lg md:text-xl underline underline-offset-8 hover:text-[#2aa8d6] transition-colors"
                 >
                   Have a project in mind?
-                </p>
+                </button>
               </div>
             </div>
 
-            {/* ── Right: Gradient blob + phone mockup ── */}
-            <div className="relative flex justify-center items-center min-h-[300px] md:min-h-[420px]">
-              <img src="/Letimg/Frame 134.svg" alt="Illustration" className="w-full max-w-[500px] lg:max-w-[570px] h-auto object-contain" />
+            <div className="relative flex justify-center items-center">
+              <div className="relative w-full max-w-[320px] sm:max-w-[450px] lg:max-w-[550px] aspect-[4/3] transition-transform duration-500 hover:scale-[1.02]">
+                <img src="/Letimg/Frame 134.svg" alt="Fintech Mockup" className="w-full h-full object-contain" />
+              </div>
             </div>
-
           </div>
         </section>
 
-        {/* ═══════════════════════════════════════════════════════════
-          SECTION 2 — Services + Phone mockups
-      ══════════════════════════════════════════════════════════════ */}
-        <section className="relative w-full min-h-[570px] flex items-center overflow-hidden mt-[60px] lg:mt-[80px]">
+        {/* SECTION 2 — Services */}
+        <section className="relative w-full py-16 md:py-24 bg-white/30 backdrop-blur-sm overflow-hidden">
           <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-16">
-            <h2 className="text-[32px] sm:text-[40px] lg:text-[48px] font-bold text-gray-900 leading-[1.2] lg:leading-[1] tracking-tight mb-4 text-center lg:text-left">
-              Scale Your Fintech Needs with{" "}
-              Appadvent&apos;s Expert
-              Software Development Services
-            </h2>
-            <p className="text-[16px] sm:text-[18px] font-normal text-gray-700 leading-relaxed mb-10 max-w-4xl text-center lg:text-left">
-              We work primarily within the fintech niche and aim to deliver high-quality software solutions with an emphasis on speed, flexibility, and effectiveness. We acknowledge the basic requirements of your business and are committed to making your dream come true on a given schedule and budget.
-            </p>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div className="max-w-4xl mx-auto lg:mx-0 text-center lg:text-left mb-12 md:mb-20">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight tracking-tight mb-6">
+                Scale Your Fintech Needs with Expert Software Development
+              </h2>
+              <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+                Appadvent delivers high-quality software solutions with an emphasis on speed, flexibility, and effectiveness. We committed to making your dream come true on time and within budget.
+              </p>
+            </div>
 
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
               {/* Left: Text content */}
               <div className="order-2 lg:order-1">
-
-                {/* Feature list */}
-                <div className="flex flex-col gap-6 lg:gap-5">
+                <div className="space-y-8">
                   {features.map((f) => (
-                    <div key={f.title} className="flex flex-col sm:flex-row items-start gap-4 sm:gap-5">
-                      <div className="w-12 h-12 sm:w-14 sm:h-14 flex-shrink-0 flex items-center justify-center text-[20px] bg-white lg:bg-transparent rounded-xl shadow-sm lg:shadow-none border border-gray-100 lg:border-none">
-                        <img src={f.img} alt="" className="w-6 h-6 sm:w-8 sm:h-8" />
+                    <div key={f.title} className="flex gap-5 group">
+                      <div className="w-12 h-12 md:w-16 md:h-16 shrink-0 bg-white rounded-2xl shadow-lg border border-gray-100 flex items-center justify-center group-hover:bg-[#32B9E9] transition-all duration-300">
+                        <img src={f.img} alt="" className="w-6 h-6 md:w-8 md:h-8 group-hover:brightness-0 group-hover:invert transition-all" />
                       </div>
                       <div>
-                        <p className="font-bold text-[18px] sm:text-[20px] text-gray-900 mb-1 sm:mb-1.5">{f.title}</p>
-                        <p className="text-[15px] sm:text-[16px] text-[#323A3E] leading-relaxed max-w-[785px]">{f.desc}</p>
+                        <h3 className="font-bold text-lg md:text-xl text-gray-900 mb-2">{f.title}</h3>
+                        <p className="text-sm md:text-base text-gray-500 leading-relaxed">{f.desc}</p>
                       </div>
                     </div>
                   ))}
@@ -186,17 +175,13 @@ export default function FintechCryptoPage() {
               </div>
 
               {/* Right: phone mockups */}
-              <div className="flex justify-center items-end gap-2 relative order-1 lg:order-2 w-full px-4 sm:px-0">
-                <img src="/Letimg/CryptoCove - Crypto Wallet 1.svg" alt="Illustration" className="w-full max-w-[400px] lg:max-w-none h-auto object-contain drop-shadow-xl lg:drop-shadow-none" />
-
-                {/* Glow behind phones */}
-                <div
-                  className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[200px] sm:w-[300px] h-[80px] sm:h-[120px] rounded-full pointer-events-none"
-                  style={{
-                    background: "radial-gradient(ellipse,rgba(168,85,247,0.25) 0%,transparent 70%)",
-                    filter: "blur(20px)",
-                  }}
-                />
+              <div className="flex justify-center items-center relative order-1 lg:order-2">
+                <div className="relative w-full max-w-[350px] md:max-w-[450px] transition-transform duration-500 hover:scale-[1.03]">
+                  <img src="/Letimg/CryptoCove - Crypto Wallet 1.svg" alt="Crypto Wallet" className="w-full h-auto drop-shadow-2xl" />
+                  
+                  {/* Glow effect */}
+                  <div className="absolute inset-0 bg-[#32B9E9]/10 blur-[100px] rounded-full -z-10 animate-pulse" />
+                </div>
               </div>
             </div>
           </div>
@@ -212,8 +197,8 @@ export default function FintechCryptoPage() {
           }}
         >
           {/* Title */}
-          <h2 className="text-[48px] sm:text-[36px] lg:text-[48px] font-bold text-white text-center leading-[1.3] tracking-tight mb-12">
-            Our Fintech Application Development <br className="hidden sm:block" /> Framework
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center leading-tight tracking-tight mb-12">
+            Our Fintech Application <br className="hidden sm:block" /> Development Framework
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-5 max-w-[1440px] mx-auto">
@@ -333,7 +318,7 @@ export default function FintechCryptoPage() {
                   <div
                     key={index}
                     onClick={() => setExpandedCard(isExpanded ? null : index)}
-                    className={`group relative overflow-hidden cursor-pointer rounded-[24px] p-6 sm:p-8 lg:p-10 flex flex-col hover:shadow-sm transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] flex-none snap-start ${isExpanded ? 'h-[420px] sm:h-[380px] w-[90vw] sm:w-[600px] lg:w-[850px] shadow-md' : 'h-[300px] sm:h-[350px] w-[85vw] sm:w-[400px] lg:w-[450px] hover:-translate-y-1'}`}
+                    className={`group relative overflow-hidden cursor-pointer rounded-[24px] p-6 sm:p-8 lg:p-10 flex flex-col hover:shadow-sm transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] flex-none snap-start ${isExpanded ? 'h-[420px] sm:h-[450px] w-[90vw] sm:w-[600px] lg:w-[850px] shadow-md' : 'h-[300px] sm:h-[350px] w-[85vw] sm:w-[400px] lg:w-[450px] hover:-translate-y-1'}`}
                     style={{ backgroundColor: card.bg }}
                   >
                     {/* Header: Icon + Title smoothly animating via absolute positioning */}
@@ -352,8 +337,8 @@ export default function FintechCryptoPage() {
                     </div>
 
                     {/* Dynamic expanded description smoothly fading & expanding */}
-                    <div className={`transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] overflow-hidden flex flex-col w-[calc(90vw-48px)] sm:w-[536px] lg:w-[770px] ${isExpanded ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                      <p className="text-[18px] sm:text-[20px] lg:text-[20px] text-[#323A3E] leading-[1.6] lg:leading-[1.7] font-regular lg:pr-8">
+                    <div className={`transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] overflow-hidden flex flex-col w-full ${isExpanded ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-[16px] sm:text-[18px] lg:text-[20px] text-[#323A3E] leading-[1.6] lg:leading-[1.7] font-regular lg:pr-8">
                         {card.desc}
                       </p>
                     </div>
@@ -501,8 +486,8 @@ function TechStackSection() {
 
         {/* Left — heading + category nav */}
         <div className='max-w-7xl lg:w-[45%] border-b-2 lg:border-b-0 lg:border-r-2 border-gray-200 pb-10 lg:pb-0 lg:pr-10'>
-          <h2 className="text-[32px] sm:text-[40px] lg:text-[48px] font-bold text-gray-900 leading-[1.25] tracking-tight mb-8">
-            The Right Tools for Your Fintech App: Our Technology Stack
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight tracking-tight mb-8">
+            The Right Tools for Your Fintech App
           </h2>
 
           <div className="flex flex-col gap-2">

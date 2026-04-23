@@ -39,7 +39,7 @@ export default function CRMcasePage() {
         <>
             <div className="font-THICCCBOI text-slate-800 min-h-screen w-full overflow-x-hidden">
                 <div className='w-full' style={{ backgroundImage: "url('/images/polygon.png')", }} >
-                    <section className="relative w-full h-[700px] flex items-center justify-center">
+                    <section className="relative w-full min-h-[500px] md:h-[700px] flex items-center justify-center pt-24 md:pt-0">
                         {/* Background Video */}
                         <div className="absolute inset-0 w-full h-full overflow-hidden">
                             <video
@@ -51,49 +51,45 @@ export default function CRMcasePage() {
                             >
                                 <source src="/caseimg/vecteezy.mp4" type="video/mp4" />
                             </video>
-                            <div className="absolute inset-0 bg-black/60 z-10"></div> {/* Dark Overlay */}
+                            <div className="absolute inset-0 bg-black/70 z-10"></div>
                         </div>
 
-                        <div className="relative z-20 text-center px-4 max-w-6xl mx-auto flex flex-col items-center">
+                        <div className="relative z-20 text-center px-4 max-w-6xl mx-auto flex flex-col items-center gap-6">
                             {/* Logo Badge */}
-                            <div className="mb-6 w-[103px] h-[100px] rounded-lg  flex items-center justify-center overflow-hidden">
-                                <Image src="/Letimg/claimlogo.svg" alt="Goalkick Logo" width={100} height={100} className="object-contain" />
+                            <div className="w-24 md:w-32 h-auto rounded-xl flex items-center justify-center overflow-hidden">
+                                <Image src="/Letimg/claimlogo.svg" alt="Claim 360 Logo" width={120} height={120} className="object-contain" />
                             </div>
 
-                            <h1 className=" max-w-7xl mx-auto px-4 text-3xl sm:text-[40px] md:text-[50px] lg:text-[60px] font-bold text-[#FFFFFF] leading-tight mb-4">
-                                Claim 360 – Your All-in-One CRM Web Application for Seamless Client Management
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight max-w-5xl">
+                                Claim 360 – Your All-in-One CRM for Seamless Client Management
                             </h1>
-                            <p className="text-base sm:text-lg md:text-xl text-[#FFFFFF] mb-4 max-w-6xl text-center">
-                                Claim360 is a comprehensive web app designed to simplify home insurance claims after natural disasters. It streamlines every step — from reporting damage to final settlement — ensuring speed, transparency, and peace of mind. When disaster strikes, Claim360 helps homeowners recover faster.                        </p>
+                            <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-4xl text-center leading-relaxed">
+                                Claim360 is a comprehensive web application designed to simplify insurance claims after natural disasters. From reporting damage to final settlement — ensuring speed, transparency, and peace of mind.
+                            </p>
 
-                            <div className="flex flex-col sm:flex-row items-center gap-4">
-                                <p className="text-white/80 mr-2">Available on Android and iOS</p>
-                            </div>
-                            <div className="flex flex-col sm:flex-row gap-3 mt-4 mb-4">
-                                <button className="flex justify-center items-center gap-2 bg-black hover:bg-gray-900 border border-white/20 text-white px-5 py-2.5 rounded-lg transition-transform hover:scale-105 shadow-xl w-full sm:w-auto">
-                                    <Apple className="w-6 h-6" />
-                                    <div className="flex flex-col items-start leading-none">
-                                        <span className="text-[10px] text-gray-300">Download on the</span>
-                                        <span className="text-[15px] font-semibold">App Store</span>
+                            <div className="flex flex-col sm:flex-row gap-4 mt-4">
+                                <button className="flex justify-center items-center gap-3 bg-black hover:bg-gray-900 border border-white/20 text-white px-6 py-3 rounded-xl transition-all hover:scale-105 shadow-xl w-full sm:w-auto group">
+                                    <Apple className="w-7 h-7 group-hover:scale-110 transition-transform" />
+                                    <div className="flex flex-col items-start leading-none text-left">
+                                        <span className="text-[10px] text-gray-400 uppercase tracking-wider">Download on</span>
+                                        <span className="text-base font-semibold">App Store</span>
                                     </div>
                                 </button>
-                                <button className="flex justify-center items-center gap-2 bg-black hover:bg-gray-900 border border-white/20 text-white px-5 py-2.5 rounded-lg transition-transform hover:scale-105 shadow-xl w-full sm:w-auto">
-                                    <PlayCircle className="w-6 h-6" />
-                                    <div className="flex flex-col items-start leading-none">
-                                        <span className="text-[10px] text-gray-300">GET IT ON</span>
-                                        <span className="text-[15px] font-semibold">Google Play</span>
+                                <button className="flex justify-center items-center gap-3 bg-black hover:bg-gray-900 border border-white/20 text-white px-6 py-3 rounded-xl transition-all hover:scale-105 shadow-xl w-full sm:w-auto group">
+                                    <PlayCircle className="w-7 h-7 group-hover:scale-110 transition-transform" />
+                                    <div className="flex flex-col items-start leading-none text-left">
+                                        <span className="text-[10px] text-gray-400 uppercase tracking-wider">Get it on</span>
+                                        <span className="text-base font-semibold">Google Play</span>
                                     </div>
                                 </button>
                             </div>
-                            <div className="flex items-center justify-center mt-6">
-                                <button
-                                    onClick={() => setIsModalOpen(true)}
-                                    className="text-[#32B9E9] text-semibold text-[20px]
-        px-5 py-2 sm:px-6 sm:py-2.5 cursor-pointer underline font-THICCCBOI"
-                                >
-                                    Have a project in mind?
-                                </button>
-                            </div>
+
+                            <button
+                                onClick={() => setIsModalOpen(true)}
+                                className="mt-4 text-[#32B9E9] font-bold text-lg md:text-xl underline underline-offset-8 hover:text-[#2aa8d6] transition-colors"
+                            >
+                                Have a project in mind?
+                            </button>
                         </div>
                     </section>
                     {/* Hero Devices Mockup Image Placeholder */}
@@ -101,70 +97,86 @@ export default function CRMcasePage() {
                         <img src="/images/img1.svg" alt="img" className="w-full h-auto mt-10" />
                     </div>
 
-                    {/* ABOUT SECTION inside Hero container */}
-                    <div className="max-w-6xl mx-auto  mt-[50px] mb-[80px] pb-12 relative">
-                        {/* OVERVIEW Watermark */}
-                        <div className="relative items-center justify-center text-center text-[30px] sm:text-[50px] md:text-[90px] lg:text-[110px] font-black text-[#ececec]/60 whitespace-nowrap z-0 pointer-events-none select-none leading-none tracking-tight">
-                            OVERVIEW
-                        </div>
-                        <h2 className="relative text-[32px] md:text-[48px] font-bold text-center text-slate-900 -mt-[70px]">About Claim 360 WebApp</h2>
-                        <p className="text-[16px] md:text-[18px] text-[#000000] mb-10 text-center leading-relaxed">
-                            Claim360 is a web application designed to simplify and automate home insurance claims during natural disasters. With features like email parsing, smart routing, manual claim entry, and an integrated CRM, it ensures faster processing and better transparency. The platform bridges the gap between insurers and homeowners, turning a stressful process into a smooth digital experience.
-                        </p>
+                    {/* ABOUT SECTION */}
+                    <section className="relative w-full py-16 md:py-24 px-4 overflow-hidden">
+                        <div className="max-w-6xl mx-auto relative z-10 text-center">
+                            {/* OVERVIEW Watermark */}
+                            <div className="absolute -top-12 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
+                                OVERVIEW
+                            </div>
+                            
+                            <div className="relative z-10 mb-16">
+                                <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-8 tracking-tight">
+                                    About Claim 360 WebApp
+                                </h2>
+                                <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                                    Claim360 is a web application designed to simplify and automate home insurance claims during natural disasters. With features like email parsing, smart routing, and manual entry, it ensures faster processing and total transparency.
+                                </p>
+                            </div>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-6 sm:gap-x-8 sm:gap-y-8">
-                            <div className="flex gap-3 items-start">
-                                <Building2 className="w-6 h-6 sm:w-7 sm:h-7 text-black mt-1 flex-shrink-0" />
-                                <div>
-                                    <h4 className="font-bold text-black text-[15px] sm:text-[17px]">Industry</h4>
-                                    <p className="text-[#010F14] text-[14px] sm:text-[16px] lg:text-[18px]">Sports &amp; Social</p>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 text-left border-t border-gray-100 pt-16">
+                                <div className="flex gap-4 items-start justify-center sm:justify-start group">
+                                    <div className="p-3 bg-gray-50 rounded-2xl group-hover:bg-[#32B9E9] transition-colors duration-300">
+                                        <Building2 className="w-6 h-6 text-gray-700 group-hover:text-white" />
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-gray-400 text-xs uppercase tracking-widest mb-1">Industry</h4>
+                                        <p className="text-slate-900 font-semibold text-lg">InsurTech</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="flex gap-3 items-start">
-                                <MapPin className="w-6 h-6 sm:w-7 sm:h-7 text-black mt-1 flex-shrink-0" />
-                                <div>
-                                    <h4 className="font-bold text-black text-[15px] sm:text-[17px]">DB Platform</h4>
-                                    <p className="text-[#010F14] text-[14px] sm:text-[16px] lg:text-[18px]">PostgreSQL (AWS)</p>
+                                <div className="flex gap-4 items-start justify-center sm:justify-start group">
+                                    <div className="p-3 bg-gray-50 rounded-2xl group-hover:bg-[#32B9E9] transition-colors duration-300">
+                                        <MapPin className="w-6 h-6 text-gray-700 group-hover:text-white" />
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-gray-400 text-xs uppercase tracking-widest mb-1">DB Platform</h4>
+                                        <p className="text-slate-900 font-semibold text-lg">PostgreSQL (AWS)</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="flex gap-3 items-start">
-                                <Clock className="w-6 h-6 sm:w-7 sm:h-7 text-black mt-1 flex-shrink-0" />
-                                <div>
-                                    <h4 className="font-bold text-black text-[15px] sm:text-[17px]">Developed Time</h4>
-                                    <p className="text-[#010F14] text-[14px] sm:text-[16px] lg:text-[18px]">4 Months</p>
+                                <div className="flex gap-4 items-start justify-center sm:justify-start group">
+                                    <div className="p-3 bg-gray-50 rounded-2xl group-hover:bg-[#32B9E9] transition-colors duration-300">
+                                        <Clock className="w-6 h-6 text-gray-700 group-hover:text-white" />
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-gray-400 text-xs uppercase tracking-widest mb-1">Timeline</h4>
+                                        <p className="text-slate-900 font-semibold text-lg">4 Months</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="flex gap-3 items-start">
-                                <Briefcase className="w-6 h-6 sm:w-7 sm:h-7 text-black mt-1 flex-shrink-0" />
-                                <div>
-                                    <h4 className="font-bold text-black text-[15px] sm:text-[17px]">Service</h4>
-                                    <p className="text-[#010F14] text-[14px] sm:text-[16px] lg:text-[18px] break-words">Design &amp; Development</p>
+                                <div className="flex gap-4 items-start justify-center sm:justify-start group">
+                                    <div className="p-3 bg-gray-50 rounded-2xl group-hover:bg-[#32B9E9] transition-colors duration-300">
+                                        <Briefcase className="w-6 h-6 text-gray-700 group-hover:text-white" />
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-gray-400 text-xs uppercase tracking-widest mb-1">Service</h4>
+                                        <p className="text-slate-900 font-semibold text-lg">Product Dev</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
 
                     {/* ─────────────────────────────────────────────
                    3. THE RESULTS BANNER
                ───────────────────────────────────────────── */}
-                    <section className="w-full bg-[#0D57C7] pt-[60px] pb-[60px] px-4 sm:px-6 lg:px-8">
+                    {/* --- THE RESULTS BANNER --- */}
+                    <section className="w-full bg-[#0D57C7] py-16 md:py-24 px-4 sm:px-6 lg:px-8">
                         <div className="max-w-[1200px] mx-auto">
-                            <h2 className="text-[48px] sm:text-[32px] font-bold text-white mb-6 sm:mb-8 md:mb-10">The Results</h2>
-                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+                            <h2 className="text-3xl md:text-5xl font-bold text-white mb-12 md:mb-20 text-center lg:text-left">The Results</h2>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-12">
                                 {[
                                     { icon: "/images/downloadicon.svg", stat: "600+", label: "Downloads" },
                                     { icon: "/Letimg/Frame387.svg", stat: "500+", label: "Users" },
                                     { icon: "/Letimg/Reviews.svg", stat: "300+", label: "Premium Members" },
                                     { icon: "/Letimg/Starimg.svg", stat: "4.2", label: "Average rating" },
                                 ].map(({ icon, stat, label }) => (
-                                    <div key={label} className="flex items-center gap-3 sm:gap-4">
-                                        <div className="w-[70px] h-[70px] sm:w-14 sm:h-14 bg-white/10 rounded-full flex items-center justify-center border border-white/20 flex-shrink-0">
-                                            <img src={icon} alt={label} className="w-[70px] h-[70px] sm:w-12 sm:h-12" />
+                                    <div key={label} className="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left group">
+                                        <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center border border-white/20 shrink-0 transform group-hover:rotate-6 group-hover:scale-110 transition-all duration-300">
+                                            <img src={icon} alt={label} className="w-10 h-10 object-contain" />
                                         </div>
                                         <div>
-                                            <h3 className="text-[48px] sm:text-[32px] font-bold text-white">{stat}</h3>
-                                            <p className="text-white/70 text-[20px] sm:text-[16px]">{label}</p>
+                                            <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1">{stat}</h3>
+                                            <p className="text-white/70 text-sm md:text-base font-medium leading-tight">{label}</p>
                                         </div>
                                     </div>
                                 ))}
@@ -174,120 +186,130 @@ export default function CRMcasePage() {
 
 
                     {/* --- OPPORTUNITIES AWAIT SECTION --- */}
-                    <section className=" mt-[80px] mb-[80px] max-w-7xl mx-auto">
+                    <section className="relative w-full py-20 md:py-32 px-4 overflow-hidden">
                         {/* Watermark */}
-                        <div className="absolute left-1/2 -translate-x-1/2 text-[30px] sm:text-[50px] md:text-[90px] lg:text-[110px] font-black text-[#939192]/20 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-[40px]">
-                            OPPORTUNITIES AWAIT
+                        <div className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
+                            OPPORTUNITIES
                         </div>
-                        <h2 className="relative z-10 text-[32px] md:text-[48px] font-bold text-black text-center lg:text-left">Opportunities await</h2>
 
-                        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
-                            {/* Left Content */}
-                            <div className="lg:w-1/2 space-y-4 lg:space-y-10 max-w-[600px]">
-                                <div className="flex gap-4">
-                                    <img src="/Letimg/family_group.svg" alt="img" className="w-6 h-6 flex-shrink-0 mt-1" />
-                                    <div>
-                                        <h3 className="text-[16px] font-bold text-black mb-2">Digital Transformation in Insurance:-</h3>
-                                        <p className="text-[16px] text-black leading-relaxed">
-                                            The insurance sector is still transitioning from paper-based systems to digital workflows. Claim360 can become a flagship platform for digital claim management, reducing manual work and improving efficiency for insurers.</p>
+                        <div className="max-w-7xl mx-auto relative z-10">
+                            <h2 className="text-3xl md:text-5xl font-bold text-black text-center lg:text-left mb-16 md:mb-24">
+                                Opportunities await
+                            </h2>
+
+                            <div className="flex flex-col lg:flex-row gap-16 md:gap-24 items-center">
+                                {/* Left Content */}
+                                <div className="lg:w-1/2 space-y-8 md:space-y-12">
+                                    <div className="flex gap-5 group">
+                                        <div className="shrink-0 w-12 h-12 rounded-2xl bg-gray-50 flex items-center justify-center group-hover:bg-[#32B9E9] transition-colors duration-300">
+                                            <Activity className="w-6 h-6 text-gray-700 group-hover:text-white" />
+                                        </div>
+                                        <div>
+                                            <h3 className="text-lg md:text-xl font-bold text-black mb-3">Digital Transformation</h3>
+                                            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                                                Claim360 becomes a flagship platform for digital claim management, reducing manual work and improving efficiency for insurers transitioning from paper-based systems.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex gap-5 group">
+                                        <div className="shrink-0 w-12 h-12 rounded-2xl bg-gray-50 flex items-center justify-center group-hover:bg-[#32B9E9] transition-colors duration-300">
+                                            <Users className="w-6 h-6 text-gray-700 group-hover:text-white" />
+                                        </div>
+                                        <div>
+                                            <h3 className="text-lg md:text-xl font-bold text-black mb-3">Customer Experience</h3>
+                                            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                                                By offering transparency and guided filing, Claim360 positions itself as a customer-centric solution in an industry known for slow processes.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex gap-5 group">
+                                        <div className="shrink-0 w-12 h-12 rounded-2xl bg-gray-50 flex items-center justify-center group-hover:bg-[#32B9E9] transition-colors duration-300">
+                                            <Zap className="w-6 h-6 text-gray-700 group-hover:text-white" />
+                                        </div>
+                                        <div>
+                                            <h3 className="text-lg md:text-xl font-bold text-black mb-3">Smart Technologies</h3>
+                                            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                                                Integration with AI for automated damage detection using photos or drone footage, significantly improving claim accuracy and speed.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div className="flex gap-4">
-                                    <div className="mt-1 flex-shrink-0" style={{ color: "black" }}>
-                                        <img src="/Letimg/family_group.svg" alt="img" className="w-6 h-6" />
+                                {/* Right Illustration */}
+                                <div className="lg:w-1/2 w-full flex justify-center">
+                                    <div className="relative w-full max-w-[480px] transition-all duration-500 hover:scale-[1.02]">
+                                        <img src="/images/phoneimg.svg" alt="App Preview" className="w-full h-auto drop-shadow-2xl" />
                                     </div>
-                                    <div>
-                                        <h3 className="text-[16px] font-bold text-black mb-2">Enhanced Customer Experience:-</h3>
-                                        <p className="text-[16px] text-black leading-relaxed">By offering transparency, instant updates, and guided claim filing. Claim360 positions itself as a customer-centric solution — a major differentiator in an industry known for slow, confusing processes.</p>
-                                    </div>
-                                </div>
-
-                                <div className="flex gap-4">
-                                    <div className="mt-1 flex-shrink-0">
-                                        <img src="/Letimg/family_group.svg" alt="img" className="w-6 h-6" />
-                                    </div>
-                                    <div>
-                                        <h3 className="text-[16px] font-bold text-black mb-2">Integration with Smart Technologies:-</h3>
-                                        <p className="text-[16px] text-black leading-relaxed">There's an opportunity to integrate AI and IoT features — such as automated damage detection using photos or drone footage, or predictive analytics to assess claim risks. These innovations can significantly improve claim accuracy and speed.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Right Illustration Placeholder */}
-                            <div className="lg:w-1/2 w-full">
-                                <div className="rounded-2xl flex items-center justify-center w-full">
-                                    <img src="/images/phoneimg.svg" alt="img" />
                                 </div>
                             </div>
                         </div>
                     </section>
 
                     {/* --- OUR BEST SOLUTIONS SECTION --- */}
-                    <section className="w-full bg-gradient-to-br from-[#1E3A8A] via-[#1E1B4B] to-[#7F1D1D] text-white mb-[80px] mt-[80px] pb-20 pt-10 overflow-hidden relative">
+                    <section className="relative w-full py-20 md:py-32 bg-gradient-to-br from-[#1E3A8A] via-[#1E1B4B] to-[#7F1D1D] text-white overflow-hidden">
+                        {/* Watermark */}
+                        <div className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-white/5 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
+                            SOLUTIONS
+                        </div>
 
-                        <div className="max-w-6xl px-4 mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
-                            {/* Left Side UI Mockups */}
-                            <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[30px] sm:text-[50px] md:text-[90px] lg:text-[110px] font-black text-[#939192]/20 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none mt-[5px]">
-                                OUR BEST SOLUTIONS
-                            </div>
-                            <div className="lg:w-1/2 w-full flex justify-center items-center relative min-h-[300px] md:min-h-[500px] px-4 md:px-0 hover:scale-105 transition-transform duration-300">
-                                {/* Gmail Integration Mockup */}
-                                <img src="/images/gmail-icon.svg" alt="img" className="w-full max-w-[400px] md:max-w-[600px] md:w-[120%] h-auto object-contain transform origin-center lg:-translate-x-12" />
-                            </div>
+                        <div className="max-w-7xl mx-auto px-4 relative z-10">
+                            <h2 className="text-3xl md:text-5xl font-bold mb-16 md:mb-24 text-center">Our Best Solutions</h2>
+                            
+                            <div className="flex flex-col lg:flex-row gap-16 md:gap-24 items-center">
+                                {/* Left Side Mockup */}
+                                <div className="lg:w-1/2 w-full flex justify-center items-center">
+                                    <div className="relative w-full max-w-[500px] transition-transform duration-500 hover:scale-[1.03]">
+                                        <img src="/images/gmail-icon.svg" alt="Email Parsing Mockup" className="w-full h-auto drop-shadow-2xl" />
+                                        <div className="absolute inset-0 bg-blue-500/10 blur-[100px] rounded-full -z-10" />
+                                    </div>
+                                </div>
 
-                            {/* Right Side Info */}
-                            <div className="lg:w-1/2 mt-2">
-                                <h2 className="text-[32px] md:text-[48px] font-bold mb-10 text-white text-center lg:text-left">Our Best Solutions</h2>
-
-                                <div className="space-y-8">
-                                    <div className="flex gap-4">
-                                        <img src="/images/family_group.svg" alt="img" className="w-6 h-6 text-blue-400 flex-shrink-0 mt-1" />
-                                        <p className="text-[16px] text-white/90 leading-relaxed"><span className="font-bold text-white">Email Parsing:-</span> Automatically extract claim details from incoming emails to create new cases instantly. This feature reduces manual data entry, minimizes human error, and ensures no claim request is ever missed.</p>
-                                    </div>
-                                    <div className="flex gap-4">
-                                        <img src="/images/family_group.svg" alt="img" className="w-6 h-6 text-blue-400 flex-shrink-0 mt-1" />
-                                        <p className="text-[16px] text-white/90 leading-relaxed"><span className="font-bold text-white">Smart Routing System:-</span> Incoming claims are intelligently routed to the right department or agent based on region, claim type, or priority level. It saves time and ensures faster response and resolution.</p>
-                                    </div>
-                                    <div className="flex gap-4">
-                                        <img src="/images/family_group.svg" alt="img" className="w-6 h-6 text-blue-400 flex-shrink-0 mt-1" />
-                                        <p className="text-[16px] text-white/90 leading-relaxed"><span className="font-bold text-white">Manual Claim Entry:-</span> Agents can manually add claims through a simple, guided interface — useful for offline requests or verbal submissions. This ensures every claim, regardless of source, is recorded and tracked digitally.</p>
-                                    </div>
-                                    <div className="flex gap-4">
-                                        <img src="/images/family_group.svg" alt="img" className="w-6 h-6 text-blue-400 flex-shrink-0 mt-1" />
-                                        <p className="text-[16px] text-white/90 leading-relaxed"><span className="font-bold text-white">Integrated CRM Dashboard:-</span> Claim360 comes with a built-in CRM system for managing client data, communication history, and claim interactions. It helps insurers build stronger relationships with policyholders through organized and personalized service.</p>
-                                    </div>
-                                    <div className="flex gap-4">
-                                        <img src="/images/family_group.svg" alt="img" className="w-6 h-6 text-blue-400 flex-shrink-0 mt-1" />
-                                        <p className="text-[16px] text-white/90 leading-relaxed"><span className="font-bold text-white">Real-Time Claim Tracking:-</span> Both insurers and policyholders can monitor claim progress through visual timelines and instant status updates — improving transparency and trust.</p>
-                                    </div>
+                                {/* Right Side Features */}
+                                <div className="lg:w-1/2 space-y-8 md:space-y-12">
+                                    {[
+                                        { title: "Email Parsing", desc: "Automatically extract claim details from incoming emails to create new cases instantly, reducing manual data entry." },
+                                        { title: "Smart Routing", desc: "Intelligently route claims to the right department based on region, type, or priority level for faster resolution." },
+                                        { title: "Manual Claim Entry", desc: "Agents can manually add claims through a simple interface, ensuring every request is recorded digitally." },
+                                        { title: "Integrated CRM", desc: "Built-in system for managing client data, communication history, and interaction tracking." },
+                                        { title: "Real-Time Tracking", desc: "Monitor claim progress through visual timelines and instant updates — improving transparency." },
+                                    ].map((sol, i) => (
+                                        <div key={i} className="flex gap-5 group">
+                                            <div className="shrink-0 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-[#32B9E9] transition-colors">
+                                                <Check className="w-4 h-4 text-white" />
+                                            </div>
+                                            <div>
+                                                <h3 className="text-lg font-bold text-white mb-2">{sol.title}</h3>
+                                                <p className="text-white/70 text-sm md:text-base leading-relaxed">{sol.desc}</p>
+                                            </div>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
                         </div>
-
                     </section>
                     <Highlights />
                     <Technology />
                     <Designing />
                     {/* 8. GLIMPSES OF APP UI SCREENS */}
-                    <section className="w-full  mt-[80px] mb-[80px] px-4 text-center">
+                    <section className="relative w-full py-20 md:py-32 px-4 text-center overflow-hidden">
                         {/* Watermark */}
-                        <div className="relative mt-[80px]">
-                            <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[50px] sm:text-[80px] md:text-[110px] lg:text-[150px] font-black text-[#f1f5f9] whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-[85px]">
-                                UI Screens
-                            </div>
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#f1f5f9] whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
+                            UI SCREENS
                         </div>
-                        <h2 className="relative text-2xl sm:text-3xl md:text-[40px] font-bold text-[#0f172a] mb-10 md:mb-16">
+                        
+                        <h2 className="relative z-10 text-3xl md:text-5xl font-bold text-[#0f172a] mb-12 md:mb-20">
                             Glimpses of App UI Screens
                         </h2>
-                        <div className="max-w-[1200px] mx-auto flex justify-center">
-                            <div className="w-full max-w-[1000px] rounded-3xl overflow-hidden">
-                                {/* Letimg/Frame 241.svg */}
+
+                        <div className="max-w-6xl mx-auto flex justify-center relative z-10">
+                            <div className="w-full max-w-[1000px] rounded-3xl overflow-hidden transition-all duration-500 hover:scale-[1.01]">
                                 <Image
                                     src="/Letimg/381127576_11472844 copy 3.svg"
-                                    alt="Glimpses of App UI Screens"
-                                    width={1000}
-                                    height={800}
+                                    alt="Claim 360 UI Screens"
+                                    width={1200}
+                                    height={900}
                                     priority
                                     className="w-full h-auto drop-shadow-2xl"
                                 />
