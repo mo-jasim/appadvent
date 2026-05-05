@@ -47,69 +47,18 @@ export default function HealthcareBlogPage() {
 
     return (
         <main className="min-h-screen bg-[#F8FAFC] font-sans text-[#4B5563]">
-            <div className="max-w-[1140px] mx-auto px-4 py-8 md:py-12">
+            <div className="max-w-[1240px] mx-auto px-4 py-8 md:py-12">
                 <div className="flex flex-col lg:flex-row gap-8">
                     {/* Main Content Column with Border */}
-                    <div className="lg:w-[73%] bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
-                        <div className="p-5 md:p-8">
+                    <div className="lg:w-[75%] bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
+                        <div className="p-4 md:p-6">
                             {/* Hero Image / Banner */}
-                            <div className="relative w-full rounded-[2rem] overflow-hidden mb-8 shadow-xl bg-[#060d26] min-h-[340px] flex items-center p-6 md:p-10">
-                                {/* Decorative background elements */}
-                                <div className="absolute inset-0 opacity-40">
-                                    <div className="absolute top-[-10%] right-[-10%] w-[50%] h-[100%] bg-[#32B9E9]/20 blur-[100px] rounded-full"></div>
-                                    <div className="absolute bottom-[-20%] left-[-10%] w-[40%] h-[80%] bg-blue-900/30 blur-[80px] rounded-full"></div>
-                                </div>
-
-                                {/* Hexagon/Octagon Container */}
-                                <div className="relative z-10 flex flex-col md:flex-row items-center gap-8 w-full">
-                                    <div className="relative w-48 h-48 md:w-[240px] md:h-[240px] flex-shrink-0">
-                                        <div className="absolute inset-0 bg-[#32B9E9]/10" style={{ clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)' }}></div>
-                                        <div className="absolute inset-[4px] bg-white/5 backdrop-blur-sm overflow-hidden" style={{ clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)' }}>
-                                            <Image
-                                                src="/images/img1.png"
-                                                alt="Healthcare Tech"
-                                                fill
-                                                className="object-cover opacity-90 mix-blend-lighten"
-                                            />
-                                        </div>
-                                        <div className="absolute inset-0 border border-[#32B9E9]/40 pointer-events-none" style={{ clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)' }}></div>
-                                    </div>
-
-                                    {/* Hero Text */}
-                                    <div className="text-white flex-1 space-y-2">
-                                        <div className="flex items-center gap-2 mb-1">
-                                            <div className="w-7 h-7 relative">
-                                                <div className="absolute inset-0 bg-[#32B9E9] transform rotate-45 rounded-sm"></div>
-                                                <span className="absolute inset-0 flex items-center justify-center text-[7px] font-bold text-white tracking-tighter">AA</span>
-                                            </div>
-                                            <span className="text-xs font-bold tracking-wider uppercase text-white">appadvent</span>
-                                        </div>
-
-                                        <div className="space-y-3">
-                                            <div className="flex items-center gap-2">
-                                                <HeartPulse className="w-8 h-8 text-[#32B9E9] drop-shadow-[0_0_8px_rgba(50,185,233,0.8)]" />
-                                            </div>
-
-                                            <h1 className="text-xl md:text-2xl lg:text-[34px] font-bold leading-[1.15] tracking-tight">
-                                                How Future Healthcare <br />Technology is Elevating <br />At-Home Care
-                                            </h1>
-
-                                            <p className="text-gray-300 text-[13px] leading-relaxed max-w-md opacity-90">
-                                                Advanced digital solutions are making quality healthcare more accessible, proactive, and patient-centric at home.
-                                            </p>
-
-                                            <div className="pt-2">
-                                                <span className="text-white text-[11px] font-medium tracking-widest opacity-80">
-                                                    www.appadvent.com
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div>
+                                <img className="bg-[#060d26] rounded-[2rem]" src="/images/bloglgimag.png" alt="" />
                             </div>
 
                             {/* Post Title */}
-                            <div className="mb-6">
+                            <div className="mb-6 mt-4">
                                 <h2 className="text-2xl md:text-[34px] font-bold text-[#0A1A2E] leading-[1.2] mb-3">
                                     How Future Healthcare Technology Is Improving At-Home Care
                                 </h2>
@@ -117,7 +66,7 @@ export default function HealthcareBlogPage() {
                             </div>
 
                             {/* Post Content */}
-                            <div className="space-y-5 text-[#4B5563] text-[16px] leading-[1.7]">
+                            <div className="space-y-5 text-black text-[16px] leading-[1.7]">
                                 <p>
                                     Medical services have expanded their reach beyond traditional healthcare facilities, which used to operate only in hospitals and clinics. Home-based healthcare is growing fast because it offers practical, scalable solutions made possible by modern technology.
                                 </p>
@@ -141,12 +90,12 @@ export default function HealthcareBlogPage() {
                                     onClick={() => setIsTocOpen(!isTocOpen)}
                                     className="w-full flex items-center justify-between p-4 bg-[#32B9E9] text-white transition-all"
                                 >
-                                    <span className="font-bold text-base">Table of Contents</span>
-                                    <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${isTocOpen ? 'rotate-180' : ''}`} />
+                                    <span className="font-bold text-base text-black">Table of Contents</span>
+                                    <ChevronDown className={`w-5 h-5 text-black transition-transform duration-300 cursor-pointer ${isTocOpen ? 'rotate-180' : ''}`} />
                                 </button>
                                 {isTocOpen && (
                                     <div className="p-6 bg-white border-x border-b border-gray-100 animate-in slide-in-from-top duration-300">
-                                        <ul className="space-y-3 text-[15px] text-[#4B5563] font-medium">
+                                        <ul className="space-y-3 text-[15px] text-[#4B5563] hover:text-[#0A1A2E] font-medium">
                                             <li className="flex gap-2">
                                                 <span className="text-gray-400">1.</span>
                                                 <span
@@ -263,10 +212,10 @@ export default function HealthcareBlogPage() {
                             {/* Section Content */}
                             <div className="space-y-10 mb-16">
                                 <div id="role-of-custom-web-app">
-                                    <h3 className="text-[20px] font-bold text-[#0A1A2E] mb-5">
+                                    <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                         The Role of Custom Web Application Development in At-Home Care
                                     </h3>
-                                    <div className="space-y-5 text-[#4B5563] text-[16px] leading-[1.7]">
+                                    <div className="space-y-5 text-black text-[16px] leading-[1.7]">
                                         <p>
                                             Healthcare delivery at home requires specialized equipment which operates differently from standard tools. The system needs adaptive solutions that meet each patient&apos;s needs, operational needs, and all required regulatory standards. Custom web application development solves this problem by delivering the essential solution.
                                         </p>
@@ -304,10 +253,10 @@ export default function HealthcareBlogPage() {
                                 </div>
 
                                 <div id="managed-it-services">
-                                    <h3 className="text-[20px] font-bold text-[#0A1A2E] mb-5">
+                                    <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                         How Managed IT Services for Healthcare Ensure Reliability
                                     </h3>
-                                    <div className="space-y-5 text-[#4B5563] text-[16px] leading-[1.7]">
+                                    <div className="space-y-5 text-black text-[16px] leading-[1.7]">
                                         <p>
                                             A system loses value when it has crashes, data breaches, and failures during key operating times. The healthcare industry relies on managed IT services. They provide key support for delivering home-based medical care.
                                         </p>
@@ -339,10 +288,10 @@ export default function HealthcareBlogPage() {
                                 </div>
 
                                 <div id="emr-vs-ehr">
-                                    <h3 className="text-[20px] font-bold text-[#0A1A2E] mb-5">
+                                    <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                         EMR Vs EHR Development: What should you choose for your healthcare business?
                                     </h3>
-                                    <div className="space-y-5 text-[#4B5563] text-[16px] leading-[1.7]">
+                                    <div className="space-y-5 text-black text-[16px] leading-[1.7]">
                                         <p>
                                             Healthcare organizations which neglect their IT infrastructure create dangerous working environments. The margin for error is zero.
                                         </p>
@@ -350,10 +299,10 @@ export default function HealthcareBlogPage() {
                                 </div>
 
                                 <div id="home-care-focus">
-                                    <h3 className="text-[20px] font-bold text-[#0A1A2E] mb-5">
+                                    <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                         Why Home Care Is the Main Focus of All Healthcare App Development Firms
                                     </h3>
-                                    <div className="space-y-5 text-[#4B5563] text-[16px] leading-[1.7]">
+                                    <div className="space-y-5 text-black text-[16px] leading-[1.7]">
                                         <p>
                                             Every serious healthcare app development company is aware that the market is changing. Patients prefer to recuperate at home whenever possible, hospitals are overcrowded, and costs are increasing.
                                         </p>
@@ -388,10 +337,10 @@ export default function HealthcareBlogPage() {
                                 </div>
 
                                 <div id="disrupted-by-startups">
-                                    <h3 className="text-[20px] font-bold text-[#0A1A2E] mb-5">
+                                    <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                         Traditional Healthcare is Being Disrupted by Software Development for Startups
                                     </h3>
-                                    <div className="space-y-5 text-[#4B5563] text-[16px] leading-[1.7]">
+                                    <div className="space-y-5 text-black text-[16px] leading-[1.7]">
                                         <p>
                                             Startups are doing what large healthcare institutions often can’t—moving fast and taking risks. Software development for startups largely drives the advancement of at-home care.
                                         </p>
@@ -426,10 +375,10 @@ export default function HealthcareBlogPage() {
                                 </div>
 
                                 <div id="combining-smart-devices">
-                                    <h3 className="text-[20px] font-bold text-[#0A1A2E] mb-5">
+                                    <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                         Combining Smart Devices and Custom Web Application Development
                                     </h3>
-                                    <div className="space-y-5 text-[#4B5563] text-[16px] leading-[1.7]">
+                                    <div className="space-y-5 text-black text-[16px] leading-[1.7]">
                                         <p>
                                             Apps are only one aspect of at-home care; other systems are involved as well. Blood pressure trackers, glucose monitors, and smartwatches are examples of devices that continuously feed data. Only when custom web applications correctly integrate this data does it become useful.
                                         </p>
@@ -457,10 +406,10 @@ export default function HealthcareBlogPage() {
                                 </div>
 
                                 <div id="data-security">
-                                    <h3 className="text-[20px] font-bold text-[#0A1A2E] mb-5">
+                                    <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                         Managed IT Services’ Crucial Assistance with Data Security for Healthcare
                                     </h3>
-                                    <div className="space-y-5 text-[#4B5563] text-[16px] leading-[1.7]">
+                                    <div className="space-y-5 text-black text-[16px] leading-[1.7]">
                                         <p>
                                             One of the most sensitive categories of information is healthcare data. Serious financial, legal, and ethical repercussions will follow if someone compromises it.
                                         </p>
@@ -495,10 +444,10 @@ export default function HealthcareBlogPage() {
                                 </div>
 
                                 <div id="patient-engagement">
-                                    <h3 className="text-[20px] font-bold text-[#0A1A2E] mb-5">
+                                    <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                         How Patient Engagement Is Enhanced by Healthcare App Development Company Solutions
                                     </h3>
-                                    <div className="space-y-5 text-[#4B5563] text-[16px] leading-[1.7]">
+                                    <div className="space-y-5 text-black text-[16px] leading-[1.7]">
                                         <p>
                                             One of the biggest challenges in at-home care is patient engagement. The system as a whole fails if patients don’t adhere to treatment plans.
                                         </p>
@@ -530,10 +479,10 @@ export default function HealthcareBlogPage() {
                                 </div>
 
                                 <div id="cost-effectiveness">
-                                    <h3 className="text-[20px] font-bold text-[#0A1A2E] mb-5">
+                                    <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                         Developing Software for Startups to Increase Cost Effectiveness
                                     </h3>
-                                    <div className="space-y-5 text-[#4B5563] text-[16px] leading-[1.7]">
+                                    <div className="space-y-5 text-black text-[16px] leading-[1.7]">
                                         <p>
                                             The cost of healthcare is high. At-home care may lower costs, but only if you do it properly.
                                         </p>
@@ -565,10 +514,10 @@ export default function HealthcareBlogPage() {
                                 </div>
 
                                 <div id="tech-ecosystem">
-                                    <h3 className="text-[20px] font-bold text-[#0A1A2E] mb-5">
+                                    <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                         The Wider Technology Ecosystem Encouraging Innovation in Healthcare
                                     </h3>
-                                    <div className="space-y-5 text-[#4B5563] text-[16px] leading-[1.7]">
+                                    <div className="space-y-5 text-black text-[16px] leading-[1.7]">
                                         <p>
                                             The larger tech ecosystem also has an impact, even though healthcare-specific technologies predominate. Numerous app development firms are bringing their cross-industry knowledge to the healthcare sector.
                                         </p>
@@ -596,10 +545,10 @@ export default function HealthcareBlogPage() {
                                 </div>
 
                                 <div id="future-outlook">
-                                    <h3 className="text-[20px] font-bold text-[#0A1A2E] mb-5">
+                                    <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                         What the Future Actually Looks Like
                                     </h3>
-                                    <div className="space-y-5 text-[#4B5563] text-[16px] leading-[1.7]">
+                                    <div className="space-y-5 text-black text-[16px] leading-[1.7]">
                                         <p>
                                             Let’s get straight to the point. The future of at-home healthcare isn’t about robots taking over doctors’ jobs or fully automated care systems. Smarter, more efficient teamwork between people and technology.
                                         </p>
@@ -631,10 +580,10 @@ export default function HealthcareBlogPage() {
                                 </div>
 
                                 <div id="final-thoughts">
-                                    <h3 className="text-[20px] font-bold text-[#0A1A2E] mb-5">
+                                    <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                         Final Thoughts
                                     </h3>
-                                    <div className="space-y-5 text-[#4B5563] text-[16px] leading-[1.7]">
+                                    <div className="space-y-5 text-black text-[16px] leading-[1.7]">
                                         <p>
                                             At home healthcare is growing rapidly because it effectively solves real user problems like cost, accessibility, and convenience. However, technology alone isn’t the answer. Poorly designed systems, weak security, and a bad user experience can cause more problems than they solve.
                                         </p>
@@ -707,7 +656,7 @@ export default function HealthcareBlogPage() {
                     </div>
 
                     {/* Sidebar */}
-                    <aside className="lg:w-[27%] space-y-6">
+                    <aside className="lg:w-[20%] space-y-6">
                         {/* Search */}
                         <div className="flex w-full rounded-md border border-gray-200 overflow-hidden h-[45px] bg-[#F1F3F4] shadow-sm">
                             <input
@@ -765,26 +714,26 @@ export default function HealthcareBlogPage() {
                                 <input
                                     type="text"
                                     placeholder="Full Name"
-                                    className="w-full px-3 py-2 rounded border border-gray-200 outline-none focus:border-[#32B9E9] text-xs bg-white"
+                                    className="w-full px-3 py-2 rounded border border-gray-200 outline-none focus:border-[#32B9E9] text-md bg-white"
                                 />
                                 <input
                                     type="email"
                                     placeholder="Email"
-                                    className="w-full px-3 py-2 rounded border border-gray-200 outline-none focus:border-[#32B9E9] text-xs bg-white"
+                                    className="w-full px-3 py-2 rounded border border-gray-200 outline-none focus:border-[#32B9E9] text-md bg-white"
                                 />
                                 <input
                                     type="tel"
                                     placeholder="Phone number"
-                                    className="w-full px-3 py-2 rounded border border-gray-200 outline-none focus:border-[#32B9E9] text-xs bg-white"
+                                    className="w-full px-3 py-2 rounded border border-gray-200 outline-none focus:border-[#32B9E9] text-md bg-white"
                                 />
                                 <textarea
                                     placeholder="Message"
                                     rows={3}
-                                    className="w-full px-3 py-2 rounded border border-gray-200 outline-none focus:border-[#32B9E9] text-xs bg-white resize-none"
+                                    className="w-full px-3 py-2 rounded border border-gray-200 outline-none focus:border-[#32B9E9] text-md bg-white resize-none"
                                 ></textarea>
                                 <button
                                     type="submit"
-                                    className="w-full bg-[#1E4DFF] text-white font-bold py-2 rounded transition-all active:scale-95 mt-1 text-[11px] tracking-wide"
+                                    className="w-full bg-[#1E4DFF] text-white font-bold py-2 rounded-full transition-all active:scale-95 mt-1 text-md tracking-wide"
                                 >
                                     Submit Details
                                 </button>
