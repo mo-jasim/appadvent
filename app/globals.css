@@ -2,38 +2,40 @@
 
 @theme {
   --font-THICCCBOI: 'THICCCBOI', sans-serif;
+  --font-saira: var(--font-saira);
+  --font-SpaceGrotesk: var(--font-SpaceGrotesk);
 }
 
 @font-face {
-    font-family: 'THICCCBOI';
-    src: url('https://cdn.jsdelivr.net/gh/halfmage/thicccboi@master/fonts/thicccboi-medium-webfont.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'THICCCBOI';
+  src: url('https://cdn.jsdelivr.net/gh/halfmage/thicccboi@master/fonts/thicccboi-medium-webfont.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'THICCCBOI';
-    src: url('https://cdn.jsdelivr.net/gh/halfmage/thicccboi@master/fonts/thicccboi-bold-webfont.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'THICCCBOI';
+  src: url('https://cdn.jsdelivr.net/gh/halfmage/thicccboi@master/fonts/thicccboi-bold-webfont.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'THICCCBOI';
-    src: url('https://cdn.jsdelivr.net/gh/halfmage/thicccboi@master/fonts/thicccboi-extrabold-webfont.woff2') format('woff2');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'THICCCBOI';
+  src: url('https://cdn.jsdelivr.net/gh/halfmage/thicccboi@master/fonts/thicccboi-extrabold-webfont.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'THICCCBOI';
-    src: url('https://cdn.jsdelivr.net/gh/halfmage/thicccboi@master/fonts/thicccboi-regular-webfont.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'THICCCBOI';
+  src: url('https://cdn.jsdelivr.net/gh/halfmage/thicccboi@master/fonts/thicccboi-regular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 a {
@@ -79,9 +81,17 @@ a {
 }
 
 @keyframes text-gradient-shimmer {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Hide horizontal scrollbar */

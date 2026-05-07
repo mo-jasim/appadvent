@@ -3,13 +3,14 @@
 import React from "react"
 import Image from "next/image"
 
-import img1 from "../public/images/img1.png"
-import img2 from "../public/images/img2.png"
-import img3 from "../public/images/img3.png"
-import img4 from "../public/images/img4.png"
+
+import img2 from "../public/images/pccc1.jpg"
+import img3 from "../public/images/pccc2.jpg"
+import img4 from "../public/images/pccc3.jpg"
+import img5 from "../public/images/pccc4.jpeg"
 
 /* repeat images to fill arc — same pattern as REF Hero.jsx */
-const images = [img1, img4, img2, img3, img2, img3, img4, img3, img4, img3, img4]
+const images = [img2, img3, img4, img5, img2, img3, img4, img5,]
 
 export default function LogoMarquee() {
   return (
@@ -19,17 +20,7 @@ export default function LogoMarquee() {
         .hero-curve-bg {
           --c: 85;
           aspect-ratio: 3/2;
-          mask:
-            radial-gradient(
-              calc(var(--c) * 1%) 100%
-              at 50% calc(-100% * cos(asin(50 / var(--c)))),
-              transparent calc(100% - 1px), #000
-            ),
-            radial-gradient(
-              calc(var(--c) * 1%) 100%
-              at 50% calc(100% + 100% * cos(asin(50 / var(--c)))),
-              transparent calc(100% - 1px), #000
-            );
+          
           -webkit-mask-composite: intersect;
           mask-composite: intersect;
           clip-path: ellipse(calc(var(--c) * 1%) 100% at center);
@@ -38,15 +29,15 @@ export default function LogoMarquee() {
 
         /* ── scrolling box (REF .box animation) ─────────────────────── */
         @keyframes heroScroll {
-          0%   { transform: translateX(0px); }
-          100% { transform: translateX(530px); }
+          100%   { transform: translateX(900px); }
+          100% { transform: translateX(1200px); }
         }
         .hero-scroll-box {
           display: flex;
           gap: 1rem;
           justify-content: center;
           position: relative;
-          animation: heroScroll 6s ease-in-out infinite alternate;
+          animation: heroScroll 8s ease-in-out infinite alternate;
           max-width: 100vw;
         }
 
@@ -70,7 +61,7 @@ export default function LogoMarquee() {
           {images.map((img, i) => (
             <div
               key={i}
-              className="flex-shrink-0 rounded-[10px] md:rounded-[20px] overflow-hidden relative w-[100px] h-[130px] sm:w-[150px] sm:h-[190px] md:w-[200px] md:h-[260px] lg:w-[280px] lg:h-[380px]"
+              className="flex-shrink-0 rounded-[10px] md:rounded-[20px] overflow-hidden relative w-[270px] h-[150px] sm:w-[370px] sm:h-[250px] md:w-[500px] md:h-[300px] lg:w-[600px] lg:h-[380px]"
             >
               <Image
                 src={img}

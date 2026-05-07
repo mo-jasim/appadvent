@@ -102,7 +102,7 @@ const HomePage = () => {
       </section>
 
       {/* Explore our team services */}
-      <section className="mb-[80px]">
+      <section className="mb-[80px] mt-[60px]">
         <p className="max-w-2xl mx-auto text-black font-bold text-[32px] md:text-[40px] px-4 leading-tight text-center font-THICCCBOI">
           Explore our team services
         </p>

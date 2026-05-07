@@ -13,8 +13,7 @@ function carts() {
           Our Mission
         </h1>
         <p className="text-[15px] sm:text-[16px] text-gray-500 leading-relaxed">
-          At Appadvent, we blend creativity with technology to craft apps that truly deliver value. Our team focuses on innovation, user-friendly design, and scalable solutions tailored to your business goals. With us, you don’t just get an app—you get a partner in growth.
-        </p>
+          Our business at Appadvent aims to provide organizations with advanced and effective tools and programs that enhance their online presence and drive growth. The clients’ needs shall be prioritized and served to their fullest satisfaction to meet their business objectives.        </p>
 
       </div>
       <div className="bg-white p-6 md:p-8 shadow-sm rounded-[24px] hover:shadow-xl transition-all border border-gray-200 flex flex-col" >
@@ -27,8 +26,7 @@ function carts() {
           Our Vision
         </h1>
         <p className="text-[15px] sm:text-[16px] text-gray-500 leading-relaxed">
-          At Appadvent, we blend creativity with technology to craft apps that truly deliver value. Our team focuses on innovation, user-friendly design, and scalable solutions tailored to your business goals. With us, you don’t just get an app—you get a partner in growth.
-        </p>
+          Appadvent’s goal is to become known as a trustworthy outsourcing partner for companies looking to leverage technology for business growth. As the environment is always changing, our strategic goal is to evolve and become as inventive as we can continuously.        </p>
 
       </div>
       <div className="bg-white p-6 md:p-8 shadow-sm rounded-[24px] hover:shadow-xl transition-all border border-gray-200 flex flex-col" >
@@ -41,8 +39,7 @@ function carts() {
           Our Proficiency
         </h1>
         <p className="text-[15px] sm:text-[16px] text-gray-500 leading-relaxed">
-          At Appadvent, we blend creativity with technology to craft apps that truly deliver value. Our team focuses on innovation, user-friendly design, and scalable solutions tailored to your business goals. With us, you don’t just get an app—you get a partner in growth.
-        </p>
+          Appadvent focuses on UI/UX design, mobile app development, website design, SaaS platforms, branding, and digital solutions that are scalable, performance-oriented, and aimed at improving user experience and increasing conversions. </p>
 
       </div>
     </div>

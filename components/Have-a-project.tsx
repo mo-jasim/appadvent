@@ -35,61 +35,94 @@ export default function HaveAProject() {
                             </div>
                             <div>
                                 <p className="font-semibold text-[14px]">EMAIL US</p>
-                                <p className="text-white text-[24px]">info@appadvent.com</p>
+                                <a href="mailto:info@appadvent.com" className="text-white text-[24px] block hover:text-[#32B9E9] transition-colors">info@appadvent.com</a>
                             </div>
                         </div>
 
                         <p className='text-white text-[16px] mt-6'>----connect with us:</p>
                         <div className="flex gap-4 mt-2 text-gray-400">
-                            <span className="hover:scale-110 transition-all duration-300 item-[#32B9E9] cursor-pointer">
+                            <a
+                                href="https://www.facebook.com/share/p/18Zjyommo9/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                            >
                                 <Image
                                     src="/Letimg/Social Media.svg"
-                                    alt="ai"
+                                    alt="instagram"
                                     width={44}
                                     height={44}
                                     className="shrink-0"
                                     priority
                                 />
-                            </span>
+                            </a>
                             <span className="hover:scale-110 transition-all duration-300 cursor-pointer">
-                                <Image
-                                    src="/Letimg/Social Media (1).svg"
-                                    alt="ai"
-                                    width={44}
-                                    height={44}
-                                    className="shrink-0"
-                                    priority
-                                />
+                                <a
+                                    href="https://x.com/appadventtech/status/2052255985302155644?s=20"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                                >
+                                    <Image
+                                        src="/Letimg/Social Media (1).svg"
+                                        alt="ai"
+                                        width={44}
+                                        height={44}
+                                        className="shrink-0"
+                                        priority
+                                    />
+                                </a>
                             </span>
                             <span className="hover:scale-110 transition-all duration-300 item-[#32B9E9] cursor-pointer">
-                                <Image
-                                    src="/Letimg/Social Media3.svg"
-                                    alt="ai"
-                                    width={44}
-                                    height={44}
-                                    className="shrink-0"
-                                    priority
-                                />
+                                <a
+                                    href="https://www.instagram.com/p/DYBnjSvmFuj/?utm_source=ig_web_copy_link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                                >
+                                    <Image
+                                        src="/Letimg/Social Media3.svg"
+                                        alt="ai"
+                                        width={44}
+                                        height={44}
+                                        className="shrink-0"
+                                        priority
+                                    />
+                                </a>
                             </span>
                             <span className="hover:scale-110 transition-all duration-300 item-[#32B9E9] cursor-pointer">
-                                <Image
-                                    src="/Letimg/Social Media (2).svg"
-                                    alt="ai"
-                                    width={44}
-                                    height={44}
-                                    className="shrink-0"
-                                    priority
-                                />
+                                <a
+                                    href="https://www.linkedin.com/feed/update/urn:li:activity:7458020308239925248"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                                >
+                                    <Image
+                                        src="/Letimg/Social Media (2).svg"
+                                        alt="ai"
+                                        width={44}
+                                        height={44}
+                                        className="shrink-0"
+                                        priority
+                                    />
+                                </a>
                             </span>
                             <span className="hover:scale-110 transition-all duration-300 item-[#32B9E9] cursor-pointer">
-                                <Image
-                                    src="/Letimg/Social Mediayou.svg"
-                                    alt="ai"
-                                    width={44}
-                                    height={44}
-                                    className="shrink-0"
-                                    priority
-                                />
+                                <a
+                                    href="https://www.youtube.com/@AppadventTechnologies"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                                >
+                                    <Image
+                                        src="/Letimg/Social Mediayou.svg"
+                                        alt="ai"
+                                        width={44}
+                                        height={44}
+                                        className="shrink-0"
+                                        priority
+                                    />
+                                </a>
                             </span>
                         </div>
                     </div>

@@ -119,7 +119,7 @@ const footer = () => {
                 />
                 <p className="text-sm text-gray-600">
                   <span className="font-semibold block">Email Us</span>
-                  info@appadvent.com
+                  <a href="mailto:info@appadvent.com" className="hover:text-[#32B9E9] transition-colors">info@appadvent.com</a>
                 </p>
               </div>
 

@@ -123,7 +123,7 @@ export default function BlogPage() {
 
   return (
     <>
-      <main className="min-h-screen bg-[#FBFBFF] font-THICCCBOI">
+      <main className="min-h-screen bg-[#FBFBFF] font-SpaceGrotesk">
         <section className="max-w-6xl mx-auto px-4 py-10 md:py-14">
           {/* Search Bar */}
           <div className="mb-12 flex items-center w-full rounded-full border-1 border-gray-200 bg-[#F5F5F5]  overflow-hidden h-[60px] md:h-[50px]">
@@ -159,12 +159,12 @@ export default function BlogPage() {
           </div>
           {/* Heading */}
           <div className="mb-8 md:mb-10">
-            <h1 className="text-[24px] md:text-[28px] font-bold text-[#0A1A2E] leading-snug">
+            <h1 className="text-[18px] md:text-[22px] font-semibold sans-serif text-[#0A1A2E] leading-snug mb-6">
               What we&apos;ve learned is{" "}
               <span className="text-[#32B9E9]">yours for sharing!</span>
             </h1>
             {/* Underline accent */}
-            <div className="mt-2 w-16 h-[3px] bg-[#32B9E9] rounded-full" />
+            <div className="mt-2 w-20 h-[4px] bg-[#32B9E9] rounded-full" />
           </div>
 
           {/* Blog Grid */}

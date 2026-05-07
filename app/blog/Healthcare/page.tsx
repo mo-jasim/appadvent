@@ -290,7 +290,7 @@ export default function HealthcareBlogPage() {
                                     </div>
 
                                     <div id="emr-vs-ehr">
-                                        <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
+                                        <h3 className="text-[20px] font-bold text-black mb-5">
                                             EMR Vs EHR Development: What should you choose for your healthcare business?
                                         </h3>
                                         <div className="space-y-5 text-black text-[16px] leading-[1.7]">

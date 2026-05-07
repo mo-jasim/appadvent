@@ -57,7 +57,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
           >
             <div>
               <h2 className="text-[28px] md:text-[34px] font-bold text-gray-900 leading-[1.1] tracking-tight mb-6">
-                Have a project idea!<br />Drop us a line.
+                <span className="whitespace-nowrap">Have a project idea!</span><br />Drop us a line.
               </h2>
               <p className="text-gray-500 text-[14px] md:text-[15px] leading-relaxed mb-10 max-w-[90%]">
                 Provide insights into your project and submit your Request for Proposal to get started.
@@ -69,7 +69,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
                 </div>
                 <div>
                   <p className="text-[14px] font-medium text-gray-500 uppercase tracking-widest mb-[6px]">Email us</p>
-                  <p className="text-[20px] font-medium-20 text-black">info@appadvent.com</p>
+                  <a href="mailto:info@appadvent.com" className="text-[20px] font-medium-20 text-black hover:text-[#32B9E9] transition-colors block">info@appadvent.com</a>
                 </div>
               </div>
             </div>
@@ -82,54 +82,90 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
 
               <div className="flex gap-4 mt-2 text-gray-400">
                 <span className="hover:scale-110 transition-all duration-300 item-[#32B9E9] cursor-pointer">
-                  <Image
-                    src="/images/Social Media (1).svg"
-                    alt="ai"
-                    width={44}
-                    height={44}
-                    className="shrink-0"
-                    priority
-                  />
+                  <a
+                    href="https://www.facebook.com/share/p/18Zjyommo9/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                  >
+                    <Image
+                      src="/images/Social Media (1).svg"
+                      alt="ai"
+                      width={44}
+                      height={44}
+                      className="shrink-0"
+                      priority
+
+                    />
+                  </a>
                 </span>
                 <span className="hover:scale-110 transition-all duration-300 item-[#32B9E9] cursor-pointer">
-                  <Image
-                    src="/images/Social Media (2).svg"
-                    alt="ai"
-                    width={44}
-                    height={44}
-                    className="shrink-0"
-                    priority
-                  />
+                  <a
+                    href="https://x.com/appadventtech/status/2052255985302155644?s=20"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                  >
+                    <Image
+                      src="/images/Social Media (2).svg"
+                      alt="ai"
+                      width={44}
+                      height={44}
+                      className="shrink-0"
+                      priority
+                    />
+                  </a>
                 </span>
                 <span className="hover:scale-110 transition-all duration-300 cursor-pointer">
-                  <Image
-                    src="/images/Social Media (3).svg"
-                    alt="ai"
-                    width={44}
-                    height={44}
-                    className="shrink-0"
-                    priority
-                  />
+                  <a
+                    href="https://www.linkedin.com/feed/update/urn:li:activity:7458020308239925248"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                  >
+                    <Image
+                      src="/images/Social Media (3).svg"
+                      alt="ai"
+                      width={44}
+                      height={44}
+                      className="shrink-0"
+                      priority
+                    />
+                  </a>
                 </span>
                 <span className="hover:scale-110 transition-all duration-300 item-[#32B9E9] cursor-pointer">
-                  <Image
-                    src="/images/Social Media (4).svg"
-                    alt="ai"
-                    width={44}
-                    height={44}
-                    className="shrink-0"
-                    priority
-                  />
+                  <a
+                    href="https://www.instagram.com/p/DYBnjSvmFuj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                  >
+                    <Image
+                      src="/images/Social Media (4).svg"
+                      alt="ai"
+                      width={44}
+                      height={44}
+                      className="shrink-0"
+                      priority
+                    />
+                  </a>
                 </span>
                 <span className="hover:scale-110 transition-all duration-300 item-[#32B9E9] cursor-pointer">
-                  <Image
-                    src="/images/Social Media (5).svg"
-                    alt="ai"
-                    width={44}
-                    height={44}
-                    className="shrink-0"
-                    priority
-                  />
+                  <a
+                    href="https://www.youtube.com/@AppadventTechnologies"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                  >
+                    <Image
+                      src="/images/Social Media (5).svg"
+                      alt="ai"
+                      width={44}
+                      height={44}
+                      className="shrink-0"
+                      priority
+                    />
+                  </a>
                 </span>
               </div>
             </div>

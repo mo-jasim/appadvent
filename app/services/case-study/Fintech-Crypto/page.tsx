@@ -129,7 +129,7 @@ export default function FintechCryptoPage() {
               <div className="flex justify-center lg:justify-start">
                 <button
                   onClick={() => setIsModalOpen(true)}
-                  className="text-[#32B9E9] font-bold text-lg md:text-xl underline underline-offset-8 hover:text-[#2aa8d6] transition-colors"
+                  className="text-[#32B9E9] font-bold text-lg md:text-xl underline underline-offset-8 hover:text-[#2aa8d6] transition-colors cursor-pointer"
                 >
                   Have a project in mind?
                 </button>
@@ -145,7 +145,7 @@ export default function FintechCryptoPage() {
         </section>
 
         {/* SECTION 2 — Services */}
-        <section className="relative w-full py-16 md:py-24 bg-white/30 backdrop-blur-sm overflow-hidden">
+        <section className="relative w-full py-16 md:py-24 overflow-hidden">
           <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-16">
             <div className="max-w-4xl mx-auto lg:mx-0 text-center lg:text-left mb-12 md:mb-20">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight tracking-tight mb-6">
@@ -161,9 +161,9 @@ export default function FintechCryptoPage() {
               <div className="order-2 lg:order-1">
                 <div className="space-y-8">
                   {features.map((f) => (
-                    <div key={f.title} className="flex gap-5 group">
-                      <div className="w-12 h-12 md:w-16 md:h-16 shrink-0 bg-white rounded-2xl shadow-lg border border-gray-100 flex items-center justify-center group-hover:bg-[#32B9E9] transition-all duration-300">
-                        <img src={f.img} alt="" className="w-6 h-6 md:w-8 md:h-8 group-hover:brightness-0 group-hover:invert transition-all" />
+                    <div key={f.title} className="flex gap-4 group">
+                      <div className="w-6 h-6 md:w-16 md:h-16">
+                        <img src={f.img} alt="" />
                       </div>
                       <div>
                         <h3 className="font-bold text-lg md:text-xl text-gray-900 mb-2">{f.title}</h3>
@@ -178,7 +178,7 @@ export default function FintechCryptoPage() {
               <div className="flex justify-center items-center relative order-1 lg:order-2">
                 <div className="relative w-full max-w-[350px] md:max-w-[450px] transition-transform duration-500 hover:scale-[1.03]">
                   <img src="/Letimg/CryptoCove - Crypto Wallet 1.svg" alt="Crypto Wallet" className="w-full h-auto drop-shadow-2xl" />
-                  
+
                   {/* Glow effect */}
                   <div className="absolute inset-0 bg-[#32B9E9]/10 blur-[100px] rounded-full -z-10 animate-pulse" />
                 </div>
