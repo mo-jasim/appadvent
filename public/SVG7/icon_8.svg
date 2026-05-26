@@ -1,0 +1,88 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon/improve 1">
+<path id="Vector" d="M13 44H7C4.79086 44 3 45.7909 3 48V59C3 61.2091 4.79086 63 7 63H13C15.2091 63 17 61.2091 17 59V48C17 45.7909 15.2091 44 13 44Z" fill="url(#paint0_linear_3649_5168)"></path>
+<path id="Vector_2" d="M35 25H29C26.7909 25 25 26.7909 25 29V58C25 60.2091 26.7909 62 29 62H35C37.2091 62 39 60.2091 39 58V29C39 26.7909 37.2091 25 35 25Z" fill="url(#paint1_linear_3649_5168)"></path>
+<path id="Vector_3" d="M57 25H51C48.7909 25 47 26.7909 47 29V58C47 60.2091 48.7909 62 51 62H57C59.2091 62 61 60.2091 61 58V29C61 26.7909 59.2091 25 57 25Z" fill="url(#paint2_linear_3649_5168)"></path>
+<g id="Group">
+<g id="Group_2">
+<g id="Group_3">
+<path id="Vector_4" d="M4.28003 44.7578H15.3044C15.9948 44.7578 16.5544 45.3175 16.5544 46.0078V61C16.5544 61.6904 15.9948 62.25 15.3044 62.25H4.28003C3.58967 62.25 3.03003 61.6904 3.03003 61V46.0078C3.03003 45.3175 3.58967 44.7578 4.28003 44.7578ZM6.0564 45.0342C4.53761 45.0342 3.3064 46.2654 3.3064 47.7842V59.1602C3.3064 60.6789 4.53761 61.9102 6.0564 61.9102H13.5281C15.0469 61.9102 16.2781 60.6789 16.2781 59.1602V47.7842C16.2781 46.2654 15.0469 45.0342 13.5281 45.0342H6.0564Z" stroke="#08526D" stroke-width="1.5" class="id_anim_stroke-property3" data-duration="2.7777777777777777" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 114.865px; animation: 2.77778s linear 0s 1 normal forwards running id_anim_stroke-property3;"></path>
+<path id="Vector_5" d="M26.488 30.3579H37.5125C38.2028 30.3579 38.7625 30.9176 38.7625 31.6079V60.9995C38.7625 61.6899 38.2028 62.2495 37.5125 62.2495H26.488C25.7977 62.2495 25.238 61.6899 25.238 60.9995V31.6079C25.238 30.9176 25.7977 30.3579 26.488 30.3579ZM28.2644 30.6343C26.7456 30.6343 25.5144 31.8655 25.5144 33.3843V59.1597C25.5144 60.6785 26.7456 61.9097 28.2644 61.9097H35.7361C37.2549 61.9097 38.4861 60.6785 38.4861 59.1597V33.3843C38.4861 31.8655 37.2549 30.6343 35.7361 30.6343H28.2644Z" stroke="#08526D" stroke-width="1.5" class="id_anim_stroke-property4" data-duration="2.7777777777777777" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 172.463px; animation: 2.77778s linear 0s 1 normal forwards running id_anim_stroke-property4;"></path>
+<path id="Vector_6" d="M48.696 11.4141H59.7205C60.4108 11.4141 60.9705 11.9737 60.9705 12.6641V61C60.9705 61.6904 60.4108 62.25 59.7205 62.25H48.696C48.0057 62.25 47.446 61.6904 47.446 61V12.6641C47.446 11.9737 48.0057 11.4141 48.696 11.4141ZM50.4724 11.6904C48.9536 11.6904 47.7224 12.9216 47.7224 14.4404V59.1602C47.7224 60.6789 48.9536 61.9102 50.4724 61.9102H57.9441C59.4629 61.9102 60.6941 60.6789 60.6941 59.1602V14.4404C60.6941 12.9216 59.4629 11.6904 57.9441 11.6904H50.4724Z" stroke="#08526D" stroke-width="1.5" class="id_anim_stroke-property5" data-duration="2.7777777777777777" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 248.24px; animation: 2.77778s linear 0s 1 normal forwards running id_anim_stroke-property5;"></path>
+<path id="Arrow 1" d="M10.4599 27.9762C10.1725 28.2744 10.1813 28.7492 10.4796 29.0366C10.7778 29.3241 11.2526 29.3153 11.5401 29.017L11 28.4966L10.4599 27.9762ZM37.2828 1.98609C37.2751 1.57195 36.9332 1.24244 36.519 1.25011L29.7702 1.37511C29.356 1.38278 29.0265 1.72473 29.0342 2.13887C29.0419 2.55302 29.3838 2.88253 29.798 2.87486L35.7969 2.76375L35.9081 8.76272C35.9157 9.17686 36.2577 9.50637 36.6718 9.4987C37.086 9.49103 37.4155 9.14908 37.4078 8.73494L37.2828 1.98609ZM11 28.4966L11.5401 29.017L37.073 2.5204L36.5329 1.99998L35.9929 1.47957L10.4599 27.9762L11 28.4966Z" fill="#08526D"></path>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_3649_5168" x1="11.5275" y1="74.6814" x2="8.62117" y2="50.1258" gradientUnits="userSpaceOnUse">
+<stop stop-color="#32B9E9"></stop>
+<stop offset="0.961538" stop-color="#32B9E9" stop-opacity="0"></stop>
+</linearGradient>
+<linearGradient id="paint1_linear_3649_5168" x1="33.5275" y1="84.7481" x2="22.9154" y2="38.7051" gradientUnits="userSpaceOnUse">
+<stop stop-color="#32B9E9"></stop>
+<stop offset="0.961538" stop-color="#32B9E9" stop-opacity="0"></stop>
+</linearGradient>
+<linearGradient id="paint2_linear_3649_5168" x1="55.5275" y1="84.7481" x2="44.9154" y2="38.7051" gradientUnits="userSpaceOnUse">
+<stop stop-color="#32B9E9"></stop>
+<stop offset="0.961538" stop-color="#32B9E9" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+<style>
+        @keyframes id_anim_stroke-property3{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 114.8648910522461px;
+            }
+        
+            50%{
+                stroke-dashoffset: -57.43244552612305px; 
+        stroke-dasharray: 57.43244552612305px, 57.43244552612305px;
+            }
+        
+            100%{
+                stroke-dashoffset: -114.8648910522461px; 
+        stroke-dasharray: 114.8648910522461px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property4{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 172.4627227783203px;
+            }
+        
+            50%{
+                stroke-dashoffset: -86.23136138916016px; 
+        stroke-dasharray: 86.23136138916016px, 86.23136138916016px;
+            }
+        
+            100%{
+                stroke-dashoffset: -172.4627227783203px; 
+        stroke-dasharray: 172.4627227783203px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property5{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 248.24012756347656px;
+            }
+        
+            50%{
+                stroke-dashoffset: -124.12006378173828px; 
+        stroke-dasharray: 124.12006378173828px, 124.12006378173828px;
+            }
+        
+            100%{
+                stroke-dashoffset: -248.24012756347656px; 
+        stroke-dasharray: 248.24012756347656px, 0px;
+            }
+        
+        }
+        </style></svg>

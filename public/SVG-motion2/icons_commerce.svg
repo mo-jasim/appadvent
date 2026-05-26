@@ -1,0 +1,101 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icons/commerce">
+<g id="mcommerce-industry-red 1" clip-path="url(#clip0_3662_5358)">
+<g id="Group">
+<path id="Vector" d="M46.2214 44.7353C54.5806 44.7353 61.3571 37.9588 61.3571 29.5996C61.3571 21.2404 54.5806 14.4639 46.2214 14.4639C37.8622 14.4639 31.0857 21.2404 31.0857 29.5996C31.0857 37.9588 37.8622 44.7353 46.2214 44.7353Z" fill="#ADE3F6"></path>
+<g id="Group_2">
+<path id="Vector_2" d="M17.25 34.4277H22.3541C22.8392 34.4277 23.2544 34.776 23.3388 35.2537L27.1326 56.7232C27.217 57.2009 27.6322 57.5492 28.1174 57.5492H42.0429" stroke="#08526D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="id_anim_stroke-property1" data-duration="2.7777777777777777" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 43.6237px; animation: 2.77778s linear 0s 1 normal forwards running id_anim_stroke-property1;"></path>
+<path id="Vector_3" d="M24.4929 41.5781H47.9858L43.7143 52.9996H26.4429L24.4929 41.5781Z" fill="url(#paint0_linear_3662_5358)"></path>
+<path id="Vector_4" d="M24.6924 42.7464C24.5881 42.1357 25.0586 41.5781 25.6781 41.5781H46.5442C47.242 41.5781 47.7252 42.2748 47.4808 42.9284L43.9573 52.3498C43.8112 52.7406 43.4379 52.9996 43.0207 52.9996H27.2867C26.7993 52.9996 26.3829 52.6482 26.3009 52.1678L24.6924 42.7464Z" stroke="#08526D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="id_anim_stroke-property3" data-duration="2.7777777777777777" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 62.5014px; animation: 2.77778s linear 0s 1 normal forwards running id_anim_stroke-property3;"></path>
+<path id="Vector_5" d="M40.65 65.0704C41.8808 65.0704 42.8785 64.0727 42.8785 62.8419C42.8785 61.611 41.8808 60.6133 40.65 60.6133C39.4192 60.6133 38.4214 61.611 38.4214 62.8419C38.4214 64.0727 39.4192 65.0704 40.65 65.0704Z" stroke="#08526D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="id_anim_stroke-property4" data-duration="2.7777777777777777" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 14.0045px; animation: 2.77778s linear 0s 1 normal forwards running id_anim_stroke-property4;"></path>
+<path id="Vector_6" d="M27.743 65.0704C28.9738 65.0704 29.9715 64.0727 29.9715 62.8419C29.9715 61.611 28.9738 60.6133 27.743 60.6133C26.5122 60.6133 25.5144 61.611 25.5144 62.8419C25.5144 64.0727 26.5122 65.0704 27.743 65.0704Z" stroke="#08526D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="id_anim_stroke-property5" data-duration="2.7777777777777777" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 14.0045px; animation: 2.77778s linear 0s 1 normal forwards running id_anim_stroke-property5;"></path>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_3662_5358" x1="36.2367" y1="52.963" x2="36.2367" y2="41.5504" gradientUnits="userSpaceOnUse">
+<stop stop-color="#ADE3F6"></stop>
+<stop offset="0.4" stop-color="#ADE3F6" stop-opacity="0.247059"></stop>
+</linearGradient>
+<clipPath id="clip0_3662_5358">
+<rect width="52" height="52" fill="white" transform="translate(14 14)"></rect>
+</clipPath>
+</defs>
+<style>
+        @keyframes id_anim_stroke-property1{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 43.62372589111328px;
+            }
+        
+            50%{
+                stroke-dashoffset: -21.81186294555664px; 
+        stroke-dasharray: 21.81186294555664px, 21.81186294555664px;
+            }
+        
+            100%{
+                stroke-dashoffset: -43.62372589111328px; 
+        stroke-dasharray: 43.62372589111328px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property3{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 62.50139617919922px;
+            }
+        
+            50%{
+                stroke-dashoffset: -31.25069808959961px; 
+        stroke-dasharray: 31.25069808959961px, 31.25069808959961px;
+            }
+        
+            100%{
+                stroke-dashoffset: -62.50139617919922px; 
+        stroke-dasharray: 62.50139617919922px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property4{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 14.004480361938477px;
+            }
+        
+            50%{
+                stroke-dashoffset: -7.002240180969238px; 
+        stroke-dasharray: 7.002240180969238px, 7.002240180969238px;
+            }
+        
+            100%{
+                stroke-dashoffset: -14.004480361938477px; 
+        stroke-dasharray: 14.004480361938477px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property5{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 14.004451751708984px;
+            }
+        
+            50%{
+                stroke-dashoffset: -7.002225875854492px; 
+        stroke-dasharray: 7.002225875854492px, 7.002225875854492px;
+            }
+        
+            100%{
+                stroke-dashoffset: -14.004451751708984px; 
+        stroke-dasharray: 14.004451751708984px, 0px;
+            }
+        
+        }
+        </style></svg>

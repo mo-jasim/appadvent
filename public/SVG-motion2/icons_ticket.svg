@@ -1,0 +1,119 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icons/ticket">
+<g id="ticket-yellow 1" clip-path="url(#clip0_3662_5574)">
+<path id="Vector" d="M53.093 39.2573C59.8111 39.2573 65.2573 33.8111 65.2573 27.093C65.2573 20.3748 59.8111 14.9287 53.093 14.9287C46.3748 14.9287 40.9287 20.3748 40.9287 27.093C40.9287 33.8111 46.3748 39.2573 53.093 39.2573Z" fill="#ADE3F6"></path>
+<g id="Group">
+<path id="Vector_2" d="M52.62 37.8803C52.3213 39.0213 51.4226 40.0614 50.2431 40.0614H22.4112C22.3812 40.0614 22.3569 40.0371 22.3569 40.0071C22.3569 39.984 22.3716 39.9635 22.3934 39.9559L24.4926 39.2257L50.8641 29.94C51.2429 29.7884 51.6836 29.7606 52.0852 29.8059C52.2619 29.8258 52.4336 29.8829 52.5791 29.9849C52.8672 30.1868 53.1311 30.4813 53.2784 30.7757C53.7105 31.8992 54.1426 33.0227 54.4999 34.2211C54.5529 34.3992 54.6244 34.6121 54.5015 34.7515C54.4965 34.7572 54.4912 34.7629 54.4855 34.7686C53.5614 35.6349 52.9246 36.7169 52.62 37.8803Z" stroke="#08526D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="id_anim_stroke-property1" data-duration="2.7777777777777777" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 72.379px; animation: 2.77778s linear 0s 1 normal forwards running id_anim_stroke-property1;"></path>
+<path id="Vector_3" d="M31.8284 51.2041H44.6427" stroke="#08526D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="id_anim_stroke-property2" data-duration="2.7777777777777777" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 12.8143px; animation: 2.77778s linear 0s 1 normal forwards running id_anim_stroke-property2;"></path>
+<path id="Vector_4" d="M31.8284 57.0547H39.2569" stroke="#08526D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="id_anim_stroke-property3" data-duration="2.7777777777777777" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 7.4285px; animation: 2.77778s linear 0s 1 normal forwards running id_anim_stroke-property3;"></path>
+<path id="Vector_5" d="M54.6102 63.9746C54.6149 63.7558 54.5785 63.5371 54.5785 63.3183V60.7196C54.5785 60.3246 54.6532 59.8314 54.2999 59.6547C51.9785 58.6333 50.4928 56.4047 50.6785 53.8976C50.7713 51.669 52.1642 49.8119 54.1142 48.9761C54.2339 48.9363 54.3535 48.8621 54.4438 48.7684C54.6674 48.5361 54.5785 48.1618 54.5785 47.8393V44.519C54.5785 43.5904 53.8356 42.9404 52.907 43.0333H29.6285C27.9716 43.0333 26.6285 44.3764 26.6285 46.0333V46.469C26.6285 47.3047 25.9785 47.9547 25.1428 47.9547C24.307 47.9547 23.657 47.2119 23.657 46.469V45.9404C23.657 44.2836 22.3139 42.9404 20.657 42.9404C19.467 42.9404 18.2794 42.9404 17.0642 42.9404C16.0428 42.9404 14.9285 43.4047 14.9285 44.2404V46.6976C14.9285 47.9087 15.7006 48.9526 16.645 49.7109C16.8934 49.9103 17.1273 50.1256 17.3515 50.3567C17.5348 50.5458 17.6793 50.7686 17.8286 50.9855C17.9494 51.161 18.0802 51.3365 18.1721 51.512C18.2552 51.6708 18.3104 51.8434 18.3766 52.0101C19.5009 54.8402 18.2793 58.2061 15.3928 59.469C15.1047 59.6418 14.9285 59.9531 14.9285 60.289V64.2976C14.9285 65.0404 15.4856 65.5976 16.4142 65.5976H20.7499C22.4067 65.5976 23.7499 64.2544 23.7499 62.5976V62.069C23.7499 61.2333 24.3999 60.5833 25.2356 60.5833C26.0713 60.5833 26.7213 61.2333 26.7213 62.069V62.5047C26.7213 64.1616 28.0645 65.5047 29.7213 65.5047H53.3713C54.0181 65.4239 54.5944 64.7096 54.6102 63.9746Z" fill="url(#paint0_linear_3662_5574)"></path>
+<path id="Vector_6" d="M54.5785 63.6476V60.119C54.6713 59.9333 54.4856 59.7476 54.2999 59.6547C51.9785 58.6333 50.4928 56.4047 50.6785 53.8976C50.7713 51.669 52.1642 49.8119 54.1142 48.9761C54.3928 48.8833 54.6713 48.6047 54.5785 48.3261V44.519C54.5785 43.5904 53.8356 42.9404 52.907 43.0333H26.6285V46.469C26.6285 47.3047 25.9785 47.9547 25.1428 47.9547C24.307 47.9547 23.657 47.2119 23.657 46.469V42.9404C21.4285 42.9404 19.2928 42.9404 17.0642 42.9404C16.0428 42.9404 14.9285 43.4047 14.9285 44.2404V48.6976C16.0428 49.1619 16.8785 49.8119 17.6213 50.6476C17.807 51.019 18.1785 51.3904 18.2713 51.7619C19.5713 54.6404 18.3642 58.169 15.3928 59.469L14.9285 59.7476V64.2976C14.9285 65.0404 15.4856 65.5976 16.4142 65.5976H23.7499V62.069C23.7499 61.2333 24.3999 60.5833 25.2356 60.5833C26.0713 60.5833 26.7213 61.2333 26.7213 62.069V65.5047H53.3713C54.1142 65.4119 54.7642 64.4833 54.5785 63.6476Z" stroke="#08526D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="id_anim_stroke-property5" data-duration="2.7777777777777777" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 145.841px; animation: 2.77778s linear 0s 1 normal forwards running id_anim_stroke-property5;"></path>
+<path id="Vector_7" d="M25.1427 56.5903C24.307 56.5903 23.657 55.9403 23.657 55.1046V53.2474C23.657 52.4117 24.307 51.7617 25.1427 51.7617C25.9784 51.7617 26.6284 52.4117 26.6284 53.2474V55.1046C26.6284 55.9403 25.9784 56.5903 25.1427 56.5903Z" stroke="#08526D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="id_anim_stroke-property6" data-duration="2.7777777777777777" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 13.0772px; animation: 2.77778s linear 0s 1 normal forwards running id_anim_stroke-property6;"></path>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_3662_5574" x1="34.7832" y1="65.5976" x2="34.7832" y2="42.7784" gradientUnits="userSpaceOnUse">
+<stop offset="0.01" stop-color="#ADE3F6"></stop>
+<stop offset="0.4" stop-color="#ADE3F6" stop-opacity="0"></stop>
+</linearGradient>
+<clipPath id="clip0_3662_5574">
+<rect width="52" height="52" fill="white" transform="translate(14 14)"></rect>
+</clipPath>
+</defs>
+<style>
+        @keyframes id_anim_stroke-property1{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 72.37901306152344px;
+            }
+        
+            50%{
+                stroke-dashoffset: -36.18950653076172px; 
+        stroke-dasharray: 36.18950653076172px, 36.18950653076172px;
+            }
+        
+            100%{
+                stroke-dashoffset: -72.37901306152344px; 
+        stroke-dasharray: 72.37901306152344px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property2{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 12.814300537109375px;
+            }
+        
+            50%{
+                stroke-dashoffset: -6.4071502685546875px; 
+        stroke-dasharray: 6.4071502685546875px, 6.4071502685546875px;
+            }
+        
+            100%{
+                stroke-dashoffset: -12.814300537109375px; 
+        stroke-dasharray: 12.814300537109375px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property3{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 7.428501129150391px;
+            }
+        
+            50%{
+                stroke-dashoffset: -3.7142505645751953px; 
+        stroke-dasharray: 3.7142505645751953px, 3.7142505645751953px;
+            }
+        
+            100%{
+                stroke-dashoffset: -7.428501129150391px; 
+        stroke-dasharray: 7.428501129150391px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property5{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 145.8411407470703px;
+            }
+        
+            50%{
+                stroke-dashoffset: -72.92057037353516px; 
+        stroke-dasharray: 72.92057037353516px, 72.92057037353516px;
+            }
+        
+            100%{
+                stroke-dashoffset: -145.8411407470703px; 
+        stroke-dasharray: 145.8411407470703px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property6{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 13.077174186706543px;
+            }
+        
+            50%{
+                stroke-dashoffset: -6.5385870933532715px; 
+        stroke-dasharray: 6.5385870933532715px, 6.5385870933532715px;
+            }
+        
+            100%{
+                stroke-dashoffset: -13.077174186706543px; 
+        stroke-dasharray: 13.077174186706543px, 0px;
+            }
+        
+        }
+        </style></svg>

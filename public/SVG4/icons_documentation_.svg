@@ -1,0 +1,96 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icons/documentation ">
+<g id="documentation 1">
+<path id="Vector 7" d="M16 60.9851V37.6269V30C16 29.4477 16.4477 29 17 29H60.595C61.1088 29 61.5389 29.3893 61.59 29.9005L64.4046 58.0461C64.4579 58.5793 64.0815 59.0598 63.551 59.1356L51.5116 60.8555C50.9565 60.9348 50.4447 60.5422 50.3774 59.9855L47.1064 32.9248C47.0457 32.4226 46.6195 32.0448 46.1136 32.0448H45.9672C45.4279 32.0448 44.9857 32.4724 44.9677 33.0114L44.0323 61.0185C44.0143 61.5574 43.5721 61.9851 43.0328 61.9851H17C16.4477 61.9851 16 61.5374 16 60.9851Z" fill="url(#paint0_linear_3779_8432)"></path>
+<path id="Vector 22" d="M23 47.5V27" stroke="#08526D" stroke-width="1.5" stroke-linecap="round" class="id_anim_stroke-property1" data-duration="2.7777777777777777" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 20.5px; animation: 2.77778s linear 0s 1 normal forwards running id_anim_stroke-property1;"></path>
+<path id="Vector 21" d="M55.5596 48.3814L52.4404 28.1201" stroke="#08526D" stroke-width="1.5" stroke-linecap="round" class="id_anim_stroke-property2" data-duration="2.7777777777777777" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 20.5px; animation: 2.77778s linear 0s 1 normal forwards running id_anim_stroke-property2;"></path>
+<path id="Vector 20" d="M37 47.5V27" stroke="#08526D" stroke-width="1.5" stroke-linecap="round" class="id_anim_stroke-property3" data-duration="2.7777777777777777" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 20.5px; animation: 2.77778s linear 0s 1 normal forwards running id_anim_stroke-property3;"></path>
+<path id="Vector 19" d="M30 61L28.7519 61.8321C28.5877 61.9416 28.3946 62 28.1972 62H16.5C15.9477 62 15.5 61.5523 15.5 61V19.5C15.5 19.2239 15.7239 19 16 19H28.7639C28.9192 19 29.0723 19.0361 29.2111 19.1056L30 19.5M30 61L30.7071 61.7071C30.8946 61.8946 31.149 62 31.4142 62H43C43.5523 62 44 61.5523 44 61V31.3228C44 30.7705 44.4477 30.3228 45 30.3228M30 61V19.5M45 20L45.252 19.748C45.4125 19.5875 45.623 19.4863 45.8486 19.4613L58.0269 18.1081C58.5676 18.048 59.0572 18.4313 59.1286 18.9706L64.3653 58.4835C64.4391 59.0408 64.0394 59.5494 63.4805 59.6092L51.4564 60.8975C50.9223 60.9548 50.4384 60.5798 50.3604 60.0484L46.1254 31.1777C46.0534 30.6867 45.6322 30.3228 45.136 30.3228H45M45 20L43.7519 19.1679C43.5877 19.0584 43.3946 19 43.1972 19H31.2361C31.0808 19 30.9277 19.0361 30.7889 19.1056L30 19.5M45 20C44.9209 19.9472 44.967 26.8599 45 30.3228" stroke="#08526D" stroke-width="1.5" stroke-linecap="round" class="id_anim_stroke-property4" data-duration="2.7777777777777777" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 285.818px; animation: 2.77778s linear 0s 1 normal forwards running id_anim_stroke-property4;"></path>
+<path id="Vector_3" d="M56.7778 52.0153C56.2142 52.0153 55.7914 52.5789 55.8971 53.213C56.0028 53.7767 56.5665 54.1994 57.0949 54.0937C57.6233 53.9881 58.0812 53.4244 57.9756 52.896C57.8699 52.3676 57.3415 51.9096 56.7778 52.0153Z" fill="#08526D"></path>
+<path id="Vector_5" d="M37.308 54.7675C37.944 54.7675 38.368 54.2375 38.368 53.7075C38.368 53.0715 37.838 52.6475 37.308 52.6475C36.778 52.6475 36.354 53.0715 36.248 53.7075C36.248 54.3435 36.778 54.7675 37.308 54.7675Z" fill="#08526D"></path>
+<path id="Vector_7" d="M23.06 52.6475C22.53 52.6475 22.106 53.0715 22 53.7075C22 54.3435 22.53 54.7675 23.06 54.7675C23.696 54.7675 24.12 54.2375 24.12 53.7075C24.12 53.0715 23.59 52.6475 23.06 52.6475Z" fill="#08526D"></path>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_3779_8432" x1="40.4786" y1="63" x2="40.4786" y2="28.9947" gradientUnits="userSpaceOnUse">
+<stop offset="0.01" stop-color="#ADE3F6"></stop>
+<stop offset="0.4" stop-color="#ADE3F6" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+<style>
+        @keyframes id_anim_stroke-property1{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 20.5px;
+            }
+        
+            50%{
+                stroke-dashoffset: -10.25px; 
+        stroke-dasharray: 10.25px, 10.25px;
+            }
+        
+            100%{
+                stroke-dashoffset: -20.5px; 
+        stroke-dasharray: 20.5px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property2{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 20.4999942779541px;
+            }
+        
+            50%{
+                stroke-dashoffset: -10.24999713897705px; 
+        stroke-dasharray: 10.24999713897705px, 10.24999713897705px;
+            }
+        
+            100%{
+                stroke-dashoffset: -20.4999942779541px; 
+        stroke-dasharray: 20.4999942779541px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property3{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 20.5px;
+            }
+        
+            50%{
+                stroke-dashoffset: -10.25px; 
+        stroke-dasharray: 10.25px, 10.25px;
+            }
+        
+            100%{
+                stroke-dashoffset: -20.5px; 
+        stroke-dasharray: 20.5px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property4{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 285.81793212890625px;
+            }
+        
+            50%{
+                stroke-dashoffset: -142.90896606445312px; 
+        stroke-dasharray: 142.90896606445312px, 142.90896606445312px;
+            }
+        
+            100%{
+                stroke-dashoffset: -285.81793212890625px; 
+        stroke-dasharray: 285.81793212890625px, 0px;
+            }
+        
+        }
+        </style></svg>
