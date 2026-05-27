@@ -87,10 +87,10 @@ export default function GoogleWordCoachBlogPage() {
                             <div className="p-4 md:p-6">
                                 {/* Hero Image / Banner */}
                                 <div className="flex items-center justify-center">
-                                    <img 
-                                        className="bg-[#060d26] rounded-[2rem] w-full object-cover" 
-                                        src="/images/Google-Word-Coach.webp" 
-                                        alt="Google Word Coach" 
+                                    <img
+                                        className="bg-[#060d26] rounded-[2rem] w-full object-cover"
+                                        src="/images/Google-Word-Coach.webp"
+                                        alt="Google Word Coach"
                                     />
                                 </div>
 
@@ -105,9 +105,9 @@ export default function GoogleWordCoachBlogPage() {
                                 {/* Post Content */}
                                 <div className="space-y-5 text-black text-[16px] leading-[1.7]">
                                     <p>
-                                        Google is one of the most popular search engines. In fact, its name has become synonymous with browsing the internet. People usually say, “Google it!” This outstanding search engine never fails to amaze people. In 2018, it added another feather to its cap by launching the game-changing Google Word Coach.
+                                        Google is one of the most popular search engines. In fact, its name has become synonymous with browsing the internet. People usually say, “Google it!” This outstanding search engine never fails to amaze people. In 2018, it added another feather to its cap by launching the game-changing <strong>Google Word Coach</strong>.
                                     </p>
-                                    
+
                                     {/* Table of Contents */}
                                     <div className="mt-10 mb-8 overflow-hidden shadow-sm border border-gray-200 rounded-lg">
                                         <button
@@ -123,16 +123,16 @@ export default function GoogleWordCoachBlogPage() {
                                                     <li className="flex gap-2.5 items-start">
                                                         <span className="text-[#BBA380] w-4 font-normal text-left">1.</span>
                                                         <span
-                                                            className="text-[#4B5563] hover:text-[#32B9E9] cursor-pointer transition-colors"
+                                                            className="font-bold text-[#0A1A2E] hover:text-[#32B9E9] cursor-pointer transition-colors"
                                                             onClick={() => document.getElementById('main-title')?.scrollIntoView({ behavior: 'smooth' })}
                                                         >
                                                             Google Word Coach
                                                         </span>
                                                     </li>
                                                     <li className="flex gap-2.5 items-start">
-                                                        <span className="text-[#BBA380] w-4 font-normal text-left">2.</span>
+                                                        <span className="text-[#4B5563] w-4 font-normal text-left">2.</span>
                                                         <span
-                                                            className="font-bold text-[#0A1A2E] hover:text-[#32B9E9] cursor-pointer transition-colors"
+                                                            className="text-[#0A1A2E] hover:text-[#32B9E9] cursor-pointer transition-colors"
                                                             onClick={() => document.getElementById('what-is-google-word-coach')?.scrollIntoView({ behavior: 'smooth' })}
                                                         >
                                                             What is Google Word Coach?
@@ -278,7 +278,7 @@ export default function GoogleWordCoachBlogPage() {
                                             Here’s what you get by using Google word coach game:
                                         </h3>
                                         <div className="space-y-8 text-black text-[16px] leading-[1.7]">
-                                            
+
                                             <div>
                                                 <h4 className="text-[17px] font-bold text-[#0A1A2E] mb-3">
                                                     <span className="text-[#BBA380] font-normal mr-1.5">1.</span>
@@ -366,8 +366,8 @@ export default function GoogleWordCoachBlogPage() {
                                         </h3>
                                         <div className="space-y-4">
                                             {faqs.map((faq, i) => (
-                                                <div 
-                                                    key={i} 
+                                                <div
+                                                    key={i}
                                                     className="border border-gray-200 rounded-lg overflow-hidden shadow-sm transition-all duration-300"
                                                 >
                                                     <button
@@ -385,10 +385,9 @@ export default function GoogleWordCoachBlogPage() {
                                                             )}
                                                         </span>
                                                     </button>
-                                                    <div 
-                                                        className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                                                            openFaq === i ? 'max-h-[500px] border-t border-gray-150 p-4 bg-white' : 'max-h-0'
-                                                        }`}
+                                                    <div
+                                                        className={`transition-all duration-300 ease-in-out overflow-hidden ${openFaq === i ? 'max-h-[500px] border-t border-gray-150 p-4 bg-white' : 'max-h-0'
+                                                            }`}
                                                     >
                                                         <div className="text-black text-[15px] leading-[1.6]">
                                                             {faq.answer}

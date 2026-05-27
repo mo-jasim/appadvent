@@ -5,7 +5,7 @@ import { Search, ChevronDown, HeartPulse } from "lucide-react";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
 
 export default function HealthcareBlogPage() {
-    const [isTocOpen, setIsTocOpen] = useState(false);
+    const [isTocOpen, setIsTocOpen] = useState(true);
 
     const relatedPosts = [
         {
@@ -76,10 +76,10 @@ export default function HealthcareBlogPage() {
                                         The healthcare system needs cost reduction while patients seek convenient services, and providers need to operate their business efficiently. The solution becomes available through technological solutions. These emerge as the answer.
                                     </p>
                                     <p>
-                                        The main focus driving this change goes beyond single devices and apps. It comes from the whole system. <span className="font-bold text-[#0A1A2E]">Custom web application developers</span> build it.
+                                        The main focus driving this change goes beyond single devices and apps. It comes from the whole system. Custom web application developers build it.
                                     </p>
                                     <p>
-                                        Healthcare managed IT services build it. <span className="font-bold text-[#0A1A2E]">Healthcare app development companies</span> build it. Startup software development companies also build it.
+                                        Healthcare managed IT services build it. Healthcare <span className="font-bold text-[#0A1A2E]"> app development companies</span> build it. Startup software development companies also build it.
                                     </p>
                                     <p>
                                         The situation requires us to analyze its actual development process because we need to understand its essential value.

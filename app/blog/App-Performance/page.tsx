@@ -5,7 +5,7 @@ import { Search, ChevronDown } from "lucide-react";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
 
 export default function HealthcareBlogPage() {
-    const [isTocOpen, setIsTocOpen] = useState(false);
+    const [isTocOpen, setIsTocOpen] = useState(true);
 
     const relatedPosts = [
         {
@@ -67,30 +67,11 @@ export default function HealthcareBlogPage() {
                                     <p className="text-gray-500 font-bold text-[13px]">January 18, 2025</p>
                                 </div>
 
-                                {/* Post Content */}
-                                <div className="space-y-5 text-black text-[16px] leading-[1.7]">
-                                    <p>
-                                        Why do we develop an application? To streamline our business operations, of course! So, isn’t it smart to know the performance of your app?
-                                    </p>
-                                    <p>
-                                        Our mobile app development case study will give you an insight into the why’s and how’s of app development and software development performance metrics.
-                                    </p>
-                                    <p className="font-medium">
-                                        Before that, think about this:
-                                    </p>
-                                    <p>
-                                        You developed an app to make your business operations become more efficient; you must know how your app is performing and how exactly it is helping you improvise your business. Most importantly, you must know whether your user is receiving a great experience and, if not, how you can enhance the user experience.
-                                    </p>
-                                    <p>
-                                        If we look at app development company case study, we would realize how incredibly helpful are applications in today’s times. They benefit the business and the end user. In this context, it becomes all the more important to develop software development performance metrics to measure the performance of the software and its quantifiable characteristics.
-                                    </p>
-                                </div>
-
                                 {/* Table of Contents */}
                                 <div className="mt-10 mb-8 overflow-hidden shadow-md border border-gray-100 rounded-md">
                                     <button
                                         onClick={() => setIsTocOpen(!isTocOpen)}
-                                        className="w-full flex items-center justify-between p-4 bg-[#32B9E9] text-white transition-all"
+                                        className="w-full flex items-center justify-between p-4 text-white transition-all"
                                     >
                                         <span className="font-bold text-base text-black">Table of Contents</span>
                                         <ChevronDown className={`w-5 h-5 text-black transition-transform duration-300 cursor-pointer ${isTocOpen ? 'rotate-180' : ''}`} />
@@ -276,6 +257,24 @@ export default function HealthcareBlogPage() {
 
                                 {/* Section Content */}
                                 <div className="space-y-10 mb-16">
+                                    {/* Post Content */}
+                                    <div className="space-y-5 text-black text-[16px] leading-[1.7]">
+                                        <p>
+                                            Why do we develop an application? To streamline our business operations, of course! So, isn’t it smart to know the performance of your app?
+                                        </p>
+                                        <p>
+                                            Our <span className="font-bold text-[#0A1A2E] hover:text-[#32B9E9] cursor-pointer transition-colors">mobile app development case study</span> will give you an insight into the why’s and how’s of app development and software development performance metrics.
+                                        </p>
+                                        <p className="font-medium">
+                                            Before that, think about this:
+                                        </p>
+                                        <p>
+                                            You developed an app to make your business operations become more efficient; you must know how your app is performing and how exactly it is helping you improvise your business. Most importantly, you must know whether your user is receiving a great experience and, if not, how you can enhance the user experience.
+                                        </p>
+                                        <p>
+                                            If we look at app development company case study, we would realize how incredibly helpful are applications in today’s times. They benefit the business and the end user. In this context, it becomes all the more important to develop software development performance metrics to measure the performance of the software and its quantifiable characteristics.
+                                        </p>
+                                    </div>
                                     <div id="importance-of-metrics">
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Importance of software development performance metrics

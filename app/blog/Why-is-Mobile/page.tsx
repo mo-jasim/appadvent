@@ -92,23 +92,14 @@ export default function MobileAppBlogPage() {
                                                     <li className="flex gap-2.5 items-start">
                                                         <span className="text-[#BBA380] w-4 font-normal text-left">1.</span>
                                                         <span
-                                                            className="font-bold text-[#0A1A2E] hover:text-[#32B9E9] cursor-pointer transition-colors"
-                                                            onClick={() => document.getElementById('main-title')?.scrollIntoView({ behavior: 'smooth' })}
-                                                        >
-                                                            Why is Mobile App Development Special in 2026 and beyond?
-                                                        </span>
-                                                    </li>
-                                                    <li className="flex gap-2.5 items-start">
-                                                        <span className="text-[#BBA380] w-4 font-normal text-left">2.</span>
-                                                        <span
-                                                            className="text-[#4B5563] hover:text-[#32B9E9] cursor-pointer transition-colors"
+                                                            className="text-[#4B5563] hover:text-[#32B9E9] cursor-pointer transition-colors font-bold"
                                                             onClick={() => document.getElementById('how-it-benefits-you')?.scrollIntoView({ behavior: 'smooth' })}
                                                         >
                                                             How it benefits you?
                                                         </span>
                                                     </li>
                                                     <li className="flex gap-2.5 items-start">
-                                                        <span className="text-[#BBA380] w-4 font-normal text-left">3.</span>
+                                                        <span className="text-[#BBA380] w-4 font-normal text-left">2.</span>
                                                         <span
                                                             className="text-[#4B5563] hover:text-[#32B9E9] cursor-pointer transition-colors"
                                                             onClick={() => document.getElementById('how-it-benefits-users')?.scrollIntoView({ behavior: 'smooth' })}
@@ -117,7 +108,7 @@ export default function MobileAppBlogPage() {
                                                         </span>
                                                     </li>
                                                     <li className="flex gap-2.5 items-start">
-                                                        <span className="text-[#BBA380] w-4 font-normal text-left">4.</span>
+                                                        <span className="text-[#BBA380] w-4 font-normal text-left">3.</span>
                                                         <span
                                                             className="text-[#4B5563] hover:text-[#32B9E9] cursor-pointer transition-colors"
                                                             onClick={() => document.getElementById('what-stats-say')?.scrollIntoView({ behavior: 'smooth' })}
@@ -126,7 +117,7 @@ export default function MobileAppBlogPage() {
                                                         </span>
                                                     </li>
                                                     <li className="flex gap-2.5 items-start">
-                                                        <span className="text-[#BBA380] w-4 font-normal text-left">5.</span>
+                                                        <span className="text-[#BBA380] w-4 font-normal text-left">4.</span>
                                                         <span
                                                             className="text-[#4B5563] hover:text-[#32B9E9] cursor-pointer transition-colors"
                                                             onClick={() => document.getElementById('multi-channel')?.scrollIntoView({ behavior: 'smooth' })}
@@ -135,7 +126,7 @@ export default function MobileAppBlogPage() {
                                                         </span>
                                                     </li>
                                                     <li className="flex gap-2.5 items-start">
-                                                        <span className="text-[#BBA380] w-4 font-normal text-left">6.</span>
+                                                        <span className="text-[#BBA380] w-4 font-normal text-left">5.</span>
                                                         <span
                                                             className="text-[#4B5563] hover:text-[#32B9E9] cursor-pointer transition-colors"
                                                             onClick={() => document.getElementById('quick-notifications')?.scrollIntoView({ behavior: 'smooth' })}
@@ -144,7 +135,7 @@ export default function MobileAppBlogPage() {
                                                         </span>
                                                     </li>
                                                     <li className="flex gap-2.5 items-start">
-                                                        <span className="text-[#BBA380] w-4 font-normal text-left">7.</span>
+                                                        <span className="text-[#BBA380] w-4 font-normal text-left">6.</span>
                                                         <span
                                                             className="text-[#4B5563] hover:text-[#32B9E9] cursor-pointer transition-colors"
                                                             onClick={() => document.getElementById('boost-sales')?.scrollIntoView({ behavior: 'smooth' })}
@@ -153,7 +144,7 @@ export default function MobileAppBlogPage() {
                                                         </span>
                                                     </li>
                                                     <li className="flex gap-2.5 items-start">
-                                                        <span className="text-[#BBA380] w-4 font-normal text-left">8.</span>
+                                                        <span className="text-[#BBA380] w-4 font-normal text-left">7.</span>
                                                         <span
                                                             className="text-[#4B5563] hover:text-[#32B9E9] cursor-pointer transition-colors"
                                                             onClick={() => document.getElementById('promote-brand')?.scrollIntoView({ behavior: 'smooth' })}
@@ -162,7 +153,7 @@ export default function MobileAppBlogPage() {
                                                         </span>
                                                     </li>
                                                     <li className="flex gap-2.5 items-start">
-                                                        <span className="text-[#BBA380] w-4 font-normal text-left">9.</span>
+                                                        <span className="text-[#BBA380] w-4 font-normal text-left">8.</span>
                                                         <span
                                                             className="text-[#4B5563] hover:text-[#32B9E9] cursor-pointer transition-colors"
                                                             onClick={() => document.getElementById('fingertip-access')?.scrollIntoView({ behavior: 'smooth' })}
@@ -171,7 +162,7 @@ export default function MobileAppBlogPage() {
                                                         </span>
                                                     </li>
                                                     <li className="flex gap-2.5 items-start">
-                                                        <span className="text-[#BBA380] w-4 font-normal text-left">10.</span>
+                                                        <span className="text-[#BBA380] w-4 font-normal text-left">9.</span>
                                                         <span
                                                             className="text-[#4B5563] hover:text-[#32B9E9] cursor-pointer transition-colors"
                                                             onClick={() => document.getElementById('direct-marketing')?.scrollIntoView({ behavior: 'smooth' })}
@@ -180,7 +171,7 @@ export default function MobileAppBlogPage() {
                                                         </span>
                                                     </li>
                                                     <li className="flex gap-2.5 items-start">
-                                                        <span className="text-[#BBA380] w-4 font-normal text-left">11.</span>
+                                                        <span className="text-[#BBA380] w-4 font-normal text-left">10.</span>
                                                         <span
                                                             className="text-[#4B5563] hover:text-[#32B9E9] cursor-pointer transition-colors"
                                                             onClick={() => document.getElementById('easy-payment')?.scrollIntoView({ behavior: 'smooth' })}
@@ -189,7 +180,7 @@ export default function MobileAppBlogPage() {
                                                         </span>
                                                     </li>
                                                     <li className="flex gap-2.5 items-start">
-                                                        <span className="text-[#BBA380] w-4 font-normal text-left">12.</span>
+                                                        <span className="text-[#BBA380] w-4 font-normal text-left">11.</span>
                                                         <span
                                                             className="text-[#4B5563] hover:text-[#32B9E9] cursor-pointer transition-colors"
                                                             onClick={() => document.getElementById('impact-industries')?.scrollIntoView({ behavior: 'smooth' })}
@@ -198,9 +189,9 @@ export default function MobileAppBlogPage() {
                                                         </span>
                                                     </li>
                                                     <li className="flex gap-2.5 items-start">
-                                                        <span className="text-[#BBA380] w-4 font-normal text-left">13.</span>
+                                                        <span className="text-[#BBA380] w-4 font-normal text-left">12.</span>
                                                         <span
-                                                            className="text-[#4B5563] hover:text-[#32B9E9] cursor-pointer transition-colors font-bold"
+                                                            className="text-[#4B5563] hover:text-[#32B9E9] cursor-pointer transition-colors "
                                                             onClick={() => document.getElementById('create-successful-app')?.scrollIntoView({ behavior: 'smooth' })}
                                                         >
                                                             How to create a successful mobile app?

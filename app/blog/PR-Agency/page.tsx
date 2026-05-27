@@ -78,12 +78,12 @@ export default function PRAgencyBlogPage() {
                                 {/* Post Content */}
                                 <div className="space-y-5 text-black text-[16px] leading-[1.7]">
                                     <p>
-                                        Digital marketing may seem complex. Buzzwords like SEO, ROI, PPC, and more can feel overwhelming—but at Appadvent, we simplify them with expert SEO services and PPC services, turning complex strategies into clear, results-driven growth for your business. Well, you must not worry about things like deploying the best digital marketing strategy or using the right keywords for better ranking. This is because the world has many high quality digital marketing experts and their very job is to devise strategies and help your business dominate the online world.
+                                        Digital marketing may seem complex. Buzzwords like SEO, ROI, PPC, and more can feel overwhelming—but at <span className="font-bold">Appadvent,</span> we simplify them with expert <span className="font-bold">SEO services</span> and <span className="font-bold">PPC services</span>, turning complex strategies into clear, results-driven growth for your business. Well, you must not worry about things like deploying the best digital marketing strategy or using the right keywords for better ranking. This is because the world has many high quality digital marketing experts and their very job is to devise strategies and help your business dominate the online world.
                                     </p>
-                                    <p>
+                                    <p className="font-bold">
                                         However, a few questions that arise are:
                                     </p>
-                                    <ul className="list-disc pl-5 space-y-2 text-[15px] text-[#4B5563]">
+                                    <ul className="list-disc pl-5 space-y-2 text-[15px] text-black">
                                         <li>How to hire the best digital marketing and advertising agency?</li>
                                         <li>What are the things to consider when choosing an agency?</li>
                                         <li>Moreover, how do you know that the agency is right for you?</li>
@@ -241,7 +241,7 @@ export default function PRAgencyBlogPage() {
                                         </h3>
                                         <div className="space-y-5 text-black text-[16px] leading-[1.7]">
                                             <p>
-                                                The digital world is constantly evolving. You must get associated with an upgraded digital marketing consulting service. Only an agency that stays ahead of its competition can help you do the same. Check whether they use the latest tools and technologies like automation software, advanced analytical platforms, AI-driven tools, and others. These aren’t fancy tools to be used occasionally. They have become an essential part of digital marketing strategy in the modern times.
+                                                The digital world is constantly evolving. You must get associated with an upgraded digital marketing consulting service. Only an agency that stays ahead of its competition can help you do the same. Check whether they use the latest tools and technologies like automation software, advanced analytical platforms, AI-driven tools, and others. These aren’t fancy tools to be used occasionally. They have become an essential part of <span className="font-bold">digital marketing</span> strategy in the modern times.
                                             </p>
                                         </div>
                                     </div>
@@ -310,7 +310,7 @@ export default function PRAgencyBlogPage() {
                                         </h3>
                                         <div className="space-y-5 text-black text-[16px] leading-[1.7]">
                                             <p>
-                                                The right digital marketing and advertising agency can feel like an extension of your own team. When your way of thinking and the level of expertise “click” with each other, you can expect stellar performance.
+                                                The right <span className="font-bold">digital marketing and advertising agency</span> can feel like an extension of your own team. When your way of thinking and the level of expertise “click” with each other, you can expect stellar performance.
                                             </p>
                                         </div>
                                     </div>

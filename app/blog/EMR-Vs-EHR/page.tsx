@@ -5,7 +5,7 @@ import { Search, ChevronDown, HeartPulse } from "lucide-react";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
 
 export default function HealthcareBlogPage() {
-    const [isTocOpen, setIsTocOpen] = useState(false);
+    const [isTocOpen, setIsTocOpen] = useState(true);
 
     const relatedPosts = [
         {
@@ -87,10 +87,10 @@ export default function HealthcareBlogPage() {
                                 <div className="mt-10 mb-8 overflow-hidden shadow-md border border-gray-100 rounded-md">
                                     <button
                                         onClick={() => setIsTocOpen(!isTocOpen)}
-                                        className="w-full flex items-center justify-between p-4 bg-[#32B9E9] text-white transition-all"
+                                        className="w-full flex items-center justify-between p-4 text-white transition-all"
                                     >
                                         <span className="font-bold text-base text-black">Table of Contents</span>
-                                        <ChevronDown className={`w-5 h-5 text-black transition-transform duration-300 cursor-pointer ${isTocOpen ? 'rotate-180' : ''}`} />
+                                        <ChevronDown className={`w-5 h-5 text-black stroke-[2.5] transition-transform duration-300 cursor-pointer ${isTocOpen ? 'rotate-180' : ''}`} />
                                     </button>
                                     {isTocOpen && (
                                         <div className="p-6 bg-white border-x border-b border-gray-100 animate-in slide-in-from-top duration-300">
@@ -255,7 +255,7 @@ export default function HealthcareBlogPage() {
                                         </div>
                                     </div>
 
-                                    <div id="emr-definition" className="pl-4 border-l-4 border-[#00a9e4]/30">
+                                    <div id="emr-definition" className="pl-4">
                                         <h4 className="text-[18px] font-bold text-[#0A1A2E] mb-3">
                                             1. Electronic Medical Records (EMR):
                                         </h4>
@@ -269,7 +269,7 @@ export default function HealthcareBlogPage() {
                                         </div>
                                     </div>
 
-                                    <div id="ehr-definition" className="pl-4 border-l-4 border-[#32B9E9]/30">
+                                    <div id="ehr-definition" className="pl-4">
                                         <h4 className="text-[18px] font-bold text-[#0A1A2E] mb-3">
                                             2. Electronic Health Records (EHR):
                                         </h4>
@@ -354,7 +354,7 @@ export default function HealthcareBlogPage() {
                                         </h3>
                                     </div>
 
-                                    <div id="effect-on-patient-care" className="pl-4 border-l-4 border-[#00a9e4]/30">
+                                    <div id="effect-on-patient-care" className="pl-4">
                                         <h4 className="text-[18px] font-bold text-[#0A1A2E] mb-3">
                                             1. Effect on patient care:
                                         </h4>
@@ -368,7 +368,7 @@ export default function HealthcareBlogPage() {
                                         </div>
                                     </div>
 
-                                    <div id="regulatory-compliance" className="pl-4 border-l-4 border-[#32B9E9]/30">
+                                    <div id="regulatory-compliance" className="pl-4">
                                         <h4 className="text-[18px] font-bold text-[#0A1A2E] mb-3">
                                             2. Regulatory compliance:
                                         </h4>
@@ -399,7 +399,7 @@ export default function HealthcareBlogPage() {
                                         </div>
                                     </div>
 
-                                    <div id="cost-effectiveness" className="pl-4 border-l-4 border-[#00a9e4]/30">
+                                    <div id="cost-effectiveness" className="pl-4">
                                         <h4 className="text-[18px] font-bold text-[#0A1A2E] mb-3">
                                             3. Cost effectiveness:
                                         </h4>
@@ -413,7 +413,7 @@ export default function HealthcareBlogPage() {
                                         </div>
                                     </div>
 
-                                    <div id="scalability-factor" className="pl-4 border-l-4 border-[#32B9E9]/30">
+                                    <div id="scalability-factor" className="pl-4">
                                         <h4 className="text-[18px] font-bold text-[#0A1A2E] mb-3">
                                             4. Scalability factor:
                                         </h4>

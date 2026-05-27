@@ -5,7 +5,7 @@ import { Search, ChevronDown, HeartPulse } from "lucide-react";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
 
 export default function HealthcareBlogPage() {
-    const [isTocOpen, setIsTocOpen] = useState(false);
+    const [isTocOpen, setIsTocOpen] = useState(true);
 
     const relatedPosts = [
         {
@@ -77,7 +77,7 @@ export default function HealthcareBlogPage() {
                                 <div className="mt-10 mb-8 overflow-hidden shadow-md border border-gray-100 rounded-md">
                                     <button
                                         onClick={() => setIsTocOpen(!isTocOpen)}
-                                        className="w-full flex items-center justify-between p-4 bg-[#32B9E9] text-white transition-all"
+                                        className="w-full flex items-center justify-between p-4 text-white transition-all"
                                     >
                                         <span className="font-bold text-base text-black">Table of Contents</span>
                                         <ChevronDown className={`w-5 h-5 text-black transition-transform duration-300 cursor-pointer ${isTocOpen ? 'rotate-180' : ''}`} />
@@ -516,7 +516,7 @@ export default function HealthcareBlogPage() {
                                                 A business ready web application foundation requires more than software development because it needs a digital base which supports growth. Web application development services require businesses to develop strategic plans which include selecting scalable technology and designing integration systems and focusing on user experience and budgeting for future development to prevent costly system replacements while enabling business growth.                                            </p>
 
                                             <p>
-                                                Companies who wish to develop apps should select developers who provide scalable <span className="font-bold">Software Development Solutions</span> and <span className="font-bold">Web Design and Development Services</span> and create architectures which support future <span className="font-bold">Mobile Application Development Solutions</span>. User interfaces in web applications need proper design to make them valuable business resources.
+                                                Companies who wish to develop apps should select developers who provide scalable <span className="font-bold">Software Development Solutions</span> and Web Design and Development Services and create architectures which support future <span className="font-bold">Mobile Application Development Solutions</span>. User interfaces in web applications need proper design to make them valuable business resources.
                                             </p>
                                         </div>
                                     </div>

@@ -278,12 +278,12 @@ export default function CompleteGuideBlogPage() {
                                         </h3>
                                         <div className="space-y-5 text-black text-[16px] leading-[1.7]">
                                             <ul className="space-y-3.5 ml-4">
-                                                <li className="flex items-start gap-3 text-[15px] text-[#4B5563]">
-                                                    <span className="w-1.5 h-1.5 rounded-full bg-[#4B5563] mt-2.5 flex-shrink-0"></span>
+                                                <li className="flex items-start gap-3 text-[15px] text-black">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-[#4B5563] mt-2.5 flex-shrink-0 font-bold"></span>
                                                     Writing code for the software
                                                 </li>
-                                                <li className="flex items-start gap-3 text-[15px] text-[#4B5563]">
-                                                    <span className="w-1.5 h-1.5 rounded-full bg-[#4B5563] mt-2.5 flex-shrink-0"></span>
+                                                <li className="flex items-start gap-3 text-[15px] text-black">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-[#4B5563] mt-2.5 flex-shrink-0 font-bold"></span>
                                                     Designing the application
                                                 </li>
                                             </ul>
@@ -318,7 +318,7 @@ export default function CompleteGuideBlogPage() {
                                             <p className="font-semibold text-[#0A1A2E]">
                                                 Think:
                                             </p>
-                                            <ul className="list-disc pl-5 space-y-2 text-[15px] text-[#4B5563]">
+                                            <ul className="list-disc pl-5 space-y-2 text-[15px] text-black">
                                                 <li>What do you want the app to do?</li>
                                                 <li>How will it benefit your users?</li>
                                                 <li>What is your budget for app development and maintenance?</li>
@@ -341,7 +341,7 @@ export default function CompleteGuideBlogPage() {
                                             <p className="font-semibold text-[#0A1A2E]">
                                                 Find out:
                                             </p>
-                                            <ul className="list-disc pl-5 space-y-2 text-[15px] text-[#4B5563]">
+                                            <ul className="list-disc pl-5 space-y-2 text-[15px] text-black">
                                                 <li>Your competition</li>
                                                 <li>Your target audience (what are people looking for?)</li>
                                                 <li>Your app’s USP</li>
@@ -370,7 +370,7 @@ export default function CompleteGuideBlogPage() {
                                             <p className="font-semibold text-[#0A1A2E]">
                                                 Here’s what you must do:
                                             </p>
-                                            <ul className="list-disc pl-5 space-y-2 text-[15px] text-[#4B5563]">
+                                            <ul className="list-disc pl-5 space-y-2 text-[15px] text-black">
                                                 <li>Choose the method of developing app</li>
                                                 <li>Create a team, consisting of a project manager</li>
                                                 <li>Determine a timeline</li>
@@ -418,7 +418,7 @@ export default function CompleteGuideBlogPage() {
                                             </p>
 
                                             <div>
-                                                <h4 className="text-[17px] font-bold text-[#0A1A2E] mb-3" id="popular-platforms-include">
+                                                <h4 className="text-[20px] font-bold text-[#00a9e4] mb-3" id="popular-platforms-include">
                                                     Some Of The Most Popular Platforms Include:
                                                 </h4>
                                                 <ul className="list-disc pl-5 space-y-2.5 text-[15px] text-[#4B5563]">
@@ -450,18 +450,18 @@ export default function CompleteGuideBlogPage() {
                                             <p className="font-semibold text-[#0A1A2E]">
                                                 The different types of apps include:
                                             </p>
-                                            <ul className="list-disc pl-5 space-y-2.5 text-[15px] text-[#4B5563]">
+                                            <ul className="list-disc pl-5 space-y-2.5 text-[16px] text-black">
                                                 <li>
-                                                    <span className="font-bold text-[#0A1A2E]">Native apps</span>, which can be installed directly on mobiles
+                                                    Native apps, which can be installed directly on mobiles
                                                 </li>
                                                 <li>
-                                                    <span className="font-bold text-[#0A1A2E]">Cross-platform native apps</span>, which can be installed on both iOS and Android platforms
+                                                    Cross-platform native apps, which can be installed on both iOS and Android platforms
                                                 </li>
                                                 <li>
-                                                    <span className="font-bold text-[#0A1A2E]">Hybrid apps</span>, which are similar to cross-platform ones, but less technical, more user-friendly, and great for people with little coding knowledge
+                                                    Hybrid apps, which are similar to cross-platform ones, but less technical, more user-friendly, and great for people with little coding knowledge
                                                 </li>
                                                 <li>
-                                                    <span className="font-bold text-[#0A1A2E]">Progressive web application</span>, which are apps delivered through web
+                                                    Progressive web application, which are apps delivered through web
                                                 </li>
                                             </ul>
                                             <p>

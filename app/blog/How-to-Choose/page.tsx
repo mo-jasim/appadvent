@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { Search, ChevronDown, HeartPulse } from "lucide-react";
+import { Search, ChevronDown, HeartPulse, Link } from "lucide-react";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
 
 export default function HealthcareBlogPage() {
-    const [isTocOpen, setIsTocOpen] = useState(false);
+    const [isTocOpen, setIsTocOpen] = useState(true);
 
     const relatedPosts = [
         {
@@ -86,9 +86,9 @@ export default function HealthcareBlogPage() {
                                 <div className="mt-10 mb-8 overflow-hidden shadow-md border border-gray-100 rounded-md">
                                     <button
                                         onClick={() => setIsTocOpen(!isTocOpen)}
-                                        className="w-full flex items-center justify-between p-4 bg-[#32B9E9] text-white transition-all"
+                                        className="w-full flex items-center justify-between p-4 text-white transition-all"
                                     >
-                                        <span className="flex justify-center items-center text-center w-full font-bold text-base text-black ">Table of Contents</span>
+                                        <span className="w-full font-bold text-base text-black ">Table of Contents</span>
                                         <ChevronDown className={`w-5 h-5 text-black transition-transform duration-300 cursor-pointer ${isTocOpen ? 'rotate-180' : ''}`} />
                                     </button>
                                     {isTocOpen && (
@@ -103,15 +103,7 @@ export default function HealthcareBlogPage() {
                                                         How to Choose a Reputable AI Development Services Provider?
                                                     </span>
                                                 </li>
-                                                <li className="flex gap-2">
-                                                    <span className="text-gray-400">2.</span>
-                                                    <span
-                                                        className="font-bold text-[#0A1A2E] hover:text-[#32B9E9] cursor-pointer transition-colors"
-                                                        onClick={() => document.getElementById('ai-provider')?.scrollIntoView({ behavior: 'smooth' })}
-                                                    >
-                                                        AI-based project service provider: -
-                                                    </span>
-                                                </li>
+
                                                 <li className="flex gap-2">
                                                     <span className="text-gray-400">3.</span>
                                                     <span
@@ -216,9 +208,7 @@ export default function HealthcareBlogPage() {
                                     )}
                                 </div>
 
-                                <p className="mb-8 font-medium text-black text-[16px] leading-[1.7]">
-                                    These are the Core Concepts. Let&apos;s deeply understand these points and what they actually mean.
-                                </p>
+
 
                                 {/* Section Content */}
                                 <div className="space-y-10 mb-16">
@@ -235,7 +225,7 @@ export default function HealthcareBlogPage() {
                                                 <li>Customisation and Scalability options</li>
                                                 <li>Full Stack Capabilities also matter</li>
                                                 <li>Need to Understand Their Communication Style and Development Process</li>
-                                                <li>Evaluate their Post <strong>Deployment Support and maintenance</strong></li>
+                                                <li>Evaluate their Post <span className="font-bold text-[#0A1A2E] hover:text-[#32B9E9] cursor-pointer transition-colors">Deployment Support and maintenance</span></li>
                                                 <li>Compare the Pricing Methods</li>
                                                 <li>Their Market Reputation and Client Feedback</li>
                                             </ol>
@@ -259,7 +249,7 @@ export default function HealthcareBlogPage() {
                                                 <li>Are you aiming for cost Reduction, better analytics, 24*7 efficiency?</li>
                                             </ul>
                                             <p className="pt-4">
-                                                These types of questions are what a reputable AI <strong>software development company</strong> is willing to ask, rather than pushing standard solutions. If the provider offers generic solutions without brainstorming, then tailored solutions are a red flag.
+                                                These types of questions are what a reputable AI <span className="font-bold text-[#0A1A2E] hover:text-[#32B9E9] cursor-pointer transition-colors">software development company</span> is willing to ask, rather than pushing standard solutions. If the provider offers generic solutions without brainstorming, then tailored solutions are a red flag.
                                             </p>
                                         </div>
                                     </div>
@@ -294,7 +284,7 @@ export default function HealthcareBlogPage() {
                                                 </li>
                                             </ul>
                                             <p>
-                                                If you want to build a conversational AI, the vendor should have experience in AI chatbot Web or mobile app development services– including intent recognition, multilingual support, and human-like conversation flows. A strong AI development company will provide you with proper real-world use cases, not just demos.
+                                                If you want to build a conversational AI, the vendor should have experience in AI chatbot Web or <span className="font-bold text-[#0A1A2E] hover:text-[#32B9E9] cursor-pointer transition-colors">mobile app development services</span>– including intent recognition, multilingual support, and human-like conversation flows. A strong AI development company will provide you with proper real-world use cases, not just demos.
                                             </p>
                                         </div>
                                     </div>
@@ -460,7 +450,7 @@ export default function HealthcareBlogPage() {
                                         </h3>
                                         <div className="space-y-5 text-black text-[16px] leading-[1.7]">
                                             <p>
-                                                Today, AI systems are not like &quot;Build once and forget&quot; solutions. Model performance declines as user behaviour and data patterns shift. That&apos;s why software maintenance and support services are crucial.
+                                                Today, AI systems are not like &quot;Build once and forget&quot; solutions. Model performance declines as user behaviour and data patterns shift. That&apos;s why <span className="font-bold text-[#0A1A2E] hover:text-[#32B9E9] cursor-pointer transition-colors">software maintenance and support services</span> are crucial.
                                             </p>
                                             <p className="font-medium">
                                                 Ask whether the provider offers:
