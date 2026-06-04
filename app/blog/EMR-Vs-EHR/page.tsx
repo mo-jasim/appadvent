@@ -48,7 +48,7 @@ export default function HealthcareBlogPage() {
 
     return (
         <>
-            <main className="min-h-screen bg-[#F8FAFC] font-sans text-[#4B5563]">
+            <main className="min-h-screen bg-[#F8FAFC] font-THICCCBOI text-[#4B5563]">
                 <div className="max-w-[1240px] mx-auto px-4 py-8 md:py-12">
                     <div className="flex flex-col lg:flex-row gap-8">
                         {/* Main Content Column with Border */}
@@ -94,7 +94,7 @@ export default function HealthcareBlogPage() {
                                     </button>
                                     {isTocOpen && (
                                         <div className="p-6 bg-white border-x border-b border-gray-100 animate-in slide-in-from-top duration-300">
-                                            <ul className="space-y-3 text-[15px] text-[#4B5563] hover:text-[#0A1A2E] font-medium">
+                                            <ul className="space-y-3 text-[15px] text-black font-bold hover:text-[#0A1A2E] font-medium">
                                                 <li className="flex gap-2">
                                                     <span className="text-gray-400">1.</span>
                                                     <span

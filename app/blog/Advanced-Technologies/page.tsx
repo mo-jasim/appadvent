@@ -54,7 +54,7 @@ export default function AdvancedTechnologiesBlogPage() {
 
     return (
         <>
-            <main className="min-h-screen bg-[#F8FAFC] font-sans text-[#4B5563]">
+            <main className="min-h-screen bg-[#F8FAFC] font-THICCCBOI text-[#4B5563]">
                 <div className="max-w-[1240px] mx-auto px-4 py-8 md:py-12">
                     <div className="flex flex-col lg:flex-row gap-8">
                         {/* Main Content Column with Border */}
@@ -99,7 +99,7 @@ export default function AdvancedTechnologiesBlogPage() {
                                             <div className="p-6 bg-white animate-in slide-in-from-top duration-300">
                                                 <ul className="space-y-3.5 text-[15px] font-medium">
                                                     <li className="flex gap-2.5 items-start">
-                                                        <span className="text-[#BBA380] w-4 font-normal text-left">1.</span>
+                                                        <span className="text-black w-4 font-normal text-left">1.</span>
                                                         <span
                                                             className="font-bold text-[#0A1A2E] hover:text-[#32B9E9] cursor-pointer transition-colors"
                                                             onClick={() => document.getElementById('main-title')?.scrollIntoView({ behavior: 'smooth' })}
@@ -108,45 +108,45 @@ export default function AdvancedTechnologiesBlogPage() {
                                                         </span>
                                                     </li>
                                                     <li className="flex gap-2.5 items-start">
-                                                        <span className="text-[#BBA380] w-4 font-normal text-left">2.</span>
+                                                        <span className="text-black w-4 font-normal text-left">2.</span>
                                                         <span
-                                                            className="text-[#4B5563] hover:text-[#32B9E9] cursor-pointer transition-colors"
+                                                            className="text-black hover:text-[#32B9E9] cursor-pointer transition-colors"
                                                             onClick={() => document.getElementById('rise-of-automation')?.scrollIntoView({ behavior: 'smooth' })}
                                                         >
                                                             The rise of automation in software development
                                                         </span>
                                                     </li>
                                                     <li className="flex gap-2.5 items-start">
-                                                        <span className="text-[#BBA380] w-4 font-normal text-left">3.</span>
+                                                        <span className="text-black w-4 font-normal text-left">3.</span>
                                                         <span
-                                                            className="text-[#4B5563] hover:text-[#32B9E9] cursor-pointer transition-colors"
+                                                            className="text-black hover:text-[#32B9E9] cursor-pointer transition-colors"
                                                             onClick={() => document.getElementById('leveraging-ai')?.scrollIntoView({ behavior: 'smooth' })}
                                                         >
                                                             Leveraging Artificial Intelligence for Smarter Coding
                                                         </span>
                                                     </li>
                                                     <li className="flex gap-2.5 items-start">
-                                                        <span className="text-[#BBA380] w-4 font-normal text-left">4.</span>
+                                                        <span className="text-black w-4 font-normal text-left">4.</span>
                                                         <span
-                                                            className="text-[#4B5563] hover:text-[#32B9E9] cursor-pointer transition-colors"
+                                                            className="text-black hover:text-[#32B9E9] cursor-pointer transition-colors"
                                                             onClick={() => document.getElementById('impact-of-cloud')?.scrollIntoView({ behavior: 'smooth' })}
                                                         >
                                                             The Impact of Cloud Computing on Development Practices
                                                         </span>
                                                     </li>
                                                     <li className="flex gap-2.5 items-start">
-                                                        <span className="text-[#BBA380] w-4 font-normal text-left">5.</span>
+                                                        <span className="text-black w-4 font-normal text-left">5.</span>
                                                         <span
-                                                            className="text-[#4B5563] hover:text-[#32B9E9] cursor-pointer transition-colors"
+                                                            className="text-black hover:text-[#32B9E9] cursor-pointer transition-colors"
                                                             onClick={() => document.getElementById('embracing-agile')?.scrollIntoView({ behavior: 'smooth' })}
                                                         >
                                                             Embracing Agile Methodologies with Advanced Tools
                                                         </span>
                                                     </li>
                                                     <li className="flex gap-2.5 items-start">
-                                                        <span className="text-[#BBA380] w-4 font-normal text-left">6.</span>
+                                                        <span className="text-black w-4 font-normal text-left">6.</span>
                                                         <span
-                                                            className="text-[#4B5563] hover:text-[#32B9E9] cursor-pointer transition-colors font-bold"
+                                                            className="text-black hover:text-[#32B9E9] cursor-pointer transition-colors"
                                                             onClick={() => document.getElementById('future-trends')?.scrollIntoView({ behavior: 'smooth' })}
                                                         >
                                                             Future Trends Shaping Software Development

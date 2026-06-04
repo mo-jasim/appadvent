@@ -47,17 +47,29 @@ const cards: providingProcess[] = [
     },
 ];
 
-const CircularProgress = ({ value, title }: { value: number; title: string }) => {
+const CircularProgress = ({
+    value,
+    title,
+    subtitle,
+    greenPercent = 45,
+    yellowPercent = 25
+}: {
+    value: number;
+    title: React.ReactNode;
+    subtitle?: React.ReactNode;
+    greenPercent?: number;
+    yellowPercent?: number;
+}) => {
     const radius = 60;
     const circumference = 2 * Math.PI * radius;
-    const yellowPercent = 25;
-    const greenPercent = 45;
     const yellowOffset = circumference - (yellowPercent / 100) * circumference;
     const greenOffset = circumference - (greenPercent / 100) * circumference;
 
     return (
-        <div className="flex flex-col items-center gap-4 sm:gap-6">
-            <h3 className="text-[16px] sm:text-[18px] font-bold text-[#374151]">{title}</h3>
+        <div className="flex flex-col items-center gap-4 sm:gap-6 flex-1 w-full">
+            <div className="min-h-[48px] sm:min-h-[56px] flex items-end justify-center w-full">
+                <h3 className="text-[16px] sm:text-[18px] font-bold text-[#374151]">{title}</h3>
+            </div>
             <div className="relative w-[140px] h-[140px] sm:w-[180px] sm:h-[180px]">
                 <svg className="w-full h-full -rotate-90 transform" viewBox="0 0 140 140">
                     <circle cx="70" cy="70" r={radius} stroke="#E5E7EB" strokeWidth="10" fill="none" strokeLinecap="round" />
@@ -75,13 +87,17 @@ const CircularProgress = ({ value, title }: { value: number; title: string }) =>
                         strokeLinecap="round"
                         strokeDasharray={circumference}
                         strokeDashoffset={yellowOffset}
-                        className="origin-center transition-all duration-1000 ease-out"
+                        className="origin-center transition-all duration-500 ease-out"
                     />
                 </svg>
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-3">
                     <span className="text-xl sm:text-[24px] font-bold text-[#111827] mb-1">{value}%</span>
                     <span className="text-[11px] sm:text-[12px] text-gray-500 leading-tight">
-                        increase rate with<br />digital marketing
+                        {subtitle || (
+                            <>
+                                increase rate with<br />digital marketing
+                            </>
+                        )}
                     </span>
                 </div>
             </div>
@@ -148,10 +164,28 @@ const ProvidingProcess: React.FC = () => {
 
                     {/* Statistics Card — spans 2 cols on lg */}
                     <div className="col-span-1 sm:col-span-2 lg:col-span-2 bg-white rounded-[20px] p-6 sm:p-8 shadow-sm hover:shadow-2xl transition-all flex flex-col justify-center items-center gap-6">
-                        <div className="flex flex-col sm:flex-row justify-around w-full items-center gap-6 sm:gap-8">
-                            <CircularProgress value={50} title="SEO Growth" />
-                            <CircularProgress value={50} title="SEO Growth" />
-                            <CircularProgress value={50} title="SEO Growth" />
+                        <div className="flex flex-col sm:flex-row justify-between text-center w-full items-start gap-6 sm:gap-8">
+                            <CircularProgress
+                                value={72}
+                                title={<>Organic Traffic <br /> Growth</>}
+                                subtitle={<>increase in website traffic <br /> through SEO <br />optimization</>}
+                                greenPercent={46}
+                                yellowPercent={24}
+                            />
+                            <CircularProgress
+                                value={58}
+                                title={<>Lead Generation <br /> Improvement</>}
+                                subtitle={<>more qualified leads<br />from search engines</>}
+                                greenPercent={30}
+                                yellowPercent={24}
+                            />
+                            <CircularProgress
+                                value={85}
+                                title={<>Search Ranking <br /> Performance</>}
+                                subtitle={<>higher visibility<br />on Google search</>}
+                                greenPercent={55}
+                                yellowPercent={24}
+                            />
                         </div>
                         {/* Legend */}
                         <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 mt-2">

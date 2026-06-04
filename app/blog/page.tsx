@@ -143,7 +143,7 @@ export default function BlogPage() {
 
   return (
     <>
-      <main className="min-h-screen bg-[#FBFBFF] font-SpaceGrotesk">
+      <main className="min-h-screen bg-[#FBFBFF] font-THICCCBOI">
         <section className="max-w-6xl mx-auto px-4 py-10 md:py-14">
           {/* Search Bar */}
           <div className="mb-12 flex items-center w-full rounded-full border-1 border-gray-200 bg-[#F5F5F5]  overflow-hidden h-[60px] md:h-[50px]">
@@ -213,16 +213,11 @@ export default function BlogPage() {
                 </div>
 
                 {/* Card Body */}
-                <Link href={`${post.slug}`}>
+                <Link href={`${post.slug}`} className="flex flex-col flex-grow">
                   <div className="flex flex-col flex-grow p-6">
                     {/* Title */}
-                    <h2 className="text-[18px] font-semibold text-[#0A1A2E] leading-tight mb-3 line-clamp-2">
-                      <Link
-                        href={post.slug}
-                        className="hover:text-[#32B9E9] transition-colors duration-200"
-                      >
-                        {post.title}
-                      </Link>
+                    <h2 className="text-[18px] font-semibold text-[#0A1A2E] leading-tight mb-3 line-clamp-2 hover:text-[#32B9E9] transition-colors duration-200">
+                      {post.title}
                     </h2>
 
                     {/* Description */}
@@ -231,7 +226,7 @@ export default function BlogPage() {
                     </p>
 
                     {/* Read More */}
-                    <span className="inline-flex items-center gap-1.5 text-[#003bff] text-[13px] font-bold uppercase tracking-widest transition-colors duration-200 group/link mt-auto">
+                    <span className="inline-flex items-center text-[#003bff] text-[13px] font-bold uppercase tracking-widest transition-colors duration-200 group/link mt-auto">
                       READ MORE
                       <span className="text-[#003bff] text-[18px] leading-none mb-0.5 group-hover/link:translate-x-2 transition-transform duration-300 inline-block">
                         »
