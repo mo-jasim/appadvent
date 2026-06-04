@@ -138,6 +138,8 @@ const HomePage = () => {
           ))}
         </div>
       </section>
+      {/* Our Development Process */}
+
       <Designing1 />
       {/* Industries We Cater To */}
       <section className="w-full relative lg:pb-[80px]">
@@ -197,7 +199,7 @@ const HomePage = () => {
                     height={56}
                     className="mb-8"
                   />
-                  <p className="font-bold text-[20px] text-[#0A1A2E]">Retail & E-commerce</p>
+                  <p className="font-bold text-[20px] text-[#0A1A2E] whitespace-nowrap">Retail & E-commerce</p>
                 </div>
                 <div className="mt-8 flex items-center gap-2 text-[#32B9E9] text-[15px] font-semibold">
                   Learn More <ArrowRight className="w-[18px] h-[18px] transition-transform duration-300 group-hover:translate-x-1.5" strokeWidth={2} />

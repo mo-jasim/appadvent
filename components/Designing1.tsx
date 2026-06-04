@@ -1,43 +1,50 @@
 'use client';
 import React, { useEffect, useState, useRef } from 'react';
+import Image from 'next/image';
 
 /* ─── Stages cycling through the 6 arc nodes ─── updated*/
 const STAGES = [
     {
         num: 1,
-        label: 'Designing',
-        title: 'Business Goal Breakdown',
-        desc: 'We identify what you\'re actually trying to achieve (not just what you say you want) — whether it\'s increasing conversions, automating processes, or launching a new product.'
+        img: "/images/Group1.svg",
+        label: 'Planning',
+        title: 'Planning',
+        desc: 'We map out the complete product vision before a single screen or line of code is created. From defining user flows and business requirements to selecting the right technology and timeline, this stage builds the foundation that prevents confusion, delays, and costly revisions later.'
     },
     {
         num: 2,
-        label: 'Web',
-        title: 'User & Market Understanding',
-        desc: 'We analyze your target users, their behavior, and expectations to ensure the product solves real problems instead of just looking good.'
+        img: "/images/Group3.svg",
+        label: 'Design',
+        title: 'Design',
+        desc: 'We turn ideas into clean, user-focused experiences that are simple to navigate and visually impactful. Every layout, interaction, and interface element is designed to improve usability, strengthen brand identity, and create a seamless customer journey.'
     },
     {
         num: 3,
-        label: 'App',
-        title: 'Feature & Scope Definition',
-        desc: 'We list down all core features, prioritize them, and eliminate unnecessary complexity to avoid scope creep and wasted budget.'
+        img: "/images/Group.svg",
+        label: 'Development',
+        title: 'Development',
+        desc: 'This is where the product comes to life. We build scalable, high-performance websites and applications using modern technologies while ensuring speed, security, responsiveness, and smooth functionality across all devices.'
     },
     {
         num: 4,
-        label: 'Web App',
-        title: 'Technical Feasibility Check',
-        desc: 'We evaluate the best tech stack, integrations, and constraints early—so you don\'t face expensive surprises later.'
+        img: "/images/Group4.svg",
+        label: 'Testing',
+        title: 'Testing',
+        desc: 'Before launch, every feature is carefully tested to identify bugs, performance issues, and usability gaps. We ensure the product runs smoothly, loads efficiently, and delivers a reliable experience under real-world conditions.'
     },
     {
         num: 5,
-        label: 'Website',
-        title: 'Agile Development Strategy',
-        desc: 'We plan the sprint cycles, define milestones, and prepare the development environment allowing for rapid iterations and continuous feedback.'
+        img: "/images/Group2.svg",
+        label: 'Launch',
+        title: 'Launch',
+        desc: 'Once everything is optimized and approved, we deploy the product live with a structured rollout process. From final checks to deployment support, we ensure a smooth launch without disruption to users or business operations.'
     },
     {
         num: 6,
-        label: 'Application',
-        title: 'Quality Assurance & Launch',
-        desc: 'Rigorous testing is performed to ensure the solution is bug-free, highly performant, and secure before we deploy it to live production environments.'
+        img: "/images/Group5.svg",
+        label: 'Maintenance',
+        title: 'Maintenance',
+        desc: 'Launching is not the finish line. We continuously monitor, update, and improve the product to maintain performance, security, compatibility, and long-term growth as your business evolves.'
     },
 ];
 
@@ -47,6 +54,7 @@ export default function Designing1() {
     const sectionRef = useRef<HTMLElement>(null);
     const [isVisible, setIsVisible] = useState(false);
     const [cycleId, setCycleId] = useState(0);
+    const [resetTimer, setResetTimer] = useState(0);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -60,21 +68,24 @@ export default function Designing1() {
     }, []);
 
     useEffect(() => {
-        if (!isVisible) {
+        if (isVisible) {
+            // Incrementing cycleId remounts the DOM cleanly for CSS animations to replay effortlessly from 0
+            setCycleId(c => c + 1);
+        } else {
             setTick(0);
             setTotalTicks(0);
-            return;
         }
+    }, [isVisible]);
 
-        // Incrementing cycleId remounts the DOM cleanly for CSS animations to replay effortlessly from 0
-        setCycleId(c => c + 1);
+    useEffect(() => {
+        if (!isVisible) return;
 
         const id = setInterval(() => {
             setTick(t => (t + 1) % 6);
             setTotalTicks(t => t + 1);
         }, 10000);
         return () => clearInterval(id);
-    }, [isVisible]);
+    }, [isVisible, resetTimer]);
 
     const topVisible = totalTicks > 0;
     const topStage = STAGES[(tick - 1 + 6) % 6];
@@ -122,9 +133,8 @@ export default function Designing1() {
                             {/* Rotating Wheel Container */}
                             <div
                                 key={`wheel-cycle-${cycleId}`}
-                                className="absolute transition-transform duration-[1000ms] ease-in-out pointer-events-none"
+                                className="absolute transition-transform duration-[1000ms] ease-in-out pointer-events-none left-[-365px] 2xl:left-[-465px]"
                                 style={{
-                                    left: -465,  // -165 (CX) - 300 (R)
                                     top: 10,     // 310 (CY) - 300 (R)
                                     width: 600,
                                     height: 600,
@@ -184,7 +194,19 @@ export default function Designing1() {
                                                 }}
                                             >
                                                 {/* Consistent 100x100 container so svg and inner-circles stay centered during scale */}
-                                                <div className={`relative flex items-center justify-center rounded-full transition-colors duration-[1000ms] w-[100px] h-[100px] ${isMid ? 'bg-[#eef8fd] shadow-md' : 'bg-transparent'}`}>
+                                                <div
+                                                    className={`relative flex items-center justify-center rounded-full transition-colors duration-[1000ms] w-[100px] h-[100px] cursor-pointer ${isMid ? 'bg-[#eef8fd] shadow-md' : 'bg-transparent'}`}
+                                                    onClick={() => {
+                                                        if (i !== tick) {
+                                                            let diff = i - tick;
+                                                            if (diff > 3) diff -= 6;
+                                                            if (diff < -3) diff += 6;
+                                                            setTick(i);
+                                                            setTotalTicks(t => t + diff);
+                                                            setResetTimer(r => r + 1);
+                                                        }
+                                                    }}
+                                                >
 
                                                     {/* Outer dashed ring + Progress filling ring */}
                                                     <div className={`absolute inset-0 transition-opacity duration-[1000ms] ${isMid ? 'opacity-100' : 'opacity-0'}`}>
@@ -210,20 +232,11 @@ export default function Designing1() {
                                                     <div
                                                         className={`absolute top-1/2 right-[115px] -translate-y-1/2 flex flex-col items-center transition-all duration-[1000ms] ${isMid ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8 pointer-events-none'}`}
                                                     >
-                                                        {/* Pen icon */}
+                                                        {/* icons */}
                                                         <div className="mb-[-8px] z-30 pointer-events-none">
-                                                            <svg width="65" height="65" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M20 30 C20 15, 44 15, 44 30" stroke="#33a4f5" strokeWidth="1.5" strokeDasharray="3 3" />
-                                                                <path d="M32 15 L32 40" stroke="#33a4f5" strokeWidth="2" />
-                                                                <path d="M20 30 L32 15 L44 30" stroke="#33a4f5" strokeWidth="2" />
-                                                                <path d="M15 30 L20 30" stroke="#33a4f5" strokeWidth="2" />
-                                                                <path d="M44 30 L49 30" stroke="#33a4f5" strokeWidth="2" />
-                                                                <path d="M28 40 L36 40 L32 52 Z" stroke="#e63946" strokeWidth="2" fill="none" />
-                                                                <path d="M32 40 L32 48" stroke="#e63946" strokeWidth="2" />
-                                                                <circle cx="20" cy="30" r="3.5" fill="#eef8fd" stroke="#e63946" strokeWidth="2" />
-                                                                <circle cx="44" cy="30" r="3.5" fill="#eef8fd" stroke="#e63946" strokeWidth="2" />
-                                                                <circle cx="32" cy="15" r="3.5" fill="#eef8fd" stroke="#33a4f5" strokeWidth="2" />
-                                                            </svg>
+                                                            {stage.img && (
+                                                                <Image src={stage.img} width={65} height={65} alt={stage.label} className="object-contain" />
+                                                            )}
                                                         </div>
 
                                                         {/* Animated label text */}
@@ -252,7 +265,7 @@ export default function Designing1() {
                                 </span>
                                 {midStage.title}
                             </h3>
-                            <p className="text-[#64748b] text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed border-l-[3px] border-[#34b2ed] pl-4 sm:pl-6 rounded-sm bg-blue-50/30 py-4">
+                            <p className="text-[#323A3E] text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed border-l-[3px] border-[#34b2ed] pl-4 sm:pl-6 rounded-sm bg-blue-50/30 py-4">
                                 {midStage.desc}
                             </p>
                         </div>
