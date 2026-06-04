@@ -1,0 +1,78 @@
+/* Hide horizontal scrollbar */
+body, html {
+  overflow-x: hidden;
+}
+
+/* Curve background */
+.curve-bg {
+  --c: 85;
+  aspect-ratio: 3/2;
+  mask:
+    radial-gradient(
+      calc(var(--c) * 1%) 100% at 50% calc(-100% * cos(asin(50 / var(--c)))), 
+      #dd090900 calc(100% - 1px), 
+      #000
+    ),
+    radial-gradient(
+      calc(var(--c) * 1%) 100% at 50% calc(100% + 100% * cos(asin(50 / var(--c)))), 
+      #00000000 calc(100% - 1px), 
+      #000
+    );
+  -webkit-mask-composite: intersect;
+  mask-composite: intersect;
+  clip-path: ellipse(calc(var(--c) * 1%) 100% at center);
+}
+.box {
+  position: relative;
+  animation-name: example;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  max-width: 100vw;
+}
+
+@keyframes example {
+  0%   { left: 0px; }
+  100% { left: 530px; }
+}
+
+.responsive-img {
+  max-width: 400px;
+  height: 70px;
+}
+
+@media (min-width: 640px) {
+  .responsive-img {
+    max-width: 640px;
+    height: 200px;
+  }
+}
+@media (min-width: 768px) {
+  .responsive-img {
+    max-width: 768px;
+    height: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .responsive-img {
+    max-width: 100%;
+    height: 400px;
+  }
+}
+
+.sidebar,
+.Sidebar {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+}
+.hero-container {
+  background-image: linear-gradient(to bottom, #0c110a, #000000),
+    url("../image/app.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+
