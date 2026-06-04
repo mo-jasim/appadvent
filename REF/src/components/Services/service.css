@@ -1,0 +1,37 @@
+.hero-containerser {
+  width: auto; 
+  height: 850px;
+  background-image: linear-gradient(to bottom, #EAF8FD 0%, #FFFFFF 100%),
+    url("/Polygon 3 (2).png");
+  background-repeat: no-repeat;
+  background-size: 600px 1200px;   
+  /* background-position: top center;   */
+  background-blend-mode: overlay;
+}
+
+
+@media (max-width: 640px) {
+  .hero-containerser {
+    height: 3900px;               
+    background-size: 1600px 1800px;  
+    background-position: top center;
+  }
+}
+
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .hero-containerser {
+    height: 3550px;               
+    background-size: 1300px 1600px;  
+    background-position: top center;
+  }
+}
+
+
+@media (min-width: 1325px) {
+  .hero-containerser {
+    height: 1960px;
+    background-size: 1400px 1100px; 
+    background-position: top center;
+  }
+}

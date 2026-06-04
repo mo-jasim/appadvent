@@ -1,0 +1,218 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon/ecommerce" clip-path="url(#clip0_3502_4831)">
+<g id="Group">
+<g id="Group_2">
+<path id="Vector" d="M61.8571 13.7144H2.25714C1.70486 13.7144 1.25714 14.1621 1.25714 14.7144V61.7429C1.25714 62.2952 1.70486 62.7429 2.25714 62.7429H61.8571C62.4094 62.7429 62.8571 62.2952 62.8571 61.7429V14.7144C62.8571 14.1621 62.4094 13.7144 61.8571 13.7144Z" fill="url(#paint0_linear_3502_4831)"></path>
+<path id="Vector_2" d="M1.37143 14.7144C1.37143 14.1621 1.81914 13.7144 2.37143 13.7144H12.7143C13.2666 13.7144 13.7143 14.1621 13.7143 14.7144V21.7144C13.7143 25.1429 10.9714 27.8858 7.54286 27.8858C4.11429 27.8858 1.37143 25.1429 1.37143 21.7144V14.7144Z" fill="white" stroke="#08526D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="id_anim_stroke-property1" data-duration="1.6666666666666667" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 46.8933px; animation: 1.66667s linear 0s 1 normal forwards running id_anim_stroke-property1;"></path>
+<path id="Vector_3" d="M25.9429 13.7144H37.2857C37.838 13.7144 38.2857 14.1621 38.2857 14.7144V21.7144C38.2857 25.1429 35.5429 27.8858 32.1143 27.8858C28.8 27.8858 26.0571 25.1429 26.0571 21.7144V13.8286C26.0571 13.7655 26.006 13.7144 25.9429 13.7144Z" fill="white" stroke="#08526D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="id_anim_stroke-property2" data-duration="1.6666666666666667" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 47.2867px; animation: 1.66667s linear 0s 1 normal forwards running id_anim_stroke-property2;"></path>
+<path id="Vector_4" d="M50.5143 13.7144H62.8571V21.7144C62.8571 25.1429 60.1143 27.8858 56.6857 27.8858C53.2571 27.8858 50.5143 25.1429 50.5143 21.7144V13.7144Z" fill="white" stroke="#08526D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="id_anim_stroke-property3" data-duration="1.6666666666666667" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 47.7511px; animation: 1.66667s linear 0s 1 normal forwards running id_anim_stroke-property3;"></path>
+<path id="Vector_5" d="M37.5601 37.0525C36.8401 36.8834 36.192 37.5274 36.3565 38.2485L39.4208 51.6772C39.6077 52.4963 40.6601 52.7338 41.1806 52.0744L42.6242 50.2458C42.9928 49.779 43.6848 49.7351 44.1093 50.1515L48.5501 54.5069C48.9417 54.8909 49.5696 54.8879 49.9574 54.5L51.8857 52.5718L53.8003 50.6572C54.1935 50.264 54.1904 49.6255 53.7934 49.2361L49.3925 44.9199C48.9588 44.4945 49.0015 43.7838 49.483 43.4134L51.3588 41.9704C52.027 41.4565 51.7985 40.3971 50.9778 40.2043L37.5601 37.0525Z" fill="white" stroke="#08526D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="id_anim_stroke-property4" data-duration="1.6666666666666667" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 63.1402px; animation: 1.66667s linear 0s 1 normal forwards running id_anim_stroke-property4;"></path>
+<path id="Vector_6" d="M23.9143 39.0859H10.2571C9.70486 39.0859 9.25714 39.5337 9.25714 40.0859V55.2288C9.25714 55.7811 9.70486 56.2288 10.2571 56.2288H23.9143C24.4666 56.2288 24.9143 55.7811 24.9143 55.2288V40.0859C24.9143 39.5337 24.4666 39.0859 23.9143 39.0859Z" stroke="#08526D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="id_anim_stroke-property5" data-duration="1.6666666666666667" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 63.8842px; animation: 1.66667s linear 0s 1 normal forwards running id_anim_stroke-property5;"></path>
+<path id="Vector_7" d="M13.3714 43.2001V37.3716C13.3714 35.2001 15.0857 33.4858 17.2571 33.4858C19.4286 33.4858 21.1429 35.2001 21.1429 37.3716V43.2001" stroke="#08526D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="id_anim_stroke-property6" data-duration="1.6666666666666667" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 23.8884px; animation: 1.66667s linear 0s 1 normal forwards running id_anim_stroke-property6;"></path>
+<path id="Vector_8" d="M61.4857 13.7145H2.79855C2.60928 13.7145 2.41752 13.7091 2.23778 13.6498C1.58584 13.4346 1.14285 12.8188 1.14285 12.1145C1.14285 11.8699 1.28968 11.6469 1.35142 11.4102L3.21991 4.24764C3.67939 2.48632 5.27012 1.25732 7.09038 1.25732H57.0239C58.8442 1.25732 60.4349 2.48631 60.8944 4.24764L62.8571 11.7716C63.0551 12.4645 62.7387 13.1573 62.1307 13.5532C61.9412 13.6766 61.7119 13.7145 61.4857 13.7145Z" stroke="#08526D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="id_anim_stroke-property7" data-duration="1.6666666666666667" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 140.383px; animation: 1.66667s linear 0s 1 normal forwards running id_anim_stroke-property7;"></path>
+<path id="Vector_9" d="M58.8571 13.7144H5.25714C3.048 13.7144 1.25714 15.5052 1.25714 17.7144V58.7429C1.25714 60.9521 3.048 62.7429 5.25714 62.7429H58.8571C61.0663 62.7429 62.8571 60.9521 62.8571 58.7429V17.7144C62.8571 15.5052 61.0663 13.7144 58.8571 13.7144Z" stroke="#08526D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="id_anim_stroke-property8" data-duration="1.6666666666666667" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 214.393px; animation: 1.66667s linear 0s 1 normal forwards running id_anim_stroke-property8;"></path>
+<path id="Vector_10" d="M13.6 14.7144C13.6 14.1621 14.0477 13.7144 14.6 13.7144H24.9428C25.4951 13.7144 25.9428 14.1621 25.9428 14.7144V21.7144C25.9428 25.1429 23.2 27.8858 19.7714 27.8858C16.3428 27.8858 13.6 25.1429 13.6 21.7144V14.7144Z" stroke="#08526D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="id_anim_stroke-property9" data-duration="1.6666666666666667" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 46.8932px; animation: 1.66667s linear 0s 1 normal forwards running id_anim_stroke-property9;"></path>
+<path id="Vector_11" d="M38.1714 14.7144C38.1714 14.1621 38.6191 13.7144 39.1714 13.7144H49.5143C50.0666 13.7144 50.5143 14.1621 50.5143 14.7144V21.7144C50.5143 25.1429 47.7714 27.8858 44.3428 27.8858C40.9143 27.8858 38.1714 25.1429 38.1714 21.7144V14.7144Z" stroke="#08526D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="id_anim_stroke-property10" data-duration="1.6666666666666667" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 46.8933px; animation: 1.66667s linear 0s 1 normal forwards running id_anim_stroke-property10;"></path>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_3502_4831" x1="32" y1="76" x2="32" y2="21" gradientUnits="userSpaceOnUse">
+<stop stop-color="#32B9E9"></stop>
+<stop offset="0.65" stop-color="#32B9E9" stop-opacity="0"></stop>
+</linearGradient>
+<clipPath id="clip0_3502_4831">
+<rect width="64" height="64" fill="white"></rect>
+</clipPath>
+</defs>
+<style>
+        @keyframes id_anim_stroke-property1{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 46.893272399902344px;
+            }
+        
+            50%{
+                stroke-dashoffset: -23.446636199951172px; 
+        stroke-dasharray: 23.446636199951172px, 23.446636199951172px;
+            }
+        
+            100%{
+                stroke-dashoffset: -46.893272399902344px; 
+        stroke-dasharray: 46.893272399902344px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property2{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 47.286651611328125px;
+            }
+        
+            50%{
+                stroke-dashoffset: -23.643325805664062px; 
+        stroke-dasharray: 23.643325805664062px, 23.643325805664062px;
+            }
+        
+            100%{
+                stroke-dashoffset: -47.286651611328125px; 
+        stroke-dasharray: 47.286651611328125px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property3{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 47.751129150390625px;
+            }
+        
+            50%{
+                stroke-dashoffset: -23.875564575195312px; 
+        stroke-dasharray: 23.875564575195312px, 23.875564575195312px;
+            }
+        
+            100%{
+                stroke-dashoffset: -47.751129150390625px; 
+        stroke-dasharray: 47.751129150390625px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property4{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 63.14018249511719px;
+            }
+        
+            50%{
+                stroke-dashoffset: -31.570091247558594px; 
+        stroke-dasharray: 31.570091247558594px, 31.570091247558594px;
+            }
+        
+            100%{
+                stroke-dashoffset: -63.14018249511719px; 
+        stroke-dasharray: 63.14018249511719px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property5{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 63.884220123291016px;
+            }
+        
+            50%{
+                stroke-dashoffset: -31.942110061645508px; 
+        stroke-dasharray: 31.942110061645508px, 31.942110061645508px;
+            }
+        
+            100%{
+                stroke-dashoffset: -63.884220123291016px; 
+        stroke-dasharray: 63.884220123291016px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property6{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 23.888397216796875px;
+            }
+        
+            50%{
+                stroke-dashoffset: -11.944198608398438px; 
+        stroke-dasharray: 11.944198608398438px, 11.944198608398438px;
+            }
+        
+            100%{
+                stroke-dashoffset: -23.888397216796875px; 
+        stroke-dasharray: 23.888397216796875px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property7{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 140.38275146484375px;
+            }
+        
+            50%{
+                stroke-dashoffset: -70.19137573242188px; 
+        stroke-dasharray: 70.19137573242188px, 70.19137573242188px;
+            }
+        
+            100%{
+                stroke-dashoffset: -140.38275146484375px; 
+        stroke-dasharray: 140.38275146484375px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property8{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 214.393310546875px;
+            }
+        
+            50%{
+                stroke-dashoffset: -107.1966552734375px; 
+        stroke-dasharray: 107.1966552734375px, 107.1966552734375px;
+            }
+        
+            100%{
+                stroke-dashoffset: -214.393310546875px; 
+        stroke-dasharray: 214.393310546875px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property9{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 46.893184661865234px;
+            }
+        
+            50%{
+                stroke-dashoffset: -23.446592330932617px; 
+        stroke-dasharray: 23.446592330932617px, 23.446592330932617px;
+            }
+        
+            100%{
+                stroke-dashoffset: -46.893184661865234px; 
+        stroke-dasharray: 46.893184661865234px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property10{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 46.89334487915039px;
+            }
+        
+            50%{
+                stroke-dashoffset: -23.446672439575195px; 
+        stroke-dasharray: 23.446672439575195px, 23.446672439575195px;
+            }
+        
+            100%{
+                stroke-dashoffset: -46.89334487915039px; 
+        stroke-dasharray: 46.89334487915039px, 0px;
+            }
+        
+        }
+        </style></svg>

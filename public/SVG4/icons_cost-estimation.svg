@@ -1,0 +1,67 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icons/cost-estimation">
+<g id="cost-estimation (2) 1">
+<g id="Group">
+<g id="Group_2">
+<g id="Frame 345">
+<rect x="16" y="37" width="49" height="27" rx="1" fill="url(#paint0_linear_3772_8228)"></rect>
+</g>
+<g id="Group_3">
+<path id="Vector" d="M23.392 38.856C22.456 38.856 21.676 39.636 21.676 40.572C21.676 41.508 22.456 42.288 23.392 42.288C24.328 42.288 25.108 41.508 25.108 40.572C25.108 39.636 24.328 38.856 23.392 38.856Z" fill="#08526D"></path>
+<path id="Vector_3" d="M23.392 47.9038C22.456 47.9038 21.676 48.6838 21.676 49.6198C21.676 50.5558 22.456 51.3358 23.392 51.3358C24.328 51.3358 25.108 50.5558 25.108 49.6198C25.108 48.6838 24.328 47.9038 23.392 47.9038Z" fill="#08526D"></path>
+<path id="Vector_4" d="M41.488 42.2362C42.424 42.2362 43.204 41.4562 43.204 40.5202C43.204 39.5842 42.424 38.8042 41.488 38.8042C40.552 38.8042 39.772 39.5842 39.772 40.5202C39.772 41.5082 40.552 42.2362 41.488 42.2362Z" fill="#08526D"></path>
+<path id="Vector_5" d="M41.488 47.9038C40.552 47.9038 39.772 48.6838 39.772 49.6198C39.772 50.5558 40.552 51.3358 41.488 51.3358C42.424 51.3358 43.204 50.5558 43.204 49.6198C43.204 48.6838 42.424 47.9038 41.488 47.9038Z" fill="#08526D"></path>
+<path id="Vector_6" d="M32.4401 38.856C31.5041 38.856 30.7241 39.636 30.7241 40.572C30.7241 41.508 31.5041 42.288 32.4401 42.288C33.3761 42.288 34.1561 41.508 34.1561 40.572C34.1561 39.636 33.3761 38.856 32.4401 38.856Z" fill="#08526D"></path>
+<path id="Vector_7" d="M32.4401 47.9038C31.5041 47.9038 30.7241 48.6838 30.7241 49.6198C30.7241 50.5558 31.5041 51.3358 32.4401 51.3358C33.3761 51.3358 34.1561 50.5558 34.1561 49.6198C34.1561 48.6838 33.3761 47.9038 32.4401 47.9038Z" fill="#08526D"></path>
+<path id="Vector 8" d="M47 63.5V58.5M47 58.5H64.7911M47 58.5V51.75M64.7911 58.5L64.7213 63.0155C64.7128 63.5617 64.2677 64 63.7214 64H17C16.4477 64 16 63.5523 16 63V30.5M64.7911 58.5L64.8956 51.75M64.8956 51.75L64.9843 46.0155C64.9929 45.4572 64.5427 45 63.9844 45H49M64.8956 51.75H47M47 51.75V46C47 45.4477 47.4477 45 48 45H49M49 45V30.5M16 30.5V17.5C16 16.9502 16.4501 16.5068 16.9999 16.5151L48.0151 16.9851C48.5615 16.9934 49 17.4386 49 17.985V30.5M16 30.5H49" stroke="#08526D" stroke-width="1.5" stroke-linecap="round" class="id_anim_stroke-property7" data-duration="2.7777777777777777" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 278.831px; animation: 2.77778s linear 0s 1 normal forwards running id_anim_stroke-property7;"></path>
+<path id="Vector 9" d="M41.5 21H31.5C30.3954 21 29.5 21.8954 29.5 23C29.5 24.1046 30.3954 25 31.5 25H41.5C42.6046 25 43.5 24.1046 43.5 23C43.5 21.8954 42.6046 21 41.5 21Z" stroke="#08526D" stroke-width="1.5" class="id_anim_stroke-property8" data-duration="2.7777777777777777" data-offset="0" style="stroke-dashoffset: 0px; stroke-dasharray: 0px, 32.5682px; animation: 2.77778s linear 0s 1 normal forwards running id_anim_stroke-property8;"></path>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_3772_8228" x1="40.4786" y1="64" x2="40.4786" y2="36.9958" gradientUnits="userSpaceOnUse">
+<stop offset="0.01" stop-color="#ADE3F6"></stop>
+<stop offset="0.4" stop-color="#ADE3F6" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+<style>
+        @keyframes id_anim_stroke-property7{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 278.83074951171875px;
+            }
+        
+            50%{
+                stroke-dashoffset: -139.41537475585938px; 
+        stroke-dasharray: 139.41537475585938px, 139.41537475585938px;
+            }
+        
+            100%{
+                stroke-dashoffset: -278.83074951171875px; 
+        stroke-dasharray: 278.83074951171875px, 0px;
+            }
+        
+        }
+         
+        @keyframes id_anim_stroke-property8{
+        
+            0%{
+                stroke-dashoffset: 0px; 
+        stroke-dasharray: 0px, 32.56821060180664px;
+            }
+        
+            50%{
+                stroke-dashoffset: -16.28410530090332px; 
+        stroke-dasharray: 16.28410530090332px, 16.28410530090332px;
+            }
+        
+            100%{
+                stroke-dashoffset: -32.56821060180664px; 
+        stroke-dasharray: 32.56821060180664px, 0px;
+            }
+        
+        }
+        </style></svg>
