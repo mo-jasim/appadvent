@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import React from "react";
 import Image from "next/image";
-import Technology from '../Goalkick/technology';
+import Technology from '../../../portfolio/Goalkick/technology';
 import {
     CheckCircle2,
     Building2,
@@ -28,7 +28,7 @@ import {
 import Highlights from "./HIghtlights";
 import OurProjectsSection from "../../website-designing-development/Our-Projects-Section";
 import CompaniesLove from "../../website-designing-development/Companies-Love";
-import Designing from "../Goalkick/Designing";
+import Designing from "../../../portfolio/Goalkick/Designing";
 import ConsultationModal from "@/components/ConsultationModal";
 
 
@@ -104,7 +104,7 @@ export default function CRMcasePage() {
                             <div className="absolute -top-12 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
                                 OVERVIEW
                             </div>
-                            
+
                             <div className="relative z-10 mb-16">
                                 <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-8 tracking-tight">
                                     About Claim 360 WebApp
@@ -256,7 +256,7 @@ export default function CRMcasePage() {
 
                         <div className="max-w-7xl mx-auto px-4 relative z-10">
                             <h2 className="text-3xl md:text-5xl font-bold mb-16 md:mb-24 text-center">Our Best Solutions</h2>
-                            
+
                             <div className="flex flex-col lg:flex-row gap-16 md:gap-24 items-center">
                                 {/* Left Side Mockup */}
                                 <div className="lg:w-1/2 w-full flex justify-center items-center">
@@ -298,7 +298,7 @@ export default function CRMcasePage() {
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#f1f5f9] whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
                             UI SCREENS
                         </div>
-                        
+
                         <h2 className="relative z-10 text-3xl md:text-5xl font-bold text-[#0f172a] mb-12 md:mb-20">
                             Glimpses of App UI Screens
                         </h2>

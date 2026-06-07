@@ -71,7 +71,7 @@ export default function PortfolioPage() {
                                 duration="3 Months"
                                 platform="Application"
                                 slug="Freshup – Social networking app"
-                                href=""
+                                href="/portfolio/Freshup"
                             />
                             <PortfolioCard
                                 image="/images/p8.png"
@@ -79,7 +79,7 @@ export default function PortfolioPage() {
                                 duration="3 Months"
                                 platform="Application"
                                 slug="goalKick"
-                                href="/services/case-study/Goalkick"
+                                href="/portfolio/Goalkick"
                             />
 
                             <PortfolioCard
@@ -97,6 +97,7 @@ export default function PortfolioPage() {
                                 duration="3 Months"
                                 platform="Application"
                                 slug="Privicam – storage privacy app"
+                                href='/portfolio/Privicam'
                             />
 
                             <PortfolioCard
@@ -113,7 +114,7 @@ export default function PortfolioPage() {
                                 title="Detect microplastic"
                                 duration="3 Months"
                                 platform="Application"
-                                slug="Detect microplastic"
+                                slug="Detect-microplastic"
                             />
 
                             <PortfolioCard

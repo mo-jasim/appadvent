@@ -5,28 +5,28 @@ import { Plus, X } from 'lucide-react';
 
 const faqs = [
     {
-        question: "Vestibulum dictum ex sit amet pulvinar laoreet.",
-        answer: "Nam sit amet neque auctor, dignissim augue eu, condimentum justo. Fusce fermentum tempus sapien, a sagittis tellus mattis id. Cras et enim ex. Suspendisse potenti. Vivamus convallis malesuada eros vel semper."
+        question: "What services does Appadvent provide?",
+        answer: "Appadvent offers website development, mobile app development, UI/UX design, branding, digital solutions, and custom software development tailored to business needs."
     },
     {
-        question: "What we like to do & what we don't like to do",
-        answer: "Nam sit amet neque auctor, dignissim augue eu, condimentum justo. Fusce fermentum tempus sapien, a sagittis tellus mattis id. Cras et enim ex. Suspendisse potenti. Vivamus convallis malesuada eros vel semper."
+        question: "How long does it take to complete a project?",
+        answer: "Project timelines depend on the complexity and features required. A basic website may take a few weeks, while custom platforms or applications can take several months."
     },
     {
-        question: "Integer tristique nisi sit amet consequat pharetra.",
-        answer: "Nam sit amet neque auctor, dignissim augue eu, condimentum justo. Fusce fermentum tempus sapien, a sagittis tellus mattis id. Cras et enim ex. Suspendisse potenti. Vivamus convallis malesuada eros vel semper."
+        question: "Do you provide support after project launch?",
+        answer: "Yes. Appadvent provides ongoing maintenance, updates, bug fixes, and technical support to ensure smooth long-term performance."
     },
     {
-        question: "Quisque quis ex eleifend dolor maximus lacinia.",
-        answer: "Nam sit amet neque auctor, dignissim augue eu, condimentum justo. Fusce fermentum tempus sapien, a sagittis tellus mattis id. Cras et enim ex. Suspendisse potenti. Vivamus convallis malesuada eros vel semper."
+        question: "Can Appadvent redesign an existing website or application?",
+        answer: "Absolutely. Existing websites and apps can be redesigned to improve user experience, modernize visuals, increase speed, and enhance functionality."
     },
     {
-        question: "Mauris ullamcorper tortor sed purus interdum.",
-        answer: "Nam sit amet neque auctor, dignissim augue eu, condimentum justo. Fusce fermentum tempus sapien, a sagittis tellus mattis id. Cras et enim ex. Suspendisse potenti. Vivamus convallis malesuada eros vel semper."
+        question: "Is the website or application mobile-friendly?",
+        answer: "Yes. All products are designed to be fully responsive and optimized for desktops, tablets, and mobile devices."
     },
     {
-        question: "Fermentum efficitur est dictum.",
-        answer: "Nam sit amet neque auctor, dignissim augue eu, condimentum justo. Fusce fermentum tempus sapien, a sagittis tellus mattis id. Cras et enim ex. Suspendisse potenti. Vivamus convallis malesuada eros vel semper."
+        question: "How can I start a project with Appadvent?",
+        answer: "You can start by contacting the team through the website’s contact form or consultation section to discuss your requirements, goals, and project scope."
     }
 ];
 
