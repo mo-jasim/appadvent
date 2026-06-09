@@ -47,10 +47,10 @@ export default function GoalkickCaseStudy() {
                         <img src="/Letimg/goallogo.svg" alt="Goalkick Logo" className="w-full h-auto" />
                      </div>
 
-                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FFFFFF] leading-tight max-w-4xl">
+                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FFFFFF] leading-tight max-w-7xl">
                         Goalkick - Social App for Football Fans
                      </h1>
-                     <p className="text-base sm:text-lg md:text-xl text-[#FFFFFF] max-w-4xl text-center opacity-90">
+                     <p className="text-base sm:text-lg md:text-xl text-[#FFFFFF] max-w-6xl text-center opacity-90">
                         The ultimate social network platform designed to connect, engage, and elevate the experience for football fans. It allows users to create groups, log matches, and chat seamlessly within a community-driven environment.
                      </p>
 

@@ -14,6 +14,7 @@ import OurProjectsSection from "../../services/website-designing-development/Our
 import CompaniesLove from "../../services/website-designing-development/Companies-Love";
 import ConsultationModal from "@/components/ConsultationModal";
 import Technology from "../Goalkick/technology";
+import Designing1 from "@/components/Designing1";
 
 export default function GoalkickCaseStudy() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -36,22 +37,22 @@ export default function GoalkickCaseStudy() {
                                 playsInline
                                 className="absolute inset-0 w-full h-full object-cover"
                             >
-                                <source src="/caseimg/1110327_Players_Soccer_3840x2160.mp4" type="video/mp4" />
+                                <source src="/caseimg/Freshup-Social.mp4" type="video/mp4" />
                             </video>
                             <div className="absolute inset-0 bg-black/60 z-10" />
                         </div>
 
                         <div className="relative z-20 text-center w-full max-w-5xl mx-auto flex flex-col items-center gap-4 px-4">
                             {/* Logo */}
-                            <div className="flex justify-center w-24 md:w-32 h-auto mb-2">
-                                <img src="/Letimg/goallogo.svg" alt="Goalkick Logo" className="w-full h-auto" />
+                            <div className="flex justify-center w-44 md:w-52 h-auto mb-2">
+                                <img src="/caseimg/Freshup_logo.svg" alt="Goalkick Logo" className="w-full h-auto" />
                             </div>
 
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FFFFFF] leading-tight max-w-4xl">
-                                Goalkick - Social App for Football Fans
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FFFFFF] leading-tight max-w-6xl">
+                                Freshup-Social networking App
                             </h1>
-                            <p className="text-base sm:text-lg md:text-xl text-[#FFFFFF] max-w-4xl text-center opacity-90">
-                                The ultimate social network platform designed to connect, engage, and elevate the experience for football fans. It allows users to create groups, log matches, and chat seamlessly within a community-driven environment.
+                            <p className="text-base sm:text-lg md:text-xl text-[#FFFFFF] max-w-6xl text-center opacity-90">
+                                The ultimate destination for football enthusiasts to connect, engage, and indulge in their passion for the beautiful game. This football social network app goes beyond conventional fan experiences, offering a dynamic platform where you can join groups, discuss matches, and make new friends.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 mt-6">
@@ -89,7 +90,7 @@ export default function GoalkickCaseStudy() {
                             {/* Left Image */}
                             <div className="w-full lg:w-1/2 flex justify-center">
                                 <div className="relative w-full max-w-[300px] sm:max-w-[400px] aspect-[3/4] transition-all duration-500 hover:scale-[1.02]">
-                                    <Image src="/caseimg/Frame-239.svg" alt="About Goalkick" fill className="object-contain drop-shadow-2xl" />
+                                    <Image src="/caseimg/Freshup_about.svg" alt="About Goalkick" fill className="object-contain drop-shadow-2xl" />
                                 </div>
                             </div>
 
@@ -102,10 +103,10 @@ export default function GoalkickCaseStudy() {
 
                                 <div className="relative z-10">
                                     <h2 className="text-3xl md:text-5xl font-bold text-black mb-6 tracking-tight text-center lg:text-left">
-                                        About Goalkick App
+                                        About Freshup App
                                     </h2>
                                     <p className="text-[#010F14] text-sm sm:text-base md:text-lg leading-relaxed mb-6 text-center lg:text-left">
-                                        Goalkick is an online stadium where fans from around the world can unite, chat, and immerse themselves in the excitement of football. Dive into discussions about upcoming matches, share insights on news, and predict outcomes with fellow fans.
+                                        Freshup is an online stadium where fans from around the world can unite, chat, and immerse themselves in the excitement of football. Dive into discussions about upcoming matches, share insights on news, and predict outcomes with fellow fans.
                                     </p>
                                     <p className="text-[#010F14] text-sm sm:text-base md:text-lg leading-relaxed mb-10 text-center lg:text-left">
                                         Connect with others who share your passion, build lasting friendships, and explore features designed to enhance your football experience. Join clubs, create groups, and participate in lively discussions.
@@ -148,7 +149,7 @@ export default function GoalkickCaseStudy() {
                     </section>
 
                     {/* --- THE RESULTS BANNER --- */}
-                    <section className="w-full bg-[#2a3e47] py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+                    <section className="w-full bg-[#0B76E8] py-6 md:py-15 px-4 sm:px-6 lg:px-8">
                         <div className="max-w-[1200px] mx-auto">
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 md:mb-16 text-center md:text-left">The Results</h2>
                             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
@@ -264,7 +265,12 @@ export default function GoalkickCaseStudy() {
                ───────────────────────────────────────────── */}
                     <Technology />
 
-                    {/* 8. GLIMPSES OF APP UI SCREENS */}
+                    {/* ─────────────────────────────────────────────
+                   8. DESIGNING
+               ───────────────────────────────────────────── */}
+                    <Designing1 />
+
+                    {/* 9. GLIMPSES OF APP UI SCREENS */}
                     <section className="relative w-full py-20 md:py-32 text-center overflow-hidden font-THICCCBOI">
                         {/* Glow Blob */}
                         <div className="absolute top-[30%] left-[-10%] w-[80%] md:w-[45%] h-[50%] bg-[#baddfc] blur-[120px] rounded-full z-0 pointer-events-none" />
