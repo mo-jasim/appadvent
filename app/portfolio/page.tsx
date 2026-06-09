@@ -78,7 +78,7 @@ export default function PortfolioPage() {
                                 title="Goalkick – Social networking app"
                                 duration="3 Months"
                                 platform="Application"
-                                slug="goalKick"
+                                slug="Goalkick"
                                 href="/portfolio/Goalkick"
                             />
 
