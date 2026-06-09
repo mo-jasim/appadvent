@@ -148,7 +148,7 @@ export default function GoalkickCaseStudy() {
                     </section>
 
                     {/* --- THE RESULTS BANNER --- */}
-                    <section className="w-full bg-[#2a3e47] py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+                    <section className="w-full bg-[#2a3e47] py-6 md:py-15 px-4 sm:px-6 lg:px-8">
                         <div className="max-w-[1200px] mx-auto">
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 md:mb-16 text-center md:text-left">The Results</h2>
                             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
