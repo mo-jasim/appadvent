@@ -115,41 +115,33 @@ export default function CRMcasePage() {
                             </div>
 
                             {/* Stat Grid */}
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 text-left border-t border-gray-100 pt-16">
-                                <div className="flex gap-4 items-start justify-start group">
-                                    <div className="p-3 bg-gray-50 rounded-2xl group-hover:bg-[#32B9E9] transition-colors duration-300">
-                                        <Building2 className="w-6 h-6 text-gray-700 group-hover:text-white" />
-                                    </div>
-                                    <div>
-                                        <h4 className="font-bold text-gray-400 text-xs uppercase tracking-widest mb-1">Industry</h4>
-                                        <p className="text-slate-900 font-semibold text-lg">InsurTech</p>
+                            <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 md:gap-10">
+                                <div className="flex gap-4 items-start justify-start">
+                                    <img src="/caseimg/About-img1.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
+                                    <div className="text-left">
+                                        <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Industry</h4>
+                                        <p className="text-black text-lg font-medium">Sports & Social</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 items-start justify-start group">
-                                    <div className="p-3 bg-gray-50 rounded-2xl group-hover:bg-[#32B9E9] transition-colors duration-300">
-                                        <MapPin className="w-6 h-6 text-gray-700 group-hover:text-white" />
-                                    </div>
-                                    <div>
-                                        <h4 className="font-bold text-gray-400 text-xs uppercase tracking-widest mb-1">DB Platform</h4>
-                                        <p className="text-slate-900 font-semibold text-lg">PostgreSQL (AWS)</p>
+                                <div className="flex gap-4 items-start justify-start">
+                                    <img src="/caseimg/About-img2.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
+                                    <div className="text-left">
+                                        <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Platform</h4>
+                                        <p className="text-black text-lg font-medium">PostgreSQL (AWS)</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 items-start justify-start group">
-                                    <div className="p-3 bg-gray-50 rounded-2xl group-hover:bg-[#32B9E9] transition-colors duration-300">
-                                        <Clock className="w-6 h-6 text-gray-700 group-hover:text-white" />
-                                    </div>
-                                    <div>
-                                        <h4 className="font-bold text-gray-400 text-xs uppercase tracking-widest mb-1">Timeline</h4>
-                                        <p className="text-slate-900 font-semibold text-lg">4 Months</p>
+                                <div className="flex gap-4 items-start justify-start">
+                                    <img src="/caseimg/About-img3.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
+                                    <div className="text-left">
+                                        <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Duration</h4>
+                                        <p className="text-black text-lg font-medium">4 Months</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 items-start justify-start group">
-                                    <div className="p-3 bg-gray-50 rounded-2xl group-hover:bg-[#32B9E9] transition-colors duration-300">
-                                        <Briefcase className="w-6 h-6 text-gray-700 group-hover:text-white" />
-                                    </div>
-                                    <div>
-                                        <h4 className="font-bold text-gray-400 text-xs uppercase tracking-widest mb-1">Service</h4>
-                                        <p className="text-slate-900 font-semibold text-lg">Product Dev</p>
+                                <div className="flex gap-4 items-start justify-start">
+                                    <img src="/caseimg/About-img4.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
+                                    <div className="text-left">
+                                        <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Service</h4>
+                                        <p className="text-black text-lg font-medium">Design & Dev</p>
                                     </div>
                                 </div>
                             </div>
@@ -202,37 +194,37 @@ export default function CRMcasePage() {
                                 {/* Left Content */}
                                 <div className="lg:w-1/2 space-y-8 md:space-y-12">
                                     <div className="flex gap-5 group">
-                                        <div className="shrink-0 w-12 h-12 rounded-2xl bg-gray-50 flex items-center justify-center group-hover:bg-[#32B9E9] transition-colors duration-300">
-                                            <Activity className="w-6 h-6 text-gray-700 group-hover:text-white" />
+                                        <div className="shrink-0">
+                                            <img src="/Letimg/family_group.svg" className="w-6 h-6" alt="" />
                                         </div>
                                         <div>
-                                            <h3 className="text-lg md:text-xl font-bold text-black mb-3">Digital Transformation</h3>
+                                            <h3 className="text-lg md:text-xl font-bold text-black mb-3">Digital Transformation in Insurance:-</h3>
                                             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                                                Claim360 becomes a flagship platform for digital claim management, reducing manual work and improving efficiency for insurers transitioning from paper-based systems.
+                                                The insurance sector is still transitioning from paper-based systems to digital workflows. Claim360 can become a flagship platform for digital claim management, reducing manual work and improving efficiency for insurers.
                                             </p>
                                         </div>
                                     </div>
 
                                     <div className="flex gap-5 group">
-                                        <div className="shrink-0 w-12 h-12 rounded-2xl bg-gray-50 flex items-center justify-center group-hover:bg-[#32B9E9] transition-colors duration-300">
-                                            <Users className="w-6 h-6 text-gray-700 group-hover:text-white" />
+                                        <div className="shrink-0">
+                                            <img src="/Letimg/family_group.svg" alt="" className="w-6 h-6" />
                                         </div>
                                         <div>
-                                            <h3 className="text-lg md:text-xl font-bold text-black mb-3">Customer Experience</h3>
+                                            <h3 className="text-lg md:text-xl font-bold text-black mb-3">Enhanced Customer Experience:-</h3>
                                             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                                                By offering transparency and guided filing, Claim360 positions itself as a customer-centric solution in an industry known for slow processes.
+                                                By offering transparency, instant updates, and guided claim filing, Claim360 positions itself as a customer-centric solution — a major differentiator in an industry known for slow, confusing processes.
                                             </p>
                                         </div>
                                     </div>
 
                                     <div className="flex gap-5 group">
-                                        <div className="shrink-0 w-12 h-12 rounded-2xl bg-gray-50 flex items-center justify-center group-hover:bg-[#32B9E9] transition-colors duration-300">
-                                            <Zap className="w-6 h-6 text-gray-700 group-hover:text-white" />
+                                        <div className="shrink-0">
+                                            <img src="/Letimg/family_group.svg" alt="" className="w-6 h-6" />
                                         </div>
                                         <div>
-                                            <h3 className="text-lg md:text-xl font-bold text-black mb-3">Smart Technologies</h3>
+                                            <h3 className="text-lg md:text-xl font-bold text-black mb-3">Integration with Smart Technologies:-</h3>
                                             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                                                Integration with AI for automated damage detection using photos or drone footage, significantly improving claim accuracy and speed.
+                                                There’s an opportunity to integrate AI and IoT features — such as automated damage detection using photos or drone footage, or predictive analytics to assess claim risks. These innovations can significantly improve claim accuracy and speed.
                                             </p>
                                         </div>
                                     </div>
@@ -270,15 +262,15 @@ export default function CRMcasePage() {
                                 {/* Right Side Features */}
                                 <div className="lg:w-1/2 space-y-8 md:space-y-12">
                                     {[
-                                        { title: "Email Parsing", desc: "Automatically extract claim details from incoming emails to create new cases instantly, reducing manual data entry." },
-                                        { title: "Smart Routing", desc: "Intelligently route claims to the right department based on region, type, or priority level for faster resolution." },
-                                        { title: "Manual Claim Entry", desc: "Agents can manually add claims through a simple interface, ensuring every request is recorded digitally." },
-                                        { title: "Integrated CRM", desc: "Built-in system for managing client data, communication history, and interaction tracking." },
-                                        { title: "Real-Time Tracking", desc: "Monitor claim progress through visual timelines and instant updates — improving transparency." },
+                                        { title: "Email Parsing:- ", desc: "Automatically extract claim details from incoming emails to create new cases instantly. This feature reduces manual data entry, minimizes human error, and ensures no claim request is ever missed." },
+                                        { title: "Smart Routing System:-", desc: " Incoming claims are intelligently routed to the right department or agent based on region, claim type, or priority level. It saves time and ensures faster response and resolution." },
+                                        { title: "Manual Claim Entry:-", desc: " Agents can manually add claims through a simple, guided interface — useful for offline requests or verbal submissions. This ensures every claim, regardless of source, is recorded and tracked digitally." },
+                                        { title: "Integrated CRM Dashboard:- ", desc: "Claim360 comes with a built-in CRM system for managing client data, communication history, and claim interactions. It helps insurers build stronger relationships with policyholders through organized and personalized service" },
+                                        { title: "Real-Time Claim Tracking:- ", desc: "Both insurers and policyholders can monitor claim progress through visual timelines and instant status updates — improving transparency and trust." },
                                     ].map((sol, i) => (
                                         <div key={i} className="flex gap-5 group">
-                                            <div className="shrink-0 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-[#32B9E9] transition-colors">
-                                                <Check className="w-4 h-4 text-white" />
+                                            <div className="shrink-0">
+                                                <img src="/caseimg/family_group_white.svg" alt="check" className="w-6 h-6 text-white" />
                                             </div>
                                             <div>
                                                 <h3 className="text-lg font-bold text-white mb-2">{sol.title}</h3>

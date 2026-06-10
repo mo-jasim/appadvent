@@ -27,7 +27,7 @@ export default function GoalkickCaseStudy() {
                     {/* ─────────────────────────────────────────────
                    1. HERO SECTION
                ───────────────────────────────────────────── */}
-                    <section className="relative w-full min-h-[500px] md:h-[700px] flex items-center justify-center pt-24 md:pt-0 mb-[40px] md:mb-[80px]">
+                    <section className="relative w-full min-h-[500px] md:h-[700px] flex items-center justify-center pt-24 md:pt-0 mb-[40px] md:mb-[80px] font-THICCCBOI">
                         {/* Background Video */}
                         <div className="absolute inset-0 w-full h-full overflow-hidden">
                             <video
@@ -37,22 +37,22 @@ export default function GoalkickCaseStudy() {
                                 playsInline
                                 className="absolute inset-0 w-full h-full object-cover"
                             >
-                                <source src="/caseimg/Freshup-Social.mp4" type="video/mp4" />
+                                <source src="/caseimg/priviCam-video.mp4" type="video/mp4" />
                             </video>
                             <div className="absolute inset-0 bg-black/60 z-10" />
                         </div>
 
-                        <div className="relative z-20 text-center w-full max-w-5xl mx-auto flex flex-col items-center gap-4 px-4">
+                        <div className="relative z-20 text-center w-full max-w-7xl mx-auto flex flex-col items-center gap-4 px-4">
                             {/* Logo */}
                             <div className="flex justify-center w-44 md:w-52 h-auto mb-2">
-                                <img src="/caseimg/Freshup_logo.svg" alt="Goalkick Logo" className="w-full h-auto" />
+                                <img src="/caseimg/Newnesslogo.svg" alt="Goalkick Logo" className="w-full h-auto" />
                             </div>
 
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FFFFFF] leading-tight max-w-6xl">
-                                Freshup-Social networking App
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FFFFFF] leading-tight max-w-7xl">
+                                Newness Plant- Bring Nature Closer to You
                             </h1>
-                            <p className="text-base sm:text-lg md:text-xl text-[#FFFFFF] max-w-6xl text-center opacity-90">
-                                The ultimate destination for football enthusiasts to connect, engage, and indulge in their passion for the beautiful game. This football social network app goes beyond conventional fan experiences, offering a dynamic platform where you can join groups, discuss matches, and make new friends.
+                            <p className="text-base sm:text-lg md:text-xl text-[#FFFFFF] max-w-7xl text-center opacity-90">
+                                Discover a complete online marketplace for natural plants and gardening essentials designed to make your home, office, and outdoor spaces more fresh, vibrant, and beautiful. Newnessplant helps plant lovers explore greenery with convenience, quality, and care.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 mt-6">
@@ -90,7 +90,7 @@ export default function GoalkickCaseStudy() {
                             {/* Left Image */}
                             <div className="w-full lg:w-1/2 flex justify-center">
                                 <div className="relative w-full max-w-[300px] sm:max-w-[400px] aspect-[3/4] transition-all duration-500 hover:scale-[1.02]">
-                                    <Image src="/caseimg/Freshup_about.svg" alt="About Goalkick" fill className="object-contain drop-shadow-2xl" />
+                                    <Image src="/caseimg/Newnessabout.svg" alt="About Goalkick" fill className="object-contain drop-shadow-2xl" />
                                 </div>
                             </div>
 
@@ -103,43 +103,43 @@ export default function GoalkickCaseStudy() {
 
                                 <div className="relative z-10">
                                     <h2 className="text-3xl md:text-5xl font-bold text-black mb-6 tracking-tight text-center lg:text-left">
-                                        About Freshup App
+                                        About Newness Plant App
                                     </h2>
                                     <p className="text-[#010F14] text-sm sm:text-base md:text-lg leading-relaxed mb-6 text-center lg:text-left">
-                                        Freshup is an online stadium where fans from around the world can unite, chat, and immerse themselves in the excitement of football. Dive into discussions about upcoming matches, share insights on news, and predict outcomes with fellow fans.
+                                        Newnessplant is an online plant marketplace established in 2019 that focuses on providing natural plants and gardening accessories through a digital shopping platform. The application is designed for users who want to purchase plants conveniently from their mobile devices while also exploring products that improve home décor, office environments, gardens, balconies, and indoor spaces
                                     </p>
                                     <p className="text-[#010F14] text-sm sm:text-base md:text-lg leading-relaxed mb-10 text-center lg:text-left">
-                                        Connect with others who share your passion, build lasting friendships, and explore features designed to enhance your football experience. Join clubs, create groups, and participate in lively discussions.
+                                        The core purpose of the application is to simplify plant shopping and make greenery more accessible to everyone, regardless of gardening experience
                                     </p>
 
                                     {/* Stat Grid */}
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-10 border-t border-gray-100 pt-10">
                                         <div className="flex gap-4 items-start justify-start">
-                                            <Building2 className="w-6 h-6 text-gray-600 mt-1 shrink-0" />
+                                            <img src="/caseimg/About-img1.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                             <div className="text-left">
                                                 <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Industry</h4>
-                                                <p className="text-black text-lg font-medium">Sports & Social</p>
+                                                <p className="text-black text-lg font-medium">E-Commerce Gardening Marketplace</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4 items-start justify-start">
-                                            <MapPin className="w-6 h-6 text-gray-600 mt-1 shrink-0" />
+                                            <img src="/caseimg/About-img2.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                             <div className="text-left">
                                                 <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Platform</h4>
-                                                <p className="text-black text-lg font-medium">PostgreSQL (AWS)</p>
+                                                <p className="text-black text-lg font-medium">Andriod & IOS</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4 items-start justify-start">
-                                            <Clock className="w-6 h-6 text-gray-600 mt-1 shrink-0" />
+                                            <img src="/caseimg/About-img3.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                             <div className="text-left">
                                                 <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Duration</h4>
-                                                <p className="text-black text-lg font-medium">4 Months</p>
+                                                <p className="text-black text-lg font-medium">6 Months</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4 items-start justify-start">
-                                            <Briefcase className="w-6 h-6 text-gray-600 mt-1 shrink-0" />
+                                            <img src="/caseimg/About-img4.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                             <div className="text-left">
                                                 <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Service</h4>
-                                                <p className="text-black text-lg font-medium">Design & Dev</p>
+                                                <p className="text-black text-lg font-medium">Design & Development</p>
                                             </div>
                                         </div>
                                     </div>
@@ -149,15 +149,15 @@ export default function GoalkickCaseStudy() {
                     </section>
 
                     {/* --- THE RESULTS BANNER --- */}
-                    <section className="w-full bg-[#0B76E8] py-6 md:py-15 px-4 sm:px-6 lg:px-8">
+                    <section className="w-full bg-gradient-to-r from-[#38B24D] via-[#90C04C] to-[#185A30] py-6 md:py-15 px-4 sm:px-6 lg:px-8">
                         <div className="max-w-[1200px] mx-auto">
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 md:mb-16 text-center md:text-left">The Results</h2>
                             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
                                 {[
-                                    { icon: "/images/downloadicon.svg", stat: "600+", label: "Downloads" },
-                                    { icon: "/Letimg/Frame387.svg", stat: "500+", label: "Users" },
-                                    { icon: "/Letimg/Reviews.svg", stat: "300+", label: "Premium Members" },
-                                    { icon: "/Letimg/Starimg.svg", stat: "4.2", label: "Average rating" },
+                                    { icon: "/images/downloadicon.svg", stat: "5k+", label: "Downloads" },
+                                    { icon: "/Letimg/Frame387.svg", stat: "3k+", label: "Users" },
+                                    { icon: "/Letimg/Reviews.svg", stat: "620", label: "Positive Reviews" },
+                                    { icon: "/Letimg/Starimg.svg", stat: "4.5", label: "Average rating" },
                                 ].map(({ icon, stat, label }) => (
                                     <div key={label} className="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left group">
                                         <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center border border-white/20 shrink-0 transform group-hover:rotate-6 group-hover:scale-110 transition-all duration-300">
@@ -176,7 +176,7 @@ export default function GoalkickCaseStudy() {
                     {/* 4. OPPORTUNITIES AWAIT */}
                     <section className="relative w-full py-20 md:py-32 overflow-hidden">
                         {/* Watermark */}
-                        <div className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#f1f5f9] whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
+                        <div className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
                             OPPORTUNITIES
                         </div>
 
@@ -188,14 +188,14 @@ export default function GoalkickCaseStudy() {
                                 </h2>
                                 <div className="space-y-6 md:space-y-8">
                                     {[
-                                        "Football is the most popular sport globally, yet existing fan engagement is fragmented across social media and club-specific platforms.",
-                                        "Fans often lack a dedicated space to connect with supporters, discuss matches in real time, and participate in interactive activities.",
-                                        "There's also a gap in reward-driven engagement where fans feel recognized and appreciated for their participation.",
-                                        "The potential for building meaningful football communities remains largely untapped by traditional social platforms.",
+                                        "Protect your personal photos and videos with advanced password and biometric security for complete privacy and peace of mind.",
+                                        "Store all captured media directly on your device without any cloud uploads, third-party access, or unwanted tracking.",
+                                        " Organize your private content inside secure folders designed to keep sensitive memories safe from unauthorized access.",
+                                        "Enjoy a clean, fast, and privacy-first camera experience built for users who value security, control, and confidentiality.",
                                     ].map((text, i) => (
                                         <div key={i} className="flex items-start gap-4 group">
-                                            <div className="mt-1 shrink-0 w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center group-hover:bg-[#32B9E9] transition-colors duration-300">
-                                                <img src="/Letimg/football.svg" alt="" className="w-5 h-5 object-contain" />
+                                            <div className="mt-1 shrink-0 w-8 h-8 flex items-center justify-center transition-colors duration-300">
+                                                <img src="/caseimg/Newnessplant.svg" alt="" className="w-5 h-5 object-contain" />
                                             </div>
                                             <p className="text-[#010F14] text-sm sm:text-base md:text-lg leading-relaxed">{text}</p>
                                         </div>
@@ -208,11 +208,11 @@ export default function GoalkickCaseStudy() {
                                 <div className="relative w-full max-w-[280px] sm:max-w-[360px] transition-all duration-500 hover:scale-[1.02]">
                                     {/* Back/Right Phone */}
                                     <div className="absolute -right-8 sm:-right-[80px] top-[20%] w-[55%] z-0">
-                                        <Image src="/caseimg/iPhone_11.svg" alt="App Preview Back" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.25)]" priority />
+                                        <Image src="/caseimg/NewnessiPhone2.svg" alt="App Preview Back" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.25)]" priority />
                                     </div>
                                     {/* Front/Left Phone */}
                                     <div className="relative -left-8 sm:-left-[80px] w-[55%] z-10">
-                                        <Image src="/caseimg/iPhone_11_Pro.svg" alt="App Preview Front" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.35)]" priority />
+                                        <Image src="/caseimg/NewnessiPhone1.svg" alt="App Preview Front" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.35)]" priority />
                                     </div>
                                     {/* Spacer to prevent overlap clipping */}
                                     <div className="pb-[10%]"></div>
@@ -227,7 +227,7 @@ export default function GoalkickCaseStudy() {
 
                         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                             {/* Watermark */}
-                            <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-white/5 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-10 md:-mt-20">
+                            <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-10 md:-mt-20">
                                 SOLUTIONS
                             </div>
 
@@ -237,11 +237,11 @@ export default function GoalkickCaseStudy() {
                                     <div className="relative w-full max-w-[280px] sm:max-w-[360px] transition-all duration-500 hover:scale-[1.02]">
                                         {/* Back/Right Phone */}
                                         <div className="absolute -right-8 sm:-right-[80px] top-[20%] w-[55%] z-0">
-                                            <Image src="/caseimg/iPhone_11_sol2.svg" alt="App Preview Back" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.25)]" priority />
+                                            <Image src="/caseimg/NewnessiPhone3.svg" alt="App Preview Back" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.25)]" priority />
                                         </div>
                                         {/* Front/Left Phone */}
                                         <div className="relative -left-8 sm:-left-[80px] w-[55%] z-10">
-                                            <Image src="/caseimg/iPhone_11_sol.svg" alt="App Preview Front" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.35)]" priority />
+                                            <Image src="/caseimg/NewnessiPhone4.svg" alt="App Preview Front" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.35)]" priority />
                                         </div>
                                         {/* Spacer to prevent overlap clipping */}
                                         <div className="pb-[10%]"></div>
@@ -255,14 +255,14 @@ export default function GoalkickCaseStudy() {
                                     </h2>
                                     <div className="space-y-8">
                                         {[
-                                            "Goalkick addresses the gap by creating a social app that combines community interaction with real-time updates.",
-                                            "It allows users to join groups, discuss matches, share opinions, and make friends while staying updated.",
-                                            "The platform offers interactive games, predictions, trivia, and a reward system for continuous engagement.",
-                                            "With personalized feeds and recognition through points, Goalkick delivers a unique, rewarding experience.",
+                                            "A user-friendly online platform offering a diverse range of natural plants suitable for homes, offices, gardens, and decorative spaces.",
+                                            "High-quality gardening tools and accessories designed to support plant care, maintenance, and creative landscaping needs.",
+                                            "Convenient online ordering experience with carefully curated products focused on freshness, beauty, and customer satisfaction.",
+                                            "A nature-focused marketplace committed to helping users transform ordinary spaces into greener, healthier, and more attractive environments.",
                                         ].map((text, i) => (
                                             <div key={i} className="flex items-start gap-4 group">
-                                                <div className="mt-1 shrink-0 bg-white/10 p-2 rounded-lg group-hover:bg-[#32B9E9] transition-colors">
-                                                    <img src="/Letimg/football1.svg" alt="" className="w-5 h-5" />
+                                                <div className="mt-1 shrink-0 transition-colors">
+                                                    <img src="/caseimg/Newnessplant1.svg" alt="" className="w-5 h-5" />
                                                 </div>
                                                 <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">{text}</p>
                                             </div>

@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 
 @theme {
+  --font-sans: 'THICCCBOI', sans-serif;
   --font-THICCCBOI: 'THICCCBOI', sans-serif;
   --font-saira: var(--font-saira);
   --font-SpaceGrotesk: var(--font-SpaceGrotesk);

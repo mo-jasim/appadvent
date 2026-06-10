@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={saira.variable}>
+      <body className={`${saira.variable} font-sans antialiased`}>
         <Navbar />
         <main className="pt-16 sm:pt-20">
           {children}

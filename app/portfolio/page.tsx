@@ -59,10 +59,10 @@ export default function PortfolioPage() {
         },
         {
             image: "/images/p6.png",
-            title: "Niotek",
+            title: "Newness",
             duration: "3 Months",
             platform: "Application",
-            slug: "Niotek",
+            slug: "Newness",
         },
         {
             image: "/images/p7.png",
@@ -156,25 +156,23 @@ export default function PortfolioPage() {
                                 <button
                                     onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
                                     disabled={currentPage === 1}
-                                    className={`px-4 py-2 rounded-md font-medium transition-colors ${
-                                        currentPage === 1 
-                                        ? 'bg-gray-200 text-gray-500 cursor-not-allowed' 
+                                    className={`px-4 py-2 rounded-md font-medium transition-colors ${currentPage === 1
+                                        ? 'bg-gray-200 text-gray-500 cursor-not-allowed'
                                         : 'bg-black text-white hover:bg-gray-800'
-                                    }`}
+                                        }`}
                                 >
                                     Previous
                                 </button>
-                                
+
                                 <div className="flex gap-2">
                                     {Array.from({ length: totalPages }).map((_, idx) => (
                                         <button
                                             key={idx}
                                             onClick={() => setCurrentPage(idx + 1)}
-                                            className={`w-10 h-10 rounded-md font-medium transition-colors flex items-center justify-center ${
-                                                currentPage === idx + 1
+                                            className={`w-10 h-10 rounded-md font-medium transition-colors flex items-center justify-center ${currentPage === idx + 1
                                                 ? 'bg-[#32B9E9] text-white'
                                                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                                            }`}
+                                                }`}
                                         >
                                             {idx + 1}
                                         </button>
@@ -184,11 +182,10 @@ export default function PortfolioPage() {
                                 <button
                                     onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
                                     disabled={currentPage === totalPages}
-                                    className={`px-4 py-2 rounded-md font-medium transition-colors ${
-                                        currentPage === totalPages 
-                                        ? 'bg-gray-200 text-gray-500 cursor-not-allowed' 
+                                    className={`px-4 py-2 rounded-md font-medium transition-colors ${currentPage === totalPages
+                                        ? 'bg-gray-200 text-gray-500 cursor-not-allowed'
                                         : 'bg-black text-white hover:bg-gray-800'
-                                    }`}
+                                        }`}
                                 >
                                     Next
                                 </button>

@@ -114,28 +114,28 @@ export default function GoalkickCaseStudy() {
                            {/* Stat Grid */}
                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-10 border-t border-gray-100 pt-10">
                               <div className="flex gap-4 items-start justify-start">
-                                 <Building2 className="w-6 h-6 text-gray-600 mt-1 shrink-0" />
+                                 <img src="/caseimg/About-img1.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                  <div className="text-left">
                                     <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Industry</h4>
                                     <p className="text-black text-lg font-medium">Sports & Social</p>
                                  </div>
                               </div>
                               <div className="flex gap-4 items-start justify-start">
-                                 <MapPin className="w-6 h-6 text-gray-600 mt-1 shrink-0" />
+                                 <img src="/caseimg/About-img2.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                  <div className="text-left">
                                     <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Platform</h4>
                                     <p className="text-black text-lg font-medium">PostgreSQL (AWS)</p>
                                  </div>
                               </div>
                               <div className="flex gap-4 items-start justify-start">
-                                 <Clock className="w-6 h-6 text-gray-600 mt-1 shrink-0" />
+                                 <img src="/caseimg/About-img3.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                  <div className="text-left">
                                     <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Duration</h4>
                                     <p className="text-black text-lg font-medium">4 Months</p>
                                  </div>
                               </div>
                               <div className="flex gap-4 items-start justify-start">
-                                 <Briefcase className="w-6 h-6 text-gray-600 mt-1 shrink-0" />
+                                 <img src="/caseimg/About-img4.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                  <div className="text-left">
                                     <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Service</h4>
                                     <p className="text-black text-lg font-medium">Design & Dev</p>
@@ -175,7 +175,7 @@ export default function GoalkickCaseStudy() {
                {/* 4. OPPORTUNITIES AWAIT */}
                <section className="relative w-full py-20 md:py-32 overflow-hidden">
                   {/* Watermark */}
-                  <div className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#f1f5f9] whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
+                  <div className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
                      OPPORTUNITIES
                   </div>
 
@@ -217,7 +217,7 @@ export default function GoalkickCaseStudy() {
 
                   <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                      {/* Watermark */}
-                     <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-white/5 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-10 md:-mt-20">
+                     <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-10 md:-mt-20">
                         SOLUTIONS
                      </div>
 

@@ -53,7 +53,7 @@ export default function Letramway() {
                   <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FFFFFF] leading-tight mb-4 md:mb-6">
                      Le tramway- A Cozy Edmonton Cafe Bistro
                   </h1>
-                  <p className="text-base sm:text-lg md:text-xl text-[#FFFFFF] max-w-4xl text-center leading-relaxed px-2 md:px-0 opacity-90">
+                  <p className="text-base sm:text-lg md:text-xl text-[#FFFFFF] max-w-7xl text-center leading-relaxed px-2 md:px-0 opacity-90">
                      A beautiful and responsive website built for Le Tramway, a cozy cafe bistro in Edmonton. The website features a warm and inviting design, a comprehensive menu, and an easy-to-use ordering system for customers to place pickup orders.
                   </p>
 
@@ -89,27 +89,27 @@ export default function Letramway() {
                <div className="hidden sm:block relative w-full px-4 max-w-[1200px] mx-auto aspect-[16/10] md:aspect-[16/9] lg:aspect-[2/1] mt-8 mb-16 lg:mt-12 z-10">
 
                   {/* Desktop (bigpc) */}
-                  <div className="absolute top-[0%] left-[20%] w-[60%] z-10 transition-transform hover:-translate-y-3 hover:scale-[1.02] duration-500 will-change-transform">
+                  <div className="absolute top-[0%] left-[20%] w-[60%] z-10 transition-transform duration-500 will-change-transform">
                      <Image src="/Letimg/bigpc.svg" alt="Desktop" width={1000} height={800} className="w-full h-auto drop-shadow-2xl" priority />
                   </div>
 
                   {/* iPad */}
-                  <div className="absolute top-[30%] left-[5%] w-[30%] z-20 transition-transform hover:-translate-y-3 hover:scale-[1.02] duration-500 delay-75 will-change-transform">
+                  <div className="absolute top-[30%] left-[5%] w-[30%] z-20 transition-transform duration-500 delay-75 will-change-transform">
                      <Image src="/Letimg/Group.svg" alt="iPad" width={500} height={600} className="w-full h-auto drop-shadow-xl" priority />
                   </div>
 
                   {/* Laptop */}
-                  <div className="absolute top-[40%] left-[50%] w-[45%] z-20 transition-transform hover:-translate-y-3 hover:scale-[1.02] duration-500 delay-100 will-change-transform">
+                  <div className="absolute top-[40%] left-[50%] w-[45%] z-20 transition-transform duration-500 delay-100 will-change-transform">
                      <Image src="/Letimg/381127576_11472844 copy 3.svg" alt="Laptop" width={800} height={600} className="w-full h-auto drop-shadow-xl" priority />
                   </div>
 
                   {/* iPhone */}
-                  <div className="absolute top-[45%] left-[2%] w-[12%] z-30 transition-transform hover:-translate-y-3 hover:scale-[1.05] duration-500 delay-150 will-change-transform">
+                  <div className="absolute top-[45%] left-[2%] w-[12%] z-30 transition-transform duration-500 delay-150 will-change-transform">
                      <Image src="/Letimg/iPhone12.svg" alt="iPhone" width={200} height={400} className="w-full h-auto drop-shadow-lg" priority />
                   </div>
 
                   {/* Bugman */}
-                  <div className="absolute top-[25%] right-[-5%] lg:right-[-10%] w-[45%] z-30 transition-transform hover:-translate-y-4 hover:scale-[1.05] duration-500 delay-200 will-change-transform origin-bottom">
+                  <div className="absolute top-[25%] right-[-5%] lg:right-[-10%] w-[45%] z-30 transition-transform duration-500 delay-200 will-change-transform origin-bottom">
                      <Image src="/Letimg/bugman.svg" alt="Bugman" width={400} height={600} className="w-full h-auto" priority />
                   </div>
 
@@ -132,41 +132,33 @@ export default function Letramway() {
                      </p>
 
                      {/* Stat Grid */}
-                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 text-left border-t border-gray-100 pt-16">
-                        <div className="flex gap-4 items-start justify-start group">
-                           <div className="p-3 bg-gray-50 rounded-2xl group-hover:bg-[#32B9E9] transition-colors duration-300">
-                              <Building2 className="w-6 h-6 text-gray-700 group-hover:text-white" />
-                           </div>
-                           <div>
-                              <h4 className="font-bold text-gray-400 text-xs uppercase tracking-widest mb-1">Industry</h4>
-                              <p className="text-slate-900 font-semibold text-lg">InsurTech</p>
+                     <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 md:gap-10">
+                        <div className="flex gap-4 items-start justify-start">
+                           <img src="/caseimg/About-img1.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
+                           <div className="text-left">
+                              <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Industry</h4>
+                              <p className="text-black text-lg font-medium">Sports & Social</p>
                            </div>
                         </div>
-                        <div className="flex gap-4 items-start justify-start group">
-                           <div className="p-3 bg-gray-50 rounded-2xl group-hover:bg-[#32B9E9] transition-colors duration-300">
-                              <MapPin className="w-6 h-6 text-gray-700 group-hover:text-white" />
-                           </div>
-                           <div>
-                              <h4 className="font-bold text-gray-400 text-xs uppercase tracking-widest mb-1">DB Platform</h4>
-                              <p className="text-slate-900 font-semibold text-lg">PostgreSQL (AWS)</p>
+                        <div className="flex gap-4 items-start justify-start">
+                           <img src="/caseimg/About-img2.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
+                           <div className="text-left">
+                              <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Platform</h4>
+                              <p className="text-black text-lg font-medium">PostgreSQL (AWS)</p>
                            </div>
                         </div>
-                        <div className="flex gap-4 items-start justify-start group">
-                           <div className="p-3 bg-gray-50 rounded-2xl group-hover:bg-[#32B9E9] transition-colors duration-300">
-                              <Clock className="w-6 h-6 text-gray-700 group-hover:text-white" />
-                           </div>
-                           <div>
-                              <h4 className="font-bold text-gray-400 text-xs uppercase tracking-widest mb-1">Timeline</h4>
-                              <p className="text-slate-900 font-semibold text-lg">4 Months</p>
+                        <div className="flex gap-4 items-start justify-start">
+                           <img src="/caseimg/About-img3.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
+                           <div className="text-left">
+                              <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Duration</h4>
+                              <p className="text-black text-lg font-medium">4 Months</p>
                            </div>
                         </div>
-                        <div className="flex gap-4 items-start justify-start group">
-                           <div className="p-3 bg-gray-50 rounded-2xl group-hover:bg-[#32B9E9] transition-colors duration-300">
-                              <Briefcase className="w-6 h-6 text-gray-700 group-hover:text-white" />
-                           </div>
-                           <div>
-                              <h4 className="font-bold text-gray-400 text-xs uppercase tracking-widest mb-1">Service</h4>
-                              <p className="text-slate-900 font-semibold text-lg">Product Dev</p>
+                        <div className="flex gap-4 items-start justify-start">
+                           <img src="/caseimg/About-img4.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
+                           <div className="text-left">
+                              <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Service</h4>
+                              <p className="text-black text-lg font-medium">Design & Dev</p>
                            </div>
                         </div>
                      </div>
@@ -182,10 +174,10 @@ export default function Letramway() {
                   <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 md:mb-16 text-center md:text-left">The Results</h2>
                   <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
                      {[
-                        { icon: "/images/downloadicon.svg", stat: "600+", label: "Revenue Generated" },
+                        { icon: "/images/downloadicon.svg", stat: "600+", label: "Downloads" },
                         { icon: "/Letimg/Frame387.svg", stat: "500+", label: "Users" },
-                        { icon: "/Letimg/Reviews.svg", stat: "300+", label: "Growth Rate" },
-                        { icon: "/Letimg/Starimg.svg", stat: "4.2", label: "User Engagement" },
+                        { icon: "/Letimg/Reviews.svg", stat: "300+", label: "Premium Members" },
+                        { icon: "/Letimg/Starimg.svg", stat: "4.2", label: "Average rating" },
                      ].map(({ icon, stat, label }) => (
                         <div key={label} className="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left group">
                            <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center border border-white/20 shrink-0 transform group-hover:rotate-6 group-hover:scale-110 transition-all duration-300">
@@ -204,8 +196,8 @@ export default function Letramway() {
             {/* 4. OPPORTUNITIES AWAIT */}
             <section className="relative w-full py-20 md:py-32 overflow-hidden">
                {/* Watermark */}
-               <div className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#f1f5f9] whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
-                  OPPORTUNITIES
+               <div className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
+                  OPPORTUNITIES AWAIT
                </div>
                <div className="max-w-[1200px] mx-auto px-4 relative z-10 flex flex-col items-center">
                   <h2 className="text-3xl md:text-5xl font-bold text-black mb-16 md:mb-24 text-center">
@@ -213,61 +205,57 @@ export default function Letramway() {
                   </h2>
 
                   {/* Central Image with Glow */}
-                  <div className="relative w-full max-w-[900px] mx-auto mb-20 md:mb-32">
-                     {/* Blue Glow Behind Image */}
-                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-blue-400/20 blur-[100px] rounded-full z-0 pointer-events-none"></div>
-
-                     <div className="relative z-10 transition-all duration-500 hover:scale-[1.02] cursor-pointer">
-                        <Image src="/Letimg/PCimg.svg" alt="Opportunities Mockup" width={1000} height={500} className="w-full h-auto drop-shadow-2xl rounded-xl" priority />
-                     </div>
+                  <div className="relative w-full max-w-[1100px] mx-auto">
+                     {/*pcimg*/}
+                     <img src="/Letimg/PCimg.svg" alt="" width={500} height={500} className='w-[100%]' />
                   </div>
 
                   {/* 2x2 Grid */}
                   <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 md:gap-y-16">
                      <div className="flex items-start gap-5 group">
-                        <div className="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center shrink-0 group-hover:bg-[#32B9E9] group-hover:text-white transition-colors duration-300">
-                           <UtensilsCrossed className="w-6 h-6" />
+                        <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 transition-colors duration-300">
+                           <img src="/caseimg/ic_round-restaurant-menu.svg" alt="Online Reservation Integration" className="w-6 h-6" />
                         </div>
                         <div>
-                           <h3 className="text-lg md:text-xl font-bold text-[#323A3E] mb-3">Online Reservation Integration</h3>
+                           <h3 className="text-lg md:text-xl font-bold text-[#323A3E] mb-2">Online Reservation Integration:-</h3>
                            <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                              Adding a direct reservation feature would allow customers to book tables easily through the website, improving dining experience and restaurant management.
+                              Adding a direct reservation feature would allow customers to book tables easily through the website. This can improve the dining experience and help the restaurant manage customer flow more efficiently.
                            </p>
                         </div>
                      </div>
 
                      <div className="flex items-start gap-5 group">
-                        <div className="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center shrink-0 group-hover:bg-[#32B9E9] group-hover:text-white transition-colors duration-300">
-                           <UtensilsCrossed className="w-6 h-6" />
+                        <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 transition-colors duration-300">
+                           <img src="/caseimg/ic_round-restaurant-menu.svg" alt="Online Reservation Integration" className="w-6 h-6" />
                         </div>
                         <div>
-                           <h3 className="text-lg md:text-xl font-bold text-[#323A3E] mb-3">Digital Gift Cards</h3>
+                           <h3 className="text-lg md:text-xl font-bold text-[#323A3E] mb-2">Digital Gift Cards:-</h3>
                            <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                              Offering digital gift cards would allow customers to share the experience with friends and family, attracting new visitors and increasing revenue.
+                              Offering digital gift cards would allow customers to share the dining experience with friends and family. It can also attract new visitors and create additional revenue opportunities for the restaurant.
                            </p>
                         </div>
                      </div>
 
                      <div className="flex items-start gap-5 group">
-                        <div className="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center shrink-0 group-hover:bg-[#32B9E9] group-hover:text-white transition-colors duration-300">
-                           <UtensilsCrossed className="w-6 h-6" />
+                        <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 transition-colors duration-300">
+                           <img src="/caseimg/ic_round-restaurant-menu.svg" alt="Online Reservation Integration" className="w-6 h-6" />
                         </div>
                         <div>
-                           <h3 className="text-lg md:text-xl font-bold text-[#323A3E] mb-3">Online Ordering System</h3>
+                           <h3 className="text-lg md:text-xl font-bold text-[#323A3E] mb-2">Online Ordering System:-</h3>
                            <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                              Introducing an online ordering option for pickup or delivery makes it more convenient for customers and expands the restaurant&apos;s reach.
+                              Introducing an online ordering option for pickup or delivery could make it more convenient for customers to enjoy their favorite dishes. This would also help expand the restaurant&apos;s reach beyond in-house dining.
                            </p>
                         </div>
                      </div>
 
                      <div className="flex items-start gap-5 group">
-                        <div className="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center shrink-0 group-hover:bg-[#32B9E9] group-hover:text-white transition-colors duration-300">
-                           <UtensilsCrossed className="w-6 h-6" />
+                        <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0  transition-colors duration-300">
+                           <img src="/caseimg/ic_round-restaurant-menu.svg" alt="Online Reservation Integration" className="w-6 h-6" />
                         </div>
                         <div>
-                           <h3 className="text-lg md:text-xl font-bold text-[#323A3E] mb-3">Local SEO Optimization</h3>
+                           <h3 className="text-lg md:text-xl font-bold text-[#323A3E] mb-2">Local SEO Optimization:-</h3>
                            <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                              Enhancing local SEO strategies helps the restaurant appear prominently in search results, making it easier for Edmonton locals to find.
+                              Enhancing local SEO strategies could help the restaurant appear more prominently in search results. This would make it easier for people in Edmonton to discover the cafe when looking for nearby dining options.
                            </p>
                         </div>
                      </div>
@@ -282,7 +270,7 @@ export default function Letramway() {
 
                <div className="max-w-[1200px] mx-auto px-4 relative z-10">
                   {/* Watermark */}
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-white/5 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-10 md:-mt-20">
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-10 md:-mt-20">
                      SOLUTIONS
                   </div>
 
@@ -305,8 +293,8 @@ export default function Letramway() {
                               { title: "Easy Access to Information", desc: "Key details like opening hours and contact info are placed prominently to help customers plan their visit." }
                            ].map((item, idx) => (
                               <div key={idx} className="flex items-start gap-4 group">
-                                 <div className="mt-1 shrink-0 bg-white/10 p-2 rounded-lg group-hover:bg-[#32B9E9] transition-colors">
-                                    <img src="/Letimg/restaurant-menu.svg" alt="icon" className="w-5 h-5 invert" />
+                                 <div className="mt-1">
+                                    <img src="/Letimg/ic_round-restaurant-menu.svg" alt="icon" className="w-12 h-12" />
                                  </div>
                                  <div>
                                     <h4 className="text-lg font-bold text-white mb-1">{item.title}</h4>

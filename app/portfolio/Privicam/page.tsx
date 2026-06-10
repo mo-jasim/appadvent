@@ -49,7 +49,7 @@ export default function GoalkickCaseStudy() {
                             </div>
 
                             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FFFFFF] leading-tight max-w-7xl">
-                                PriviCam — Your Privacy, Your Contro
+                                PriviCam — Your Privacy, Your Control
                             </h1>
                             <p className="text-base sm:text-lg md:text-xl text-[#FFFFFF] max-w-7xl text-center opacity-90">
                                 Capture photos and videos with complete privacy and control.Your media stays securely stored on your device — protected by password or biometric lock.
@@ -226,7 +226,7 @@ export default function GoalkickCaseStudy() {
 
                         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                             {/* Watermark */}
-                            <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-white/5 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-10 md:-mt-20">
+                            <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-10 md:-mt-20">
                                 SOLUTIONS
                             </div>
 
