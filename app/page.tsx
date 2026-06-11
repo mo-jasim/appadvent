@@ -7,7 +7,6 @@ import CompaniesLove from './services/website-designing-development/Companies-Lo
 import Link from 'next/link';
 import ConsultationModal from '@/components/ConsultationModal';
 import { ArrowRight } from 'lucide-react';
-import Designing from './portfolio/Goalkick/Designing';
 import Designing1 from '@/components/Designing1';
 
 const servicesData = [
