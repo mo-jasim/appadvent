@@ -9,11 +9,11 @@ import {
    Apple,
    PlayCircle,
 } from "lucide-react";
-import Highlights from "../../services/case-study/CRMcase/HIghtlights";
 import OurProjectsSection from "../../services/website-designing-development/Our-Projects-Section";
 import CompaniesLove from "../../services/website-designing-development/Companies-Love";
 import ConsultationModal from "@/components/ConsultationModal";
 import Technology from "./technology";
+import Highlights from "./Highlights";
 
 export default function GoalkickCaseStudy() {
    const [isModalOpen, setIsModalOpen] = useState(false);
