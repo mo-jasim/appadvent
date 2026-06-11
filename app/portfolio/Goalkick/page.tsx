@@ -41,7 +41,7 @@ export default function GoalkickCaseStudy() {
                      <div className="absolute inset-0 bg-black/60 z-10" />
                   </div>
 
-                  <div className="relative z-20 text-center w-full max-w-5xl mx-auto flex flex-col items-center gap-4 px-4">
+                  <div className="relative z-20 text-center w-full max-w-7xl mx-auto flex flex-col items-center gap-4 px-4">
                      {/* Logo */}
                      <div className="flex justify-center w-24 md:w-32 h-auto mb-2">
                         <img src="/Letimg/goallogo.svg" alt="Goalkick Logo" className="w-full h-auto" />
@@ -124,7 +124,7 @@ export default function GoalkickCaseStudy() {
                                  <img src="/caseimg/About-img2.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                  <div className="text-left">
                                     <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Platform</h4>
-                                    <p className="text-black text-lg font-medium">PostgreSQL (AWS)</p>
+                                    <p className="text-black text-lg font-medium">Andriod & IOS</p>
                                  </div>
                               </div>
                               <div className="flex gap-4 items-start justify-start">
@@ -155,7 +155,7 @@ export default function GoalkickCaseStudy() {
                         {[
                            { icon: "/images/downloadicon.svg", stat: "600+", label: "Downloads" },
                            { icon: "/Letimg/Frame387.svg", stat: "500+", label: "Users" },
-                           { icon: "/Letimg/Reviews.svg", stat: "300+", label: "Premium Members" },
+                           { icon: "/Letimg/Reviews.svg", stat: "300+", label: "Positive Reviews" },
                            { icon: "/Letimg/Starimg.svg", stat: "4.2", label: "Average rating" },
                         ].map(({ icon, stat, label }) => (
                            <div key={label} className="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left group">

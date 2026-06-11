@@ -28,8 +28,8 @@ import {
 import Highlights from "./HIghtlights";
 import OurProjectsSection from "../../website-designing-development/Our-Projects-Section";
 import CompaniesLove from "../../website-designing-development/Companies-Love";
-import Designing from "../../../portfolio/Goalkick/Designing";
 import ConsultationModal from "@/components/ConsultationModal";
+import Designing1 from '@/components/Designing1';
 
 
 
@@ -54,16 +54,16 @@ export default function CRMcasePage() {
                             <div className="absolute inset-0 bg-black/70 z-10"></div>
                         </div>
 
-                        <div className="relative z-20 text-center px-4 max-w-6xl mx-auto flex flex-col items-center gap-6">
+                        <div className="relative z-20 text-center px-4 max-w-7xl mx-auto flex flex-col items-center gap-6">
                             {/* Logo Badge */}
                             <div className="w-24 md:w-32 h-auto rounded-xl flex items-center justify-center overflow-hidden">
                                 <Image src="/Letimg/claimlogo.svg" alt="Claim 360 Logo" width={120} height={120} className="object-contain" />
                             </div>
 
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight max-w-5xl">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight max-w-8xl">
                                 Claim 360 – Your All-in-One CRM for Seamless Client Management
                             </h1>
-                            <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-4xl text-center leading-relaxed">
+                            <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-7xl text-center leading-relaxed">
                                 Claim360 is a comprehensive web application designed to simplify insurance claims after natural disasters. From reporting damage to final settlement — ensuring speed, transparency, and peace of mind.
                             </p>
 
@@ -91,6 +91,7 @@ export default function CRMcasePage() {
                                 Have a project in mind?
                             </button>
                         </div>
+
                     </section>
                     {/* Hero Devices Mockup Image Placeholder */}
                     <div className="flex items-center justify-center px-4 max-w-5xl mx-auto mt-[80px] mb-[80px] hover:scale-105 transition-transform duration-500">
@@ -160,7 +161,7 @@ export default function CRMcasePage() {
                                 {[
                                     { icon: "/images/downloadicon.svg", stat: "600+", label: "Downloads" },
                                     { icon: "/Letimg/Frame387.svg", stat: "500+", label: "Users" },
-                                    { icon: "/Letimg/Reviews.svg", stat: "300+", label: "Premium Members" },
+                                    { icon: "/Letimg/Reviews.svg", stat: "300+", label: "Positive Reviews" },
                                     { icon: "/Letimg/Starimg.svg", stat: "4.2", label: "Average rating" },
                                 ].map(({ icon, stat, label }) => (
                                     <div key={label} className="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left group">
@@ -284,7 +285,7 @@ export default function CRMcasePage() {
                     </section>
                     <Highlights />
                     <Technology />
-                    <Designing />
+                    <Designing1 />
                     {/* 8. GLIMPSES OF APP UI SCREENS */}
                     <section className="relative w-full py-20 md:py-32 px-4 text-center overflow-hidden">
                         {/* Watermark */}

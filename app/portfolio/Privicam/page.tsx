@@ -9,12 +9,12 @@ import {
     Apple,
     PlayCircle,
 } from "lucide-react";
-import Highlights from "../../services/case-study/CRMcase/HIghtlights";
 import OurProjectsSection from "../../services/website-designing-development/Our-Projects-Section";
 import CompaniesLove from "../../services/website-designing-development/Companies-Love";
 import ConsultationModal from "@/components/ConsultationModal";
 import Technology from "../Goalkick/technology";
 import Designing1 from "@/components/Designing1";
+import Highlights from "./Highlights";
 
 export default function GoalkickCaseStudy() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -42,7 +42,7 @@ export default function GoalkickCaseStudy() {
                             <div className="absolute inset-0 bg-black/60 z-10" />
                         </div>
 
-                        <div className="relative z-20 text-center w-full max-w-5xl mx-auto flex flex-col items-center gap-4 px-4">
+                        <div className="relative z-20 text-center w-full max-w-7xl mx-auto flex flex-col items-center gap-4 px-4">
                             {/* Logo */}
                             <div className="flex justify-center w-44 md:w-52 h-auto mb-2">
                                 <img src="/caseimg/PriviCam-logo.svg" alt="Goalkick Logo" className="w-full h-auto" />
@@ -103,7 +103,7 @@ export default function GoalkickCaseStudy() {
 
                                 <div className="relative z-10">
                                     <h2 className="text-3xl md:text-5xl font-bold text-black mb-6 tracking-tight text-center lg:text-left">
-                                        About Freshup App
+                                        About Privicam App
                                     </h2>
                                     <p className="text-[#010F14] text-sm sm:text-base md:text-lg leading-relaxed mb-6 text-center lg:text-left">
                                         PriviCam is a privacy-focused camera application designed to keep your personal photos and videos truly secure. Every photo or video captured through the app is stored directly inside protected private folders, secured with password or biometric authentication.
@@ -117,14 +117,14 @@ export default function GoalkickCaseStudy() {
                                             <img src="/caseimg/About-img1.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                             <div className="text-left">
                                                 <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Industry</h4>
-                                                <p className="text-black text-lg font-medium">Sports & Social</p>
+                                                <p className="text-black text-lg font-medium">Social App</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4 items-start justify-start">
                                             <img src="/caseimg/About-img2.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                             <div className="text-left">
                                                 <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Platform</h4>
-                                                <p className="text-black text-lg font-medium">PostgreSQL (AWS)</p>
+                                                <p className="text-black text-lg font-medium">Andriod & IOS</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4 items-start justify-start">
@@ -138,7 +138,7 @@ export default function GoalkickCaseStudy() {
                                             <img src="/caseimg/About-img4.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                             <div className="text-left">
                                                 <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Service</h4>
-                                                <p className="text-black text-lg font-medium">Design & Dev</p>
+                                                <p className="text-black text-lg font-medium">Design & Development</p>
                                             </div>
                                         </div>
                                     </div>
@@ -273,7 +273,7 @@ export default function GoalkickCaseStudy() {
                     </section>
 
                     {/* ─────────────────────────────────────────────
-                   6. ESSENTIAL HIGHLIGHTS
+                   6. Privicam HIGHLIGHTS
                ───────────────────────────────────────────── */}
                     <Highlights />
 
@@ -334,10 +334,10 @@ export default function GoalkickCaseStudy() {
                                     <div className="h-full">
                                         <div className="col-scroll-up flex flex-col gap-4 md:gap-8">
                                             {[1, 4, 7].map(num => (
-                                                <Image key={`c1-${num}`} src={`/gip/iPhone 11 Pro${num}.svg`} alt="UI Screen" width={300} height={600} className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
+                                                <Image key={`c1-${num}`} src={`/Privicam-UIscreen-img/UI-img${num}.svg`} alt="UI Screen" width={300} height={600} className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
                                             ))}
                                             {[1, 4, 7].map(num => (
-                                                <Image key={`c1-dup-${num}`} src={`/gip/iPhone 11 Pro${num}.svg`} alt="" width={300} height={600} aria-hidden className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
+                                                <Image key={`c1-dup-${num}`} src={`/Privicam-UIscreen-img/UI-img${num}.svg`} alt="" width={300} height={600} aria-hidden className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
                                             ))}
                                         </div>
                                     </div>
@@ -345,11 +345,11 @@ export default function GoalkickCaseStudy() {
                                     {/* Column 2 — scroll DOWN */}
                                     <div className="h-full">
                                         <div className="col-scroll-down flex flex-col gap-4 md:gap-8">
-                                            {[2, 7, 9].map(num => (
-                                                <Image key={`c2-${num}`} src={`/gip/iPhone 11 Pro${num}.svg`} alt="UI Screen" width={300} height={600} className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
+                                            {[2, 7, 1].map(num => (
+                                                <Image key={`c2-${num}`} src={`/Privicam-UIscreen-img/UI-img${num}.svg`} alt="UI Screen" width={300} height={600} className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
                                             ))}
-                                            {[2, 7, 9].map(num => (
-                                                <Image key={`c2-dup-${num}`} src={`/gip/iPhone 11 Pro${num}.svg`} alt="" width={300} height={600} aria-hidden className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
+                                            {[2, 7, 1].map(num => (
+                                                <Image key={`c2-dup-${num}`} src={`/Privicam-UIscreen-img/UI-img${num}.svg`} alt="" width={300} height={600} aria-hidden className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
                                             ))}
                                         </div>
                                     </div>
@@ -357,11 +357,11 @@ export default function GoalkickCaseStudy() {
                                     {/* Column 3 — scroll UP */}
                                     <div className="hidden sm:block h-full">
                                         <div className="col-scroll-up flex flex-col gap-4 md:gap-8">
-                                            {[3, 5, 10].map(num => (
-                                                <Image key={`c3-${num}`} src={`/gip/iPhone 11 Pro${num}.svg`} alt="UI Screen" width={300} height={600} className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
+                                            {[3, 5, 6].map(num => (
+                                                <Image key={`c3-${num}`} src={`/Privicam-UIscreen-img/UI-img${num}.svg`} alt="UI Screen" width={300} height={600} className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
                                             ))}
-                                            {[3, 5, 10].map(num => (
-                                                <Image key={`c3-dup-${num}`} src={`/gip/iPhone 11 Pro${num}.svg`} alt="" width={300} height={600} aria-hidden className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
+                                            {[3, 5, 6].map(num => (
+                                                <Image key={`c3-dup-${num}`} src={`/Privicam-UIscreen-img/UI-img${num}.svg`} alt="" width={300} height={600} aria-hidden className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
                                             ))}
                                         </div>
                                     </div>
@@ -369,11 +369,11 @@ export default function GoalkickCaseStudy() {
                                     {/* Column 4 — hidden on mobile */}
                                     <div className="hidden md:block h-full">
                                         <div className="col-scroll-down flex flex-col gap-4 md:gap-8">
-                                            {[4, 9, 1].map(num => (
-                                                <Image key={`c4-${num}`} src={`/gip/iPhone 11 Pro${num}.svg`} alt="UI Screen" width={300} height={600} className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
+                                            {[4, 6, 1].map(num => (
+                                                <Image key={`c4-${num}`} src={`/Privicam-UIscreen-img/UI-img${num}.svg`} alt="UI Screen" width={300} height={600} className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
                                             ))}
-                                            {[4, 9, 1].map(num => (
-                                                <Image key={`c4-dup-${num}`} src={`/gip/iPhone 11 Pro${num}.svg`} alt="" width={300} height={600} aria-hidden className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
+                                            {[4, 6, 1].map(num => (
+                                                <Image key={`c4-dup-${num}`} src={`/Privicam-UIscreen-img/UI-img${num}.svg`} alt="" width={300} height={600} aria-hidden className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
                                             ))}
                                         </div>
                                     </div>
@@ -381,11 +381,11 @@ export default function GoalkickCaseStudy() {
                                     {/* Column 5 — visible only on lg */}
                                     <div className="hidden lg:block h-full">
                                         <div className="col-scroll-up flex flex-col gap-4 md:gap-8">
-                                            {[5, 10, 3].map(num => (
-                                                <Image key={`c5-${num}`} src={`/gip/iPhone 11 Pro${num}.svg`} alt="UI Screen" width={300} height={600} className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
+                                            {[5, 4, 3].map(num => (
+                                                <Image key={`c5-${num}`} src={`/Privicam-UIscreen-img/UI-img${num}.svg`} alt="UI Screen" width={300} height={600} className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
                                             ))}
-                                            {[5, 10, 3].map(num => (
-                                                <Image key={`c5-dup-${num}`} src={`/gip/iPhone 11 Pro${num}.svg`} alt="" width={300} height={600} aria-hidden className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
+                                            {[5, 4, 3].map(num => (
+                                                <Image key={`c5-dup-${num}`} src={`/Privicam-UIscreen-img/UI-img${num}.svg`} alt="" width={300} height={600} aria-hidden className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
                                             ))}
                                         </div>
                                     </div>

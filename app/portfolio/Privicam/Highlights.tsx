@@ -5,39 +5,39 @@ import { useState, useEffect } from "react";
 const highlightsData = [
     {
         id: "01",
-        title: "Smart Claim Configuration",
-        desc: "Manage inspection timing, routing preferences, addresses, and claim-related settings through a centralized and user-friendly interface.",
-        phone: "/Letimg/360-iPhone1.svg",
+        title: "Private Media Storage",
+        desc: "Capture photos and videos that are stored securely inside protected private folders within the app.",
+        phone: "/caseimg/Privi-iPhone1.svg",
     },
     {
         id: "02",
-        title: "Real-Time Claim Dashboard",
-        desc: "Track claim status, schedules, completed tasks, cancellations, alerts, and operational analytics through visual dashboards.",
-        phone: "/Letimg/360-iPhone2.svg",
+        title: "Biometric & Password Protection",
+        desc: "Keep sensitive content safe with advanced fingerprint, Face ID, and password-based authentication security.",
+        phone: "/caseimg/Privi-iPhone2.svg",
     },
     {
         id: "03",
-        title: "Property Damage Documentation",
-        desc: "Capture and organize property images, inspection details, and supporting evidence for accurate claim verification.",
-        phone: "/Letimg/360-iPhone3.svg",
+        title: "No Cloud Uploads",
+        desc: "Ensure complete privacy by storing all media locally on your device without third-party cloud access.",
+        phone: "/caseimg/Privi-iPhone3.svg",
     },
     {
         id: "04",
-        title: "Flexible Subscription & SaaS Management",
-        desc: "Offer scalable subscription plans and cloud-based access designed for insurance companies, agents, and enterprise operations.",
-        phone: "/Letimg/360-iPhone4.svg",
+        title: "RSecure Camera Experience",
+        desc: "Take photos and record videos confidently with a privacy-focused camera built for personal security.",
+        phone: "/caseimg/Privi-iPhone4.svg",
     },
     {
         id: "05",
-        title: "Client & Policy Information Management",
-        desc: "Access complete policyholder details, claim information, schedules, and risk-related data from a structured digital system.",
-        phone: "/Letimg/360-iPhone5.svg",
+        title: "Organized Private Gallery",
+        desc: "Manage and organize confidential photos and videos easily through dedicated secure media folders.",
+        phone: "/caseimg/Privi-iPhone5.svg",
     },
     {
         id: "06",
-        title: "Contact & Team Assignment",
-        desc: "Add surveyors, contractors, agents, and contacts easily to streamline collaboration and claim handling workflows.",
-        phone: "/Letimg/360-iPhone6.svg",
+        title: "Private & Secure Chat System",
+        desc: "Communicate safely through built-in private chat functionality designed for confidential conversations and sharing.",
+        phone: "/caseimg/Privi-iPhone6.svg",
     }
 ];
 
@@ -71,11 +71,11 @@ export default function Highlights() {
                 <div className="w-full max-w-[1400px] mx-auto relative mt-[80px] mb-[80px]">
                     {/* Huge Faint Watermark Text */}
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[30px] sm:text-[50px] md:text-[110px] lg:text-[110px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-[50px]">
-                        ESSENTIAL HIGHLIGHTS
+                        PRIVICAM HIGHLIGHTS
                     </div>
                     {/* Title */}
                     <h2 className="text-[40px] font-bold text-[#111827] mb-12 relative z-20 xl:ml-10 -pt-[100px] whitespace-nowrap">
-                        Essential Highlights
+                        Privicam Highlights
                     </h2>
 
                     {/* Global wrapper for absolute positioning (desktop) */}
@@ -95,7 +95,7 @@ export default function Highlights() {
                                                     <span className="absolute -top-[80px] -left-[10px] text-[160px] font-bold text-[#939192]/20 z-[-1] leading-none select-none tracking-tighter">
                                                         {page.left.id}
                                                     </span>
-                                                    <h3 className="text-[22px] font-bold text-gray-900 mb-4 xl:whitespace-nowrap">
+                                                    <h3 className="text-[22px] font-bold text-gray-900 mb-4">
                                                         {page.left.title}
                                                     </h3>
                                                     <p className="text-[15px] text-black leading-relaxed pr-6">
@@ -105,7 +105,7 @@ export default function Highlights() {
                                             </div>
 
                                             {/* Left Dashed Line matched perfectly to reference */}
-                                            <div className="absolute top-[18%] left-[10%] w-[21%] h-[15%] border-t-[2px] border-l-[2px] border-dashed border-[#111827] opacity-80 rounded-tl-lg pointer-events-none"></div>
+                                            <div className="absolute top-[18%] left-[10%] w-[15%] h-[13%] border-t-[2px] border-l-[2px] border-dashed border-[#111827] opacity-80 rounded-tl-lg pointer-events-none"></div>
 
                                             <div className="absolute top-[3%] left-[26%] z-20 w-[24%] max-w-[290px]">
                                                 <Image
@@ -134,14 +134,14 @@ export default function Highlights() {
                                             </div>
 
                                             {/* Right Dashed Line matched perfectly to reference */}
-                                            <div className="absolute top-[84%] left-[60%] w-[25%] h-[10%] border-b-[2px] border-r-[2px] border-dashed border-[#111827] opacity-80 rounded-br-lg pointer-events-none transform -translate-y-full"></div>
+                                            <div className="absolute top-[84%] left-[60%] w-[25%] h-[14%] border-b-[2px] border-r-[2px] border-dashed border-[#111827] opacity-80 rounded-br-lg pointer-events-none transform -translate-y-full"></div>
 
                                             <div className="absolute top-[52%] left-[74%] w-[25%] z-10">
                                                 <div className="relative">
                                                     <span className="absolute -top-[80px] -left-[10px] text-[160px] font-bold text-[#939192]/20 z-[-1] leading-none select-none tracking-tighter">
                                                         {page.right.id}
                                                     </span>
-                                                    <h3 className="text-[22px] font-bold text-gray-900 mb-4 xl:whitespace-nowrap">
+                                                    <h3 className="text-[22px] font-bold text-gray-900 mb-4">
                                                         {page.right.title}
                                                     </h3>
                                                     <p className="text-[15px] text-black leading-relaxed pr-6">

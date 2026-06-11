@@ -9,12 +9,13 @@ import {
     Apple,
     PlayCircle,
 } from "lucide-react";
-import Highlights from "../../services/case-study/CRMcase/HIghtlights";
 import OurProjectsSection from "../../services/website-designing-development/Our-Projects-Section";
 import CompaniesLove from "../../services/website-designing-development/Companies-Love";
 import ConsultationModal from "@/components/ConsultationModal";
 import Technology from "../Goalkick/technology";
 import Designing1 from "@/components/Designing1";
+import Highlights from "./Highlights";
+
 
 export default function GoalkickCaseStudy() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -37,22 +38,22 @@ export default function GoalkickCaseStudy() {
                                 playsInline
                                 className="absolute inset-0 w-full h-full object-cover"
                             >
-                                <source src="/caseimg/priviCam-video.mp4" type="video/mp4" />
+                                <source src="/caseimg/Detect-micro-bg-video.mp4" type="video/mp4" />
                             </video>
                             <div className="absolute inset-0 bg-black/60 z-10" />
                         </div>
 
-                        <div className="relative z-20 text-center w-full max-w-5xl mx-auto flex flex-col items-center gap-4 px-4">
+                        <div className="relative z-20 text-center w-full max-w-7xl mx-auto flex flex-col items-center gap-4 px-4">
                             {/* Logo */}
-                            <div className="flex justify-center w-44 md:w-52 h-auto mb-2">
-                                <img src="/caseimg/PriviCam-logo.svg" alt="Goalkick Logo" className="w-full h-auto" />
+                            <div className="flex justify-center w-20 md:w-20 h-auto mb-2">
+                                <img src="/caseimg/Detect-Logo.svg" alt="Goalkick Logo" className="w-full h-auto" />
                             </div>
 
                             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FFFFFF] leading-tight max-w-7xl">
-                                PriviCam — Your Privacy, Your Contro
+                                Detect Microplastic — Smart Water Quality Detection System
                             </h1>
                             <p className="text-base sm:text-lg md:text-xl text-[#FFFFFF] max-w-7xl text-center opacity-90">
-                                Capture photos and videos with complete privacy and control.Your media stays securely stored on your device — protected by password or biometric lock.
+                                An intelligent water analysis platform designed to detect microplastic particles and impurities through advanced machine-based sampling and automated reporting. The system helps monitor water quality efficiently with real-time detection insights, visual reporting, and data-driven analysis for safer and cleaner water management.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 mt-6">
@@ -89,8 +90,8 @@ export default function GoalkickCaseStudy() {
                         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 relative z-10">
                             {/* Left Image */}
                             <div className="w-full lg:w-1/2 flex justify-center">
-                                <div className="relative w-full max-w-[300px] sm:max-w-[400px] aspect-[3/4] transition-all duration-500 hover:scale-[1.02]">
-                                    <Image src="/caseimg/priviabout.svg" alt="About Goalkick" fill className="object-contain drop-shadow-2xl" />
+                                <div className="relative w-full  max-w-[300px] sm:max-w-[400px] aspect-[3/4] transition-all duration-500 hover:scale-[1.02]">
+                                    <Image src="/caseimg/Detect-About-img.svg" alt="About Goalkick" fill className="object-contain drop-shadow-2xl" />
                                 </div>
                             </div>
 
@@ -103,12 +104,15 @@ export default function GoalkickCaseStudy() {
 
                                 <div className="relative z-10">
                                     <h2 className="text-3xl md:text-5xl font-bold text-black mb-6 tracking-tight text-center lg:text-left">
-                                        About Freshup App
+                                        About Detect Microplastic App
                                     </h2>
                                     <p className="text-[#010F14] text-sm sm:text-base md:text-lg leading-relaxed mb-6 text-center lg:text-left">
-                                        PriviCam is a privacy-focused camera application designed to keep your personal photos and videos truly secure. Every photo or video captured through the app is stored directly inside protected private folders, secured with password or biometric authentication.
-                                        Unlike traditional camera apps, PriviCam does not upload your media to the cloud or third-party servers. Your content remains stored locally on your device, giving you complete ownership, security, and peace of mind.
-                                        Capture freely, knowing your private moments stay private.
+                                        Detect Microplastic is a smart technology-driven application connected with a specialized water testing machine that analyzes water samples for the presence of microplastics and other harmful particles. The machine collects and processes water samples, while the application generates detailed visual reports, sample data, detection status, and analytical insights in real time.
+
+                                    </p>
+                                    <p className="text-[#010F14] text-sm sm:text-base md:text-lg leading-relaxed mb-6 text-center lg:text-left">
+                                        The platform is designed to simplify water quality monitoring through automation, helping industries, laboratories, environmental organizations, and research facilities track contamination levels more accurately.
+
                                     </p>
 
                                     {/* Stat Grid */}
@@ -117,14 +121,14 @@ export default function GoalkickCaseStudy() {
                                             <img src="/caseimg/About-img1.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                             <div className="text-left">
                                                 <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Industry</h4>
-                                                <p className="text-black text-lg font-medium">Sports & Social</p>
+                                                <p className="text-black text-lg font-medium">Environmental Technology Industry</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4 items-start justify-start">
                                             <img src="/caseimg/About-img2.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                             <div className="text-left">
                                                 <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Platform</h4>
-                                                <p className="text-black text-lg font-medium">PostgreSQL (AWS)</p>
+                                                <p className="text-black text-lg font-medium">Andriod & IOS</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4 items-start justify-start">
@@ -138,7 +142,7 @@ export default function GoalkickCaseStudy() {
                                             <img src="/caseimg/About-img4.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                             <div className="text-left">
                                                 <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Service</h4>
-                                                <p className="text-black text-lg font-medium">Design & Dev</p>
+                                                <p className="text-black text-lg font-medium">Design & Development</p>
                                             </div>
                                         </div>
                                     </div>
@@ -187,14 +191,14 @@ export default function GoalkickCaseStudy() {
                                 </h2>
                                 <div className="space-y-6 md:space-y-8">
                                     {[
-                                        "Protect your personal photos and videos with advanced password and biometric security for complete privacy and peace of mind.",
-                                        "Store all captured media directly on your device without any cloud uploads, third-party access, or unwanted tracking.",
-                                        " Organize your private content inside secure folders designed to keep sensitive memories safe from unauthorized access.",
-                                        "Enjoy a clean, fast, and privacy-first camera experience built for users who value security, control, and confidentiality.",
+                                        "Monitor water quality efficiently through automated microplastic detection and real-time analytical reporting systems.",
+                                        "Improve environmental safety and research accuracy with machine-powered water sample analysis and contamination tracking.",
+                                        "Generate detailed visual reports and exportable PDF summaries for laboratories, industries, and monitoring organizations.",
+                                        "Enable smarter decision-making with data-driven insights designed for water safety, environmental monitoring, and quality control.",
                                     ].map((text, i) => (
                                         <div key={i} className="flex items-start gap-4 group">
                                             <div className="mt-1 shrink-0 w-8 h-8 flex items-center justify-center transition-colors duration-300">
-                                                <img src="/caseimg/priviimg-fan.svg" alt="" className="w-5 h-5 object-contain" />
+                                                <img src="/caseimg/basil_flask-solid-black.svg" alt="" className="w-5 h-5 object-contain" />
                                             </div>
                                             <p className="text-[#010F14] text-sm sm:text-base md:text-lg leading-relaxed">{text}</p>
                                         </div>
@@ -207,11 +211,11 @@ export default function GoalkickCaseStudy() {
                                 <div className="relative w-full max-w-[280px] sm:max-w-[360px] transition-all duration-500 hover:scale-[1.02]">
                                     {/* Back/Right Phone */}
                                     <div className="absolute -right-8 sm:-right-[80px] top-[20%] w-[55%] z-0">
-                                        <Image src="/caseimg/privi-iPhone_11_Pro2.svg" alt="App Preview Back" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.25)]" priority />
+                                        <Image src="/caseimg/Detect-iPhone2.svg" alt="App Preview Back" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.25)]" priority />
                                     </div>
                                     {/* Front/Left Phone */}
                                     <div className="relative -left-8 sm:-left-[80px] w-[55%] z-10">
-                                        <Image src="/caseimg/privi-iPhone_11_Pro.svg" alt="App Preview Front" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.35)]" priority />
+                                        <Image src="/caseimg/Detect-iPhone.svg" alt="App Preview Front" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.35)]" priority />
                                     </div>
                                     {/* Spacer to prevent overlap clipping */}
                                     <div className="pb-[10%]"></div>
@@ -236,11 +240,11 @@ export default function GoalkickCaseStudy() {
                                     <div className="relative w-full max-w-[280px] sm:max-w-[360px] transition-all duration-500 hover:scale-[1.02]">
                                         {/* Back/Right Phone */}
                                         <div className="absolute -right-8 sm:-right-[80px] top-[20%] w-[55%] z-0">
-                                            <Image src="/caseimg/privi-iPhone_11_Pro4.svg" alt="App Preview Back" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.25)]" priority />
+                                            <Image src="/caseimg/Detect-Best-iPhone2.svg" alt="App Preview Back" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.25)]" priority />
                                         </div>
                                         {/* Front/Left Phone */}
                                         <div className="relative -left-8 sm:-left-[80px] w-[55%] z-10">
-                                            <Image src="/caseimg/privi-iPhone_11_Pro3.svg" alt="App Preview Front" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.35)]" priority />
+                                            <Image src="/caseimg/Detect-Best-iPhone1.svg" alt="App Preview Front" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.35)]" priority />
                                         </div>
                                         {/* Spacer to prevent overlap clipping */}
                                         <div className="pb-[10%]"></div>
@@ -254,14 +258,14 @@ export default function GoalkickCaseStudy() {
                                     </h2>
                                     <div className="space-y-8">
                                         {[
-                                            "Secure on-device storage that keeps your photos and videos completely private without relying on cloud servers or external platforms.",
-                                            "Advanced biometric and password protection to ensure only you can access your sensitive media and personal memories.",
-                                            "Smooth and intuitive camera experience designed to capture, organize, and protect content without compromising performance.",
-                                            "Privacy-first architecture focused on user control, data safety, and secure media management for everyday personal use.",
+                                            "Advanced machine integration for seamless water sample collection, detection processing, and automated report generation.",
+                                            "Intelligent dashboard with graphical analytics, contamination insights, detection status, and detailed reporting features.",
+                                            "Real-time monitoring system designed to improve accuracy, efficiency, and reliability in water quality analysis workflows.",
+                                            "Secure and scalable digital platform built for laboratories, environmental agencies, research organizations, and industrial testing operations.",
                                         ].map((text, i) => (
                                             <div key={i} className="flex items-start gap-4 group">
                                                 <div className="mt-1 shrink-0 transition-colors">
-                                                    <img src="/caseimg/privi-fan-white.svg" alt="" className="w-5 h-5" />
+                                                    <img src="/caseimg/basil_flask-solid-white.svg" alt="" className="w-5 h-5" />
                                                 </div>
                                                 <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">{text}</p>
                                             </div>
@@ -273,7 +277,7 @@ export default function GoalkickCaseStudy() {
                     </section>
 
                     {/* ─────────────────────────────────────────────
-                   6. ESSENTIAL HIGHLIGHTS
+                   6. Detect-microplastic HIGHLIGHTS
                ───────────────────────────────────────────── */}
                     <Highlights />
 

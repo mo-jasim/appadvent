@@ -9,12 +9,12 @@ import {
     Apple,
     PlayCircle,
 } from "lucide-react";
-import Highlights from "../../services/case-study/CRMcase/HIghtlights";
 import OurProjectsSection from "../../services/website-designing-development/Our-Projects-Section";
 import CompaniesLove from "../../services/website-designing-development/Companies-Love";
 import ConsultationModal from "@/components/ConsultationModal";
 import Technology from "../Goalkick/technology";
 import Designing1 from "@/components/Designing1";
+import Highlights from "./Highlights";
 
 export default function GoalkickCaseStudy() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -274,7 +274,7 @@ export default function GoalkickCaseStudy() {
                     </section>
 
                     {/* ─────────────────────────────────────────────
-                   6. ESSENTIAL HIGHLIGHTS
+                   6. Newness HIGHLIGHTS
                ───────────────────────────────────────────── */}
                     <Highlights />
 

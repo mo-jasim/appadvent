@@ -43,7 +43,7 @@ export default function GoalkickCaseStudy() {
                             <div className="absolute inset-0 bg-black/60 z-10" />
                         </div>
 
-                        <div className="relative z-20 text-center w-full max-w-5xl mx-auto flex flex-col items-center gap-4 px-4">
+                        <div className="relative z-20 text-center w-full max-w-7xl mx-auto flex flex-col items-center gap-4 px-4">
                             {/* Logo */}
                             <div className="flex justify-center w-44 md:w-52 h-auto mb-2">
                                 <img src="/caseimg/Freshup_logo.svg" alt="Goalkick Logo" className="w-full h-auto" />
@@ -119,28 +119,28 @@ export default function GoalkickCaseStudy() {
                                             <img src="/caseimg/About-img1.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                             <div className="text-left">
                                                 <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Industry</h4>
-                                                <p className="text-black text-lg font-medium">Sports & Social</p>
+                                                <p className="text-black text-lg font-medium">Social Networking App</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4 items-start justify-start">
                                             <img src="/caseimg/About-img2.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                             <div className="text-left">
                                                 <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Platform</h4>
-                                                <p className="text-black text-lg font-medium">PostgreSQL (AWS)</p>
+                                                <p className="text-black text-lg font-medium">IOS (AWS)</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4 items-start justify-start">
                                             <img src="/caseimg/About-img3.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                             <div className="text-left">
                                                 <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Duration</h4>
-                                                <p className="text-black text-lg font-medium">4 Months</p>
+                                                <p className="text-black text-lg font-medium">3 Months</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4 items-start justify-start">
                                             <img src="/caseimg/About-img4.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                             <div className="text-left">
                                                 <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Service</h4>
-                                                <p className="text-black text-lg font-medium">Design & Dev</p>
+                                                <p className="text-black text-lg font-medium">Design & Development</p>
                                             </div>
                                         </div>
                                     </div>
@@ -157,8 +157,8 @@ export default function GoalkickCaseStudy() {
                                 {[
                                     { icon: "/images/downloadicon.svg", stat: "600+", label: "Downloads" },
                                     { icon: "/Letimg/Frame387.svg", stat: "500+", label: "Users" },
-                                    { icon: "/Letimg/Reviews.svg", stat: "300+", label: "Premium Members" },
-                                    { icon: "/Letimg/Starimg.svg", stat: "4.2", label: "Average rating" },
+                                    { icon: "/Letimg/Reviews.svg", stat: "300+", label: "Positive Reviews" },
+                                    { icon: "/Letimg/Starimg.svg", stat: "5.0", label: "Average rating" },
                                 ].map(({ icon, stat, label }) => (
                                     <div key={label} className="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left group">
                                         <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center border border-white/20 shrink-0 transform group-hover:rotate-6 group-hover:scale-110 transition-all duration-300">
@@ -335,11 +335,11 @@ export default function GoalkickCaseStudy() {
                                     {/* Column 1 — scroll UP */}
                                     <div className="h-full">
                                         <div className="col-scroll-up flex flex-col gap-4 md:gap-8">
-                                            {[1, 4, 7].map(num => (
-                                                <Image key={`c1-${num}`} src={`/gip/iPhone 11 Pro${num}.svg`} alt="UI Screen" width={300} height={600} className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
+                                            {[1, 2, 3].map(num => (
+                                                <Image key={`c1-${num}`} src={`/Freshup-UI-screen-img/Freshup-iPhone${num}.svg`} alt="UI Screen" width={300} height={600} className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
                                             ))}
-                                            {[1, 4, 7].map(num => (
-                                                <Image key={`c1-dup-${num}`} src={`/gip/iPhone 11 Pro${num}.svg`} alt="" width={300} height={600} aria-hidden className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
+                                            {[1, 2, 3].map(num => (
+                                                <Image key={`c1-dup-${num}`} src={`/Freshup-UI-screen-img/Freshup-iPhone${num}.svg`} alt="" width={300} height={600} aria-hidden className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
                                             ))}
                                         </div>
                                     </div>
@@ -347,11 +347,11 @@ export default function GoalkickCaseStudy() {
                                     {/* Column 2 — scroll DOWN */}
                                     <div className="h-full">
                                         <div className="col-scroll-down flex flex-col gap-4 md:gap-8">
-                                            {[2, 7, 9].map(num => (
-                                                <Image key={`c2-${num}`} src={`/gip/iPhone 11 Pro${num}.svg`} alt="UI Screen" width={300} height={600} className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
+                                            {[4, 5, 6].map(num => (
+                                                <Image key={`c2-${num}`} src={`/Freshup-UI-screen-img/Freshup-iPhone${num}.svg`} alt="UI Screen" width={300} height={600} className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
                                             ))}
-                                            {[2, 7, 9].map(num => (
-                                                <Image key={`c2-dup-${num}`} src={`/gip/iPhone 11 Pro${num}.svg`} alt="" width={300} height={600} aria-hidden className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
+                                            {[4, 5, 6].map(num => (
+                                                <Image key={`c2-dup-${num}`} src={`/Freshup-UI-screen-img/Freshup-iPhone${num}.svg`} alt="" width={300} height={600} aria-hidden className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
                                             ))}
                                         </div>
                                     </div>
@@ -359,11 +359,11 @@ export default function GoalkickCaseStudy() {
                                     {/* Column 3 — scroll UP */}
                                     <div className="hidden sm:block h-full">
                                         <div className="col-scroll-up flex flex-col gap-4 md:gap-8">
-                                            {[3, 5, 10].map(num => (
-                                                <Image key={`c3-${num}`} src={`/gip/iPhone 11 Pro${num}.svg`} alt="UI Screen" width={300} height={600} className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
+                                            {[7, 8, 9].map(num => (
+                                                <Image key={`c3-${num}`} src={`/Freshup-UI-screen-img/Freshup-iPhone${num}.svg`} alt="UI Screen" width={300} height={600} className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
                                             ))}
-                                            {[3, 5, 10].map(num => (
-                                                <Image key={`c3-dup-${num}`} src={`/gip/iPhone 11 Pro${num}.svg`} alt="" width={300} height={600} aria-hidden className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
+                                            {[7, 8, 9].map(num => (
+                                                <Image key={`c3-dup-${num}`} src={`/Freshup-UI-screen-img/Freshup-iPhone${num}.svg`} alt="" width={300} height={600} aria-hidden className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
                                             ))}
                                         </div>
                                     </div>
@@ -371,11 +371,11 @@ export default function GoalkickCaseStudy() {
                                     {/* Column 4 — hidden on mobile */}
                                     <div className="hidden md:block h-full">
                                         <div className="col-scroll-down flex flex-col gap-4 md:gap-8">
-                                            {[4, 9, 1].map(num => (
-                                                <Image key={`c4-${num}`} src={`/gip/iPhone 11 Pro${num}.svg`} alt="UI Screen" width={300} height={600} className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
+                                            {[10, 11, 12].map(num => (
+                                                <Image key={`c4-${num}`} src={`/Freshup-UI-screen-img/Freshup-iPhone${num}.svg`} alt="UI Screen" width={300} height={600} className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
                                             ))}
-                                            {[4, 9, 1].map(num => (
-                                                <Image key={`c4-dup-${num}`} src={`/gip/iPhone 11 Pro${num}.svg`} alt="" width={300} height={600} aria-hidden className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
+                                            {[10, 11, 12].map(num => (
+                                                <Image key={`c4-dup-${num}`} src={`/Freshup-UI-screen-img/Freshup-iPhone${num}.svg`} alt="" width={300} height={600} aria-hidden className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
                                             ))}
                                         </div>
                                     </div>
@@ -383,11 +383,11 @@ export default function GoalkickCaseStudy() {
                                     {/* Column 5 — visible only on lg */}
                                     <div className="hidden lg:block h-full">
                                         <div className="col-scroll-up flex flex-col gap-4 md:gap-8">
-                                            {[5, 10, 3].map(num => (
-                                                <Image key={`c5-${num}`} src={`/gip/iPhone 11 Pro${num}.svg`} alt="UI Screen" width={300} height={600} className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
+                                            {[13, 1, 5].map(num => (
+                                                <Image key={`c5-${num}`} src={`/Freshup-UI-screen-img/Freshup-iPhone${num}.svg`} alt="UI Screen" width={300} height={600} className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
                                             ))}
-                                            {[5, 10, 3].map(num => (
-                                                <Image key={`c5-dup-${num}`} src={`/gip/iPhone 11 Pro${num}.svg`} alt="" width={300} height={600} aria-hidden className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
+                                            {[13, 1, 5].map(num => (
+                                                <Image key={`c5-dup-${num}`} src={`/Freshup-UI-screen-img/Freshup-iPhone${num}.svg`} alt="" width={300} height={600} aria-hidden className="w-full h-auto drop-shadow-xl rounded-2xl md:rounded-[2rem]" />
                                             ))}
                                         </div>
                                     </div>

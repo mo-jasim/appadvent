@@ -58,18 +58,19 @@ export default function PortfolioPage() {
             slug: "Detect-microplastic",
         },
         {
-            image: "/images/p6.png",
+            image: "/Letimg/Newness.svg",
             title: "Newness",
             duration: "3 Months",
             platform: "Application",
             slug: "Newness",
         },
         {
-            image: "/images/p7.png",
-            title: "Droneverse",
+            image: "/Letimg/Queue-home-img.svg",
+            title: "QMS — Smart Queue Management System",
             duration: "3 Months",
             platform: "Application",
-            slug: "Droneverse",
+            slug: "Queue Management System",
+            href: "/portfolio/Queue-Management-System"
         }
     ];
 

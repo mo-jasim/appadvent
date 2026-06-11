@@ -5,39 +5,39 @@ import { useState, useEffect } from "react";
 const highlightsData = [
     {
         id: "01",
-        title: "Smart Claim Configuration",
-        desc: "Manage inspection timing, routing preferences, addresses, and claim-related settings through a centralized and user-friendly interface.",
-        phone: "/Letimg/360-iPhone1.svg",
+        title: "Wide Variety of Natural Plants",
+        desc: "Explore a diverse collection of indoor, outdoor, decorative, and air-purifying plants for every type of space and lifestyle.",
+        phone: "/caseimg/Hightlights_img1.svg",
     },
     {
         id: "02",
-        title: "Real-Time Claim Dashboard",
-        desc: "Track claim status, schedules, completed tasks, cancellations, alerts, and operational analytics through visual dashboards.",
-        phone: "/Letimg/360-iPhone2.svg",
+        title: "Easy Online Plant Shopping",
+        desc: "Browse, select, and order plants and gardening essentials conveniently from your mobile device anytime, anywhere.",
+        phone: "/caseimg/Hightlights_img2.svg",
     },
     {
         id: "03",
-        title: "Property Damage Documentation",
-        desc: "Capture and organize property images, inspection details, and supporting evidence for accurate claim verification.",
-        phone: "/Letimg/360-iPhone3.svg",
+        title: "Secure Online Ordering",
+        desc: "Place orders easily with a streamlined cart and secure checkout process for hassle-free shopping.",
+        phone: "/caseimg/Hightlights_img3.svg",
     },
     {
         id: "04",
-        title: "Flexible Subscription & SaaS Management",
-        desc: "Offer scalable subscription plans and cloud-based access designed for insurance companies, agents, and enterprise operations.",
-        phone: "/Letimg/360-iPhone4.svg",
+        title: "Real-Time Order Tracking",
+        desc: "Track your plant deliveries and stay updated on order status directly within the application.",
+        phone: "/caseimg/Hightlights_img4.svg",
     },
     {
         id: "05",
-        title: "Client & Policy Information Management",
-        desc: "Access complete policyholder details, claim information, schedules, and risk-related data from a structured digital system.",
-        phone: "/Letimg/360-iPhone5.svg",
+        title: "Wishlist & Favorites",
+        desc: "Save your favorite plants and gardening products for future purchases and easy access anytime.",
+        phone: "/caseimg/Hightlights_img5.svg",
     },
     {
         id: "06",
-        title: "Contact & Team Assignment",
-        desc: "Add surveyors, contractors, agents, and contacts easily to streamline collaboration and claim handling workflows.",
-        phone: "/Letimg/360-iPhone6.svg",
+        title: "Easy Plant Browsing",
+        desc: "Explore multiple categories of plants and gardening products through a smooth and organized shopping experience.",
+        phone: "/caseimg/Hightlights_img6.svg",
     }
 ];
 
@@ -71,11 +71,11 @@ export default function Highlights() {
                 <div className="w-full max-w-[1400px] mx-auto relative mt-[80px] mb-[80px]">
                     {/* Huge Faint Watermark Text */}
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[30px] sm:text-[50px] md:text-[110px] lg:text-[110px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-[50px]">
-                        ESSENTIAL HIGHLIGHTS
+                        NEWNESS HIGHLIGHTS
                     </div>
                     {/* Title */}
                     <h2 className="text-[40px] font-bold text-[#111827] mb-12 relative z-20 xl:ml-10 -pt-[100px] whitespace-nowrap">
-                        Essential Highlights
+                        Newness Highlights
                     </h2>
 
                     {/* Global wrapper for absolute positioning (desktop) */}
@@ -105,7 +105,7 @@ export default function Highlights() {
                                             </div>
 
                                             {/* Left Dashed Line matched perfectly to reference */}
-                                            <div className="absolute top-[18%] left-[10%] w-[21%] h-[15%] border-t-[2px] border-l-[2px] border-dashed border-[#111827] opacity-80 rounded-tl-lg pointer-events-none"></div>
+                                            <div className="absolute top-[18%] left-[10%] w-[15%] h-[13%] border-t-[2px] border-l-[2px] border-dashed border-[#111827] opacity-80 rounded-tl-lg pointer-events-none"></div>
 
                                             <div className="absolute top-[3%] left-[26%] z-20 w-[24%] max-w-[290px]">
                                                 <Image
@@ -134,7 +134,7 @@ export default function Highlights() {
                                             </div>
 
                                             {/* Right Dashed Line matched perfectly to reference */}
-                                            <div className="absolute top-[84%] left-[60%] w-[25%] h-[10%] border-b-[2px] border-r-[2px] border-dashed border-[#111827] opacity-80 rounded-br-lg pointer-events-none transform -translate-y-full"></div>
+                                            <div className="absolute top-[84%] left-[60%] w-[25%] h-[14%] border-b-[2px] border-r-[2px] border-dashed border-[#111827] opacity-80 rounded-br-lg pointer-events-none transform -translate-y-full"></div>
 
                                             <div className="absolute top-[52%] left-[74%] w-[25%] z-10">
                                                 <div className="relative">
