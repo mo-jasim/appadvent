@@ -48,7 +48,7 @@ jobs:
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/main-appadvent:latest
             docker rm -f main-appadvent || true
             docker run -d \
-              --name appadvent \
+              --name main-appadvent \
               --restart always \
               -p 3050:3000 \
               ${{ secrets.DOCKERHUB_USERNAME }}/main-appadvent:latest
