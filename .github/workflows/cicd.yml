@@ -6,7 +6,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: [self-hosted, label-to-match, main-appadvent]
+    runs-on: [self-hosted, Linux, X64]
 
     steps:
       - name: GitHub Code Checkout
@@ -16,9 +16,9 @@ jobs:
         run: |
           docker build -t main-appadvent:latest .
           docker rm -f main-appadvent || true
-
           docker run -d \
             --name main-appadvent \
             --restart always \
             -p 3050:3000 \
             main-appadvent:latest
+          docker image prune -f
