@@ -66,6 +66,6 @@ jobs:
                       docker run -d \
                           --name appadvent \
                           --restart always \
-                          -p 3005:3000 \
+                          -p 3050:3000 \
                           appadvent:${{ github.sha }}
                       rm -f /tmp/appadvent-image.tar
