@@ -3,53 +3,72 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 const projects = [
     {
-        image: "/images/re1.png",
-        title: "Freshup-Social networking app",
+        image: "/images/p5.png",
+        title: "Detect microplastic",
         completionTime: "3 Months",
         platform: "Application",
         viewText: "Full details",
-        viewLink: "#",
-        category: "Social Media",
+        viewLink: "/portfolio/Detect-microplastic",
+        category: "Utility",
     },
     {
-        image: "/images/re2.png",
-        title: "North-East Gym",
+        image: "/images/p9.png",
+        title: "Freshup – Social networking app",
         completionTime: "3 Months",
         platform: "Application",
         viewText: "Full details",
-        viewLink: "#",
-        category: "Fitness App",
-    },
-    {
-        image: "/images/re3.png",
-        title: "Freshup-Social networking",
-        completionTime: "3 Months",
-        platform: "Application",
-        viewText: "Full details",
-        viewLink: "#",
+        viewLink: "/portfolio/Freshup",
         category: "Social Network",
     },
     {
-        image: "/images/re1.png",
-        title: "Travel Buddy",
-        completionTime: "4 Months",
-        platform: "Web & App",
+        image: "/images/p8.png",
+        title: "Goalkick – Social networking app",
+        completionTime: "3 Months",
+        platform: "Application",
         viewText: "Full details",
-        viewLink: "#",
-        category: "Travel",
+        viewLink: "/portfolio/Goalkick",
+        category: "Social Network",
     },
     {
-        image: "/images/re2.png",
-        title: "E-Shop Pro",
-        completionTime: "2 Months",
+        image: "/images/p4.png",
+        title: "Letramway",
+        completionTime: "3 Months",
         platform: "Website",
         viewText: "Full details",
-        viewLink: "#",
+        viewLink: "/portfolio/Letramway",
+        category: "Website",
+    },
+    {
+        image: "/Letimg/Newness.svg",
+        title: "Newness",
+        completionTime: "3 Months",
+        platform: "Application",
+        viewText: "Full details",
+        viewLink: "/portfolio/Newness",
         category: "E-Commerce",
     },
+    {
+        image: "/images/p3.png",
+        title: "Privicam – storage privacy app",
+        completionTime: "3 Months",
+        platform: "Application",
+        viewText: "Full details",
+        viewLink: "/portfolio/Privicam",
+        category: "Utility",
+    },
+    {
+        image: "/Letimg/Queue-home-img.svg",
+        title: "QMS — Smart Queue Management System",
+        completionTime: "3 Months",
+        platform: "Application",
+        viewText: "Full details",
+        viewLink: "/portfolio/Queue-Management-System",
+        category: "Management",
+    }
 ];
 
 const OurProjectsSection = () => {
@@ -129,48 +148,49 @@ const OurProjectsSection = () => {
                                             : "min-w-[calc(33.333%-16px)]"
                                         } border border-gray-300 rounded-[20px] overflow-hidden flex flex-col hover:shadow-lg transition-shadow duration-300`}
                                 >
-                                    <div className="p-4 pb-0 bg-white">
-                                        <div className="relative h-[250px] w-full rounded-[16px] overflow-hidden bg-gray-30">
-                                            <Image
-                                                src={project.image}
-                                                alt={project.title}
-                                                fill
-                                                className="object-cover hover:scale-105 transition-transform duration-500"
-                                            />
-                                        </div>
-                                    </div>
-
-                                    <div className="p-6 flex flex-col flex-grow bg-white">
-                                        <h3 className="font-bold text-[20px] md:text-[22px] mb-6 line-clamp-1">
-                                            {project.title}
-                                        </h3>
-
-                                        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between text-sm text-gray-500 pt-4 border-t border-gray-300 mt-auto gap-4 sm:gap-0">
-                                            <div className="flex flex-col sm:pr-4 sm:border-r border-gray-300 w-full sm:w-auto">
-                                                <span className="text-black mb-1 whitespace-nowrap">
-                                                    Completion Time
-                                                </span>
-                                                <span className="font-bold text-black">{project.completionTime}</span>
-                                            </div>
-                                            <div className="flex flex-col sm:px-4 sm:border-r border-gray-300 w-full sm:w-auto">
-                                                <span className="text-black mb-1 whitespace-nowrap">
-                                                    Platform
-                                                </span>
-                                                <span className="font-bold text-black">{project.platform}</span>
-                                            </div>
-                                            <div className="flex flex-col sm:pl-4 items-start w-full sm:w-auto">
-                                                <span className="text-black mb-1 whitespace-nowrap">
-                                                    View
-                                                </span>
-                                                <a
-                                                    href={project.viewLink}
-                                                    className="text-[#32B9E9] underline font-medium hover:text-[#2da8d5] whitespace-nowrap"
-                                                >
-                                                    <span className="font-bold text-black">{project.viewText}</span>
-                                                </a>
+                                    <Link href={project.viewLink} className="flex flex-col flex-grow">
+                                        <div className="p-4 pb-0 bg-white">
+                                            <div className="relative h-[250px] w-full rounded-[16px] overflow-hidden bg-gray-30">
+                                                <Image
+                                                    src={project.image}
+                                                    alt={project.title}
+                                                    fill
+                                                    className="object-cover hover:scale-105 transition-transform duration-500"
+                                                />
                                             </div>
                                         </div>
-                                    </div>
+
+                                        <div className="p-6 flex flex-col flex-grow bg-white">
+                                            <h3 className="font-bold text-[20px] md:text-[22px] mb-6 line-clamp-1">
+                                                {project.title}
+                                            </h3>
+
+                                            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between text-sm text-gray-500 pt-4 border-t border-gray-300 mt-auto gap-4 sm:gap-0">
+                                                <div className="flex flex-col sm:pr-4 sm:border-r border-gray-300 w-full sm:w-auto">
+                                                    <span className="text-black mb-1 whitespace-nowrap">
+                                                        Completion Time
+                                                    </span>
+                                                    <span className="font-bold text-black">{project.completionTime}</span>
+                                                </div>
+                                                <div className="flex flex-col sm:px-4 sm:border-r border-gray-300 w-full sm:w-auto">
+                                                    <span className="text-black mb-1 whitespace-nowrap">
+                                                        Platform
+                                                    </span>
+                                                    <span className="font-bold text-black">{project.platform}</span>
+                                                </div>
+                                                <div className="flex flex-col sm:pl-4 items-start w-full sm:w-auto">
+                                                    <span className="text-black mb-1 whitespace-nowrap">
+                                                        View
+                                                    </span>
+                                                    <span
+                                                        className="text-[#32B9E9] underline font-medium hover:text-[#2da8d5] whitespace-nowrap"
+                                                    >
+                                                        <span className="font-bold text-black">{project.viewText}</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </Link>
                                 </motion.div>
                             ))}
                         </AnimatePresence>

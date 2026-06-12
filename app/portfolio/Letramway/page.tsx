@@ -211,7 +211,7 @@ export default function Letramway() {
                   {/* 2x2 Grid */}
                   <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 md:gap-y-16">
                      <div className="flex items-start gap-5 group">
-                        <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 transition-colors duration-300">
+                        <div className="w-12 h-12 rounded-xl flex shrink-0 transition-colors duration-300">
                            <img src="/caseimg/ic_round-restaurant-menu.svg" alt="Online Reservation Integration" className="w-6 h-6" />
                         </div>
                         <div>
@@ -223,7 +223,7 @@ export default function Letramway() {
                      </div>
 
                      <div className="flex items-start gap-5 group">
-                        <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 transition-colors duration-300">
+                        <div className="w-12 h-12 rounded-xl flex shrink-0 transition-colors duration-300">
                            <img src="/caseimg/ic_round-restaurant-menu.svg" alt="Online Reservation Integration" className="w-6 h-6" />
                         </div>
                         <div>
@@ -235,7 +235,7 @@ export default function Letramway() {
                      </div>
 
                      <div className="flex items-start gap-5 group">
-                        <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 transition-colors duration-300">
+                        <div className="w-12 h-12 rounded-xl flex shrink-0 transition-colors duration-300">
                            <img src="/caseimg/ic_round-restaurant-menu.svg" alt="Online Reservation Integration" className="w-6 h-6" />
                         </div>
                         <div>
@@ -247,7 +247,7 @@ export default function Letramway() {
                      </div>
 
                      <div className="flex items-start gap-5 group">
-                        <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0  transition-colors duration-300">
+                        <div className="w-12 h-12 rounded-xl flex shrink-0 transition-colors duration-300">
                            <img src="/caseimg/ic_round-restaurant-menu.svg" alt="Online Reservation Integration" className="w-6 h-6" />
                         </div>
                         <div>
@@ -291,7 +291,7 @@ export default function Letramway() {
                               { title: "Easy Access to Information", desc: "Key details like opening hours and contact info are placed prominently to help customers plan their visit." }
                            ].map((item, idx) => (
                               <div key={idx} className="flex items-start gap-4 group">
-                                 <div className="mt-1">
+                                 <div className="w-6 h-6 rounded-xl flex shrink-0 -mt-3">
                                     <img src="/Letimg/ic_round-restaurant-menu.svg" alt="icon" className="w-12 h-12" />
                                  </div>
                                  <div>

@@ -14,18 +14,75 @@ const servicesData = [
   { href: "services/mobile-app-development", title: "Mobile App Development", desc: "We develop mobile apps for iOS and Android using Swift, Kotlin, and React Native. Our secure apps ensure a great user experience...", icon: "/images/Ico2.svg" },
   { href: "services/staff-augmentation", title: "Staff Augmentation", desc: "Appadvent offers staff augmentation services to help you quickly scale your team with highly skilled professionals...", icon: "/images/Ico3.svg" },
   { href: "services/digital-marketing", title: "Digital Marketing", desc: "We offer SEO, social media, copywriting, and keyword optimization to boost your website's ranking and audience reach...", icon: "/images/Ico4.svg" },
-  { href: "services/support-maintenance", title: "Support & Maintenance", desc: "We provide ongoing support and maintenance to ensure your web and mobile applications operate ...", icon: "/images/Ico5.svg" },
+  { href: "services/custom-based-services/Software-Maintenance", title: "Support & Maintenance", desc: "We provide ongoing support and maintenance to ensure your web and mobile applications operate ...", icon: "/images/Ico5.svg" },
   { href: "services/custom-based-services", title: "Custom Based Services", desc: "Our services meet your business needs with tailored solutions. We develop software that enhances productivity...", icon: "/images/Ico6.svg" }
+];
+
+const allIndustries = [
+  {
+    title: "Fintech & Crypto",
+    href: "/industries/Fintech-Crypto",
+    bg: "bg-[#F4FAFD]",
+    icon: "/images/Group 1.svg",
+  },
+  {
+    title: "Retail & E-commerce",
+    href: "/industries/Ecommerce",
+    bg: "bg-[#FDFAEA]",
+    icon: "/images/Group 2.svg",
+  },
+  {
+    title: "Healthcare",
+    href: "/industries/Health-&-pharmacy",
+    bg: "bg-[#FDF1F3]",
+    icon: "/images/Group 3.svg",
+  },
+  {
+    title: "Finance & Banking",
+    href: "/industries/Finance-&-Banking",
+    bg: "bg-[#F2FCF9]",
+    icon: "/images/Finance.svg",
+  },
+  {
+    title: "Social & Community",
+    href: "/industries/Social-&-Community",
+    bg: "bg-[#F4FAFD]",
+    icon: "/images/social.svg",
+  },
+  {
+    title: "Media & Entertainment",
+    href: "/industries/Media-&-ENtertainment",
+    bg: "bg-[#FDFAEA]",
+    icon: "/images/media.svg",
+  },
+  {
+    title: "Consumer Internet",
+    href: "/industries/Consumer-internet",
+    bg: "bg-[#FDF1F3]",
+    icon: "/images/iconoir_internet.svg",
+  }
 ];
 
 const HomePage = () => {
   const [mounted, setMounted] = useState(false);
   const [imageKeys, setImageKeys] = useState<number[]>(Array(6).fill(0));
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentIndustryIndex, setCurrentIndustryIndex] = useState(0);
+  const [isFlickering, setIsFlickering] = useState(false);
 
   useEffect(() => {
     setMounted(true);
     setImageKeys(Array(6).fill(Date.now()));
+
+    const interval = setInterval(() => {
+      setIsFlickering(true);
+      setTimeout(() => {
+        setCurrentIndustryIndex((prev) => (prev + 1) % allIndustries.length);
+        setIsFlickering(false);
+      }, 500); // 1.5 seconds to fade out
+    }, 3000); // 6 seconds total between shifts
+
+    return () => clearInterval(interval);
   }, []);
 
   const handleHover = (index: number): void => {
@@ -112,7 +169,7 @@ const HomePage = () => {
         {/* Cards */}
         <div className="mt-7 grid gap-6 max-w-6xl mx-auto px-4 sm:px-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {servicesData.map((service, index) => (
-            <Link key={index} href={service.href} className="block h-full group" onMouseEnter={() => handleHover(index)}>
+            <Link key={index} href={service.href} className="block h-full group  bg-white rounded-xl" onMouseEnter={() => handleHover(index)}>
               <div className="h-full pt-8 pb-3 px-6 flex flex-col items-center justify-between border border-[#F2F2F2] rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
                 <div className="flex flex-col items-center flex-grow">
                   <Image
@@ -138,8 +195,8 @@ const HomePage = () => {
         </div>
       </section>
       {/* Our Development Process */}
-
       <Designing1 />
+
       {/* Industries We Cater To */}
       <section className="w-full relative lg:pb-[80px]">
         {/* Full-bleed 50/50 background */}
@@ -166,83 +223,30 @@ const HomePage = () => {
 
         {/* Floating Cards Array */}
         <div className="relative z-10 mt-8 lg:-mt-[350px] w-full px-4 lg:px-12 pb-12 lg:pb-0">
-          <div className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className={`max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 transition-opacity duration-500 ease-in-out ${isFlickering ? 'opacity-0' : 'opacity-100'}`}>
 
-            {/* Fintech & Crypto */}
-            <Link href="#" className="block w-full group">
-              <div className="bg-[#F4FAFD] rounded-[20px] p-8 sm:p-10 shadow-sm h-auto flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300 min-h-[260px]">
-                <div className="flex flex-col items-start">
-                  <Image
-                    src="/images/Group 1.svg"
-                    alt="Fintech"
-                    width={56}
-                    height={56}
-                    className="mb-8"
-                  />
-                  <p className="font-bold text-[20px] text-[#0A1A2E]">Fintech & Crypto</p>
-                </div>
-                <div className="mt-8 flex items-center gap-2 text-[#32B9E9] text-[15px] font-semibold">
-                  Learn More <ArrowRight className="w-[18px] h-[18px] transition-transform duration-300 group-hover:translate-x-1.5" strokeWidth={2} />
-                </div>
-              </div>
-            </Link>
-
-            {/* Retail & E-commerce */}
-            <Link href="#" className="block w-full group">
-              <div className="bg-[#FDFAEA] rounded-[20px] p-8 sm:p-10 shadow-sm h-auto flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300 min-h-[260px]">
-                <div className="flex flex-col items-start">
-                  <Image
-                    src="/images/Group 2.svg"
-                    alt="Retail"
-                    width={56}
-                    height={56}
-                    className="mb-8"
-                  />
-                  <p className="font-bold text-[20px] text-[#0A1A2E] whitespace-nowrap">Retail & E-commerce</p>
-                </div>
-                <div className="mt-8 flex items-center gap-2 text-[#32B9E9] text-[15px] font-semibold">
-                  Learn More <ArrowRight className="w-[18px] h-[18px] transition-transform duration-300 group-hover:translate-x-1.5" strokeWidth={2} />
-                </div>
-              </div>
-            </Link>
-
-            {/* Healthcare */}
-            <Link href="#" className="block w-full group">
-              <div className="bg-[#FDF1F3] rounded-[20px] p-8 sm:p-10 shadow-sm h-auto flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300 min-h-[260px]">
-                <div className="flex flex-col items-start">
-                  <Image
-                    src="/images/Group 3.svg"
-                    alt="Healthcare"
-                    width={56}
-                    height={56}
-                    className="mb-8"
-                  />
-                  <p className="font-bold text-[20px] text-[#0A1A2E]">Healthcare</p>
-                </div>
-                <div className="mt-8 flex items-center gap-2 text-[#32B9E9] text-[15px] font-semibold">
-                  Learn More <ArrowRight className="w-[18px] h-[18px] transition-transform duration-300 group-hover:translate-x-1.5" strokeWidth={2} />
-                </div>
-              </div>
-            </Link>
-
-            {/* Finance & Banking */}
-            <Link href="#" className="block w-full group">
-              <div className="bg-[#F2FCF9] rounded-[20px] p-8 sm:p-10 shadow-sm h-auto flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300 min-h-[260px]">
-                <div className="flex flex-col items-start">
-                  <Image
-                    src="/images/Finance.svg"
-                    alt="Finance"
-                    width={56}
-                    height={56}
-                    className="mb-8"
-                  />
-                  <p className="font-bold text-[20px] text-[#0A1A2E]">Finance & Banking</p>
-                </div>
-                <div className="mt-8 flex items-center gap-2 text-[#32B9E9] text-[15px] font-semibold">
-                  Learn More <ArrowRight className="w-[18px] h-[18px] transition-transform duration-300 group-hover:translate-x-1.5" strokeWidth={2} />
-                </div>
-              </div>
-            </Link>
+            {Array.from({ length: 4 }).map((_, i) => {
+              const item = allIndustries[(currentIndustryIndex + i) % allIndustries.length];
+              return (
+                <Link key={i} href={item.href} className="block w-full group h-[260px]">
+                  <div className={`${item.bg} rounded-[20px] p-8 sm:p-10 shadow-sm h-full flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300`}>
+                    <div className="flex flex-col items-start">
+                      <Image
+                        src={item.icon}
+                        alt={item.title}
+                        width={56}
+                        height={56}
+                        className="mb-8"
+                      />
+                      <p className={`font-bold text-[18px] lg:text-[20px] text-[#0A1A2E] leading-tight ${item.title === 'Retail & E-commerce' ? 'whitespace-nowrap' : ''}`}>{item.title}</p>
+                    </div>
+                    <div className="mt-4 flex items-center gap-2 text-[#32B9E9] text-[15px] font-semibold">
+                      Learn More <ArrowRight className="w-[18px] h-[18px] transition-transform duration-300 group-hover:translate-x-1.5" strokeWidth={2} />
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
 
           </div>
         </div>

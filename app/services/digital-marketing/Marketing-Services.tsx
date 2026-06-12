@@ -13,15 +13,15 @@ const MarketingServices = () => {
     const skills = [
         {
             title: "360° Digital Marketing",
-            description: "Helps our clients in designing dynamic and secure applications. With a keen eye for detail and commitment to excellence, our team delivers enterprise-level solutions tailored to your unique requirements.",
+            description: "helps our clients in designing dynamic and secure applications using the Microsoft .NET framework. With a keen eye for detail and a commitment to excellence, our developers develop enterprise-level solutions. Our dedicated team of .NET developers ensures the delivery of high-performance applications tailored to meet the unique requirements of your projects. ",
         },
         {
             title: "Search Engine Optimization",
-            description: "Empowers businesses to create robust, cross-platform applications. Our skilled developers leverage the extensive ecosystem to build scalable solutions that enhance productivity and performance.",
+            description: "empowers businesses to create robust, cross-platform applications with the Java programming language. Our skilled developers leverage the extensive Java ecosystem to build scalable solutions that enhance productivity and performance. By focusing on best practices and innovative design, we deliver applications that stand the test of time.",
         },
         {
             title: "Social Media Marketing",
-            description: "Enables rapid application development through simple syntax and powerful libraries. Our experts specialize in crafting data-driven applications, leveraging modern frameworks.",
+            description: "enables rapid application development through its simple syntax and powerful libraries. Our Python experts specialize in crafting data-driven applications, leveraging frameworks like Django and Flask to create dynamic web solutions. We prioritize clean coding and modular design to ensure maintainability and scalability for your business needs.  coding and modular design.",
         },
         {
             title: "Email Marketing",

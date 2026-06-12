@@ -9,12 +9,12 @@ import {
     Apple,
     PlayCircle,
 } from "lucide-react";
-import Highlights from "../../services/case-study/CRMcase/HIghtlights";
 import OurProjectsSection from "../../services/website-designing-development/Our-Projects-Section";
 import CompaniesLove from "../../services/website-designing-development/Companies-Love";
 import ConsultationModal from "@/components/ConsultationModal";
 import Technology from "../Goalkick/technology";
 import Designing1 from "@/components/Designing1";
+import Highlights from "./Highlights";
 
 export default function GoalkickCaseStudy() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -195,7 +195,7 @@ export default function GoalkickCaseStudy() {
                                         "Network with enthusiasts, creators, and communities worldwide through seamless group discussions and private chats.",
                                     ].map((text, i) => (
                                         <div key={i} className="flex items-start gap-4 group">
-                                            <div className="mt-1 shrink-0 w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center group-hover:bg-[#32B9E9] transition-colors duration-300">
+                                            <div className="shrink-0 w-8 h-8 flex ">
                                                 <img src="/caseimg/likeblack.svg" alt="" className="w-5 h-5 object-contain" />
                                             </div>
                                             <p className="text-[#010F14] text-sm sm:text-base md:text-lg leading-relaxed">{text}</p>
@@ -262,7 +262,7 @@ export default function GoalkickCaseStudy() {
                                             "A modern and scalable social platform focused on connectivity, user interaction, community growth, and shared experiences.",
                                         ].map((text, i) => (
                                             <div key={i} className="flex items-start gap-4 group">
-                                                <div className="mt-1 shrink-0 bg-white/10 p-2 rounded-lg group-hover:bg-[#32B9E9] transition-colors">
+                                                <div className="flex shrink-0">
                                                     <img src="/caseimg/likewhite.svg" alt="" className="w-5 h-5" />
                                                 </div>
                                                 <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">{text}</p>

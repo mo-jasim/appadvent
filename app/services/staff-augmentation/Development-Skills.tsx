@@ -13,65 +13,53 @@ const DevelopmentSkills = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-10 pb-1 h-full max-w-7xl mx-auto">
                         {[
                             {
-                                titleIcon: "/staf-images/staf9.svg",
-                                title: 'Frameworks',
+                                titleIcon: "/staf-images/img-1.svg",
+                                title: 'Programming Langugaes',
                             },
                             {
-                                titleIcon: "/staf-images/staf10.svg",
-                                title: 'Libararies ',
+                                titleIcon: "/staf-images/img-2.svg",
+                                title: 'Web Frameworks',
                             },
                             {
-                                titleIcon: "/staf-images/staf11.svg",
-                                title: 'Server Management ',
-                            },
-                            {
-                                titleIcon: "/staf-images/staf12.svg",
-                                title: 'Architecture',
-                            },
-                            {
-                                titleIcon: "/staf-images/staf13.svg",
-                                title: 'Data base',
-                            },
-                            {
-                                titleIcon: "/staf-images/staf9.svg",
-                                title: 'ORM',
-                            },
-                            {
-                                titleIcon: "/staf-images/staf9.svg",
+                                titleIcon: "/staf-images/img-3.svg",
                                 title: 'Frontend Frameworks',
                             },
                             {
-                                titleIcon: "/staf-images/staf9.svg",
-                                title: 'Message Brokers',
+                                titleIcon: "/staf-images/img-4.svg",
+                                title: 'Mobile App Frameworks',
                             },
                             {
-                                titleIcon: "/staf-images/staf9.svg",
-                                title: 'Monitoring tools',
+                                titleIcon: "/staf-images/img-5.svg",
+                                title: 'Data base Systems',
                             },
                             {
-                                titleIcon: "/staf-images/staf9.svg",
-                                title: 'API Documentation',
+                                titleIcon: "/staf-images/img-6.svg",
+                                title: 'Version Control',
                             },
                             {
-                                titleIcon: "/staf-images/staf9.svg",
+                                titleIcon: "/staf-images/img-7.svg",
+                                title: 'Build Tools',
+                            },
+                            {
+                                titleIcon: "/staf-images/img-8.svg",
+                                title: 'Continuous Integration',
+                            },
+                            {
+                                titleIcon: "/staf-images/img-9.svg",
                                 title: 'Web servers',
                             },
                             {
-                                titleIcon: "/staf-images/staf9.svg",
-                                title: 'Deployment Tools',
+                                titleIcon: "/staf-images/img-10.svg",
+                                title: 'API Documentation',
                             },
                             {
-                                titleIcon: "/staf-images/staf9.svg",
-                                title: 'DevOps Tools',
+                                titleIcon: "/staf-images/img-11.svg",
+                                title: 'Messaging queue',
                             },
                             {
-                                titleIcon: "/staf-images/staf9.svg",
-                                title: 'Analytics Tools',
-                            },
-                            {
-                                titleIcon: "/staf-images/staf9.svg",
-                                title: 'SEO Tools',
-                            },
+                                titleIcon: "/staf-images/img-12.svg",
+                                title: 'Testing Frameworks',
+                            }
                         ].map((item, index) => (
                             <div key={index} className="bg-white border border-gray-100 text-black p-6 sm:p-8 rounded-[20px] flex flex-col items-center text-center gap-4 hover:shadow-xl transition-shadow">
                                 <div className="flex items-center gap-2">

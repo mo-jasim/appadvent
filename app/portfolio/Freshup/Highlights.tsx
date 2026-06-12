@@ -5,39 +5,39 @@ import { useState, useEffect } from "react";
 const highlightsData = [
     {
         id: "01",
-        title: " Secure Login System",
-        desc: "Access the platform securely through authenticated user login and personalized account management features.",
-        phone: "/caseimg/Detect-Highlightimg1.svg",
+        title: "Social Networking Experience",
+        desc: "Discover new people, expand connections, and build meaningful social interactions through dynamic networking features.",
+        phone: "/Letimg/Freshup-iPhone1.svg",
     },
     {
         id: "02",
-        title: "Forgot Password Recovery",
-        desc: "Recover accounts easily with a secure password reset and account recovery functionality.",
-        phone: "/caseimg/Detect-Highlightimg2.svg",
+        title: "Multimedia Content Sharing",
+        desc: "Post and share photos, videos, updates, and social content directly within the platform.",
+        phone: "/Letimg/Freshup-iPhone2.svg",
     },
     {
         id: "03",
-        title: "Smart Machine Integration",
-        desc: "Seamlessly connect with water testing hardware for efficient sample collection, monitoring, and reporting workflows.",
-        phone: "/caseimg/Detect-iPhone.svg",
+        title: "Community & Group Creation",
+        desc: "Create custom communities based on interests, hobbies, lifestyles, automotive topics, and social engagement. ",
+        phone: "/Letimg/Freshup-iPhone3.svg",
     },
     {
         id: "04",
-        title: "Automated Report Generation",
-        desc: "Generate detailed digital reports with sample information, contamination insights, and detection summaries automatically.",
-        phone: "/caseimg/Detect-Best-iPhone2.svg",
+        title: "Donation & Support System",
+        desc: "Support creators, communities, and causes directly through integrated donation and contribution features.",
+        phone: "/Letimg/Freshup-iPhone4.svg",
     },
     {
         id: "05",
-        title: "Microplastic Contamination Analysis",
-        desc: "Identify and monitor microplastic particles and harmful impurities present in water sources accurately.",
-        phone: "/caseimg/Detect-Highlightimg5.svg",
+        title: "Community Subscriptions & Channel Following",
+        desc: "Subscribe to favorite channels and communities to stay updated with new content, discussions, and activities.",
+        phone: "/Letimg/Freshup-iPhone6.svg",
     },
     {
         id: "06",
-        title: "Real-Time Water Sample Detection",
-        desc: "Analyze water samples instantly through machine-connected smart detection technology and automated processing.",
-        phone: "/caseimg/Detect-Highlightimg6.svg",
+        title: "User Engagement & Tagging System",
+        desc: "Tag friends, interact with posts, and increase community engagement through social interaction tools and notifications.",
+        phone: "/Letimg/Freshup-iPhone5.svg",
     }
 ];
 
@@ -71,11 +71,11 @@ export default function Highlights() {
                 <div className="w-full max-w-[1400px] mx-auto relative mt-[80px] mb-[80px]">
                     {/* Huge Faint Watermark Text */}
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[30px] sm:text-[50px] md:text-[110px] lg:text-[110px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-[50px]">
-                        DETECT MICROPLASTIC
+                        FRESHUP HIGHLIGHTS
                     </div>
                     {/* Title */}
                     <h2 className="text-[40px] font-bold text-[#111827] mb-12 relative z-20 xl:ml-10 -pt-[100px] whitespace-nowrap">
-                        Detect Microplastic Highlights
+                        Freshup Highlights
                     </h2>
 
                     {/* Global wrapper for absolute positioning (desktop) */}
@@ -90,12 +90,12 @@ export default function Highlights() {
                                     {/* ---------- LEFT ITEM ---------- */}
                                     {page.left && (
                                         <>
-                                            <div className="absolute top-[32%] left-[2%] w-[25%] z-10">
+                                            <div className="absolute top-[32%] left-[2%] w-[23%] z-40">
                                                 <div className="relative">
                                                     <span className="absolute -top-[80px] -left-[10px] text-[160px] font-bold text-[#939192]/20 z-[-1] leading-none select-none tracking-tighter">
                                                         {page.left.id}
                                                     </span>
-                                                    <h3 className="text-[22px] font-bold text-gray-900 mb-4xl">
+                                                    <h3 className="text-[22px] font-bold text-gray-900 mb-4">
                                                         {page.left.title}
                                                     </h3>
                                                     <p className="text-[15px] text-black leading-relaxed pr-6">
@@ -136,12 +136,12 @@ export default function Highlights() {
                                             {/* Right Dashed Line matched perfectly to reference */}
                                             <div className="absolute top-[84%] left-[60%] w-[25%] h-[14%] border-b-[2px] border-r-[2px] border-dashed border-[#111827] opacity-80 rounded-br-lg pointer-events-none transform -translate-y-full"></div>
 
-                                            <div className="absolute top-[52%] left-[74%] w-[25%] z-10">
+                                            <div className="absolute top-[52%] left-[74%] w-[25%] z-40">
                                                 <div className="relative">
                                                     <span className="absolute -top-[80px] -left-[10px] text-[160px] font-bold text-[#939192]/20 z-[-1] leading-none select-none tracking-tighter">
                                                         {page.right.id}
                                                     </span>
-                                                    <h3 className="text-[22px] font-bold text-gray-900 mb-4 xl:whitespace-nowrap">
+                                                    <h3 className="text-[22px] font-bold text-gray-900 mb-4">
                                                         {page.right.title}
                                                     </h3>
                                                     <p className="text-[15px] text-black leading-relaxed pr-6">

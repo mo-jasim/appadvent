@@ -290,7 +290,7 @@ export default function Letramway() {
                                         { desc: "Scalable SaaS architecture with web, mobile, and kiosk integration built for banks, hospitals, enterprises, and multi-branch operational environments." }
                                     ].map((item, idx) => (
                                         <div key={idx} className="flex items-start gap-4 group">
-                                            <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 -mt-3 ">
+                                            <div className="w-12 h-12 rounded-xl flex ">
                                                 <img src="/Letimg/Opportunities-imgwhite.svg" alt="icon" className="w-6 h-6" />
                                             </div>
                                             <div>

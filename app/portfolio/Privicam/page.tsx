@@ -189,11 +189,11 @@ export default function GoalkickCaseStudy() {
                                     {[
                                         "Protect your personal photos and videos with advanced password and biometric security for complete privacy and peace of mind.",
                                         "Store all captured media directly on your device without any cloud uploads, third-party access, or unwanted tracking.",
-                                        " Organize your private content inside secure folders designed to keep sensitive memories safe from unauthorized access.",
+                                        "Organize your private content inside secure folders designed to keep sensitive memories safe from unauthorized access.",
                                         "Enjoy a clean, fast, and privacy-first camera experience built for users who value security, control, and confidentiality.",
                                     ].map((text, i) => (
                                         <div key={i} className="flex items-start gap-4 group">
-                                            <div className="mt-1 shrink-0 w-8 h-8 flex items-center justify-center transition-colors duration-300">
+                                            <div className="mt-1 shrink-0 w-8 h-8 flex">
                                                 <img src="/caseimg/priviimg-fan.svg" alt="" className="w-5 h-5 object-contain" />
                                             </div>
                                             <p className="text-[#010F14] text-sm sm:text-base md:text-lg leading-relaxed">{text}</p>

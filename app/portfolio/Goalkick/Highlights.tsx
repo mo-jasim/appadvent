@@ -1,43 +1,44 @@
 "use client";
+import { Phone } from "lucide-react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const highlightsData = [
     {
         id: "01",
-        title: "Smart Claim Configuration",
-        desc: "Manage inspection timing, routing preferences, addresses, and claim-related settings through a centralized and user-friendly interface.",
-        phone: "/Letimg/360-iPhone1.svg",
+        title: "Personalised Feed",
+        desc: "Goalkick addresses this gap by creating a comprehensive social app for football fans that combines community interaction, real-time updates, and gamified fan engagement.",
+        phone: "/Letimg/Goalkick-iPhone1.svg",
     },
     {
         id: "02",
-        title: "Real-Time Claim Dashboard",
-        desc: "Track claim status, schedules, completed tasks, cancellations, alerts, and operational analytics through visual dashboards.",
-        phone: "/Letimg/360-iPhone2.svg",
+        title: "Interactive Engagement",
+        desc: "Goalkick addresses this gap by creating a comprehensive social app for football fans that combines community interaction, real-time updates, and gamified fan engagement.",
+        phone: "/Letimg/Goalkick-iPhone2.svg",
     },
     {
         id: "03",
-        title: "Property Damage Documentation",
-        desc: "Capture and organize property images, inspection details, and supporting evidence for accurate claim verification.",
-        phone: "/Letimg/360-iPhone3.svg",
+        title: "Match Discussions & Banter",
+        desc: "Goalkick addresses this gap by creating a comprehensive social app for football fans that combines community interaction, real-time updates, and gamified fan engagement..",
+        phone: "/Letimg/Goalkick-iPhone1.svg",
     },
     {
         id: "04",
-        title: "Flexible Subscription & SaaS Management",
-        desc: "Offer scalable subscription plans and cloud-based access designed for insurance companies, agents, and enterprise operations.",
-        phone: "/Letimg/360-iPhone4.svg",
+        title: "Real-Time Updates",
+        desc: "Goalkick addresses this gap by creating a comprehensive social app for football fans that combines community interaction, real-time updates, and gamified fan engagement.",
+        phone: "/Letimg/Goalkick-iPhone2.svg",
     },
     {
         id: "05",
-        title: "Client & Policy Information Management",
-        desc: "Access complete policyholder details, claim information, schedules, and risk-related data from a structured digital system.",
-        phone: "/Letimg/360-iPhone5.svg",
+        title: "Friendship & Networking",
+        desc: "Goalkick addresses this gap by creating a comprehensive social app for football fans that combines community interaction, real-time updates, and gamified fan engagement.",
+        phone: "/Letimg/Goalkick-iPhone1.svg",
     },
     {
         id: "06",
-        title: "Contact & Team Assignment",
-        desc: "Add surveyors, contractors, agents, and contacts easily to streamline collaboration and claim handling workflows.",
-        phone: "/Letimg/360-iPhone6.svg",
+        title: "Football Community & Groups",
+        desc: "Goalkick addresses this gap by creating a comprehensive social app for football fans that combines community interaction, real-time updates, and gamified fan engagement.",
+        phone: "/Letimg/Goalkick-iPhone2.svg",
     }
 ];
 

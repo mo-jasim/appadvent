@@ -193,7 +193,7 @@ export default function GoalkickCaseStudy() {
                               "The potential for building meaningful football communities remains largely untapped by traditional social platforms.",
                            ].map((text, i) => (
                               <div key={i} className="flex items-start gap-4 group">
-                                 <div className="mt-1 shrink-0 w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center group-hover:bg-[#32B9E9] transition-colors duration-300">
+                                 <div className="mt-1 shrink-0  flex items-center justify-center ">
                                     <img src="/Letimg/football.svg" alt="" className="w-5 h-5 object-contain" />
                                  </div>
                                  <p className="text-[#010F14] text-sm sm:text-base md:text-lg leading-relaxed">{text}</p>
@@ -242,7 +242,7 @@ export default function GoalkickCaseStudy() {
                                  "With personalized feeds and recognition through points, Goalkick delivers a unique, rewarding experience.",
                               ].map((text, i) => (
                                  <div key={i} className="flex items-start gap-4 group">
-                                    <div className="mt-1 shrink-0 bg-white/10 p-2 rounded-lg group-hover:bg-[#32B9E9] transition-colors">
+                                    <div className="mt-1 shrink-0 ">
                                        <img src="/Letimg/football1.svg" alt="" className="w-5 h-5" />
                                     </div>
                                     <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">{text}</p>

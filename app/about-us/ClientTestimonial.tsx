@@ -112,11 +112,34 @@ const ClientTestimonial = () => {
                             </div>
 
                             {/* Testimonial Text */}
-                            <div className="relative mt-2">
+                            <div className="relative mt-2 mb-4">
                                 <p className="text-[#475569] text-[16px] sm:text-[16px] leading-[1.5] lg:leading-[1.6] font-regular max-w-[150%] font-THICCCBOI">
                                     {testimonial.quote}
                                 </p>
                             </div>
+
+                            {/* Trustpilot Rating */}
+                            <a
+                                href="https://www.trustpilot.com/review/appadvent.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="mt-2 flex flex-col gap-1.5 cursor-pointer hover:opacity-80 transition-opacity w-fit"
+                            >
+                                <h2 className='text-[16px] sm:text-[20px] font-bold text-[#1C1C1C] leading-none'>Trustpilot</h2>
+                                <div className="flex items-center gap-3">
+                                    <div className="flex gap-[2px]">
+                                        {[1, 2, 3, 4].map((i) => (
+                                            <div key={`tp-${testimonial.id}-${i}`} className="bg-[#00B67A] w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center">
+                                                <Star className="w-4 h-4 sm:w-5 sm:h-5 text-white fill-white" />
+                                            </div>
+                                        ))}
+                                        <div className="bg-[#DCDCE6] w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center">
+                                            <Star className="w-4 h-4 sm:w-5 sm:h-5 text-white fill-white" />
+                                        </div>
+                                    </div>
+                                    <span className="text-[18px] sm:text-[20px] font-medium text-[#1C1C1C]">4.1</span>
+                                </div>
+                            </a>
 
                         </div>
 

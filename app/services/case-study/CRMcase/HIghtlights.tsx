@@ -95,7 +95,7 @@ export default function Highlights() {
                                                     <span className="absolute -top-[80px] -left-[10px] text-[160px] font-bold text-[#939192]/20 z-[-1] leading-none select-none tracking-tighter">
                                                         {page.left.id}
                                                     </span>
-                                                    <h3 className="text-[22px] font-bold text-gray-900 mb-4 xl:whitespace-nowrap">
+                                                    <h3 className="text-[22px] font-bold text-gray-900 mb-4">
                                                         {page.left.title}
                                                     </h3>
                                                     <p className="text-[15px] text-black leading-relaxed pr-6">
@@ -141,7 +141,7 @@ export default function Highlights() {
                                                     <span className="absolute -top-[80px] -left-[10px] text-[160px] font-bold text-[#939192]/20 z-[-1] leading-none select-none tracking-tighter">
                                                         {page.right.id}
                                                     </span>
-                                                    <h3 className="text-[22px] font-bold text-gray-900 mb-4 xl:whitespace-nowrap">
+                                                    <h3 className="text-[22px] font-bold text-gray-900 mb-4">
                                                         {page.right.title}
                                                     </h3>
                                                     <p className="text-[15px] text-black leading-relaxed pr-6">

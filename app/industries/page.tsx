@@ -10,7 +10,7 @@ const industries = [
         img: "/images/I6.png",
         icon: "/images/Cpu.svg",
         title: "Fintech & Crypto",
-        href: "/services/case-study/Fintech-Crypto",
+        href: "/industries/Fintech-Crypto",
         desc: "We work primarily within the fintech niche and aim to deliver high-quality software solutions with an emphasis on speed, flexibility, and effectiveness.",
     },
     {
