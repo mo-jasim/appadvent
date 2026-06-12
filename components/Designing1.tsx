@@ -130,10 +130,26 @@ export default function Designing1() {
                             style={{ width: 380, height: 620 }}
                         >
 
+                            {/* STATIC DASHED CIRCLE (Fades out on the left) */}
+                            <div
+                                className="absolute pointer-events-none left-[-365px] md:left-[-550px] lg:left-[-365px] 2xl:left-[-465px]"
+                                style={{
+                                    top: 10,
+                                    width: 600,
+                                    height: 600,
+                                    WebkitMaskImage: 'linear-gradient(to right, transparent 0%, transparent 35%, black 60%)',
+                                    maskImage: 'linear-gradient(to right, transparent 0%, transparent 35%, black 60%)'
+                                }}
+                            >
+                                <svg className="absolute pointer-events-none top-0 left-0 w-full h-full" viewBox="0 0 600 600">
+                                    <circle cx="300" cy="300" r="300" fill="none" stroke="#5cb8f0" strokeWidth="2.5" strokeDasharray="8 8" />
+                                </svg>
+                            </div>
+
                             {/* Rotating Wheel Container */}
                             <div
                                 key={`wheel-cycle-${cycleId}`}
-                                className="absolute transition-transform duration-[1000ms] ease-in-out pointer-events-none left-[-365px] 2xl:left-[-465px]"
+                                className="absolute transition-transform duration-[1000ms] ease-in-out pointer-events-none left-[-365px] md:left-[-550px] lg:left-[-365px] 2xl:left-[-465px]"
                                 style={{
                                     top: 10,     // 310 (CY) - 300 (R)
                                     width: 600,
@@ -142,19 +158,27 @@ export default function Designing1() {
                                     transformOrigin: '50% 50%'
                                 }}
                             >
-                                {/* ── FULL DASHED CIRCLE ── */}
+                                {/* ── ARROWS ── */}
                                 <svg
                                     className="absolute pointer-events-none top-0 left-0 w-full h-full"
                                     viewBox="0 0 600 600"
                                 >
-                                    <circle cx="300" cy="300" r="300" fill="none" stroke="#5cb8f0" strokeWidth="2.5" strokeDasharray="8 8" />
-
                                     {/* Arrow heads pointing UPWARDS (counter-clockwise) on the track */}
-                                    {Array.from({ length: 6 }).map((_, i) => (
-                                        <g key={i} transform={`translate(300, 300) rotate(${i * 60 + 30}) translate(300, 0) rotate(90)`}>
-                                            <polygon points="8,6 -8,0 8,-6" fill="#5cb8f0" />
-                                        </g>
-                                    ))}
+                                    {Array.from({ length: 6 }).map((_, i) => {
+                                        let pos = (i - tick + 1) % 6;
+                                        if (pos < 0) pos += 6;
+
+                                        const arrowOpacity = (pos === 0 || pos === 1) ? 1 : 0;
+
+                                        return (
+                                            <g key={i}
+                                                className="transition-opacity duration-[1000ms] ease-in-out"
+                                                style={{ opacity: arrowOpacity }}
+                                                transform={`translate(300, 300) rotate(${i * 60 + 30}) translate(300, 0) rotate(90)`}>
+                                                <polygon points="8,6 -8,0 8,-6" fill="#5cb8f0" />
+                                            </g>
+                                        );
+                                    })}
                                 </svg>
 
                                 {/* ── ALL ARC NODES (Rotating with the wheel!) ── */}
