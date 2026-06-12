@@ -5,50 +5,20 @@ on:
     branches: [main]
 
 jobs:
-  code:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Github Code Checkout
-        uses: actions/checkout@v4
-
-  build-and-push:
-    needs: code
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Login To DockerHub
-        uses: docker/login-action@v3
-        with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_PASSWORD }}
-
-      - name: Build and Tag and Push Docker Image
-        uses: docker/build-push-action@v3
-        with:
-          context: .
-          push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/main-appadvent:latest
-
   deploy:
-    needs: build-and-push
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, label-to-match, main-appadvent]
+
     steps:
-      - name: SSH Login To The Server And Deploy Container
-        uses: appleboy/ssh-action@v1
-        env:
-          DOCKER_USER: ${{ secrets.DOCKERHUB_USERNAME }}
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          envs: DOCKER_USER
-          script: |
-            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/main-appadvent:latest
-            docker rm -f main-appadvent || true
-            docker run -d \
-              --name main-appadvent \
-              --restart always \
-              -p 3050:3000 \
-              ${{ secrets.DOCKERHUB_USERNAME }}/main-appadvent:latest
+      - name: GitHub Code Checkout
+        uses: actions/checkout@v4
+
+      - name: Build and Deploy Local Container
+        run: |
+          docker build -t main-appadvent:latest .
+          docker rm -f main-appadvent || true
+
+          docker run -d \
+            --name main-appadvent \
+            --restart always \
+            -p 3050:3000 \
+            main-appadvent:latest
