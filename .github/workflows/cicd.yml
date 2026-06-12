@@ -51,6 +51,8 @@ jobs:
                   host: ${{ secrets.SSH_HOST }}
                   username: ${{ secrets.SSH_USER }}
                   key: ${{ secrets.SSH_PRIVATE_KEY }}
+                  timeout: 120s
+                  command_timeout: 20m
                   source: appadvent-image.tar
                   target: /tmp
 
@@ -60,12 +62,14 @@ jobs:
                   host: ${{ secrets.SSH_HOST }}
                   username: ${{ secrets.SSH_USER }}
                   key: ${{ secrets.SSH_PRIVATE_KEY }}
+                  timeout: 120s
+                  command_timeout: 20m
                   script: |
                       docker load -i /tmp/appadvent-image.tar
                       docker rm -f appadvent || true
                       docker run -d \
                           --name appadvent \
                           --restart always \
-                          -p 3005:3000 \
+                          -p 3050:3000 \
                           appadvent:${{ github.sha }}
                       rm -f /tmp/appadvent-image.tar
