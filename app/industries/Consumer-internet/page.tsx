@@ -118,7 +118,7 @@ export default function FintechCryptoPage() {
                         <div className="text-center lg:text-left">
                             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.15] tracking-tight mb-6">
                                 Consumer Internet <br className="hidden md:block" />
-                                App Development Solutions111
+                                App Development Solutions
                             </h1>
 
                             <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
@@ -276,7 +276,7 @@ export default function FintechCryptoPage() {
                                         <img src="/Letimg/Component 27.svg" alt="Expertise" className="w-[40px] h-[40px] lg:w-[80px] lg:h-[80px] object-contain" />
                                     ),
                                     title: "Expertise",
-                                    desc: "The team of developers that we have includes only the best and the most experienced specialists who have been working in the sphere of fintech for years, which lets us overcome any difficulties and offer our clients the best solutions.",
+                                    desc: "Our experienced team delivers scalable web and mobile solutions across diverse industries, combining technical excellence, strategic thinking, and user-focused design to create high-performing digital products.",
                                     bg: "#e1f4fa", // Light cyan
                                 },
                                 {
@@ -284,7 +284,7 @@ export default function FintechCryptoPage() {
                                         <img src="/Letimg/Component 26.svg" alt="Innovation" className="w-[40px] h-[40px] lg:w-[80px] lg:h-[80px] object-contain" />
                                     ),
                                     title: "Innovation",
-                                    desc: "We focus on innovation and leveraging the latest technological advancements to deliver exceptional and scalable applications that drive future growth.",
+                                    desc: "We ensure every solution meets the highest quality standards through rigorous testing, performance optimization, security validation, and seamless functionality across devices, platforms, and user experiences.",
                                     bg: "#ffffea", // Light yellow
                                 },
                                 {
@@ -292,7 +292,7 @@ export default function FintechCryptoPage() {
                                         <img src="/Letimg/Component 25.svg" alt="Customization" className="w-[40px] h-[40px] lg:w-[80px] lg:h-[80px] object-contain" />
                                     ),
                                     title: "Customization",
-                                    desc: "Every project is unique. We provide tailored solutions that accurately address your specific business requirements and align seamlessly with your goals.",
+                                    desc: "We provide continuous support, regular updates, performance monitoring, and proactive maintenance services to ensure your digital solutions remain secure, stable, and optimized for long-term growth.",
                                     bg: "#e4faed", // Light green
                                 },
                                 {
@@ -300,7 +300,7 @@ export default function FintechCryptoPage() {
                                         <img src="/Letimg/Component2.svg" alt="Customization" className="w-[40px] h-[40px] lg:w-[80px] lg:h-[80px] object-contain" />
                                     ),
                                     title: "Quality Assurance",
-                                    desc: "Every project is unique. We provide tailored solutions that accurately address your specific business requirements and align seamlessly with your goals.",
+                                    desc: "We leverage modern technologies, creative strategies, and industry-driven insights to build innovative digital solutions that enhance user experiences, improve efficiency, and support evolving business demands.",
                                     bg: "#EEEAFF", // Light green
                                 },
                                 {
@@ -308,7 +308,7 @@ export default function FintechCryptoPage() {
                                         <img src="/Letimg/Component1.svg" alt="Customization" className="w-[40px] h-[40px] lg:w-[80px] lg:h-[80px] object-contain" />
                                     ),
                                     title: "Support & Maintenance",
-                                    desc: "Every project is unique. We provide tailored solutions that accurately address your specific business requirements and align seamlessly with your goals.",
+                                    desc: "We create tailored web and mobile solutions designed around your unique business goals, workflows, and customer needs, ensuring flexibility, scalability, and a personalized digital experience.",
                                     bg: "#FFEAED", // Light green
                                 },
                             ].map((card, index) => {

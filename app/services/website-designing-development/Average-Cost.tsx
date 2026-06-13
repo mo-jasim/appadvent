@@ -13,22 +13,22 @@ const cards: AverageCost[] = [
     {
         title: 'From $20,000',
         Icon: "/SVG6/icons_price 1.svg",
-        desc: 'we works with web portals for different audiences: customers, business partners, ecommerce users, patients, vendors, interest-based communities. '
+        desc: 'Ideal for startups and small businesses seeking a professional online presence. Includes responsive design, essential pages, contact forms, and basic content management functionality. '
     },
     {
         title: 'From $70,000',
         Icon: "/SVG6/icons_price 2.svg",
-        desc: 'we works with web portals for different audiences: customers, business partners, ecommerce users, patients, vendors, interest-based communities. '
+        desc: 'Designed for organizations that require user authentication, role-based access, workflow automation, and centralized information management for customers, employees, or partners. '
     },
     {
         title: 'From $200,000',
         Icon: "/SVG6/icons_price 3.svg",
-        desc: 'we works with web portals for different audiences: customers, business partners, ecommerce users, patients, vendors, interest-based communities. '
+        desc: 'Built for growing businesses that need robust online selling capabilities, secure payment processing, inventory management, customer accounts, and seamless shopping experiences. '
     },
     {
         title: 'From $400,000',
         Icon: "/SVG6/icons_price 4.svg",
-        desc: 'we works with web portals for different audiences: customers, business partners, ecommerce users, patients, vendors, interest-based communities. '
+        desc: 'Comprehensive enterprise-grade systems with advanced integrations, custom workflows, high scalability, enhanced security, and complex business process automation tailored to large organizations. '
     },
 
 

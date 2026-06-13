@@ -14,27 +14,27 @@ const cards: AppDevelopmentItem[] = [
     {
         title: 'Native mobile apps',
         Icon: '/SVG3/icon_native.svg',
-        desc: 'we works with web portals for different audiences: customers, business partners, ecommerce users, patients, vendors, interest-based communities.'
+        desc: 'Native applications are built specifically for iOS or Android platforms, delivering superior performance, enhanced security, and seamless access to device features. They provide the best possible user experience and reliability.'
     },
     {
         title: 'Near-native mobile apps',
         Icon: '/SVG3/icon_near-native.svg',
-        desc: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        desc: 'Near-native applications combine the advantages of native performance with faster development cycles. This approach helps businesses achieve high-quality user experiences while optimizing development costs and timelines.'
     },
     {
         title: 'Hybrid mobile apps',
         Icon: '/SVG3/icon_hybrid.svg',
-        desc: 'Our solution architects will plan all functional components and select optimal techs for them to ensure that the business logic to be implemented is feasible and full.'
+        desc: 'Hybrid applications use a single codebase to run across multiple platforms. They offer a cost-effective solution for businesses looking to reach a wider audience while maintaining consistent functionality and design.'
     },
     {
         title: 'Responsive web apps',
         Icon: '/SVG3/icon_responsive.svg',
-        desc: 'Our front-end developers can implement any design idea and ensure all interface elements work properly. We work with all of the most-used JavaScript '
+        desc: 'Responsive web applications adapt seamlessly to different screen sizes and devices. They provide a consistent user experience across smartphones, tablets, and desktops without requiring separate platform-specific development. '
     },
     {
         title: 'Progressive web apps (PWA)',
         Icon: '/SVG3/icon_progressive.svg',
-        desc: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        desc: 'Progressive Web Apps combine the accessibility of websites with the functionality of mobile applications. PWAs offer fast loading speeds, offline access, push notifications, and a highly engaging user experience.'
     },
 ];
 

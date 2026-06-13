@@ -18,42 +18,42 @@ const cards: MobileApplication[] = [
     {
         title: 'Product Design',
         Icon: "/SVG7/icon_prototype ag.svg",
-        desc: 'we works with web portals for different audiences: customers, business partners, ecommerce users, patients, vendors, interest-based communities.'
+        desc: 'We transform your ideas into user-focused mobile products through research, wireframing, and prototyping. Our design process ensures intuitive experiences that align with business goals and customer expectations.'
     },
     {
         title: 'Mobile App Consulting ',
         Icon: "/SVG7/icon_2.svg",
-        desc: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        desc: 'Our experts help define the right mobile strategy, technology stack, and development roadmap. We provide valuable insights that reduce risks, optimize costs, and accelerate project success.'
     },
     {
         title: 'Mobile App Design',
         Icon: "/SVG7/icon_3.svg",
-        desc: 'Our solution architects will plan all functional components and select optimal techs for them to ensure that the business logic to be implemented is feasible and full.'
+        desc: 'We create visually appealing and user-friendly mobile interfaces that enhance engagement and usability. Every design is crafted to deliver seamless experiences across different devices and platforms.'
     },
     {
         title: 'Mobile App Development',
         Icon: "/SVG7/icon_4.svg",
-        desc: 'Our front-end developers can implement any design idea and ensure all interface elements work properly. We work with all of the most-used JavaScript '
+        desc: 'We develop secure, scalable, and high-performing mobile applications tailored to your business requirements. Our solutions combine modern technologies with robust functionality to deliver exceptional user experiences. '
     },
     {
         title: 'Mobile App Integration',
         Icon: "/SVG7/icon_5.svg",
-        desc: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        desc: 'Connect your mobile application with third-party services, APIs, cloud platforms, and enterprise systems. We ensure seamless data exchange, enhanced functionality, and efficient business operations.'
     },
     {
         title: 'Testing & QA',
         Icon: "/SVG7/icon_6.svg",
-        desc: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        desc: 'Our quality assurance process ensures that your application performs flawlessly across devices and operating systems. We identify and resolve issues early to deliver a reliable and bug-free product.'
     },
     {
         title: 'Maintenance & Support',
         Icon: "/SVG7/icon_7.svg",
-        desc: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        desc: 'Keep your mobile application secure, updated, and optimized with our ongoing support services. We provide monitoring, maintenance, bug fixes, and performance enhancements to ensure long-term success.'
     },
     {
         title: 'Mobile App Modernization',
         Icon: "/SVG7/icon_8.svg",
-        desc: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        desc: 'Upgrade legacy mobile applications with modern technologies, improved performance, and enhanced user experiences. We help businesses stay competitive by adapting their apps to evolving market demands.'
     },
 ];
 

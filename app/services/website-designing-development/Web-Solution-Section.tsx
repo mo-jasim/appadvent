@@ -14,22 +14,22 @@ const cards: WebSolutionCard[] = [
     {
         title: 'Web Portals',
         icon: '/images/wp1.svg',
-        description: 'Our base, robust, and extensible arch allows our team to perform custom requirements implementing custom features for custom needs.'
+        description: 'We build secure and scalable web portals that connect users, customers, employees, and partners through a centralized platform. Our solutions streamline communication, data management, and business operations efficiently.'
     },
     {
         title: 'Websites',
         icon: '/images/wp2.svg',
-        description: 'We create stunning websites that capture your brand\'s essence and provide an exceptional user experience.'
+        description: 'We create modern, responsive, and user-friendly websites that strengthen your online presence. Designed for performance and engagement, our websites help attract visitors and convert them into loyal customers.'
     },
     {
         title: 'E-commerce',
         icon: '/images/wp3.svg',
-        description: 'Drive sales with our comprehensive e-commerce solutions designed to convert visitors into loyal customers.'
+        description: 'Our e-commerce solutions deliver seamless shopping experiences with secure payments, intuitive navigation, and efficient order management. We help businesses increase sales, improve customer satisfaction, and grow online revenue.'
     },
     {
         title: 'Web Apps',
         icon: '/images/wp4.svg',
-        description: 'Custom web applications tailored to your specific business needs, ensuring scalability and performance.'
+        description: 'We develop powerful web applications tailored to your business requirements. Combining functionality, scalability, and intuitive user experiences, our web apps help automate processes and improve overall productivity.'
     },
 ];
 

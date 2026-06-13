@@ -14,7 +14,7 @@ const ITSkills = () => {
     const skills = [
         {
             title: ".Net Developer",
-            description: "helps our clients in designing dynamic and secure applications using the Microsoft .NET framework. With a keen eye for detail and a commitment to excellence, our developers develop enterprise-level solutions. Our dedicated team of .NET developers ensures the delivery of high-performance applications tailored to meet the unique requirements of your projects.",
+            description: "helps our clients in designing dynamic and secure applications using the Microsoft .NET framework. With a keen eye for detail and a commitment to excellence, our developers develop enterprise-level solutions. Our dedicated team of .NET developers ensures the delivery of high-performance applications tailored to meet the unique requirements of your projects. ",
         },
         {
             title: "Java",
@@ -26,19 +26,23 @@ const ITSkills = () => {
         },
         {
             title: "Node.js",
-            description: "builds native-like mobile applications using React/JavaScript. Our developers create seamless cross-platform experiences for both iOS and Android from a single codebase, ensuring cost-efficiency and rapid time-to-market without compromising on performance or user experience.",
+            description: "enables rapid application development through its simple syntax and powerful libraries. Our Python experts specialize in crafting data-driven applications, leveraging frameworks like Django and Flask to create dynamic web solutions. We prioritize clean coding and modular design to ensure maintainability and scalability for your business needs.  coding and modular design.",
+        },
+        {
+            title: "React Native",
+            description: "enables rapid application development through its simple syntax and powerful libraries. Our Python experts specialize in crafting data-driven applications, leveraging frameworks like Django and Flask to create dynamic web solutions. We prioritize clean coding and modular design to ensure maintainability and scalability for your business needs.  coding and modular design.",
         },
         {
             title: "IOS(obj-c / Swift)",
-            description: "builds native-like mobile applications using React/JavaScript. Our developers create seamless cross-platform experiences for both iOS and Android from a single codebase, ensuring cost-efficiency and rapid time-to-market without compromising on performance or user experience.",
+            description: "enables rapid application development through its simple syntax and powerful libraries. Our Python experts specialize in crafting data-driven applications, leveraging frameworks like Django and Flask to create dynamic web solutions. We prioritize clean coding and modular design to ensure maintainability and scalability for your business needs.  coding and modular design.",
         },
         {
             title: "Android(Kotlin / Java)",
-            description: "builds native-like mobile applications using React/JavaScript. Our developers create seamless cross-platform experiences for both iOS and Android from a single codebase, ensuring cost-efficiency and rapid time-to-market without compromising on performance or user experience.",
+            description: "enables rapid application development through its simple syntax and powerful libraries. Our Python experts specialize in crafting data-driven applications, leveraging frameworks like Django and Flask to create dynamic web solutions. We prioritize clean coding and modular design to ensure maintainability and scalability for your business needs.  coding and modular design.",
         },
         {
             title: "Flutter",
-            description: "builds native-like mobile applications using React/JavaScript. Our developers create seamless cross-platform experiences for both iOS and Android from a single codebase, ensuring cost-efficiency and rapid time-to-market without compromising on performance or user experience.",
+            description: "enables rapid application development through its simple syntax and powerful libraries. Our Python experts specialize in crafting data-driven applications, leveraging frameworks like Django and Flask to create dynamic web solutions. We prioritize clean coding and modular design to ensure maintainability and scalability for your business needs.  coding and modular design.",
         },
     ];
 

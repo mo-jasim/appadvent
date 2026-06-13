@@ -12,42 +12,42 @@ const ServiceCards: React.FC = () => {
         {
             title: 'Scoping',
             titleIcon: "/images/wdp1.svg",
-            description: "The page describes our approach to requirements engineering, feasibility assessment, and scoping. It also outlines our scope change management and scope creep control practices.",
+            description: "We carefully analyze project requirements, objectives, and technical needs to define a clear roadmap. Proper scoping helps prevent misunderstandings, reduces risks, and ensures successful project execution.",
         },
         {
             title: 'Cost Estimate',
             titleIcon: "/images/wdp2.svg",
-            description: "The page describes our approach to requirements engineering, feasibility assessment, and scoping. It also outlines our scope change management and scope creep control practices."
+            description: "Our team provides accurate and transparent cost estimates based on project complexity, scope, and requirements. This helps businesses plan investments effectively and avoid unexpected expenses."
         },
         {
             title: 'Quality Assurance',
             titleIcon: "/images/wdp3.svg",
-            description: "The page describes our approach to requirements engineering, feasibility assessment, and scoping. It also outlines our scope change management and scope creep control practices."
+            description: "Quality is embedded throughout the development lifecycle. Through continuous testing, reviews, and validation processes, we ensure reliable, secure, and high-performing digital solutions."
         },
         {
             title: 'Collaboration',
             titleIcon: "/images/wdp4.svg",
-            description: "The page describes our approach to requirements engineering, feasibility assessment, and scoping. It also outlines our scope change management and scope creep control practices."
+            description: "We maintain open communication and close collaboration with stakeholders throughout the project. Regular updates and feedback cycles ensure alignment with business goals and expectations."
         },
         {
             title: 'Security Management',
             titleIcon: "/images/wdp5.svg",
-            description: "The page describes our approach to requirements engineering, feasibility assessment, and scoping. It also outlines our scope change management and scope creep control practices."
+            description: "Security is a priority in every solution we develop. We implement industry best practices, secure coding standards, and risk mitigation strategies to protect data and systems."
         },
         {
             title: 'Budget Management',
             titleIcon: "/images/wdp6.svg",
-            description: "The page describes our approach to requirements engineering, feasibility assessment, and scoping. It also outlines our scope change management and scope creep control practices."
+            description: "Our project management approach focuses on controlling costs while maintaining quality. We monitor resources efficiently to ensure projects remain within budget and deliver maximum value."
         },
         {
             title: 'Knowledge Management',
             titleIcon: "/images/wdp7.svg",
-            description: "The page describes our approach to requirements engineering, feasibility assessment, and scoping. It also outlines our scope change management and scope creep control practices."
+            description: "We document processes, decisions, and technical information to ensure knowledge retention and seamless project continuity. This enables easier maintenance and future enhancements."
         },
         {
             title: 'Deadline Management',
             titleIcon: "/images/wdp8.svg",
-            description: "The page describes our approach to requirements engineering, feasibility assessment, and scoping. It also outlines our scope change management and scope creep control practices."
+            description: "We follow well-defined schedules and agile workflows to ensure timely delivery. Our proactive planning and progress tracking help keep projects on schedule without compromising quality."
         },
     ];
 

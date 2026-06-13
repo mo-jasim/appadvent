@@ -14,47 +14,47 @@ const cards: ServiceGridCard[] = [
     {
         title: 'Web Portals',
         icon: '/SVG-motion/s1.svg',
-        description: 'we works with web portals for different audiences: customers, business partners, ecommerce users, patients, vendors, interest-based communities.'
+        description: 'Build secure and interactive portals that connect customers, employees, vendors, and partners. Our solutions simplify communication, centralize information, and improve operational efficiency across your organization.'
     },
     {
         title: 'UX and UI Design',
         icon: '/SVG-motion/s2.svg',
-        description: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        description: 'Design intuitive and engaging user experiences that align with your business goals. We create user-centered interfaces that improve usability, accessibility, and customer satisfaction.'
     },
     {
         title: 'Architecture',
         icon: '/SVG-motion/s3.svg',
-        description: 'Our solution architects will plan all functional components and select optimal techs for them to ensure that the business logic to be implemented is feasible and full.'
+        description: 'Plan scalable and reliable system architectures that support long-term growth. We focus on performance, security, maintainability, and seamless integration with your business processes.'
     },
     {
         title: 'Front-end Development',
         icon: '/SVG-motion/s4.svg',
-        description: 'Our front-end developers can implement any design idea and ensure all interface elements work properly. We work with all of the most-used JavaScript '
+        description: 'Create responsive and interactive user interfaces using modern web technologies. Our front-end solutions deliver fast performance, accessibility, and consistent experiences across devices and browsers. '
     },
     {
         title: 'Back-end Development',
         icon: '/SVG-motion/s5.svg',
-        description: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        description: 'Develop secure and efficient server-side systems that power your applications. We build APIs, databases, and business logic designed for reliability, scalability, and smooth performance.'
     },
     {
         title: 'Integration',
         icon: '/SVG-motion/s6.svg',
-        description: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        description: 'Connect your web solutions with third-party services, enterprise systems, and cloud platforms. We ensure secure, reliable, and efficient data flow across your digital ecosystem.'
     },
     {
         title: 'Testing & QA',
         icon: '/SVG-motion/s7.svg',
-        description: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        description: 'Ensure quality through comprehensive testing and quality assurance practices. We identify issues early, improve reliability, and deliver software that performs consistently in real-world environments.'
     },
     {
         title: 'Helpdesk',
         icon: '/SVG-motion/s8.svg',
-        description: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        description: 'Provide quick, reliable assistance for your web product. Our support team resolves issues efficiently, answers questions, and ensures users can fully leverage the solution.'
     },
     {
         title: 'Continuous Support and evolution',
         icon: '/SVG-motion/s9.svg',
-        description: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        description: 'Keep your web product secure, optimized, and aligned with changing business needs. We provide maintenance, updates, enhancements, and ongoing technical support for long-term success.'
     },
 ];
 
