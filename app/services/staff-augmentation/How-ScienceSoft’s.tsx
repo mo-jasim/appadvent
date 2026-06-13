@@ -13,32 +13,32 @@ const cards: ScienceSoft[] = [
     {
         title: 'Optimal pricing models',
         Icon: "/SVG4/icons_cost-estimation.svg",
-        desc: "We recommend a fixed-price model if you have well-defined requirements and the scope of work is clear at the start.",
+        desc: "We offer transparent and cost-effective pricing models tailored to your project needs. Whether your requirements are fixed or evolving, our approach ensures maximum value, budget control, and predictable project outcomes.",
     },
     {
         title: 'Flexibility in cooperation duration',
         Icon: "/SVG4/icons_modify.svg",
-        desc: "We support both short-term and long-term team augmentation. You can hire our experts for a specific time-bound task or to do ongoing work with no firm time boundaries."
+        desc: "Our engagement models are designed to adapt to your business goals. From short-term assignments to long-term partnerships, we provide the flexibility needed to scale resources efficiently and effectively."
     },
     {
         title: 'Smooth integration into your team',
         Icon: "/SVG4/icons_integr.svg",
-        desc: "To collaborate effectively, we establish frequent and direct communication with your team members and ensure timely exchange of the latest project knowledge."
+        desc: "Our professionals seamlessly integrate with your existing team, workflows, and processes. Through proactive communication and collaboration, we ensure quick onboarding and productive contributions from day one."
     },
     {
         title: 'Work transparency',
         Icon: "/SVG4/icons_search svg.svg",
-        desc: "We use a tailored suite of KPI metrics (e.g., lead time, cycle time, deployment frequency) that meet your unique requirements and adjust the reporting format and schedule to your preferences."
+        desc: "We maintain complete transparency throughout the project lifecycle. Regular updates, clear reporting, and measurable performance indicators keep you informed, enabling better decisions and confidence in project progress."
     },
     {
         title: 'Dedication to quality',
         Icon: "/SVG4/icons_professional-growth.svg",
-        desc: "ScienceSoft’s engineers stick to our ISO-certified quality management principles to ensure that our contributions meet the highest standards of technology excellence."
+        desc: "Quality is at the core of everything we do. By following industry best practices and rigorous standards, we deliver reliable, scalable, and high-performing solutions that exceed expectations."
     },
     {
         title: 'Attention to documentation',
         Icon: "/SVG4/icons_documentation_.svg",
-        desc: "Even if we are temporarily involved in your project, we accurately document our work and fully comply with your requirements for documentation."
+        desc: "Comprehensive documentation ensures knowledge retention and project continuity. We carefully document processes, requirements, and deliverables, making future maintenance, onboarding, and collaboration simple and efficient."
     },
 ];
 

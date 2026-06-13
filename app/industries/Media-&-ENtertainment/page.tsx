@@ -53,27 +53,27 @@ const frameworkSteps = [
 const features = [
     {
         img: "/Letimg/fun.svg",
-        title: "Web and Mobile Application Development",
-        desc: "For a fintech company, both web and mobile applications are essential for customer interface and to create a competitive environment.",
+        title: "Media App & Web Development",
+        desc: "Build engaging and user-friendly media platforms tailored for streaming, entertainment, publishing, and digital content experiences.",
     },
     {
         img: "/Letimg/fun.svg",
-        title: "Security Audits and Testing",
-        desc: "Security is highly valued in the fintech industry. Appadvent performs security check and vulnerability assessments to ensure that your products are secure.",
+        title: "Content Streaming Solutions",
+        desc: "Enable seamless video, audio, and live streaming experiences with high-performance playback and scalable infrastructure.",
     },
     {
         img: "/Letimg/fun.svg",
-        title: "Fintech Product Development Consulting",
-        desc: "Security is highly valued in the fintech industry. Appadvent performs security check and vulnerability assessments to ensure that your products are secure..",
+        title: "Content & Audience Management Systems",
+        desc: "Develop scalable systems for managing digital content, subscriptions, user engagement, analytics, and audience interactions efficiently.",
     },
     {
         img: "/Letimg/fun.svg",
-        title: "Modernization and Support of Fintech App",
-        desc: "Overcome legacy pitfalls with Appadvent’s fintech app modernization solutions. We transition legacy finance applications to efficient fintech software with a modular design, user-friendly interface, and no disruption. .",
+        title: "Platform Modernization & Support",
+        desc: "Upgrade outdated media platforms with scalable, secure, and performance-driven digital solutions.",
     },
 ];
 
-export default function FintechCryptoPage() {
+export default function MediaEntertainmentPage() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [expandedCard, setExpandedCard] = useState<number | null>(null);
 
@@ -136,8 +136,8 @@ export default function FintechCryptoPage() {
                         </div>
 
                         <div className="relative flex justify-center items-center">
-                            <div className="relative w-full max-w-[320px] sm:max-w-[450px] lg:max-w-[550px] aspect-[4/3] transition-transform duration-500 hover:scale-[1.02]">
-                                <img src="/Letimg/Frame 134.svg" alt="Fintech Mockup" className="w-full h-full object-contain" />
+                            <div className="relative w-full max-w-[320px] sm:max-w-[450px] lg:max-w-[650px] aspect-[4/3] transition-transform duration-500 hover:scale-[1.05]">
+                                <img src="/images/Media-&-Entertainmentlogo.svg" alt="Fintech Mockup" className="w-full h-full object-contain" />
                             </div>
                         </div>
                     </div>
@@ -146,7 +146,7 @@ export default function FintechCryptoPage() {
                 {/* SECTION 2 — Services */}
                 <section className="relative w-full py-16 md:py-24 overflow-hidden">
                     <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-16">
-                        <div className="max-w-4xl mx-auto lg:mx-0 text-center lg:text-left mb-12 md:mb-20">
+                        <div className="max-w-7xl mx-auto lg:mx-0 text-center lg:text-left mb-12 md:mb-20">
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight tracking-tight mb-6">
                                 Scale Your Fintech Needs with Expert Software Development
                             </h2>
@@ -197,7 +197,7 @@ export default function FintechCryptoPage() {
                 >
                     {/* Title */}
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center leading-tight tracking-tight mb-12">
-                        Our Fintech Application <br className="hidden sm:block" /> Development Framework
+                        Our Media & Entertainment Software Development Framework
                     </h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-5 max-w-[1440px] mx-auto">

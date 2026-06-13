@@ -10,7 +10,7 @@ const frameworkSteps = [
     {
         numimg: "/Letimg/Num.1.svg",
         title: "Understanding Your Vision",
-        desc: "First of all, we immerse ourselves in your concepts and visions of the fintech application.",
+        desc: "We analyze user behavior, platform goals, engagement strategies, and operational workflows to build effective consumer internet solutions.",
         bg: "#ffeaea",
         badgeBorder: "1px solid #10637F",
         badgeColor: "#10637F",
@@ -18,7 +18,7 @@ const frameworkSteps = [
     {
         numimg: "/Letimg/Num.2.svg",
         title: "Strategic Planning",
-        desc: "After that, we hold briefing meetings to define the project's objectives, functionalities, and schedule.",
+        desc: "Define platform architecture, user journeys, integrations, and scalable digital growth strategies.",
         bg: "#eafffc",
         badgeBorder: "1px solid #10637F",
         badgeColor: "#10637F",
@@ -26,7 +26,7 @@ const frameworkSteps = [
     {
         numimg: "/Letimg/Num.3.svg",
         title: "Agile Development",
-        desc: "In this process, the FinTech app is created through multiple sprints based on the principles of agile development.",
+        desc: "Build secure, responsive, and high-performing consumer internet web and mobile applications using modern technologies.",
         bg: "#eeeaff",
         badgeBorder: "1px solid #10637F",
         badgeColor: "#10637F",
@@ -34,7 +34,7 @@ const frameworkSteps = [
     {
         numimg: "/Letimg/Num.4.svg",
         title: "Robust Testing",
-        desc: "Quality is a very important aspect that is considered in our work.",
+        desc: "Ensure smooth functionality, platform reliability, security, and seamless user experiences across devices and digital environments.",
         bg: "#ffeaed",
         badgeBorder: "1px solid #10637F",
         badgeColor: "#10637F",
@@ -42,7 +42,7 @@ const frameworkSteps = [
     {
         numimg: "/Letimg/Num.5.svg",
         title: "Launch and Support",
-        desc: "Last but not least, we launch your fintech app and ensure that we support it after the launch.",
+        desc: "Deploy consumer internet solutions successfully with continuous support, updates, maintenance, and performance monitoring.",
         bg: "#eafff0",
         badgeBorder: "1px solid #10637F",
         badgeColor: "#10637F",
@@ -53,27 +53,27 @@ const frameworkSteps = [
 const features = [
     {
         img: "/Letimg/fun.svg",
-        title: "Web and Mobile Application Development",
-        desc: "For a fintech company, both web and mobile applications are essential for customer interface and to create a competitive environment.",
+        title: "Custom E-commerce App Development",
+        desc: "Build feature-rich retail platforms tailored for seamless online shopping and customer engagement.",
     },
     {
         img: "/Letimg/fun.svg",
-        title: "Security Audits and Testing",
-        desc: "Security is highly valued in the fintech industry. Appadvent performs security check and vulnerability assessments to ensure that your products are secure.",
+        title: "Secure Payment & Checkout Systems",
+        desc: "Enable fast, secure, and reliable payment experiences with smooth checkout functionality.",
     },
     {
         img: "/Letimg/fun.svg",
-        title: "Fintech Product Development Consulting",
-        desc: "Security is highly valued in the fintech industry. Appadvent performs security check and vulnerability assessments to ensure that your products are secure..",
+        title: "Inventory & Order Management Solutions",
+        desc: "Streamline product inventory, order tracking, and fulfillment processes efficiently.",
     },
     {
         img: "/Letimg/fun.svg",
-        title: "Modernization and Support of Fintech App",
-        desc: "Overcome legacy pitfalls with Appadvent’s fintech app modernization solutions. We transition legacy finance applications to efficient fintech software with a modular design, user-friendly interface, and no disruption. .",
+        title: "Retail Platform Modernization & Support",
+        desc: "Upgrade outdated retail systems with scalable, modern, and performance-driven solutions. ",
     },
 ];
 
-export default function FintechCryptoPage() {
+export default function EcommercePage() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [expandedCard, setExpandedCard] = useState<number | null>(null);
 
@@ -122,7 +122,7 @@ export default function FintechCryptoPage() {
                             </h1>
 
                             <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
-                                We work primarily within the fintech niche and aim to deliver high-quality software solutions with an emphasis on speed, flexibility, and effectiveness. We acknowledge the requirements of your business and turn your vision into reality.
+                                We build scalable retail and e-commerce applications designed to improve customer engagement, simplify online shopping, optimize operations, and increase business revenue efficiently.
                             </p>
 
                             <div className="flex justify-center lg:justify-start">
@@ -137,7 +137,7 @@ export default function FintechCryptoPage() {
 
                         <div className="relative flex justify-center items-center">
                             <div className="relative w-full max-w-[320px] sm:max-w-[450px] lg:max-w-[550px] aspect-[4/3] transition-transform duration-500 hover:scale-[1.02]">
-                                <img src="/Letimg/Frame 134.svg" alt="Fintech Mockup" className="w-full h-full object-contain" />
+                                <img src="/images/Ecommercelogo.svg" alt="Fintech Mockup" className="w-full h-full object-contain" />
                             </div>
                         </div>
                     </div>
@@ -146,12 +146,12 @@ export default function FintechCryptoPage() {
                 {/* SECTION 2 — Services */}
                 <section className="relative w-full py-16 md:py-24 overflow-hidden">
                     <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-16">
-                        <div className="max-w-4xl mx-auto lg:mx-0 text-center lg:text-left mb-12 md:mb-20">
+                        <div className="max-w-7xl mx-auto lg:mx-0 text-center lg:text-left mb-12 md:mb-20">
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight tracking-tight mb-6">
-                                Scale Your Fintech Needs with Expert Software Development
+                                Scale Your Retail Business with Appadvent’s Expert E-commerce Development Services
                             </h2>
                             <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-                                Appadvent delivers high-quality software solutions with an emphasis on speed, flexibility, and effectiveness. We committed to making your dream come true on time and within budget.
+                                We create modern retail and e-commerce solutions focused on seamless shopping experiences, secure payment systems, inventory optimization, and scalable business growth.
                             </p>
                         </div>
 
@@ -197,7 +197,7 @@ export default function FintechCryptoPage() {
                 >
                     {/* Title */}
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center leading-tight tracking-tight mb-12">
-                        Our Fintech Application <br className="hidden sm:block" /> Development Framework
+                        Our Retail & E- commerce Software Development Framework
                     </h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-5 max-w-[1440px] mx-auto">
@@ -245,15 +245,14 @@ export default function FintechCryptoPage() {
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 mb-[40px] lg:mb-[40px] items-start">
                             <div>
                                 <h2 className="text-3xl sm:text-[42px] lg:text-[42px] font-bold text-gray-900 leading-[1.25] tracking-tight">
-                                    Why Appadvent is Your <br />Ideal Partner for{" "}
-                                    <span className='text-[#32B9E9]'> Fintech</span>
-                                    <br />
-                                    <span className='text-[#32B9E9]'> App </span>Development?
+                                    Why Appadvent is Your Ideal Partner for <br />
+                                    <span className='text-[#32B9E9]'> Retail & E-Commerce </span>
+                                    Development?
                                 </h2>
                             </div>
                             <div>
                                 <p className="text-[16px] sm:text-[20px] font-regular font-normal leading-relaxed text-[#323A3E]">
-                                    Appadvent offers the best and unique fintech application development solutions to assist your business in achieving higher performance in the new world. The strategic management approach that we follow is the one that encourages the focus on innovation, teamwork, and market orientation.
+                                    Appadvent delivers customer-focused retail and e-commerce solutions that help businesses increase sales, improve user engagement, and streamline digital shopping experiences.
                                 </p>
                             </div>
                         </div>

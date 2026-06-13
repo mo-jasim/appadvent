@@ -45,7 +45,7 @@ export default function Letramway() {
                <div className="relative z-20 text-center w-full max-w-7xl mx-auto flex flex-col items-center gap-4 px-4 md:-mt-32">
                   {/* Logo */}
                   <div className="flex justify-center w-44 md:w-52 h-auto mb-2">
-                     <img src="/Letimg/LETlogo.svg" alt="Le tramway Logo" className="w-full h-auto" />
+                     <img src="/Letimg/LETlogo.svg" alt="Le tramway Logo" className="w-full h-auto md:mt-25" />
                   </div>
 
                   <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FFFFFF] leading-tight mb-4 md:mb-6">
@@ -66,6 +66,7 @@ export default function Letramway() {
                   </div>
                </div>
             </section>
+
             {/* About */}
             <section className="relative w-full mt-[80px] mb-[40px] overflow-x-hidden">
                {/* Background light glow */}
@@ -130,7 +131,7 @@ export default function Letramway() {
                      </p>
 
                      {/* Stat Grid */}
-                     <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 md:gap-10">
+                     <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-30">
                         <div className="flex gap-4 items-start justify-start">
                            <img src="/caseimg/About-img1.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                            <div className="text-left">

@@ -40,7 +40,7 @@ const page = () => {
                 <ExpertsInAdvanced />
                 {/* Development Skills of Our Node.js Developers */}
                 <DevelopmentSkills />
-                {/* How ScienceSoft’s Staff Augmentation Works */}
+                {/* How Appadvent’s Approach Works to Your Benefit */}
                 <ScienceSoft />
                 {/* Outsourcing Cooperation Models We Support */}
                 <Cooperation />

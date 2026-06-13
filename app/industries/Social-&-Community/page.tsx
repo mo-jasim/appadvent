@@ -53,23 +53,23 @@ const frameworkSteps = [
 const features = [
     {
         img: "/Letimg/fun.svg",
-        title: "Web and Mobile Application Development",
-        desc: "For a fintech company, both web and mobile applications are essential for customer interface and to create a competitive environment.",
+        title: "Social App & Web Development",
+        desc: "Build engaging and user-friendly social platforms tailored for communities, creators, networking, and audience interaction.",
     },
     {
         img: "/Letimg/fun.svg",
-        title: "Security Audits and Testing",
-        desc: "Security is highly valued in the fintech industry. Appadvent performs security check and vulnerability assessments to ensure that your products are secure.",
+        title: "Community Engagement Solutions",
+        desc: "Enable seamless communication, content sharing, notifications, messaging, and interactive user experiences across digital platforms.",
     },
     {
         img: "/Letimg/fun.svg",
-        title: "Fintech Product Development Consulting",
-        desc: "Security is highly valued in the fintech industry. Appadvent performs security check and vulnerability assessments to ensure that your products are secure..",
+        title: "Content & User Management Systems",
+        desc: "Develop scalable systems for managing user profiles, content moderation, activity tracking, and engagement analytics efficiently.",
     },
     {
         img: "/Letimg/fun.svg",
-        title: "Modernization and Support of Fintech App",
-        desc: "Overcome legacy pitfalls with Appadvent’s fintech app modernization solutions. We transition legacy finance applications to efficient fintech software with a modular design, user-friendly interface, and no disruption. .",
+        title: "Platform Modernization & Support",
+        desc: "Upgrade outdated social platforms with scalable, secure, and performance-driven digital solutions.",
     },
 ];
 
@@ -118,11 +118,11 @@ export default function FintechCryptoPage() {
                         <div className="text-center lg:text-left">
                             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.15] tracking-tight mb-6">
                                 <span className="inline-block whitespace-nowrap">Social & Community</span> <br className="hidden md:block" />
-                                App Development Solutions
+                                Development Solutions
                             </h1>
 
                             <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
-                                We work primarily within the fintech niche and aim to deliver high-quality software solutions with an emphasis on speed, flexibility, and effectiveness. We acknowledge the requirements of your business and turn your vision into reality.
+                                We build scalable social and community web and mobile solutions focused on user engagement, real-time communication, content sharing, and meaningful digital interactions.
                             </p>
 
                             <div className="flex justify-center lg:justify-start">
@@ -136,7 +136,7 @@ export default function FintechCryptoPage() {
 
                         <div className="relative flex justify-center items-center">
                             <div className="relative w-full max-w-[320px] sm:max-w-[450px] lg:max-w-[550px] aspect-[4/3] transition-transform duration-500 hover:scale-[1.02]">
-                                <img src="/Letimg/Frame 134.svg" alt="Fintech Mockup" className="w-full h-full object-contain" />
+                                <img src="/images/Social-&-Communitylogo.svg" alt="Fintech Mockup" className="w-full h-full object-contain" />
                             </div>
                         </div>
                     </div>
@@ -145,12 +145,12 @@ export default function FintechCryptoPage() {
                 {/* SECTION 2 — Services */}
                 <section className="relative w-full py-16 md:py-24 overflow-hidden">
                     <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-16">
-                        <div className="max-w-4xl mx-auto lg:mx-0 text-center lg:text-left mb-12 md:mb-20">
+                        <div className="max-w-7xl mx-auto lg:mx-0 text-center lg:text-left mb-12 md:mb-20">
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight tracking-tight mb-6">
-                                Scale Your Fintech Needs with Expert Software Development
+                                Scale Your Platform with Appadvent’s Expert Social & Community Development Services
                             </h2>
                             <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-                                Appadvent delivers high-quality software solutions with an emphasis on speed, flexibility, and effectiveness. We committed to making your dream come true on time and within budget.
+                                We create modern social and community solutions designed to improve user engagement, simplify communication, encourage collaboration, and support scalable digital communities.
                             </p>
                         </div>
 
@@ -196,7 +196,7 @@ export default function FintechCryptoPage() {
                 >
                     {/* Title */}
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center leading-tight tracking-tight mb-12">
-                        Our Fintech Application <br className="hidden sm:block" /> Development Framework
+                        Our Social & Community Software Development Framework
                     </h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-5 max-w-[1440px] mx-auto">

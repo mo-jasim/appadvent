@@ -71,11 +71,11 @@ export default function Highlights() {
                 <div className="w-full max-w-[1400px] mx-auto relative mt-[80px] mb-[80px]">
                     {/* Huge Faint Watermark Text */}
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[30px] sm:text-[50px] md:text-[110px] lg:text-[110px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-[50px]">
-                        DETECT MICROPLASTIC
+                        DETECT HIGHLIGHTS
                     </div>
                     {/* Title */}
                     <h2 className="text-[40px] font-bold text-[#111827] mb-12 relative z-20 xl:ml-10 -pt-[100px] whitespace-nowrap">
-                        Detect Microplastic Highlights
+                        Detect Highlights
                     </h2>
 
                     {/* Global wrapper for absolute positioning (desktop) */}

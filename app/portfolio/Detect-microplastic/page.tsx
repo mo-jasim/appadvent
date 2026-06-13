@@ -28,7 +28,7 @@ export default function GoalkickCaseStudy() {
                     {/* ─────────────────────────────────────────────
                    1. HERO SECTION
                ───────────────────────────────────────────── */}
-                    <section className="relative w-full min-h-[500px] md:h-[700px] flex items-center justify-center pt-24 md:pt-0 mb-[40px] md:mb-[80px]">
+                    <section className="relative w-full min-h-[900px] md:h-[700px] flex items-center justify-center pt-0 -mt-20 md:pt-0 mb-[40px] md:mb-[80px]">
                         {/* Background Video */}
                         <div className="absolute inset-0 w-full h-full overflow-hidden">
                             <video

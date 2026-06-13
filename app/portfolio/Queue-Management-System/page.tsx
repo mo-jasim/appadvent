@@ -74,7 +74,7 @@ export default function Letramway() {
                     {/* ── MOBILE: Single centered image ── */}
                     <div className="sm:hidden relative w-full px-6 mt-8 z-10">
                         <Image
-                            src="/Letimg/bigpc.svg"
+                            src="/Letimg/Queue-about-img.svg"
                             alt="Desktop Preview"
                             width={1000}
                             height={800}
@@ -133,7 +133,7 @@ export default function Letramway() {
                             </p>
 
                             {/* Stat Grid */}
-                            <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 md:gap-10">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-30">
                                 <div className="flex gap-4 items-start justify-start">
                                     <img src="/caseimg/About-img1.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                     <div className="text-left">

@@ -39,7 +39,7 @@ export default function CRMcasePage() {
         <>
             <div className="font-THICCCBOI text-slate-800 min-h-screen w-full overflow-x-hidden">
                 <div className='w-full' style={{ backgroundImage: "url('/images/polygon.png')", }} >
-                    <section className="relative w-full min-h-[500px] md:h-[700px] flex items-center justify-center pt-24 md:pt-0">
+                    <section className="relative w-full h-[900px] md:h-[700px] flex items-center justify-center pt-24 md:pt-0">
                         {/* Background Video */}
                         <div className="absolute inset-0 w-full h-full overflow-hidden">
                             <video
@@ -116,7 +116,7 @@ export default function CRMcasePage() {
                             </div>
 
                             {/* Stat Grid */}
-                            <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 md:gap-10">
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
                                 <div className="flex gap-4 items-start justify-start">
                                     <img src="/caseimg/About-img1.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
                                     <div className="text-left">
