@@ -118,7 +118,7 @@ export default function FintechCryptoPage() {
                         <div className="text-center lg:text-left">
                             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.15] tracking-tight mb-6">
                                 Consumer Internet <br className="hidden md:block" />
-                                App Development Solutions
+                                App Development Solutions111
                             </h1>
 
                             <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
