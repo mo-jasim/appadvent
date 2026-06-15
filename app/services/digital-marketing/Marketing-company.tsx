@@ -13,22 +13,22 @@ const cards: MarketingCompany[] = [
     {
         title: 'Cost effective',
         Icon: "/images/Costestimate.svg",
-        desc: 'We work with web portals for different audiences: customers, business partners, ecommerce users, patients, vendors, interest-based communities.'
+        desc: 'Get high-quality digital marketing solutions at competitive pricing without compromising performance. Our strategies are designed to maximize ROI, reduce unnecessary spending, and deliver sustainable business growth through optimized marketing campaigns.'
     },
     {
         title: 'Guaranteed Results',
         Icon: "/images/Security.svg",
-        desc: 'We work with web portals for different audiences: customers, business partners, ecommerce users, patients, vendors.'
+        desc: 'We focus on measurable outcomes including increased traffic, better engagement, qualified leads, and higher conversions. Our data-driven marketing strategies are continuously optimized to achieve consistent and impactful business results.'
     },
     {
         title: 'Great Customer Support',
         Icon: "/images/common.svg",
-        desc: 'We work with web portals for different audiences: customers, business partners, ecommerce users, patients, vendors, interest-based communities.'
+        desc: 'Our dedicated support team ensures transparent communication, quick assistance, and regular project updates throughout your marketing journey. We work closely with clients to maintain smooth collaboration and long-term business relationships.'
     },
     {
         title: 'Top Rated',
         Icon: "/images/QA.svg",
-        desc: 'We work with web portals for different audiences: customers, business partners, ecommerce users, patients, vendors.'
+        desc: 'With proven expertise across industries, we deliver reliable digital marketing services trusted by startups, enterprises, and growing brands. Our focus on quality, innovation, and performance helps businesses achieve long-term digital success.'
     },
 ];
 

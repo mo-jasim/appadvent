@@ -37,7 +37,7 @@ export default function GoalkickCaseStudy() {
                                 playsInline
                                 className="absolute inset-0 w-full h-full object-cover"
                             >
-                                <source src="/caseimg/priviCam-video.mp4" type="video/mp4" />
+                                <source src="/caseimg/Newness-video.mp4" type="video/mp4" />
                             </video>
                             <div className="absolute inset-0 bg-black/60 z-10" />
                         </div>

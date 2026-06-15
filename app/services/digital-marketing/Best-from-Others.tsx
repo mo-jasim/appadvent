@@ -13,32 +13,32 @@ const cards: BestFromOthers[] = [
     {
         title: 'Industry Expertise',
         Icon: "/SVG-motion2/icons_enterprises.svg",
-        desc: "We work with web portals for different audiences: customers, business partners, ecommerce users, patients, vendors, interest-based communities.",
+        desc: "Our experienced digital marketing professionals understand diverse industries, audience behavior, and market trends. This expertise helps us create targeted strategies that improve brand visibility, customer engagement, and business performance effectively.",
     },
     {
         title: 'Custom Solutions',
         Icon: "/Digimark.img/managed icon.svg",
-        desc: "Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution."
+        desc: "Every business has different goals and challenges. We create personalized marketing strategies based on your industry, audience, competitors, and objectives to deliver maximum impact and long-term digital growth opportunities."
     },
     {
         title: 'Agile Methodology',
         Icon: "/SVG4/icons_professional-growth.svg",
-        desc: "Our solution architects will plan all functional components and select optimal techs for them to ensure the business logic is feasible and full."
+        desc: "We follow a flexible and performance-driven marketing process that allows quick strategy adjustments based on campaign insights, trends, and analytics. This helps improve efficiency, adaptability, and overall marketing performance consistently."
     },
     {
         title: 'Proven Track Record',
         Icon: "/SVG5/3.svg",
-        desc: "Our solution architects will plan all functional components and select optimal techs for them to ensure the business logic is feasible and full."
+        desc: "Our successful campaigns across SEO, advertising, branding, and social media marketing have helped businesses increase traffic, generate leads, and improve conversions through result-oriented digital marketing strategies."
     },
     {
         title: 'Dedicated Support',
         Icon: "/SVG-motion/s9.svg",
-        desc: "Our solution architects will plan all functional components and select optimal techs for them to ensure the business logic is feasible and full."
+        desc: "We provide continuous support, regular reporting, strategy discussions, and campaign monitoring to ensure smooth execution. Our team stays connected throughout the process to maintain transparency and achieve better marketing outcomes."
     },
     {
         title: 'Scalable Solutions',
         Icon: "/Digimark.img/icon_Scalable.svg",
-        desc: "Our solution architects will plan all functional components and select optimal techs for them to ensure the business logic is feasible and full."
+        desc: "Our digital marketing services are designed to scale with your business growth. Whether targeting local customers or global markets, we build adaptable strategies that support long-term expansion and sustainable success."
     },
 ];
 

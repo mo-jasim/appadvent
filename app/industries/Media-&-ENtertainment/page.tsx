@@ -73,7 +73,7 @@ const features = [
     },
 ];
 
-export default function MediaEntertainmentPage() {
+export default function MediaENtertainmentPage() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [expandedCard, setExpandedCard] = useState<number | null>(null);
 

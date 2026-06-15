@@ -87,7 +87,7 @@ export default function Letramway() {
                     <div className="hidden sm:block relative w-full px-4 max-w-[1200px] mx-auto aspect-[16/10] md:aspect-[16/9] lg:aspect-[2/1] mt-8 mb-16 lg:mt-12 z-10">
 
                         {/* Desktop (bigpc) */}
-                        <div className="absolute top-[0%] left-[20%] w-[60%] z-10 hover:translate-y-2 transition-transform duration-500 will-change-transform">
+                        <div className="absolute top-[0%] left-[20%] w-[60%] z-10 hover:translate-y-2 transition-transform duration-500 delay-75 will-change-transform">
                             <Image src="/Letimg/Queue-about-img.svg" alt="Desktop" width={1000} height={800} className="w-full h-auto drop-shadow-2xl" priority />
                         </div>
 

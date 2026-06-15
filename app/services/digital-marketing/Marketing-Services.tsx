@@ -13,31 +13,43 @@ const MarketingServices = () => {
     const skills = [
         {
             title: "360° Digital Marketing",
-            description: "helps our clients in designing dynamic and secure applications using the Microsoft .NET framework. With a keen eye for detail and a commitment to excellence, our developers develop enterprise-level solutions. Our dedicated team of .NET developers ensures the delivery of high-performance applications tailored to meet the unique requirements of your projects. ",
+            description: "Drive complete online growth with integrated digital marketing strategies including SEO, social media, paid advertising, branding, and content marketing. Maximize visibility, engagement, conversions, and long-term business performance across digital platforms effectively.",
         },
         {
             title: "Search Engine Optimization",
-            description: "empowers businesses to create robust, cross-platform applications with the Java programming language. Our skilled developers leverage the extensive Java ecosystem to build scalable solutions that enhance productivity and performance. By focusing on best practices and innovative design, we deliver applications that stand the test of time.",
+            description: "Improve search engine rankings with strategic SEO services focused on technical optimization, keyword targeting, content enhancement, and backlink building. Increase organic traffic, online visibility, and sustainable business growth through data-driven strategies.",
         },
         {
             title: "Social Media Marketing",
-            description: "enables rapid application development through its simple syntax and powerful libraries. Our Python experts specialize in crafting data-driven applications, leveraging frameworks like Django and Flask to create dynamic web solutions. We prioritize clean coding and modular design to ensure maintainability and scalability for your business needs.  coding and modular design.",
+            description: "Boost brand engagement through result-oriented social media marketing strategies across major platforms. Create impactful campaigns, audience-focused content, and consistent brand communication designed to increase reach, engagement, and customer conversions effectively.",
         },
         {
-            title: "Email Marketing",
-            description: "Builds native-like mobile applications using React/JavaScript. Our developers create seamless cross-platform experiences for both iOS and Android from a single codebase.",
+            title: "Advertising Service",
+            description: "Accelerate business growth with targeted advertising campaigns across Google, Meta, YouTube, and other digital platforms. Optimize ad performance, audience targeting, and conversions through data-driven strategies delivering measurable marketing results consistently.",
         },
         {
-            title: "Content Marketing",
-            description: "Builds native-like mobile applications using React/JavaScript. Our developers create seamless cross-platform experiences for both iOS and Android from a single codebase.",
+            title: "Branding Service",
+            description: "Build a powerful brand identity through strategic branding services including visual design, messaging, positioning, and digital presence enhancement. Create memorable customer experiences that strengthen trust, recognition, and long-term business credibility effectively.",
         },
         {
-            title: "Pay-per-click (PPC) Marketing",
-            description: "Builds native-like mobile applications using React/JavaScript. Our developers create seamless cross-platform experiences for both iOS and Android from a single codebase.",
+            title: "Content Writing Service",
+            description: "Deliver compelling content writing solutions tailored for websites, blogs, social media, and marketing campaigns. Create engaging, SEO-friendly, and audience-focused content that strengthens brand communication, improves visibility, and drives meaningful customer engagement.",
         },
         {
-            title: "Influencer Marketing",
-            description: "Builds native-like mobile applications using React/JavaScript. Our developers create seamless cross-platform experiences for both iOS and Android from a single codebase.",
+            title: "AIO (Artificial Intelligence Optimization",
+            description: "Enhance digital visibility with AI Optimization services focused on preparing content for AI-driven search experiences. Improve structured content, contextual relevance, and discoverability across modern AI platforms and intelligent search ecosystems effectively.",
+        },
+        {
+            title: "GEO (Generative Engine Optimization)",
+            description: "Optimize digital content for Generative Engine Optimization strategies designed to improve visibility in AI-generated search responses. Strengthen authority, structured information delivery, and brand discoverability across emerging generative search technologies effectively.",
+        },
+        {
+            title: "AEO (Answer Engine Optimization)",
+            description: "Improve online discoverability with Answer Engine Optimization services focused on featured snippets, voice search, and direct-answer visibility. Structure content strategically to increase search relevance, authority, and customer engagement across search platforms.",
+        },
+        {
+            title: "Guest Post Service",
+            description: "Strengthen online authority and SEO performance with high-quality guest posting services on relevant websites. Build credible backlinks, increase brand exposure, and improve search rankings through strategic content placement and outreach campaigns.",
         },
     ];
 

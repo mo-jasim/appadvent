@@ -15,77 +15,77 @@ const cards: AppTypeitem[] = [
     {
         title: 'Enterprises apps',
         Icon: "/SVG-motion2/icons_enterprises.svg",
-        desc: 'we works with web portals for different audiences: customers, business partners, ecommerce users, patients, vendors, interest-based communities.'
+        desc: 'Empower your organization with enterprise-grade mobile applications that streamline workflows, improve collaboration, and enhance productivity while maintaining security and scalability across business operations.'
     },
     {
         title: 'Communication & social media apps ',
         Icon: "/SVG-motion2/icons_communication.svg",
-        desc: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        desc: 'Build engaging communication and social networking platforms that connect users in real time. We create feature-rich solutions with messaging, media sharing, notifications, and community-building capabilities.'
     },
     {
         title: 'Supply chain management and logistics apps',
         Icon: "/SVG-motion2/icons_supply chain.svg",
-        desc: 'Our solution architects will plan all functional components and select optimal techs for them to ensure that the business logic to be implemented is feasible and full.'
+        desc: 'Optimize logistics operations with mobile solutions that improve inventory tracking, shipment monitoring, route management, and real-time visibility across the entire supply chain.'
     },
     {
-        title: 'mCommerce apps',
+        title: 'eCommerce apps',
         Icon: "/SVG-motion2/icons_commerce.svg",
-        desc: 'Our front-end developers can implement any design idea and ensure all interface elements work properly. We work with all of the most-used JavaScript '
+        desc: 'Deliver seamless shopping experiences with secure, user-friendly eCommerce applications. Our solutions include product catalogs, payment integration, order management, and personalized customer experiences.'
     },
     {
         title: 'Secure medical apps',
         Icon: "/SVG-motion2/icons_healthcare.svg",
-        desc: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        desc: 'Develop HIPAA-compliant and secure healthcare applications that support patient engagement, telemedicine, appointment scheduling, health monitoring, and secure medical data management.'
     },
     {
         title: 'Health and fitness apps',
         Icon: "/SVG-motion2/icons_fitness.svg",
-        desc: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        desc: 'Create innovative fitness and wellness applications that help users track activities, monitor health metrics, set goals, and stay motivated through personalized experiences.'
     },
     {
         title: 'Banking and financial self-service apps',
         Icon: "/SVG-motion2/icons_bank.svg",
-        desc: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        desc: 'Enable secure digital banking and financial management through mobile applications that offer account access, payments, transaction tracking, budgeting tools, and advanced security features.'
     },
     {
         title: 'Manufacturing and production control apps',
         Icon: "/SVG-motion2/icons_manufacturing.svg",
-        desc: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        desc: 'Improve manufacturing efficiency with applications that support production monitoring, quality control, inventory management, equipment tracking, and real-time operational insights.'
     },
     {
         title: 'Travel, navigation, and hospitality apps',
         Icon: "/SVG-motion2/icons_travel.svg",
-        desc: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        desc: 'Enhance customer experiences with travel and hospitality applications that offer booking services, navigation assistance, itinerary planning, location-based features, and personalized recommendations.'
     },
     {
         title: 'Booking and reservation apps',
         Icon: "/SVG-motion2/icons_ticket.svg",
-        desc: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        desc: 'Simplify appointment scheduling and reservation management with intuitive mobile applications designed for hotels, restaurants, healthcare providers, service businesses, and event organizers.'
     },
     {
         title: 'Real estate apps',
         Icon: "/SVG-motion2/icons_real-esate.svg",
-        desc: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        desc: 'Transform property management and real estate transactions with applications that enable property listings, virtual tours, lead management, location search, and customer engagement.'
     },
     {
         title: 'e-Government and citizen apps',
         Icon: "/SVG-motion2/icons_citizen.svg",
-        desc: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        desc: 'Support digital transformation in the public sector through citizen-centric applications that provide easy access to government services, information, requests, and online transactions.'
     },
     {
         title: 'Public safety and emergency services',
         Icon: "/SVG-motion2/icons_emeregency.svg",
-        desc: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        desc: 'Develop reliable applications for emergency response, incident reporting, public alerts, crisis management, and communication between authorities and citizens during critical situations.'
     },
     {
         title: 'Nonprofit and humanitarian aid apps',
         Icon: "/SVG-motion2/icons_charity.svg",
-        desc: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        desc: 'Help nonprofit organizations improve outreach, fundraising, volunteer management, and community engagement through scalable and user-friendly mobile solutions.'
     },
     {
         title: 'Entertainment and media apps',
         Icon: "/SVG-motion2/icons_entertainment.svg",
-        desc: 'Our business analysts focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution.'
+        desc: 'Create engaging media and entertainment applications with features such as video streaming, music playback, live content, social interaction, subscriptions, and personalized recommendations.'
     },
 ];
 
@@ -120,7 +120,7 @@ const AppType: React.FC = () => {
 
                 <div className="flex flex-col gap-4 sm:gap-5 relative z-10 max-w-7xl mx-auto text-center justify-center mb-[50px]">
                     <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-bold mb-4 leading-tight">
-                        App Types We Develop: Industry & Use Cases                    </h2>
+                        App Types We Develop: Industry & Use Cases                   </h2>
                     <p className="text-gray-500 text-[16px] sm:text-[18px] md:text-[20px] font-THICCCBOI">
                         Web development services help create all types of web-based software and ensure great experience for web users. Different types of web solutions may seem similar from the outside, but we approach them differently and know what factors are winning in each case                    </p>
                 </div>
@@ -149,7 +149,7 @@ const AppType: React.FC = () => {
 
                             <h3 className="font-bold text-[20px] md:text-[24px] mb-2">{item.title}</h3>
                             <p className="text-black text-sm md:text-[16px] font-THICCCBOI">
-                                Our base, robust, and extensible arch allows our team to perform custom requirements implementing custom features for custom needs.
+                                {item.desc}
                             </p>
                         </div>
                     ))}

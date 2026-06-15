@@ -119,7 +119,7 @@ const ServiceGridCard: React.FC = () => {
 
                             <h3 className="font-bold text-[20px] md:text-[24px] mb-2">{item.title}</h3>
                             <p className="text-black text-sm md:text-[16px] font-THICCCBOI">
-                                Our base, robust, and extensible arch allows our team to perform custom requirements implementing custom features for custom needs.
+                                {item.description}
                             </p>
                         </div>
                     ))}

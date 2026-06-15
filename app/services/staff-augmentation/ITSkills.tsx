@@ -14,35 +14,35 @@ const ITSkills = () => {
     const skills = [
         {
             title: ".Net Developer",
-            description: "helps our clients in designing dynamic and secure applications using the Microsoft .NET framework. With a keen eye for detail and a commitment to excellence, our developers develop enterprise-level solutions. Our dedicated team of .NET developers ensures the delivery of high-performance applications tailored to meet the unique requirements of your projects. ",
+            description: "Scale enterprise applications with experienced .NET developers skilled in ASP.NET, C#, APIs, cloud integration, and backend architecture. Build secure, high-performance solutions tailored for business operations, automation, and long-term digital scalability requirements.",
         },
         {
             title: "Java",
-            description: "empowers businesses to create robust, cross-platform applications with the Java programming language. Our skilled developers leverage the extensive Java ecosystem to build scalable solutions that enhance productivity and performance. By focusing on best practices and innovative design, we deliver applications that stand the test of time.",
+            description: "Hire dedicated Java developers to create robust, scalable, and secure enterprise-grade applications. Expertise includes Spring Boot, microservices, backend systems, and cross-platform development optimized for performance, flexibility, and seamless business integration needs.",
         },
         {
             title: "Python",
-            description: "enables rapid application development through its simple syntax and powerful libraries. Our Python experts specialize in crafting data-driven applications, leveraging frameworks like Django and Flask to create dynamic web solutions. We prioritize clean coding and modular design to ensure maintainability and scalability for your business needs.  coding and modular design.",
+            description: "Strengthen development teams with Python experts specializing in web applications, automation, AI integrations, data processing, and scalable backend systems. Deliver efficient, clean, and reliable solutions supporting modern digital transformation and innovation goals.",
         },
         {
             title: "Node.js",
-            description: "enables rapid application development through its simple syntax and powerful libraries. Our Python experts specialize in crafting data-driven applications, leveraging frameworks like Django and Flask to create dynamic web solutions. We prioritize clean coding and modular design to ensure maintainability and scalability for your business needs.  coding and modular design.",
+            description: "Expand your engineering capabilities with Node.js developers experienced in real-time applications, APIs, microservices, and scalable backend architectures. Build fast, lightweight, and high-performing digital platforms optimized for seamless user experiences and growth.",
         },
         {
             title: "React Native",
-            description: "enables rapid application development through its simple syntax and powerful libraries. Our Python experts specialize in crafting data-driven applications, leveraging frameworks like Django and Flask to create dynamic web solutions. We prioritize clean coding and modular design to ensure maintainability and scalability for your business needs.  coding and modular design.",
+            description: "Develop cross-platform mobile applications faster with React Native specialists delivering native-like performance, reusable components, and smooth user experiences. Ideal for startups and enterprises seeking cost-effective, scalable, and visually engaging mobile solutions.",
         },
         {
             title: "IOS(obj-c / Swift)",
-            description: "enables rapid application development through its simple syntax and powerful libraries. Our Python experts specialize in crafting data-driven applications, leveraging frameworks like Django and Flask to create dynamic web solutions. We prioritize clean coding and modular design to ensure maintainability and scalability for your business needs.  coding and modular design.",
+            description: "Hire iOS developers proficient in Swift and Objective-C to create secure, high-performance Apple applications. Deliver intuitive user experiences, seamless functionality, and scalable mobile solutions aligned with modern iOS ecosystem standards and expectations.",
         },
         {
             title: "Android(Kotlin / Java)",
-            description: "enables rapid application development through its simple syntax and powerful libraries. Our Python experts specialize in crafting data-driven applications, leveraging frameworks like Django and Flask to create dynamic web solutions. We prioritize clean coding and modular design to ensure maintainability and scalability for your business needs.  coding and modular design.",
+            description: "Build feature-rich Android applications with skilled Java and Kotlin developers focused on performance, scalability, and user-centric experiences. Create reliable mobile solutions compatible across devices while ensuring security, responsiveness, and long-term maintainability standards.",
         },
         {
             title: "Flutter",
-            description: "enables rapid application development through its simple syntax and powerful libraries. Our Python experts specialize in crafting data-driven applications, leveraging frameworks like Django and Flask to create dynamic web solutions. We prioritize clean coding and modular design to ensure maintainability and scalability for your business needs.  coding and modular design.",
+            description: "Accelerate mobile development using Flutter experts who build visually consistent, high-performance applications from a single codebase. Deliver seamless cross-platform experiences with faster deployment, scalable architecture, and modern UI design optimized for engagement.",
         },
     ];
 

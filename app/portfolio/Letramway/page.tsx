@@ -88,27 +88,27 @@ export default function Letramway() {
                <div className="hidden sm:block relative w-full px-4 max-w-[1200px] mx-auto aspect-[16/10] md:aspect-[16/9] lg:aspect-[2/1] mt-8 mb-16 lg:mt-12 z-10">
 
                   {/* Desktop (bigpc) */}
-                  <div className="absolute top-[0%] left-[20%] w-[60%] z-10 hover:translate-y-2 transition-transform duration-500 will-change-transform">
+                  <div className="absolute top-[0%] left-[20%] w-[60%] z-10 hover:-translate-y-[15px] transition-transform duration-500 delay-75 will-change-transform">
                      <Image src="/Letimg/bigpc.svg" alt="Desktop" width={1000} height={800} className="w-full h-auto drop-shadow-2xl" priority />
                   </div>
 
                   {/* iPad */}
-                  <div className="absolute top-[30%] left-[5%] w-[30%] z-20 hover:translate-y-2 transition-transform duration-500 delay-75 will-change-transform">
+                  <div className="absolute top-[30%] left-[5%] w-[30%] z-20 hover:-translate-y-[15px] transition-transform duration-500 delay-75 will-change-transform">
                      <Image src="/Letimg/Group.svg" alt="iPad" width={500} height={600} className="w-full h-auto drop-shadow-xl" priority />
                   </div>
 
                   {/* Laptop */}
-                  <div className="absolute top-[40%] left-[50%] w-[45%] z-20 hover:translate-y-2 transition-transform duration-500 delay-100 will-change-transform">
+                  <div className="absolute top-[40%] left-[50%] w-[45%] z-20 hover:-translate-y-[15px] transition-transform duration-500 delay-100 will-change-transform">
                      <Image src="/Letimg/381127576_11472844 copy 3.svg" alt="Laptop" width={800} height={600} className="w-full h-auto drop-shadow-xl" priority />
                   </div>
 
                   {/* iPhone */}
-                  <div className="absolute top-[45%] left-[2%] w-[12%] z-30 hover:translate-y-2 transition-transform duration-500 delay-150 will-change-transform">
+                  <div className="absolute top-[45%] left-[2%] w-[12%] z-30 hover:-translate-y-[15px] transition-transform duration-500 delay-150 will-change-transform">
                      <Image src="/Letimg/iPhone12.svg" alt="iPhone" width={200} height={400} className="w-full h-auto drop-shadow-lg" priority />
                   </div>
 
                   {/* Bugman */}
-                  <div className="absolute top-[25%] right-[-5%] lg:right-[-10%] w-[45%] z-30 hover:translate-y-2 transition-transform duration-500 delay-200 will-change-transform origin-bottom">
+                  <div className="absolute top-[25%] right-[-5%] lg:right-[-10%] w-[45%] z-30 hover:-translate-y-[15px] transition-transform duration-500 delay-200 will-change-transform origin-bottom">
                      <Image src="/Letimg/bugman.svg" alt="Bugman" width={400} height={600} className="w-full h-auto" priority />
                   </div>
 
@@ -204,9 +204,9 @@ export default function Letramway() {
                   </h2>
 
                   {/* Central Image with Glow */}
-                  <div className="relative w-full hover:translate-y-2 transition-transform duration-500 will-change-transform max-w-[1600px] mx-auto -mt-10 md:-mt-20">
+                  <div className="relative w-full transition-transform hover:-translate-y-2 duration-500 max-w-[1600px] mx-auto -mt-10 md:-mt-20">
                      {/*pcimg*/}
-                     <img src="/Letimg/PCimg.svg" alt="" width={500} height={500} className='w-[100%]' />
+                     <Image src="/Letimg/PCimg.svg" alt="Opportunities Await" width={1600} height={800} className="w-full h-auto drop-shadow-2xl" />
                   </div>
 
                   {/* 2x2 Grid */}

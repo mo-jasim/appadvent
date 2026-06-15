@@ -318,7 +318,7 @@ export default function FintechCryptoPage() {
                   <div
                     key={index}
                     onClick={() => setExpandedCard(isExpanded ? null : index)}
-                    className={`group relative overflow-hidden cursor-pointer rounded-[24px] p-6 sm:p-8 lg:p-10 flex flex-col hover:shadow-sm transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] flex-none snap-start ${isExpanded ? 'h-[420px] sm:h-[450px] w-[90vw] sm:w-[600px] lg:w-[850px] shadow-md' : 'h-[300px] sm:h-[350px] w-[85vw] sm:w-[400px] lg:w-[450px] hover:-translate-y-1'}`}
+                    className={`group relative overflow-hidden cursor-pointer rounded-[24px] p-6 sm:p-8 lg:p-10 flex flex-col hover:shadow-sm transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] flex-none snap-start ${isExpanded ? 'h-[300px] sm:h-[350px] w-[90vw] sm:w-[600px] lg:w-[850px] shadow-md' : 'h-[260px] sm:h-[300px] w-[85vw] sm:w-[400px] lg:w-[450px] hover:-translate-y-1'}`}
                     style={{ backgroundColor: card.bg }}
                   >
                     {/* Header: Icon + Title smoothly animating via absolute positioning */}

@@ -13,37 +13,37 @@ const cards: providingProcess[] = [
     {
         title: 'Collecting the requirement',
         Icon: "/Digimark.img/icons_1.svg",
-        desc: 'We recommend a fixed-price model if you have well-defined requirements and the scope of work is clear at the start.'
+        desc: 'We understand your business goals, target audience, and digital marketing needs to create a tailored strategy. Our team ensures clear communication, project transparency, and a result-focused approach from the beginning.'
     },
     {
         title: 'Market Analyzing',
         Icon: "/Digimark.img/icons_2.svg",
-        desc: 'We support both short-term and long-term team augmentation for specific tasks or ongoing work with no firm time boundaries.'
+        desc: 'Our experts analyze competitors, audience behavior, industry trends, and market opportunities to build effective marketing strategies. This research-driven approach helps maximize brand visibility, engagement, and overall digital growth performance.'
     },
     {
         title: 'Planning',
         Icon: "/Digimark.img/icons_3.svg",
-        desc: 'To collaborate effectively, we establish frequent and direct communication with your team and ensure timely exchange of project knowledge.'
+        desc: 'We create a structured digital marketing roadmap including SEO, social media, advertising, and branding strategies. Every campaign is planned carefully to align with your business objectives and measurable growth targets.'
     },
     {
         title: 'Competition research',
         Icon: "/Digimark.img/icons_4.svg",
-        desc: 'Even if we are temporarily involved in your project, we accurately document our work and fully comply with your requirements.'
+        desc: 'We perform detailed competitor analysis to identify strengths, weaknesses, opportunities, and market gaps. This helps us create stronger marketing strategies that improve brand positioning and give your business a competitive advantage.'
     },
     {
         title: 'Ad Setup',
         Icon: "/Digimark.img/icons_5.svg",
-        desc: "Our engineers stick to ISO-certified quality management principles to ensure contributions meet the highest standards of technology excellence."
+        desc: "Our team sets up optimized marketing campaigns across search engines, social media platforms, and advertising networks. We focus on audience targeting, performance optimization, and creating impactful customer engagement strategies."
     },
     {
         title: 'Tracking Results',
         Icon: "/Digimark.img/icons_6.svg",
-        desc: "Our engineers stick to ISO-certified quality management principles to ensure contributions meet the highest standards of technology excellence."
+        desc: "We continuously monitor campaign performance using advanced analytics and reporting tools. From traffic growth to conversion tracking, we measure every key metric to ensure consistent marketing improvements and better ROI."
     },
     {
         title: 'Continuous Monitoring',
         Icon: "/Digimark.img/icons_7.svg",
-        desc: 'Even if we are temporarily involved in your project, we accurately document our work and fully comply with your requirements.'
+        desc: 'Digital marketing requires constant improvement. We regularly optimize campaigns, content, keywords, and audience targeting strategies to improve visibility, engagement, lead generation, and long-term business growth results.'
     },
 ];
 
