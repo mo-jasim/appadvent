@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import Image from 'next/image';
 
 interface providingProcess {
@@ -52,13 +52,15 @@ const CircularProgress = ({
     title,
     subtitle,
     greenPercent = 45,
-    yellowPercent = 25
+    yellowPercent = 25,
+    rotationCount = 0
 }: {
     value: number;
     title: React.ReactNode;
     subtitle?: React.ReactNode;
     greenPercent?: number;
     yellowPercent?: number;
+    rotationCount?: number;
 }) => {
     const radius = 60;
     const circumference = 2 * Math.PI * radius;
@@ -71,23 +73,26 @@ const CircularProgress = ({
                 <h3 className="text-[16px] sm:text-[18px] font-bold text-[#374151]">{title}</h3>
             </div>
             <div className="relative w-[140px] h-[140px] sm:w-[180px] sm:h-[180px]">
-                <svg className="w-full h-full -rotate-90 transform" viewBox="0 0 140 140">
+                <svg
+                    className="w-full h-full -rotate-90 transform"
+                    viewBox="0 0 140 140"
+                >
                     <circle cx="70" cy="70" r={radius} stroke="#E5E7EB" strokeWidth="10" fill="none" strokeLinecap="round" />
                     <circle
                         cx="70" cy="70" r={radius}
                         stroke="#4ADE80" strokeWidth="10" fill="none"
                         strokeLinecap="round"
                         strokeDasharray={circumference}
-                        strokeDashoffset={greenOffset}
-                        className="origin-center rotate-[90deg] transition-all duration-1000 ease-out"
+                        strokeDashoffset={(rotationCount ?? 0) > 0 ? greenOffset : circumference}
+                        className="origin-center rotate-[90deg] transition-all duration-2000 ease-out"
                     />
                     <circle
                         cx="70" cy="70" r={radius}
                         stroke="#F59E0B" strokeWidth="10" fill="none"
                         strokeLinecap="round"
                         strokeDasharray={circumference}
-                        strokeDashoffset={yellowOffset}
-                        className="origin-center transition-all duration-500 ease-out"
+                        strokeDashoffset={(rotationCount ?? 0) > 0 ? yellowOffset : circumference}
+                        className="origin-center transition-all duration-2000 ease-out"
                     />
                 </svg>
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-3">
@@ -108,10 +113,34 @@ const CircularProgress = ({
 const ProvidingProcess: React.FC = () => {
     const [mounted, setMounted] = useState(false);
     const [imageKeys, setImageKeys] = useState<number[]>(cards.map(() => 0));
+    const [statsRotation, setStatsRotation] = useState(0);
+    const statsRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         setMounted(true);
         setImageKeys(cards.map(() => Date.now()));
+    }, []);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries, obs) => {
+                if (entries[0].isIntersecting) {
+                    // Slight delay to ensure smooth start after scrolling
+                    setTimeout(() => setStatsRotation(1), 200);
+                    obs.disconnect();
+                }
+            },
+            { threshold: 0.5 }
+        );
+
+        const currentRef = statsRef.current;
+        if (currentRef) {
+            observer.observe(currentRef);
+        }
+
+        return () => {
+            if (currentRef) observer.disconnect();
+        };
     }, []);
 
     const handleHover = (index: number): void => {
@@ -163,7 +192,10 @@ const ProvidingProcess: React.FC = () => {
                     ))}
 
                     {/* Statistics Card — spans 2 cols on lg */}
-                    <div className="col-span-1 sm:col-span-2 lg:col-span-2 bg-white rounded-[20px] p-6 sm:p-8 shadow-sm hover:shadow-2xl transition-all flex flex-col justify-center items-center gap-6">
+                    <div
+                        ref={statsRef}
+                        className="col-span-1 sm:col-span-2 lg:col-span-2 bg-white rounded-[20px] p-6 sm:p-8 shadow-sm hover:shadow-2xl transition-all flex flex-col justify-center items-center gap-6"
+                    >
                         <div className="flex flex-col sm:flex-row justify-between text-center w-full items-start gap-6 sm:gap-8">
                             <CircularProgress
                                 value={72}
@@ -171,6 +203,7 @@ const ProvidingProcess: React.FC = () => {
                                 subtitle={<>increase in website traffic <br /> through SEO <br />optimization</>}
                                 greenPercent={46}
                                 yellowPercent={24}
+                                rotationCount={statsRotation}
                             />
                             <CircularProgress
                                 value={58}
@@ -178,6 +211,7 @@ const ProvidingProcess: React.FC = () => {
                                 subtitle={<>more qualified leads<br />from search engines</>}
                                 greenPercent={30}
                                 yellowPercent={24}
+                                rotationCount={statsRotation}
                             />
                             <CircularProgress
                                 value={85}
@@ -185,6 +219,7 @@ const ProvidingProcess: React.FC = () => {
                                 subtitle={<>higher visibility<br />on Google search</>}
                                 greenPercent={55}
                                 yellowPercent={24}
+                                rotationCount={statsRotation}
                             />
                         </div>
                         {/* Legend */}

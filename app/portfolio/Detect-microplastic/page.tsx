@@ -290,6 +290,7 @@ export default function GoalkickCaseStudy() {
                    8. DESIGNING
                ───────────────────────────────────────────── */}
                     <Designing1 />
+
                     {/* 9. GLIMPSES OF APP UI SCREENS */}
                     <section className="relative w-full py-20 md:py-32 text-center overflow-hidden font-THICCCBOI">
                         {/* Glow Blob */}
@@ -318,7 +319,7 @@ export default function GoalkickCaseStudy() {
                         <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 relative z-10">
                             {/* Watermark */}
                             <div className="relative mb-20">
-                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#f1f5f9] whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
+                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
                                     UI SCREENS
                                 </div>
                                 <h2 className="relative z-10 text-3xl md:text-5xl font-bold text-[#0f172a]">

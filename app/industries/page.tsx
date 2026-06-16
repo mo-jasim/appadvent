@@ -45,7 +45,7 @@ const industries = [
         img: "/images/I5.png",
         icon: "/images/media.svg",
         title: "Media & Entertainment",
-        href: "/industries/Media-&-ENtertainment",
+        href: "/industries/Media-&-Entertainment",
         desc: "Developing immersive media and entertainment solutions with seamless streaming, personalized experiences, interactive content delivery, and scalable platforms for modern digital audiences.",
     },
     {

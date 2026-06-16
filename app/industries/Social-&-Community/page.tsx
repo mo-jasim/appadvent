@@ -175,7 +175,7 @@ export default function FintechCryptoPage() {
                             {/* Right: phone mockups */}
                             <div className="flex justify-center items-center relative order-1 lg:order-2">
                                 <div className="relative w-full max-w-[350px] md:max-w-[450px] transition-transform duration-500 hover:scale-[1.03]">
-                                    <img src="/Letimg/CryptoCove - Crypto Wallet 1.svg" alt="Crypto Wallet" className="w-full h-auto drop-shadow-2xl" />
+                                    <img src="/Letimg/Social-&-Community-about.svg" alt="Crypto Wallet" className="w-full h-auto drop-shadow-2xl" />
 
                                     {/* Glow effect */}
                                     <div className="absolute inset-0 bg-[#32B9E9]/10 blur-[100px] rounded-full -z-10 animate-pulse" />

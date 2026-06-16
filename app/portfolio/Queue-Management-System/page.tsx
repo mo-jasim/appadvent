@@ -316,7 +316,7 @@ export default function Letramway() {
                 <section className="w-full py-20 md:py-32 text-center bg-white">
                     <div className="max-w-[1200px] mx-auto px-4">
                         <div className="relative mb-20">
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#f1f5f9] whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
                                 UI SCREENS
                             </div>
                             <h2 className="relative z-10 text-3xl md:text-5xl font-bold text-[#0f172a]">
@@ -325,7 +325,6 @@ export default function Letramway() {
                         </div>
 
                         <div className="relative max-w-[1000px] mx-auto group">
-                            <div className="absolute -inset-1 bg-gradient-to-r from-[#32B9E9] to-[#9C162E] rounded-[2rem] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
                             <div className="relative rounded-[2rem] overflow-hidden bg-white">
                                 <Image
                                     src="/Letimg/381127576_11472844 copy 3.svg"
@@ -335,6 +334,18 @@ export default function Letramway() {
                                     priority
                                     className="w-full h-auto"
                                 />
+                                {/* Video overlay on laptop screen - adjust positioning percentages if needed */}
+                                <div className="absolute top-[2.6%] left-[7%] w-[83.5%] h-[78.5%] z-20 bg-transparent rounded-sm md:rounded-md overflow-hidden">
+                                    <video
+                                        autoPlay
+                                        loop
+                                        muted
+                                        playsInline
+                                        className="absolute top-0 left-0 w-full h-[106%] object-fill"
+                                    >
+                                        <source src="/Letimg/QMS-video.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
                             </div>
                         </div>
                     </div>

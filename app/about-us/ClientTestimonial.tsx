@@ -3,28 +3,40 @@
 import React from 'react';
 import Image from 'next/image';
 import { Quote, Star, Play } from 'lucide-react';
+import image from 'next/image';
 
 const testimonials = [
     {
         id: 1,
         name: 'Marty fontaine',
-        role: 'CEO',
+        role: 'CEO, FreshUp Automotive Inc.',
         image: '/images/mobimg.png',
-        quote: "Sam exceeded my expectations in website support. I came in without a clear direction. After hearing about my endgoal, he was able to give me examples that allowed me to make better choices and shape the direction of my website, and company, going forward."
+        rating: 5,
+        quote: "Appadvent Technologies Pvt Ltd’s work has been met with positive acclaim, as they're able to consistently perform ongoing testing and development. The team is highly communicative, and internal stakeholders are particularly impressed with the service provider's receptiveness to feedback and requirements."
     },
     {
         id: 2,
-        name: 'David Miller',
-        role: 'CEO',
+        name: 'Kevin S',
+        role: 'President, Streamline Factory Inc.',
         image: '/images/mobimg.png', // Duplicating for demo, user can change
-        quote: "Sam exceeded my expectations in website support. I came in without a clear direction. After hearing about my endgoal, he was able to give me examples that allowed me to make better choices and shape the direction of my website, and company, going forward."
+        rating: 5,
+        quote: "Appadvent Technologies Pvt Ltd successfully delivered the app on time, meeting all required standards. The team organized the project well, set clear milestones, and kept the client updated throughout the process. Overall, the team's responsiveness, technical expertise, and commitment stood out."
     },
     {
         id: 3,
-        name: 'Sarah Jenkins',
-        role: 'Marketing Head',
+        name: 'Fatema Abdullah',
+        role: 'Owner, Wsltk Sales',
         image: '/images/mobimg.png',
-        quote: "Sam exceeded my expectations in website support. I came in without a clear direction. After hearing about my endgoal, he was able to give me examples that allowed me to make better choices and shape the direction of my website, and company, going forward."
+        rating: 5,
+        quote: "Thanks to Appadvent Technologies Pvt Ltd, the client achieved a 20% rise in revenue, a 15% jump in average order value, and a 25% increase in active users. They also achieved a 40% user retention rate and a 30% increase in sessions per user. Overall, the team delivered truly impressive results."
+    },
+    {
+        id: 4,
+        name: 'Paul Quinones',
+        role: 'Owner, SK2 Nutrition',
+        image: '/images/mobimg.png',
+        rating: 4,
+        quote: "Thanks to Appadvent Technologies Pvt Ltd's efforts, the client's website concept has launched. The team ensures the client's requirements are fulfilled. Appadvent Technologies Pvt Ltd's flexibility when faced with a problem is impressive. The client is happy with the team's performance."
     },
 ];
 
@@ -99,9 +111,24 @@ const ClientTestimonial = () => {
                                     />
                                 </div>
                                 <div className="flex gap-1.5">
-                                    {[1, 2, 3, 4, 5].map((star) => (
-                                        <Star key={star} className="w-6 h-6 sm:w-7 sm:h-7 text-[#F98A00] fill-[#F98A00]" />
-                                    ))}
+                                    {/* Clutch Rating */}
+                                    <a
+                                        href="https://clutch.co/profile/appadvent-technologies"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="mt-1 flex flex-col gap-1.5 cursor-pointer hover:opacity-80 transition-opacity w-fit"
+                                    >
+                                        <div className="flex items-center gap-3">
+                                            <div className="flex gap-[2px]">
+                                                {[1, 2, 3, 4, 5].map((i) => (
+                                                    <div key={`tp-${testimonial.id}-${i}`} className="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center">
+                                                        <Star className={`w-8 h-8 sm:w-10 sm:h-10 ${i <= testimonial.rating ? 'text-red-500 fill-red-500' : 'text-gray-300 fill-gray-300'}`} />
+                                                    </div>
+                                                ))}
+                                            </div>
+                                            <span className="text-[18px] sm:text-[20px] font-medium text-[#1C1C1C]">{testimonial.rating}.0</span>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
 
@@ -118,28 +145,7 @@ const ClientTestimonial = () => {
                                 </p>
                             </div>
 
-                            {/* Trustpilot Rating */}
-                            <a
-                                href="https://www.trustpilot.com/review/appadvent.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="mt-2 flex flex-col gap-1.5 cursor-pointer hover:opacity-80 transition-opacity w-fit"
-                            >
-                                <h2 className='text-[16px] sm:text-[20px] font-bold text-[#1C1C1C] leading-none'>Trustpilot</h2>
-                                <div className="flex items-center gap-3">
-                                    <div className="flex gap-[2px]">
-                                        {[1, 2, 3, 4].map((i) => (
-                                            <div key={`tp-${testimonial.id}-${i}`} className="bg-[#00B67A] w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center">
-                                                <Star className="w-4 h-4 sm:w-5 sm:h-5 text-white fill-white" />
-                                            </div>
-                                        ))}
-                                        <div className="bg-[#DCDCE6] w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center">
-                                            <Star className="w-4 h-4 sm:w-5 sm:h-5 text-white fill-white" />
-                                        </div>
-                                    </div>
-                                    <span className="text-[18px] sm:text-[20px] font-medium text-[#1C1C1C]">4.1</span>
-                                </div>
-                            </a>
+
 
                         </div>
 

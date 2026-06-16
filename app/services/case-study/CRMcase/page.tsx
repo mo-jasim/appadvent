@@ -307,6 +307,18 @@ export default function CRMcasePage() {
                                     priority
                                     className="w-full h-auto drop-shadow-2xl"
                                 />
+                                {/* Video overlay on laptop screen - adjust positioning percentages if needed */}
+                                <div className="absolute top-[2.6%] left-[7%] w-[83.5%] h-[78.5%] z-20 bg-transparent rounded-sm md:rounded-md overflow-hidden">
+                                    <video
+                                        autoPlay
+                                        loop
+                                        muted
+                                        playsInline
+                                        className="absolute top-0 left-0 w-full h-[106%] object-fill"
+                                    >
+                                        <source src="/Letimg/360-video.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
                             </div>
                         </div>
                     </section>

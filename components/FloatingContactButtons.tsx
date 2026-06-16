@@ -1,13 +1,16 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { MessageSquare } from "lucide-react";
+import ContactDrawer from "./ContactDrawer";
 
 const FloatingContactButtons = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
   return (
     <div className="fixed bottom-8 right-8 flex flex-row gap-4 z-50">
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/your-number"
+        href="https://wa.me/+918864023673"
         target="_blank"
         rel="noopener noreferrer"
         className="w-16 h-16 bg-gradient-to-br from-[#25D366] to-[#128C7E] rounded-full flex items-center justify-center shadow-[0_10px_30px_rgba(37,211,102,0.4)] hover:shadow-[0_15px_35px_rgba(37,211,102,0.5)] hover:scale-110 transition-all duration-300 group"
@@ -24,11 +27,14 @@ const FloatingContactButtons = () => {
 
       {/* Chat/Message Button */}
       <button
-        className="w-16 h-16 bg-gradient-to-br from-[#00AEEF] to-[#0088ce] rounded-full flex items-center justify-center shadow-[0_10px_30px_rgba(0,174,239,0.4)] hover:shadow-[0_15px_35px_rgba(0,174,239,0.5)] hover:scale-110 transition-all duration-300 group"
+        onClick={() => setIsDrawerOpen(true)}
+        className="w-16 h-16 bg-gradient-to-br from-[#00AEEF] to-[#0088ce] rounded-full flex items-center justify-center cursor-pointer shadow-[0_10px_30px_rgba(0,174,239,0.4)] hover:shadow-[0_15px_35px_rgba(0,174,239,0.5)] hover:scale-110 transition-all duration-300 group"
         aria-label="Open Chat"
       >
         <MessageSquare className="w-9 h-9 text-white transition-transform group-hover:-translate-y-1" />
       </button>
+
+      <ContactDrawer isOpen={isDrawerOpen} onClose={() => setIsDrawerOpen(false)} />
     </div>
   );
 };

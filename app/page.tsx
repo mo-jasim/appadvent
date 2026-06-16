@@ -14,8 +14,8 @@ const servicesData = [
   { href: "services/mobile-app-development", title: "Mobile App Development", desc: "We develop mobile apps for iOS and Android using Swift, Kotlin, and React Native. Our secure apps ensure a great user experience...", icon: "/images/Ico2.svg" },
   { href: "services/staff-augmentation", title: "Staff Augmentation", desc: "Appadvent offers staff augmentation services to help you quickly scale your team with highly skilled professionals...", icon: "/images/Ico3.svg" },
   { href: "services/digital-marketing", title: "Digital Marketing", desc: "We offer SEO, social media, copywriting, and keyword optimization to boost your website's ranking and audience reach...", icon: "/images/Ico4.svg" },
-  { href: "services/custom-based-services/Software-Maintenance", title: "Support & Maintenance", desc: "We provide ongoing support and maintenance to ensure your web and mobile applications operate ...", icon: "/images/Ico5.svg" },
-  { href: "services/custom-based-services", title: "Custom Based Services", desc: "Our services meet your business needs with tailored solutions. We develop software that enhances productivity...", icon: "/images/Ico6.svg" }
+  { href: "services/Software-Maintenancepage", title: "Support & Maintenance", desc: "We provide ongoing support and maintenance to ensure your web and mobile applications operate ...", icon: "/images/Ico5.svg" },
+  { href: "services/Custom-Based-Services", title: "Custom Based Services", desc: "Our services meet your business needs with tailored solutions. We develop software that enhances productivity...", icon: "/images/Ico6.svg" }
 ];
 
 const allIndustries = [
@@ -170,7 +170,7 @@ const HomePage = () => {
         <div className="mt-7 grid gap-6 max-w-6xl mx-auto px-4 sm:px-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {servicesData.map((service, index) => (
             <Link key={index} href={service.href} className="block h-full group  bg-white rounded-xl" onMouseEnter={() => handleHover(index)}>
-              <div className="h-full pt-8 pb-3 px-6 flex flex-col items-center justify-between border border-[#F2F2F2] rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+              <div className="h-full pt-8 pb-3 px-6 flex flex-col items-center justify-between bg-white border border-[#F2F2F2] rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
                 <div className="flex flex-col items-center flex-grow">
                   <Image
                     src={mounted && imageKeys[index] ? `${service.icon}?v=${imageKeys[index]}` : service.icon}
