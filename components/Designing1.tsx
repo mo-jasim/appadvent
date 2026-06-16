@@ -14,8 +14,8 @@ const STAGES = [
     {
         num: 2,
         img: "/images/Group3.svg",
-        label: 'Design',
-        title: 'Design',
+        label: 'Designing',
+        title: 'Designing',
         desc: 'We turn ideas into clean, user-focused experiences that are simple to navigate and visually impactful. Every layout, interaction, and interface element is designed to improve usability, strengthen brand identity, and create a seamless customer journey.'
     },
     {
@@ -268,7 +268,7 @@ export default function Designing1() {
                                                         </div>
 
                                                         {/* Animated label text */}
-                                                        <div className="text-[34px] font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#17387c] via-[#85348b] to-[#dc243c] mb-12 whitespace-nowrap">
+                                                        <div className="text-[34px] font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#17387c] via-[#85348b] to-[#dc243c] mb-12 whitespace-nowrap">
                                                             {stage.label}
                                                         </div>
                                                     </div>
@@ -287,7 +287,7 @@ export default function Designing1() {
 
                         {/* The single active stage text with animation based on tick */}
                         <div key={`text-${tick}-cycle-${cycleId}`} className="flex flex-col w-full slide-up-in">
-                            <h3 className="text-[26px] sm:text-[32px] lg:text-[40px] font-bold text-[#1e293b] mb-4 sm:mb-6 leading-tight flex items-baseline">
+                            <h3 className="text-[26px] sm:text-[32px] lg:text-[40px] font-semibold text-[#1e293b] mb-4 sm:mb-6 leading-tight flex items-baseline">
                                 <span className="text-[#34b2ed] text-[36px] sm:text-[46px] lg:text-[56px] mr-4 opacity-50">
                                     0{midStage.num}
                                 </span>

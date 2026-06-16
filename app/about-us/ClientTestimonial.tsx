@@ -10,7 +10,7 @@ const testimonials = [
         id: 1,
         name: 'Marty fontaine',
         role: 'CEO, FreshUp Automotive Inc.',
-        image: '/images/mobimg.png',
+        image: '/Letimg/Freshup-review.png',
         rating: 5,
         quote: "Appadvent Technologies Pvt Ltd’s work has been met with positive acclaim, as they're able to consistently perform ongoing testing and development. The team is highly communicative, and internal stakeholders are particularly impressed with the service provider's receptiveness to feedback and requirements."
     },
@@ -18,23 +18,23 @@ const testimonials = [
         id: 2,
         name: 'Kevin S',
         role: 'President, Streamline Factory Inc.',
-        image: '/images/mobimg.png', // Duplicating for demo, user can change
+        image: '/Letimg/streamline-review.png', // Duplicating for demo, user can change
         rating: 5,
         quote: "Appadvent Technologies Pvt Ltd successfully delivered the app on time, meeting all required standards. The team organized the project well, set clear milestones, and kept the client updated throughout the process. Overall, the team's responsiveness, technical expertise, and commitment stood out."
     },
     {
         id: 3,
-        name: 'Fatema Abdullah',
+        name: 'Sukanta Das',
         role: 'Owner, Wsltk Sales',
-        image: '/images/mobimg.png',
+        image: '/Letimg/Newness-review.png',
         rating: 5,
-        quote: "Thanks to Appadvent Technologies Pvt Ltd, the client achieved a 20% rise in revenue, a 15% jump in average order value, and a 25% increase in active users. They also achieved a 40% user retention rate and a 30% increase in sessions per user. Overall, the team delivered truly impressive results."
+        quote: "Very good service. The team was professional, responsive, and easy to work with throughout the project. I'm happy with the final result and would definitely recommend them."
     },
     {
         id: 4,
         name: 'Paul Quinones',
         role: 'Owner, SK2 Nutrition',
-        image: '/images/mobimg.png',
+        image: '/Letimg/Sk-review.png',
         rating: 4,
         quote: "Thanks to Appadvent Technologies Pvt Ltd's efforts, the client's website concept has launched. The team ensures the client's requirements are fulfilled. Appadvent Technologies Pvt Ltd's flexibility when faced with a problem is impressive. The client is happy with the team's performance."
     },
@@ -98,7 +98,7 @@ const ClientTestimonial = () => {
                     >
 
                         {/* Left Side - Content */}
-                        <div className="w-full lg:w-1/2 p-6 sm:p-12 lg:p-16 flex flex-col justify-center bg-white">
+                        <div className="w-full lg:w-3/5 p-6 sm:p-12 lg:p-16 flex flex-col justify-center bg-white">
 
                             {/* Header Row: Quotes & Stars */}
                             <div className="flex justify-between items-start mb-8">
@@ -150,7 +150,7 @@ const ClientTestimonial = () => {
                         </div>
 
                         {/* Right Side - Image */}
-                        <div className="w-full lg:w-1/2 relative min-h-[300px] sm:min-h-[400px] lg:min-h-[500px] bg-gray-100 flex-shrink-0">
+                        <div className="w-full lg:w-2/5 relative min-h-[300px] sm:min-h-[400px] lg:min-h-[500px] bg-gray-100 flex-shrink-0">
                             <Image
                                 src={testimonial.image}
                                 alt={`Testimonial from ${testimonial.name}`}
@@ -158,12 +158,6 @@ const ClientTestimonial = () => {
                                 className="object-cover"
                                 priority
                             />
-
-                            <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="bg-white rounded-full p-4 sm:p-6 lg:p-7 shadow-2xl hover:scale-110 transition-transform duration-300 cursor-pointer flex items-center justify-center group z-10">
-                                    <Play className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 text-black fill-black ml-1" />
-                                </div>
-                            </div>
                         </div>
                     </div>
                 ))}
