@@ -51,7 +51,7 @@ const allIndustries = [
   },
   {
     title: "Media & Entertainment",
-    href: "/industries/Media-&-ENtertainment",
+    href: "/industries/Media-&-Entertainment",
     bg: "bg-[#FDFAEA]",
     icon: "/images/media.svg",
   },
