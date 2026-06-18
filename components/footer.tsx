@@ -1,10 +1,15 @@
-import React from 'react'
+"use client";
+
+import React, { useState } from 'react'
 import Image from 'next/image'
 import QAndA from "../components/QAndA"
 import Link from 'next/link'
 import HaveAProject from './Have-a-project'
+import ContactDrawer from './ContactDrawer'
 
 const footer = () => {
+  const [isContactDrawerOpen, setIsContactDrawerOpen] = useState(false);
+
   return (
 
     <>
@@ -73,7 +78,7 @@ const footer = () => {
                 <li className="mb-4 block hover:text-[#32B9E9]"><Link href="/about-us">About Us</Link></li>
                 <li className="mb-4 block hover:text-[#32B9E9]"><Link href="/portfolio">Portfolio</Link></li>
                 <li className="mb-4 block hover:text-[#32B9E9]"><Link href="/blog">Blogs</Link></li>
-                <li className="mb-4 block hover:text-[#32B9E9]"><Link href="/ContactDrawer">Contact Us</Link></li>
+                <li className="mb-4 block hover:text-[#32B9E9] cursor-pointer" onClick={() => setIsContactDrawerOpen(true)}>Contact Us</li>
               </ul>
             </div>
 
@@ -165,6 +170,11 @@ const footer = () => {
           </div>
         </div>
       </footer>
+
+      <ContactDrawer 
+        isOpen={isContactDrawerOpen} 
+        onClose={() => setIsContactDrawerOpen(false)} 
+      />
     </>
   )
 }
