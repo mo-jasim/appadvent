@@ -171,9 +171,9 @@ const footer = () => {
         </div>
       </footer>
 
-      <ContactDrawer 
-        isOpen={isContactDrawerOpen} 
-        onClose={() => setIsContactDrawerOpen(false)} 
+      <ContactDrawer
+        isOpen={isContactDrawerOpen}
+        onClose={() => setIsContactDrawerOpen(false)}
       />
     </>
   )
