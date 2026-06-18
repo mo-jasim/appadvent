@@ -135,8 +135,8 @@ export default function FintechCryptoPage() {
                         </div>
 
                         <div className="relative flex justify-center items-center">
-                            <div className="relative w-full max-w-[320px] sm:max-w-[450px] lg:max-w-[550px] aspect-[4/3] transition-transform duration-500 hover:scale-[1.02]">
-                                <img src="/images/Health-&-Pharmacylogo.svg" alt="Fintech Mockup" className="w-full h-full object-contain" />
+                            <div className="relative w-full max-w-[320px] sm:max-w-[350px] lg:max-w-[650px] aspect-[4/3] transition-transform duration-500 hover:scale-[1.02]">
+                                <img src="/images/Health-&-Pharmacylogo.svg" alt="Fintech Mockup" className="w-full h-[500px] -mt-20" />
                             </div>
                         </div>
                     </div>
