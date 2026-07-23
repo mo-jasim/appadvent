@@ -21,7 +21,6 @@ export default function HaveAProject() {
                             Provide insights into your project and submit your Request for Proposal
                             to get started.
                         </p>
-
                         <div className="mt-16 mb-16 text-sm text-gray-300 flex gap-[20px]">
                             <div>
                                 <Image
@@ -35,7 +34,7 @@ export default function HaveAProject() {
                             </div>
                             <div>
                                 <p className="font-semibold text-[14px]">EMAIL US</p>
-                                <a href="mailto:info@appadvent.com" className="text-white text-[24px] block hover:text-[#32B9E9] transition-colors">info@appadvent.com</a>
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@appadvent.com" className="text-white text-[24px] block hover:text-[#32B9E9] transition-colors">info@appadvent.com</a>
                             </div>
                         </div>
 

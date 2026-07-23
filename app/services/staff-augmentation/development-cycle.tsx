@@ -1,5 +1,6 @@
-
+'use client';
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const DevelopmentCycle = () => {
     const experts = [
@@ -42,34 +43,60 @@ const DevelopmentCycle = () => {
     ];
 
     return (
-        <section className="mt-[80px] mb-[80px] font-THICCCBOI relative overflow-hidden">
+        <section className="py-16 sm:py-20 md:py-24 font-THICCCBOI relative overflow-hidden">
             {/* Background decorative elements */}
-            <div className="absolute top-0 left-0 w-[500px] h-[500px] pointer-events-none"></div>
-            <div className="absolute bottom-0 right-0 w-[500px] h-[500px] pointer-events-none"></div>
+            <div className="absolute top-0 left-0 w-[500px] h-[500px] pointer-events-none opacity-50 bg-[radial-gradient(circle_at_top_left,rgba(50,185,233,0.05),transparent_70%)]"></div>
+            <div className="absolute bottom-0 right-0 w-[500px] h-[500px] pointer-events-none opacity-50 bg-[radial-gradient(circle_at_bottom_right,rgba(50,185,233,0.05),transparent_70%)]"></div>
 
-            <div className="relative z-10 max-w-7xl mx-auto px-4">
-                <div className="text-center mb-12 md:mb-16">
-                    <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-bold text-black mb-4 leading-tight">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
+                <motion.div 
+                    className="text-center mb-10 sm:mb-12 md:mb-16"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-60px" }}
+                    variants={{
+                        hidden: { opacity: 0, y: -30 },
+                        visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
+                    }}
+                >
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-bold text-black mb-4 leading-tight">
                         Experts to complete a software
                         <br className="hidden md:block" /> development cycle
                     </h2>
-                </div>
+                </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <motion.div 
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-60px" }}
+                    variants={{
+                        hidden: {},
+                        visible: {
+                            transition: {
+                                staggerChildren: 0.1,
+                            },
+                        },
+                    }}
+                >
                     {experts.map((item, index) => (
-                        <div
+                        <motion.div
                             key={index}
-                            className="bg-white p-8 rounded-[20px] shadow-sm border border-white/50 hover:shadow-lg transition-shadow duration-300"
+                            variants={{
+                                hidden: { opacity: 0, y: 30, scale: 0.95 },
+                                visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } }
+                            }}
+                            className="bg-white p-8 rounded-[24px] shadow-sm border border-gray-100 hover:shadow-[0_8px_30px_rgba(50,185,233,0.12)] hover:border-[#32B9E9]/20 hover:-translate-y-1 transition-all duration-300 group"
                         >
-                            <h3 className="text-[20px] font-bold text-black mb-3">
+                            <h3 className="text-[20px] md:text-[22px] font-bold text-black mb-3 group-hover:text-[#32B9E9] transition-colors duration-300">
                                 {item.title}
                             </h3>
-                            <p className="text-black text-[16px] leading-relaxed">
+                            <p className="text-gray-600 text-[16px] leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
                                 {item.description}
                             </p>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </section>
     );

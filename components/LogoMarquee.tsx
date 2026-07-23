@@ -9,8 +9,9 @@ import img3 from "../public/images/2.png"
 import img4 from "../public/images/3.png"
 import img5 from "../public/images/4.png"
 
-/* repeat images to fill arc — same pattern as REF Hero.jsx */
-const images = [img2, img3, img4, img5, img2, img3, img4, img5,]
+/* repeat images twice for seamless infinite scroll */
+const baseImages = [img2, img3, img4, img5]
+const images = [...baseImages, ...baseImages, ...baseImages, ...baseImages]
 
 export default function LogoMarquee() {
   return (
@@ -27,18 +28,17 @@ export default function LogoMarquee() {
           overflow: hidden;
         }
 
-        /* ── scrolling box (REF .box animation) ─────────────────────── */
+        /* ── scrolling box – continuous left scroll ─────────────────── */
         @keyframes heroScroll {
-          100%   { transform: translateX(900px); }
-          100% { transform: translateX(1800px); }
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
         }
         .hero-scroll-box {
           display: flex;
           gap: 1rem;
-          justify-content: center;
           position: relative;
-          animation: heroScroll 8s ease-in-out infinite alternate;
-          max-width: 100vw;
+          animation: heroScroll 35s linear infinite;
+          width: max-content;
         }
 
         /* ── responsive height (perfectly matched for true vertical masking symmetry) ── */

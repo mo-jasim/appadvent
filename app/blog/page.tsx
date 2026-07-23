@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useMemo } from "react";
+import { motion } from 'framer-motion';
 import Image from "next/image";
 import Link from "next/link";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
@@ -144,6 +145,12 @@ export default function BlogPage() {
   return (
     <>
       <main className="min-h-screen bg-[#FBFBFF] font-THICCCBOI">
+        <style>{`
+          @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+          }
+        `}</style>
         <section className="max-w-6xl mx-auto px-4 py-10 md:py-14">
           {/* Search Bar */}
           <div className="mb-12 flex items-center w-full rounded-full border-1 border-gray-200 bg-[#F5F5F5]  overflow-hidden h-[60px] md:h-[50px]">
@@ -178,22 +185,58 @@ export default function BlogPage() {
             </button>
           </div>
           {/* Heading */}
-          <div className="mb-8 md:mb-10">
+          <motion.div 
+            className="mb-8 md:mb-10"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-60px" }}
+            variants={{
+                hidden: { opacity: 0, y: -30 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
+            }}
+        >
             <h1 className="text-[18px] md:text-[22px] font-semibold sans-serif text-[#0A1A2E] leading-snug mb-6">
               What we&apos;ve learned is{" "}
               <span className="text-[#32B9E9]">yours for sharing!</span>
             </h1>
             {/* Underline accent */}
             <div className="mt-2 w-20 h-[4px] bg-[#32B9E9] rounded-full" />
-          </div>
+          </motion.div>
 
           {/* Blog Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <motion.div 
+            key={currentPage}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-60px" }}
+            variants={{
+                hidden: {},
+                visible: {
+                    transition: {
+                        staggerChildren: 0.12,
+                    },
+                },
+            }}
+        >
             {currentPosts.map((post) => (
-              <article
+              <motion.article
                 key={post.id}
-                className="bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-500 flex flex-col group/card"
+                className="relative bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-500 flex flex-col group/card"
+                variants={{
+                    hidden: { opacity: 0, y: 50, scale: 0.95 },
+                    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } }
+                }}
               >
+                {/* Gradient Border Line */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[3px] w-0 group-hover/card:w-3/4 bg-gradient-to-r from-transparent via-[#32B9E9] to-transparent transition-all duration-700 rounded-full z-20" />
+                {/* Shimmer Effect */}
+                <div className="absolute inset-0 overflow-hidden rounded-[20px] pointer-events-none opacity-0 group-hover/card:opacity-100 transition-opacity duration-500 z-10">
+                  <div
+                    className="absolute inset-0 bg-gradient-to-r from-transparent via-[#32B9E9]/5 to-transparent"
+                    style={{ animation: "shimmer 2s ease-in-out infinite" }}
+                  />
+                </div>
                 {/* Thumbnail with category badge */}
                 <div className="relative w-full h-[200px] flex-shrink-0 overflow-hidden">
                   <Image
@@ -234,9 +277,9 @@ export default function BlogPage() {
                     </span>
                   </div>
                 </Link>
-              </article>
+              </motion.article>
             ))}
-          </div>
+          </motion.div>
 
           {/* Pagination */}
           <div className="flex items-center justify-center gap-2 mt-10">

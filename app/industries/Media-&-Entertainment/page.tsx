@@ -1,10 +1,84 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
+import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import ConsultationModal from '@/components/ConsultationModal';
 import OurProjectsSection from "../../services/website-designing-development/Our-Projects-Section";
 import CompaniesLove from "../../services/website-designing-development/Companies-Love";
+
+/* ═══════════════════════════════════════════════════════
+   FLOATING BACKGROUND ORBS — gives depth & motion feel
+   ═══════════════════════════════════════════════════════ */
+const FloatingOrbs = () => (
+    <div className="fixed inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 0 }}>
+        {[
+            { size: 200, color: 'rgba(50,185,233,0.12)', top: '10%', left: '5%', dur: 18 },
+            { size: 280, color: 'rgba(50,185,233,0.08)', top: '55%', left: '80%', dur: 22 },
+            { size: 160, color: 'rgba(100,200,240,0.1)', top: '30%', left: '65%', dur: 16 },
+            { size: 220, color: 'rgba(50,185,233,0.06)', top: '75%', left: '15%', dur: 20 },
+            { size: 140, color: 'rgba(80,190,235,0.09)', top: '15%', left: '88%', dur: 14 },
+        ].map((orb, i) => (
+            <motion.div
+                key={i}
+                className="absolute rounded-full"
+                style={{
+                    width: orb.size,
+                    height: orb.size,
+                    background: `radial-gradient(circle, ${orb.color} 0%, transparent 70%)`,
+                    top: orb.top,
+                    left: orb.left,
+                    filter: 'blur(60px)',
+                }}
+                animate={{
+                    x: [0, 40, -30, 20, 0],
+                    y: [0, -35, 25, -15, 0],
+                }}
+                transition={{
+                    duration: orb.dur,
+                    repeat: Infinity,
+                    ease: "linear",
+                }}
+            />
+        ))}
+    </div>
+);
+
+/* ═══════════════════════════════════════════════════════
+   3D TILT CARD — subtle perspective on mouse move
+   ═══════════════════════════════════════════════════════ */
+const TiltCard = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => {
+    const ref = useRef<HTMLDivElement>(null);
+    const xVal = useMotionValue(0);
+    const yVal = useMotionValue(0);
+    const rotateX = useSpring(useTransform(yVal, [-0.5, 0.5], [6, -6]), { stiffness: 300, damping: 30 });
+    const rotateY = useSpring(useTransform(xVal, [-0.5, 0.5], [-6, 6]), { stiffness: 300, damping: 30 });
+
+    const handleMouseMove = (e: React.MouseEvent) => {
+        if (!ref.current) return;
+        const rect = ref.current.getBoundingClientRect();
+        xVal.set((e.clientX - rect.left) / rect.width - 0.5);
+        yVal.set((e.clientY - rect.top) / rect.height - 0.5);
+    };
+
+    const handleMouseLeave = () => {
+        xVal.set(0);
+        yVal.set(0);
+    };
+
+    return (
+        <motion.div
+            ref={ref}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
+            className={className}
+        >
+            {children}
+        </motion.div>
+    );
+};
+
 /* ─── Framework steps (Section 3) ─── */
 const frameworkSteps = [
     {
@@ -75,6 +149,22 @@ const features = [
 
 export default function MediaEntertainmentPage() {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [mounted, setMounted] = useState(false);
+    const [imageKeys, setImageKeys] = useState<number[]>(new Array(frameworkSteps.length).fill(0));
+
+    useEffect(() => {
+        setMounted(true);
+        setImageKeys(frameworkSteps.map(() => Date.now()));
+    }, []);
+
+    const handleHover = (index: number): void => {
+        if (!mounted) return;
+        setImageKeys((prev) => {
+            const updated = [...prev];
+            updated[index] = Date.now();
+            return updated;
+        });
+    };
     const [expandedCard, setExpandedCard] = useState<number | null>(null);
 
     const section4ScrollRef = useRef<HTMLDivElement>(null);
@@ -105,10 +195,11 @@ export default function MediaEntertainmentPage() {
     };
 
     return (
-        <div className='overflow-hidden' style={{
+        <div className='relative overflow-hidden' style={{
             backgroundImage: "url('/images/polygon.png')",
         }}>
-            <main className="w-full font-THICCCBOI overflow-hidden">
+            <FloatingOrbs />
+            <main className="relative w-full font-THICCCBOI overflow-hidden z-10">
 
                 {/* ═══════════════════════════════════════════════════════════
           SECTION 1 — Hero
@@ -116,10 +207,41 @@ export default function MediaEntertainmentPage() {
                 <section className="relative w-full min-h-[500px] md:min-h-[600px] flex items-center pt-24 md:pt-0">
                     <div className="relative z-10 w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-16 py-12 md:py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="text-center lg:text-left">
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.15] tracking-tight mb-6">
-                                <span className="inline-block whitespace-nowrap"> Media & Entertainment </span><br className="hidden md:block" />
-                                App Development Solutions
-                            </h1>
+                            <motion.h1
+                                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.15] tracking-tight mb-6"
+                                initial="hidden"
+                                animate="visible"
+                                variants={{
+                                    hidden: {},
+                                    visible: {
+                                        transition: {
+                                            staggerChildren: 0.08,
+                                            delayChildren: 0.1,
+                                        },
+                                    },
+                                }}
+                            >
+                                {"Media & Entertainment App Development Solutions".split(" ").map((word, i) => (
+                                    <motion.span
+                                        key={i}
+                                        className="inline-block mr-[0.3em]"
+                                        variants={{
+                                            hidden: { opacity: 0, y: 30, filter: "blur(8px)" },
+                                            visible: {
+                                                opacity: 1,
+                                                y: 0,
+                                                filter: "blur(0px)",
+                                                transition: {
+                                                    duration: 0.5,
+                                                    ease: [0.25, 0.46, 0.45, 0.94],
+                                                },
+                                            },
+                                        }}
+                                    >
+                                        {word}
+                                    </motion.span>
+                                ))}
+                            </motion.h1>
 
                             <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
                                 We work primarily within the fintech niche and aim to deliver high-quality software solutions with an emphasis on speed, flexibility, and effectiveness. We acknowledge the requirements of your business and turn your vision into reality.
@@ -200,39 +322,82 @@ export default function MediaEntertainmentPage() {
                         Our Media & Entertainment Software Development Framework
                     </h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-5 max-w-[1440px] mx-auto">
+                    <motion.div
+                        className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-5 max-w-[1440px] mx-auto"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, margin: "-60px" }}
+                        variants={{
+                            hidden: {},
+                            visible: {
+                                transition: {
+                                    staggerChildren: 0.12,
+                                    delayChildren: 0.1,
+                                },
+                            },
+                        }}
+                    >
                         {frameworkSteps.map((step, idx) => (
-                            <div
+                            <motion.div
                                 key={idx}
-                                className="flex flex-col gap-4 p-5 lg:p-6 rounded-2xl h-full shadow-lg"
-                                style={{
-                                    background: step.bg,
+                                variants={{
+                                    hidden: { opacity: 0, y: 50, scale: 0.92 },
+                                    visible: {
+                                        opacity: 1,
+                                        y: 0,
+                                        scale: 1,
+                                        transition: {
+                                            duration: 0.55,
+                                            ease: [0.25, 0.46, 0.45, 0.94],
+                                        },
+                                    },
                                 }}
                             >
-                                {/* Number badge */}
-                                <div
-                                    className="w-8 h-8 rounded-full flex justify-center items-center font-bold text-[14px]"
-                                    style={{
-                                        background: "#ffffff",
-                                        border: step.badgeBorder,
-                                        color: step.badgeColor,
-                                    }}
-                                >
-                                    <Image src={step.numimg} alt={step.title} width={48} height={49} />
-                                </div>
+                                <TiltCard className="h-full">
+                                    <div className="block h-full group" onMouseEnter={() => handleHover(idx)}>
+                                        <div className="relative h-full rounded-[20px] p-[1.5px] transition-all duration-500 bg-transparent hover:bg-[#F0F0F0] group-hover:bg-gradient-to-br group-hover:from-[#32B9E9] group-hover:via-[#6DD5FA] group-hover:to-[#2193b0]">
+                                            <div
+                                                className="relative h-full rounded-[19px] bg-white p-5 lg:p-6 flex flex-col shadow-sm transition-all duration-500 group-hover:shadow-[0_8px_40px_rgba(50,185,233,0.12)] overflow-hidden"
+                                                style={{ transformStyle: "preserve-3d" }}
+                                            >
+                                                <div className="absolute inset-0 overflow-hidden rounded-[19px] pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                                    <div
+                                                        className="absolute inset-0 bg-gradient-to-r from-transparent via-[#32B9E9]/10 to-transparent"
+                                                        style={{ animation: "shimmer 2s ease-in-out infinite" }}
+                                                    />
+                                                </div>
+                                                <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[3px] w-0 group-hover:w-3/4 bg-gradient-to-r from-transparent via-[#32B9E9] to-transparent transition-all duration-700 rounded-full" />
 
-                                {/* Title */}
-                                <h3 className="font-bold text-[16px] xl:text-[18px] text-gray-900 leading-[1.25]">
-                                    {step.title}
-                                </h3>
-
-                                {/* Desc */}
-                                <p className="text-[13px] xl:text-[14px] text-gray-700 leading-[1.6]">
-                                    {step.desc}
-                                </p>
-                            </div>
+                                                <div style={{ transform: "translateZ(30px)" }}>
+                                                    <div className="relative mb-6 inline-flex self-start">
+                                                        <div className="absolute inset-[-8px] rounded-full border-2 border-dashed border-[#32B9E9]/0 group-hover:border-[#32B9E9]/25 transition-all duration-700 group-hover:rotate-[60deg]" />
+                                                        <div className="w-[64px] h-[64px] rounded-full bg-gradient-to-br from-[#E8F7FC] to-[#F0FBFF] group-hover:from-[#D4F0FA] group-hover:to-[#E0F5FC] flex items-center justify-center transition-all duration-500 group-hover:shadow-[0_4px_20px_rgba(50,185,233,0.2)]">
+                                                            <div style={{ animation: "iconFloat 3s ease-in-out infinite" }}>
+                                                                <Image
+                                                                    src={mounted && imageKeys[idx] ? `${step.numimg}?v=${imageKeys[idx]}` : step.numimg}
+                                                                    alt={step.title}
+                                                                    width={32}
+                                                                    height={32}
+                                                                    className="shrink-0 transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:scale-110"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h3 className="font-bold text-[16px] xl:text-[18px] text-gray-900 leading-[1.25] mb-3 group-hover:text-[#0d2a3a] transition-colors duration-300">
+                                                        {step.title}
+                                                    </h3>
+                                                    <div className="w-10 h-[2px] bg-[#32B9E9]/30 group-hover:w-16 group-hover:bg-[#32B9E9]/60 rounded-full mb-4 transition-all duration-500" />
+                                                    <p className="text-[13px] xl:text-[14px] text-gray-700 leading-[1.6]">
+                                                        {step.desc}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </TiltCard>
+                            </motion.div>
                         ))}
-                    </div>
+                    </motion.div>
                 </section>
 
                 {/* ═══════════════════════════════════════════════════════════

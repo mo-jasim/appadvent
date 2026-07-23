@@ -1,19 +1,7 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from 'framer-motion';
 import Image from "next/image";
-import {
-   CheckCircle2,
-   MapPin,
-   Building2,
-   Database,
-   Clock,
-   Briefcase,
-   ArrowDownToLine,
-   Users,
-   Star,
-   Link as LinkIcon,
-   UtensilsCrossed
-} from "lucide-react";
 import CompaniesLove from "../../services/website-designing-development/Companies-Love";
 import OurProjectsSection from "../../services/website-designing-development/Our-Projects-Section";
 import Highlights from "./Highlights";
@@ -70,7 +58,6 @@ export default function Letramway() {
             {/* About */}
             <section className="relative w-full mt-[80px] mb-[40px] overflow-x-hidden">
                {/* Background light glow */}
-               <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[#b8deff]/30 blur-[150px] rounded-full z-0 pointer-events-none"></div>
 
                {/* ── MOBILE: Single centered image ── */}
                <div className="sm:hidden relative w-full px-6 mt-8 z-10">
@@ -123,9 +110,9 @@ export default function Letramway() {
                         OVERVIEW
                      </div>
 
-                     <h2 className="text-2xl sm:text-3xl md:text-[40px] font-bold text-black mb-4 sm:mb-6 -mt-[30px] sm:-mt-[45px] md:-mt-[60px]">
+                     <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="text-2xl sm:text-3xl md:text-[40px] font-bold text-black mb-4 sm:mb-6 -mt-[30px] sm:-mt-[45px] md:-mt-[60px]">
                         About Le Tramway Website
-                     </h2>
+                     </motion.h2>
                      <p className="text-[#010F14] leading-relaxed mb-10 text-sm sm:text-base md:text-lg max-w-7xl">
                         Le Tramway Cafe Bistro is a charming local spot in Edmonton, Alberta, known for its welcoming atmosphere and delightful culinary offerings. The bistro offers a variety of fresh, high-quality dishes, making it a favorite among locals that appreciate good food in a cozy setting.
                      </p>
@@ -170,15 +157,28 @@ export default function Letramway() {
             {/* --- THE RESULTS SECTION --- */}
             <section className="w-full bg-[#9C162E] py-6 md:py-15 px-4 sm:px-6 lg:px-8">
                <div className="max-w-[1200px] mx-auto">
-                  <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 md:mb-16 text-center md:text-left">The Results</h2>
-                  <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
+                  <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="text-3xl md:text-5xl font-bold text-white mb-10 md:mb-16 text-center md:text-left">The Results</motion.h2>
+                  <motion.div
+                     className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10"
+                     initial="hidden"
+                     whileInView="visible"
+                     viewport={{ once: true, margin: "-60px" }}
+                     variants={{
+                        hidden: {},
+                        visible: {
+                           transition: {
+                              staggerChildren: 0.12,
+                           },
+                        },
+                     }}
+                  >
                      {[
                         { icon: "/images/downloadicon.svg", stat: "600+", label: "Revenue Generated" },
                         { icon: "/Letimg/Frame387.svg", stat: "500+", label: "Users" },
                         { icon: "/Letimg/Reviews.svg", stat: "300+", label: "Growth Rate" },
                         { icon: "/Letimg/Starimg.svg", stat: "4.2", label: "Increased User Engagement" },
                      ].map(({ icon, stat, label }) => (
-                        <div key={label} className="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left group">
+                        <motion.div key={label} className="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left group" variants={{ hidden: { opacity: 0, scale: 0.9 }, visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } } }}>
                            <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center border border-white/20 shrink-0 transform group-hover:rotate-6 group-hover:scale-110 transition-all duration-300">
                               <img src={icon} alt={label} className="w-10 h-10 object-contain" />
                            </div>
@@ -186,123 +186,173 @@ export default function Letramway() {
                               <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1">{stat}</h3>
                               <p className="text-white/70 text-sm md:text-base font-medium leading-tight">{label}</p>
                            </div>
-                        </div>
+                        </motion.div>
                      ))}
-                  </div>
+                  </motion.div>
                </div>
             </section>
 
             {/* 4. OPPORTUNITIES AWAIT */}
-            <section className="relative w-full py-20 md:py-32 overflow-hidden">
+            <section className="relative w-full py-20 md:py-32 px-4 overflow-hidden">
                {/* Watermark */}
-               <div className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
-                  OPPORTUNITIES AWAIT
-               </div>
-               <div className="max-w-[1200px] mx-auto px-4 relative z-10 flex flex-col items-center">
-                  <h2 className="text-3xl md:text-5xl font-bold text-black mb-8 md:mb-8 text-center">
-                     Opportunities await
-                  </h2>
+               <motion.div
+                   className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none"
+                   initial={{ opacity: 0, scale: 0.9 }}
+                   whileInView={{ opacity: 1, scale: 1 }}
+                   viewport={{ once: true }}
+                   transition={{ duration: 1.5, ease: "easeOut" }}
+               >
+                   OPPORTUNITIES
+               </motion.div>
 
-                  {/* Central Image with Glow */}
-                  <div className="relative w-full transition-transform hover:-translate-y-2 duration-500 max-w-[1600px] mx-auto -mt-10 md:-mt-20">
-                     {/*pcimg*/}
-                     <Image src="/Letimg/PCimg.svg" alt="Opportunities Await" width={1600} height={800} className="w-full h-auto drop-shadow-2xl" />
-                  </div>
+               <div className="max-w-7xl mx-auto relative z-10">
+                  <motion.h2
+                      className="text-3xl md:text-5xl font-bold text-black text-center lg:text-left mb-16 md:mb-24"
+                      initial={{ opacity: 0, y: -20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.6 }}
+                  >
+                      Opportunities await
+                  </motion.h2>
 
-                  {/* 2x2 Grid */}
-                  <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 md:gap-y-16">
-                     <div className="flex items-start gap-5 group">
-                        <div className="w-12 h-12 rounded-xl flex shrink-0 transition-colors duration-300">
-                           <img src="/caseimg/ic_round-restaurant-menu.svg" alt="Online Reservation Integration" className="w-6 h-6" />
-                        </div>
-                        <div>
-                           <h3 className="text-lg md:text-xl font-bold text-[#323A3E] mb-2">Online Reservation Integration:-</h3>
-                           <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                              Adding a direct reservation feature would allow customers to book tables easily through the website. This can improve the dining experience and help the restaurant manage customer flow more efficiently.
-                           </p>
-                        </div>
-                     </div>
+                  <div className="flex flex-col lg:flex-row gap-16 md:gap-24 items-center">
+                     {/* Left Content */}
+                     <motion.div
+                         className="lg:w-1/2 space-y-6 md:space-y-8"
+                         initial="hidden"
+                         whileInView="visible"
+                         viewport={{ once: true, margin: "-60px" }}
+                         variants={{
+                             hidden: {},
+                             visible: { transition: { staggerChildren: 0.15 } }
+                         }}
+                     >
+                        {[
+                           { title: "Online Reservation Integration:-", desc: "Adding a direct reservation feature would allow customers to book tables easily through the website. This can improve the dining experience and help the restaurant manage customer flow more efficiently." },
+                           { title: "Digital Gift Cards:-", desc: "Offering digital gift cards would allow customers to share the dining experience with friends and family. It can also attract new visitors and create additional revenue opportunities for the restaurant." },
+                           { title: "Online Ordering System:-", desc: "Introducing an online ordering option for pickup or delivery could make it more convenient for customers to enjoy their favorite dishes. This would also help expand the restaurant&apos;s reach beyond in-house dining." },
+                           { title: "Local SEO Optimization:-", desc: "Enhancing local SEO strategies could help the restaurant appear more prominently in search results. This would make it easier for people in Edmonton to discover the cafe when looking for nearby dining options." }
+                        ].map((item, i) => (
+                           <motion.div
+                               key={i}
+                               variants={{
+                                   hidden: { opacity: 0, x: -30 },
+                                   visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
+                               }}
+                               className="flex gap-5 group bg-white p-6 md:p-8 rounded-[24px] border border-gray-100 hover:border-[#32B9E9]/30 hover:shadow-[0_8px_30px_rgba(50,185,233,0.1)] transition-all duration-300"
+                           >
+                              <div className="shrink-0">
+                                 <div className="w-10 h-10 rounded-xl bg-gray-50 group-hover:bg-[#E8F7FC] flex items-center justify-center transition-colors duration-300">
+                                    <img src="/caseimg/ic_round-restaurant-menu.svg" className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" alt="" />
+                                 </div>
+                              </div>
+                              <div>
+                                 <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-[#32B9E9] transition-colors">{item.title}</h3>
+                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed group-hover:text-gray-800 transition-colors">
+                                    {item.desc}
+                                 </p>
+                              </div>
+                           </motion.div>
+                        ))}
+                     </motion.div>
 
-                     <div className="flex items-start gap-5 group">
-                        <div className="w-12 h-12 rounded-xl flex shrink-0 transition-colors duration-300">
-                           <img src="/caseimg/ic_round-restaurant-menu.svg" alt="Online Reservation Integration" className="w-6 h-6" />
+                     {/* Right Image */}
+                     <motion.div
+                         className="lg:w-1/2 w-full flex justify-center"
+                         initial={{ opacity: 0, x: 50 }}
+                         whileInView={{ opacity: 1, x: 0 }}
+                         viewport={{ once: true }}
+                         transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+                     >
+                        <div className="relative w-full max-w-[540px] hover:-translate-y-4 transition-transform duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]">
+                           <div className="absolute inset-0 bg-[#32B9E9]/20 blur-[100px] rounded-full -z-10" />
+                           <Image src="/Letimg/PCimg.svg" alt="Opportunities Await" width={1600} height={800} className="w-full h-auto drop-shadow-2xl" />
                         </div>
-                        <div>
-                           <h3 className="text-lg md:text-xl font-bold text-[#323A3E] mb-2">Digital Gift Cards:-</h3>
-                           <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                              Offering digital gift cards would allow customers to share the dining experience with friends and family. It can also attract new visitors and create additional revenue opportunities for the restaurant.
-                           </p>
-                        </div>
-                     </div>
-
-                     <div className="flex items-start gap-5 group">
-                        <div className="w-12 h-12 rounded-xl flex shrink-0 transition-colors duration-300">
-                           <img src="/caseimg/ic_round-restaurant-menu.svg" alt="Online Reservation Integration" className="w-6 h-6" />
-                        </div>
-                        <div>
-                           <h3 className="text-lg md:text-xl font-bold text-[#323A3E] mb-2">Online Ordering System:-</h3>
-                           <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                              Introducing an online ordering option for pickup or delivery could make it more convenient for customers to enjoy their favorite dishes. This would also help expand the restaurant&apos;s reach beyond in-house dining.
-                           </p>
-                        </div>
-                     </div>
-
-                     <div className="flex items-start gap-5 group">
-                        <div className="w-12 h-12 rounded-xl flex shrink-0 transition-colors duration-300">
-                           <img src="/caseimg/ic_round-restaurant-menu.svg" alt="Online Reservation Integration" className="w-6 h-6" />
-                        </div>
-                        <div>
-                           <h3 className="text-lg md:text-xl font-bold text-[#323A3E] mb-2">Local SEO Optimization:-</h3>
-                           <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                              Enhancing local SEO strategies could help the restaurant appear more prominently in search results. This would make it easier for people in Edmonton to discover the cafe when looking for nearby dining options.
-                           </p>
-                        </div>
-                     </div>
+                     </motion.div>
                   </div>
                </div>
             </section>
 
             {/* 5. OUR BEST SOLUTIONS */}
-            <section className="w-full py-20 md:py-32 bg-gradient-to-br from-[#1E2541] via-[#35254A] to-[#601A33] overflow-hidden text-white relative">
-               {/* Subtle background glow */}
-               <div className="absolute inset-0 bg-blue-500/5 blur-[100px] pointer-events-none"></div>
+            <section className="relative w-full py-8 md:py-12 bg-gradient-to-br from-[#0B1E4A] via-[#091535] to-[#120505] text-white overflow-hidden">
+               {/* Background mesh/grid pattern */}
+               <div className="absolute inset-0 bg-[url('/images/polygon.png')] opacity-10 mix-blend-overlay pointer-events-none" />
 
-               <div className="max-w-[1200px] mx-auto px-4 relative z-10">
-                  {/* Watermark */}
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-10 md:-mt-20">
-                     SOLUTIONS
-                  </div>
+               {/* Watermark */}
+               <motion.div
+                   className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-white/5 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none"
+                   initial={{ opacity: 0, y: -20 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   viewport={{ once: true }}
+                   transition={{ duration: 1 }}
+               >
+                   SOLUTIONS
+               </motion.div>
+
+               <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+                  <motion.h2
+                      className="text-3xl md:text-5xl font-bold mb-16 md:mb-24 text-center text-white"
+                      initial={{ opacity: 0, y: -20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.6 }}
+                  >
+                      Our Best Solutions
+                  </motion.h2>
 
                   <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
                      {/* Left Image Graphic */}
-                     <div className="w-full lg:w-1/2 flex justify-center order-2 lg:order-1">
-                        <div className="w-full max-w-[600px] relative transition-transform hover:-translate-y-2 duration-500">
+                     <motion.div
+                         className="lg:w-1/2 w-full flex justify-center items-center order-2 lg:order-1"
+                         initial={{ opacity: 0, x: -50 }}
+                         whileInView={{ opacity: 1, x: 0 }}
+                         viewport={{ once: true }}
+                         transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+                     >
+                        <div className="w-full max-w-[600px] relative hover:-translate-y-4 hover:scale-[1.02] transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]">
+                           <div className="absolute inset-0 bg-[#32B9E9]/20 blur-[100px] rounded-full -z-10" />
                            <Image src="/Letimg/Group 184464.svg" alt="App Solution" width={700} height={700} className="w-full h-auto drop-shadow-2xl" />
                         </div>
-                     </div>
+                     </motion.div>
 
                      {/* Right List Content */}
-                     <div className="w-full lg:w-1/2 order-1 lg:order-2">
-                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 text-center lg:text-left">Our Best Solutions</h2>
-                        <div className="space-y-8">
-                           {[
-                              { title: "Clear and Intuitive Navigation", desc: "We designed a simple and structured navigation system so visitors can easily find important sections like the menu and location." },
-                              { title: "Mobile-Responsive Design", desc: "Optimized for mobile devices to ensure a smooth browsing experience for users on smartphones and tablets." },
-                              { title: "Visually Engaging Presentation", desc: "High-quality images and clean layouts highlight the restaurant’s dishes, helping visitors explore the menu effectively." },
-                              { title: "Easy Access to Information", desc: "Key details like opening hours and contact info are placed prominently to help customers plan their visit." }
-                           ].map((item, idx) => (
-                              <div key={idx} className="flex items-start gap-4 group">
-                                 <div className="w-6 h-6 rounded-xl flex shrink-0 -mt-3">
-                                    <img src="/Letimg/ic_round-restaurant-menu.svg" alt="icon" className="w-12 h-12" />
-                                 </div>
-                                 <div>
-                                    <h4 className="text-lg font-bold text-white mb-1">{item.title}</h4>
-                                    <p className="text-gray-400 text-sm md:text-base leading-relaxed">{item.desc}</p>
+                     <motion.div
+                         className="lg:w-1/2 space-y-4 md:space-y-6 order-1 lg:order-2"
+                         initial="hidden"
+                         whileInView="visible"
+                         viewport={{ once: true, margin: "-60px" }}
+                         variants={{
+                             hidden: {},
+                             visible: { transition: { staggerChildren: 0.12 } }
+                         }}
+                     >
+                        {[
+                           { title: "Clear and Intuitive Navigation", desc: "We designed a simple and structured navigation system so visitors can easily find important sections like the menu and location." },
+                           { title: "Mobile-Responsive Design", desc: "Optimized for mobile devices to ensure a smooth browsing experience for users on smartphones and tablets." },
+                           { title: "Visually Engaging Presentation", desc: "High-quality images and clean layouts highlight the restaurant’s dishes, helping visitors explore the menu effectively." },
+                           { title: "Easy Access to Information", desc: "Key details like opening hours and contact info are placed prominently to help customers plan their visit." }
+                        ].map((item, idx) => (
+                           <motion.div
+                               key={idx}
+                               variants={{
+                                   hidden: { opacity: 0, x: 30 },
+                                   visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } }
+                               }}
+                               className="flex gap-5 group hover:bg-white/10 p-5 md:p-6 rounded-2xl hover:border-[#32B9E9]/50 transition-all duration-300 backdrop-blur-sm"
+                           >
+                              <div className="shrink-0">
+                                 <div className="w-10 h-10 rounded-full bg-white/10 group-hover:bg-[#32B9E9]/20 flex items-center justify-center transition-colors duration-300">
+                                    <img src="/Letimg/ic_round-restaurant-menu.svg" alt="icon" className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                                  </div>
                               </div>
-                           ))}
-                        </div>
-                     </div>
+                              <div>
+                                 <h3 className="text-lg font-bold text-white mb-2 group-hover:text-[#32B9E9] transition-colors">{item.title}</h3>
+                                 <p className="text-gray-300 text-sm md:text-base leading-relaxed group-hover:text-gray-100 transition-colors">{item.desc}</p>
+                              </div>
+                           </motion.div>
+                        ))}
+                     </motion.div>
                   </div>
                </div>
             </section>

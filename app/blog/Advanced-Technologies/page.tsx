@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from 'framer-motion';
 import Image from "next/image";
 import Link from "next/link";
 import { Search, ChevronDown } from "lucide-react";
@@ -70,15 +71,15 @@ export default function AdvancedTechnologiesBlogPage() {
                                 </div>
 
                                 {/* Post Title */}
-                                <div className="mb-6 mt-4" id="main-title">
+                                <motion.div className="mb-6 mt-4" id="main-title" initial="hidden" animate="visible" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <h1 className="text-2xl md:text-[34px] font-bold text-[#0A1A2E] leading-[1.2] mb-3">
                                         Transforming Modern Software Development with Advanced Technologies
                                     </h1>
                                     <p className="text-gray-500 font-bold text-[13px]">October 5, 2024</p>
-                                </div>
+                                </motion.div>
 
                                 {/* Post Content */}
-                                <div className="space-y-5 text-black text-[16px] leading-[1.7]">
+                                <motion.div className="space-y-5 text-black text-[16px] leading-[1.7]" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <p>
                                         We may feel it or not, but our lives are getting deeply impacted by the rapid advancement in technology. In fact, the world is not the same post-Covid 19 pandemic, which propelled almost the entire world to go online. Today, IT professionals are constantly learning, un-learning, and re-learning techniques for modern software development.
                                     </p>
@@ -156,11 +157,11 @@ export default function AdvancedTechnologiesBlogPage() {
                                             </div>
                                         )}
                                     </div>
-                                </div>
+                                </motion.div>
 
                                 {/* Section Content */}
                                 <div className="space-y-10 mb-16">
-                                    <div id="rise-of-automation">
+                                    <motion.div id="rise-of-automation" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             The rise of automation in software development
                                         </h3>
@@ -172,9 +173,9 @@ export default function AdvancedTechnologiesBlogPage() {
                                                 Automation in software development makes use of tools and technologies combined with a certain set of processes to automate certain tasks in a software development cycle. These usually include automating repetitive tasks like code generation, deployment, testing, and others. The ultimate aim is to remove errors and omissions, to enhance efficiency, and to fasten the overall development process of the software.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="leveraging-ai">
+                                    <motion.div id="leveraging-ai" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Leveraging Artificial Intelligence for Smarter Coding
                                         </h3>
@@ -189,9 +190,9 @@ export default function AdvancedTechnologiesBlogPage() {
                                                 You may wonder whether there will be a time when AI would replace software developers. Well, ladies and gentlemen, no. AI won&rsquo;t replace developers completely; but yes, it can perform many tasks with efficiency and awe, thus, easing the work of developers. However, AI can replace developers who are lagging behind and don&rsquo;t use AI. They would, sooner or later, be replaced by smart developers who use AI-powered tools for software development.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="impact-of-cloud">
+                                    <motion.div id="impact-of-cloud" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             The Impact of Cloud Computing on Development Practices
                                         </h3>
@@ -203,9 +204,9 @@ export default function AdvancedTechnologiesBlogPage() {
                                                 This is not all. Cloud computing encourages seamless teamwork in software development irrespective of the geographical location. Teams can work on their software projects in real time and mitigate the challenges that often arise during remote working. Cloud computing also makes way for infrastructure automation and the use of orchestration tools. Moreover, we must mention the innovative feature of serverless computing, which is possible through this excellent technology called cloud computing. Let&rsquo;s also not forget the incredible cloud-based databases that let developers handle vast quantities of data in a secure environment.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="embracing-agile">
+                                    <motion.div id="embracing-agile" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Embracing Agile Methodologies with Advanced Tools
                                         </h3>
@@ -220,9 +221,9 @@ export default function AdvancedTechnologiesBlogPage() {
                                                 Embracing agile methodologies can propel a business to the next level, as the tool helps the business adapt swiftly to the dynamics of the changing technological world. Using this advanced tool in software development can make your application more powerful and, of course, agile.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="future-trends">
+                                    <motion.div id="future-trends" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Future Trends Shaping Software Development
                                         </h3>
@@ -244,7 +245,7 @@ export default function AdvancedTechnologiesBlogPage() {
                                                 With all these and more trends, the future of software development sounds exciting. Artificial Intelligence, automation, cloud-based tools, and machine learning are almost brewing a revolution in the world of software technology. The rise of low-code and no-code technology opens doors to developers who are not well-versed with coding. They, too, can develop apps now.                                            </p>
                                             <p>
                                                 In addition, a growing trend towards micro services architecture lets developers weave scalable and modular solutions. Serverless computing and containerization are the future of software development that bring greater flexibility and optimization of resources. The marvel of advanced tools in software development is unfolding. The future is AI-powered.                           </p>               </div>
-                                    </div>
+                                    </motion.div>
                                 </div>
 
                                 {/* Related Posts Section */}

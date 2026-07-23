@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from 'framer-motion';
 import Image from "next/image";
 import { Search, ChevronDown, HeartPulse } from "lucide-react";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
@@ -60,7 +61,7 @@ export default function HealthcareBlogPage() {
                                 </div>
 
                                 {/* Post Title */}
-                                <div className="mb-6 mt-4" id="main-title">
+                                <motion.div className="mb-6 mt-4" id="main-title" initial="hidden" animate="visible" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <h2 className="text-2xl md:text-[34px] font-bold text-[#0A1A2E] leading-[1.2] mb-3">
                                         EMR Vs EHR Development: What should you choose for your healthcare business?
                                     </h2>
@@ -68,10 +69,10 @@ export default function HealthcareBlogPage() {
                                         <span>April 1, 2025</span>
                                         <span>by Saurabh Dutta</span>
                                     </div>
-                                </div>
+                                </motion.div>
 
                                 {/* Post Content */}
-                                <div className="space-y-5 text-black text-[16px] leading-[1.7]">
+                                <motion.div className="space-y-5 text-black text-[16px] leading-[1.7]" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <p>
                                         The healthcare industry is in the midst of a revolutionary digital transformation. The advent of new and better software systems have made things easier, at the same time, a bit confusing. The questions that ruffle the mind is: what to choose? What is better?
                                     </p>
@@ -81,7 +82,7 @@ export default function HealthcareBlogPage() {
                                     <p>
                                         Before we go to that, let us tell you that both systems affect regulatory compliance and patient care. They also influence the operations of healthcare enterprises in the data-driven digital age.
                                     </p>
-                                </div>
+                                </motion.div>
 
                                 {/* Table of Contents */}
                                 <div className="mt-10 mb-8 overflow-hidden shadow-md border border-gray-100 rounded-md">
@@ -219,7 +220,7 @@ export default function HealthcareBlogPage() {
 
                                 {/* Section Content */}
                                 <div className="space-y-10 mb-16">
-                                    <div id="what-is-the-difference">
+                                    <motion.div id="what-is-the-difference" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             What is the difference between an EMR and an EHR?
                                         </h3>
@@ -231,9 +232,9 @@ export default function HealthcareBlogPage() {
                                                 Although people use these terms interchangeably, they cater to different kinds and functions of healthcare enterprises. As a healthcare provider, you must be careful in choosing a system, as the wrong choice can lead to compliance risks, interruptions in your healthcare operations, and system overhauls that can be expensive.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="whats-the-similarity">
+                                    <motion.div id="whats-the-similarity" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             What’s the similarity?
                                         </h3>
@@ -242,9 +243,9 @@ export default function HealthcareBlogPage() {
                                                 EMR and EHR are both digital record-keeping systems. They assist the healthcare industry in keeping records of the patients and retrieving it when needed. Yet, they are different when it comes to the accessibility, scope, and overall impact on the healthcare operations.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="emr-vs-ehr">
+                                    <motion.div id="emr-vs-ehr" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             EMR vs EHR
                                         </h3>
@@ -253,7 +254,7 @@ export default function HealthcareBlogPage() {
                                                 Before we dive deep into the difference between EHR and EMR, let’s understand what they are:
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
                                     <div id="emr-definition" className="pl-4">
                                         <h4 className="text-[18px] font-bold text-[#0A1A2E] mb-3">
@@ -280,7 +281,7 @@ export default function HealthcareBlogPage() {
                                         </div>
                                     </div>
 
-                                    <div id="emr-vs-ehr-systems">
+                                    <motion.div id="emr-vs-ehr-systems" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             EMR vs. EHR systems
                                         </h3>
@@ -329,9 +330,9 @@ export default function HealthcareBlogPage() {
                                                 </table>
                                             </div>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="what-to-choose">
+                                    <motion.div id="what-to-choose" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             What to choose?
                                         </h3>
@@ -346,13 +347,13 @@ export default function HealthcareBlogPage() {
                                                 Let’s have a closer look at how each system impacts the working of a healthcare setting.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="emr-system-comparison">
+                                    <motion.div id="emr-system-comparison" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             EMR system comparison with EHR system
                                         </h3>
-                                    </div>
+                                    </motion.div>
 
                                     <div id="effect-on-patient-care" className="pl-4">
                                         <h4 className="text-[18px] font-bold text-[#0A1A2E] mb-3">

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from 'framer-motion';
 import Image from "next/image";
 import { Search, ChevronDown } from "lucide-react";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
@@ -64,15 +65,15 @@ export default function CompleteGuideBlogPage() {
                                 </div>
 
                                 {/* Post Title */}
-                                <div className="mb-6 mt-4" id="main-title">
+                                <motion.div className="mb-6 mt-4" id="main-title" initial="hidden" animate="visible" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <h2 className="text-2xl md:text-[34px] font-bold text-[#0A1A2E] leading-[1.2] mb-3">
                                         Complete Guide for Mobile Application Development for Businesses in 2025
                                     </h2>
                                     <p className="text-gray-500 font-bold text-[13px]">January 5, 2025</p>
-                                </div>
+                                </motion.div>
 
                                 {/* Post Content */}
-                                <div className="space-y-5 text-black text-[16px] leading-[1.7]">
+                                <motion.div className="space-y-5 text-black text-[16px] leading-[1.7]" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <p>
                                         As per a recent industry analysis by several reputable market research companies, the number of smartphone users in the world are 4.88 billion at present. This number is forecasted to reach 7.12 billion by 2024 end. A forecast suggests a continuous global rise in the number of smartphone users between the years 2024 and 2029.
                                     </p>
@@ -268,11 +269,11 @@ export default function CompleteGuideBlogPage() {
                                             </div>
                                         )}
                                     </div>
-                                </div>
+                                </motion.div>
 
                                 {/* Section Content */}
                                 <div className="space-y-10 mb-16">
-                                    <div id="overall-processes">
+                                    <motion.div id="overall-processes" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             App Development Happens in Two Overall Processes:
                                         </h3>
@@ -288,9 +289,9 @@ export default function CompleteGuideBlogPage() {
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="traditional-vs-mobile">
+                                    <motion.div id="traditional-vs-mobile" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Difference Between Mobile App Development And Traditional Software Development
                                         </h3>
@@ -305,9 +306,9 @@ export default function CompleteGuideBlogPage() {
                                                 Let’s break the mobile app development process into several small steps.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="step-1">
+                                    <motion.div id="step-1" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Step 1: Conceptualize
                                         </h3>
@@ -328,9 +329,9 @@ export default function CompleteGuideBlogPage() {
                                                 Answer to these questions will help you decide what kind of app you want.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="step-2">
+                                    <motion.div id="step-2" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Step 2: Do Market Research
                                         </h3>
@@ -349,9 +350,9 @@ export default function CompleteGuideBlogPage() {
                                                 <li>Marketing strategies for your app</li>
                                             </ul>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="step-3">
+                                    <motion.div id="step-3" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Step 3: Design The App
                                         </h3>
@@ -360,9 +361,9 @@ export default function CompleteGuideBlogPage() {
                                                 Do some sketch work. Create wireframes. Prioritize user experience. You must develop certain prototypes of your app on the basis of the wireframes before you begin the process of developing a fully-functional application.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="developing-app">
+                                    <motion.div id="developing-app" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Developing The App
                                         </h3>
@@ -389,9 +390,9 @@ export default function CompleteGuideBlogPage() {
                                                 Such apps may need GPS features, user authentication servers, real-time interaction with users, and other such sophisticated features.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="testing-app">
+                                    <motion.div id="testing-app" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Testing of App
                                         </h3>
@@ -406,9 +407,9 @@ export default function CompleteGuideBlogPage() {
                                                 Remember, no app is 100% perfect. So, instead of trying for perfection, focus on making a functional and user-friendly app. You can create newer versions of your application later once your app becomes a hit in the market.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="preferred-platforms">
+                                    <motion.div id="preferred-platforms" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             The Most Preferred Platforms For Mobile Application Development
                                         </h3>
@@ -437,9 +438,9 @@ export default function CompleteGuideBlogPage() {
                                                 </ul>
                                             </div>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="kinds-of-apps">
+                                    <motion.div id="kinds-of-apps" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Kinds of Mobile Applications
                                         </h3>
@@ -471,7 +472,7 @@ export default function CompleteGuideBlogPage() {
                                                 Happy coding!
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 </div>
 
                                 {/* Related Posts Section */}

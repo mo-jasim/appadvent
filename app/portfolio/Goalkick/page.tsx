@@ -14,6 +14,7 @@ import CompaniesLove from "../../services/website-designing-development/Companie
 import ConsultationModal from "@/components/ConsultationModal";
 import Technology from "./technology";
 import Highlights from "./Highlights";
+import { motion } from "framer-motion";
 
 export default function GoalkickCaseStudy() {
    const [isModalOpen, setIsModalOpen] = useState(false);
@@ -173,83 +174,164 @@ export default function GoalkickCaseStudy() {
                </section>
 
                {/* 4. OPPORTUNITIES AWAIT */}
-               <section className="relative w-full py-20 md:py-32 overflow-hidden">
+               <section className="relative w-full py-20 md:py-32 px-4 overflow-hidden">
                   {/* Watermark */}
-                  <div className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
+                  <motion.div
+                     className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none"
+                     initial={{ opacity: 0, scale: 0.9 }}
+                     whileInView={{ opacity: 1, scale: 1 }}
+                     viewport={{ once: true }}
+                     transition={{ duration: 1.5, ease: "easeOut" }}
+                  >
                      OPPORTUNITIES
-                  </div>
+                  </motion.div>
 
-                  <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-16 lg:gap-24 relative z-10">
-                     {/* Left Content */}
-                     <div className="w-full lg:w-1/2 order-2 lg:order-1">
-                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-10 text-center lg:text-left">
-                           Opportunities await
-                        </h2>
-                        <div className="space-y-6 md:space-y-8">
+                  <div className="max-w-7xl mx-auto relative z-10">
+                     <motion.h2
+                        className="text-3xl md:text-5xl font-bold text-black text-center lg:text-left mb-16 md:mb-24"
+                        initial={{ opacity: 0, y: -20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                     >
+                        Opportunities await
+                     </motion.h2>
+
+                     <div className="flex flex-col lg:flex-row gap-16 md:gap-24 items-center">
+                        {/* Left Content */}
+                        <motion.div
+                           className="lg:w-1/2 space-y-6 md:space-y-8"
+                           initial="hidden"
+                           whileInView="visible"
+                           viewport={{ once: true, margin: "-60px" }}
+                           variants={{
+                              hidden: {},
+                              visible: { transition: { staggerChildren: 0.15 } }
+                           }}
+                        >
                            {[
                               "Football is the most popular sport globally, yet existing fan engagement is fragmented across social media and club-specific platforms.",
                               "Fans often lack a dedicated space to connect with supporters, discuss matches in real time, and participate in interactive activities.",
                               "There's also a gap in reward-driven engagement where fans feel recognized and appreciated for their participation.",
                               "The potential for building meaningful football communities remains largely untapped by traditional social platforms.",
                            ].map((text, i) => (
-                              <div key={i} className="flex items-start gap-4 group">
-                                 <div className="mt-1 shrink-0  flex items-center justify-center ">
-                                    <img src="/Letimg/football.svg" alt="" className="w-5 h-5 object-contain" />
+                              <motion.div
+                                 key={i}
+                                 variants={{
+                                    hidden: { opacity: 0, x: -30 },
+                                    visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
+                                 }}
+                                 className="flex gap-5 group bg-white p-6 md:p-8 rounded-[24px] border border-gray-100 hover:border-[#32B9E9]/30 hover:shadow-[0_8px_30px_rgba(50,185,233,0.1)] transition-all duration-300"
+                              >
+                                 <div className="shrink-0">
+                                    <div className="w-10 h-10 rounded-xl bg-gray-50 group-hover:bg-[#E8F7FC] flex items-center justify-center transition-colors duration-300">
+                                       <img src="/Letimg/football.svg" className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" alt="" />
+                                    </div>
                                  </div>
-                                 <p className="text-[#010F14] text-sm sm:text-base md:text-lg leading-relaxed">{text}</p>
-                              </div>
+                                 <div>
+                                    <p className="text-gray-600 text-sm md:text-base leading-relaxed group-hover:text-gray-800 transition-colors">
+                                       {text}
+                                    </p>
+                                 </div>
+                              </motion.div>
                            ))}
-                        </div>
-                     </div>
+                        </motion.div>
 
-                     {/* Right Image */}
-                     <div className="w-full lg:w-1/2 flex justify-center order-1 lg:order-2">
-                        <div className="relative w-full max-w-[480px] transition-all duration-500 hover:scale-[1.02]">
-                           <Image src="/caseimg/Frame 242.svg" alt="App Preview" width={500} height={500} className="w-full h-auto drop-shadow-2xl" priority />
-                        </div>
+                        {/* Right Image */}
+                        <motion.div
+                           className="lg:w-1/2 w-full flex justify-center order-1 lg:order-2"
+                           initial={{ opacity: 0, x: 50 }}
+                           whileInView={{ opacity: 1, x: 0 }}
+                           viewport={{ once: true }}
+                           transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+                        >
+                           <div className="relative w-full max-w-[480px] hover:-translate-y-4 transition-transform duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]">
+                              <div className="absolute inset-0 bg-[#32B9E9]/20 blur-[100px] rounded-full -z-10" />
+                              <Image src="/caseimg/Frame 242.svg" alt="App Preview" width={500} height={500} className="w-full h-auto drop-shadow-2xl" priority />
+                           </div>
+                        </motion.div>
                      </div>
                   </div>
                </section>
 
                {/* 5. OUR BEST SOLUTIONS */}
-               <section className="relative w-full py-20 md:py-32 bg-gradient-to-br from-[#0d1627] via-[#21163a] to-[#451631] overflow-hidden text-white">
-                  <div className="absolute inset-0 bg-blue-900/5 blur-[100px] pointer-events-none" />
+               <section className="relative w-full py-8 md:py-12 bg-gradient-to-br from-[#0B1E4A] via-[#091535] to-[#120505] text-white overflow-hidden">
+                  {/* Background mesh/grid pattern */}
+                  <div className="absolute inset-0 bg-[url('/images/polygon.png')] opacity-10 mix-blend-overlay pointer-events-none" />
 
-                  <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                     {/* Watermark */}
-                     <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-10 md:-mt-20">
-                        SOLUTIONS
-                     </div>
+                  {/* Watermark */}
+                  <motion.div
+                     className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-white/5 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none"
+                     initial={{ opacity: 0, y: -20 }}
+                     whileInView={{ opacity: 1, y: 0 }}
+                     viewport={{ once: true }}
+                     transition={{ duration: 1 }}
+                  >
+                     SOLUTIONS
+                  </motion.div>
+
+                  <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+                     <motion.h2
+                        className="text-3xl md:text-5xl font-bold mb-16 md:mb-24 text-center text-white"
+                        initial={{ opacity: 0, y: -20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                     >
+                        Our Best Solutions
+                     </motion.h2>
 
                      <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
                         {/* Left Image */}
-                        <div className="w-full lg:w-1/2 flex justify-center order-2 lg:order-1">
-                           <div className="w-full max-w-[580px] transition-all duration-500 hover:scale-[1.02]">
+                        <motion.div
+                           className="lg:w-1/2 w-full flex justify-center items-center order-2 lg:order-1"
+                           initial={{ opacity: 0, x: -50 }}
+                           whileInView={{ opacity: 1, x: 0 }}
+                           viewport={{ once: true }}
+                           transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+                        >
+                           <div className="relative w-full max-w-[580px] hover:-translate-y-4 hover:scale-[1.02] transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]">
+                              <div className="absolute inset-0 bg-[#32B9E9]/20 blur-[100px] rounded-full -z-10" />
                               <Image src="/caseimg/Frame 243.svg" alt="App Solution" width={700} height={700} className="w-full h-auto drop-shadow-2xl" priority />
                            </div>
-                        </div>
+                        </motion.div>
 
                         {/* Right Content */}
-                        <div className="w-full lg:w-1/2 order-1 lg:order-2">
-                           <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 text-center lg:text-left">
-                              Our Best Solutions
-                           </h2>
-                           <div className="space-y-8">
-                              {[
-                                 "Goalkick addresses the gap by creating a social app that combines community interaction with real-time updates.",
-                                 "It allows users to join groups, discuss matches, share opinions, and make friends while staying updated.",
-                                 "The platform offers interactive games, predictions, trivia, and a reward system for continuous engagement.",
-                                 "With personalized feeds and recognition through points, Goalkick delivers a unique, rewarding experience.",
-                              ].map((text, i) => (
-                                 <div key={i} className="flex items-start gap-4 group">
-                                    <div className="mt-1 shrink-0 ">
-                                       <img src="/Letimg/football1.svg" alt="" className="w-5 h-5" />
+                        <motion.div
+                           className="lg:w-1/2 space-y-4 md:space-y-6 order-1 lg:order-2"
+                           initial="hidden"
+                           whileInView="visible"
+                           viewport={{ once: true, margin: "-60px" }}
+                           variants={{
+                              hidden: {},
+                              visible: { transition: { staggerChildren: 0.12 } }
+                           }}
+                        >
+                           {[
+                              "Goalkick addresses the gap by creating a social app that combines community interaction with real-time updates.",
+                              "It allows users to join groups, discuss matches, share opinions, and make friends while staying updated.",
+                              "The platform offers interactive games, predictions, trivia, and a reward system for continuous engagement.",
+                              "With personalized feeds and recognition through points, Goalkick delivers a unique, rewarding experience.",
+                           ].map((text, i) => (
+                              <motion.div
+                                 key={i}
+                                 variants={{
+                                    hidden: { opacity: 0, x: 30 },
+                                    visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } }
+                                 }}
+                                 className="flex gap-5 group hover:bg-white/10 p-5 md:p-6 rounded-2xl hover:border-[#32B9E9]/50 transition-all duration-300 backdrop-blur-sm"
+                              >
+                                 <div className="shrink-0">
+                                    <div className="w-10 h-10 rounded-full bg-white/10 group-hover:bg-[#32B9E9]/20 flex items-center justify-center transition-colors duration-300">
+                                       <img src="/Letimg/football1.svg" alt="icon" className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                                     </div>
-                                    <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">{text}</p>
                                  </div>
-                              ))}
-                           </div>
-                        </div>
+                                 <div>
+                                    <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed group-hover:text-gray-100 transition-colors">{text}</p>
+                                 </div>
+                              </motion.div>
+                           ))}
+                        </motion.div>
                      </div>
                   </div>
                </section>

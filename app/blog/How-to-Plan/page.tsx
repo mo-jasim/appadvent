@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from 'framer-motion';
 import Image from "next/image";
 import { Search, ChevronDown, HeartPulse } from "lucide-react";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
@@ -60,18 +61,18 @@ export default function HealthcareBlogPage() {
                                 </div>
 
                                 {/* Post Title */}
-                                <div className="mb-6 mt-4">
+                                <motion.div className="mb-6 mt-4" initial="hidden" animate="visible" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <h2 className="text-2xl md:text-[34px] font-bold text-[#0A1A2E] leading-[1.2] mb-3">
                                         How to Plan Web Application Development Services for Scalable Business Growth
                                     </h2>
                                     <p className="text-gray-500 font-bold text-[13px]">March 13, 2026</p>
-                                </div>
+                                </motion.div>
 
                                 {/* Post Content */}
-                                <div className="space-y-5 text-black text-[16px] leading-[1.7]">
+                                <motion.div className="space-y-5 text-black text-[16px] leading-[1.7]" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <p>
                                         You need to build a digital solution which extends beyond website development because you want to create a web application that will grow while serving users and incorporating new business operations. Most founders underestimate how quickly requirements change after launch. The initial planning stage of web application development services will help businesses avoid expensive reconstruction work and scaling problems which emerge during later stages. Businesses and end users who need scalable web applications should follow these steps to get started.                                    </p>
-                                </div>
+                                </motion.div>
 
                                 {/* Table of Contents */}
                                 <div className="mt-10 mb-8 overflow-hidden shadow-md border border-gray-100 rounded-md">
@@ -191,7 +192,7 @@ export default function HealthcareBlogPage() {
 
                                 {/* Section Content */}
                                 <div className="space-y-10 mb-16">
-                                    <div id="role-of-custom-web-app">
+                                    <motion.div id="role-of-custom-web-app" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Start With Business Goals, Not Features
                                         </h3>
@@ -219,9 +220,9 @@ export default function HealthcareBlogPage() {
                                                 You should create your web application development services plan based on the specific growth targets which your business wants to achieve. Otherwise, you’ll outgrow the system quickly.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="managed-it-services">
+                                    <motion.div id="managed-it-services" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Choose Scalable Technology (Even If MVP Is Small)
                                         </h3>
@@ -251,9 +252,9 @@ export default function HealthcareBlogPage() {
                                             <p>
                                                 Businesses who select expandable technology at their initial stage will build permanent service applications instead of creating short-term solutions.                                            </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="home-care-focus">
+                                    <motion.div id="home-care-focus" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Plan Integrations Early (Payments, CRM, ERP, etc.)                                        </h3>
                                         <div className="space-y-5 text-black text-[16px] leading-[1.7]">
@@ -280,9 +281,9 @@ export default function HealthcareBlogPage() {
                                                 Enterprise application integration planning at its core allows web applications to expand alongside business systems instead of becoming separate from them.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="disrupted-by-startups">
+                                    <motion.div id="disrupted-by-startups" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Design for Growth in Users and Data
                                         </h3>
@@ -314,9 +315,9 @@ export default function HealthcareBlogPage() {
                                                 Your application needs to operate with equal speed when you have 100 users and 100,000 users because this standard defines professional web application development services.                                            </p>
 
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="combining-smart-devices">
+                                    <motion.div id="combining-smart-devices" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Think Multi-Channel From Day One                                        </h3>
                                         <div className="space-y-5 text-black text-[16px] leading-[1.7]">
@@ -341,9 +342,9 @@ export default function HealthcareBlogPage() {
                                             <p>
                                                 Mobile Application Development Solutions need a unified backend strategy because it lets them build on their current foundation instead of creating new ones from scratch.                                            </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="data-security">
+                                    <motion.div id="data-security" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Choose the Right Development Partner (Not Just Cheapest)                                        </h3>
                                         <div className="space-y-5 text-black text-[16px] leading-[1.7]">
@@ -378,9 +379,9 @@ export default function HealthcareBlogPage() {
                                                 The right partner treats your product as evolving Software Development Solutions, not a one-time project.                                            </p>
 
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="patient-engagement">
+                                    <motion.div id="patient-engagement" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Prioritize User Experience and Structure                                        </h3>
                                         <div className="space-y-5 text-black text-[16px] leading-[1.7]">
@@ -410,9 +411,9 @@ export default function HealthcareBlogPage() {
                                             <p>
                                                 Web application development services can incorporate additional features through good UX architecture design which protects users from getting lost in complex systems.                                            </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="cost-effectiveness">
+                                    <motion.div id="cost-effectiveness" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Demand Performance and Security Planning                                        </h3>
                                         <div className="space-y-5 text-black text-[16px] leading-[1.7]">
@@ -441,9 +442,9 @@ export default function HealthcareBlogPage() {
                                             <p>
                                                 The vendor fails to show their web application development services deliver enterprise-level performance which proves their service lacks proper scalability.                                            </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="tech-ecosystem">
+                                    <motion.div id="tech-ecosystem" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Plan Ongoing Development, Not Just Launch                                        </h3>
                                         <div className="space-y-5 text-black text-[16px] leading-[1.7]">
@@ -473,9 +474,9 @@ export default function HealthcareBlogPage() {
                                             <p>
                                                 A platform needs to function as a product which actively operates. Sustainable services application development needs continuous growth instead of constructing a one-time solution.                                            </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="future-outlook">
+                                    <motion.div id="future-outlook" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Align App Roadmap With Business Expansion                                        </h3>
                                         <div className="space-y-5 text-black text-[16px] leading-[1.7]">
@@ -505,9 +506,9 @@ export default function HealthcareBlogPage() {
                                             <p>
                                                 The web application development service planning process becomes incorrect when the platform blocks any of these functions.                                            </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="final-thoughts">
+                                    <motion.div id="final-thoughts" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-2">
                                             Final Takeaway for Business Owners
                                         </h3>
@@ -519,7 +520,7 @@ export default function HealthcareBlogPage() {
                                                 Companies who wish to develop apps should select developers who provide scalable <span className="font-bold">Software Development Solutions</span> and Web Design and Development Services and create architectures which support future <span className="font-bold">Mobile Application Development Solutions</span>. User interfaces in web applications need proper design to make them valuable business resources.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 </div>
 
                                 {/* Related Posts Section */}

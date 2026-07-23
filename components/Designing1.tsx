@@ -145,7 +145,7 @@ export default function Designing1() {
                                     maskImage: 'linear-gradient(to right, transparent 0%, transparent 35%, black 60%)'
                                 }}
                             >
-                                <svg className="absolute pointer-events-none top-0 left-0 w-full h-full" viewBox="0 0 600 600">
+                                <svg className="absolute pointer-events-none top-0 left-0 w-full h-full overflow-visible" viewBox="0 0 600 600">
                                     <circle cx="300" cy="300" r="300" fill="none" stroke="#5cb8f0" strokeWidth="2.5" strokeDasharray="8 8" />
                                 </svg>
                             </div>
@@ -164,7 +164,7 @@ export default function Designing1() {
                             >
                                 {/* ── ARROWS ── */}
                                 <svg
-                                    className="absolute pointer-events-none top-0 left-0 w-full h-full"
+                                    className="absolute pointer-events-none top-0 left-0 w-full h-full overflow-visible"
                                     viewBox="0 0 600 600"
                                 >
                                     {/* Arrow heads pointing UPWARDS (counter-clockwise) on the track */}
@@ -256,20 +256,15 @@ export default function Designing1() {
                                                         {stage.num}
                                                     </div>
 
-                                                    {/* Label + Pen Icon */}
+                                                    {/* Pen Icon */}
                                                     <div
-                                                        className={`absolute top-1/2 right-[115px] -translate-y-1/2 flex flex-col items-center transition-all duration-[1000ms] ${isMid ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8 pointer-events-none'}`}
+                                                        className={`absolute top-1/2 right-[140px] -translate-y-1/2 flex flex-col items-center transition-all duration-[1000ms] ${isMid ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8 pointer-events-none'}`}
                                                     >
                                                         {/* icons */}
-                                                        <div className="mb-[-8px] z-30 pointer-events-none">
+                                                        <div className="z-30 h-[60px] w-[60px] pointer-events-none">
                                                             {stage.img && (
-                                                                <Image src={stage.img} width={65} height={65} alt={stage.label} className="object-contain" />
+                                                                <Image src={stage.img} width={205} height={205} alt={stage.label} className="object-contain" />
                                                             )}
-                                                        </div>
-
-                                                        {/* Animated label text */}
-                                                        <div className="text-[34px] font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#17387c] via-[#85348b] to-[#dc243c] mb-12 whitespace-nowrap">
-                                                            {stage.label}
                                                         </div>
                                                     </div>
                                                 </div>

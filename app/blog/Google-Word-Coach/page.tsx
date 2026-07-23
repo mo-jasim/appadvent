@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from 'framer-motion';
 import Image from "next/image";
 import { Search, ChevronDown, Plus, Minus } from "lucide-react";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
@@ -95,15 +96,15 @@ export default function GoogleWordCoachBlogPage() {
                                 </div>
 
                                 {/* Post Title */}
-                                <div className="mb-6 mt-4" id="main-title">
+                                <motion.div className="mb-6 mt-4" id="main-title" initial="hidden" animate="visible" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <h2 className="text-2xl md:text-[34px] font-bold text-[#0A1A2E] leading-[1.2] mb-3">
                                         Google Word Coach
                                     </h2>
                                     <p className="text-gray-500 font-bold text-[13px]">February 28, 2025</p>
-                                </div>
+                                </motion.div>
 
                                 {/* Post Content */}
-                                <div className="space-y-5 text-black text-[16px] leading-[1.7]">
+                                <motion.div className="space-y-5 text-black text-[16px] leading-[1.7]" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <p>
                                         Google is one of the most popular search engines. In fact, its name has become synonymous with browsing the internet. People usually say, “Google it!” This outstanding search engine never fails to amaze people. In 2018, it added another feather to its cap by launching the game-changing <strong>Google Word Coach</strong>.
                                     </p>
@@ -205,11 +206,11 @@ export default function GoogleWordCoachBlogPage() {
                                             </div>
                                         )}
                                     </div>
-                                </div>
+                                </motion.div>
 
                                 {/* Section Content */}
                                 <div className="space-y-10 mb-16">
-                                    <div id="what-is-google-word-coach">
+                                    <motion.div id="what-is-google-word-coach" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             What is Google Word Coach?
                                         </h3>
@@ -221,9 +222,9 @@ export default function GoogleWordCoachBlogPage() {
                                                 Google Word Coach game is an interactive platform featuring synonyms, antonyms, word-based quizzes, definitions, and more. The game is engaging and transforms the otherwise arduous process of learning a new language into a fun-based one.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="how-to-get-google-word-coach">
+                                    <motion.div id="how-to-get-google-word-coach" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             How to get Google Word Coach Game?
                                         </h3>
@@ -232,9 +233,9 @@ export default function GoogleWordCoachBlogPage() {
                                                 The beautiful thing about this game is that it is integrated within the search engine. Whenever you use Google Translation and its dictionary, this game pops up. It also appears when you simply type the words Word Coach Google on Google search engine.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="whats-there-for-you">
+                                    <motion.div id="whats-there-for-you" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             What’s there for you in Google’s word coach?
                                         </h3>
@@ -243,9 +244,9 @@ export default function GoogleWordCoachBlogPage() {
                                                 A lot! And the search engine promises to give you a delightful language learning experience. Those who swear by their English can also find Google Word Coach to be a gem, as it helps them expand their vocabulary and learn new phrases and words. You can even test your English through the fantastic Google word coach quiz.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="playing-google-word-coach">
+                                    <motion.div id="playing-google-word-coach" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Playing Google Word Coach Quiz
                                         </h3>
@@ -260,9 +261,9 @@ export default function GoogleWordCoachBlogPage() {
                                                 Undoubtedly, Google word coach is a great tool to expand your English vocabulary and to reinforce your existing vocabulary.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="advantages-of-using-word-coach">
+                                    <motion.div id="advantages-of-using-word-coach" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Advantages of using word coach Google
                                         </h3>
@@ -271,9 +272,9 @@ export default function GoogleWordCoachBlogPage() {
                                                 Forget learning English the traditional way. Let’s do the Google way! The intriguing Googly questions will not only help you master your English, but also give you a delightful experience in language learning, something you may not have experienced before.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="whats-you-get">
+                                    <motion.div id="whats-you-get" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Here’s what you get by using Google word coach game:
                                         </h3>
@@ -340,9 +341,9 @@ export default function GoogleWordCoachBlogPage() {
                                             </div>
 
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="crux">
+                                    <motion.div id="crux" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Crux:
                                         </h3>
@@ -357,7 +358,7 @@ export default function GoogleWordCoachBlogPage() {
                                                 But these pitfalls are nothing compared to the tremendous benefits of this game.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
                                     {/* FAQ Accordion Section */}
                                     <div id="faq" className="pt-6 border-t border-gray-100">

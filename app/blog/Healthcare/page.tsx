@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from 'framer-motion';
 import Image from "next/image";
 import { Search, ChevronDown, HeartPulse } from "lucide-react";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
@@ -60,15 +61,15 @@ export default function HealthcareBlogPage() {
                                 </div>
 
                                 {/* Post Title */}
-                                <div className="mb-6 mt-4">
+                                <motion.div className="mb-6 mt-4" initial="hidden" animate="visible" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <h2 className="text-2xl md:text-[34px] font-bold text-[#0A1A2E] leading-[1.2] mb-3">
                                         How Future Healthcare Technology Is Improving At-Home Care
                                     </h2>
                                     <p className="text-gray-500 font-bold text-[13px]">March 28, 2026</p>
-                                </div>
+                                </motion.div>
 
                                 {/* Post Content */}
-                                <div className="space-y-5 text-black text-[16px] leading-[1.7]">
+                                <motion.div className="space-y-5 text-black text-[16px] leading-[1.7]" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <p>
                                         Medical services have expanded their reach beyond traditional healthcare facilities, which used to operate only in hospitals and clinics. Home-based healthcare is growing fast because it offers practical, scalable solutions made possible by modern technology.
                                     </p>
@@ -84,7 +85,7 @@ export default function HealthcareBlogPage() {
                                     <p>
                                         The situation requires us to analyze its actual development process because we need to understand its essential value.
                                     </p>
-                                </div>
+                                </motion.div>
 
                                 {/* Table of Contents */}
                                 <div className="mt-10 mb-8 overflow-hidden shadow-md border border-gray-100 rounded-md">
@@ -213,7 +214,7 @@ export default function HealthcareBlogPage() {
 
                                 {/* Section Content */}
                                 <div className="space-y-10 mb-16">
-                                    <div id="role-of-custom-web-app">
+                                    <motion.div id="role-of-custom-web-app" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                             The Role of Custom Web Application Development in At-Home Care
                                         </h3>
@@ -252,9 +253,9 @@ export default function HealthcareBlogPage() {
                                                 Healthcare providers who depend on spreadsheets or obsolete software have already lost their competitive edge. Custom solutions aren&apos;t a luxury anymore—they&apos;re the baseline.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="managed-it-services">
+                                    <motion.div id="managed-it-services" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                             How Managed IT Services for Healthcare Ensure Reliability
                                         </h3>
@@ -287,9 +288,9 @@ export default function HealthcareBlogPage() {
                                                 The success of home-based healthcare services depends on maintaining continuous network access. A missed alert or delayed data sync can literally risk lives. Managed IT services for healthcare groups help prevent system failures. They keep systems running smoothly during high-demand times.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="emr-vs-ehr">
+                                    <motion.div id="emr-vs-ehr" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-black mb-5">
                                             EMR Vs EHR Development: What should you choose for your healthcare business?
                                         </h3>
@@ -298,9 +299,9 @@ export default function HealthcareBlogPage() {
                                                 Healthcare organizations which neglect their IT infrastructure create dangerous working environments. The margin for error is zero.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="home-care-focus">
+                                    <motion.div id="home-care-focus" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                             Why Home Care Is the Main Focus of All Healthcare App Development Firms
                                         </h3>
@@ -336,9 +337,9 @@ export default function HealthcareBlogPage() {
                                                 The problem is that the majority of apps on the market are still subpar. They prioritize features over usability. The entire system fails if patients, particularly the elderly, are unable to use the app with ease. Good functionality and design are essential for survival; they are not optional.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="disrupted-by-startups">
+                                    <motion.div id="disrupted-by-startups" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                             Traditional Healthcare is Being Disrupted by Software Development for Startups
                                         </h3>
@@ -374,9 +375,9 @@ export default function HealthcareBlogPage() {
                                                 But let’s face it: most of the startups fail because they put more emphasis on hype than on execution. No matter how inventive the technology seems, it won’t last if it isn’t practical or dependable.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="combining-smart-devices">
+                                    <motion.div id="combining-smart-devices" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                             Combining Smart Devices and Custom Web Application Development
                                         </h3>
@@ -405,9 +406,9 @@ export default function HealthcareBlogPage() {
                                                 These devices continue to be isolated tools in the absence of custom web application development. They become a potent healthcare network through integration. Better integration, not more devices, is what the future holds.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="data-security">
+                                    <motion.div id="data-security" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                             Managed IT Services’ Crucial Assistance with Data Security for Healthcare
                                         </h3>
@@ -443,9 +444,9 @@ export default function HealthcareBlogPage() {
                                                 Security is not an optional feature. It serves as the basis.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="patient-engagement">
+                                    <motion.div id="patient-engagement" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                             How Patient Engagement Is Enhanced by Healthcare App Development Company Solutions
                                         </h3>
@@ -478,9 +479,9 @@ export default function HealthcareBlogPage() {
                                                 Engagement is about changing behaviour, not about eye-catching design. The app is worthless if it doesn’t affect patient behaviour.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="cost-effectiveness">
+                                    <motion.div id="cost-effectiveness" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                             Developing Software for Startups to Increase Cost Effectiveness
                                         </h3>
@@ -513,9 +514,9 @@ export default function HealthcareBlogPage() {
                                                 Lean systems that cut out needless overhead are being developed by startups. However, execution is important once more. Systems with poor design have the potential to raise expenses rather than lower them. Engineers design efficiency rather than relying on it to happen automatically.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="tech-ecosystem">
+                                    <motion.div id="tech-ecosystem" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                             The Wider Technology Ecosystem Encouraging Innovation in Healthcare
                                         </h3>
@@ -544,9 +545,9 @@ export default function HealthcareBlogPage() {
                                                 Even now, domain expertise is more important than just technical proficiency.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="future-outlook">
+                                    <motion.div id="future-outlook" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                             What the Future Actually Looks Like
                                         </h3>
@@ -579,9 +580,9 @@ export default function HealthcareBlogPage() {
                                                 But none of this will happen without strong execution in custom web application development. It also needs dependable managed IT services for healthcare. It needs new ideas from every healthcare app development company. It also needs the innovative spirit of software development for startups.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="final-thoughts">
+                                    <motion.div id="final-thoughts" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#2f4468] mb-5">
                                             Final Thoughts
                                         </h3>
@@ -618,7 +619,7 @@ export default function HealthcareBlogPage() {
                                                 The future of healthcare is not on the way; it’s already here. The only question is whether today’s developers can build systems that meet the demand.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 </div>
 
                                 {/* Related Posts Section */}

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import ConsultationModal from '@/components/ConsultationModal';
 import WebSolutionSection from './Web-Solution-Section'
 import ServicesGrid from './Services-Grid'
@@ -15,14 +16,27 @@ const page = () => {
     return (
         <div className="font-THICCCBOI w-full overflow-x-hidden">
             <section className="relative mb-[80px] pb-[80px] pt-[80px] overflow-hidden" style={{ background: 'linear-gradient(180deg, #050a15 0%, #130f30 50%, #4a0e2e 100%)' }}>
-                <div className="flex flex-col gap-4 sm:gap-5 relative z-10 max-w-7xl mx-auto px-4 mt-[80px]">
-                    <p className='gradient-text text-3xl sm:text-5xl lg:text-[60px] font-bold text-center pb-2'>Your Growth, Our Services</p>
-                    <p className='text-white text-[32px] sm:text-4xl md:text-5xl lg:text-[64px] font-bold text-center leading-tight'>Website Designing & Developments</p>
-                    <p className='max-w-6xl text-[16px] sm:text-base lg:text-[20px] mx-auto text-center w-full text-white leading-relaxed px-2'>
+                <motion.div 
+                    className="flex flex-col gap-4 sm:gap-5 relative z-10 max-w-7xl mx-auto px-4 mt-[80px]"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-60px" }}
+                    variants={{
+                        hidden: {},
+                        visible: {
+                            transition: {
+                                staggerChildren: 0.15,
+                            },
+                        },
+                    }}
+                >
+                    <motion.p variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className='gradient-text text-3xl sm:text-5xl lg:text-[60px] font-bold text-center pb-2'>Your Growth, Our Services</motion.p>
+                    <motion.p variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className='text-white text-[32px] sm:text-4xl md:text-5xl lg:text-[64px] font-bold text-center leading-tight'>Website Designing & Developments</motion.p>
+                    <motion.p variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className='max-w-6xl text-[16px] sm:text-base lg:text-[20px] mx-auto text-center w-full text-white leading-relaxed px-2'>
                         We design, develop, and scale apps that turn your vision into reality. From MVPs to full-fledged products, our services cover every step of your digital journey. Our services go beyond coding—we help startups and businesses design, build, and grow apps that drive impact and ROI.
-                    </p>
+                    </motion.p>
                     {/* Have a project in mind? */}
-                    <div className="flex justify-center mb-[80px] mt-4">
+                    <motion.div variants={{ hidden: { opacity: 0, scale: 0.9 }, visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="flex justify-center mb-[80px] mt-4">
                         <button
                             onClick={() => setIsModalOpen(true)}
                             className="text-[#32B9E9] text-semibold text-[20px]
@@ -30,8 +44,8 @@ const page = () => {
                         >
                             Have a project in mind?
                         </button>
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
             </section>
             <div className=""
                 style={{

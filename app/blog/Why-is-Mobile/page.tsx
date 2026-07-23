@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from 'framer-motion';
 import Image from "next/image";
 import { Search, ChevronDown } from "lucide-react";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
@@ -64,15 +65,15 @@ export default function MobileAppBlogPage() {
                                 </div>
 
                                 {/* Post Title */}
-                                <div className="mb-6 mt-4" id="main-title">
+                                <motion.div className="mb-6 mt-4" id="main-title" initial="hidden" animate="visible" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <h2 className="text-2xl md:text-[34px] font-bold text-[#0A1A2E] leading-[1.2] mb-3">
                                         Why is Mobile App Development Special in 2026 and beyond?
                                     </h2>
                                     <p className="text-gray-500 font-bold text-[13px]">January 12, 2025</p>
-                                </div>
+                                </motion.div>
 
                                 {/* Post Content */}
-                                <div className="space-y-5 text-black text-[16px] leading-[1.7]">
+                                <motion.div className="space-y-5 text-black text-[16px] leading-[1.7]" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <p>
                                         It does not matter whether you are a startup, small business, or a big corporate house, mobile applications are a must-have for you. It has become a crucial aspect of doing business in the modern digital age.
                                     </p>
@@ -201,11 +202,11 @@ export default function MobileAppBlogPage() {
                                             </div>
                                         )}
                                     </div>
-                                </div>
+                                </motion.div>
 
                                 {/* Section Content */}
                                 <div className="space-y-10 mb-16">
-                                    <div id="how-it-benefits-you">
+                                    <motion.div id="how-it-benefits-you" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             How it benefits you?
                                         </h3>
@@ -225,9 +226,9 @@ export default function MobileAppBlogPage() {
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="how-it-benefits-users">
+                                    <motion.div id="how-it-benefits-users" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             How it benefits your users?
                                         </h3>
@@ -247,9 +248,9 @@ export default function MobileAppBlogPage() {
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="what-stats-say">
+                                    <motion.div id="what-stats-say" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             What the stats say
                                         </h3>
@@ -264,9 +265,9 @@ export default function MobileAppBlogPage() {
                                                 Here’s why mobile app development holds a special position in the SEO strategy of 2026 and the years to come.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="multi-channel">
+                                    <motion.div id="multi-channel" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Gives users a multi-channel experience:
                                         </h3>
@@ -278,9 +279,9 @@ export default function MobileAppBlogPage() {
                                                 This builds loyalty and brand awareness. You are easily able to fulfill your customers’ requirements through a single platform that can be operated in a hand-held device like smartphone or tablet. Greater convenience and easy accessibility to your brand attracts and retains more customers towards your business.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="quick-notifications">
+                                    <motion.div id="quick-notifications" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Quick notifications about new launches:
                                         </h3>
@@ -289,9 +290,9 @@ export default function MobileAppBlogPage() {
                                                 Launching a new product or service? Organizing an event? How would your audience know this? Through your app! Mobile app can send notifications to your customers and keep them updated about your recent launches or events. This helps you develop good relationship with your customers, increasing your credibility and connect.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="boost-sales">
+                                    <motion.div id="boost-sales" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Boost in sales:
                                         </h3>
@@ -303,9 +304,9 @@ export default function MobileAppBlogPage() {
                                                 Suppose your customer suddenly remembers about a particular service or product and your business deals in it. You have an app that works on all platforms. Your customer can easily place an order for the product then and there without going anywhere else. This is how your customer gets retained better. Your efficiently-working, well-designed app helps them become more loyal towards your brand.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="promote-brand">
+                                    <motion.div id="promote-brand" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Promote your brand better:
                                         </h3>
@@ -320,9 +321,9 @@ export default function MobileAppBlogPage() {
                                                 What’s more? You can also conduct webinars, video conferencing, video consultations, short trainings, chats and forums, and other such engaging activities on your app.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="fingertip-access">
+                                    <motion.div id="fingertip-access" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Fingertip access to your brand:
                                         </h3>
@@ -331,9 +332,9 @@ export default function MobileAppBlogPage() {
                                                 By developing a mobile application for your business, you are giving your users access to your brand on their fingertips. What can be better than this? As they browse your app, they get a customized experience while checking for latest updates, fresh arrivals, sales, and more. Keep your app updated with the latest trends in the industry and you can attract visitors like honeybees to the hive.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="direct-marketing">
+                                    <motion.div id="direct-marketing" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Apps give you a chance for direct marketing:
                                         </h3>
@@ -342,9 +343,9 @@ export default function MobileAppBlogPage() {
                                                 When you enable features like video conferencing and consultation, webinars, chats, forums, feedback, and others, you are actually indulging in direct marketing of your brand.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="easy-payment">
+                                    <motion.div id="easy-payment" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Easy payment:
                                         </h3>
@@ -353,9 +354,9 @@ export default function MobileAppBlogPage() {
                                                 With online transactions gaining momentum worldwide, having an app that allows secure and quick payments can give a big boost to your business. Mobiles, today, are not just devices; they are wallets too. So, developing an app that gives your customers a secure transaction platform is a recipe for getting more sales.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="impact-industries">
+                                    <motion.div id="impact-industries" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Impact of mobile apps on various industries
                                         </h3>
@@ -376,9 +377,9 @@ export default function MobileAppBlogPage() {
                                                 The point is: you have a business, you better have an app!
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="create-successful-app">
+                                    <motion.div id="create-successful-app" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             How to create a successful mobile app?
                                         </h3>
@@ -414,7 +415,7 @@ export default function MobileAppBlogPage() {
                                                 So, ladies and gentlemen, gear up for 2026 and make it a magnificent year for your business by developing a fiery mobile app.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 </div>
 
                                 {/* Related Posts Section */}

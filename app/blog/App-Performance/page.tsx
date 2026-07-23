@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from 'framer-motion';
 import Image from "next/image";
 import { Search, ChevronDown } from "lucide-react";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
@@ -60,12 +61,12 @@ export default function HealthcareBlogPage() {
                                 </div>
 
                                 {/* Post Title */}
-                                <div className="mb-6 mt-4">
+                                <motion.div className="mb-6 mt-4" initial="hidden" animate="visible" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <h2 id="main-title" className="text-2xl md:text-[34px] font-bold text-[#0A1A2E] leading-[1.2] mb-3">
                                         App Development Company Case Study: Importance of Software Development Performance Metrics
                                     </h2>
                                     <p className="text-gray-500 font-bold text-[13px]">January 18, 2025</p>
-                                </div>
+                                </motion.div>
 
                                 {/* Table of Contents */}
                                 <div className="mt-10 mb-8 overflow-hidden shadow-md border border-gray-100 rounded-md">
@@ -275,7 +276,7 @@ export default function HealthcareBlogPage() {
                                             If we look at app development company case study, we would realize how incredibly helpful are applications in today’s times. They benefit the business and the end user. In this context, it becomes all the more important to develop software development performance metrics to measure the performance of the software and its quantifiable characteristics.
                                         </p>
                                     </div>
-                                    <div id="importance-of-metrics">
+                                    <motion.div id="importance-of-metrics" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Importance of software development performance metrics
                                         </h3>
@@ -304,9 +305,9 @@ export default function HealthcareBlogPage() {
                                                 Software development performance metrics help you plan, organize, control, and improve your application for enhancing the performance and for developing a better version of your app.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="healthcare-app-by-appadvent">
+                                    <motion.div id="healthcare-app-by-appadvent" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             App development company case study: Healthcare app by Appadvent
                                         </h3>
@@ -318,9 +319,9 @@ export default function HealthcareBlogPage() {
                                                 This mobile app development case study provides an insight into how apps make life easier for the user and offers a winning edge to the product/service provider.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="integral-part">
+                                    <motion.div id="integral-part" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             How the healthcare app became an integral part of patients’ lives: an app case study
                                         </h3>
@@ -354,9 +355,9 @@ export default function HealthcareBlogPage() {
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="development-process">
+                                    <motion.div id="development-process" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Healthcare mobile app development case study: the process
                                         </h3>
@@ -368,9 +369,9 @@ export default function HealthcareBlogPage() {
                                                 Appadvent’s competent app developing team sat with the qualified healthcare providers and data scientists. The team also worked on software development performance metrics to track the performance of the app.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="impact-study">
+                                    <motion.div id="impact-study" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             App development company Appadvent case study: Impact
                                         </h3>
@@ -405,9 +406,9 @@ export default function HealthcareBlogPage() {
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="lessons-learned">
+                                    <motion.div id="lessons-learned" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Lessons learned from the case study of successful app development by Appadvent
                                         </h3>
@@ -419,9 +420,9 @@ export default function HealthcareBlogPage() {
                                                 At the same time, user feedback is an indispensable component of software development performance. It can help in enhancing user experience and refining the features and the functionality of the app.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="concluding-study">
+                                    <motion.div id="concluding-study" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Concluding the app development company case study
                                         </h3>
@@ -433,7 +434,7 @@ export default function HealthcareBlogPage() {
                                                 Appadvent’s healthcare app is a case study of successful app development. That doesn’t mean the team didn’t face challenges. Ultimately, it’s all about proper management and troubleshooting that leads to a success story. This includes an intelligent use of software development performance metrics.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
                                     <div id="faqs" className="pt-5 border-t border-gray-100">
                                         <h3 className="text-[22px] font-bold text-[#0A1A2E] mb-6">

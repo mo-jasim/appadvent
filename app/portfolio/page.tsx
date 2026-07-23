@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react'
+import { motion } from 'framer-motion';
 import PortfolioCard from '../../components/PortfolioCard'
 import Link from 'next/link'
 import ConsultationModal from '@/components/ConsultationModal';
@@ -92,9 +93,25 @@ export default function PortfolioPage() {
                 }}
             >
                 <section className="relative overflow-hidden font-THICCCBOI">
+                    <style>{`
+                      @keyframes shimmer {
+                        0% { transform: translateX(-100%); }
+                        100% { transform: translateX(100%); }
+                      }
+                    `}</style>
 
                     <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-16 mt-[80px] mb-[80px] grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-                        <div className="order-2 lg:order-1 text-center lg:text-left flex flex-col items-center lg:items-start">
+                        <motion.div 
+                            className="order-2 lg:order-1 text-center lg:text-left flex flex-col items-center lg:items-start"
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, margin: "-60px" }}
+                            variants={{
+                                hidden: { opacity: 0, y: -30 },
+                                visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
+                            }}
+                        >
+                            
                             <h1 className="text-[36px] sm:text-[45px] lg:text-[55px] font-bold text-gray-900 mb-4 sm:mb-6 leading-tight tracking-tight">
                                 Our Latest Work
                             </h1>
@@ -129,7 +146,8 @@ export default function PortfolioPage() {
                             >
                                 Have a project in mind?
                             </p>
-                        </div>
+                        
+                        </motion.div>
 
                         <div className="relative flex justify-center order-1 lg:order-2 w-full">
                             <img src="/images/p1.png" alt="Illustration" className="w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[500px]" />
@@ -137,19 +155,40 @@ export default function PortfolioPage() {
                     </div>
 
                     <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-16">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-[32px] sm:gap-[32px] lg:gap-[32px]">
+                        <motion.div 
+                            key={currentPage}
+                            className="grid grid-cols-1 md:grid-cols-2 gap-[32px] sm:gap-[32px] lg:gap-[32px]"
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, margin: "-60px" }}
+                            variants={{
+                                hidden: {},
+                                visible: {
+                                    transition: {
+                                        staggerChildren: 0.12,
+                                    },
+                                },
+                            }}
+                        >
                             {currentCards.map((item, index) => (
-                                <PortfolioCard
+                                <motion.div
                                     key={index}
-                                    image={item.image}
-                                    title={item.title}
-                                    duration={item.duration}
-                                    platform={item.platform}
-                                    slug={item.slug}
-                                    {...(item.href ? { href: item.href } : {})}
-                                />
+                                    variants={{
+                                        hidden: { opacity: 0, y: 50, scale: 0.95 },
+                                        visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } }
+                                    }}
+                                >
+                                    <PortfolioCard
+                                        image={item.image}
+                                        title={item.title}
+                                        duration={item.duration}
+                                        platform={item.platform}
+                                        slug={item.slug}
+                                        {...(item.href ? { href: item.href } : {})}
+                                    />
+                                </motion.div>
                             ))}
-                        </div>
+                        </motion.div>
 
                         {/* Pagination Controls */}
                         {totalPages > 1 && (

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from 'framer-motion';
 import Image from "next/image";
 import Link from "next/link";
 import { Search, ChevronDown, Plus, Minus } from "lucide-react";
@@ -94,15 +95,15 @@ export default function UndebatableReasonsBlogPage() {
                                 </div>
 
                                 {/* Post Title */}
-                                <div className="mb-6 mt-4" id="main-title">
+                                <motion.div className="mb-6 mt-4" id="main-title" initial="hidden" animate="visible" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <h1 className="text-2xl md:text-[34px] font-bold text-[#0A1A2E] leading-[1.2] mb-3">
                                         3 Undebatable Reasons to Hire a Website Agency for Your Business
                                     </h1>
                                     <p className="text-gray-500 font-bold text-[13px]">April 13, 2024</p>
-                                </div>
+                                </motion.div>
 
                                 {/* Post Content */}
-                                <div className="space-y-5 text-black text-[16px] leading-[1.7]">
+                                <motion.div className="space-y-5 text-black text-[16px] leading-[1.7]" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <p>
                                         We may feel it or not, but our lives are getting deeply impacted by the rapid advancement in technology. In fact, the world is not the same post-Covid 19 pandemic, which propelled almost the entire world to go online. Today, IT professionals are constantly learning, un-learning, and re-learning techniques for modern software development.
                                     </p>
@@ -243,11 +244,11 @@ export default function UndebatableReasonsBlogPage() {
                                             </div>
                                         )}
                                     </div>
-                                </div>
+                                </motion.div>
 
                                 {/* Section Content */}
                                 <div className="space-y-10 mb-16">
-                                    <div id="rise-of-automation">
+                                    <motion.div id="rise-of-automation" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             The rise of automation in software development
                                         </h3>
@@ -274,9 +275,9 @@ export default function UndebatableReasonsBlogPage() {
                                                 Do you have a strategy for website design development to stand out amongst millions of websites that arrive online every day?
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="seo-tactics">
+                                    <motion.div id="seo-tactics" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Are you aware of the SEO tactics to increase your search engine rankings?
                                         </h3>
@@ -291,9 +292,9 @@ export default function UndebatableReasonsBlogPage() {
                                                 So, isn&rsquo;t it a good idea to hire a reputable website agency and let the experts do the task while you focus on your business activities?
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="reasons-to-contact">
+                                    <motion.div id="reasons-to-contact" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             Here are 3 undebatable reasons to contact a professional web design company:
                                         </h3>
@@ -376,7 +377,7 @@ export default function UndebatableReasonsBlogPage() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
                                     {/* FAQ Accordion Section */}
                                     <div id="faq" className="pt-6 border-t border-gray-100 mt-10">

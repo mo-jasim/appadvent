@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from 'framer-motion';
 import Image from "next/image";
 import { Search, ChevronDown, HeartPulse, Link } from "lucide-react";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
@@ -60,16 +61,16 @@ export default function HealthcareBlogPage() {
                                 </div>
 
                                 {/* Post Title */}
-                                <div className="mb-6 mt-4">
+                                <motion.div className="mb-6 mt-4" initial="hidden" animate="visible" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <h2 id="how-to-choose-title" className="text-2xl md:text-[34px] font-bold text-[#0A1A2E] leading-[1.2] mb-3">
                                         How to Choose a Reputable AI Development Services Provider?
                                     </h2>
                                     <p className="text-gray-500 font-bold text-[13px]">February 21, 2026
                                         by Saurabh Dutta</p>
-                                </div>
+                                </motion.div>
 
                                 {/* Post Content */}
-                                <div className="space-y-5 text-black text-[16px] leading-[1.7]">
+                                <motion.div className="space-y-5 text-black text-[16px] leading-[1.7]" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <p>
                                         Artificial Intelligence is no longer an experimental technology tool limited to large companies or enterprises. Today, technology is at its peak, and enterprises of all sizes are seeking AI that delivers a wide range of services within a single system, simplifying operations, improving the user experience, and extracting insights from data in seconds. From AI chatbots to predictive analytics, demand for AI development continues to grow.
                                     </p>
@@ -80,7 +81,7 @@ export default function HealthcareBlogPage() {
                                     <p>
                                         Here are some Key points that you definitely know before choosing any                                    </p>
 
-                                </div>
+                                </motion.div>
 
                                 {/* Table of Contents */}
                                 <div className="mt-10 mb-8 overflow-hidden shadow-md border border-gray-100 rounded-md">
@@ -212,7 +213,7 @@ export default function HealthcareBlogPage() {
 
                                 {/* Section Content */}
                                 <div className="space-y-10 mb-16">
-                                    <div id="ai-provider">
+                                    <motion.div id="ai-provider" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             AI-based project service provider: -
                                         </h3>
@@ -230,9 +231,9 @@ export default function HealthcareBlogPage() {
                                                 <li>Their Market Reputation and Client Feedback</li>
                                             </ol>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="understand-requirements">
+                                    <motion.div id="understand-requirements" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Understand Your Business Requirements-
                                         </h3>
@@ -252,9 +253,9 @@ export default function HealthcareBlogPage() {
                                                 These types of questions are what a reputable AI <span className="font-bold text-[#0A1A2E] hover:text-[#32B9E9] cursor-pointer transition-colors">software development company</span> is willing to ask, rather than pushing standard solutions. If the provider offers generic solutions without brainstorming, then tailored solutions are a red flag.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="evaluate-expertise">
+                                    <motion.div id="evaluate-expertise" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Evaluate Technical Expertise and AI Capabilities
                                         </h3>
@@ -287,9 +288,9 @@ export default function HealthcareBlogPage() {
                                                 If you want to build a conversational AI, the vendor should have experience in AI chatbot Web or <span className="font-bold text-[#0A1A2E] hover:text-[#32B9E9] cursor-pointer transition-colors">mobile app development services</span>– including intent recognition, multilingual support, and human-like conversation flows. A strong AI development company will provide you with proper real-world use cases, not just demos.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="review-portfolio">
+                                    <motion.div id="review-portfolio" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Review the Company Portfolio and its Case Studies
                                         </h3>
@@ -321,9 +322,9 @@ export default function HealthcareBlogPage() {
                                                 Also, check whether they have experience working with a business similar to yours, as industry familiarity reduces learning curves and implementation risks, which can create significant problems in the future.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="security-compliance">
+                                    <motion.div id="security-compliance" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Check out the Data Security, Privacy, and Compliance
                                         </h3>
@@ -352,9 +353,9 @@ export default function HealthcareBlogPage() {
                                                 This is crucial when it comes to AI chatbots, where customers provide their sensitive personal Information on the trust that this will be fully confidential. A trustworthy AI chatbot development company will proactively discuss security measures rather than waiting for you to ask.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="customisation-scalability">
+                                    <motion.div id="customisation-scalability" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Customisation and Scalability options
                                         </h3>
@@ -383,9 +384,9 @@ export default function HealthcareBlogPage() {
                                                 The Best Artificial Intelligence development service provider will allow you to start from scratch and then help you grow your business gradually by adding new features, languages, and integrations without rebuilding it from the ground up.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="full-stack-capabilities">
+                                    <motion.div id="full-stack-capabilities" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Full Stack Capabilities also matter
                                         </h3>
@@ -414,9 +415,9 @@ export default function HealthcareBlogPage() {
                                                 Choosing a partner with cross-functional Expertise ensures smoother deployment and fewer coordination issues across vendors.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="communication-process">
+                                    <motion.div id="communication-process" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Need to Understand Their Communication Style and Development Process
                                         </h3>
@@ -442,9 +443,9 @@ export default function HealthcareBlogPage() {
                                                 Strong Communication also matters as well as technical skill. If the team cannot explain AI concepts in simple business terms, expect to be misled later. The best AI chatbots development company acts as a strategic partner, not just a vendor for an executive task.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="support-maintenance">
+                                    <motion.div id="support-maintenance" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Evaluate their Post Deployment Support and maintenance
                                         </h3>
@@ -473,9 +474,9 @@ export default function HealthcareBlogPage() {
                                                 Dependable artificial intelligence development services feature ongoing support strategies, ensuring your AI investment remains valuable over time rather than becoming obsolete.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="compare-pricing">
+                                    <motion.div id="compare-pricing" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Compare the Pricing Methods
                                         </h3>
@@ -508,9 +509,9 @@ export default function HealthcareBlogPage() {
                                                 Comparing pricing models means more than just the lowest price; it means evaluating AI services based on data handling, values, scope, and long-term impacts, not just the lowest upfront price. A trustworthy provider will transparently explain what is included in the cost and how pricing will change as the scope or usage grows.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="market-reputation">
+                                    <motion.div id="market-reputation" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-5">
                                             Their Market Reputation and Client Feedback
                                         </h3>
@@ -539,9 +540,9 @@ export default function HealthcareBlogPage() {
                                                 This step is the essence of the whole journey and may determine whether your AI development succeeds or not, so choose it wisely. Verifying a service provider&apos;s reputation and client feedback ensures they will consistently deliver reliable results, maintain long-term client trust, and demonstrate their capabilities beyond marketing claims.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="conclusion">
+                                    <motion.div id="conclusion" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#32B9E9] mb-2">
                                             Conclusion
                                         </h3>
@@ -553,7 +554,7 @@ export default function HealthcareBlogPage() {
                                                 Whether you&apos;re exploring AI chatbot development services or end-to-end AI solutions, look for experience, transparency, and alignment with your goals. A trusted AI chatbot development company doesn&apos;t just create AI; it helps you maximise its value for long-term success.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 </div>
 
                                 {/* Related Posts Section */}

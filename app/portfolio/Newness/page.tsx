@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { motion } from 'framer-motion';
 import Image from "next/image";
 import {
     MapPin,
@@ -42,7 +43,7 @@ export default function GoalkickCaseStudy() {
                             <div className="absolute inset-0 bg-black/60 z-10" />
                         </div>
 
-                        <div className="relative z-20 text-center w-full max-w-7xl mx-auto flex flex-col items-center gap-4 px-4">
+                        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="relative z-20 text-center w-full max-w-7xl mx-auto flex flex-col items-center gap-4 px-4">
                             {/* Logo */}
                             <div className="flex justify-center w-44 md:w-52 h-auto mb-2">
                                 <img src="/caseimg/Newnesslogo.svg" alt="Goalkick Logo" className="w-full h-auto" />
@@ -78,7 +79,7 @@ export default function GoalkickCaseStudy() {
                             >
                                 Have a project in mind?
                             </button>
-                        </div>
+                        </motion.div>
                     </section>
 
                     {/* 2. ABOUT APP SECTION */}
@@ -102,9 +103,9 @@ export default function GoalkickCaseStudy() {
                                 </div>
 
                                 <div className="relative z-10">
-                                    <h2 className="text-3xl md:text-5xl font-bold text-black mb-6 tracking-tight text-center lg:text-left">
+                                    <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="text-3xl md:text-5xl font-bold text-black mb-6 tracking-tight text-center lg:text-left">
                                         About Newness Plant App
-                                    </h2>
+                                    </motion.h2>
                                     <p className="text-[#010F14] text-sm sm:text-base md:text-lg leading-relaxed mb-6 text-center lg:text-left">
                                         Newnessplant is an online plant marketplace established in 2019 that focuses on providing natural plants and gardening accessories through a digital shopping platform. The application is designed for users who want to purchase plants conveniently from their mobile devices while also exploring products that improve home décor, office environments, gardens, balconies, and indoor spaces
                                     </p>
@@ -152,14 +153,27 @@ export default function GoalkickCaseStudy() {
                     <section className="w-full bg-gradient-to-r from-[#38B24D] via-[#90C04C] to-[#185A30] py-6 md:py-15 px-4 sm:px-6 lg:px-8">
                         <div className="max-w-[1200px] mx-auto">
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 md:mb-16 text-center md:text-left">The Results</h2>
-                            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
+                            <motion.div
+                                className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10"
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true, margin: "-60px" }}
+                                variants={{
+                                    hidden: {},
+                                    visible: {
+                                        transition: {
+                                            staggerChildren: 0.12,
+                                        },
+                                    },
+                                }}
+                            >
                                 {[
                                     { icon: "/images/downloadicon.svg", stat: "5k+", label: "Downloads" },
                                     { icon: "/Letimg/Frame387.svg", stat: "3k+", label: "Users" },
                                     { icon: "/Letimg/Reviews.svg", stat: "620", label: "Positive Reviews" },
                                     { icon: "/Letimg/Starimg.svg", stat: "4.5", label: "Average rating" },
                                 ].map(({ icon, stat, label }) => (
-                                    <div key={label} className="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left group">
+                                    <motion.div key={label} className="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left group" variants={{ hidden: { opacity: 0, scale: 0.9 }, visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } } }}>
                                         <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center border border-white/20 shrink-0 transform group-hover:rotate-6 group-hover:scale-110 transition-all duration-300">
                                             <img src={icon} alt={label} className="w-10 h-10 object-contain" />
                                         </div>
@@ -167,74 +181,140 @@ export default function GoalkickCaseStudy() {
                                             <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1">{stat}</h3>
                                             <p className="text-white/70 text-sm md:text-base font-medium leading-tight">{label}</p>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 ))}
-                            </div>
+                            </motion.div>
                         </div>
                     </section>
 
                     {/* 4. OPPORTUNITIES AWAIT */}
-                    <section className="relative w-full py-20 md:py-32 overflow-hidden">
+                    <section className="relative w-full py-20 md:py-32 px-4 overflow-hidden">
                         {/* Watermark */}
-                        <div className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
+                        <motion.div
+                            className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none"
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1.5, ease: "easeOut" }}
+                        >
                             OPPORTUNITIES
-                        </div>
+                        </motion.div>
 
-                        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-16 lg:gap-24 relative z-10">
-                            {/* Left Content */}
-                            <div className="w-full lg:w-1/2 order-2 lg:order-1 mt-10 lg:mt-0">
-                                <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-10 text-center lg:text-left">
-                                    Opportunities await
-                                </h2>
-                                <div className="space-y-6 md:space-y-8">
+                        <div className="max-w-7xl mx-auto relative z-10">
+                            <motion.h2
+                                className="text-3xl md:text-5xl font-bold text-black text-center lg:text-left mb-16 md:mb-24"
+                                initial={{ opacity: 0, y: -20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.6 }}
+                            >
+                                Opportunities await
+                            </motion.h2>
+
+                            <div className="flex flex-col lg:flex-row gap-16 md:gap-24 items-center">
+                                {/* Left Content */}
+                                <motion.div
+                                    className="lg:w-1/2 space-y-6 md:space-y-8"
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    viewport={{ once: true, margin: "-60px" }}
+                                    variants={{
+                                        hidden: {},
+                                        visible: { transition: { staggerChildren: 0.15 } }
+                                    }}
+                                >
                                     {[
                                         "Protect your personal photos and videos with advanced password and biometric security for complete privacy and peace of mind.",
                                         "Store all captured media directly on your device without any cloud uploads, third-party access, or unwanted tracking.",
                                         "Organize your private content inside secure folders designed to keep sensitive memories safe from unauthorized access.",
                                         "Enjoy a clean, fast, and privacy-first camera experience built for users who value security, control, and confidentiality.",
                                     ].map((text, i) => (
-                                        <div key={i} className="flex items-start gap-4 group">
-                                            <div className="shrink-0 w-8 h-8 flex">
-                                                <img src="/caseimg/Newnessplant.svg" alt="" className="w-5 h-5 object-contain" />
+                                        <motion.div
+                                            key={i}
+                                            variants={{
+                                                hidden: { opacity: 0, x: -30 },
+                                                visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
+                                            }}
+                                            className="flex gap-5 group bg-white p-6 md:p-8 rounded-[24px] border border-gray-100 hover:border-[#32B9E9]/30 hover:shadow-[0_8px_30px_rgba(50,185,233,0.1)] transition-all duration-300"
+                                        >
+                                            <div className="shrink-0">
+                                                <div className="w-10 h-10 rounded-xl bg-gray-50 group-hover:bg-[#E8F7FC] flex items-center justify-center transition-colors duration-300">
+                                                    <img src="/caseimg/Newnessplant.svg" className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" alt="" />
+                                                </div>
                                             </div>
-                                            <p className="text-[#010F14] text-sm sm:text-base md:text-lg leading-relaxed">{text}</p>
-                                        </div>
+                                            <div>
+                                                <p className="text-gray-600 text-sm md:text-base leading-relaxed group-hover:text-gray-800 transition-colors">
+                                                    {text}
+                                                </p>
+                                            </div>
+                                        </motion.div>
                                     ))}
-                                </div>
-                            </div>
+                                </motion.div>
 
-                            {/* Right Image */}
-                            <div className="w-full lg:w-1/2 flex justify-center order-1 lg:order-2">
-                                <div className="relative w-full max-w-[280px] sm:max-w-[360px] transition-all duration-500 hover:scale-[1.02]">
-                                    {/* Back/Right Phone */}
-                                    <div className="absolute -right-8 sm:-right-[80px] top-[20%] w-[55%] z-0">
-                                        <Image src="/caseimg/NewnessiPhone2.svg" alt="App Preview Back" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.25)]" priority />
+                                {/* Right Image */}
+                                <motion.div
+                                    className="lg:w-1/2 w-full flex justify-center order-1 lg:order-2"
+                                    initial={{ opacity: 0, x: 50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+                                >
+                                    <div className="relative w-full max-w-[280px] sm:max-w-[360px] hover:-translate-y-4 transition-transform duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]">
+                                        <div className="absolute inset-0 bg-[#32B9E9]/20 blur-[100px] rounded-full -z-10" />
+                                        {/* Back/Right Phone */}
+                                        <div className="absolute -right-8 sm:-right-[80px] top-[20%] w-[55%] z-0">
+                                            <Image src="/caseimg/NewnessiPhone2.svg" alt="App Preview Back" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.25)]" priority />
+                                        </div>
+                                        {/* Front/Left Phone */}
+                                        <div className="relative -left-8 sm:-left-[80px] w-[55%] z-10">
+                                            <Image src="/caseimg/NewnessiPhone1.svg" alt="App Preview Front" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.35)]" priority />
+                                        </div>
+                                        {/* Spacer to prevent overlap clipping */}
+                                        <div className="pb-[10%]"></div>
                                     </div>
-                                    {/* Front/Left Phone */}
-                                    <div className="relative -left-8 sm:-left-[80px] w-[55%] z-10">
-                                        <Image src="/caseimg/NewnessiPhone1.svg" alt="App Preview Front" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.35)]" priority />
-                                    </div>
-                                    {/* Spacer to prevent overlap clipping */}
-                                    <div className="pb-[10%]"></div>
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
                     </section>
 
                     {/* 5. OUR BEST SOLUTIONS */}
-                    <section className="relative w-full py-20 md:py-32 bg-gradient-to-br from-[#0d1627] via-[#21163a] to-[#451631] overflow-hidden text-white">
-                        <div className="absolute inset-0 bg-blue-900/5 blur-[100px] pointer-events-none" />
+                    <section className="relative w-full py-8 md:py-12 bg-gradient-to-br from-[#0B1E4A] via-[#091535] to-[#120505] text-white overflow-hidden">
+                        {/* Background mesh/grid pattern */}
+                        <div className="absolute inset-0 bg-[url('/images/polygon.png')] opacity-10 mix-blend-overlay pointer-events-none" />
 
-                        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                            {/* Watermark */}
-                            <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-10 md:-mt-20">
-                                SOLUTIONS
-                            </div>
+                        {/* Watermark */}
+                        <motion.div
+                            className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-white/5 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none"
+                            initial={{ opacity: 0, y: -20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1 }}
+                        >
+                            SOLUTIONS
+                        </motion.div>
+
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+                            <motion.h2
+                                className="text-3xl md:text-5xl font-bold mb-16 md:mb-24 text-center text-white"
+                                initial={{ opacity: 0, y: -20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.6 }}
+                            >
+                                Our Best Solutions
+                            </motion.h2>
 
                             <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
                                 {/* Left Image */}
-                                <div className="w-full lg:w-1/2 flex justify-center">
-                                    <div className="relative w-full max-w-[280px] sm:max-w-[360px] transition-all duration-500 hover:scale-[1.02]">
+                                <motion.div
+                                    className="lg:w-1/2 w-full flex justify-center items-center"
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+                                >
+                                    <div className="relative w-full max-w-[280px] sm:max-w-[360px] hover:-translate-y-4 hover:scale-[1.02] transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]">
+                                        <div className="absolute inset-0 bg-[#32B9E9]/20 blur-[100px] rounded-full -z-10" />
                                         {/* Back/Right Phone */}
                                         <div className="absolute -right-8 sm:-right-[80px] top-[20%] w-[55%] z-0">
                                             <Image src="/caseimg/NewnessiPhone3.svg" alt="App Preview Back" width={300} height={600} className="w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.25)]" priority />
@@ -246,29 +326,44 @@ export default function GoalkickCaseStudy() {
                                         {/* Spacer to prevent overlap clipping */}
                                         <div className="pb-[10%]"></div>
                                     </div>
-                                </div>
+                                </motion.div>
 
                                 {/* Right Content */}
-                                <div className="w-full lg:w-1/2 mt-10 lg:mt-0">
-                                    <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 text-center lg:text-left">
-                                        Our Best Solutions
-                                    </h2>
-                                    <div className="space-y-8">
-                                        {[
-                                            "A user-friendly online platform offering a diverse range of natural plants suitable for homes, offices, gardens, and decorative spaces.",
-                                            "High-quality gardening tools and accessories designed to support plant care, maintenance, and creative landscaping needs.",
-                                            "Convenient online ordering experience with carefully curated products focused on freshness, beauty, and customer satisfaction.",
-                                            "A nature-focused marketplace committed to helping users transform ordinary spaces into greener, healthier, and more attractive environments.",
-                                        ].map((text, i) => (
-                                            <div key={i} className="flex items-start gap-4 group">
-                                                <div className="shrink-0 transition-colors">
-                                                    <img src="/caseimg/Newnessplant1.svg" alt="" className="w-5 h-5" />
+                                <motion.div
+                                    className="lg:w-1/2 space-y-4 md:space-y-6"
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    viewport={{ once: true, margin: "-60px" }}
+                                    variants={{
+                                        hidden: {},
+                                        visible: { transition: { staggerChildren: 0.12 } }
+                                    }}
+                                >
+                                    {[
+                                        "A user-friendly online platform offering a diverse range of natural plants suitable for homes, offices, gardens, and decorative spaces.",
+                                        "High-quality gardening tools and accessories designed to support plant care, maintenance, and creative landscaping needs.",
+                                        "Convenient online ordering experience with carefully curated products focused on freshness, beauty, and customer satisfaction.",
+                                        "A nature-focused marketplace committed to helping users transform ordinary spaces into greener, healthier, and more attractive environments.",
+                                    ].map((text, i) => (
+                                        <motion.div
+                                            key={i}
+                                            variants={{
+                                                hidden: { opacity: 0, x: 30 },
+                                                visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } }
+                                            }}
+                                            className="flex gap-5 group hover:bg-white/10 p-5 md:p-6 rounded-2xl hover:border-[#32B9E9]/50 transition-all duration-300 backdrop-blur-sm"
+                                        >
+                                            <div className="shrink-0">
+                                                <div className="w-10 h-10 rounded-full bg-white/10 group-hover:bg-[#32B9E9]/20 flex items-center justify-center transition-colors duration-300">
+                                                    <img src="/caseimg/Newnessplant1.svg" alt="icon" className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                                                 </div>
-                                                <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">{text}</p>
                                             </div>
-                                        ))}
-                                    </div>
-                                </div>
+                                            <div>
+                                                <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed group-hover:text-gray-100 transition-colors">{text}</p>
+                                            </div>
+                                        </motion.div>
+                                    ))}
+                                </motion.div>
                             </div>
                         </div>
                     </section>

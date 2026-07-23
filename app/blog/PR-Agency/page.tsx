@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from 'framer-motion';
 import Image from "next/image";
 import { Search, ChevronDown } from "lucide-react";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
@@ -68,15 +69,15 @@ export default function PRAgencyBlogPage() {
                                 </div>
 
                                 {/* Post Title */}
-                                <div className="mb-6 mt-4" id="main-title">
+                                <motion.div className="mb-6 mt-4" id="main-title" initial="hidden" animate="visible" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <h1 className="text-2xl md:text-[34px] font-bold text-[#0A1A2E] leading-[1.2] mb-3">
                                         10 Smartest Tips For Hiring A Digital PR Agency
                                     </h1>
                                     <p className="text-gray-500 font-bold text-[13px]">January 18, 2025</p>
-                                </div>
+                                </motion.div>
 
                                 {/* Post Content */}
-                                <div className="space-y-5 text-black text-[16px] leading-[1.7]">
+                                <motion.div className="space-y-5 text-black text-[16px] leading-[1.7]" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                     <p>
                                         Digital marketing may seem complex. Buzzwords like SEO, ROI, PPC, and more can feel overwhelming—but at <span className="font-bold">Appadvent,</span> we simplify them with expert <span className="font-bold">SEO services</span> and <span className="font-bold">PPC services</span>, turning complex strategies into clear, results-driven growth for your business. Well, you must not worry about things like deploying the best digital marketing strategy or using the right keywords for better ranking. This is because the world has many high quality digital marketing experts and their very job is to devise strategies and help your business dominate the online world.
                                     </p>
@@ -203,11 +204,11 @@ export default function PRAgencyBlogPage() {
                                             </div>
                                         )}
                                     </div>
-                                </div>
+                                </motion.div>
 
                                 {/* Section Content */}
                                 <div className="space-y-10 mb-16">
-                                    <div id="analyze-needs">
+                                    <motion.div id="analyze-needs" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             1. Analyze your digital marketing needs
                                         </h3>
@@ -219,9 +220,9 @@ export default function PRAgencyBlogPage() {
                                                 Answers to these (and some more) questions may help you find the right digital PR agency that fits your business marketing needs.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="industry-experience">
+                                    <motion.div id="industry-experience" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             2. Check the industry experience of the agency
                                         </h3>
@@ -233,9 +234,9 @@ export default function PRAgencyBlogPage() {
                                                 Check the agency’s work portfolio. Ask if they have won awards and accolades for their work. Look for excellence.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="upgradation-level">
+                                    <motion.div id="upgradation-level" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             3. Look for their upgradation level
                                         </h3>
@@ -244,9 +245,9 @@ export default function PRAgencyBlogPage() {
                                                 The digital world is constantly evolving. You must get associated with an upgraded digital marketing consulting service. Only an agency that stays ahead of its competition can help you do the same. Check whether they use the latest tools and technologies like automation software, advanced analytical platforms, AI-driven tools, and others. These aren’t fancy tools to be used occasionally. They have become an essential part of <span className="font-bold">digital marketing</span> strategy in the modern times.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="digital-presence">
+                                    <motion.div id="digital-presence" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             4. Check their digital presence
                                         </h3>
@@ -255,9 +256,9 @@ export default function PRAgencyBlogPage() {
                                                 You wish to hire an online marketing consulting service so that your business can have a strong online presence. But, does the service have a strong online presence for themselves? If not, then they may not be worth your time and money. Check out the online presence of the digital PR agency that you wish to hire. If it doesn’t impress you, perhaps you must continue your search.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="price-to-pay">
+                                    <motion.div id="price-to-pay" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             5. Price to pay
                                         </h3>
@@ -269,9 +270,9 @@ export default function PRAgencyBlogPage() {
                                                 Wondering whether it is possible to get excellent service at reasonable prices? Yes, it is possible. A little search and compare can get you to the best creative marketing agency in terms of cost and quality.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="transparency">
+                                    <motion.div id="transparency" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             6. Transparency in work
                                         </h3>
@@ -280,9 +281,9 @@ export default function PRAgencyBlogPage() {
                                                 The best agencies communicate with the clients regularly with regard to progress of work, challenges, and so on. They are transparent about the entire process. You shouldn’t be the one calling them always to know the status of your work. Also, if an issue arises, the agency must inform you immediately. The best digital marketing consulting service keeps their client updated about each digital move.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="using-tools">
+                                    <motion.div id="using-tools" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             7. Using the best tools
                                         </h3>
@@ -291,9 +292,9 @@ export default function PRAgencyBlogPage() {
                                                 When it comes to digital marketing, tools and techniques may differ with businesses. Tools suited for an educational website may be different from the tools for an e-commerce website. A competent creative marketing agency must know what tools to choose and how to use them optimally to deliver the best results.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="check-reviews">
+                                    <motion.div id="check-reviews" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             8. Check the reviews
                                         </h3>
@@ -302,9 +303,9 @@ export default function PRAgencyBlogPage() {
                                                 As you go about filtering your options for digital PR agency, don’t forget to dig into the reviews and client testimonials. Furthermore, read their case studies. You can even ask around. A little effort on your part can help you get associated with the best agency in town.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="extension-team">
+                                    <motion.div id="extension-team" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             9. Ensure the agency serves as an extension of your own team
                                         </h3>
@@ -313,9 +314,9 @@ export default function PRAgencyBlogPage() {
                                                 The right <span className="font-bold">digital marketing and advertising agency</span> can feel like an extension of your own team. When your way of thinking and the level of expertise “click” with each other, you can expect stellar performance.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div id="feel-vibes">
+                                    <motion.div id="feel-vibes" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
                                         <h3 className="text-[20px] font-bold text-[#00a9e4] mb-5">
                                             10. Feel the vibes – are you comfortable with them?
                                         </h3>
@@ -327,7 +328,7 @@ export default function PRAgencyBlogPage() {
                                                 Remember, the world is full of expertise; but not everyone fits the bill.
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 </div>
 
                                 {/* Related Posts Section */}

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from 'framer-motion';
 import Image from "next/image";
 import {
     CheckCircle2,
@@ -42,7 +43,7 @@ export default function Letramway() {
                         <div className="absolute inset-0 bg-black/60 z-10"></div>  Dark Overlay
                     </div>
 
-                    <div className="relative z-20 text-center w-full max-w-7xl mx-auto flex flex-col items-center gap-4 px-4 md:-mt-10">
+                    <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="relative z-20 text-center w-full max-w-7xl mx-auto flex flex-col items-center gap-4 px-4 md:-mt-10">
                         {/* Logo */}
                         <div className="flex justify-center w-44 md:w-52 h-auto mb-2">
                             <img src="/Letimg/Queue-logo.svg" alt="Le tramway Logo" className="w-full h-auto" />
@@ -64,7 +65,7 @@ export default function Letramway() {
                                 Have a project in mind?
                             </button>
                         </div>
-                    </div>
+                    </motion.div>
                 </section>
                 {/* About */}
                 <section className="relative w-full mt-[80px] mb-[40px] overflow-x-hidden">
@@ -122,9 +123,9 @@ export default function Letramway() {
                                 OVERVIEW
                             </div>
 
-                            <h2 className="text-2xl sm:text-3xl md:text-[40px] font-bold text-black mb-4 sm:mb-6 -mt-[30px] sm:-mt-[45px] md:-mt-[60px]">
+                            <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="text-2xl sm:text-3xl md:text-[40px] font-bold text-black mb-4 sm:mb-6 -mt-[30px] sm:-mt-[45px] md:-mt-[60px]">
                                 About Queue Management System
-                            </h2>
+                            </motion.h2>
                             <p className="text-[#010F14] leading-relaxed mb-10 text-sm sm:text-base md:text-lg max-w-7xl">
                                 QMS is a smart SaaS-based Queue Management System designed for banks, hospitals, clinics, and service centers to reduce long waiting lines and improve customer flow. The platform uses digital token generation through kiosks and mobile apps, allowing customers to track queue status in real time without standing in physical queues.
                             </p>
@@ -172,15 +173,28 @@ export default function Letramway() {
                 {/* --- THE RESULTS SECTION --- */}
                 <section className="w-full bg-[#9C162E] py-6 md:py-15 px-4 sm:px-6 lg:px-8">
                     <div className="max-w-[1200px] mx-auto">
-                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 md:mb-16 text-center md:text-left">The Results</h2>
-                        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
+                        <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="text-3xl md:text-5xl font-bold text-white mb-10 md:mb-16 text-center md:text-left">The Results</motion.h2>
+                        <motion.div
+                            className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10"
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, margin: "-60px" }}
+                            variants={{
+                                hidden: {},
+                                visible: {
+                                    transition: {
+                                        staggerChildren: 0.12,
+                                    },
+                                },
+                            }}
+                        >
                             {[
                                 { icon: "/images/downloadicon.svg", stat: "600+", label: "Revenue Generated" },
                                 { icon: "/Letimg/Frame387.svg", stat: "500+", label: "Users" },
                                 { icon: "/Letimg/Reviews.svg", stat: "300+", label: "Growth Rate" },
                                 { icon: "/Letimg/Starimg.svg", stat: "4.2", label: "Increased User Engagement" },
                             ].map(({ icon, stat, label }) => (
-                                <div key={label} className="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left group">
+                                <motion.div key={label} className="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left group" variants={{ hidden: { opacity: 0, scale: 0.9 }, visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } } }}>
                                     <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center border border-white/20 shrink-0 transform group-hover:rotate-6 group-hover:scale-110 transition-all duration-300">
                                         <img src={icon} alt={label} className="w-10 h-10 object-contain" />
                                     </div>
@@ -188,118 +202,171 @@ export default function Letramway() {
                                         <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1">{stat}</h3>
                                         <p className="text-white/70 text-sm md:text-base font-medium leading-tight">{label}</p>
                                     </div>
-                                </div>
+                                </motion.div>
                             ))}
-                        </div>
+                        </motion.div>
                     </div>
                 </section>
 
                 {/* 4. OPPORTUNITIES AWAIT */}
-                <section className="relative w-full py-20 md:py-32 overflow-hidden">
+                <section className="relative w-full py-20 md:py-32 px-4 overflow-hidden">
                     {/* Watermark */}
-                    <div className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
-                        OPPORTUNITIES AWAIT
-                    </div>
-                    <div className="max-w-[1200px] mx-auto px-4 relative z-10 flex flex-col items-center">
-                        <h2 className="text-3xl md:text-5xl font-bold text-black mb-8 md:mb-8 text-center">
+                    <motion.div
+                        className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none"
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1.5, ease: "easeOut" }}
+                    >
+                        OPPORTUNITIES
+                    </motion.div>
+
+                    <div className="max-w-7xl mx-auto relative z-10">
+                        <motion.h2
+                            className="text-3xl md:text-5xl font-bold text-black text-center lg:text-left mb-16 md:mb-24"
+                            initial={{ opacity: 0, y: -20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                        >
                             Opportunities await
-                        </h2>
+                        </motion.h2>
 
-                        {/* Central Image with Glow */}
-                        <div className="relative w-full hover:translate-y-2 transition-transform duration-500 will-change-transform max-w-[1600px] mx-auto -mt-10 md:-mt-20">
-                            {/*pcimg*/}
-                            <img src="/Letimg/Queue-Opportunities-img.svg" alt="" width={500} height={500} className='w-[100%]' />
-                        </div>
+                        <div className="flex flex-col lg:flex-row gap-16 md:gap-24 items-center">
+                            {/* Left Content */}
+                            <motion.div
+                                className="lg:w-1/2 space-y-6 md:space-y-8"
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true, margin: "-60px" }}
+                                variants={{
+                                    hidden: {},
+                                    visible: { transition: { staggerChildren: 0.15 } }
+                                }}
+                            >
+                                {[
+                                   "Eliminate long physical waiting lines using intelligent digital token generation, automated queue handling, and real-time customer flow management designed for banks, hospitals, and high-traffic service environments.",
+                                   "Improve overall customer experience by providing faster service processing, organized queue operations, reduced waiting frustration, and smooth interaction across hospitals, banks, clinics, and customer service centers.",
+                                   "Monitor queue activity, customer waiting time, counter performance, staff productivity, and operational efficiency through centralized dashboards with real-time analytics, reporting tools, and performance tracking capabilities.",
+                                   "Enable seamless customer engagement through integrated kiosks, mobile applications, digital displays, and admin management systems that create a fully connected and efficient queue management ecosystem."
+                                ].map((text, i) => (
+                                   <motion.div
+                                       key={i}
+                                       variants={{
+                                           hidden: { opacity: 0, x: -30 },
+                                           visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
+                                       }}
+                                       className="flex gap-5 group bg-white p-6 md:p-8 rounded-[24px] border border-gray-100 hover:border-[#32B9E9]/30 hover:shadow-[0_8px_30px_rgba(50,185,233,0.1)] transition-all duration-300"
+                                   >
+                                      <div className="shrink-0">
+                                         <div className="w-10 h-10 rounded-xl bg-gray-50 group-hover:bg-[#E8F7FC] flex items-center justify-center transition-colors duration-300">
+                                            <img src="/Letimg/Opportunities-imgblack.svg" className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" alt="" />
+                                         </div>
+                                      </div>
+                                      <div>
+                                         <p className="text-gray-600 text-sm md:text-base leading-relaxed group-hover:text-gray-800 transition-colors">
+                                            {text}
+                                         </p>
+                                      </div>
+                                   </motion.div>
+                                ))}
+                            </motion.div>
 
-                        {/* 2x2 Grid */}
-                        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 md:gap-y-16">
-                            <div className="flex items-start gap-5 group">
-                                <div className="w-12 h-12 rounded-xl flex  justify-center shrink-0">
-                                    <img src="/Letimg/Opportunities-imgblack.svg" alt="Online Reservation Integration" className="w-6 h-6" />
-                                </div>
-                                <div>
-                                    <p className="text-sm md:text-base text-black  leading-relaxed">
-                                        Eliminate long physical waiting lines using intelligent digital token generation, automated queue handling, and real-time customer flow management designed for banks, hospitals, and high-traffic service environments.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="flex items-start gap-5 group">
-                                <div className="w-12 h-12 rounded-xl flex  justify-center shrink-0 transition-colors duration-300">
-                                    <img src="/Letimg/Opportunities-imgblack.svg" alt="Online Reservation Integration" className="w-6 h-6" />
-                                </div>
-                                <div>
-                                    <p className="text-sm md:text-base text-black leading-relaxed">
-                                        Improve overall customer experience by providing faster service processing, organized queue operations, reduced waiting frustration, and smooth interaction across hospitals, banks, clinics, and customer service centers.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="flex items-start gap-5 group">
-                                <div className="w-12 h-12 rounded-xl flex justify-center shrink-0 transition-colors duration-300">
-                                    <img src="/Letimg/Opportunities-imgblack.svg" alt="Online Reservation Integration" className="w-6 h-6" />
-                                </div>
-                                <div>
-                                    <p className="text-sm md:text-base text-black leading-relaxed">
-                                        Monitor queue activity, customer waiting time, counter performance, staff productivity, and operational efficiency through centralized dashboards with real-time analytics, reporting tools, and performance tracking capabilities.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="flex items-start gap-5 group">
-                                <div className="w-12 h-12 rounded-xl flex justify-center shrink-0  transition-colors duration-300">
-                                    <img src="/Letimg/Opportunities-imgblack.svg" alt="Online Reservation Integration" className="w-6 h-6" />
-                                </div>
-                                <div>
-                                    <p className="text-sm md:text-base text-black leading-relaxed">
-                                        Enable seamless customer engagement through integrated kiosks, mobile applications, digital displays, and admin management systems that create a fully connected and efficient queue management ecosystem.
-                                    </p>
-                                </div>
-                            </div>
+                            {/* Right Image */}
+                            <motion.div
+                                className="lg:w-1/2 w-full flex justify-center"
+                                initial={{ opacity: 0, x: 50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+                            >
+                               <div className="relative w-full max-w-[540px] hover:-translate-y-4 transition-transform duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]">
+                                  <div className="absolute inset-0 bg-[#32B9E9]/20 blur-[100px] rounded-full -z-10" />
+                                  <img src="/Letimg/Queue-Opportunities-img.svg" alt="" width={500} height={500} className='w-[100%] drop-shadow-2xl' />
+                               </div>
+                            </motion.div>
                         </div>
                     </div>
                 </section>
 
                 {/* 5. OUR BEST SOLUTIONS */}
-                <section className="w-full py-20 md:py-32 bg-gradient-to-br from-[#1E2541] via-[#35254A] to-[#601A33] overflow-hidden text-white relative">
-                    {/* Subtle background glow */}
-                    <div className="absolute inset-0 bg-blue-500/5 blur-[100px] pointer-events-none"></div>
+                <section className="relative w-full py-8 md:py-12 bg-gradient-to-br from-[#0B1E4A] via-[#091535] to-[#120505] text-white overflow-hidden">
+                    {/* Background mesh/grid pattern */}
+                    <div className="absolute inset-0 bg-[url('/images/polygon.png')] opacity-10 mix-blend-overlay pointer-events-none" />
 
-                    <div className="max-w-[1200px] mx-auto px-4 relative z-10">
-                        {/* Watermark */}
-                        <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-10 md:-mt-20">
-                            SOLUTIONS
-                        </div>
+                    {/* Watermark */}
+                    <motion.div
+                        className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-white/5 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none"
+                        initial={{ opacity: 0, y: -20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1 }}
+                    >
+                        SOLUTIONS
+                    </motion.div>
+
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+                        <motion.h2
+                            className="text-3xl md:text-5xl font-bold mb-16 md:mb-24 text-center text-white"
+                            initial={{ opacity: 0, y: -20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                        >
+                            Our Best Solutions
+                        </motion.h2>
 
                         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
                             {/* Left Image Graphic */}
-                            <div className="w-full lg:w-1/2 flex justify-center order-2 lg:order-1">
-                                <div className="w-full max-w-[600px] relative transition-transform hover:-translate-y-2 duration-500">
-                                    <Image src="/Letimg/Queue-solution-img.svg" alt="App Solution" width={700} height={700} className="w-full h-auto drop-shadow-2xl" />
-                                </div>
-                            </div>
+                            <motion.div
+                                className="lg:w-1/2 w-full flex justify-center items-center order-2 lg:order-1"
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+                            >
+                               <div className="w-full max-w-[600px] relative hover:-translate-y-4 hover:scale-[1.02] transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]">
+                                  <div className="absolute inset-0 bg-[#32B9E9]/20 blur-[100px] rounded-full -z-10" />
+                                  <Image src="/Letimg/Queue-solution-img.svg" alt="App Solution" width={700} height={700} className="w-full h-auto drop-shadow-2xl" />
+                               </div>
+                            </motion.div>
 
                             {/* Right List Content */}
-                            <div className="w-full lg:w-1/2 order-1 lg:order-2">
-                                <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 text-center lg:text-left">Our Best Solutions</h2>
-                                <div className="space-y-8">
-                                    {[
-                                        { desc: "Smart kiosk-based ticket generation system designed to automate customer queue handling efficiently while reducing waiting time and improving service experiences." },
-                                        { desc: "Advanced admin and super admin dashboards for managing branches, counters, departments, staff operations, customer flow, and analytics centrally.." },
-                                        { desc: "Real-time queue tracking and notification system allowing customers to monitor token progress remotely through mobile applications and digital displays." },
-                                        { desc: "Scalable SaaS architecture with web, mobile, and kiosk integration built for banks, hospitals, enterprises, and multi-branch operational environments." }
-                                    ].map((item, idx) => (
-                                        <div key={idx} className="flex items-start gap-4 group">
-                                            <div className="w-12 h-12 rounded-xl flex ">
-                                                <img src="/Letimg/Opportunities-imgwhite.svg" alt="icon" className="w-6 h-6" />
-                                            </div>
-                                            <div>
-                                                <p className="text-white text-sm md:text-base leading-relaxed">{item.desc}</p>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
+                            <motion.div
+                                className="lg:w-1/2 space-y-4 md:space-y-6 order-1 lg:order-2"
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true, margin: "-60px" }}
+                                variants={{
+                                    hidden: {},
+                                    visible: { transition: { staggerChildren: 0.12 } }
+                                }}
+                            >
+                                {[
+                                    { desc: "Smart kiosk-based ticket generation system designed to automate customer queue handling efficiently while reducing waiting time and improving service experiences." },
+                                    { desc: "Advanced admin and super admin dashboards for managing branches, counters, departments, staff operations, customer flow, and analytics centrally.." },
+                                    { desc: "Real-time queue tracking and notification system allowing customers to monitor token progress remotely through mobile applications and digital displays." },
+                                    { desc: "Scalable SaaS architecture with web, mobile, and kiosk integration built for banks, hospitals, enterprises, and multi-branch operational environments." }
+                                ].map((item, idx) => (
+                                   <motion.div
+                                       key={idx}
+                                       variants={{
+                                           hidden: { opacity: 0, x: 30 },
+                                           visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } }
+                                       }}
+                                       className="flex gap-5 group hover:bg-white/10 p-5 md:p-6 rounded-2xl hover:border-[#32B9E9]/50 transition-all duration-300 backdrop-blur-sm"
+                                   >
+                                      <div className="shrink-0">
+                                         <div className="w-10 h-10 rounded-full bg-white/10 group-hover:bg-[#32B9E9]/20 flex items-center justify-center transition-colors duration-300">
+                                            <img src="/Letimg/Opportunities-imgwhite.svg" alt="icon" className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                                         </div>
+                                      </div>
+                                      <div>
+                                         <p className="text-gray-300 text-sm md:text-base leading-relaxed group-hover:text-gray-100 transition-colors">{item.desc}</p>
+                                      </div>
+                                   </motion.div>
+                                ))}
+                            </motion.div>
                         </div>
                     </div>
                 </section>

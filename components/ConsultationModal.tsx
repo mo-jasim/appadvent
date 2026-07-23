@@ -69,7 +69,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
                 </div>
                 <div>
                   <p className="text-[14px] font-medium text-gray-500 uppercase tracking-widest mb-[6px]">Email us</p>
-                  <a href="mailto:info@appadvent.com" className="text-[20px] font-medium-20 text-black hover:text-[#32B9E9] transition-colors block">info@appadvent.com</a>
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@appadvent.com" className="text-[20px] font-medium-20 text-black hover:text-[#32B9E9] transition-colors block">info@appadvent.com</a>
                 </div>
               </div>
             </div>

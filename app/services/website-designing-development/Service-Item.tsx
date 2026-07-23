@@ -1,4 +1,7 @@
+'use client';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 interface ServiceItem {
     title: string;
@@ -51,35 +54,118 @@ const ServiceCards: React.FC = () => {
         },
     ];
 
-    return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 sm:gap-8 px-4 font-THICCCBOI max-w-7xl mx-auto">
-            {services.map((item, index) => (
-                <div
-                    key={index}
-                    className="bg-white relative group border border-gray-100 p-6 sm:p-10 rounded-[20px] flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-6 hover:shadow-2xl transition-all duration-500 overflow-hidden font-THICCCBOI"
-                >
-                    {/* Icon Container - Left Aligned */}
-                    <div className="flex-shrink-0 w-20 h-20 flex items-center justify-center">
-                        <Image
-                            src={item.titleIcon}
-                            alt={item.title}
-                            width={52}
-                            height={52}
-                            className="object-contain"
-                        />
-                    </div>
+    const [mounted, setMounted] = useState(false);
+    const [imageKeys, setImageKeys] = useState<number[]>(new Array(services.length).fill(0));
 
-                    {/* Content Container - Right Side */}
-                    <div className="flex flex-col gap-2">
-                        <h3 className="font-bold text-[18px] text-black leading-tight">
-                            {item.title}
-                        </h3>
-                        <p className="text-black text-[16px] leading-relaxed font-normal">
-                            {item.description}
-                        </p>
-                    </div>
-                </div>
-            ))}
+    useEffect(() => {
+        setMounted(true);
+        setImageKeys(services.map(() => Date.now()));
+    }, [services.length]);
+
+    const handleHover = (index: number): void => {
+        if (!mounted) return;
+        setImageKeys((prev) => {
+            const updated = [...prev];
+            updated[index] = Date.now();
+            return updated;
+        });
+    };
+
+    return (
+        <div className="px-4 font-THICCCBOI max-w-7xl mx-auto">
+            <style>{`
+              @keyframes shimmer {
+                0% { transform: translateX(-100%); }
+                100% { transform: translateX(100%); }
+              }
+              @keyframes iconFloat {
+                0%, 100% { transform: translateY(0px); }
+                50% { transform: translateY(-6px); }
+              }
+            `}</style>
+
+            <motion.div
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 sm:gap-8"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-60px" }}
+                variants={{
+                    hidden: {},
+                    visible: {
+                        transition: {
+                            staggerChildren: 0.12,
+                        },
+                    },
+                }}
+            >
+                {services.map((item, index) => (
+                    <motion.div
+                        key={index}
+                        variants={{
+                            hidden: { opacity: 0, y: 40, scale: 0.95 },
+                            visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } }
+                        }}
+                    >
+                        <div
+                            className="block h-full group"
+                            onMouseEnter={() => handleHover(index)}
+                        >
+                            <div className="relative h-full rounded-[20px] p-[2px] transition-all duration-500 bg-transparent hover:bg-[#F0F0F0] group-hover:bg-gradient-to-br group-hover:from-[#32B9E9] group-hover:via-[#6DD5FA] group-hover:to-[#2193b0]">
+                                <div
+                                    className="relative h-full rounded-[19px] bg-white p-6 sm:p-10 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-6 transition-all duration-500 group-hover:shadow-[0_8px_40px_rgba(50,185,233,0.12)] overflow-hidden"
+                                    style={{ transformStyle: "preserve-3d" }}
+                                >
+                                    {/* Shimmer sweep on hover */}
+                                    <div className="absolute inset-0 overflow-hidden rounded-[20px] pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                        <div
+                                            className="absolute inset-0 bg-gradient-to-r from-transparent via-[#32B9E9]/10 to-transparent"
+                                            style={{
+                                                animation: "shimmer 2s ease-in-out infinite",
+                                            }}
+                                        />
+                                    </div>
+
+                                    {/* Top accent line */}
+                                    <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[3px] w-0 group-hover:w-3/4 bg-gradient-to-r from-transparent via-[#32B9E9] to-transparent transition-all duration-700 rounded-full" />
+
+                                    <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-6 w-full" style={{ transform: "translateZ(30px)" }}>
+                                        {/* Icon Container - Left Aligned */}
+                                        <div className="relative flex-shrink-0 flex items-center justify-center">
+                                            <div className="absolute inset-[-6px] rounded-full border-2 border-dashed border-[#32B9E9]/0 group-hover:border-[#32B9E9]/25 transition-all duration-700 group-hover:rotate-[60deg]" />
+                                            <div className="w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] rounded-full bg-gradient-to-br from-[#E8F7FC] to-[#F0FBFF] group-hover:from-[#D4F0FA] group-hover:to-[#E0F5FC] flex items-center justify-center transition-all duration-500 group-hover:shadow-[0_4px_20px_rgba(50,185,233,0.2)]">
+                                                <div style={{ animation: "iconFloat 3s ease-in-out infinite" }}>
+                                                    <Image
+                                                        src={
+                                                            mounted && imageKeys[index]
+                                                                ? `${item.titleIcon}?v=${imageKeys[index]}`
+                                                                : item.titleIcon
+                                                        }
+                                                        alt={item.title}
+                                                        width={40}
+                                                        height={40}
+                                                        className="object-contain shrink-0 transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:scale-110"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {/* Content Container - Right Side */}
+                                        <div className="flex flex-col gap-2 flex-grow">
+                                            <h3 className="font-bold text-[18px] sm:text-[20px] text-black leading-tight group-hover:text-[#0d2a3a] transition-colors duration-300">
+                                                {item.title}
+                                            </h3>
+                                            <div className="w-10 h-[2px] bg-[#32B9E9]/30 group-hover:w-16 group-hover:bg-[#32B9E9]/60 rounded-full mb-2 transition-all duration-500 mx-auto sm:mx-0" />
+                                            <p className="text-black text-[15px] sm:text-[16px] leading-relaxed font-normal">
+                                                {item.description}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </motion.div>
+                ))}
+            </motion.div>
         </div>
     );
 };
