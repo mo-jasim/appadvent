@@ -303,10 +303,10 @@ const IndustriesPage = () => {
                                 ))}
                             </motion.div>
 
-                            <OurProjectsSection />
-                            <CompaniesLove />
                         </div>
                     </section>
+                    <OurProjectsSection />
+                    <CompaniesLove />
                 </main>
             </div>
         </div>

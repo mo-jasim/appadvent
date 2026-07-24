@@ -23,12 +23,12 @@ export default function GoalkickCaseStudy() {
     return (
         <>
             <div className="w-full" style={{ backgroundImage: "url('/images/polygon.png')" }}>
-                <div className="w-full font-THICCCBOI overflow-x-hidden max-w-[1600px] mx-auto">
+                <div className="w-full font-THICCCBOI overflow-x-hidden">
 
                     {/* ─────────────────────────────────────────────
                    1. HERO SECTION
                ───────────────────────────────────────────── */}
-                    <section className="relative w-full min-h-[500px] md:h-[700px] flex items-center justify-center pt-24 md:pt-0 mb-[40px] md:mb-[80px] font-THICCCBOI">
+                    <section className="relative w-full min-h-[500px] md:h-[700px] flex items-center justify-center pt-24 md:pt-0 mb-[40px] md:mb-[80px] font-THICCCBOI px-3 sm:px-5 lg:px-7">
                         {/* Background Video */}
                         <div className="absolute inset-0 w-full h-full overflow-hidden">
                             <video
@@ -43,7 +43,7 @@ export default function GoalkickCaseStudy() {
                             <div className="absolute inset-0 bg-black/60 z-10" />
                         </div>
 
-                        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="relative z-20 text-center w-full max-w-7xl mx-auto flex flex-col items-center gap-4 px-4">
+                        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="relative z-20 text-center w-full max-w-7xl mx-auto flex flex-col items-center gap-4">
                             {/* Logo */}
                             <div className="flex justify-center w-44 md:w-52 h-auto mb-2">
                                 <img src="/caseimg/Newnesslogo.svg" alt="Goalkick Logo" className="w-full h-auto" />
@@ -83,11 +83,11 @@ export default function GoalkickCaseStudy() {
                     </section>
 
                     {/* 2. ABOUT APP SECTION */}
-                    <section className="relative w-full py-16 sm:py-20 md:py-24 overflow-hidden">
+                    <section className="relative w-full py-16 sm:py-20 md:py-24 overflow-hidden px-3 sm:px-5 lg:px-7">
                         {/* Glow */}
                         <div className="absolute left-[-10%] top-[20%] w-[40%] h-[60%] bg-blue-100/60 blur-[120px] rounded-full z-0 pointer-events-none" />
 
-                        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 relative z-10">
+                        <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-20 relative z-10">
                             {/* Left Image */}
                             <div className="w-full lg:w-1/2 flex justify-center">
                                 <div className="relative w-full max-w-[300px] sm:max-w-[400px] aspect-[3/4] transition-all duration-500 hover:scale-[1.02]">
@@ -150,8 +150,8 @@ export default function GoalkickCaseStudy() {
                     </section>
 
                     {/* --- THE RESULTS BANNER --- */}
-                    <section className="w-full bg-gradient-to-r from-[#38B24D] via-[#90C04C] to-[#185A30] py-6 md:py-15 px-4 sm:px-6 lg:px-8">
-                        <div className="max-w-[1200px] mx-auto">
+                    <section className="w-full bg-gradient-to-r from-[#38B24D] via-[#90C04C] to-[#185A30] py-6 md:py-15 px-3 sm:px-5 lg:px-7">
+                        <div className="max-w-7xl mx-auto w-full">
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 md:mb-16 text-center md:text-left">The Results</h2>
                             <motion.div
                                 className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10"
@@ -188,7 +188,7 @@ export default function GoalkickCaseStudy() {
                     </section>
 
                     {/* 4. OPPORTUNITIES AWAIT */}
-                    <section className="relative w-full py-20 md:py-32 px-4 overflow-hidden">
+                    <section className="relative w-full py-20 md:py-32 px-3 sm:px-5 lg:px-7 overflow-hidden">
                         {/* Watermark */}
                         <motion.div
                             className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none"
@@ -200,7 +200,7 @@ export default function GoalkickCaseStudy() {
                             OPPORTUNITIES
                         </motion.div>
 
-                        <div className="max-w-7xl mx-auto relative z-10">
+                        <div className="max-w-7xl mx-auto relative z-10 w-full">
                             <motion.h2
                                 className="text-3xl md:text-5xl font-bold text-black text-center lg:text-left mb-16 md:mb-24"
                                 initial={{ opacity: 0, y: -20 }}
@@ -278,7 +278,7 @@ export default function GoalkickCaseStudy() {
                     </section>
 
                     {/* 5. OUR BEST SOLUTIONS */}
-                    <section className="relative w-full py-8 md:py-12 bg-gradient-to-br from-[#0B1E4A] via-[#091535] to-[#120505] text-white overflow-hidden">
+                    <section className="relative w-full py-8 md:py-12 bg-gradient-to-br from-[#0B1E4A] via-[#091535] to-[#120505] text-white overflow-hidden px-3 sm:px-5 lg:px-7">
                         {/* Background mesh/grid pattern */}
                         <div className="absolute inset-0 bg-[url('/images/polygon.png')] opacity-10 mix-blend-overlay pointer-events-none" />
 
@@ -293,7 +293,7 @@ export default function GoalkickCaseStudy() {
                             SOLUTIONS
                         </motion.div>
 
-                        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+                        <div className="max-w-7xl mx-auto relative z-10 w-full">
                             <motion.h2
                                 className="text-3xl md:text-5xl font-bold mb-16 md:mb-24 text-center text-white"
                                 initial={{ opacity: 0, y: -20 }}
@@ -383,7 +383,7 @@ export default function GoalkickCaseStudy() {
                ───────────────────────────────────────────── */}
                     <Designing1 />
                     {/* 9. GLIMPSES OF APP UI SCREENS */}
-                    <section className="relative w-full py-20 md:py-32 text-center overflow-hidden font-THICCCBOI">
+                    <section className="relative w-full py-20 md:py-32 text-center overflow-hidden font-THICCCBOI px-3 sm:px-5 lg:px-7">
                         {/* Glow Blob */}
                         <div className="absolute top-[30%] left-[-10%] w-[80%] md:w-[45%] h-[50%] bg-[#baddfc] blur-[120px] rounded-full z-0 pointer-events-none" />
 
@@ -407,7 +407,7 @@ export default function GoalkickCaseStudy() {
                      }
                   `}</style>
 
-                        <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 relative z-10">
+                        <div className="w-full max-w-7xl mx-auto relative z-10">
                             {/* Watermark */}
                             <div className="relative mb-20">
                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">

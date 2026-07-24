@@ -69,9 +69,10 @@ const ITSkills = () => {
     };
 
     return (
-        <section className="py-16 sm:py-20 md:py-24 font-THICCCBOI relative overflow-hidden">
-            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
-                <motion.div 
+        <section className="py-16 sm:py-20 md:py-24 font-THICCCBOI relative overflow-hidden w-full">
+            {/* Header with Navigation Buttons */}
+            <div className="relative z-10 max-w-7xl mx-auto px-3 sm:px-5 lg:px-7">
+                <motion.div
                     className="flex flex-col md:flex-row justify-between items-end mb-10 sm:mb-12 md:mb-16"
                     initial="hidden"
                     whileInView="visible"
@@ -91,7 +92,7 @@ const ITSkills = () => {
                         </p>
                     </div>
                     {/* Navigation Buttons */}
-                    <div className="flex gap-4 mt-8 md:mt-0">
+                    <div className="flex gap-4 mt-8 md:mt-0 pb-2">
                         <button
                             onClick={() => scroll('left')}
                             disabled={!canScrollLeft}
@@ -118,8 +119,10 @@ const ITSkills = () => {
                         </button>
                     </div>
                 </motion.div>
+            </div>
 
-                {/* Cards Carousel */}
+            {/* Cards Carousel */}
+            <div className="relative z-10 w-full">
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
@@ -136,7 +139,7 @@ const ITSkills = () => {
                     <div
                         ref={scrollContainerRef}
                         onScroll={handleScroll}
-                        className="flex gap-6 overflow-x-auto pb-10 pt-4 px-2 -mx-2 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+                        className="flex gap-6 overflow-x-auto pb-10 pt-4 snap-x snap-mandatory pl-3 sm:pl-5 lg:pl-[max(1.75rem,calc((100%-1280px)/2+1.75rem))] pr-3 sm:pr-5 lg:pr-7 scroll-pl-3 sm:scroll-pl-5 lg:scroll-pl-[max(1.75rem,calc((100%-1280px)/2+1.75rem))] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
                         style={{ scrollBehavior: 'smooth' }}
                     >
                         {skills.map((skill, index) => (
@@ -149,7 +152,7 @@ const ITSkills = () => {
                                 className="flex-shrink-0 w-[85vw] sm:w-[350px] md:w-[400px] bg-white p-8 sm:p-10 rounded-[24px] border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_40px_rgba(50,185,233,0.12)] hover:border-[#32B9E9]/30 hover:-translate-y-2 transition-all duration-300 flex flex-col snap-center h-auto group relative overflow-hidden"
                             >
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#32B9E9]/10 to-transparent rounded-bl-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                                
+
                                 <h3 className="text-[22px] md:text-[26px] font-bold text-[#050a15] mb-5 group-hover:text-[#32B9E9] transition-colors duration-300 relative inline-block">
                                     {skill.title}
                                     <span className="absolute -bottom-2 left-0 w-1/3 h-[3px] bg-gradient-to-r from-[#32B9E9] to-transparent rounded-full group-hover:w-full transition-all duration-500" />
@@ -163,7 +166,7 @@ const ITSkills = () => {
                                         onClick={() => setIsModalOpen(true)}
                                         className="flex items-center gap-2 text-[#050a15] hover:text-[#32B9E9] font-bold hover:gap-3 transition-all duration-300 bg-transparent border-none cursor-pointer p-0 group/btn"
                                     >
-                                        Hire now 
+                                        Hire now
                                         <ArrowRight className="w-5 h-5 text-[#32B9E9] group-hover/btn:translate-x-1 transition-transform duration-300" />
                                     </button>
                                 </div>

@@ -66,7 +66,7 @@ const Software: React.FC = () => {
     useEffect(() => {
         setMounted(true);
         setImageKeys(cards.map(() => Date.now()));
-    }, []); 
+    }, []);
 
     const handleHover = (index: number): void => {
         if (!mounted) return;
@@ -78,7 +78,7 @@ const Software: React.FC = () => {
     };
 
     return (
-        <section className="text-black mt-[80px] mb-[80px] px-4 font-THICCCBOI max-w-7xl mx-auto overflow-hidden">
+        <section className="text-black mt-[80px] mb-[80px] font-THICCCBOI max-w-7xl mx-auto overflow-hidden">
             <style>{`
               @keyframes shimmer {
                 0% { transform: translateX(-100%); }
@@ -90,9 +90,9 @@ const Software: React.FC = () => {
               }
             `}</style>
 
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7">
 
-                <motion.div 
+                <motion.div
                     className="flex flex-col gap-4 sm:gap-5 relative z-10 max-w-7xl mx-auto text-center justify-center mb-[50px]"
                     initial="hidden"
                     whileInView="visible"
@@ -110,7 +110,7 @@ const Software: React.FC = () => {
                     </p>
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                     className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
                     initial="hidden"
                     whileInView="visible"
@@ -142,7 +142,7 @@ const Software: React.FC = () => {
                                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#32B9E9]/10 to-transparent" style={{ animation: "shimmer 2s ease-in-out infinite" }} />
                                         </div>
                                         <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[3px] w-0 group-hover:w-3/4 bg-gradient-to-r from-transparent via-[#32B9E9] to-transparent transition-all duration-700 rounded-full" />
-                                        
+
                                         <div style={{ transform: "translateZ(30px)" }} className="flex flex-col items-center flex-grow">
                                             <div className="relative mb-6 inline-flex self-start">
                                                 <div className="absolute inset-[-8px] rounded-full border-2 border-dashed border-[#32B9E9]/0 group-hover:border-[#32B9E9]/25 transition-all duration-700 group-hover:rotate-[60deg]" />
@@ -158,7 +158,7 @@ const Software: React.FC = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
                                             <h3 className="font-bold text-[20px] md:text-[24px] mb-3 group-hover:text-[#0d2a3a] transition-colors duration-300 text-center">
                                                 {item.title}
                                             </h3>

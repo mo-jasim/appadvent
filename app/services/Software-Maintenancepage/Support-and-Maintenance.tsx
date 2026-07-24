@@ -51,7 +51,7 @@ const SupportAndMaintenance: React.FC = () => {
     };
 
     return (
-        <section className="text-black py-12 sm:py-16 md:py-20 px-4 sm:px-6 font-THICCCBOI overflow-hidden">
+        <section className="text-black py-12 sm:py-16 md:py-20 font-THICCCBOI overflow-hidden">
             <style>{`
               @keyframes shimmer {
                 0% { transform: translateX(-100%); }
@@ -63,9 +63,9 @@ const SupportAndMaintenance: React.FC = () => {
               }
             `}</style>
 
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7">
                 <motion.div
-                    className="text-center mb-10 sm:mb-12 md:mb-16 max-w-6xl mx-auto"
+                    className="text-center mb-10 sm:mb-12 md:mb-16 max-w-7xl mx-auto"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-60px" }}
@@ -77,7 +77,7 @@ const SupportAndMaintenance: React.FC = () => {
                     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-bold mb-3 sm:mb-4 leading-tight">
                         Support and Maintenance Activities
                     </h2>
-                    <p className="text-gray-500 text-sm sm:text-base md:text-[18px] leading-relaxed max-w-6xl mx-auto">
+                    <p className="text-gray-500 text-sm sm:text-base md:text-[18px] leading-relaxed max-w-7xl mx-auto">
                         Apart from technical expertise, many other factors influence project success and software quality. Appadvent's teams approach all of them seriously.
                     </p>
                 </motion.div>

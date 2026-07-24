@@ -30,7 +30,7 @@ export default function Letramway() {
                   <div className="absolute inset-0 bg-black/60 z-10"></div>  Dark Overlay
                </div>
 
-               <div className="relative z-20 text-center w-full max-w-7xl mx-auto flex flex-col items-center gap-4 px-4 md:-mt-32">
+               <div className="relative z-20 text-center w-full max-w-7xl mx-auto flex flex-col items-center gap-4 px-3 sm:px-5 lg:px-7 md:-mt-32">
                   {/* Logo */}
                   <div className="flex justify-center w-44 md:w-52 h-auto mb-2">
                      <img src="/Letimg/LETlogo.svg" alt="Le tramway Logo" className="w-full h-auto md:mt-25" />
@@ -60,7 +60,7 @@ export default function Letramway() {
                {/* Background light glow */}
 
                {/* ── MOBILE: Single centered image ── */}
-               <div className="sm:hidden relative w-full px-6 mt-8 z-10">
+               <div className="sm:hidden relative w-full px-3 sm:px-5 lg:px-7 mt-8 z-10">
                   <Image
                      src="/Letimg/bigpc.svg"
                      alt="Desktop Preview"
@@ -72,7 +72,7 @@ export default function Letramway() {
                </div>
 
                {/* ── SM+: Full overlapping device layout ── */}
-               <div className="hidden sm:block relative w-full px-4 max-w-[1200px] mx-auto aspect-[16/10] md:aspect-[16/9] lg:aspect-[2/1] mt-8 mb-16 lg:mt-12 z-10">
+               <div className="hidden sm:block relative w-full px-3 sm:px-5 lg:px-7 max-w-7xl mx-auto aspect-[16/10] md:aspect-[16/9] lg:aspect-[2/1] mt-8 mb-16 lg:mt-12 z-10">
 
                   {/* Desktop (bigpc) */}
                   <div className="absolute top-[0%] left-[20%] w-[60%] z-10 hover:-translate-y-[15px] transition-transform duration-500 delay-75 will-change-transform">
@@ -102,8 +102,8 @@ export default function Letramway() {
                </div>
 
                {/* 2. ABOUT LE TRAMWAY WEBSITE */}
-               <div className="relative w-full pb-16 sm:pb-20 pt-8 sm:pt-10 px-4 sm:px-6 lg:px-8">
-                  <div className="w-full max-w-[1100px] mx-auto flex flex-col items-center text-center">
+               <div className="relative w-full pb-16 sm:pb-20 pt-8 sm:pt-10 px-3 sm:px-5 lg:px-7">
+                  <div className="w-full max-w-7xl mx-auto flex flex-col items-center text-center">
 
                      {/* OVERVIEW Watermark */}
                      <div className="w-full text-center text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap pointer-events-none select-none leading-none tracking-tight overflow-hidden">
@@ -155,8 +155,8 @@ export default function Letramway() {
 
 
             {/* --- THE RESULTS SECTION --- */}
-            <section className="w-full bg-[#9C162E] py-6 md:py-15 px-4 sm:px-6 lg:px-8">
-               <div className="max-w-[1200px] mx-auto">
+            <section className="w-full bg-[#9C162E] py-6 md:py-15 px-3 sm:px-5 lg:px-7">
+               <div className="max-w-7xl mx-auto">
                   <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="text-3xl md:text-5xl font-bold text-white mb-10 md:mb-16 text-center md:text-left">The Results</motion.h2>
                   <motion.div
                      className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10"
@@ -193,7 +193,7 @@ export default function Letramway() {
             </section>
 
             {/* 4. OPPORTUNITIES AWAIT */}
-            <section className="relative w-full py-20 md:py-32 px-4 overflow-hidden">
+            <section className="relative w-full py-20 md:py-32 px-3 sm:px-5 lg:px-7 overflow-hidden">
                {/* Watermark */}
                <motion.div
                    className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none"
@@ -290,7 +290,7 @@ export default function Letramway() {
                    SOLUTIONS
                </motion.div>
 
-               <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+               <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7 relative z-10">
                   <motion.h2
                       className="text-3xl md:text-5xl font-bold mb-16 md:mb-24 text-center text-white"
                       initial={{ opacity: 0, y: -20 }}
@@ -366,8 +366,8 @@ export default function Letramway() {
             <Designing1 />
 
             {/* 8. GLIMPSES OF APP UI SCREENS */}
-            <section className="w-full py-20 md:py-32 text-center bg-white">
-               <div className="max-w-[1200px] mx-auto px-4">
+            <section className="w-full py-20 md:py-32 text-center bg-white px-3 sm:px-5 lg:px-7">
+               <div className="max-w-7xl mx-auto">
                   <div className="relative mb-20">
                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
                         UI SCREENS

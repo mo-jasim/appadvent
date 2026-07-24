@@ -83,7 +83,7 @@ const AppDevelopment: React.FC = () => {
                     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-bold mb-3 sm:mb-4 leading-tight">
                         Mobile App Development Approaches We Use
                     </h2>
-                    <p className="text-black text-sm sm:text-base md:text-[18px] leading-relaxed max-w-6xl mx-auto">
+                    <p className="text-black text-sm sm:text-base md:text-[18px] leading-relaxed max-w-7xl mx-auto">
                         Web development services help create all types of web-based software and ensure great experience for web users. Different types of web solutions may seem similar from the outside, but we approach them differently and know what factors are winning in each case.
                     </p>
                 </motion.div>

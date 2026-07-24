@@ -60,7 +60,7 @@ const WebSolutionSection: React.FC = () => {
     };
 
     return (
-        <section className="text-black mb-[80px] px-4 font-THICCCBOI max-w-7xl mx-auto ">
+        <section className="text-black mb-[80px] px-4 sm:px-6 lg:px-8 font-THICCCBOI max-w-7xl mx-auto ">
             <div className="max-w-7xl mx-auto">
 
                 <motion.div

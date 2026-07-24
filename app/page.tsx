@@ -13,7 +13,7 @@ import { motion, useInView, useScroll, useTransform, useMotionValue, useSpring, 
 const servicesData = [
   { href: "services/website-designing-development", title: "Website Designing & Development", desc: "We specialize in creating visually appealing and highly functional websites that meet your business goals...", icon: "/images/Ico1.svg" },
   { href: "services/mobile-app-development", title: "Mobile App Development", desc: "We develop mobile apps for iOS and Android using Swift, Kotlin, and React Native. Our secure apps ensure a great user experience...", icon: "/images/Ico2.svg" },
-  { href: "services/staff-augmentation", title: "Staff Augmentation", desc: "Appadvent offers staff augmentation services to help you quickly scale your team with highly skilled professionals...", icon: "/images/Ico3.svg" },
+  { href: "services/staff-augmentation", title: "Staff Augmentation", desc: "We offers staff augmentation services to help you quickly scale your team with highly skilled professionals...", icon: "/images/Ico3.svg" },
   { href: "services/digital-marketing", title: "Digital Marketing", desc: "We offer SEO, social media, copywriting, and keyword optimization to boost your website's ranking and audience reach...", icon: "/images/Ico4.svg" },
   { href: "services/Software-Maintenancepage", title: "Support & Maintenance", desc: "We provide ongoing support and maintenance to ensure your web and mobile applications operate ...", icon: "/images/Ico5.svg" },
   { href: "services/Custom-Based-Services", title: "Custom Based Services", desc: "Our services meet your business needs with tailored solutions. We develop software that enhances productivity...", icon: "/images/Ico6.svg" }
@@ -220,8 +220,6 @@ const HomePage = () => {
   const [mounted, setMounted] = useState(false);
   const [imageKeys, setImageKeys] = useState<number[]>(Array(6).fill(0));
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentIndustryIndex, setCurrentIndustryIndex] = useState(0);
-  const [direction, setDirection] = useState(1);
 
   // Parallax scroll for industries image
   const industriesRef = useRef<HTMLElement>(null);
@@ -235,16 +233,6 @@ const HomePage = () => {
     setMounted(true);
     setImageKeys(Array(6).fill(Date.now()));
   }, []);
-
-  const nextIndustry = () => {
-    setDirection(1);
-    setCurrentIndustryIndex((prev) => (prev + 1) % allIndustries.length);
-  };
-
-  const prevIndustry = () => {
-    setDirection(-1);
-    setCurrentIndustryIndex((prev) => (prev - 1 + allIndustries.length) % allIndustries.length);
-  };
 
   const handleHover = (index: number): void => {
     if (!mounted) return;
@@ -402,7 +390,7 @@ const HomePage = () => {
       </section>
 
       {/* ═══════════════ EXPLORE OUR SERVICES ═══════════════ */}
-      <section className="mb-[80px] mt-[60px] w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="mb-[80px] mt-[60px] w-full max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
         <motion.p
           className="max-w-2xl mx-auto text-black font-bold text-[32px] md:text-[40px] leading-tight text-center font-THICCCBOI"
           initial={{ opacity: 0, y: 30 }}
@@ -420,7 +408,7 @@ const HomePage = () => {
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.6, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
-          At Appadvent, we blend innovation with technical expertise to provide exceptional web and app development solutions.
+          we blend innovation with technical expertise to provide exceptional web and app development solutions.
         </motion.p>
 
         {/* Service Cards — premium glassmorphism + gradient borders + shimmer */}
@@ -597,104 +585,82 @@ const HomePage = () => {
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.7, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
               >
-                At Appadvent, we blend innovation with technical expertise to provide exceptional web and app development solutions.
+                We blend innovation with technical expertise to provide exceptional web and app development solutions.
               </motion.p>
             </div>
           </div>
         </div>
 
-        {/* Floating Industry Cards — 3D Premium Redesign */}
-        <div className="relative z-20 mt-8 lg:-mt-[350px] w-full px-4 lg:px-12 pb-12 lg:pb-0 overflow-hidden">
-          {/* Navigation Buttons */}
-          <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 lg:left-4 lg:right-4 flex justify-between z-30 pointer-events-none px-2">
-            <button onClick={prevIndustry} className="pointer-events-auto w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-full bg-white/90 hover:bg-white text-[#32B9E9] shadow-xl transition-all">
-              <ChevronLeft className="w-6 h-6 lg:w-7 lg:h-7" />
-            </button>
-            <button onClick={nextIndustry} className="pointer-events-auto w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-full bg-white/90 hover:bg-white text-[#32B9E9] shadow-xl transition-all">
-              <ChevronRight className="w-6 h-6 lg:w-7 lg:h-7" />
-            </button>
-          </div>
+        {/* Floating Industry Cards — Continuous Infinite Marquee */}
+        <div className="relative z-20 mt-8 lg:-mt-[350px] w-full pb-12 lg:pb-0 overflow-hidden group">
+          <style>{`
+            @keyframes infiniteMarquee {
+              0% { transform: translateX(0); }
+              100% { transform: translateX(-50%); }
+            }
+            .animate-infinite-marquee {
+              animation: infiniteMarquee 35s linear infinite;
+            }
+            .group:hover .animate-infinite-marquee {
+              animation-play-state: paused !important;
+            }
+          `}</style>
 
-          <AnimatePresence mode="popLayout" custom={direction}>
-            <motion.div
-              key={currentIndustryIndex}
-              custom={direction}
-              variants={slideVariants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-8 lg:px-10"
-            >
-              {Array.from({ length: 4 }).map((_, i) => {
-                const item = allIndustries[(currentIndustryIndex + i) % allIndustries.length];
-                return (
-                  <motion.div
-                    key={i}
-                    variants={{
-                      hidden: { opacity: 0, y: 50, scale: 0.92 },
-                      visible: {
-                        opacity: 1,
-                        y: 0,
-                        scale: 1,
-                        transition: {
-                          duration: 0.6,
-                          ease: [0.25, 0.46, 0.45, 0.94],
-                        },
-                      },
-                    }}
-                  >
-                    <TiltCard className="h-full">
-                      <Link href={item.href} className="block w-full group h-[270px] relative">
+          <div className="flex w-max animate-infinite-marquee pt-4 pb-8">
+            {[...allIndustries, ...allIndustries].map((item, i) => (
+              <div
+                key={i}
+                className="w-[85vw] sm:w-[320px] lg:w-[350px] shrink-0 pr-6 lg:pr-8"
+              >
+                <TiltCard className="h-full">
+                  <Link href={item.href} className="block w-full group h-[270px] relative">
 
-                        {/* Premium Glowing Border Layer */}
-                        <div
-                          className="absolute inset-0 rounded-[24px] overflow-hidden bg-white/20 group-hover:bg-gradient-to-br group-hover:from-[#32B9E9] group-hover:via-white group-hover:to-[#32B9E9] transition-all duration-700 z-0 shadow-[0_8px_30px_rgba(0,0,0,0.06)]"
-                        />
+                    {/* Premium Glowing Border Layer */}
+                    <div
+                      className="absolute inset-0 rounded-[24px] overflow-hidden bg-white/20 group-hover:bg-gradient-to-br group-hover:from-[#32B9E9] group-hover:via-white group-hover:to-[#32B9E9] transition-all duration-700 z-0 shadow-[0_8px_30px_rgba(0,0,0,0.06)]"
+                    />
 
-                        {/* Content Layer (3D Context) */}
-                        <div
-                          className={`relative z-10 h-full m-[1.5px] rounded-[22.5px] ${item.bg} p-8 sm:p-9 flex flex-col justify-between transition-all duration-500 group-hover:bg-white group-hover:shadow-[0_15px_40px_rgba(50,185,233,0.18)]`}
-                          style={{ transformStyle: "preserve-3d" }}
-                        >
-                          {/* Shimmer sweep */}
-                          <div className="absolute inset-0 overflow-hidden rounded-[22.5px] pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/70 to-transparent" style={{ animation: "shimmer 2s ease-in-out infinite" }} />
-                          </div>
+                    {/* Content Layer (3D Context) */}
+                    <div
+                      className={`relative z-10 h-full m-[1.5px] rounded-[22.5px] ${item.bg} p-8 sm:p-9 flex flex-col justify-between transition-all duration-500 overflow-hidden group-hover:bg-white`}
+                      style={{ transformStyle: "preserve-3d" }}
+                    >
+                      {/* Shimmer sweep */}
+                      <div className="absolute inset-0 overflow-hidden rounded-[22.5px] pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/70 to-transparent" style={{ animation: "shimmer 2s ease-in-out infinite" }} />
+                      </div>
 
-                          {/* Soft glow corner */}
-                          <div className="absolute -top-12 -right-12 w-32 h-32 bg-[#32B9E9]/10 rounded-full blur-2xl group-hover:bg-[#32B9E9]/25 transition-all duration-700 pointer-events-none" />
+                      {/* Soft glow corner */}
+                      <div className="absolute -top-12 -right-12 w-32 h-32 bg-[#32B9E9]/10 rounded-full blur-2xl group-hover:bg-[#32B9E9]/25 transition-all duration-700 pointer-events-none" />
 
-                          {/* Icon & Title */}
-                          <div className="flex flex-col items-start relative z-10" style={{ transform: "translateZ(30px)" }}>
-                            <div className="relative mb-6">
-                              {/* Floating icon animation on hover */}
-                              <div className="transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:-translate-y-2 group-hover:scale-110">
-                                <Image src={item.icon} alt={item.title} width={60} height={60} className="relative z-10 drop-shadow-sm" />
-                                {/* Shadow under icon */}
-                                <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-8 h-1.5 bg-[#002434]/10 rounded-full blur-[3px] opacity-0 group-hover:opacity-100 transition-all duration-500" />
-                              </div>
-                            </div>
-                            <p className={`font-bold text-[19px] lg:text-[22px] text-[#0A1A2E] leading-tight transition-colors duration-300 group-hover:text-[#32B9E9] ${item.title === 'Retail & E-commerce'}`}>
-                              {item.title}
-                            </p>
-                          </div>
-
-                          {/* Action Button */}
-                          <div className="relative z-10 mt-4 flex items-center gap-2 text-[#32B9E9] text-[15px] font-bold transition-all duration-300" style={{ transform: "translateZ(15px)" }}>
-                            <span className="group-hover:tracking-wider transition-all duration-300">Explore</span>
-                            <span className="flex items-center justify-center w-7 h-7 rounded-full bg-[#32B9E9]/10 group-hover:bg-[#32B9E9] group-hover:text-white transition-colors duration-300 shadow-sm group-hover:shadow-[0_4px_10px_rgba(50,185,233,0.4)]">
-                              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5" strokeWidth={2.5} />
-                            </span>
+                      {/* Icon & Title */}
+                      <div className="flex flex-col items-start relative z-10" style={{ transform: "translateZ(30px)" }}>
+                        <div className="relative mb-6">
+                          {/* Floating icon animation on hover */}
+                          <div className="transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:-translate-y-2 group-hover:scale-110">
+                            <Image src={item.icon} alt={item.title} width={60} height={60} className="relative z-10 drop-shadow-sm" />
+                            {/* Shadow under icon */}
+                            <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-8 h-1.5 bg-[#002434]/10 rounded-full blur-[3px] opacity-0 group-hover:opacity-100 transition-all duration-500" />
                           </div>
                         </div>
-                      </Link>
-                    </TiltCard>
-                  </motion.div>
-                );
-              })}
-            </motion.div>
-          </AnimatePresence>
+                        <p className={`font-bold text-[19px] lg:text-[22px] text-[#0A1A2E] leading-tight transition-colors duration-300 group-hover:text-[#32B9E9] ${item.title === 'Retail & E-commerce'}`}>
+                          {item.title}
+                        </p>
+                      </div>
+
+                      {/* Action Button */}
+                      <div className="relative z-10 mt-4 flex items-center gap-2 text-[#32B9E9] text-[15px] font-bold transition-all duration-300" style={{ transform: "translateZ(15px)" }}>
+                        <span className="group-hover:tracking-wider transition-all duration-300">Explore</span>
+                        <span className="flex items-center justify-center w-7 h-7 rounded-full bg-[#32B9E9]/10 group-hover:bg-[#32B9E9] group-hover:text-white transition-colors duration-300 shadow-sm group-hover:shadow-[0_4px_10px_rgba(50,185,233,0.4)]">
+                          <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5" strokeWidth={2.5} />
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
+                </TiltCard>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

@@ -72,7 +72,7 @@ const ServiceCards: React.FC = () => {
     };
 
     return (
-        <div className="px-4 font-THICCCBOI max-w-7xl mx-auto">
+        <div className="px-4 sm:px-6 lg:px-8 font-THICCCBOI max-w-7xl mx-auto">
             <style>{`
               @keyframes shimmer {
                 0% { transform: translateX(-100%); }

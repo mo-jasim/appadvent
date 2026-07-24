@@ -86,7 +86,7 @@ const SoftwareMaintenance: React.FC = () => {
     };
 
     return (
-        <section className="text-black py-16 sm:py-20 md:py-24 px-4 sm:px-6 font-THICCCBOI overflow-hidden">
+        <section className="text-black py-16 sm:py-20 md:py-24 font-THICCCBOI overflow-hidden">
             <style>{`
               @keyframes shimmer {
                 0% { transform: translateX(-100%); }
@@ -98,7 +98,7 @@ const SoftwareMaintenance: React.FC = () => {
               }
             `}</style>
 
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto px-4 sm:px-5 lg:px-7">
                 <motion.div
                     className="text-center mb-10 sm:mb-12 md:mb-16 max-w-7xl mx-auto"
                     initial="hidden"

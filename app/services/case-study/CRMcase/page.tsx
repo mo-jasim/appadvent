@@ -38,7 +38,7 @@ export default function CRMcasePage() {
                         </div>
 
                         <motion.div
-                            className="relative z-20 text-center px-4 max-w-7xl mx-auto flex flex-col items-center gap-6"
+                            className="relative z-20 text-center px-3 sm:px-5 lg:px-7 max-w-7xl mx-auto flex flex-col items-center gap-6"
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
@@ -85,7 +85,7 @@ export default function CRMcasePage() {
                     </section>
                     {/* Hero Devices Mockup Image Placeholder */}
                     <motion.div
-                        className="flex items-center justify-center px-4 max-w-5xl mx-auto mt-[80px] mb-[80px]"
+                        className="flex items-center justify-center px-3 sm:px-5 lg:px-7 max-w-7xl mx-auto mt-[80px] mb-[80px]"
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
@@ -97,8 +97,8 @@ export default function CRMcasePage() {
                     </motion.div>
 
                     {/* ABOUT SECTION */}
-                    <section className="relative w-full py-16 md:py-24 px-4 overflow-hidden">
-                        <div className="max-w-6xl mx-auto relative z-10 text-center">
+                    <section className="relative w-full py-16 md:py-24 px-3 sm:px-5 lg:px-7 overflow-hidden">
+                        <div className="max-w-7xl mx-auto relative z-10 text-center">
                             {/* OVERVIEW Watermark */}
                             <motion.div
                                 className="absolute -top-12 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none"
@@ -173,9 +173,9 @@ export default function CRMcasePage() {
                    3. THE RESULTS BANNER
                ───────────────────────────────────────────── */}
                     {/* --- THE RESULTS BANNER --- */}
-                    <section className="relative w-full bg-gradient-to-br from-[#0a3a87] via-[#0D57C7] to-[#126deb] py-6 md:py-15 px-4 sm:px-6 lg:px-8 overflow-hidden">
+                    <section className="relative w-full bg-gradient-to-br from-[#0a3a87] via-[#0D57C7] to-[#126deb] py-6 md:py-15 px-3 sm:px-5 lg:px-7 overflow-hidden">
                         <div className="absolute inset-0 bg-[url('/images/polygon.png')] opacity-20 mix-blend-overlay pointer-events-none" />
-                        <div className="max-w-[1200px] mx-auto relative z-10">
+                        <div className="max-w-7xl mx-auto relative z-10">
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 md:mb-16 text-center md:text-left">The Results</h2>
                             <motion.div 
                             className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10"
@@ -213,7 +213,7 @@ export default function CRMcasePage() {
 
 
                     {/* --- OPPORTUNITIES AWAIT SECTION --- */}
-                    <section className="relative w-full py-20 md:py-32 px-4 overflow-hidden">
+                    <section className="relative w-full py-20 md:py-32 px-3 sm:px-5 lg:px-7 overflow-hidden">
                         {/* Watermark */}
                         <motion.div
                             className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none"
@@ -309,7 +309,7 @@ export default function CRMcasePage() {
                             SOLUTIONS
                         </motion.div>
 
-                        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+                        <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7 relative z-10">
                             <motion.h2
                                 className="text-3xl md:text-5xl font-bold mb-16 md:mb-24 text-center text-white"
                                 initial={{ opacity: 0, y: -20 }}
@@ -380,7 +380,7 @@ export default function CRMcasePage() {
                     <Technology />
                     <Designing1 />
                     {/* 8. GLIMPSES OF APP UI SCREENS */}
-                    <section className="relative w-full py-20 md:py-32 px-4 text-center overflow-hidden">
+                    <section className="relative w-full py-20 md:py-32 px-3 sm:px-5 lg:px-7 text-center overflow-hidden">
                         {/* Watermark */}
                         <motion.div
                             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#f1f5f9] whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none"
@@ -403,7 +403,7 @@ export default function CRMcasePage() {
                         </motion.h2>
 
                         <motion.div
-                            className="max-w-6xl mx-auto flex justify-center relative z-10"
+                            className="max-w-7xl mx-auto flex justify-center relative z-10"
                             initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}

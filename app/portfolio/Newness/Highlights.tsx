@@ -66,15 +66,15 @@ export default function Highlights() {
     }, [activeIndex, pages.length]);
 
     return (
-        <section className="relative w-full font-THICCCBOI mt-[80px] mb-[80px]">
+        <section className="relative w-full font-THICCCBOI mt-[80px] mb-[80px] px-3 sm:px-5 lg:px-7">
             <div>
-                <div className="w-full max-w-[1400px] mx-auto relative mt-[80px] mb-[80px]">
+                <div className="w-full max-w-7xl mx-auto relative mt-[80px] mb-[80px]">
                     {/* Huge Faint Watermark Text */}
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[30px] sm:text-[50px] md:text-[110px] lg:text-[110px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none -mt-[50px]">
                         NEWNESS HIGHLIGHTS
                     </div>
                     {/* Title */}
-                    <h2 className="text-[40px] font-bold text-[#111827] mb-12 relative z-20 xl:ml-10 -pt-[100px] whitespace-nowrap">
+                    <h2 className="text-[40px] font-bold text-[#111827] mb-12 relative z-20 xl:ml-0 -pt-[100px] whitespace-nowrap">
                         Newness Highlights
                     </h2>
 

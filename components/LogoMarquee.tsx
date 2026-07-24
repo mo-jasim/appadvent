@@ -40,6 +40,11 @@ export default function LogoMarquee() {
           animation: heroScroll 35s linear infinite;
           width: max-content;
         }
+        
+        /* Pause on hover */
+        .hero-curve-bg:hover .hero-scroll-box {
+          animation-play-state: paused !important;
+        }
 
         /* ── responsive height (perfectly matched for true vertical masking symmetry) ── */
         .hero-img-area {

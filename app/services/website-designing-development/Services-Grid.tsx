@@ -85,7 +85,7 @@ const ServiceGridCard: React.FC = () => {
     };
 
     return (
-        <section className="text-black py-10 md:py-20 px-4 font-THICCCBOI max-w-7xl mx-auto">
+        <section className="text-black py-10 md:py-20 px-4 px-4 sm:px-6 lg:px-8 font-THICCCBOI max-w-7xl mx-auto">
             <div className="max-w-7xl mx-auto">
 
                 <div className="text-center mb-12 md:mb-16">

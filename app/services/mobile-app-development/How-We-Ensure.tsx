@@ -104,7 +104,7 @@ const HowWeEnsure: React.FC = () => {
                     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-bold mb-4 md:mb-6 text-white leading-tight">
                         Building All Mobile Features Modern Users Need
                     </h2>
-                    <p className="text-white/80 text-sm sm:text-base md:text-[18px] leading-relaxed font-THICCCBOI max-w-6xl mx-auto">
+                    <p className="text-white/80 text-sm sm:text-base md:text-[18px] leading-relaxed font-THICCCBOI max-w-7xl mx-auto">
                         Apart from technical expertise, many other factors influence project success and software quality. Appadvent teams approach
                         all of them seriously. You are welcome to check the descriptions of processes and practices we rely on to deliver on goal,
                         quality, schedule, and budget:

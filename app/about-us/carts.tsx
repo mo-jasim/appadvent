@@ -29,7 +29,7 @@ function Carts() {
     },
     {
       title: "Our Vision",
-      desc: "Appadvent’s goal is to become known as a trustworthy outsourcing partner for companies looking to leverage technology for business growth. As the environment is always changing, our strategic goal is to evolve and become as inventive as we can continuously.",
+      desc: "Appadvent's goal is to become known as a trustworthy outsourcing partner for companies looking to leverage technology for business growth. As the environment is always changing, our strategic goal is to evolve and become as inventive as we can continuously.",
       icon: "/images/crad2.svg"
     },
     {

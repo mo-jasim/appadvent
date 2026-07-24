@@ -2,19 +2,6 @@
 import React, { useState } from "react";
 import { motion } from 'framer-motion';
 import Image from "next/image";
-import {
-    CheckCircle2,
-    MapPin,
-    Building2,
-    Database,
-    Clock,
-    Briefcase,
-    ArrowDownToLine,
-    Users,
-    Star,
-    Link as LinkIcon,
-    UtensilsCrossed
-} from "lucide-react";
 import CompaniesLove from "../../services/website-designing-development/Companies-Love";
 import OurProjectsSection from "../../services/website-designing-development/Our-Projects-Section";
 import Highlights from "./Highlights";
@@ -43,7 +30,7 @@ export default function Letramway() {
                         <div className="absolute inset-0 bg-black/60 z-10"></div>  Dark Overlay
                     </div>
 
-                    <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="relative z-20 text-center w-full max-w-7xl mx-auto flex flex-col items-center gap-4 px-4 md:-mt-10">
+                    <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="relative z-20 text-center w-full max-w-7xl mx-auto flex flex-col items-center gap-4 px-3 sm:px-5 lg:px-7 md:-mt-10">
                         {/* Logo */}
                         <div className="flex justify-center w-44 md:w-52 h-auto mb-2">
                             <img src="/Letimg/Queue-logo.svg" alt="Le tramway Logo" className="w-full h-auto" />
@@ -73,7 +60,7 @@ export default function Letramway() {
                     <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[#b8deff]/30 blur-[150px] rounded-full z-0 pointer-events-none"></div>
 
                     {/* ── MOBILE: Single centered image ── */}
-                    <div className="sm:hidden relative w-full px-6 mt-8 z-10">
+                    <div className="sm:hidden relative w-full px-3 sm:px-5 lg:px-7 mt-8 z-10">
                         <Image
                             src="/Letimg/Queue-about-img.svg"
                             alt="Desktop Preview"
@@ -85,38 +72,40 @@ export default function Letramway() {
                     </div>
 
                     {/* ── SM+: Full overlapping device layout ── */}
-                    <div className="hidden sm:block relative w-full px-4 max-w-[1200px] mx-auto aspect-[16/10] md:aspect-[16/9] lg:aspect-[2/1] mt-8 mb-16 lg:mt-12 z-10">
+                    <div className="hidden sm:block w-full px-2 sm:px-4 lg:px-7 mt-8 mb-16 lg:mt-12">
+                        <div className="relative max-w-7xl mx-auto aspect-[16/10] md:aspect-[16/9] lg:aspect-[2/1] z-10">
 
-                        {/* Desktop (bigpc) */}
-                        <div className="absolute top-[0%] left-[20%] w-[60%] z-10 hover:translate-y-2 transition-transform duration-500 delay-75 will-change-transform">
-                            <Image src="/Letimg/Queue-about-img.svg" alt="Desktop" width={1000} height={800} className="w-full h-auto drop-shadow-2xl" priority />
+                            {/* Desktop (bigpc) */}
+                            <div className="absolute top-[0%] left-[20%] w-[60%] z-10 hover:translate-y-2 transition-transform duration-500 delay-75 will-change-transform">
+                                <Image src="/Letimg/Queue-about-img.svg" alt="Desktop" width={1000} height={800} className="w-full h-auto drop-shadow-2xl" priority />
+                            </div>
+
+                            {/* iPad */}
+                            <div className="absolute top-[10%] left-[5%] w-[25%] z-20 hover:translate-y-2 transition-transform duration-500 delay-75 will-change-transform">
+                                <Image src="/Letimg/IPad.svg" alt="iPad" width={300} height={200} className="w-full h-auto drop-shadow-xl" priority />
+                            </div>
+
+                            {/* Laptop */}
+                            <div className="absolute top-[60%] left-[54%] w-[46%] z-20 hover:translate-y-2 transition-transform duration-500 delay-100 will-change-transform">
+                                <Image src="/Letimg/Queue-laptop-img.svg" alt="Laptop" width={800} height={600} className="w-full h-auto drop-shadow-xl" priority />
+                            </div>
+
+                            {/* iPhone */}
+                            <div className="absolute top-[50%] -left-6 w-[18%] z-30 hover:translate-y-2 transition-transform duration-500 delay-150 will-change-transform">
+                                <Image src="/Letimg/iPhone 12 _ 12 Pro.svg" alt="iPhone" width={200} height={400} className="w-full h-auto drop-shadow-lg" priority />
+                            </div>
+
+                            {/* Bugman */}
+                            <div className="absolute top-[25%] -right-12 w-[32%] z-30 hover:translate-y-2 transition-transform duration-500 delay-200 will-change-transform origin-bottom">
+                                <Image src="/Letimg/Queue-man-img.svg" alt="Bugman" width={400} height={600} className="w-full h-auto" priority />
+                            </div>
+
                         </div>
-
-                        {/* iPad */}
-                        <div className="absolute top-[10%] left-[5%] w-[25%] z-20 hover:translate-y-2 transition-transform duration-500 delay-75 will-change-transform">
-                            <Image src="/Letimg/IPad.svg" alt="iPad" width={300} height={200} className="w-full h-auto drop-shadow-xl" priority />
-                        </div>
-
-                        {/* Laptop */}
-                        <div className="absolute top-[60%] left-[55%] w-[47%] z-20 hover:translate-y-2 transition-transform duration-500 delay-100 will-change-transform">
-                            <Image src="/Letimg/Queue-laptop-img.svg" alt="Laptop" width={800} height={600} className="w-full h-auto drop-shadow-xl" priority />
-                        </div>
-
-                        {/* iPhone */}
-                        <div className="absolute top-[50%] -left-[3%] w-[20%] z-30 hover:translate-y-2 transition-transform duration-500 delay-150 will-change-transform">
-                            <Image src="/Letimg/iPhone 12 _ 12 Pro.svg" alt="iPhone" width={200} height={400} className="w-full h-auto drop-shadow-lg" priority />
-                        </div>
-
-                        {/* Bugman */}
-                        <div className="absolute top-[25%] right-[-5%] lg:right-[-5%] w-[35%] z-30 hover:translate-y-2 transition-transform duration-500 delay-200 will-change-transform origin-bottom">
-                            <Image src="/Letimg/Queue-man-img.svg" alt="Bugman" width={400} height={600} className="w-full h-auto" priority />
-                        </div>
-
                     </div>
 
                     {/* 2. ABOUT LE TRAMWAY WEBSITE */}
-                    <div className="relative w-full pb-16 sm:pb-20 pt-8 sm:pt-10 px-4 sm:px-6 lg:px-8">
-                        <div className="w-full max-w-[1100px] mx-auto flex flex-col items-center text-center">
+                    <div className="relative w-full pb-16 sm:pb-20 pt-8 sm:pt-10 px-3 sm:px-5 lg:px-7">
+                        <div className="w-full max-w-7xl mx-auto flex flex-col items-center text-center">
 
                             {/* OVERVIEW Watermark */}
                             <div className="w-full text-center text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap pointer-events-none select-none leading-none tracking-tight overflow-hidden">
@@ -171,8 +160,8 @@ export default function Letramway() {
 
 
                 {/* --- THE RESULTS SECTION --- */}
-                <section className="w-full bg-[#9C162E] py-6 md:py-15 px-4 sm:px-6 lg:px-8">
-                    <div className="max-w-[1200px] mx-auto">
+                <section className="w-full bg-[#9C162E] py-6 md:py-15 px-3 sm:px-5 lg:px-7">
+                    <div className="max-w-7xl mx-auto">
                         <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="text-3xl md:text-5xl font-bold text-white mb-10 md:mb-16 text-center md:text-left">The Results</motion.h2>
                         <motion.div
                             className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10"
@@ -209,7 +198,7 @@ export default function Letramway() {
                 </section>
 
                 {/* 4. OPPORTUNITIES AWAIT */}
-                <section className="relative w-full py-20 md:py-32 px-4 overflow-hidden">
+                <section className="relative w-full py-20 md:py-32 px-3 sm:px-5 lg:px-7 overflow-hidden">
                     {/* Watermark */}
                     <motion.div
                         className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none"
@@ -245,30 +234,30 @@ export default function Letramway() {
                                 }}
                             >
                                 {[
-                                   "Eliminate long physical waiting lines using intelligent digital token generation, automated queue handling, and real-time customer flow management designed for banks, hospitals, and high-traffic service environments.",
-                                   "Improve overall customer experience by providing faster service processing, organized queue operations, reduced waiting frustration, and smooth interaction across hospitals, banks, clinics, and customer service centers.",
-                                   "Monitor queue activity, customer waiting time, counter performance, staff productivity, and operational efficiency through centralized dashboards with real-time analytics, reporting tools, and performance tracking capabilities.",
-                                   "Enable seamless customer engagement through integrated kiosks, mobile applications, digital displays, and admin management systems that create a fully connected and efficient queue management ecosystem."
+                                    "Eliminate long physical waiting lines using intelligent digital token generation, automated queue handling, and real-time customer flow management designed for banks, hospitals, and high-traffic service environments.",
+                                    "Improve overall customer experience by providing faster service processing, organized queue operations, reduced waiting frustration, and smooth interaction across hospitals, banks, clinics, and customer service centers.",
+                                    "Monitor queue activity, customer waiting time, counter performance, staff productivity, and operational efficiency through centralized dashboards with real-time analytics, reporting tools, and performance tracking capabilities.",
+                                    "Enable seamless customer engagement through integrated kiosks, mobile applications, digital displays, and admin management systems that create a fully connected and efficient queue management ecosystem."
                                 ].map((text, i) => (
-                                   <motion.div
-                                       key={i}
-                                       variants={{
-                                           hidden: { opacity: 0, x: -30 },
-                                           visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
-                                       }}
-                                       className="flex gap-5 group bg-white p-6 md:p-8 rounded-[24px] border border-gray-100 hover:border-[#32B9E9]/30 hover:shadow-[0_8px_30px_rgba(50,185,233,0.1)] transition-all duration-300"
-                                   >
-                                      <div className="shrink-0">
-                                         <div className="w-10 h-10 rounded-xl bg-gray-50 group-hover:bg-[#E8F7FC] flex items-center justify-center transition-colors duration-300">
-                                            <img src="/Letimg/Opportunities-imgblack.svg" className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" alt="" />
-                                         </div>
-                                      </div>
-                                      <div>
-                                         <p className="text-gray-600 text-sm md:text-base leading-relaxed group-hover:text-gray-800 transition-colors">
-                                            {text}
-                                         </p>
-                                      </div>
-                                   </motion.div>
+                                    <motion.div
+                                        key={i}
+                                        variants={{
+                                            hidden: { opacity: 0, x: -30 },
+                                            visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
+                                        }}
+                                        className="flex gap-5 group bg-white p-6 md:p-8 rounded-[24px] border border-gray-100 hover:border-[#32B9E9]/30 hover:shadow-[0_8px_30px_rgba(50,185,233,0.1)] transition-all duration-300"
+                                    >
+                                        <div className="shrink-0">
+                                            <div className="w-10 h-10 rounded-xl bg-gray-50 group-hover:bg-[#E8F7FC] flex items-center justify-center transition-colors duration-300">
+                                                <img src="/Letimg/Opportunities-imgblack.svg" className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" alt="" />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p className="text-gray-600 text-sm md:text-base leading-relaxed group-hover:text-gray-800 transition-colors">
+                                                {text}
+                                            </p>
+                                        </div>
+                                    </motion.div>
                                 ))}
                             </motion.div>
 
@@ -280,10 +269,10 @@ export default function Letramway() {
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
                             >
-                               <div className="relative w-full max-w-[540px] hover:-translate-y-4 transition-transform duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]">
-                                  <div className="absolute inset-0 bg-[#32B9E9]/20 blur-[100px] rounded-full -z-10" />
-                                  <img src="/Letimg/Queue-Opportunities-img.svg" alt="" width={500} height={500} className='w-[100%] drop-shadow-2xl' />
-                               </div>
+                                <div className="relative w-full max-w-[540px] hover:-translate-y-4 transition-transform duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]">
+                                    <div className="absolute inset-0 bg-[#32B9E9]/20 blur-[100px] rounded-full -z-10" />
+                                    <img src="/Letimg/Queue-Opportunities-img.svg" alt="" width={500} height={500} className='w-[100%] drop-shadow-2xl' />
+                                </div>
                             </motion.div>
                         </div>
                     </div>
@@ -305,7 +294,7 @@ export default function Letramway() {
                         SOLUTIONS
                     </motion.div>
 
-                    <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+                    <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7 relative z-10">
                         <motion.h2
                             className="text-3xl md:text-5xl font-bold mb-16 md:mb-24 text-center text-white"
                             initial={{ opacity: 0, y: -20 }}
@@ -325,10 +314,10 @@ export default function Letramway() {
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
                             >
-                               <div className="w-full max-w-[600px] relative hover:-translate-y-4 hover:scale-[1.02] transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]">
-                                  <div className="absolute inset-0 bg-[#32B9E9]/20 blur-[100px] rounded-full -z-10" />
-                                  <Image src="/Letimg/Queue-solution-img.svg" alt="App Solution" width={700} height={700} className="w-full h-auto drop-shadow-2xl" />
-                               </div>
+                                <div className="w-full max-w-[600px] relative hover:-translate-y-4 hover:scale-[1.02] transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]">
+                                    <div className="absolute inset-0 bg-[#32B9E9]/20 blur-[100px] rounded-full -z-10" />
+                                    <Image src="/Letimg/Queue-solution-img.svg" alt="App Solution" width={700} height={700} className="w-full h-auto drop-shadow-2xl" />
+                                </div>
                             </motion.div>
 
                             {/* Right List Content */}
@@ -348,23 +337,23 @@ export default function Letramway() {
                                     { desc: "Real-time queue tracking and notification system allowing customers to monitor token progress remotely through mobile applications and digital displays." },
                                     { desc: "Scalable SaaS architecture with web, mobile, and kiosk integration built for banks, hospitals, enterprises, and multi-branch operational environments." }
                                 ].map((item, idx) => (
-                                   <motion.div
-                                       key={idx}
-                                       variants={{
-                                           hidden: { opacity: 0, x: 30 },
-                                           visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } }
-                                       }}
-                                       className="flex gap-5 group hover:bg-white/10 p-5 md:p-6 rounded-2xl hover:border-[#32B9E9]/50 transition-all duration-300 backdrop-blur-sm"
-                                   >
-                                      <div className="shrink-0">
-                                         <div className="w-10 h-10 rounded-full bg-white/10 group-hover:bg-[#32B9E9]/20 flex items-center justify-center transition-colors duration-300">
-                                            <img src="/Letimg/Opportunities-imgwhite.svg" alt="icon" className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-                                         </div>
-                                      </div>
-                                      <div>
-                                         <p className="text-gray-300 text-sm md:text-base leading-relaxed group-hover:text-gray-100 transition-colors">{item.desc}</p>
-                                      </div>
-                                   </motion.div>
+                                    <motion.div
+                                        key={idx}
+                                        variants={{
+                                            hidden: { opacity: 0, x: 30 },
+                                            visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } }
+                                        }}
+                                        className="flex gap-5 group hover:bg-white/10 p-5 md:p-6 rounded-2xl hover:border-[#32B9E9]/50 transition-all duration-300 backdrop-blur-sm"
+                                    >
+                                        <div className="shrink-0">
+                                            <div className="w-10 h-10 rounded-full bg-white/10 group-hover:bg-[#32B9E9]/20 flex items-center justify-center transition-colors duration-300">
+                                                <img src="/Letimg/Opportunities-imgwhite.svg" alt="icon" className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p className="text-gray-300 text-sm md:text-base leading-relaxed group-hover:text-gray-100 transition-colors">{item.desc}</p>
+                                        </div>
+                                    </motion.div>
                                 ))}
                             </motion.div>
                         </div>
@@ -381,7 +370,7 @@ export default function Letramway() {
 
                 {/* 8. GLIMPSES OF APP UI SCREENS */}
                 <section className="w-full py-20 md:py-32 text-center bg-white">
-                    <div className="max-w-[1200px] mx-auto px-4">
+                    <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7">
                         <div className="relative mb-20">
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
                                 UI SCREENS

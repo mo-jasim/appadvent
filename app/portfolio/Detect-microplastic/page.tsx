@@ -24,7 +24,7 @@ export default function GoalkickCaseStudy() {
     return (
         <>
             <div className="w-full" style={{ backgroundImage: "url('/images/polygon.png')" }}>
-                <div className="w-full font-THICCCBOI overflow-x-hidden max-w-[1600px] mx-auto">
+                <div className="w-full font-THICCCBOI overflow-x-hidden">
 
                     {/* ─────────────────────────────────────────────
                    1. HERO SECTION
@@ -44,7 +44,7 @@ export default function GoalkickCaseStudy() {
                             <div className="absolute inset-0 bg-black/60 z-10" />
                         </div>
 
-                        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="relative z-20 text-center w-full max-w-7xl mx-auto flex flex-col items-center gap-4 px-4">
+                        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="relative z-20 text-center w-full max-w-7xl mx-auto flex flex-col items-center gap-4 px-3 sm:px-5 lg:px-7">
                             {/* Logo */}
                             <div className="flex justify-center w-20 md:w-20 h-auto mb-2">
                                 <img src="/caseimg/Detect-Logo.svg" alt="Goalkick Logo" className="w-full h-auto" />
@@ -88,7 +88,7 @@ export default function GoalkickCaseStudy() {
                         {/* Glow */}
                         <div className="absolute left-[-10%] top-[20%] w-[40%] h-[60%] bg-blue-100/60 blur-[120px] rounded-full z-0 pointer-events-none" />
 
-                        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 relative z-10">
+                        <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 relative z-10">
                             {/* Left Image */}
                             <div className="w-full lg:w-1/2 flex justify-center">
                                 <div className="relative w-full  max-w-[300px] sm:max-w-[400px] aspect-[3/4] transition-all duration-500 hover:scale-[1.02]">
@@ -153,8 +153,8 @@ export default function GoalkickCaseStudy() {
                     </section>
 
                     {/* --- THE RESULTS BANNER --- */}
-                    <section className="w-full bg-gradient-to-r from-[#226D41] via-[#28848C] to-[#2D98CB] py-6 md:py-15 px-4 sm:px-6 lg:px-8">
-                        <div className="max-w-[1200px] mx-auto">
+                    <section className="w-full bg-gradient-to-r from-[#226D41] via-[#28848C] to-[#2D98CB] py-6 md:py-15 px-3 sm:px-5 lg:px-7">
+                        <div className="max-w-7xl mx-auto">
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 md:mb-16 text-center md:text-left">The Results</h2>
                             <motion.div
                                 className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10"
@@ -191,7 +191,7 @@ export default function GoalkickCaseStudy() {
                     </section>
 
                     {/* 4. OPPORTUNITIES AWAIT */}
-                    <section className="relative w-full py-20 md:py-32 px-4 overflow-hidden">
+                    <section className="relative w-full py-20 md:py-32 px-3 sm:px-5 lg:px-7 overflow-hidden">
                         {/* Watermark */}
                         <motion.div
                             className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none"
@@ -296,7 +296,7 @@ export default function GoalkickCaseStudy() {
                             SOLUTIONS
                         </motion.div>
 
-                        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+                        <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7 relative z-10">
                             <motion.h2
                                 className="text-3xl md:text-5xl font-bold mb-16 md:mb-24 text-center text-white"
                                 initial={{ opacity: 0, y: -20 }}
@@ -411,7 +411,7 @@ export default function GoalkickCaseStudy() {
                      }
                   `}</style>
 
-                        <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 relative z-10">
+                        <div className="w-full max-w-7xl mx-auto px-3 sm:px-5 lg:px-7 relative z-10">
                             {/* Watermark */}
                             <div className="relative mb-20">
                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">

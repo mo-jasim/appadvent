@@ -100,8 +100,8 @@ export default function PortfolioPage() {
                       }
                     `}</style>
 
-                    <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-16 mt-[80px] mb-[80px] grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-                        <motion.div 
+                    <div className="relative z-10 max-w-[1280px] mx-auto px-3 sm:px-5 lg:px-6 mt-[80px] mb-[80px] grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                        <motion.div
                             className="order-2 lg:order-1 text-center lg:text-left flex flex-col items-center lg:items-start"
                             initial="hidden"
                             whileInView="visible"
@@ -111,7 +111,7 @@ export default function PortfolioPage() {
                                 visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
                             }}
                         >
-                            
+
                             <h1 className="text-[36px] sm:text-[45px] lg:text-[55px] font-bold text-gray-900 mb-4 sm:mb-6 leading-tight tracking-tight">
                                 Our Latest Work
                             </h1>
@@ -146,7 +146,7 @@ export default function PortfolioPage() {
                             >
                                 Have a project in mind?
                             </p>
-                        
+
                         </motion.div>
 
                         <div className="relative flex justify-center order-1 lg:order-2 w-full">
@@ -154,8 +154,8 @@ export default function PortfolioPage() {
                         </div>
                     </div>
 
-                    <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-16">
-                        <motion.div 
+                    <div className="relative z-10 max-w-[1280px] mx-auto px-3 sm:px-5 lg:px-7">
+                        <motion.div
                             key={currentPage}
                             className="grid grid-cols-1 md:grid-cols-2 gap-[32px] sm:gap-[32px] lg:gap-[32px]"
                             initial="hidden"

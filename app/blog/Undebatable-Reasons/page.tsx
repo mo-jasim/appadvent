@@ -79,11 +79,11 @@ export default function UndebatableReasonsBlogPage() {
 
     return (
         <>
-            <main className="min-h-screen bg-[#F8FAFC] font-THICCCBOI text-[#4B5563]">
-                <div className="max-w-[1240px] mx-auto px-4 py-8 md:py-12">
+            <main className="min-h-screen bg-[#F8FAFC] font-THICCCBOI text-[#4B5563] px-3 sm:px-5 lg:px-7">
+                <div className="max-w-7xl mx-auto py-8 md:py-12">
                     <div className="flex flex-col lg:flex-row gap-8">
                         {/* Main Content Column with Border */}
-                        <div className="lg:w-[75%] bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
+                        <div className="lg:w-[76%] bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
                             <div className="p-4 md:p-6">
                                 {/* Hero Image / Banner */}
                                 <div className="flex items-center justify-center">
@@ -470,7 +470,7 @@ export default function UndebatableReasonsBlogPage() {
                         </div>
 
                         {/* Sidebar */}
-                        <aside className="lg:w-[20%] space-y-6">
+                        <aside className="lg:w-[24%] space-y-6">
                             {/* Search */}
                             <div className="flex w-full rounded-md border border-gray-200 overflow-hidden h-[45px] bg-[#F1F3F4] shadow-sm">
                                 <input

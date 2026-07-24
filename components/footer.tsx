@@ -16,114 +16,12 @@ const footer = () => {
       <QAndA />
       <HaveAProject />
       <footer className="pt-12 md:pt-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-8 lg:gap-10">
-            <div className="sm:col-span-2 md:col-span-12 lg:col-span-3">
-              <Image
-                src="/images/logo.png"
-                alt="logo"
-                width={140}
-                height={50}
-                className="w-28 sm:w-36 object-contain"
-                priority
-              />
-              <p className="text-sm text-gray-600 mb-4 mt-4">
-                Experienced Team Delivering Exceptional digital solutions tailored to your Brand.
-              </p>
+        <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7">
 
-              <p className="text-sm font-semibold mb-2">Our Social Media Handles</p>
-              <div className="flex gap-4 mt-2 text-gray-400">
-                <span className="hover:scale-110 transition-all duration-300 item-[#32B9E9] cursor-pointer">
-                  <a
-                    href="https://www.facebook.com/share/p/18Zjyommo9/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:scale-110 transition-all duration-300 cursor-pointer"
-                  >
-                    <Image
-                      src="/images/Social Media (1).svg"
-                      alt="ai"
-                      width={44}
-                      height={44}
-                      className="shrink-0"
-                      priority
-
-                    />
-                  </a>
-                </span>
-                <span className="hover:scale-110 transition-all duration-300 item-[#32B9E9] cursor-pointer">
-                  <a
-                    href="https://x.com/appadventtech/status/2052255985302155644?s=20"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:scale-110 transition-all duration-300 cursor-pointer"
-                  >
-                    <Image
-                      src="/images/Social Media (2).svg"
-                      alt="ai"
-                      width={44}
-                      height={44}
-                      className="shrink-0"
-                      priority
-                    />
-                  </a>
-                </span>
-                <span className="hover:scale-110 transition-all duration-300 cursor-pointer">
-                  <a
-                    href="https://www.linkedin.com/feed/update/urn:li:activity:7458020308239925248"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:scale-110 transition-all duration-300 cursor-pointer"
-                  >
-                    <Image
-                      src="/images/Social Media (3).svg"
-                      alt="ai"
-                      width={44}
-                      height={44}
-                      className="shrink-0"
-                      priority
-                    />
-                  </a>
-                </span>
-                <span className="hover:scale-110 transition-all duration-300 item-[#32B9E9] cursor-pointer">
-                  <a
-                    href="https://www.instagram.com/p/DYBnjSvmFuj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:scale-110 transition-all duration-300 cursor-pointer"
-                  >
-                    <Image
-                      src="/images/Social Media (4).svg"
-                      alt="ai"
-                      width={44}
-                      height={44}
-                      className="shrink-0"
-                      priority
-                    />
-                  </a>
-                </span>
-                <span className="hover:scale-110 transition-all duration-300 item-[#32B9E9] cursor-pointer">
-                  <a
-                    href="https://www.youtube.com/@AppadventTechnologies"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:scale-110 transition-all duration-300 cursor-pointer"
-                  >
-                    <Image
-                      src="/images/Social Media (5).svg"
-                      alt="ai"
-                      width={44}
-                      height={44}
-                      className="shrink-0"
-                      priority
-                    />
-                  </a>
-                </span>
-              </div>
-            </div>
-
-
-            <div className="md:col-span-6 lg:col-span-2">
+          {/* Row 2: 4 Columns */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+            {/* Quick Links */}
+            <div>
               <h3 className="font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="mb-4 block hover:text-[#32B9E9]"><Link href="/about-us">About Us</Link></li>
@@ -134,7 +32,7 @@ const footer = () => {
             </div>
 
             {/* Our Services */}
-            <div className="md:col-span-6 lg:col-span-3">
+            <div>
               <h3 className="font-semibold mb-4">Our Services</h3>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="mb-4 hover:text-[#32B9E9] cursor-pointer"><Link href="/services/website-designing-development" className="block text-inherit hover:text-[#32B9E9] transition-colors duration-200">Website Designing &amp; Development</Link></li>
@@ -146,8 +44,8 @@ const footer = () => {
               </ul>
             </div>
 
-
-            <div className="md:col-span-6 lg:col-span-2">
+            {/* Industries */}
+            <div>
               <h3 className="font-semibold mb-4">Industries</h3>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="mb-4 hover:text-[#32B9E9] cursor-pointer"><Link href="/industries/Ecommerce" className="block text-inherit hover:text-[#32B9E9] transition-colors duration-200">ECommerce</Link></li>
@@ -160,8 +58,8 @@ const footer = () => {
               </ul>
             </div>
 
-
-            <div className="sm:col-span-2 md:col-span-6 lg:col-span-2">
+            {/* Reach Us */}
+            <div>
               <h3 className="font-semibold mb-4">Reach Us</h3>
 
               <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@appadvent.com" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 mb-8 group">
@@ -213,9 +111,8 @@ const footer = () => {
           </div>
         </div>
 
-
         <div className="bg-[#001933] mt-12 py-6">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between text-sm text-gray-300 gap-4 text-center md:text-left">
+          <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7 flex flex-col md:flex-row justify-between text-sm text-gray-300 gap-4 text-center md:text-left">
             <p>Copyright © 2024 Appadvent Pvt Ltd | All rights reserved</p>
             <p>Terms & conditions | Privacy Policy</p>
           </div>

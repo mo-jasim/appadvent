@@ -151,7 +151,7 @@ export default function BlogPage() {
             100% { transform: translateX(100%); }
           }
         `}</style>
-        <section className="max-w-6xl mx-auto px-4 py-10 md:py-14">
+        <section className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7 py-10 md:py-14">
           {/* Search Bar */}
           <div className="mb-12 flex items-center w-full rounded-full border-1 border-gray-200 bg-[#F5F5F5]  overflow-hidden h-[60px] md:h-[50px]">
             <input
@@ -185,16 +185,16 @@ export default function BlogPage() {
             </button>
           </div>
           {/* Heading */}
-          <motion.div 
+          <motion.div
             className="mb-8 md:mb-10"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-60px" }}
             variants={{
-                hidden: { opacity: 0, y: -30 },
-                visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
+              hidden: { opacity: 0, y: -30 },
+              visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
             }}
-        >
+          >
             <h1 className="text-[18px] md:text-[22px] font-semibold sans-serif text-[#0A1A2E] leading-snug mb-6">
               What we&apos;ve learned is{" "}
               <span className="text-[#32B9E9]">yours for sharing!</span>
@@ -204,28 +204,28 @@ export default function BlogPage() {
           </motion.div>
 
           {/* Blog Grid */}
-          <motion.div 
+          <motion.div
             key={currentPage}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-60px" }}
             variants={{
-                hidden: {},
-                visible: {
-                    transition: {
-                        staggerChildren: 0.12,
-                    },
+              hidden: {},
+              visible: {
+                transition: {
+                  staggerChildren: 0.12,
                 },
+              },
             }}
-        >
+          >
             {currentPosts.map((post) => (
               <motion.article
                 key={post.id}
                 className="relative bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-500 flex flex-col group/card"
                 variants={{
-                    hidden: { opacity: 0, y: 50, scale: 0.95 },
-                    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } }
+                  hidden: { opacity: 0, y: 50, scale: 0.95 },
+                  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } }
                 }}
               >
                 {/* Gradient Border Line */}

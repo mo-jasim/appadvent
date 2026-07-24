@@ -2,8 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Quote, Star, Play } from 'lucide-react';
-import image from 'next/image';
+import { Quote, Star, Play, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const testimonials = [
     {
@@ -43,126 +42,117 @@ const testimonials = [
 const ClientTestimonial = () => {
     const scrollContainerRef = React.useRef<HTMLDivElement>(null);
 
-    React.useEffect(() => {
-        const scrollContainer = scrollContainerRef.current;
-        if (!scrollContainer) return;
+    const scrollLeft = () => {
+        if (scrollContainerRef.current && scrollContainerRef.current.children.length > 0) {
+            const cardElement = scrollContainerRef.current.children[0] as HTMLElement;
+            const cardWidth = cardElement.clientWidth;
+            const gap = 24; // gap-6 is 24px
+            scrollContainerRef.current.scrollBy({ left: -(cardWidth + gap), behavior: 'smooth' });
+        }
+    };
 
-        let scrollInterval: NodeJS.Timeout;
-
-        const startAutoScroll = () => {
-            // Clear any existing interval just in case
-            clearInterval(scrollInterval);
-            scrollInterval = setInterval(() => {
-                const { scrollLeft, scrollWidth, clientWidth } = scrollContainer;
-                // If we're at the end (or close to it), scroll back to start
-                if (scrollLeft + clientWidth >= scrollWidth - 10) {
-                    scrollContainer.scrollTo({ left: 0, behavior: 'smooth' });
-                } else {
-                    // Scroll to the next slide
-                    scrollContainer.scrollBy({ left: clientWidth, behavior: 'smooth' });
-                }
-            }, 3000); // Scroll every 3 seconds
-        };
-
-        startAutoScroll();
-
-        // Pause on hover
-        const handleMouseEnter = () => clearInterval(scrollInterval);
-        const handleMouseLeave = () => startAutoScroll();
-
-        scrollContainer.addEventListener('mouseenter', handleMouseEnter);
-        scrollContainer.addEventListener('mouseleave', handleMouseLeave);
-
-        return () => {
-            clearInterval(scrollInterval);
-            scrollContainer.removeEventListener('mouseenter', handleMouseEnter);
-            scrollContainer.removeEventListener('mouseleave', handleMouseLeave);
-        };
-    }, []);
+    const scrollRight = () => {
+        if (scrollContainerRef.current && scrollContainerRef.current.children.length > 0) {
+            const cardElement = scrollContainerRef.current.children[0] as HTMLElement;
+            const cardWidth = cardElement.clientWidth;
+            const gap = 24;
+            scrollContainerRef.current.scrollBy({ left: (cardWidth + gap), behavior: 'smooth' });
+        }
+    };
 
     return (
-
-        <div className="max-w-9xl mb-[80px] font-THICCCBOI overflow-hidden">
-
-            <h2 className="font-bold mb-10 pl-0 sm:pl-10 px-4 text-[32px] sm:text-[40px] md:text-[48px] lg:text-[48px]">
-                Why <span className="text-[#32B9E9]">Companies Love</span> Working with Our Web <br className="hidden sm:block" /> Development Team
-            </h2>
-            <div
-                ref={scrollContainerRef}
-                className="flex flex-col gap-8 lg:flex-row lg:overflow-x-auto lg:snap-x lg:snap-mandatory lg:gap-6 lg:pb-8 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']"
-            >
-                {testimonials.map((testimonial) => (
-                    <div
-                        key={testimonial.id}
-                        className="w-full lg:flex-shrink-0 lg:w-[90%] max-w-[75rem] lg:snap-center mx-auto rounded-[20px] shadow-xl overflow-hidden flex flex-col lg:flex-row border border-gray-100"
-                    >
-
-                        {/* Left Side - Content */}
-                        <div className="w-full lg:w-3/5 p-6 sm:p-12 lg:p-16 flex flex-col justify-center bg-white">
-
-                            {/* Header Row: Quotes & Stars */}
-                            <div className="flex justify-between items-start mb-8">
-                                <div className="relative w-[36px] h-[29px] sm:w-10 sm:h-10">
-                                    <Image
-                                        src="/images/”.svg"
-                                        alt="quote mark"
-                                        fill
-                                        className="object-contain"
-                                    />
-                                </div>
-                                <div className="flex gap-1.5">
-                                    {/* Clutch Rating */}
-                                    <a
-                                        href="https://clutch.co/profile/appadvent-technologies"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="mt-1 flex flex-col gap-1.5 cursor-pointer hover:opacity-80 transition-opacity w-fit"
-                                    >
-                                        <div className="flex items-center gap-3">
-                                            <div className="flex gap-[2px]">
-                                                {[1, 2, 3, 4, 5].map((i) => (
-                                                    <div key={`tp-${testimonial.id}-${i}`} className="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center">
-                                                        <Star className={`w-8 h-8 sm:w-10 sm:h-10 ${i <= testimonial.rating ? 'text-red-500 fill-red-500' : 'text-gray-300 fill-gray-300'}`} />
-                                                    </div>
-                                                ))}
-                                            </div>
-                                            <span className="text-[18px] sm:text-[20px] font-medium text-[#1C1C1C]">{testimonial.rating}.0</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            {/* Person Details */}
-                            <div className="mb-6 flex flex-col items-start">
-                                <h3 className="text-[22px] sm:text-[24px] lg:text-[26px] font-extrabold text-[#111827] mb-1.5">{testimonial.name}</h3>
-                                <p className="text-[#475569] font-bold text-[16px] tracking-wider uppercase font-THICCCBOI">{testimonial.role}</p>
-                            </div>
-
-                            {/* Testimonial Text */}
-                            <div className="relative mt-2 mb-4">
-                                <p className="text-[#475569] text-[16px] sm:text-[16px] leading-[1.5] lg:leading-[1.6] font-regular max-w-[150%] font-THICCCBOI">
-                                    {testimonial.quote}
-                                </p>
-                            </div>
-
-
-
-                        </div>
-
-                        {/* Right Side - Image */}
-                        <div className="w-full lg:w-2/5 relative min-h-[300px] sm:min-h-[400px] lg:min-h-[500px] bg-gray-100 flex-shrink-0">
-                            <Image
-                                src={testimonial.image}
-                                alt={`Testimonial from ${testimonial.name}`}
-                                fill
-                                className="object-cover"
-                                priority
-                            />
-                        </div>
+        <section className=" font-THICCCBOI w-full overflow-hidden">
+            {/* Header with Navigation Buttons */}
+            <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7">
+                <div className="flex flex-col md:flex-row justify-between items-end mb-10">
+                    <h2 className="font-bold text-[32px] sm:text-[40px] md:text-[48px] lg:text-[48px]">
+                        Why <span className="text-[#32B9E9]">Companies Love</span> Working with Our Web <br className="hidden sm:block" /> Development Team
+                    </h2>
+                    <div className="flex gap-4 mt-6 md:mt-0 pb-2">
+                        <button onClick={scrollLeft} className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 hover:bg-[#32B9E9] hover:text-white hover:border-[#32B9E9] transition-colors text-black" aria-label="Previous testimonial">
+                            <ChevronLeft size={24} />
+                        </button>
+                        <button onClick={scrollRight} className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 hover:bg-[#32B9E9] hover:text-white hover:border-[#32B9E9] transition-colors text-black" aria-label="Next testimonial">
+                            <ChevronRight size={24} />
+                        </button>
                     </div>
-                ))}
+                </div>
             </div>
-        </div>
+
+            {/* Carousel Viewport */}
+            <div className="w-full">
+                <div
+                    ref={scrollContainerRef}
+                    className="flex flex-row gap-6 overflow-x-auto snap-x snap-mandatory pb-8 pl-4 sm:pl-6 lg:pl-[max(2rem,calc((100%-1280px)/2+2rem))] pr-4 sm:pr-6 lg:pr-8 scroll-pl-4 sm:scroll-pl-6 lg:scroll-pl-[max(2rem,calc((100%-1280px)/2+2rem))] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']"
+                >
+                    {testimonials.map((testimonial) => (
+                        <div
+                            key={testimonial.id}
+                            className="w-[85vw] md:w-[650px] lg:w-[800px] xl:w-[960px] max-w-full flex-shrink-0 snap-start rounded-[20px] shadow-xl flex flex-col lg:flex-row border border-gray-100 bg-white"
+                        >
+                            {/* Left Side - Content */}
+                            <div className="w-full lg:w-3/5 p-6 sm:p-10 flex flex-col justify-center bg-white rounded-t-[20px] lg:rounded-l-[20px] lg:rounded-tr-none">
+                                {/* Header Row: Quotes & Stars */}
+                                <div className="flex justify-between items-start mb-8">
+                                    <div className="relative w-[36px] h-[29px] sm:w-10 sm:h-10">
+                                        <Image
+                                            src="/images/”.svg"
+                                            alt="quote mark"
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </div>
+                                    <div className="flex gap-1.5">
+                                        {/* Clutch Rating */}
+                                        <a
+                                            href="https://clutch.co/profile/appadvent-technologies"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="mt-1 flex flex-col gap-1.5 cursor-pointer hover:opacity-80 transition-opacity w-fit"
+                                        >
+                                            <div className="flex items-center gap-3">
+                                                <div className="flex gap-[2px]">
+                                                    {[1, 2, 3, 4, 5].map((i) => (
+                                                        <div key={`tp-${testimonial.id}-${i}`} className="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center">
+                                                            <Star className={`w-8 h-8 sm:w-10 sm:h-10 ${i <= testimonial.rating ? 'text-red-500 fill-red-500' : 'text-gray-300 fill-gray-300'}`} />
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                                <span className="text-[18px] sm:text-[20px] font-medium text-[#1C1C1C]">{testimonial.rating}.0</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                {/* Person Details */}
+                                <div className="mb-6 flex flex-col items-start">
+                                    <h3 className="text-[22px] sm:text-[24px] lg:text-[26px] font-extrabold text-[#111827] mb-1.5">{testimonial.name}</h3>
+                                    <p className="text-[#475569] font-bold text-[16px] tracking-wider uppercase font-THICCCBOI">{testimonial.role}</p>
+                                </div>
+
+                                {/* Testimonial Text */}
+                                <div className="relative mt-2 mb-4">
+                                    <p className="text-[#475569] text-[16px] sm:text-[16px] leading-[1.5] lg:leading-[1.6] font-regular w-full font-THICCCBOI">
+                                        {testimonial.quote}
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Right Side - Image */}
+                            <div className="w-full lg:w-2/5 relative min-h-[300px] sm:min-h-[350px] bg-gray-100 flex-shrink-0 rounded-b-[20px] lg:rounded-r-[20px] lg:rounded-bl-none overflow-hidden">
+                                <Image
+                                    src={testimonial.image}
+                                    alt={`Testimonial from ${testimonial.name}`}
+                                    fill
+                                    className="object-cover"
+                                    priority
+                                />
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
     );
 };
 

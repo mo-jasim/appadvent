@@ -53,7 +53,7 @@ export default function GoalkickCaseStudy() {
                             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FFFFFF] leading-tight max-w-6xl">
                                 Freshup-Social networking App
                             </h1>
-                            <p className="text-base sm:text-lg md:text-xl text-[#FFFFFF] max-w-6xl text-center opacity-90">
+                            <p className="text-base sm:text-lg md:text-xl text-[#FFFFFF] max-w-7xl text-center opacity-90">
                                 The ultimate destination for football enthusiasts to connect, engage, and indulge in their passion for the beautiful game. This football social network app goes beyond conventional fan experiences, offering a dynamic platform where you can join groups, discuss matches, and make new friends.
                             </p>
 

@@ -31,13 +31,13 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-[10px] shadow-sm">
-        <div className="max-w-7xl mx-auto flex h-16 sm:h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
+      <header className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-[10px] shadow-sm px-3 sm:px-5 lg:px-7">
+        <div className="max-w-7xl mx-auto flex h-16 sm:h-20 items-center justify-between">
 
           {/* LOGO */}
           <Link href="/">
             <Image
-              src="/images/logo.png"
+              src="/images/Logo.svg"
               alt="logo"
               width={140}
               height={50}

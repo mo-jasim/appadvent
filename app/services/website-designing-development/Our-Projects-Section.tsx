@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useRef } from "react";
 import Link from "next/link";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const projects = [
     {
@@ -72,85 +72,67 @@ const projects = [
 ];
 
 const OurProjectsSection = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [isHovered, setIsHovered] = useState(false);
-    const [itemsToShow, setItemsToShow] = useState(3);
+    const scrollContainerRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth < 768) {
-                setItemsToShow(1);
-            } else if (window.innerWidth < 1024) {
-                setItemsToShow(2);
-            } else {
-                setItemsToShow(3);
-            }
-        };
+    const scrollLeft = () => {
+        if (scrollContainerRef.current && scrollContainerRef.current.children.length > 0) {
+            const cardElement = scrollContainerRef.current.children[0] as HTMLElement;
+            const cardWidth = cardElement.clientWidth;
+            const gap = 24; // gap-6 is 24px
+            scrollContainerRef.current.scrollBy({ left: -(cardWidth + gap), behavior: 'smooth' });
+        }
+    };
 
-        handleResize();
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
-
-    useEffect(() => {
-        if (isHovered) return;
-
-        const interval = setInterval(() => {
-            setCurrentIndex((prev) => (prev + 1) % projects.length);
-        }, 3500);
-
-        return () => clearInterval(interval);
-    }, [isHovered, projects.length]);
-
-    // Logic to show circular items
-    const visibleProjects = [];
-    for (let i = 0; i < itemsToShow; i++) {
-        visibleProjects.push(projects[(currentIndex + i) % projects.length]);
-    }
+    const scrollRight = () => {
+        if (scrollContainerRef.current && scrollContainerRef.current.children.length > 0) {
+            const cardElement = scrollContainerRef.current.children[0] as HTMLElement;
+            const cardWidth = cardElement.clientWidth;
+            const gap = 24;
+            scrollContainerRef.current.scrollBy({ left: (cardWidth + gap), behavior: 'smooth' });
+        }
+    };
 
     return (
         <section className="text-black font-THICCCBOI mt-[80px] mb-[80px]">
-            <div className="max-w-7xl mx-auto px-4">
+            <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-12">
-                    <div className="max-w-7xl mx-auto">
+                    <div className="w-full md:max-w-[70%]">
                         <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-bold mb-4 text-center md:text-left leading-tight">
                             <span className="text-[#32B9E9]">Our Projects</span> : New
                             Launches and App Makeover
                         </h2>
-                        <p className="text-black text-[16px] md:text-[20px] text-center leading-relaxed">
+                        <p className="text-black text-[16px] md:text-[20px] text-center md:text-left leading-relaxed">
                             Explore our web development case studies to see how we deliver
                             transformative solutions that drive real results. Each project
                             highlights our strategic approach and the value we bring to
                             clients.
                         </p>
                     </div>
-                    {/* Optional: Add navigation buttons here if needed */}
+
+                    <div className="flex gap-4 mt-6 md:mt-0 pb-2 mx-auto md:mx-0">
+                        <button onClick={scrollLeft} className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 hover:bg-[#32B9E9] hover:text-white hover:border-[#32B9E9] transition-colors text-black" aria-label="Previous project">
+                            <ChevronLeft size={24} />
+                        </button>
+                        <button onClick={scrollRight} className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 hover:bg-[#32B9E9] hover:text-white hover:border-[#32B9E9] transition-colors text-black" aria-label="Next project">
+                            <ChevronRight size={24} />
+                        </button>
+                    </div>
                 </div>
 
-                <div
-                    className="relative w-full overflow-hidden"
-                    onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}
-                >
-                    <div className="flex gap-6">
-                        <AnimatePresence mode="popLayout">
-                            {visibleProjects.map((project, index) => (
-                                <motion.div
-                                    key={`${project.title}-${currentIndex}-${index}`}
-                                    initial={{ opacity: 0, x: 50 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    exit={{ opacity: 0, x: -50 }}
-                                    transition={{ duration: 0.5, ease: "easeInOut" }}
-                                    className={`w-full ${itemsToShow === 1
-                                        ? "min-w-full"
-                                        : itemsToShow === 2
-                                            ? "min-w-[calc(50%-12px)]"
-                                            : "min-w-[calc(33.333%-16px)]"
-                                        } border border-gray-300 rounded-[20px] overflow-hidden flex flex-col hover:shadow-lg transition-shadow duration-300`}
+                <div className="relative w-full">
+                    <div className="-mx-4 sm:-mx-6 lg:-mx-8">
+                        <div
+                            ref={scrollContainerRef}
+                            className="flex flex-row gap-6 overflow-x-auto snap-x snap-mandatory pt-4 pb-8 px-4 sm:px-6 lg:px-8 scroll-pl-4 sm:scroll-pl-6 lg:scroll-pl-8 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']"
+                        >
+                            {projects.map((project, index) => (
+                                <div
+                                    key={`${project.title}-${index}`}
+                                    className="w-full md:w-[calc(75%-12px)] lg:w-[calc(40%-16px)] flex-shrink-0 snap-start border border-gray-300 rounded-[32px] overflow-hidden flex flex-col hover:shadow-lg transition-shadow duration-300"
                                 >
                                     <Link href={project.viewLink} className="flex flex-col flex-grow">
                                         <div className="p-4 pb-0 bg-white">
-                                            <div className="relative h-[250px] w-full rounded-[16px] overflow-hidden bg-gray-30">
+                                            <div className="relative h-[300px] w-full rounded-[16px] overflow-hidden bg-gray-30">
                                                 <Image
                                                     src={project.image}
                                                     alt={project.title}
@@ -160,54 +142,45 @@ const OurProjectsSection = () => {
                                             </div>
                                         </div>
 
-                                        <div className="p-6 flex flex-col flex-grow bg-white">
-                                            <h3 className="font-bold text-[20px] md:text-[22px] mb-6 line-clamp-1">
+                                        <div className="p-5 md:p-6 flex flex-col flex-grow bg-white">
+                                            <h3 className="font-bold text-[18px] md:text-[20px] mb-4 line-clamp-2 leading-tight">
                                                 {project.title}
                                             </h3>
 
-                                            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between text-sm text-gray-500 pt-4 border-t border-gray-300 mt-auto gap-4 sm:gap-0">
-                                                <div className="flex flex-col sm:pr-4 sm:border-r border-gray-300 w-full sm:w-auto">
-                                                    <span className="text-black mb-1 whitespace-nowrap">
+                                            <div className="grid grid-cols-3 items-stretch mt-auto pt-4">
+                                                <div className="flex flex-col pr-2 sm:pr-3 border-r border-gray-200">
+                                                    <span className="text-gray-500 font-normal text-[11px] sm:text-[13px] mb-1.5 whitespace-nowrap">
                                                         Completion Time
                                                     </span>
-                                                    <span className="font-bold text-black">{project.completionTime}</span>
+                                                    <span className="font-semibold text-black text-[12px] sm:text-[14px] truncate">
+                                                        {project.completionTime}
+                                                    </span>
                                                 </div>
-                                                <div className="flex flex-col sm:px-4 sm:border-r border-gray-300 w-full sm:w-auto">
-                                                    <span className="text-black mb-1 whitespace-nowrap">
+
+                                                <div className="flex flex-col px-2 sm:px-3 border-r border-gray-200">
+                                                    <span className="text-gray-500 font-normal text-[11px] sm:text-[13px] mb-1.5 whitespace-nowrap">
                                                         Platform
                                                     </span>
-                                                    <span className="font-bold text-black">{project.platform}</span>
+                                                    <span className="font-semibold text-black text-[12px] sm:text-[14px] truncate">
+                                                        {project.platform}
+                                                    </span>
                                                 </div>
-                                                <div className="flex flex-col sm:pl-4 items-start w-full sm:w-auto">
-                                                    <span className="text-black mb-1 whitespace-nowrap">
+
+                                                <div className="flex flex-col pl-2 sm:pl-3">
+                                                    <span className="text-gray-500 font-normal text-[11px] sm:text-[13px] mb-1.5 whitespace-nowrap">
                                                         View
                                                     </span>
-                                                    <span
-                                                        className="text-[#32B9E9] underline font-medium hover:text-[#2da8d5] whitespace-nowrap"
-                                                    >
-                                                        <span className="font-bold text-black">{project.viewText}</span>
+                                                    <span className="text-black font-semibold underline decoration-1 decoration-black hover:decoration-[#32B9E9] hover:text-[#32B9E9] underline-offset-2 transition-colors duration-300 text-[12px] sm:text-[14px] truncate">
+                                                        {project.viewText}
                                                     </span>
                                                 </div>
                                             </div>
                                         </div>
                                     </Link>
-                                </motion.div>
+                                </div>
                             ))}
-                        </AnimatePresence>
+                        </div>
                     </div>
-                </div>
-
-                {/* Indicators */}
-                <div className="flex justify-center mt-8 gap-2">
-                    {projects.map((_, idx) => (
-                        <button
-                            key={idx}
-                            onClick={() => setCurrentIndex(idx)}
-                            className={`h-2 w-2 rounded-full transition-all duration-300 ${idx === currentIndex % projects.length ? "bg-[#32B9E9] w-6" : "bg-gray-300"
-                                }`}
-                            aria-label={`Go to slide ${idx + 1}`}
-                        />
-                    ))}
                 </div>
             </div>
         </section>

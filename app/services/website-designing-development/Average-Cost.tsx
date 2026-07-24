@@ -61,8 +61,8 @@ const AverageCost: React.FC = () => {
     };
 
     return (
-        <section className="text-black mt-[100px] mb-[100px] font-THICCCBOI max-w-6xl mx-auto">
-            <div className="max-w-7xl mx-auto">
+        <section className="text-black mt-[100px] mb-[100px] font-THICCCBOI px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto ">
 
                 <div className="flex flex-col gap-4 text-center items-center justify-center sm:gap-5 relative z-10 max-w-7xl mx-auto mt-[80px]">
                     <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-bold mb-4 leading-tight">
