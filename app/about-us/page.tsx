@@ -4,16 +4,18 @@ import Carts from './carts';
 import Specialists from './Specialists';
 import ClientTestimonial from './ClientTestimonial';
 import Aboutfoot from './aboutfoot';
+import CoreValues from './CoreValues';
 import OurProjectsSection from '../services/website-designing-development/Our-Projects-Section';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import ConsultationModal from '@/components/ConsultationModal';
 import CompaniesLove from '../services/website-designing-development/Companies-Love';
+import Together from './together';
 
 function page() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const title = "Get to know us better"
-  const description = "Appadvent is a promising technology company that designs and offers various services for firms to be successful in the digital environment. From website design and development, and mobile application development to digital marketing services, and support and maintenance services across your enterprise’s portfolio, we strive to deliver exact solutions for your business’s needs. Together, the specialists on our team are committed to making our business the go-to source for service delivery, acting as a link to our clients’ ultimate success.";
+  const description = "Appadvent is dedicated to providing a wide array of digital marketing services tailored to meet the diverse needs of modern businesses. Whether you need a comprehensive digital marketing strategy from scratch or support to augment your existing marketing efforts, Appadvent has the expertise to help you succeed.";
   const question = "Have a project in mind?"
   return (
     <div className='overflow-hidden' style={{
@@ -61,9 +63,13 @@ function page() {
 
         <Carts />
 
+        <CoreValues />
+
         <Specialists />
 
         <Aboutfoot />
+
+        <Together />
 
         <OurProjectsSection />
 

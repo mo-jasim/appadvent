@@ -259,6 +259,7 @@ const Navbar = () => {
                     <Link href="/services/digital-marketing" onClick={() => setMobileOpen(false)}>Digital Marketing</Link>
                     <Link href="/services/mobile-app-development" onClick={() => setMobileOpen(false)}>Mobile App Development</Link>
                     <Link href="/services/staff-augmentation" onClick={() => setMobileOpen(false)}>Staff Augmentation</Link>
+                    <Link href="/services/Software-Maintenancepage" onClick={() => setMobileOpen(false)}>Software Maintenance</Link>
                     <Link href="/services/Custom-Based-Services" onClick={() => setMobileOpen(false)}>Custom Based Services</Link>
                   </div>
                 )}

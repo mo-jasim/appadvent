@@ -145,7 +145,7 @@ const WebSolutionSection: React.FC = () => {
 
                                         <div style={{ transform: "translateZ(30px)" }}>
                                             {/* Icon with animated circle background */}
-                                            <div className="relative mb-6 inline-flex self-start">
+                                            <div className="relative mb-6 inline-flex self-center lg:self-start">
                                                 {/* Outer ring */}
                                                 <div className="absolute inset-[-8px] rounded-full border-2 border-dashed border-[#32B9E9]/0 group-hover:border-[#32B9E9]/25 transition-all duration-700 group-hover:rotate-[60deg]" />
                                                 {/* Gradient circle behind icon */}

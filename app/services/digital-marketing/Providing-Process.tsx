@@ -243,7 +243,7 @@ const ProvidingProcess: React.FC = () => {
                                         <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[3px] w-0 group-hover:w-3/4 bg-gradient-to-r from-transparent via-[#32B9E9] to-transparent transition-all duration-700 rounded-full" />
                                         
                                         <div style={{ transform: "translateZ(30px)" }} className="flex flex-col items-center flex-grow">
-                                            <div className="relative mb-6 inline-flex self-start">
+                                            <div className="relative mb-6 inline-flex self-center lg:self-start">
                                                 <div className="absolute inset-[-8px] rounded-full border-2 border-dashed border-[#32B9E9]/0 group-hover:border-[#32B9E9]/25 transition-all duration-700 group-hover:rotate-[60deg]" />
                                                 <div className="w-[80px] h-[80px] rounded-full bg-gradient-to-br from-[#E8F7FC] to-[#F0FBFF] group-hover:from-[#D4F0FA] group-hover:to-[#E0F5FC] flex items-center justify-center transition-all duration-500 group-hover:shadow-[0_4px_20px_rgba(50,185,233,0.2)]">
                                                     <div style={{ animation: "iconFloat 3s ease-in-out infinite" }}>

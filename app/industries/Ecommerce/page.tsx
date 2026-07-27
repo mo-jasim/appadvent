@@ -221,7 +221,7 @@ export default function EcommercePage() {
                                     },
                                 }}
                             >
-                                {"Retail & E-commerce App Development Solutions".split(" ").map((word, i) => (
+                                {"Comprehensive E-Commerce Web Development Services".split(" ").map((word, i) => (
                                     <motion.span
                                         key={i}
                                         className="inline-block mr-[0.3em]"
@@ -244,7 +244,7 @@ export default function EcommercePage() {
                             </motion.h1>
 
                             <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
-                                We build scalable retail and e-commerce applications designed to improve customer engagement, simplify online shopping, optimize operations, and increase business revenue efficiently.
+                                At Appadvent, we specialize in providing full-service solutions tailored for your e-commerce needs. Whether you’re launching a new online store or revamping an existing one, our team delivers:
                             </p>
 
                             <div className="flex justify-center lg:justify-start">

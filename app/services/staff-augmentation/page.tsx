@@ -55,7 +55,7 @@ const page = () => {
                             visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
                         }}
                     >
-                        We design, develop, and scale apps that turn your vision into reality. From MVPs to full-fledged products, our services cover every step of your digital journey. Our services go beyond coding—we help startups and businesses design, build, and grow apps that drive impact and ROI.
+                        We deliver flexible and cost-effective staffing solutions tailored to your business needs. Whether you require temporary, contract, or permanent talent, our recruitment experts help you find qualified professionals faster, reduce hiring costs, and build teams that drive long-term success.
                     </motion.p>
                     <motion.div
                         className="flex justify-center mb-[80px] mt-4"

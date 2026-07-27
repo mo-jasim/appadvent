@@ -42,7 +42,7 @@ const SoftwareMaintenancePage = () => {
                             visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
                         }}
                     >
-                        We design, develop, and scale apps that turn your vision into reality. From MVPs to full-fledged products, our services cover every step of your digital journey. Our services go beyond coding—we help startups and businesses design, build, and grow apps that drive impact and ROI.
+                        Ensure your software stays secure, reliable, and future-ready with our comprehensive maintenance and support services. From bug fixes and performance optimization to security updates, feature enhancements, and proactive monitoring, we keep your applications running smoothly while minimizing downtime and maximizing business continuity.
                     </motion.p>
                     <motion.div
                         className="flex justify-center mb-[80px] mt-4"

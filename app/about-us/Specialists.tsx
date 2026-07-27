@@ -16,7 +16,7 @@ const teamMembers = [
     {
         name: 'Sanjeev Kumar',
         role: 'Senior UI/UX Designer',
-        image: '/images/pageimg1.svg',
+        image: '/images/about_sanjeevimg.jpg',
     },
 ];
 
