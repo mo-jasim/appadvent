@@ -204,8 +204,8 @@ export default function FintechCryptoPage() {
                 {/* ═══════════════════════════════════════════════════════════
           SECTION 1 — Hero
       ══════════════════════════════════════════════════════════════ */}
-                <section className="relative w-full min-h-[500px] md:min-h-[600px] flex items-center pt-24 md:pt-0">
-                    <div className="relative z-10 w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-16 py-12 md:py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <section className="relative w-full min-h-[500px] md:min-h-[600px] flex items-center pt-8 md:pt-0">
+                    <div className="relative z-10 w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-16 pt-8 pb-12 md:py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="text-center lg:text-left">
                             <motion.h1
                                 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.15] tracking-tight mb-6"
@@ -282,11 +282,11 @@ export default function FintechCryptoPage() {
                             <div className="order-2 lg:order-1">
                                 <div className="space-y-8">
                                     {features.map((f) => (
-                                        <div key={f.title} className="flex gap-4 group">
-                                            <div className="w-6 h-6 md:w-16 md:h-16">
-                                                <img src={f.img} alt="" />
+                                        <div key={f.title} className="flex items-start gap-4 group">
+                                            <div className="w-6 h-6 md:w-8 md:h-8 shrink-0 mt-1">
+                                                <img src={f.img} alt="" className="max-w-full max-h-full object-contain" />
                                             </div>
-                                            <div>
+                                            <div className="flex flex-col">
                                                 <h3 className="font-bold text-lg md:text-xl text-gray-900 mb-2">{f.title}</h3>
                                                 <p className="text-sm md:text-base text-gray-500 leading-relaxed">{f.desc}</p>
                                             </div>

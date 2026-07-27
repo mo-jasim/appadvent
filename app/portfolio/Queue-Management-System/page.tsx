@@ -105,7 +105,7 @@ export default function Letramway() {
 
                     {/* 2. ABOUT LE TRAMWAY WEBSITE */}
                     <div className="relative w-full pb-16 sm:pb-20 pt-8 sm:pt-10 px-3 sm:px-5 lg:px-7">
-                        <div className="w-full max-w-7xl mx-auto flex flex-col items-center text-center">
+                        <div className="w-full max-w-7xl mx-auto flex flex-col items-start text-center">
 
                             {/* OVERVIEW Watermark */}
                             <div className="w-full text-center text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap pointer-events-none select-none leading-none tracking-tight overflow-hidden">

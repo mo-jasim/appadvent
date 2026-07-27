@@ -11,72 +11,72 @@ import CompaniesLove from "../../services/website-designing-development/Companie
    FLOATING BACKGROUND ORBS — gives depth & motion feel
    ═══════════════════════════════════════════════════════ */
 const FloatingOrbs = () => (
-  <div className="fixed inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 0 }}>
-    {[
-      { size: 200, color: 'rgba(50,185,233,0.12)', top: '10%', left: '5%', dur: 18 },
-      { size: 280, color: 'rgba(50,185,233,0.08)', top: '55%', left: '80%', dur: 22 },
-      { size: 160, color: 'rgba(100,200,240,0.1)', top: '30%', left: '65%', dur: 16 },
-      { size: 220, color: 'rgba(50,185,233,0.06)', top: '75%', left: '15%', dur: 20 },
-      { size: 140, color: 'rgba(80,190,235,0.09)', top: '15%', left: '88%', dur: 14 },
-    ].map((orb, i) => (
-      <motion.div
-        key={i}
-        className="absolute rounded-full"
-        style={{
-          width: orb.size,
-          height: orb.size,
-          background: `radial-gradient(circle, ${orb.color} 0%, transparent 70%)`,
-          top: orb.top,
-          left: orb.left,
-          filter: 'blur(60px)',
-        }}
-        animate={{
-          x: [0, 40, -30, 20, 0],
-          y: [0, -35, 25, -15, 0],
-        }}
-        transition={{
-          duration: orb.dur,
-          repeat: Infinity,
-          ease: "linear",
-        }}
-      />
-    ))}
-  </div>
+    <div className="fixed inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 0 }}>
+        {[
+            { size: 200, color: 'rgba(50,185,233,0.12)', top: '10%', left: '5%', dur: 18 },
+            { size: 280, color: 'rgba(50,185,233,0.08)', top: '55%', left: '80%', dur: 22 },
+            { size: 160, color: 'rgba(100,200,240,0.1)', top: '30%', left: '65%', dur: 16 },
+            { size: 220, color: 'rgba(50,185,233,0.06)', top: '75%', left: '15%', dur: 20 },
+            { size: 140, color: 'rgba(80,190,235,0.09)', top: '15%', left: '88%', dur: 14 },
+        ].map((orb, i) => (
+            <motion.div
+                key={i}
+                className="absolute rounded-full"
+                style={{
+                    width: orb.size,
+                    height: orb.size,
+                    background: `radial-gradient(circle, ${orb.color} 0%, transparent 70%)`,
+                    top: orb.top,
+                    left: orb.left,
+                    filter: 'blur(60px)',
+                }}
+                animate={{
+                    x: [0, 40, -30, 20, 0],
+                    y: [0, -35, 25, -15, 0],
+                }}
+                transition={{
+                    duration: orb.dur,
+                    repeat: Infinity,
+                    ease: "linear",
+                }}
+            />
+        ))}
+    </div>
 );
 
 /* ═══════════════════════════════════════════════════════
    3D TILT CARD — subtle perspective on mouse move
    ═══════════════════════════════════════════════════════ */
 const TiltCard = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const xVal = useMotionValue(0);
-  const yVal = useMotionValue(0);
-  const rotateX = useSpring(useTransform(yVal, [-0.5, 0.5], [6, -6]), { stiffness: 300, damping: 30 });
-  const rotateY = useSpring(useTransform(xVal, [-0.5, 0.5], [-6, 6]), { stiffness: 300, damping: 30 });
+    const ref = useRef<HTMLDivElement>(null);
+    const xVal = useMotionValue(0);
+    const yVal = useMotionValue(0);
+    const rotateX = useSpring(useTransform(yVal, [-0.5, 0.5], [6, -6]), { stiffness: 300, damping: 30 });
+    const rotateY = useSpring(useTransform(xVal, [-0.5, 0.5], [-6, 6]), { stiffness: 300, damping: 30 });
 
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (!ref.current) return;
-    const rect = ref.current.getBoundingClientRect();
-    xVal.set((e.clientX - rect.left) / rect.width - 0.5);
-    yVal.set((e.clientY - rect.top) / rect.height - 0.5);
-  };
+    const handleMouseMove = (e: React.MouseEvent) => {
+        if (!ref.current) return;
+        const rect = ref.current.getBoundingClientRect();
+        xVal.set((e.clientX - rect.left) / rect.width - 0.5);
+        yVal.set((e.clientY - rect.top) / rect.height - 0.5);
+    };
 
-  const handleMouseLeave = () => {
-    xVal.set(0);
-    yVal.set(0);
-  };
+    const handleMouseLeave = () => {
+        xVal.set(0);
+        yVal.set(0);
+    };
 
-  return (
-    <motion.div
-      ref={ref}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-      style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  );
+    return (
+        <motion.div
+            ref={ref}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
+            className={className}
+        >
+            {children}
+        </motion.div>
+    );
 };
 
 /* ─── Framework steps (Section 3) ─── */
@@ -204,8 +204,8 @@ export default function FintechCryptoPage() {
                 {/* ═══════════════════════════════════════════════════════════
           SECTION 1 — Hero
       ══════════════════════════════════════════════════════════════ */}
-                <section className="relative w-full min-h-[500px] md:min-h-[600px] flex items-center pt-24 md:pt-0">
-                    <div className="relative z-10 w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-16 py-12 md:py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <section className="relative w-full min-h-[500px] md:min-h-[600px] flex items-center pt-8 md:pt-0">
+                    <div className="relative z-10 w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-16 pt-8 pb-12 md:py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="text-center lg:text-left">
                             <motion.h1
                                 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.15] tracking-tight mb-6"
@@ -282,11 +282,11 @@ export default function FintechCryptoPage() {
                             <div className="order-2 lg:order-1">
                                 <div className="space-y-8">
                                     {features.map((f) => (
-                                        <div key={f.title} className="flex gap-4 group">
-                                            <div className="w-6 h-6 md:w-16 md:h-16">
-                                                <img src={f.img} alt="" />
+                                        <div key={f.title} className="flex items-start gap-4 group">
+                                            <div className="w-6 h-6 md:w-8 md:h-8 shrink-0 mt-1">
+                                                <img src={f.img} alt="" className="max-w-full max-h-full object-contain" />
                                             </div>
-                                            <div>
+                                            <div className="flex flex-col">
                                                 <h3 className="font-bold text-lg md:text-xl text-gray-900 mb-2">{f.title}</h3>
                                                 <p className="text-sm md:text-base text-gray-500 leading-relaxed">{f.desc}</p>
                                             </div>
@@ -329,10 +329,10 @@ export default function FintechCryptoPage() {
                         }}
                     >
                         <h2 className="max-w-5xl mx-auto text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-12">
-                        Our Consumer Internet Application Development Framework
-                    </h2>
+                            Our Consumer Internet Application Development Framework
+                        </h2>
                     </motion.div>
-                    
+
                     <style>{`
                       @keyframes shimmer {
                         0% { transform: translateX(-100%); }
@@ -344,7 +344,7 @@ export default function FintechCryptoPage() {
                       }
                     `}</style>
 
-                    <motion.div 
+                    <motion.div
                         className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-5 max-w-[1440px] mx-auto"
                         initial="hidden"
                         whileInView="visible"
@@ -389,7 +389,7 @@ export default function FintechCryptoPage() {
                                                     />
                                                 </div>
                                                 <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[3px] w-0 group-hover:w-3/4 bg-gradient-to-r from-transparent via-[#32B9E9] to-transparent transition-all duration-700 rounded-full" />
-                                                
+
                                                 <div style={{ transform: "translateZ(30px)" }}>
                                                     <div className="relative mb-6 inline-flex self-start">
                                                         <div className="absolute inset-[-8px] rounded-full border-2 border-dashed border-[#32B9E9]/0 group-hover:border-[#32B9E9]/25 transition-all duration-700 group-hover:rotate-[60deg]" />

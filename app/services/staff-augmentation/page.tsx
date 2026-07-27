@@ -16,7 +16,7 @@ const page = () => {
         <div className="font-THICCCBOI w-full overflow-x-hidden">
             <section className="relative mb-[80px] pb-[80px] pt-[80px] overflow-hidden " style={{ background: 'linear-gradient(180deg, #050a15 0%, #130f30 50%, #4a0e2e 100%)' }}>
                 <motion.div
-                    className="flex flex-col gap-4 sm:gap-5 relative z-10 max-w-7xl mx-auto px-4 mt-[80px]"
+                    className="flex flex-col gap-4 sm:gap-5 relative z-10 max-w-7xl mx-auto px-4 mt-4 sm:mt-[80px]"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-60px" }}

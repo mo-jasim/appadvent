@@ -22,7 +22,7 @@ export default function CRMcasePage() {
         <>
             <div className="font-THICCCBOI text-slate-800 min-h-screen w-full overflow-x-hidden">
                 <div className='w-full' style={{ backgroundImage: "url('/images/polygon.png')", }} >
-                    <section className="relative w-full h-[900px] md:h-[700px] flex items-center justify-center pt-24 md:pt-0">
+                    <section className="relative w-full h-[900px] md:h-[700px] flex items-center justify-center pt-8 md:pt-0">
                         {/* Background Video */}
                         <div className="absolute inset-0 w-full h-full overflow-hidden">
                             <video
@@ -177,20 +177,20 @@ export default function CRMcasePage() {
                         <div className="absolute inset-0 bg-[url('/images/polygon.png')] opacity-20 mix-blend-overlay pointer-events-none" />
                         <div className="max-w-7xl mx-auto relative z-10">
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 md:mb-16 text-center md:text-left">The Results</h2>
-                            <motion.div 
-                            className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10"
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true, margin: "-60px" }}
-                            variants={{
-                                hidden: {},
-                                visible: {
-                                    transition: {
-                                        staggerChildren: 0.12,
+                            <motion.div
+                                className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10"
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true, margin: "-60px" }}
+                                variants={{
+                                    hidden: {},
+                                    visible: {
+                                        transition: {
+                                            staggerChildren: 0.12,
+                                        },
                                     },
-                                },
-                            }}
-                        >
+                                }}
+                            >
                                 {[
                                     { icon: "/images/downloadicon.svg", stat: "600+", label: "Downloads" },
                                     { icon: "/Letimg/Frame387.svg", stat: "500+", label: "Users" },

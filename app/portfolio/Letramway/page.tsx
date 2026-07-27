@@ -103,7 +103,7 @@ export default function Letramway() {
 
                {/* 2. ABOUT LE TRAMWAY WEBSITE */}
                <div className="relative w-full pb-16 sm:pb-20 pt-8 sm:pt-10 px-3 sm:px-5 lg:px-7">
-                  <div className="w-full max-w-7xl mx-auto flex flex-col items-center text-center">
+                  <div className="w-full max-w-7xl mx-auto flex flex-col items-start text-center">
 
                      {/* OVERVIEW Watermark */}
                      <div className="w-full text-center text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap pointer-events-none select-none leading-none tracking-tight overflow-hidden">
@@ -196,37 +196,37 @@ export default function Letramway() {
             <section className="relative w-full py-20 md:py-32 px-3 sm:px-5 lg:px-7 overflow-hidden">
                {/* Watermark */}
                <motion.div
-                   className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none"
-                   initial={{ opacity: 0, scale: 0.9 }}
-                   whileInView={{ opacity: 1, scale: 1 }}
-                   viewport={{ once: true }}
-                   transition={{ duration: 1.5, ease: "easeOut" }}
+                  className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1.5, ease: "easeOut" }}
                >
-                   OPPORTUNITIES
+                  OPPORTUNITIES
                </motion.div>
 
                <div className="max-w-7xl mx-auto relative z-10">
                   <motion.h2
-                      className="text-3xl md:text-5xl font-bold text-black text-center lg:text-left mb-16 md:mb-24"
-                      initial={{ opacity: 0, y: -20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.6 }}
+                     className="text-3xl md:text-5xl font-bold text-black text-center lg:text-left mb-16 md:mb-24"
+                     initial={{ opacity: 0, y: -20 }}
+                     whileInView={{ opacity: 1, y: 0 }}
+                     viewport={{ once: true }}
+                     transition={{ duration: 0.6 }}
                   >
-                      Opportunities await
+                     Opportunities await
                   </motion.h2>
 
                   <div className="flex flex-col lg:flex-row gap-16 md:gap-24 items-center">
                      {/* Left Content */}
                      <motion.div
-                         className="lg:w-1/2 space-y-6 md:space-y-8"
-                         initial="hidden"
-                         whileInView="visible"
-                         viewport={{ once: true, margin: "-60px" }}
-                         variants={{
-                             hidden: {},
-                             visible: { transition: { staggerChildren: 0.15 } }
-                         }}
+                        className="lg:w-1/2 space-y-6 md:space-y-8"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, margin: "-60px" }}
+                        variants={{
+                           hidden: {},
+                           visible: { transition: { staggerChildren: 0.15 } }
+                        }}
                      >
                         {[
                            { title: "Online Reservation Integration:-", desc: "Adding a direct reservation feature would allow customers to book tables easily through the website. This can improve the dining experience and help the restaurant manage customer flow more efficiently." },
@@ -235,12 +235,12 @@ export default function Letramway() {
                            { title: "Local SEO Optimization:-", desc: "Enhancing local SEO strategies could help the restaurant appear more prominently in search results. This would make it easier for people in Edmonton to discover the cafe when looking for nearby dining options." }
                         ].map((item, i) => (
                            <motion.div
-                               key={i}
-                               variants={{
-                                   hidden: { opacity: 0, x: -30 },
-                                   visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
-                               }}
-                               className="flex gap-5 group bg-white p-6 md:p-8 rounded-[24px] border border-gray-100 hover:border-[#32B9E9]/30 hover:shadow-[0_8px_30px_rgba(50,185,233,0.1)] transition-all duration-300"
+                              key={i}
+                              variants={{
+                                 hidden: { opacity: 0, x: -30 },
+                                 visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
+                              }}
+                              className="flex gap-5 group bg-white p-6 md:p-8 rounded-[24px] border border-gray-100 hover:border-[#32B9E9]/30 hover:shadow-[0_8px_30px_rgba(50,185,233,0.1)] transition-all duration-300"
                            >
                               <div className="shrink-0">
                                  <div className="w-10 h-10 rounded-xl bg-gray-50 group-hover:bg-[#E8F7FC] flex items-center justify-center transition-colors duration-300">
@@ -259,11 +259,11 @@ export default function Letramway() {
 
                      {/* Right Image */}
                      <motion.div
-                         className="lg:w-1/2 w-full flex justify-center"
-                         initial={{ opacity: 0, x: 50 }}
-                         whileInView={{ opacity: 1, x: 0 }}
-                         viewport={{ once: true }}
-                         transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+                        className="lg:w-1/2 w-full flex justify-center"
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
                      >
                         <div className="relative w-full max-w-[540px] hover:-translate-y-4 transition-transform duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]">
                            <div className="absolute inset-0 bg-[#32B9E9]/20 blur-[100px] rounded-full -z-10" />
@@ -281,34 +281,34 @@ export default function Letramway() {
 
                {/* Watermark */}
                <motion.div
-                   className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-white/5 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none"
-                   initial={{ opacity: 0, y: -20 }}
-                   whileInView={{ opacity: 1, y: 0 }}
-                   viewport={{ once: true }}
-                   transition={{ duration: 1 }}
+                  className="absolute top-10 left-1/2 -translate-x-1/2 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-white/5 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none"
+                  initial={{ opacity: 0, y: -20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1 }}
                >
-                   SOLUTIONS
+                  SOLUTIONS
                </motion.div>
 
                <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7 relative z-10">
                   <motion.h2
-                      className="text-3xl md:text-5xl font-bold mb-16 md:mb-24 text-center text-white"
-                      initial={{ opacity: 0, y: -20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.6 }}
+                     className="text-3xl md:text-5xl font-bold mb-16 md:mb-24 text-center text-white"
+                     initial={{ opacity: 0, y: -20 }}
+                     whileInView={{ opacity: 1, y: 0 }}
+                     viewport={{ once: true }}
+                     transition={{ duration: 0.6 }}
                   >
-                      Our Best Solutions
+                     Our Best Solutions
                   </motion.h2>
 
                   <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
                      {/* Left Image Graphic */}
                      <motion.div
-                         className="lg:w-1/2 w-full flex justify-center items-center order-2 lg:order-1"
-                         initial={{ opacity: 0, x: -50 }}
-                         whileInView={{ opacity: 1, x: 0 }}
-                         viewport={{ once: true }}
-                         transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+                        className="lg:w-1/2 w-full flex justify-center items-center order-2 lg:order-1"
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
                      >
                         <div className="w-full max-w-[600px] relative hover:-translate-y-4 hover:scale-[1.02] transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]">
                            <div className="absolute inset-0 bg-[#32B9E9]/20 blur-[100px] rounded-full -z-10" />
@@ -318,14 +318,14 @@ export default function Letramway() {
 
                      {/* Right List Content */}
                      <motion.div
-                         className="lg:w-1/2 space-y-4 md:space-y-6 order-1 lg:order-2"
-                         initial="hidden"
-                         whileInView="visible"
-                         viewport={{ once: true, margin: "-60px" }}
-                         variants={{
-                             hidden: {},
-                             visible: { transition: { staggerChildren: 0.12 } }
-                         }}
+                        className="lg:w-1/2 space-y-4 md:space-y-6 order-1 lg:order-2"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, margin: "-60px" }}
+                        variants={{
+                           hidden: {},
+                           visible: { transition: { staggerChildren: 0.12 } }
+                        }}
                      >
                         {[
                            { title: "Clear and Intuitive Navigation", desc: "We designed a simple and structured navigation system so visitors can easily find important sections like the menu and location." },
@@ -334,12 +334,12 @@ export default function Letramway() {
                            { title: "Easy Access to Information", desc: "Key details like opening hours and contact info are placed prominently to help customers plan their visit." }
                         ].map((item, idx) => (
                            <motion.div
-                               key={idx}
-                               variants={{
-                                   hidden: { opacity: 0, x: 30 },
-                                   visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } }
-                               }}
-                               className="flex gap-5 group hover:bg-white/10 p-5 md:p-6 rounded-2xl hover:border-[#32B9E9]/50 transition-all duration-300 backdrop-blur-sm"
+                              key={idx}
+                              variants={{
+                                 hidden: { opacity: 0, x: 30 },
+                                 visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } }
+                              }}
+                              className="flex gap-5 group hover:bg-white/10 p-5 md:p-6 rounded-2xl hover:border-[#32B9E9]/50 transition-all duration-300 backdrop-blur-sm"
                            >
                               <div className="shrink-0">
                                  <div className="w-10 h-10 rounded-full bg-white/10 group-hover:bg-[#32B9E9]/20 flex items-center justify-center transition-colors duration-300">

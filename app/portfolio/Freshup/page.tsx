@@ -97,51 +97,53 @@ export default function GoalkickCaseStudy() {
                             </div>
 
                             {/* Right Content */}
-                            <div className="w-full lg:w-1/2 relative">
-                                {/* OVERVIEW Watermark */}
-                                <div className="absolute -top-10 sm:-top-16 left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
-                                    OVERVIEW
-                                </div>
+                            <div className="relative w-full pb-16 sm:pb-20 pt-8 sm:pt-10 px-3 sm:px-5 lg:px-7">
+                                <div className="w-full max-w-7xl mx-auto flex flex-col items-center text-center">
+                                    {/* OVERVIEW Watermark */}
+                                    <div className="absolute -top-10 sm:-top-16 left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 text-[40px] sm:text-[70px] md:text-[100px] lg:text-[130px] font-black text-[#939192]/10 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight leading-none">
+                                        OVERVIEW
+                                    </div>
 
-                                <div className="relative z-10">
-                                    <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="text-3xl md:text-5xl font-bold text-black mb-6 tracking-tight text-center lg:text-left">
-                                        About Freshup App
-                                    </motion.h2>
-                                    <p className="text-[#010F14] text-sm sm:text-base md:text-lg leading-relaxed mb-6 text-center lg:text-left">
-                                        Join voice chat rooms, meet new people, and enjoy live conversations about cars, engines, driving experiences, and more with friends and strangers alike. Freshup is a social media application designed to help users connect and grow socially, now catering to automotive communities too.
-                                    </p>
-                                    <p className="text-[#010F14] text-sm sm:text-base md:text-lg leading-relaxed mb-10 text-center lg:text-left">
-                                        Freshup offers a seamless and dynamic communication experience, ideal for automotive enthusiasts.Users can also post videos and images, showcasing their cars or sharing automotive tips, adding a rich multimedia dimension to their interactions.
-                                    </p>
+                                    <div className="relative z-10">
+                                        <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="text-3xl md:text-5xl font-bold text-black mb-6 tracking-tight text-center lg:text-left">
+                                            About Freshup App
+                                        </motion.h2>
+                                        <p className="text-[#010F14] text-sm sm:text-base md:text-lg leading-relaxed mb-6 text-center lg:text-left">
+                                            Join voice chat rooms, meet new people, and enjoy live conversations about cars, engines, driving experiences, and more with friends and strangers alike. Freshup is a social media application designed to help users connect and grow socially, now catering to automotive communities too.
+                                        </p>
+                                        <p className="text-[#010F14] text-sm sm:text-base md:text-lg leading-relaxed mb-10 text-center lg:text-left">
+                                            Freshup offers a seamless and dynamic communication experience, ideal for automotive enthusiasts.Users can also post videos and images, showcasing their cars or sharing automotive tips, adding a rich multimedia dimension to their interactions.
+                                        </p>
 
-                                    {/* Stat Grid */}
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-10 border-t border-gray-100 pt-10">
-                                        <div className="flex gap-4 items-start justify-start">
-                                            <img src="/caseimg/About-img1.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
-                                            <div className="text-left">
-                                                <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Industry</h4>
-                                                <p className="text-black text-lg font-medium">Social Networking App</p>
+                                        {/* Stat Grid */}
+                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-10 border-t border-gray-100 pt-10">
+                                            <div className="flex gap-4 items-center justify-start">
+                                                <img src="/caseimg/About-img1.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
+                                                <div className="text-left">
+                                                    <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Industry</h4>
+                                                    <p className="text-black text-lg font-medium">Social Networking App</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="flex gap-4 items-start justify-start">
-                                            <img src="/caseimg/About-img2.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
-                                            <div className="text-left">
-                                                <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Platform</h4>
-                                                <p className="text-black text-lg font-medium">IOS (AWS)</p>
+                                            <div className="flex gap-4 items-center justify-start">
+                                                <img src="/caseimg/About-img2.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
+                                                <div className="text-left">
+                                                    <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Platform</h4>
+                                                    <p className="text-black text-lg font-medium">IOS (AWS)</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="flex gap-4 items-start justify-start">
-                                            <img src="/caseimg/About-img3.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
-                                            <div className="text-left">
-                                                <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Duration</h4>
-                                                <p className="text-black text-lg font-medium">3 Months</p>
+                                            <div className="flex gap-4 items-start justify-start">
+                                                <img src="/caseimg/About-img3.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
+                                                <div className="text-left">
+                                                    <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Duration</h4>
+                                                    <p className="text-black text-lg font-medium">3 Months</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="flex gap-4 items-start justify-start">
-                                            <img src="/caseimg/About-img4.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
-                                            <div className="text-left">
-                                                <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Service</h4>
-                                                <p className="text-black text-lg font-medium">Design & Development</p>
+                                            <div className="flex gap-4 items-start justify-start">
+                                                <img src="/caseimg/About-img4.svg" className="w-10 h-10 text-gray-600 mt-1 shrink-0" />
+                                                <div className="text-left">
+                                                    <h4 className="font-bold text-black text-sm uppercase tracking-wider text-gray-500">Service</h4>
+                                                    <p className="text-black text-lg font-medium">Design & Development</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

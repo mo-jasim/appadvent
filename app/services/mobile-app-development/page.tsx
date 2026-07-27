@@ -29,7 +29,7 @@ const page = () => {
                     }}
                 >
                     <motion.p
-                        className='gradient-text text-3xl sm:text-5xl lg:text-[60px] font-bold text-center pb-2 mt-[80px]'
+                        className='gradient-text text-3xl sm:text-5xl lg:text-[60px] font-bold text-center pb-2 mt-4 sm:mt-[80px]'
                         variants={{
                             hidden: { opacity: 0, y: 30 },
                             visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
