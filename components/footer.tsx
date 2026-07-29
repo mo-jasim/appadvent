@@ -13,9 +13,9 @@ const footer = () => {
   return (
 
     <>
-      <QAndA />
+      {/* <QAndA /> */}
       <HaveAProject />
-      <footer className="pt-12 md:pt-16">
+      <footer className="w-full bg-white pt-12 md:pt-16 text-black font-THICCCBOI">
         <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7">
 
           {/* Row 2: 4 Columns */}
