@@ -2,7 +2,7 @@ name: Appadvent
 
 on:
   push:
-    branches: [main]
+    branches: [riya-frontend]
 
 jobs:
   deploy:
