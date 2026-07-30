@@ -1,234 +1,185 @@
-import Image from 'next/image'
+"use client";
+
+import Image from 'next/image';
+import { Mail, ArrowRight, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
 export default function HaveAProject() {
     return (
-        <section id="have-a-project" className="relative py-20 overflow-hidden" style={{ background: 'linear-gradient(180deg, #050a15 0%, #130f30 50%, #4a0e2e 100%)' }}>
-            <div
-                className="absolute inset-0 bg-cover bg-center opacity-20"
-                style={{ backgroundImage: "url('/images/polygon.png')" }}
-            />
+        <section id="have-a-project" className="relative py-16 md:py-24 bg-[#EAF8FD] font-THICCCBOI overflow-hidden">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
 
-            <div className="relative z-10 max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-
-
-                    <div>
-                        <h2 className="text-[56px] md:text-[56px] font-bold text-white leading-tight">
-                            Have a project idea! <br /> Drop me a line.
+                    {/* Left Column — Info & Socials */}
+                    <div className="lg:col-span-5">
+                        <h2 className="text-[30px] sm:text-[44px] md:text-[36px] font-bold text-[#061C3D] leading-tight">
+                            Have a project idea! <br />
+                            Drop us a line.
                         </h2>
 
-                        <p className="mt-4 text-[16px] md:text-[16px] text-gray-300 max-w-md">
-                            Provide insights into your project and submit your Request for Proposal
-                            to get started.
+                        <p className="mt-4 text-[15px] sm:text-[16px] text-[#4A5568] leading-relaxed max-w-md">
+                            Provide insights into your project and submit your Request for Proposal to get started.
                         </p>
-                        <div className="mt-16 mb-16 text-sm text-gray-300 flex gap-[20px]">
-                            <div>
-                                <Image
-                                    src="/images/icons4.png"
-                                    alt="ai"
-                                    width={56}
-                                    height={56}
-                                    className="shrink-0"
-                                    priority
-                                />
+
+                        {/* Email Us Block */}
+                        <div className="mt-10 mb-10 flex items-center gap-4">
+                            <div className="w-14 h-14 rounded-full bg-[#DDF1FA] flex items-center justify-center shrink-0">
+                                <Mail className="w-6 h-6 text-[#061C3D]" />
                             </div>
                             <div>
-                                <p className="font-semibold text-[14px]">EMAIL US</p>
-                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@appadvent.com" className="text-white text-[24px] block hover:text-[#32B9E9] transition-colors">info@appadvent.com</a>
+                                <p className="font-medium text-[12px] text-[#64748B] tracking-wider uppercase">EMAIL US</p>
+                                <a
+                                    href="https://mail.google.com/mail/?view=cm&fs=1&to=info@appadvent.com"
+                                    className="text-[#061C3D] font-medium text-[16px] sm:text-[22px] block hover:text-[#32B9E9] transition-colors"
+                                >
+                                    info@appadvent.com
+                                </a>
                             </div>
                         </div>
 
-                        <p className='text-white text-[16px] mt-6'>----connect with us:</p>
-                        <div className="flex gap-4 mt-2 text-gray-400">
-                            <a
-                                href="https://www.facebook.com/share/p/18Zjyommo9/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="hover:scale-110 transition-all duration-300 cursor-pointer"
-                            >
-                                <Image
-                                    src="/Letimg/Social Media.svg"
-                                    alt="instagram"
-                                    width={44}
-                                    height={44}
-                                    className="shrink-0"
-                                    priority
-                                />
-                            </a>
-                            <span className="hover:scale-110 transition-all duration-300 cursor-pointer">
+                        {/* Connect With Us */}
+                        <div className="mt-8">
+                            <p className="text-[#4A5568] text-[14px] font-medium mb-3 flex items-center gap-2">
+                                <span className="w-6 h-[1.5px] bg-[#4A5568] inline-block"></span>
+                                Connect with us:
+                            </p>
+                            <div className="flex items-center gap-3">
+                                <a
+                                    href="https://www.facebook.com/share/p/18Zjyommo9/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-10 h-10 rounded-lg bg-gray-200/60 hover:bg-[#32B9E9] hover:text-white transition-all duration-300 flex items-center justify-center text-[#061C3D]"
+                                >
+                                    <Facebook className="w-4 h-4" />
+                                </a>
                                 <a
                                     href="https://x.com/appadventtech/status/2052255985302155644?s=20"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                                    className="w-10 h-10 rounded-lg bg-gray-200/60 hover:bg-[#32B9E9] hover:text-white transition-all duration-300 flex items-center justify-center text-[#061C3D]"
                                 >
-                                    <Image
-                                        src="/Letimg/Social Media (1).svg"
-                                        alt="ai"
-                                        width={44}
-                                        height={44}
-                                        className="shrink-0"
-                                        priority
-                                    />
+                                    <Twitter className="w-4 h-4" />
                                 </a>
-                            </span>
-                            <span className="hover:scale-110 transition-all duration-300 item-[#32B9E9] cursor-pointer">
-                                <a
-                                    href="https://www.instagram.com/p/DYBnjSvmFuj/?utm_source=ig_web_copy_link"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="hover:scale-110 transition-all duration-300 cursor-pointer"
-                                >
-                                    <Image
-                                        src="/Letimg/Social Media3.svg"
-                                        alt="ai"
-                                        width={44}
-                                        height={44}
-                                        className="shrink-0"
-                                        priority
-                                    />
-                                </a>
-                            </span>
-                            <span className="hover:scale-110 transition-all duration-300 item-[#32B9E9] cursor-pointer">
                                 <a
                                     href="https://www.linkedin.com/feed/update/urn:li:activity:7458020308239925248"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                                    className="w-10 h-10 rounded-lg bg-gray-200/60 hover:bg-[#32B9E9] hover:text-white transition-all duration-300 flex items-center justify-center text-[#061C3D]"
                                 >
-                                    <Image
-                                        src="/Letimg/Social Media (2).svg"
-                                        alt="ai"
-                                        width={44}
-                                        height={44}
-                                        className="shrink-0"
-                                        priority
-                                    />
+                                    <Linkedin className="w-4 h-4" />
                                 </a>
-                            </span>
-                            <span className="hover:scale-110 transition-all duration-300 item-[#32B9E9] cursor-pointer">
                                 <a
-                                    href="https://www.youtube.com/@AppadventTechnologies"
+                                    href="https://www.instagram.com/p/DYBnjSvmFuj/?utm_source=ig_web_copy_link"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                                    className="w-10 h-10 rounded-lg bg-gray-200/60 hover:bg-[#32B9E9] hover:text-white transition-all duration-300 flex items-center justify-center text-[#061C3D]"
                                 >
-                                    <Image
-                                        src="/Letimg/Social Mediayou.svg"
-                                        alt="ai"
-                                        width={44}
-                                        height={44}
-                                        className="shrink-0"
-                                        priority
-                                    />
+                                    <Instagram className="w-4 h-4" />
                                 </a>
-                            </span>
+                            </div>
                         </div>
                     </div>
 
-
-                    <div className="bg-white rounded-xl shadow-xl p-6 sm:p-8 mt-8 md:mt-0">
-                        <h3 className="text-lg font-semibold mb-6">
+                    {/* Right Column — Form Card */}
+                    <div className="lg:col-span-7 bg-white rounded-[24px] shadow-sm border border-gray-100/80 p-6 sm:p-10">
+                        <h3 className="text-[22px] sm:text-[24px] font-bold text-[#061C3D] mb-6">
                             Write down your quote here...
                         </h3>
 
-                        <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div className="flex flex-col gap-1">
-                                <label className="text-[#000000] text-sm">
+                        <form className="grid grid-cols-1 sm:grid-cols-2 gap-5" onSubmit={(e) => e.preventDefault()}>
+                            <div className="flex flex-col gap-1.5">
+                                <label className="text-[#4A5568] font-medium text-xs">
                                     Name
                                 </label>
-
                                 <input
                                     type="text"
                                     placeholder="Full name"
-                                    className="border rounded-md px-4 py-2 text-sm border-[#E6E8EC] focus:outline-none"
+                                    className="border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#32B9E9] focus:ring-1 focus:ring-[#32B9E9] transition-all"
                                 />
                             </div>
-                            <div className="flex flex-col gap-1">
-                                <label className="text-[#000000] text-sm">
+
+                            <div className="flex flex-col gap-1.5">
+                                <label className="text-[#4A5568] font-medium text-xs">
                                     Email
                                 </label>
+                                <input
+                                    type="email"
+                                    placeholder="Email address"
+                                    className="border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#32B9E9] focus:ring-1 focus:ring-[#32B9E9] transition-all"
+                                />
+                            </div>
 
+                            <div className="flex flex-col gap-1.5">
+                                <label className="text-[#4A5568] font-medium text-xs">
+                                    Contact
+                                </label>
+                                <input
+                                    type="text"
+                                    placeholder="Mobile number"
+                                    className="border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#32B9E9] focus:ring-1 focus:ring-[#32B9E9] transition-all"
+                                />
+                            </div>
+
+                            <div className="flex flex-col gap-1.5">
+                                <label className="text-[#4A5568] font-medium text-xs">
+                                    Phone number
+                                </label>
                                 <input
                                     type="text"
                                     placeholder="Email address"
-                                    className="border rounded-md px-4 py-2 text-sm border-[#E6E8EC] focus:outline-none"
-                                />
-                            </div>
-                            <div className="flex flex-col gap-1">
-                                <label className="text-[#000000] text-sm">
-                                    Contact
-                                </label>
-
-                                <input
-                                    type="text"
-                                    placeholder="mobile"
-                                    className="border rounded-md px-4 py-2 text-sm border-[#E6E8EC] focus:outline-none"
-                                />
-                            </div>
-                            <div className="flex flex-col gap-1">
-                                <label className="text-[#000000] text-sm">
-                                    Phone Number
-                                </label>
-
-                                <input
-                                    type="text"
-                                    placeholder="phone"
-                                    className="border rounded-md px-4 py-2 text-sm border-[#E6E8EC] focus:outline-none"
+                                    className="border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#32B9E9] focus:ring-1 focus:ring-[#32B9E9] transition-all"
                                 />
                             </div>
 
-                            <div className="flex flex-col gap-1">
-                                <label className="text-[#000000] text-sm">
+                            <div className="flex flex-col gap-1.5">
+                                <label className="text-[#4A5568] font-medium text-xs">
                                     Services
                                 </label>
-
-                                <select className="border rounded-md px-4 py-2 text-sm focus:outline-none border-[#E6E8EC] text-gray-500">
-                                    <option className='text-gray-500'>What are you looking for</option>
-                                    <option className='text-gray-500'>Web Development</option>
-                                    <option className='text-gray-500'>UI/UX Design</option>
-                                    <option className='text-gray-500'>Mobile App</option>
+                                <select className="border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#32B9E9] focus:ring-1 focus:ring-[#32B9E9] transition-all text-gray-600 bg-white">
+                                    <option>What are looking for:</option>
+                                    <option>Web Development</option>
+                                    <option>UI/UX Design</option>
+                                    <option>Mobile App</option>
+                                    <option>Staff Augmentation</option>
                                 </select>
-
                             </div>
 
-                            <div className="flex flex-col gap-1">
-                                <label className="text-[#000000] text-sm">
+                            <div className="flex flex-col gap-1.5">
+                                <label className="text-[#4A5568] font-medium text-xs">
                                     Budget
                                 </label>
-
-                                <select className="border rounded-md px-4 py-2 text-sm focus:outline-none border-[#E6E8EC] text-gray-500">
-                                    <option className='text-gray-500'>Project budget (USD)</option>
-                                    <option className='text-gray-500'>$1k – $5k</option>
-                                    <option className='text-gray-500'>$5k – $10k</option>
-                                    <option className='text-gray-500'>$10k+</option>
+                                <select className="border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#32B9E9] focus:ring-1 focus:ring-[#32B9E9] transition-all text-gray-600 bg-white">
+                                    <option>Project budget (USD)</option>
+                                    <option>$1k – $5k</option>
+                                    <option>$5k – $10k</option>
+                                    <option>$10k+</option>
                                 </select>
-
                             </div>
 
-
-
-                            <div className="flex flex-col gap-2 md:col-span-2">
-                                <label className="text-[#4F5B73] font-bold text-[14px]">
+                            <div className="flex flex-col gap-1.5 sm:col-span-2">
+                                <label className="text-[#4A5568] font-medium text-xs">
                                     Message
                                 </label>
                                 <textarea
                                     placeholder="Tell us about your project..."
-                                    className="w-full border border-[#E6E8EC] rounded-[12px] px-4 py-4 text-[14px] text-gray-700 focus:outline-none focus:border-[#32B9E9] focus:ring-1 focus:ring-[#32B9E9] transition-all h-32 resize-none"
+                                    className="w-full border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#32B9E9] focus:ring-1 focus:ring-[#32B9E9] transition-all h-28 resize-none"
                                     required
                                 ></textarea>
                             </div>
-                            <button
-                                type="submit"
-                                className="md:col-span-2 bg-[#32B9E9] text-white py-2 rounded-md font-semibold flex items-center justify-center gap-2"
-                            >
-                                Request A Quote →
-                            </button>
+
+                            <div className="sm:col-span-2 mt-2">
+                                <button
+                                    type="submit"
+                                    className="w-full bg-[#32B9E9] text-white py-3.5 px-6 rounded-xl font-bold text-sm flex items-center justify-center gap-2 hover:bg-[#28a5d3] transition-colors duration-300 shadow-sm"
+                                >
+                                    Request A Quote
+                                    <ArrowRight className="w-4 h-4" />
+                                </button>
+                            </div>
                         </form>
                     </div>
 
                 </div>
             </div>
         </section>
-    )
+    );
 }
