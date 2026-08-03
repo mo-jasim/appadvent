@@ -384,7 +384,7 @@ const Navbar = () => {
               </span>
             </Link>
 
-            <Link href="/industries">
+            {/* <Link href="/industries">
               <span
                 className={`relative inline-block text-sm font-medium uppercase transition-colors duration-300
                   ${textColorClass} ${linkHoverClass}
@@ -399,7 +399,7 @@ const Navbar = () => {
               >
                 Industries
               </span>
-            </Link>
+            </Link> */}
 
             <div
               ref={dropdownRef}
@@ -540,9 +540,9 @@ const Navbar = () => {
               <Link href="/about-us" onClick={() => setMobileOpen(false)}>
                 About Us
               </Link>
-              <Link href="/industries" onClick={() => setMobileOpen(false)}>
+              {/* <Link href="/industries" onClick={() => setMobileOpen(false)}>
                 Industries
-              </Link>
+              </Link> */}
 
               <div className="flex flex-col">
                 <button

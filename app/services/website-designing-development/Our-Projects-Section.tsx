@@ -93,23 +93,23 @@ const OurProjectsSection = () => {
     };
 
     return (
-        <div className="w-full bg-white py-16 md:py-20 text-black font-THICCCBOI">
-            <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7">
-                        <div className="text-center max-w-6xl mx-auto mb-12">
-                            <h2 className="text-[32px] sm:text-[40px] md:text-[44px] font-bold text-[#061C3D] mb-4 text-center leading-tight">
-                                Our Projects: New Launches and App Makeovers
-                            </h2>
-                            <p className="text-[#5a6270] text-[15px] sm:text-[17px] text-center max-w-5xl mx-auto leading-relaxed">
-                                Explore our web development case studies to see how we deliver transformative solutions that drive real results. Each project highlights our strategic approach and the value we bring to clients. Use the industry.
-                            </p>
-                        </div>
+        <div className="w-full bg-white py-16 md:py-20 text-black font-THICCCBOI overflow-hidden">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+                <div className="text-center max-w-6xl mx-auto">
+                    <h2 className="text-[32px] sm:text-[40px] md:text-[44px] font-bold text-[#061C3D] mb-4 text-center leading-tight">
+                        Our Projects: New Launches and App Makeovers
+                    </h2>
+                    <p className="text-[#5a6270] text-[15px] sm:text-[17px] text-center max-w-5xl mx-auto leading-relaxed">
+                        Explore our web development case studies to see how we deliver transformative solutions that drive real results. Each project highlights our strategic approach and the value we bring to clients. Use the industry.
+                    </p>
+                </div>
+            </div>
 
-                        <div className="relative w-full">
-                            <div className="-mx-4 sm:-mx-6 lg:-mx-8">
-                                <div
-                                    ref={scrollContainerRef}
-                                    className="flex flex-row gap-6 overflow-x-auto snap-x snap-mandatory pt-4 pb-8 px-4 sm:px-6 lg:px-8 scroll-pl-4 sm:scroll-pl-6 lg:scroll-pl-8 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']"
-                                >
+            <div className="w-full">
+                <div
+                    ref={scrollContainerRef}
+                    className="flex flex-row gap-6 overflow-x-auto snap-x snap-mandatory pt-4 pb-8 pl-4 sm:pl-6 lg:pl-[max(2rem,calc((100%-1280px)/2+2rem))] pr-4 sm:pr-6 lg:pr-8 scroll-pl-4 sm:scroll-pl-6 lg:scroll-pl-[max(2rem,calc((100%-1280px)/2+2rem))] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']"
+                >
                                     {projects.map((project, index) => (
                                         <div
                                             key={`${project.title}-${index}`}
@@ -165,8 +165,6 @@ const OurProjectsSection = () => {
                                         </div>
                                     ))}
                                 </div>
-                    </div>
-                </div>
             </div>
         </div>
     );

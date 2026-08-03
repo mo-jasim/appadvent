@@ -9,6 +9,7 @@ import Technologies from './Technologies'
 import AverageCost from './Average-Cost'
 import OurProjectsSection from './Our-Projects-Section'
 import CompaniesLove from './Companies-Love'
+import Image from 'next/image';
 
 
 const page = () => {
@@ -30,27 +31,40 @@ const page = () => {
                         },
                     }}
                 >
-                    <motion.p variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className='gradient-text text-3xl sm:text-5xl lg:text-[60px] font-bold text-center pb-2'>Your Growth, Our Services</motion.p>
+                    {/* <motion.p variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className='gradient-text text-3xl sm:text-5xl lg:text-[60px] font-bold text-center pb-2'>Your Growth, Our Services</motion.p> */}
                     <motion.p variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className='text-white text-[32px] sm:text-4xl md:text-5xl lg:text-[64px] font-bold text-center leading-tight'>Website Designing & Developments</motion.p>
                     <motion.p variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } } }} className='max-w-6xl text-[16px] sm:text-base lg:text-[20px] mx-auto text-center w-full text-white leading-relaxed px-2'>
                         We design and develop modern, responsive websites that combine exceptional user experiences with powerful functionality. From strategy and UI/UX design to custom development, optimization, and ongoing support, we create fast, secure, and scalable websites that strengthen your online presence and drive business growth.
                     </motion.p>
                     {/* Have a project in mind? */}
                     <motion.div variants={{ hidden: { opacity: 0, scale: 0.9 }, visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="flex justify-center mb-[80px] mt-4">
-                        <button
+                        {/* <button
                             onClick={() => setIsModalOpen(true)}
                             className="text-[#32B9E9] text-semibold text-[20px]
         px-5 py-2 sm:px-6 sm:py-2.5 cursor-pointer underline font-THICCCBOI"
                         >
                             Have a project in mind?
+                        </button> */}
+
+
+                        <button
+                            onClick={() => setIsModalOpen(true)}
+                            className="
+                                     flex items-center gap-2.5 bg-[#E8354B] text-white
+                                     px-4 py-2.5 sm:px-6 sm:py-3
+                                     rounded-full text-sm sm:text-base font-medium cursor-pointer
+                                     hover:bg-[#c92c40] transition-colors duration-300
+                                   "
+
+                        >
+                            Book a free consultant
+                            <Image src="/images/arrowicon2.svg" alt="icon" width={27} height={27} />
                         </button>
                     </motion.div>
                 </motion.div>
             </section>
             <div className=""
-                style={{
-                    backgroundImage: "url('/images/polygon.png')",
-                }}>
+            >
                 <div className='w-full'>
                     {/* Web Solution Section */}
                     <WebSolutionSection />
@@ -67,10 +81,10 @@ const page = () => {
                     <AverageCost />
 
                     {/* Our-Projects-Section */}
-                    <OurProjectsSection />
+                    {/* <OurProjectsSection /> */}
 
                     {/* Companies-Love */}
-                    <CompaniesLove />
+                    {/* <CompaniesLove /> */}
                 </div>
             </div>
             {isModalOpen && (

@@ -1014,10 +1014,10 @@ const HomePage = () => {
       </section>
 
       {/* Background that spans the entire page */}
-      <div
+      {/* <div
         className="fixed inset-0 w-full h-full bg-cover bg-center"
         style={{ backgroundImage: "url('/images/polygon.png')", zIndex: -1 }}
-      ></div>
+      ></div> */}
 
       {/* ═══════════════ EXPLORE OUR SERVICES ═══════════════ */}
       <section className="w-full bg-white py-16 md:py-24 font-THICCCBOI">
