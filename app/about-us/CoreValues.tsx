@@ -4,11 +4,13 @@ import Image from 'next/image';
 
 const CoreValues = () => {
     return (
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 font-THICCCBOI">
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 font-THICCCBOI bg-[#EAF8FD]"
+
+        >
             <div className="text-center mb-16">
                 <h2 className="text-[40px] md:text-[48px] font-bold">
                     <span className="text-[#0d2a3a]">Our Core</span>{" "}
-                    <span className="text-[#32B9E9]">Values</span>
+                    <span className="text-[#0d2a3a]">Values</span>
                 </h2>
             </div>
 
@@ -18,8 +20,8 @@ const CoreValues = () => {
                 <div className="relative overflow-hidden bg-white rounded-[18px] border border-gray-100 p-8 shadow-sm flex flex-col h-full min-h-[420px]">
                     <div className="relative z-10">
                         <h3 className="text-[24px] font-bold mb-4 leading-tight">
-                            <span className="text-[#32B9E9]">Innovation</span>
-                            <span className="text-[#0d2a3a]"> at the<br className="hidden lg:block" /> Forefront</span>
+                            <span className="">Innovation</span>
+                            <span className="text-[#0d2a3a]"> at the Forefront</span>
                         </h3>
                         <p className="text-gray-600 text-[16px] leading-relaxed">
                             Innovation is one of our main values. Our company is determined to provide only the most innovative and inventive services and products, thus maximizing customer satisfaction.
@@ -39,7 +41,7 @@ const CoreValues = () => {
                 <div className="relative overflow-hidden bg-white rounded-[18px] border border-gray-100 p-8 shadow-sm flex flex-col h-full min-h-[420px]">
                     <div className="relative z-10">
                         <h3 className="text-[24px] font-bold mb-4 leading-tight">
-                            <span className="text-[#32B9E9]">Integrity</span>
+                            <span className="text-[#0d2a3a]">Integrity</span>
                             <span className="text-[#0d2a3a]"> and Trust</span>
                         </h3>
                         <p className="text-gray-600 text-[16px] leading-relaxed">
@@ -60,7 +62,7 @@ const CoreValues = () => {
                 <div className="relative overflow-hidden bg-white rounded-[18px] border border-gray-100 p-8 shadow-sm flex flex-col h-full min-h-[420px]">
                     <div className="relative z-10">
                         <h3 className="text-[24px] font-bold mb-4 leading-tight">
-                            <span className="text-[#32B9E9]">Collaborative</span>
+                            <span className="text-[#0d2a3a]">Collaborative</span>
                             <span className="text-[#0d2a3a]"> Spirit</span>
                         </h3>
                         <p className="text-gray-600 text-[16px] leading-relaxed">

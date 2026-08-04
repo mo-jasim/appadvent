@@ -2,11 +2,12 @@
 import React, { useState } from 'react';
 import ConsultationModal from '@/components/ConsultationModal';
 import MobileApplication from './Mobile-Application'
-import Technologies from '../website-designing-development/Technologies'
+import MobileTechnologies from './MobileTechnologies'
 import OurProjectsSection from '../website-designing-development/Our-Projects-Section'
 import CompaniesLove from '../website-designing-development/Companies-Love'
 import AverageCostMobile from './AverageCostMobile'
 import { motion } from 'framer-motion';
+import Image from "next/image";
 
 const page = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,7 +29,7 @@ const page = () => {
                         },
                     }}
                 >
-                    <motion.p
+                    {/* <motion.p
                         className='gradient-text text-3xl sm:text-5xl lg:text-[60px] font-bold text-center pb-2 mt-4 sm:mt-[80px]'
                         variants={{
                             hidden: { opacity: 0, y: 30 },
@@ -36,9 +37,9 @@ const page = () => {
                         }}
                     >
                         Your Growth, Our Services
-                    </motion.p>
+                    </motion.p> */}
                     <motion.p
-                        className='text-white text-[32px] sm:text-4xl md:text-5xl lg:text-[64px] font-bold text-center leading-tight'
+                        className='text-white text-[32px] sm:text-4xl md:text-5xl lg:text-[64px] font-bold text-center leading-tight mt-8 sm:mt-16 pt-4'
                         variants={{
                             hidden: { opacity: 0, y: 30 },
                             visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
@@ -55,35 +56,34 @@ const page = () => {
                     >
                         We design, develop, and scale apps that turn your vision into reality. From MVPs to full-fledged products, our services cover every step. We create custom mobile applications that help businesses connect with customers, streamline operations, and accelerate growth. Our services go beyond coding—we help startups and businesses design, build, and grow apps that drive impact and ROI.
                     </motion.p>
-                    <motion.div
-                        className="flex justify-center mb-[80px] mt-4"
-                        variants={{
-                            hidden: { opacity: 0, y: 30 },
-                            visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
-                        }}
-                    >
+                    <motion.div variants={{ hidden: { opacity: 0, scale: 0.9 }, visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="flex justify-center mb-[80px] mt-4">
                         <button
                             onClick={() => setIsModalOpen(true)}
-                            className="text-[#32B9E9] text-semibold text-[20px]
-        px-5 py-2 sm:px-6 sm:py-2.5 cursor-pointer underline font-THICCCBOI transition-colors hover:text-[#2aa8d6]"
+                            className="
+                                flex items-center gap-2.5 bg-[#E8354B] text-white
+                                px-4 py-2.5 sm:px-6 sm:py-3
+                                rounded-full text-sm sm:text-base font-medium cursor-pointer
+                                hover:bg-[#c92c40] transition-colors duration-300
+                              "
                         >
-                            Have a project in mind?
+                            Book a free consultant
+                            <Image src="/images/arrowicon2.svg" alt="icon" width={27} height={27} />
                         </button>
                     </motion.div>
                 </motion.div>
             </section>
-            <div className="" style={{ backgroundImage: "url('/images/polygon.png')" }}>
+            <div className="" >
                 <div className='w-full'>
                     {/* Mobile Application */}
                     <MobileApplication />
                     {/* Technologies We Work With */}
-                    <Technologies />
+                    <MobileTechnologies />
                     {/* Average-Cost of Different Mobile Solutions */}
                     <AverageCostMobile />
                     {/* Our-Projects-Section */}
-                    <OurProjectsSection />
+                    {/* <OurProjectsSection /> */}
                     {/* Companies-Love */}
-                    <CompaniesLove />
+                    {/* <CompaniesLove /> */}
                 </div>
             </div>
 

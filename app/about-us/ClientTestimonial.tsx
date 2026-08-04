@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { use } from 'react';
 import Image from 'next/image';
 import { Quote, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -45,8 +45,8 @@ const ClientTestimonial = () => {
     return (
         <section className="font-THICCCBOI w-full overflow-hidden bg-white w-full">
             {/* Header */}
-            <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7 mb-10">
-                <h2 className="font-bold text-[32px] sm:text-[40px] md:text-[48px] text-[#061C3D]">
+            <div className="mb-10">
+                <h2 className="pl-4 sm:pl-6 lg:pl-[max(2rem,calc((100%-1280px)/2+2rem))] pr-4 sm:pr-6 lg:pr-8 font-bold text-[32px] sm:text-[40px] md:text-[48px] text-[#061C3D]">
                     Words from Our Clients
                 </h2>
             </div>

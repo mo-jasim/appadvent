@@ -22,7 +22,7 @@ const teamMembers = [
 
 const Specialists = () => {
     return (
-        <div className="w-full px-3 sm:px-5 lg:px-7 mb-[80px] font-THICCCBOI">
+        <div className="w-full px-3 sm:px-5 lg:px-12 py-7 mb-[80px] font-THICCCBOI">
             <style>{`
               @keyframes shimmer {
                 0% { transform: translateX(-100%); }
