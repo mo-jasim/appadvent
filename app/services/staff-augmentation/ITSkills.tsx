@@ -1,14 +1,10 @@
 "use client";
-
-import React, { useState, useRef, useEffect } from 'react';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import React, { useState, useRef } from 'react';
 import ConsultationModal from '@/components/ConsultationModal';
 import { motion } from 'framer-motion';
 
 const ITSkills = () => {
     const scrollContainerRef = useRef<HTMLDivElement>(null);
-    const [canScrollLeft, setCanScrollLeft] = useState(false);
-    const [canScrollRight, setCanScrollRight] = useState(true);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const skills = [
@@ -46,78 +42,23 @@ const ITSkills = () => {
         },
     ];
 
-    const handleScroll = () => {
-        if (scrollContainerRef.current) {
-            const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current;
-            setCanScrollLeft(Math.ceil(scrollLeft) > 0);
-            setCanScrollRight(Math.ceil(scrollLeft) < scrollWidth - clientWidth - 1);
-        }
-    };
-
-    useEffect(() => {
-        handleScroll();
-        window.addEventListener('resize', handleScroll);
-        return () => window.removeEventListener('resize', handleScroll);
-    }, []);
-
-    const scroll = (direction: 'left' | 'right') => {
-        if (scrollContainerRef.current) {
-            const { current } = scrollContainerRef;
-            const scrollAmount = direction === 'left' ? -400 : 400;
-            current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-        }
-    };
-
     return (
-        <section className="py-16 sm:py-20 md:py-24 font-THICCCBOI relative overflow-hidden w-full">
-            {/* Header with Navigation Buttons */}
-            <div className="relative z-10 max-w-7xl mx-auto px-3 sm:px-5 lg:px-7">
+        <section className="py-12 sm:py-16 md:py-20 font-THICCCBOI relative overflow-hidden w-full bg-white">
+            {/* Header */}
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
-                    className="flex flex-col md:flex-row justify-between items-end mb-10 sm:mb-12 md:mb-16"
-                    initial="hidden"
-                    whileInView="visible"
+                    className="text-center max-w-4xl mx-auto mb-10 sm:mb-12 md:mb-16"
+                    initial={{ opacity: 0, y: -20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-60px" }}
-                    variants={{
-                        hidden: { opacity: 0, y: -30 },
-                        visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
-                    }}
+                    transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
                 >
-                    <div className="md:w-2/3">
-                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-bold mb-4 sm:mb-6 text-black leading-tight">
-                            IT skills available for hiring
-                        </h2>
-                        <p className="text-gray-600 text-sm sm:text-base md:text-[18px] max-w-3xl leading-relaxed">
-                            We assist in specific development stages as well as provide full-cycle application
-                            implementation. Our staff augmentation services include:
-                        </p>
-                    </div>
-                    {/* Navigation Buttons */}
-                    <div className="flex gap-4 mt-8 md:mt-0 pb-2">
-                        <button
-                            onClick={() => scroll('left')}
-                            disabled={!canScrollLeft}
-                            className={`w-12 h-12 rounded-full border flex items-center justify-center transition-all duration-300 group ${!canScrollLeft
-                                ? 'border-gray-200 bg-gray-50 opacity-50 cursor-not-allowed'
-                                : 'border-[#32B9E9]/30 bg-white hover:bg-[#32B9E9] hover:border-[#32B9E9] hover:shadow-[0_4px_15px_rgba(50,185,233,0.3)]'
-                                }`}
-                            aria-label="Scroll left"
-                        >
-                            <ArrowLeft className={`w-5 h-5 transition-colors duration-300 ${!canScrollLeft ? 'text-gray-400' : 'text-[#32B9E9] group-hover:text-white'
-                                }`} />
-                        </button>
-                        <button
-                            onClick={() => scroll('right')}
-                            disabled={!canScrollRight}
-                            className={`w-12 h-12 rounded-full border flex items-center justify-center transition-all duration-300 group ${!canScrollRight
-                                ? 'border-gray-200 bg-gray-50 opacity-50 cursor-not-allowed'
-                                : 'border-[#32B9E9]/30 bg-white hover:bg-[#32B9E9] hover:border-[#32B9E9] hover:shadow-[0_4px_15px_rgba(50,185,233,0.3)]'
-                                }`}
-                            aria-label="Scroll right"
-                        >
-                            <ArrowRight className={`w-5 h-5 transition-colors duration-300 ${!canScrollRight ? 'text-gray-400' : 'text-[#32B9E9] group-hover:text-white'
-                                }`} />
-                        </button>
-                    </div>
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-bold text-gray-900 leading-tight mb-3 sm:mb-4 font-THICCCBOI">
+                        IT skills available for hiring
+                    </h2>
+                    <p className="text-gray-600 text-sm sm:text-base md:text-[18px] leading-relaxed max-w-3xl mx-auto font-THICCCBOI">
+                        We assist in specific development stages as well as provide full-cycle application implementation. Our staff augmentation services include:
+                    </p>
                 </motion.div>
             </div>
 
@@ -126,49 +67,50 @@ const ITSkills = () => {
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, margin: "-60px" }}
+                    viewport={{ once: true, margin: "60px" }}
                     variants={{
                         hidden: {},
                         visible: {
                             transition: {
-                                staggerChildren: 0.1,
+                                staggerChildren: 0.08,
                             },
                         },
                     }}
                 >
                     <div
                         ref={scrollContainerRef}
-                        onScroll={handleScroll}
-                        className="flex gap-6 overflow-x-auto pb-10 pt-4 snap-x snap-mandatory pl-3 sm:pl-5 lg:pl-[max(1.75rem,calc((100%-1280px)/2+1.75rem))] pr-3 sm:pr-5 lg:pr-7 scroll-pl-3 sm:scroll-pl-5 lg:scroll-pl-[max(1.75rem,calc((100%-1280px)/2+1.75rem))] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+                        className="flex flex-row gap-6 overflow-x-auto snap-x snap-mandatory pt-4 pb-8 pl-4 sm:pl-6 lg:pl-[max(2rem,calc((100%-1280px)/2+2rem))] pr-4 sm:pr-6 lg:pr-8 scroll-pl-4 sm:scroll-pl-6 lg:scroll-pl-[max(2rem,calc((100%-1280px)/2+2rem))] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']"
                         style={{ scrollBehavior: 'smooth' }}
                     >
                         {skills.map((skill, index) => (
                             <motion.div
                                 key={index}
                                 variants={{
-                                    hidden: { opacity: 0, x: 50, scale: 0.95 },
-                                    visible: { opacity: 1, x: 0, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } }
+                                    hidden: { opacity: 0, y: 30, scale: 0.96 },
+                                    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } }
                                 }}
-                                className="flex-shrink-0 w-[85vw] sm:w-[350px] md:w-[400px] bg-white p-8 sm:p-10 rounded-[24px] border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_40px_rgba(50,185,233,0.12)] hover:border-[#32B9E9]/30 hover:-translate-y-2 transition-all duration-300 flex flex-col snap-center h-auto group relative overflow-hidden"
+                                className="w-[290px] sm:w-[340px] md:w-[380px] snap-center shrink-0 flex flex-col"
                             >
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#32B9E9]/10 to-transparent rounded-bl-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                <div className="bg-white border border-gray-200/80 rounded-[24px] p-6 sm:p-8 flex flex-col justify-between h-full hover:shadow-lg transition-shadow duration-300 group">
+                                    {/* Content */}
+                                    <div className="flex flex-col flex-grow text-center">
+                                        <h3 className="text-lg sm:text-xl md:text-[22px] font-bold text-gray-900 mb-3 leading-snug">
+                                            {skill.title}
+                                        </h3>
+                                        <p className="text-gray-500 text-sm leading-relaxed mb-6 sm:mb-8 flex-grow">
+                                            {skill.description}
+                                        </p>
+                                    </div>
 
-                                <h3 className="text-[22px] md:text-[26px] font-bold text-[#050a15] mb-5 group-hover:text-[#32B9E9] transition-colors duration-300 relative inline-block">
-                                    {skill.title}
-                                    <span className="absolute -bottom-2 left-0 w-1/3 h-[3px] bg-gradient-to-r from-[#32B9E9] to-transparent rounded-full group-hover:w-full transition-all duration-500" />
-                                </h3>
-                                <p className="text-gray-600 text-[15px] sm:text-[16px] leading-relaxed mb-8 flex-grow group-hover:text-gray-800 transition-colors duration-300 relative z-10 mt-2">
-                                    {skill.description}
-                                </p>
-                                {/* Hire now */}
-                                <div className="mt-auto pt-4 relative z-10">
-                                    <button
-                                        onClick={() => setIsModalOpen(true)}
-                                        className="flex items-center gap-2 text-[#050a15] hover:text-[#32B9E9] font-bold hover:gap-3 transition-all duration-300 bg-transparent border-none cursor-pointer p-0 group/btn"
-                                    >
-                                        Hire now
-                                        <ArrowRight className="w-5 h-5 text-[#32B9E9] group-hover/btn:translate-x-1 transition-transform duration-300" />
-                                    </button>
+                                    {/* Action Button (without arrow icon) */}
+                                    <div className="text-center pt-2">
+                                        <button
+                                            onClick={() => setIsModalOpen(true)}
+                                            className="font-semibold text-[#E63946] text-sm sm:text-base hover:underline bg-transparent border-none cursor-pointer p-0 transition-colors"
+                                        >
+                                            Hire now
+                                        </button>
+                                    </div>
                                 </div>
                             </motion.div>
                         ))}
@@ -185,3 +127,4 @@ const ITSkills = () => {
 };
 
 export default ITSkills;
+

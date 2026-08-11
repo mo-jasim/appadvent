@@ -88,11 +88,11 @@ export default function PortfolioPage() {
         <>
             <main
                 className="relative min-h-screen pb-20"
-                style={{
-                    backgroundImage: "url('/images/polygon.png')",
-                }}
+            // style={{
+            //     backgroundImage: "url('/images/polygon.png')",
+            // }}
             >
-                <section className="relative overflow-hidden font-THICCCBOI">
+                <section className="relative overflow-hidden font-THICCCBOI" >
                     <style>{`
                       @keyframes shimmer {
                         0% { transform: translateX(-100%); }
@@ -100,7 +100,9 @@ export default function PortfolioPage() {
                       }
                     `}</style>
 
-                    <div className="relative z-10 max-w-[1280px] mx-auto px-3 sm:px-5 lg:px-6 mt-[80px] mb-[80px] grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+
+                    <div className="relative z-10 max-w-[1280px] mx-auto px-3 sm:px-5 lg:px-6 mt-[80px] mb-[80px] grid grid-cols-1 lg:grid-cols-2 gap-10 items-center" >
                         <motion.div
                             className="order-2 lg:order-1 text-center lg:text-left flex flex-col items-center lg:items-start"
                             initial="hidden"
