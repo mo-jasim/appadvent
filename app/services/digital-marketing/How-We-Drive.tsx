@@ -10,7 +10,7 @@ const HowWeDrive = () => {
                 <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
 
                     {/* Left Content */}
-                    <motion.div 
+                    <motion.div
                         className="w-full lg:w-1/2 flex flex-col gap-5"
                         initial="hidden"
                         whileInView="visible"
@@ -24,14 +24,14 @@ const HowWeDrive = () => {
                             },
                         }}
                     >
-                        <motion.h2 
+                        <motion.h2
                             className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-bold text-[#111827] leading-tight"
                             variants={{
                                 hidden: { opacity: 0, x: -30 },
                                 visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
                             }}
                         >
-                            How We Drive <span className="text-[#32B9E9]">Growth</span> for Your Business?
+                            How We Drive <span >Growth</span> for Your Business?
                         </motion.h2>
 
                         <div className="flex flex-col gap-4 sm:gap-5 text-sm sm:text-base md:text-[16px] text-black leading-relaxed">
@@ -86,7 +86,7 @@ const HowWeDrive = () => {
                     </motion.div>
 
                     {/* Right Illustration */}
-                    <motion.div 
+                    <motion.div
                         className="w-full lg:w-1/2 flex justify-center lg:justify-end"
                         initial="hidden"
                         whileInView="visible"

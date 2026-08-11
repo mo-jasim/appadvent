@@ -5,6 +5,7 @@ import SupportAndMaintenance from "./Support-and-Maintenance";
 import SoftwareMaintenance from "./Software-Maintenance";
 import AverageCost from "./Average-Cost";
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const SoftwareMaintenancePage = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -27,7 +28,7 @@ const SoftwareMaintenancePage = () => {
                     }}
                 >
                     <motion.p
-                        className='gradient-text text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-bold text-center pb-2 flex-wrap'
+                        className='text-white text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-bold text-center pb-2 flex-wrap'
                         variants={{
                             hidden: { opacity: 0, y: 30 },
                             visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
@@ -44,30 +45,29 @@ const SoftwareMaintenancePage = () => {
                     >
                         Ensure your software stays secure, reliable, and future-ready with our comprehensive maintenance and support services. From bug fixes and performance optimization to security updates, feature enhancements, and proactive monitoring, we keep your applications running smoothly while minimizing downtime and maximizing business continuity.
                     </motion.p>
-                    <motion.div
-                        className="flex justify-center mb-[80px] mt-4"
-                        variants={{
-                            hidden: { opacity: 0, y: 30 },
-                            visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
-                        }}
-                    >
+                    <motion.div variants={{ hidden: { opacity: 0, scale: 0.9 }, visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } } }} className="flex justify-center mb-[80px] mt-4">
                         <button
                             onClick={() => setIsModalOpen(true)}
-                            className="text-[#32B9E9] text-semibold text-[20px]
-        px-5 py-2 sm:px-6 sm:py-2.5 cursor-pointer underline font-THICCCBOI transition-colors hover:text-[#2aa8d6]"
+                            className="
+                                                                           flex items-center gap-2.5 bg-[#E8354B] text-white
+                                                                           px-4 py-2.5 sm:px-6 sm:py-3
+                                                                           rounded-full text-sm sm:text-base font-medium cursor-pointer
+                                                                           hover:bg-[#c92c40] transition-colors duration-300
+                                                                         "
                         >
-                            Have a project in mind?
+                            Book a free consultant
+                            <Image src="/images/arrowicon2.svg" alt="icon" width={27} height={27} />
                         </button>
                     </motion.div>
                 </motion.div>
             </section>
-            <div className="" style={{
+            {/* <div className="" style={{
                 backgroundImage: "url('/images/polygon.png')",
-            }}>
-                <SupportAndMaintenance />
-                <SoftwareMaintenance />
-                <AverageCost />
-            </div>
+            }}> */}
+            <SupportAndMaintenance />
+            <SoftwareMaintenance />
+            <AverageCost />
+            {/* </div> */}
             {isModalOpen && (
                 <ConsultationModal
                     isOpen={isModalOpen}

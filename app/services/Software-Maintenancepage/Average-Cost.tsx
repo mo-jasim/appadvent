@@ -107,8 +107,8 @@ const AverageCost = () => {
                     </motion.div>
                 </div>
             </section>
-            <OurProjectsSection />
-            <CompaniesLove />
+            {/* <OurProjectsSection /> */}
+            {/* <CompaniesLove /> */}
         </>
     );
 };

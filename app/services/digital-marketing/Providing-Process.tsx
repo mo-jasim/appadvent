@@ -73,7 +73,7 @@ const CircularProgress = ({
     useEffect(() => {
         if (rotationCount > 0) {
             let startTimestamp: number | null = null;
-            const duration = 2000;
+            const duration = 1800;
             let animationFrameId: number;
 
             const step = (timestamp: number) => {
@@ -93,12 +93,14 @@ const CircularProgress = ({
         }
     }, [rotationCount, value]);
 
+    const isAnimated = (rotationCount ?? 0) > 0;
+
     return (
         <div className="flex flex-col items-center gap-4 sm:gap-6 flex-1 w-full group">
             <div className="min-h-[48px] sm:min-h-[56px] flex items-end justify-center w-full">
-                <h3 className="text-[16px] sm:text-[18px] font-bold text-[#374151] group-hover:text-[#32B9E9] transition-colors duration-300">{title}</h3>
+                <h3 className="text-[16px] sm:text-[18px] md:text-[20px] font-bold text-[#32B9E9] text-center leading-snug">{title}</h3>
             </div>
-            <div className="relative w-[140px] h-[140px] sm:w-[180px] sm:h-[180px] transform group-hover:scale-105 transition-transform duration-500">
+            <div className="relative w-[140px] h-[140px] sm:w-[180px] sm:h-[180px]">
                 <svg
                     className="w-full h-full -rotate-90 transform"
                     viewBox="0 0 140 140"
@@ -109,22 +111,22 @@ const CircularProgress = ({
                         stroke="#4ADE80" strokeWidth="10" fill="none"
                         strokeLinecap="round"
                         strokeDasharray={circumference}
-                        strokeDashoffset={(rotationCount ?? 0) > 0 ? greenOffset : circumference}
+                        strokeDashoffset={isAnimated ? greenOffset : circumference}
                         className="origin-center rotate-[90deg] transition-all ease-out"
-                        style={{ transitionDuration: '2000ms' }}
+                        style={{ transitionDuration: '1800ms' }}
                     />
                     <circle
                         cx="70" cy="70" r={radius}
                         stroke="#F59E0B" strokeWidth="10" fill="none"
                         strokeLinecap="round"
                         strokeDasharray={circumference}
-                        strokeDashoffset={(rotationCount ?? 0) > 0 ? yellowOffset : circumference}
+                        strokeDashoffset={isAnimated ? yellowOffset : circumference}
                         className="origin-center transition-all ease-out"
-                        style={{ transitionDuration: '2000ms' }}
+                        style={{ transitionDuration: '1800ms' }}
                     />
                 </svg>
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-3">
-                    <span className="text-xl sm:text-[24px] font-bold text-[#111827] mb-1">{currentValue}%</span>
+                    <span className="text-2xl sm:text-[28px] font-bold text-[#111827] mb-1">{currentValue}%</span>
                     <span className="text-[11px] sm:text-[12px] text-gray-500 leading-tight">
                         {subtitle || (
                             <>
@@ -154,11 +156,9 @@ const ProvidingProcess: React.FC = () => {
             (entries) => {
                 if (entries[0].isIntersecting) {
                     setStatsRotation(1);
-                } else {
-                    setStatsRotation(0);
                 }
             },
-            { threshold: 0.5 }
+            { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
         );
 
         const currentRef = statsRef.current;
@@ -181,7 +181,7 @@ const ProvidingProcess: React.FC = () => {
     };
 
     return (
-        <section className="text-black py-12 sm:py-16 md:py-20 px-4 sm:px-6 font-THICCCBOI overflow-hidden">
+        <section className="text-black py-12 sm:py-16 md:py-20 px-4 sm:px-6 font-THICCCBOI overflow-hidden bg-white">
             <style>{`
               @keyframes shimmer {
                 0% { transform: translateX(-100%); }
@@ -192,9 +192,9 @@ const ProvidingProcess: React.FC = () => {
                 50% { transform: translateY(-6px); }
               }
             `}</style>
-            
+
             <div className="max-w-7xl mx-auto">
-                <motion.div 
+                <motion.div
                     className="text-center mb-10 sm:mb-12 md:mb-16"
                     initial="hidden"
                     whileInView="visible"
@@ -204,12 +204,12 @@ const ProvidingProcess: React.FC = () => {
                         visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } }
                     }}
                 >
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-bold mb-2">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-bold mb-2 text-gray-900">
                         Our Digital Marketing Service Providing Process
                     </h2>
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                     className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6"
                     initial="hidden"
                     whileInView="visible"
@@ -231,43 +231,23 @@ const ProvidingProcess: React.FC = () => {
                                 visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } }
                             }}
                         >
-                            <div className="block h-full group" onMouseEnter={() => handleHover(index)}>
-                                <div className="relative h-full rounded-[20px] p-[2px] transition-all duration-500 bg-transparent hover:bg-[#F0F0F0] group-hover:bg-gradient-to-br group-hover:from-[#32B9E9] group-hover:via-[#6DD5FA] group-hover:to-[#2193b0]">
-                                    <div
-                                        className="relative h-full rounded-[18px] bg-white p-6 sm:p-8 flex flex-col items-center text-center shadow-sm transition-all duration-500 group-hover:shadow-[0_8px_40px_rgba(50,185,233,0.12)] overflow-hidden"
-                                        style={{ transformStyle: "preserve-3d" }}
-                                    >
-                                        <div className="absolute inset-0 overflow-hidden rounded-[18px] pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#32B9E9]/10 to-transparent" style={{ animation: "shimmer 2s ease-in-out infinite" }} />
-                                        </div>
-                                        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[3px] w-0 group-hover:w-3/4 bg-gradient-to-r from-transparent via-[#32B9E9] to-transparent transition-all duration-700 rounded-full" />
-                                        
-                                        <div style={{ transform: "translateZ(30px)" }} className="flex flex-col items-center flex-grow">
-                                            <div className="relative mb-6 inline-flex self-center lg:self-start">
-                                                <div className="absolute inset-[-8px] rounded-full border-2 border-dashed border-[#32B9E9]/0 group-hover:border-[#32B9E9]/25 transition-all duration-700 group-hover:rotate-[60deg]" />
-                                                <div className="w-[80px] h-[80px] rounded-full bg-gradient-to-br from-[#E8F7FC] to-[#F0FBFF] group-hover:from-[#D4F0FA] group-hover:to-[#E0F5FC] flex items-center justify-center transition-all duration-500 group-hover:shadow-[0_4px_20px_rgba(50,185,233,0.2)]">
-                                                    <div style={{ animation: "iconFloat 3s ease-in-out infinite" }}>
-                                                        <Image
-                                                            src={mounted && imageKeys[index] ? `${item.Icon}?v=${imageKeys[index]}` : item.Icon}
-                                                            alt={item.title}
-                                                            width={40}
-                                                            height={40}
-                                                            className="object-contain shrink-0 transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:scale-110"
-                                                        />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <h3 className="font-bold text-lg sm:text-xl md:text-[22px] mb-3 group-hover:text-[#0d2a3a] transition-colors duration-300">
-                                                {item.title}
-                                            </h3>
-                                            <div className="w-10 h-[2px] bg-[#32B9E9]/30 group-hover:w-16 group-hover:bg-[#32B9E9]/60 rounded-full mb-4 transition-all duration-500 mx-auto" />
-                                            <p className="text-black text-sm sm:text-[14px] leading-relaxed font-THICCCBOI flex-grow">
-                                                {item.desc}
-                                            </p>
-                                        </div>
-                                    </div>
+                            <div className="h-full rounded-[20px] bg-white border border-gray-200/80 p-6 sm:p-8 flex flex-col items-center text-center shadow-sm">
+                                <div className="mb-6 flex justify-center">
+                                    <Image
+                                        src={mounted && imageKeys[index] ? `${item.Icon}?v=${imageKeys[index]}` : item.Icon}
+                                        alt={item.title}
+                                        width={52}
+                                        height={52}
+                                        className="object-contain"
+                                    />
                                 </div>
+                                
+                                <h3 className="font-bold text-lg sm:text-xl md:text-[22px] text-gray-900 mb-3">
+                                    {item.title}
+                                </h3>
+                                <p className="text-gray-600 text-sm sm:text-[14px] leading-relaxed font-THICCCBOI flex-grow">
+                                    {item.desc}
+                                </p>
                             </div>
                         </motion.div>
                     ))}
@@ -288,7 +268,7 @@ const ProvidingProcess: React.FC = () => {
                                 <div className="absolute inset-0 overflow-hidden rounded-[18px] pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#32B9E9]/5 to-transparent" style={{ animation: "shimmer 2s ease-in-out infinite" }} />
                                 </div>
-                                
+
                                 <div className="flex flex-col sm:flex-row justify-between text-center w-full items-start gap-6 sm:gap-8 relative z-10">
                                     <CircularProgress
                                         value={72}
@@ -330,7 +310,6 @@ const ProvidingProcess: React.FC = () => {
                         </div>
                     </motion.div>
                 </motion.div>
-
             </div>
         </section>
     );
