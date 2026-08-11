@@ -144,14 +144,14 @@ export default function BlogPage() {
 
   return (
     <>
-      <main className="min-h-screen bg-[#FBFBFF] font-THICCCBOI">
+      <main className="min-h-screen bg-[#FBFBFF] font-THICCCBOI pt-20 sm:pt-20 lg:pt-20">
         <style>{`
           @keyframes shimmer {
             0% { transform: translateX(-100%); }
             100% { transform: translateX(100%); }
           }
         `}</style>
-        <section className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7 py-10 md:py-14">
+        <section className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7 pt-2 pb-10 md:pt-4 md:pb-14">
           {/* Search Bar */}
           <div className="mb-12 flex items-center w-full rounded-full border-1 border-gray-200 bg-[#F5F5F5]  overflow-hidden h-[60px] md:h-[50px]">
             <input

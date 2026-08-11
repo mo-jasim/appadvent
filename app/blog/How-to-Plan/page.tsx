@@ -49,8 +49,8 @@ export default function HealthcareBlogPage() {
 
     return (
         <>
-            <main className="min-h-screen bg-[#F8FAFC] font-THICCCBOI text-[#4B5563] px-3 sm:px-5 lg:px-7">
-                <div className="max-w-7xl mx-auto py-8 md:py-12">
+            <main className="min-h-screen bg-[#F8FAFC] font-THICCCBOI text-[#4B5563] px-3 sm:px-5 lg:px-7 pt-20">
+                <div className="max-w-7xl mx-auto pt-2 pb-8 md:pt-4 md:pb-12">
                     <div className="flex flex-col lg:flex-row gap-8">
                         {/* Main Content Column with Border */}
                         <div className="lg:w-[75%] bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">

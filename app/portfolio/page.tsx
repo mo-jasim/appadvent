@@ -6,6 +6,7 @@ import PortfolioCard from '../../components/PortfolioCard'
 import Link from 'next/link'
 import ConsultationModal from '@/components/ConsultationModal';
 import { useState } from 'react';
+import Image from 'next/image';
 
 
 
@@ -76,21 +77,11 @@ export default function PortfolioPage() {
     ];
 
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [currentPage, setCurrentPage] = useState(1);
-    const cardsPerPage = 4;
-
-    const indexOfLastCard = currentPage * cardsPerPage;
-    const indexOfFirstCard = indexOfLastCard - cardsPerPage;
-    const currentCards = portfolioItems.slice(indexOfFirstCard, indexOfLastCard);
-    const totalPages = Math.ceil(portfolioItems.length / cardsPerPage);
 
     return (
         <>
             <main
-                className="relative min-h-screen pb-20"
-            // style={{
-            //     backgroundImage: "url('/images/polygon.png')",
-            // }}
+                className="relative min-h-screen pb-20 pt-20 sm:pt-22 lg:pt-24"
             >
                 <section className="relative overflow-hidden font-THICCCBOI" >
                     <style>{`
@@ -102,7 +93,7 @@ export default function PortfolioPage() {
 
 
 
-                    <div className="relative z-10 max-w-[1280px] mx-auto px-3 sm:px-5 lg:px-6 mt-[80px] mb-[80px] grid grid-cols-1 lg:grid-cols-2 gap-10 items-center" >
+                    <div className="relative z-10 max-w-[1280px] mx-auto px-3 sm:px-5 lg:px-6 mt-2 sm:mt-4 mb-[60px] grid grid-cols-1 lg:grid-cols-2 gap-10 items-center" >
                         <motion.div
                             className="order-2 lg:order-1 text-center lg:text-left flex flex-col items-center lg:items-start"
                             initial="hidden"
@@ -141,13 +132,35 @@ export default function PortfolioPage() {
                                 </div>
                             </div>
 
-                            <p
+                            {/* <p
                                 onClick={() => setIsModalOpen(true)}
                                 className="text-[#32B9E9] text-semibold text-[20px]
         px-5 py-2 sm:px-6 sm:py-2.5 cursor-pointer underline"
                             >
                                 Have a project in mind?
-                            </p>
+                            </p> */}
+
+                            <motion.div
+                                className="flex items-center justify-center mt-8"
+                                initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                                animate={{ opacity: 1, scale: 1, y: 0 }}
+                                transition={{ delay: 0.7, duration: 0.6, type: "spring", stiffness: 200, damping: 15 }}
+                            >
+                                <motion.button
+                                    onClick={() => setIsModalOpen(true)}
+                                    className="
+                                            flex items-center gap-2.5 bg-[#E8354B] text-white
+                                            px-4 py-2.5 sm:px-6 sm:py-3
+                                            rounded-full text-sm sm:text-base font-medium cursor-pointer
+                                            hover:bg-[#c92c40] transition-colors duration-300
+                                          "
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.97 }}
+                                >
+                                    Book a free consultant
+                                    <Image src="/images/arrowicon2.svg" alt="icon" width={27} height={27} />
+                                </motion.button>
+                            </motion.div>
 
                         </motion.div>
 
@@ -158,7 +171,6 @@ export default function PortfolioPage() {
 
                     <div className="relative z-10 max-w-[1280px] mx-auto px-3 sm:px-5 lg:px-7">
                         <motion.div
-                            key={currentPage}
                             className="grid grid-cols-1 md:grid-cols-2 gap-[32px] sm:gap-[32px] lg:gap-[32px]"
                             initial="hidden"
                             whileInView="visible"
@@ -172,7 +184,7 @@ export default function PortfolioPage() {
                                 },
                             }}
                         >
-                            {currentCards.map((item, index) => (
+                            {portfolioItems.map((item, index) => (
                                 <motion.div
                                     key={index}
                                     variants={{
@@ -191,48 +203,6 @@ export default function PortfolioPage() {
                                 </motion.div>
                             ))}
                         </motion.div>
-
-                        {/* Pagination Controls */}
-                        {totalPages > 1 && (
-                            <div className="flex justify-center items-center mt-12 gap-4">
-                                <button
-                                    onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
-                                    disabled={currentPage === 1}
-                                    className={`px-4 py-2 rounded-md font-medium transition-colors ${currentPage === 1
-                                        ? 'bg-gray-200 text-gray-500 cursor-not-allowed'
-                                        : 'bg-black text-white hover:bg-gray-800'
-                                        }`}
-                                >
-                                    Previous
-                                </button>
-
-                                <div className="flex gap-2">
-                                    {Array.from({ length: totalPages }).map((_, idx) => (
-                                        <button
-                                            key={idx}
-                                            onClick={() => setCurrentPage(idx + 1)}
-                                            className={`w-10 h-10 rounded-md font-medium transition-colors flex items-center justify-center ${currentPage === idx + 1
-                                                ? 'bg-[#32B9E9] text-white'
-                                                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                                                }`}
-                                        >
-                                            {idx + 1}
-                                        </button>
-                                    ))}
-                                </div>
-
-                                <button
-                                    onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
-                                    disabled={currentPage === totalPages}
-                                    className={`px-4 py-2 rounded-md font-medium transition-colors ${currentPage === totalPages
-                                        ? 'bg-gray-200 text-gray-500 cursor-not-allowed'
-                                        : 'bg-black text-white hover:bg-gray-800'
-                                        }`}
-                                >
-                                    Next
-                                </button>
-                            </div>
-                        )}
                     </div>
                 </section >
                 {isModalOpen && (

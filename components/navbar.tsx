@@ -291,10 +291,12 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
 import ContactDrawer from "./ContactDrawer";
 
 const Navbar = () => {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
@@ -329,11 +331,21 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Header background states:
+  // Check if current page has a dark hero header at the top
+  const isDarkHeroPage =
+    pathname === "/" ||
+    pathname === "/about-us" ||
+    pathname.startsWith("/services") ||
+    pathname.startsWith("/portfolio/");
+
+  // Header background & styling states:
   // 1. Hovered or dropdown open -> solid white background
-  // 2. Scrolled -> dark blurred background
-  // 3. Initial top of page -> fully transparent showing Hero background
-  const isWhite = hovered || open;
+  // 2. Scrolled -> dark navy blurred background
+  // 3. Top of page:
+  //    - Dark hero page (Home, About Us) -> transparent background with white text & white logo
+  //    - Light page (Portfolio, Blog, Services) -> white background with dark text & colored logo
+  const isWhite = hovered || open || (!scrolled && !isDarkHeroPage);
+
   const headerBgClass = isWhite
     ? "bg-white shadow-md"
     : scrolled
