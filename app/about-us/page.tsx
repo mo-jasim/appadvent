@@ -81,7 +81,7 @@ function page() {
 
         <Aboutfoot />
 
-        <Together />
+        {/* <Together /> */}
 
         {/* <OurProjectsSection /> */}
 

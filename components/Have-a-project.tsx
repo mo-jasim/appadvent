@@ -121,37 +121,16 @@ export default function HaveAProject() {
 
                             <div className="flex flex-col gap-1.5">
                                 <label className="text-[#4A5568] font-medium text-xs">
-                                    Phone number
-                                </label>
-                                <input
-                                    type="text"
-                                    placeholder="Email address"
-                                    className="border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#32B9E9] focus:ring-1 focus:ring-[#32B9E9] transition-all"
-                                />
-                            </div>
-
-                            <div className="flex flex-col gap-1.5">
-                                <label className="text-[#4A5568] font-medium text-xs">
                                     Services
                                 </label>
-                                <select className="border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#32B9E9] focus:ring-1 focus:ring-[#32B9E9] transition-all text-gray-600 bg-white">
+                                <select className="border border-[#E2E8F0] rounded-xl pl-4 pr-10 py-3 text-sm focus:outline-none focus:border-[#32B9E9] focus:ring-1 focus:ring-[#32B9E9] transition-all text-gray-600 bg-white cursor-pointer appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%234A5568%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:16px_16px] bg-[right_14px_center] bg-no-repeat">
                                     <option>What are looking for:</option>
                                     <option>Web Development</option>
                                     <option>UI/UX Design</option>
                                     <option>Mobile App</option>
                                     <option>Staff Augmentation</option>
-                                </select>
-                            </div>
-
-                            <div className="flex flex-col gap-1.5">
-                                <label className="text-[#4A5568] font-medium text-xs">
-                                    Budget
-                                </label>
-                                <select className="border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#32B9E9] focus:ring-1 focus:ring-[#32B9E9] transition-all text-gray-600 bg-white">
-                                    <option>Project budget (USD)</option>
-                                    <option>$1k – $5k</option>
-                                    <option>$5k – $10k</option>
-                                    <option>$10k+</option>
+                                    <option>Support & Maintenance</option>
+                                    <option>Other</option>
                                 </select>
                             </div>
 
@@ -169,10 +148,10 @@ export default function HaveAProject() {
                             <div className="sm:col-span-2 mt-2">
                                 <button
                                     type="submit"
-                                    className="w-full bg-[#32B9E9] text-white py-3.5 px-6 rounded-xl font-bold text-sm flex items-center justify-center gap-2 hover:bg-[#28a5d3] transition-colors duration-300 shadow-sm"
+                                    className="w-full bg-[#32B9E9] text-white py-3.5 px-6 rounded-xl font-bold text-sm flex items-center justify-center gap-3 hover:bg-[#28a5d3] transition-colors duration-300 shadow-sm group"
                                 >
                                     Request A Quote
-                                    <ArrowRight className="w-4 h-4" />
+                                    <ArrowRight className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-1" />
                                 </button>
                             </div>
                         </form>

@@ -364,7 +364,7 @@ export default function Letramway() {
                 <Highlights />
 
                 {/* 7. TECHNOLOGY STACK */}
-                <Technology />
+                <Technology projectName="QMS — Smart Queue Management System" projectType="qms" />
 
                 <Designing1 />
 

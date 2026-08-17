@@ -344,7 +344,7 @@ export default function GoalkickCaseStudy() {
                {/* ─────────────────────────────────────────────
                    7. TECHNOLOGY STACK
                ───────────────────────────────────────────── */}
-               <Technology />
+               <Technology projectName="Goalkick application" projectType="mobile" />
 
                {/* 8. GLIMPSES OF APP UI SCREENS */}
                <section className="relative w-full py-20 md:py-32 text-center overflow-hidden font-THICCCBOI px-3 sm:px-5 lg:px-7">

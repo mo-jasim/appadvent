@@ -375,7 +375,7 @@ export default function GoalkickCaseStudy() {
                     {/* ─────────────────────────────────────────────
                    7. TECHNOLOGY STACK
                ───────────────────────────────────────────── */}
-                    <Technology />
+                    <Technology projectName="Privicam application" projectType="mobile" />
 
                     {/* ─────────────────────────────────────────────
                    8. DESIGNING

@@ -49,7 +49,7 @@ const DevelopmentCycle = () => {
             <div className="absolute bottom-0 right-0 w-[500px] h-[500px] pointer-events-none opacity-50 bg-[radial-gradient(circle_at_bottom_right,rgba(50,185,233,0.05),transparent_70%)]"></div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
-                <motion.div 
+                <motion.div
                     className="text-center mb-10 sm:mb-12 md:mb-16"
                     initial="hidden"
                     whileInView="visible"
@@ -65,7 +65,7 @@ const DevelopmentCycle = () => {
                     </h2>
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                     className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
                     initial="hidden"
                     whileInView="visible"
@@ -86,9 +86,9 @@ const DevelopmentCycle = () => {
                                 hidden: { opacity: 0, y: 30, scale: 0.95 },
                                 visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } }
                             }}
-                            className="bg-white p-8 rounded-[24px] shadow-sm border border-gray-100 hover:shadow-[0_8px_30px_rgba(50,185,233,0.12)] hover:border-[#32B9E9]/20 hover:-translate-y-1 transition-all duration-300 group"
+                            className="bg-white p-8 rounded-[24px]  border border-gray-100 hover:shadow-sm   transition-all duration-300 group"
                         >
-                            <h3 className="text-[20px] md:text-[22px] font-bold text-black mb-3 group-hover:text-[#32B9E9] transition-colors duration-300">
+                            <h3 className="text-[20px] md:text-[22px] font-bold text-black mb-3 transition-colors duration-300">
                                 {item.title}
                             </h3>
                             <p className="text-gray-600 text-[16px] leading-relaxed group-hover:text-gray-800 transition-colors duration-300">

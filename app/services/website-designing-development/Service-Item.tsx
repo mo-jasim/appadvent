@@ -100,7 +100,7 @@ const ServiceCards: React.FC = () => {
                             onMouseEnter={() => handleHover(index)}
                         >
                             <div className="relative h-full rounded-[20px] p-[2px] transition-all duration-300">
-                                <div className="relative h-full rounded-[19px] bg-white p-6 sm:p-10 flex flex-col items-start text-left shadow-sm border border-gray-100 overflow-hidden">
+                                <div className="relative h-full rounded-[19px] bg-white p-6 sm:p-10 flex flex-col items-start text-left shadow-none border-1 border-gray-100 hover:shadow-sm overflow-hidden">
                                     <div className="flex flex-col items-start text-left gap-6 w-full">
                                         {/* Icon Container - Top Aligned */}
                                         <div className="relative flex-shrink-0 flex items-center justify-center">

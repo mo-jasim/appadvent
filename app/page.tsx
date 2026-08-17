@@ -708,12 +708,12 @@ import Designing1 from '@/components/Designing1';
 import { motion, useInView, useScroll, useTransform, useMotionValue, useSpring, AnimatePresence } from 'framer-motion';
 
 const servicesData = [
-  { href: "services/website-designing-development", title: "Website Designing & Development", desc: "We specialize in creating visually appealing and highly functional websites that meet your business goals...", icon: "/images/arrow11.svg" },
-  { href: "services/mobile-app-development", title: "Mobile App Development", desc: "We develop mobile apps for iOS and Android using Swift, Kotlin, and React Native. Our secure apps ensure a great user experience...", icon: "/images/arrow12.svg" },
-  { href: "services/staff-augmentation", title: "Staff Augmentation", desc: "We offers staff augmentation services to help you quickly scale your team with highly skilled professionals...", icon: "/images/arrosw13.svg" },
-  { href: "services/digital-marketing", title: "Digital Marketing", desc: "We offer SEO, social media, copywriting, and keyword optimization to boost your website's ranking and audience reach...", icon: "/images/arrow4.svg" },
-  { href: "services/Software-Maintenancepage", title: "Support & Maintenance", desc: "We provide ongoing support and maintenance to ensure your web and mobile applications operate ...", icon: "/images/arrow15.svg" },
-  { href: "services/Custom-Based-Services", title: "Custom Based Services", desc: "Our services meet your business needs with tailored solutions. We develop software that enhances productivity...", icon: "/images/arrow6.svg" }
+  { href: "services/website-designing-development", title: "Website Designing & Development", desc: "We specialize in creating visually appealing and highly functional websites that meet your business goals...", icon: "/images/web portals.svg" },
+  { href: "services/mobile-app-development", title: "Mobile App Development", desc: "We develop mobile apps for iOS and Android using Swift, Kotlin, and React Native. Our secure apps ensure a great user experience...", icon: "/images/mobile.svg" },
+  { href: "services/staff-augmentation", title: "Staff Augmentation", desc: "We offers staff augmentation services to help you quickly scale your team with highly skilled professionals...", icon: "/images/h2.svg" },
+  { href: "services/digital-marketing", title: "Digital Marketing", desc: "We offer SEO, social media, copywriting, and keyword optimization to boost your website's ranking and audience reach...", icon: "/images/h3.svg" },
+  { href: "services/Software-Maintenancepage", title: "Support & Maintenance", desc: "We provide ongoing support and maintenance to ensure your web and mobile applications operate ...", icon: "/images/h4.svg" },
+  { href: "services/Custom-Based-Services", title: "Custom Based Services", desc: "Our services meet your business needs with tailored solutions. We develop software that enhances productivity...", icon: "/images/h5.svg" }
 ];
 
 const allIndustries = [
@@ -745,19 +745,19 @@ const allIndustries = [
     title: "Social & Community",
     href: "/industries/Social-&-Community",
     bg: "bg-[#F4FAFD]",
-    icon: "/images/social.svg",
+    icon: "/images/sc.svg",
   },
   {
     title: "Media & Entertainment",
     href: "/industries/Media-&-Entertainment",
     bg: "bg-[#FDFAEA]",
-    icon: "/images/media.svg",
+    icon: "/images/me.svg",
   },
   {
     title: "Consumer Internet",
     href: "/industries/Consumer-internet",
     bg: "bg-[#FDF1F3]",
-    icon: "/images/iconoir_internet.svg",
+    icon: "/images/ci.svg",
   }
 ];
 
@@ -889,6 +889,58 @@ const HomePage = () => {
   const [mounted, setMounted] = useState(false);
   const [imageKeys, setImageKeys] = useState<number[]>(Array(6).fill(0));
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const industryScrollRef = useRef<HTMLDivElement>(null);
+  const [isDraggingIndustry, setIsDraggingIndustry] = useState(false);
+  const [industryStartX, setIndustryStartX] = useState(0);
+  const [industryScrollLeft, setIndustryScrollLeft] = useState(0);
+  const [isIndustryInteracting, setIsIndustryInteracting] = useState(false);
+
+  // Seamless continuous auto-scroll that pauses during user interaction (finger swipe / drag)
+  useEffect(() => {
+    let animationFrameId: number;
+
+    const scrollStep = () => {
+      const el = industryScrollRef.current;
+      if (el && !isIndustryInteracting && !isDraggingIndustry) {
+        el.scrollLeft += 0.8;
+        const oneSetWidth = el.scrollWidth / 3;
+        if (el.scrollLeft >= oneSetWidth) {
+          el.scrollLeft -= oneSetWidth;
+        }
+      }
+      animationFrameId = requestAnimationFrame(scrollStep);
+    };
+
+    animationFrameId = requestAnimationFrame(scrollStep);
+    return () => cancelAnimationFrame(animationFrameId);
+  }, [isIndustryInteracting, isDraggingIndustry]);
+
+  const handleIndustryMouseDown = (e: React.MouseEvent) => {
+    if (!industryScrollRef.current) return;
+    setIsDraggingIndustry(true);
+    setIsIndustryInteracting(true);
+    setIndustryStartX(e.pageX - industryScrollRef.current.offsetLeft);
+    setIndustryScrollLeft(industryScrollRef.current.scrollLeft);
+  };
+
+  const handleIndustryMouseLeave = () => {
+    setIsDraggingIndustry(false);
+    setIsIndustryInteracting(false);
+  };
+
+  const handleIndustryMouseUp = () => {
+    setIsDraggingIndustry(false);
+    setIsIndustryInteracting(false);
+  };
+
+  const handleIndustryMouseMove = (e: React.MouseEvent) => {
+    if (!isDraggingIndustry || !industryScrollRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - industryScrollRef.current.offsetLeft;
+    const walk = (x - industryStartX) * 1.5;
+    industryScrollRef.current.scrollLeft = industryScrollLeft - walk;
+  };
 
   useEffect(() => {
     setMounted(true);
@@ -1075,7 +1127,7 @@ const HomePage = () => {
               >
                 <div className="h-full">
                   <Link href={service.href} className="block h-full group" onMouseEnter={() => handleHover(index)}>
-                    <div className="relative h-full rounded-[24px] border border-gray-100 bg-white p-7 shadow-sm flex flex-col items-center justify-between">
+                    <div className="relative h-full rounded-[24px] border-1 border-gray-100 bg-white p-7 shadow-none hover:shadow-sm transition-all duration-300 flex flex-col items-center justify-between">
                       {/* Icon Container */}
                       <div className="flex flex-col items-center flex-grow">
                         <div className="w-16 h-16 mb-6 flex items-center justify-center">
@@ -1104,7 +1156,7 @@ const HomePage = () => {
                       <div className="mt-6">
                         <span className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-[#E00836]">
                           Learn More
-                          <ArrowRight className="w-4 h-4" strokeWidth={2} />
+                          <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1.5" strokeWidth={2} />
                         </span>
                       </div>
                     </div>
@@ -1142,25 +1194,32 @@ const HomePage = () => {
           </motion.p>
         </div>
 
-        {/* Industry Cards — Infinite Horizontal Marquee */}
-        <div className="relative w-full overflow-hidden group">
+        {/* Industry Cards — Horizontal Finger / Drag Scroll */}
+        <div className="relative w-full overflow-hidden">
           <style>{`
-            @keyframes infiniteMarquee {
-              0% { transform: translateX(0); }
-              100% { transform: translateX(-50%); }
+            .no-scrollbar::-webkit-scrollbar {
+              display: none;
             }
-            .animate-infinite-marquee {
-              animation: infiniteMarquee 35s linear infinite;
-            }
-            .group:hover .animate-infinite-marquee {
-              animation-play-state: paused !important;
+            .no-scrollbar {
+              -ms-overflow-style: none;
+              scrollbar-width: none;
             }
           `}</style>
 
-          <div className="flex w-max animate-infinite-marquee py-4">
-            {[...allIndustries, ...allIndustries].map((item, i) => (
-              <div key={i} className="w-[280px] sm:w-[320px] shrink-0 pr-6">
-                <Link href={item.href} className="block w-full group/card">
+          <div
+            ref={industryScrollRef}
+            onMouseDown={handleIndustryMouseDown}
+            onMouseLeave={handleIndustryMouseLeave}
+            onMouseUp={handleIndustryMouseUp}
+            onMouseMove={handleIndustryMouseMove}
+            onTouchStart={() => setIsIndustryInteracting(true)}
+            onTouchEnd={() => setIsIndustryInteracting(false)}
+            onMouseEnter={() => setIsIndustryInteracting(true)}
+            className="flex overflow-x-auto no-scrollbar py-4 px-4 sm:px-6 lg:px-8 gap-6 touch-pan-x select-none cursor-grab active:cursor-grabbing"
+          >
+            {[...allIndustries, ...allIndustries, ...allIndustries].map((item, i) => (
+              <div key={i} className="w-[280px] sm:w-[320px] shrink-0">
+                <div className="block w-full group/card">
                   <div className="h-[200px] rounded-2xl bg-white p-7 shadow-sm border border-gray-100/80 flex flex-col justify-between transition-all duration-300 group-hover/card:shadow-md group-hover/card:-translate-y-1">
                     <div>
                       <Image
@@ -1168,14 +1227,14 @@ const HomePage = () => {
                         alt={item.title}
                         width={52}
                         height={52}
-                        className="w-12 h-12 object-contain mb-5"
+                        className="w-12 h-12 object-contain mb-5 pointer-events-none"
                       />
                       <p className="font-bold text-[18px] sm:text-[20px] text-[#061C3D] leading-snug">
                         {item.title}
                       </p>
                     </div>
                   </div>
-                </Link>
+                </div>
               </div>
             ))}
           </div>

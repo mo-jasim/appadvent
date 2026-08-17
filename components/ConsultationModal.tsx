@@ -192,36 +192,18 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
                   <label className="text-[13px] font-semibold text-gray-600">Contact</label>
                   <input type="text" placeholder="Mobile number" className="px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#32B9E9] focus:ring-1 focus:ring-[#32B9E9] transition-all text-[14px]" />
                 </div>
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-[13px] font-semibold text-gray-600">Phone number</label>
-                  <input type="text" placeholder="Phone number" className="px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#32B9E9] focus:ring-1 focus:ring-[#32B9E9] transition-all text-[14px]" />
-                </div>
-              </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div className="flex flex-col gap-1.5 relative">
                   <label className="text-[13px] font-semibold text-gray-600">Services</label>
                   <div className="relative">
-                    <select defaultValue="" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#32B9E9] focus:ring-1 focus:ring-[#32B9E9] transition-all text-[14px] text-gray-500 appearance-none bg-white">
+                    <select defaultValue="" className="w-full px-4 pr-10 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#32B9E9] focus:ring-1 focus:ring-[#32B9E9] transition-all text-[14px] text-gray-500 appearance-none bg-white cursor-pointer">
                       <option value="" disabled>What are you looking for:</option>
                       <option value="web">Web Development</option>
-                      <option value="app">App Development</option>
-                      <option value="marketing">Digital Marketing</option>
-                    </select>
-                    {/* Select indicator */}
-                    <div className="pointer-events-none absolute inset-y-0 right-4 flex items-center px-1 text-gray-400">
-                      <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-1.5 relative">
-                  <label className="text-[13px] font-semibold text-gray-600">Budget</label>
-                  <div className="relative">
-                    <select defaultValue="" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#32B9E9] focus:ring-1 focus:ring-[#32B9E9] transition-all text-[14px] text-gray-500 appearance-none bg-white">
-                      <option value="" disabled>Project budget (USD)</option>
-                      <option value="1k-5k">$1k - $5k</option>
-                      <option value="5k-10k">$5k - $10k</option>
-                      <option value="10k+">$10k+</option>
+                      <option value="design">UI/UX Design</option>
+                      <option value="app">Mobile App</option>
+                      <option value="staff">Staff Augmentation</option>
+                      <option value="support">Support & Maintenance</option>
+                      <option value="other">Other</option>
                     </select>
                     {/* Select indicator */}
                     <div className="pointer-events-none absolute inset-y-0 right-4 flex items-center px-1 text-gray-400">

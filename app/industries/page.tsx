@@ -244,16 +244,7 @@ const IndustriesPage = () => {
                                         }}
                                     >
                                         <TiltCard className="h-full">
-                                            <div className="relative h-full rounded-[20px] p-[2px] transition-all duration-500 bg-transparent hover:bg-[#F0F0F0] group-hover:bg-gradient-to-br group-hover:from-[#32B9E9] group-hover:via-[#6DD5FA] group-hover:to-[#2193b0]">
-                                                <div
-                                                    className="relative h-full rounded-[18px] bg-white p-3 md:p-6 flex flex-col items-center text-center shadow-sm transition-all duration-500 group-hover:shadow-[0_8px_40px_rgba(50,185,233,0.12)] overflow-hidden"
-                                                    style={{ transformStyle: "preserve-3d" }}
-                                                >
-                                                    <div className="absolute inset-0 overflow-hidden rounded-[18px] pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#32B9E9]/10 to-transparent" style={{ animation: "shimmer 2s ease-in-out infinite" }} />
-                                                    </div>
-
-                                                    <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[3px] w-0 group-hover:w-3/4 bg-gradient-to-r from-transparent via-[#32B9E9] to-transparent transition-all duration-700 rounded-full" />
+                                            <div className="relative h-full rounded-[20px] bg-white p-3 md:p-6 flex flex-col items-center text-center shadow-none hover:shadow-lg border border-gray-100/80 transition-all duration-300 overflow-hidden">
 
                                                     <div style={{ transform: "translateZ(30px)" }} className="flex flex-col items-center w-full">
                                                         <Link href={item.href} className="w-full">
@@ -296,7 +287,6 @@ const IndustriesPage = () => {
                                                             </div>
                                                         </Link>
                                                     </div>
-                                                </div>
                                             </div>
                                         </TiltCard>
                                     </motion.div>

@@ -115,11 +115,11 @@ const WebSolutionSection: React.FC = () => {
                             >
                                 <div className="relative h-full rounded-[20px] p-[1.5px] transition-all duration-300">
                                     <div
-                                        className="relative h-full rounded-[19px] bg-white p-8 flex flex-col shadow-sm border border-gray-100 overflow-hidden"
+                                        className="relative h-full rounded-[19px] bg-white p-8 flex flex-col shadow-none border-1 border-gray-100 hover:shadow-sm overflow-hidden"
                                     >
                                         <div>
-                                            <div className="relative mb-6 inline-flex self-center lg:self-start">
-                                                <div className="w-[96px] h-[96px] rounded-full flex items-center justify-center">
+                                            <div className="relative mb-6 flex justify-start items-start self-start">
+                                                <div className="w-14 h-14 flex items-center justify-start">
                                                     <Image
                                                         src={
                                                             mounted && imageKeys[index]
@@ -127,9 +127,9 @@ const WebSolutionSection: React.FC = () => {
                                                                 : item.icon
                                                         }
                                                         alt={item.title}
-                                                        width={64}
-                                                        height={64}
-                                                        className="shrink-0"
+                                                        width={56}
+                                                        height={56}
+                                                        className="w-14 h-14 shrink-0 object-contain"
                                                     />
                                                 </div>
                                             </div>

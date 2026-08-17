@@ -2,6 +2,7 @@
 import React, { useState, useRef } from 'react';
 import ConsultationModal from '@/components/ConsultationModal';
 import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
 
 const ITSkills = () => {
     const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -102,13 +103,14 @@ const ITSkills = () => {
                                         </p>
                                     </div>
 
-                                    {/* Action Button (without arrow icon) */}
+                                    {/* Action Button */}
                                     <div className="text-center pt-2">
                                         <button
                                             onClick={() => setIsModalOpen(true)}
-                                            className="font-semibold text-[#E63946] text-sm sm:text-base hover:underline bg-transparent border-none cursor-pointer p-0 transition-colors"
+                                            className="inline-flex items-center gap-1.5 font-semibold text-[#E63946] text-sm sm:text-base bg-transparent border-none cursor-pointer p-0 transition-colors"
                                         >
                                             Hire now
+                                            <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1.5" strokeWidth={2} />
                                         </button>
                                     </div>
                                 </div>

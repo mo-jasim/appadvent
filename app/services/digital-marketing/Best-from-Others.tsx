@@ -105,7 +105,7 @@ const BestFromOthers: React.FC = () => {
                             }}
                             className="flex flex-col"
                         >
-                            <div className="bg-white border border-gray-200/80 rounded-[24px] p-6 sm:p-8 flex flex-col justify-between h-full hover:shadow-lg transition-all duration-300 group">
+                            <div className="bg-white border border-gray-200/80 rounded-[24px] p-6 sm:p-8 flex flex-col justify-between h-full hover:shadow-sm transition-all duration-300 group">
                                 {/* Icon */}
                                 <div className="flex justify-center mb-5 sm:mb-6">
                                     <Image

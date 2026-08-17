@@ -87,7 +87,6 @@ const AverageCost = () => {
 
                                 <h3 className="text-[22px] sm:text-[24px] md:text-[28px] font-bold mb-6 sm:mb-8 text-[#050A15] relative inline-block">
                                     {plan.price}
-                                    <span className="absolute -bottom-2 left-0 w-1/3 h-[3px] bg-gradient-to-r from-[#32B9E9] to-transparent rounded-full group-hover:w-full transition-all duration-500" />
                                 </h3>
 
                                 <div className="flex flex-col gap-4 sm:gap-5 w-full mt-4 flex-grow relative z-10">

@@ -111,7 +111,7 @@ const DevelopmentServices: React.FC = () => {
                             }}
                             className="flex flex-col"
                         >
-                            <div className="bg-white border border-gray-200/80 hover:border-[#32B9E9] rounded-[24px] p-6 sm:p-8 flex flex-col justify-between h-full hover:shadow-lg transition-all duration-300 group">
+                            <div className="bg-white border border-gray-200/80  rounded-[24px] p-6 sm:p-8 flex flex-col justify-between h-full hover:shadow-sm transition-all duration-300 group">
                                 {/* Icon */}
                                 <div className="flex justify-center mb-6">
                                     <Image
@@ -125,7 +125,7 @@ const DevelopmentServices: React.FC = () => {
 
                                 {/* Content */}
                                 <div className="flex flex-col flex-grow text-center items-center">
-                                    <h3 className="font-bold text-[18px] md:text-[20px] text-gray-900 mb-3 leading-tight group-hover:text-[#32B9E9] transition-colors duration-300">
+                                    <h3 className="font-bold text-[18px] md:text-[20px] text-gray-900 mb-3 leading-tight  transition-colors duration-300">
                                         {item.title}
                                     </h3>
                                     <p className="text-gray-600 text-sm sm:text-[15px] font-THICCCBOI leading-relaxed flex-grow">

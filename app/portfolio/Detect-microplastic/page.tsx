@@ -379,7 +379,7 @@ export default function GoalkickCaseStudy() {
                     {/* ─────────────────────────────────────────────
                    7. TECHNOLOGY STACK
                ───────────────────────────────────────────── */}
-                    <Technology />
+                    <Technology projectName="Detect microplastic application" projectType="web" />
 
                     {/* ─────────────────────────────────────────────
                    8. DESIGNING

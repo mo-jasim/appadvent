@@ -231,7 +231,7 @@ const ProvidingProcess: React.FC = () => {
                                 visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } }
                             }}
                         >
-                            <div className="h-full rounded-[20px] bg-white border border-gray-200/80 p-6 sm:p-8 flex flex-col items-center text-center shadow-sm">
+                            <div className="h-full rounded-[20px] bg-white border-1 border-gray-200/80 p-6 sm:p-8 flex flex-col items-center text-center shadow-none hover:shadow-lg">
                                 <div className="mb-6 flex justify-center">
                                     <Image
                                         src={mounted && imageKeys[index] ? `${item.Icon}?v=${imageKeys[index]}` : item.Icon}
@@ -241,7 +241,7 @@ const ProvidingProcess: React.FC = () => {
                                         className="object-contain"
                                     />
                                 </div>
-                                
+
                                 <h3 className="font-bold text-lg sm:text-xl md:text-[22px] text-gray-900 mb-3">
                                     {item.title}
                                 </h3>

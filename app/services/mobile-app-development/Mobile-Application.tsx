@@ -121,7 +121,7 @@ const MobileApplication: React.FC = () => {
                                 <div className="block h-full group" onMouseEnter={() => handleHover(index)}>
                                     <div className="relative h-full rounded-[20px] p-[1.5px] transition-all duration-300">
                                         <div
-                                            className="relative h-full rounded-[19px] bg-white p-6 sm:p-8 flex flex-col shadow-sm border border-gray-100 overflow-hidden"
+                                            className="relative h-full rounded-[19px] bg-white p-6 sm:p-8 flex flex-col shadow-none hover:shadow-sm border-1 border-gray-100 overflow-hidden"
                                         >
                                             <div className="flex flex-col flex-grow">
                                                 <div className="relative mb-6 inline-flex self-start">

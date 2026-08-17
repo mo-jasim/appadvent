@@ -47,7 +47,7 @@ export default function PortfolioPage() {
         {
             image: "/images/p4.png",
             title: "Letramway",
-            duration: "3 Months",
+            duration: "1 Months",
             platform: "Website",
             slug: "Letramway",
             href: "/portfolio/Letramway"
@@ -62,14 +62,14 @@ export default function PortfolioPage() {
         {
             image: "/Letimg/Newness.svg",
             title: "Newness",
-            duration: "3 Months",
+            duration: "6 Months",
             platform: "Application",
             slug: "Newness",
         },
         {
             image: "/Letimg/Queue-home-img.svg",
             title: "QMS — Smart Queue Management System",
-            duration: "3 Months",
+            duration: "9 Months",
             platform: "Application",
             slug: "Queue Management System",
             href: "/portfolio/Queue-Management-System"

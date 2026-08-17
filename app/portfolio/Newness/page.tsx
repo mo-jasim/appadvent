@@ -376,7 +376,7 @@ export default function GoalkickCaseStudy() {
                     {/* ─────────────────────────────────────────────
                    7. TECHNOLOGY STACK
                ───────────────────────────────────────────── */}
-                    <Technology />
+                    <Technology projectName="Newness application" projectType="mobile" />
 
                     {/* ─────────────────────────────────────────────
                    8. DESIGNING

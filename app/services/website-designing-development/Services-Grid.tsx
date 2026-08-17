@@ -85,8 +85,8 @@ const ServiceGridCard: React.FC = () => {
     };
 
     return (
-        <section className="text-black py-10 md:py-20 px-4 px-4 sm:px-6 lg:px-8 font-THICCCBOI max-w-7xl mx-auto bg-[#EAF8FD]">
-            <div className="max-w-7xl mx-auto">
+        <section className="w-full bg-[#EAF8FD] py-10 md:py-20 text-black font-THICCCBOI">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 <div className="text-center mb-12 md:mb-16">
                     <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-bold mb-4 leading-tight">
@@ -111,11 +111,11 @@ const ServiceGridCard: React.FC = () => {
                             >
                                 <div className="relative h-full rounded-[20px] p-[2px] transition-all duration-300">
                                     <div
-                                        className="relative h-full rounded-[19px] bg-white p-8 flex flex-col shadow-sm border border-gray-100 overflow-hidden"
+                                        className="relative h-full rounded-[19px] bg-white p-8 flex flex-col shadow-none border-1 border-gray-100 hover:shadow-sm overflow-hidden"
                                     >
                                         <div>
-                                            <div className="relative mb-6 inline-flex self-center lg:self-start">
-                                                <div className="w-[96px] h-[96px] rounded-full flex items-center justify-center">
+                                            <div className="relative mb-6 flex justify-start items-start self-start">
+                                                <div className="w-[84px] h-[84px] flex items-center justify-start">
                                                     <Image
                                                         src={
                                                             mounted && imageKeys[index]
@@ -123,16 +123,15 @@ const ServiceGridCard: React.FC = () => {
                                                                 : item.icon
                                                         }
                                                         alt={item.title}
-                                                        width={64}
-                                                        height={64}
-                                                        className="shrink-0"
+                                                        width={84}
+                                                        height={84}
+                                                        className="w-[84px] h-[84px] shrink-0 object-contain"
                                                     />
                                                 </div>
                                             </div>
                                             <h3 className="font-bold text-[20px] md:text-[24px] mb-3">
                                                 {item.title}
                                             </h3>
-                                            <div className="w-10 h-[2px] bg-[#32B9E9]/30 rounded-full mb-4" />
                                             <p className="text-black text-sm md:text-[16px] font-THICCCBOI leading-relaxed">
                                                 {item.description}
                                             </p>

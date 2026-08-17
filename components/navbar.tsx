@@ -293,7 +293,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
-import ContactDrawer from "./ContactDrawer";
+import ConsultationModal from "./ConsultationModal";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -613,8 +613,8 @@ const Navbar = () => {
         )}
       </header>
 
-      {/* Contact Drawer — slides in from the right */}
-      <ContactDrawer isOpen={contactOpen} onClose={() => setContactOpen(false)} />
+      {/* Consultation Modal — centered popup modal */}
+      <ConsultationModal isOpen={contactOpen} onClose={() => setContactOpen(false)} />
     </>
   );
 };

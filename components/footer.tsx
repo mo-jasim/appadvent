@@ -5,7 +5,7 @@ import Image from 'next/image'
 import QAndA from "../components/QAndA"
 import Link from 'next/link'
 import HaveAProject from './Have-a-project'
-import ContactDrawer from './ContactDrawer'
+import ConsultationModal from './ConsultationModal'
 
 const footer = () => {
   const [isContactDrawerOpen, setIsContactDrawerOpen] = useState(false);
@@ -28,6 +28,8 @@ const footer = () => {
                 <li className="mb-4 block hover:text-[#32B9E9]"><Link href="/portfolio">Portfolio</Link></li>
                 <li className="mb-4 block hover:text-[#32B9E9]"><Link href="/blog">Blogs</Link></li>
                 <li className="mb-4 block hover:text-[#32B9E9] cursor-pointer" onClick={() => setIsContactDrawerOpen(true)}>Contact Us</li>
+                <li className="mb-4 block hover:text-[#32B9E9]"><Link href="/privacy-policy">Privacy Policy</Link></li>
+                <li className="mb-4 block hover:text-[#32B9E9]"><Link href="/terms-and-conditions">Terms &amp; Conditions</Link></li>
               </ul>
             </div>
 
@@ -114,12 +116,16 @@ const footer = () => {
         <div className="bg-[#001933] mt-12 py-6">
           <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7 flex flex-col md:flex-row justify-between text-sm text-gray-300 gap-4 text-center md:text-left">
             <p>Copyright © 2024 Appadvent Pvt Ltd | All rights reserved</p>
-            <p>Terms & conditions | Privacy Policy</p>
+            <p>
+              <Link href="/terms-and-conditions" className="hover:text-white transition-colors">Terms &amp; conditions</Link>
+              {" | "}
+              <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            </p>
           </div>
         </div>
       </footer>
 
-      <ContactDrawer
+      <ConsultationModal
         isOpen={isContactDrawerOpen}
         onClose={() => setIsContactDrawerOpen(false)}
       />

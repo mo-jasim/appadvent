@@ -361,7 +361,7 @@ export default function Letramway() {
             <Highlights />
 
             {/* 7. TECHNOLOGY STACK */}
-            <Technology />
+            <Technology projectName="Letramway website" projectType="web" />
 
             <Designing1 />
 

@@ -59,7 +59,7 @@ function Carts() {
             <div className="h-full">
               <div className="block h-full group" onMouseEnter={() => handleHover(idx)}>
                 <div
-                  className="relative h-full min-h-[380px] rounded-[24px] border border-gray-100 bg-white px-7 pt-10 pb-5 shadow-sm flex flex-col items-center justify-between overflow-hidden transition-all duration-300"
+                  className="relative h-full min-h-[380px] rounded-[24px] border-1 border-gray-100 bg-white px-7 pt-10 pb-5 shadow-none hover:shadow-sm flex flex-col items-center justify-between overflow-hidden transition-all duration-300"
                 >
                   <div className="flex flex-col items-center flex-grow">
                     <div className="relative mb-5 flex items-center justify-center">
